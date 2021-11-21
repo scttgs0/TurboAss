@@ -4,6 +4,13 @@ Original: https://github.com/sarnau/TurboAss
 
 The intent of this fork is to produce an English version of TurboAss, Bugaboo, and the associated documentation.
 
+doc/ocr_translations
+--------------------
+
+These files were produced by Tesseract OCR.  Extraction was done from the German PDF manual.
+
+English translation is being done via Google Translate API.
+
 # Atari ST TurboAss / Bugaboo
 
 This is a collection of the old code base for the TurboAss and Bugaboo, which was first sold commercially under the name OMIKRON.Assembler and later as shareware under the name TurboAss/Bugaboo.
