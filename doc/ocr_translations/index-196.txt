@@ -1,0 +1,31 @@
+ORIGINAL
+======== 
+
+
+194 D.5__ Der Druckertreiber
+
+ 
+
+Startadresse des Programms zu der an der zu relozierenden Adresse stehen-
+den Adresse, die ja relativ zum Text-Segment ist (Noch umständlicher hätte
+man’s kaum formulieren können.).
+
+Nach diesem ersten Longword wird nur noch byteweise die Distanz zu der
+nächsten relozierbaren Adresse gespeichert. Wenn diese Distanz größer als
+254 werden sollte, wird eine 1 für je 254 Leerbytes genommen (1 kann ja
+sonst nicht auftreten, da dann ungerade Adressen entstünden). Die Relozie-
+rinformationen enden mit einem Nullbyte.
+
+D.5 Der Druckertreiber
+
+Die Druckertreiber sind vollkommen 1st-Word-kompatibel. Zwei Druckertrei-
+ber liegen als ASCIHI-Source bei, Diese HEX-Dateien können mit dem Pro-
+gramm MAKE_CFG.PRG übersetzt werden. Der Aufbau kann am besten den
+HEX-Dateien selbst entnommen werden.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,96 @@
+ORIGINAL
+======== 
+
+
+J _LITERATURHINWEISE
+
+237
+
+ 
+
+Register 109
+Register ändern 770
+relozierbare Symbole 39
+relozieren 187,192
+Relozierinformationen 192
+Remark 39
+Remark
+durchsuchen 70
+Merker 72
+Tabulator 75
+reorganisieren 60,65
+REPT 96
+RESET 20,116,171
+Reset 45
+Reset all 165
+Reset Vektor 165
+resident 26,61,104
+Resident 107,169,174
+„Ring Indicator“-Abbruch /77
+Rmdirectory 149
+RSBSS 86
+RSC-Editor 214
+**RSCOUNT 37
+RSEVEN 86
+RSRESET 86
+RSSET 86
+RS.x 85
+Rwabs 151
+Rwflag 151
+Save 145
+Save ! 145,164,168
+Schnittstelle 58,104
+Schreibweise der Befehle 124
+Screeneditor 110,115
+Scrollen 115,159,187
+scrollen {17
+Scrolling 29
+
+Scrolloff 166
+Scrollon 166
+Segment
+
+BSS 43
+
+DATA 43
+Segmentierung 86
+Segment
+
+TEXT 43
+Seriennummernschutz 53
+Set 164
+SET 38,89
+SFehler, nächster 72
+SHIFT-F1 117
+SHIFT-F10 1238
+SHIFT-F2 118
+SHIFT-F3 119
+SHIFT-F4 119
+SHIFT-F5 119
+SHIFT-F6 120
+SHIFT-F7 121
+SHIFT-F8 121
+SHIFT-F9 122
+SHIFT-SHIFT 112,171
+Showmemory 134
+Sicherheitskopie 77
+Sichern 52
+Sichern unter 52
+Skip PC 119
+SmallDRI 60
+Södler, Artur 24
+Source 187
+Sourcetextformat 52
+Sourcode-Debugging 181
+Space 187
+Speicher löschen 767
+Speicher
+
+-aufteilung 80
+
+
+
+TRANSLATED
+==========
+
+

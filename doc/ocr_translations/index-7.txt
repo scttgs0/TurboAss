@@ -1,0 +1,42 @@
+ORIGINAL
+======== 
+
+
+6.6.6
+
+6.6.7
+
+1/9-Befehle .. + 1» 0 04 + 8 Hin HM ME kw ae 143
+Lexecute ZA u. 04 HR WEN E REKEN ER 143
+Labelbase ....0.000000000000 000000004 144
+Load A ee 144
+Save 145
+Directory A000 000000 145
+A 146
+File Ar 146
+Fopen A. 146
+Fclose Ar 147
+VE ET 147
+Ür ERW WERKEERERELNEENENEKNKNENE 147
+EURER HERR an RN RR N 147
+Erase, KA 148
+FTee Ar 148
+Mkdirectory A 200 148
+Rmdirectory A 00000 149
+Name HE HEN RNRR EEK a 149
+Fattribut A u. 0. 40540 84 8 HR HERR WR 0 149
+Format AA: 0. : 40: 44 4 40 80H HERR WEN 150
+U TEE 150
+Rwabs A ee 151
+Readsector A 0000000 151
+Writesector A... 0000000000000 00000404 152
+Readtrack ....0.0.00.000000000 000000004 152
+Listende Befehle mit Scrolling .........0.00004 153
+Disassemble .....0.0.0.000000000 000000 H 153
+
+
+
+TRANSLATED
+==========
+
+

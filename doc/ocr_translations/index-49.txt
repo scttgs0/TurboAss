@@ -1,0 +1,60 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 47
+
+ 
+
+3. Mit 1} ist die SHIFT-Taste gemeint, sie wird zum Beispiel bei {t7”E für
+SHIFT-CONTROL-E (ASCII-Suchen-und-Ersetzen) benutzt.
+
+Unter dem Menü „Hilfe“ können Sie sich im Zweifelsfall diese Tastencodes
+jederzeit nochmal ansehen (siehe Kapitel 5.5.5 auf Seite 80). Wenn hinter
+einem Eintrag noch drei Punkte stehen, heißt das, daß dem Anwählen dieser
+Funktion noch eine Abfrage folgt (z. B. eine Dialogbox, der Fileselector o. ä.).
+
+Das Menü „Atarı“
+
+ 
+
+ 
+
+Abbildung 5.2: Das Menü „Atari“
+
+Der erste Menüpunkt („OMIKRON. Assembler V1.7...“) zeigt (fast)
+die gleiche Dialogbox (Siehe Abbildung 5.3 auf Seite 47), die Sie schon
+beim Start des Assemblera gesehen haben. Sie enthält Informationen über
+die geladene Version des OMIKRON.Assemblers sowie Ihre Seriennummer.
+Diesen Menüpunkt können Sie mit CONTROL-I auch über Tastatur aufrufen.
+
+ 
+
+SOZPON, Terbe-kssenäler
+von Z-saft
+Ruteren! Sfren Kalluig
+Anleitung: Derlet eh rdag Mi
+nleite Ol es
+Karkus Pertee
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.3: Die Info-Box
+
+Darunter können Sie mit „Dank an...“ die Liste der Personen ansehen,
+die irgendwie zur Förderung des OMIKRON. Assemblers beigetragen haben
+(Siehe Abbildung 5.4 auf Seite 48). Diese Dialogbox können Sie auch mit
+ALT-I aufrufen.
+
+
+
+TRANSLATED
+==========
+
+

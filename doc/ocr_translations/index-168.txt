@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+166 6.6 _ Die Befehle
+
+ 
+
+Switch
+
+Syntax : SWITCH
+Kurzform : SW
+
+Damit wird der Debugger zwischen der mittleren und hohen Auflösung hin-
+und hergeschaltet. Die Bildschirmauflösung des debuggten Programms bleibt
+dabei unverändert. Wenn Sie einen Monitorumschalter verwenden, müssen
+Sie nur noch auf den anderen Monitor umschalten - bei einem automatischen
+Umschalter’ wird das Bild automatisch ungeschaltet. Bei jedem Programm-
+start wird automatisch auf den anderen Monitor zurückgeschaltet. Dadurch
+können Sie den Debugger auf der (augenfreundlicheren) hohen Auflösung
+Jaufen lassen und ein niedrig auflösendes Programm testen.
+
+Scrollon
+
+Syntax : SCROLLON [Fangradius]
+Kurzform : SC
+
+Wenn Sie das Mausscrolling wieder einschalten wollen, können Sie dies mit
+dem Befehl SCROLLON. „Fangradius“ bedeutet die Breite des Streifens in
+Bildschirmpunkten, in den die Maus bewegt werden muß, damit gescrollt
+wird. Voreinstellung ist drei, d.h. der Bildschirm wird gescrollt, wenn Sie die
+Maus in eine der obersten bzw. untersten drei Zeilen bewegen (und kurz die
+rechte Maustaste drücken).
+
+Scrolloff
+
+Syntax : SCROLLOFF
+Kurzform : SCROLLDF
+
+Wenn Sie mit der Maus nicht scrollen wollen, können Sie dies mit SCROL-
+LOFF abschalten. Dann ist Scrollen natürlich mit den Cursortasten weiterhin
+möglich.
+
+ 
+
+7wie z.B. dem der Firma Hard & Soft A.Herberg, Bahnhofstr. 289, 4620 Castrop-
+Rauxel
+
+
+
+TRANSLATED
+==========
+
+

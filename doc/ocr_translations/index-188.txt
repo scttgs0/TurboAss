@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+186
+
+ 
+
+hex: Abkürzung für hexadezimal, was eigentlich sedezimal heißt (es hat sich
+aber so eingebürgert). Hexadezimal bedeutet, daß ein Wert in dem
+Zahlensystem der Basis 16 angezeigt wird (eine nähere Erläuterung
+entnehmen Sie bitte weiterführender Literatur). Sie werden mit einem
+$ gekennzeichnet (wenn nichts weiter angegeben wird, nimmt der De-
+bugger an, daß es sich um eine hexadezimale Zahl handelt).
+
+klicken: mit der Maus auf einen Befehl, eine Zahl o.ä. zeigen und eine
+Maustaste (zumeist die linke) drücken.
+
+Longword: ein Longword (oder zu Deutsch Langwort) ist ein Wert, der 4
+Byte lang ist (zuerst steht das höchstwertige Byte). Longwords müssen
+beim 68 000 stets auf geraden Adressen liegen.
+
+Offset: Eine Differenz zwischen der Adresse eines Datensemgents und der
+Adresse eines Datums innerhalb des Datenblocks nennt man Offset.
+Ein Beispiel: Am Anfang eines Programms wird die Adresse des BSS
+in ein Adreßregister geladen. Dann kann man auf jedes Element des
+BSS zugreifen, indem man die Adresse relativ zum Anfang des BSS
+angibt (eben den Offset) und dazu die Adresse des BSS addiert. Diesen
+Offset kann man mit RS oder BASE berechnen.
+
+PC (oder Program-Counter): Der PC ist ein internes Register des Pro-
+zessors, das auf die Stelle im Speicher zeigt, wo das Programm weiter
+ausgeführt werden soll. Bei der Ausführung eines Befehls wird der PC
+um die Befehlslänge erhöht, d.h. auf den Anfang des nächsten Be-
+fehls gesetzt. Wichtig ist der Stand des PCs z.B. beim Einzgelschritt-
+Durchlauf eines Programms im Debugger — der PC zeigt dann an, wo
+Sie sich gerade im Programm befinden. Weiteres entnehmen Sie bitte
+Ihrem Assemblerhandbuch.
+
+Pfad: Mit dem Pfad wird angegeben, wie eine Datei heißt und wo sie sich
+befindet, Näheres entnehmen Sie bitte der Anleitung zum ST.
+
+Pseudoopcode: Unter einem Pseudoopcode versteht man einen Befehl, der
+wie ein Opcode (Assemblerbefehl) im Programmtext steht, aber nicht
+in Maschinencode umgesetzt wird, sondern die Assemblierung steuert.
+Pseudoopcodes sind zum Beispiel DC (Define Constant; setzt eine Zahl
+
+
+
+TRANSLATED
+==========
+
+

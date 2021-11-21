@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+156 6.6 _ Die Befehle
+
+ 
+
+6. T Text-relativ
+Diese Variable liegt im Text-Segment.
+
+7. D Data-relativ
+Diese Variable liegt im Data-Segment.
+
+8. B BSS-relativ
+Diese Variable liegt im Block-Storage-Segment (BSS)
+
+9. L Long
+Diese Variable ist länger als 8 Zeichen und somit im GST-Format ab-
+gelegt
+
+Sie werden sich jetzt vielleicht fragen: Was soll der Blödsinn? Erst erklärt
+der mir die ganzen Buchstaben, und dann, daß sie doch nicht unterstützt
+werden! Der Debugger unterstützt diese Status aber alle; Sie können das
+nutzen, wenn Sie Programme laden, die mit anderen Assemblern oder der
+Makroversion erstellt worden sind. Die Symboltabelle entspricht dem DR-
+Format (siehe Kapitel D.4 auf Seite 197).
+
+Dump, Memory
+
+Syntax : [DUMP MEMORY] [.[BIWIL]] C(Parameter]
+Kurzform : DU, M
+
+Dieser Befehl zeigt den Speicherinhalt zwischen Von und Bis an. Links wird
+hexadezimal, rechts in ASCIHI angezeigt. Sie können die Inhalte ändern und
+mit RETURN übernehmen. Die optionale Angabe „.B“, „.W“ oder „.L“ gibt
+an, ob die Werte byte-, word- oder langwortweise ausgegeben werden. Bei
+„.W“ und „.L“ sind natürlich nur gerade Adressen möglich.
+
+Wenn keine Endadresse angegeben wird, wird soviel angezeigt, wie auf den
+Bildschirm paßt. Sie können dann mit 8 und 2 durch den Speicher ßcrollen”.
+
+Beispiel: m "a4
+Zeigt den Speicher ab dem Inhalt von Register A4. Beispiel: Du "a4
+Zeigt den Speicher ab der Adresse, die in A4 steht, an (indirekt).
+
+
+
+TRANSLATED
+==========
+
+

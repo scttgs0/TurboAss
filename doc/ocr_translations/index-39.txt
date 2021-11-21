@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+5_DER ASSEMBLER 37
+
+ 
+
+**°RSCOUNT ergibt den aktuellen Stand des RS-Counters (siehe bei der
+Erklärung der RS-Pseudo-Opcodes (siehe Kapitel 5.6.2 auf
+Seite 85)).
+
+"°SYMTAB «enthält einen Wert ungleich 0, wenn mit dem Pseudo-Op-
+code OPT (siehe Kapitel 5.6.5 auf Seite 89) eine Symbolta-
+belle gewünscht wurde, Die ermöglicht z.B. folgende Kon-
+struktion:
+
+IF "”SYMTAB
+
+BRA Debugging_ input ;Während der Testphase
+ELSE
+
+BRA Normal_input ;Wenn alles läuft
+
+ENDC
+
+Systemvariablen werden immer groß geschrieben. Näheres
+zur bedingten Assemblierung finden Sie im Kapitel 5.6.8 ab
+Seite 97.
+
+5.5.3 Symbole,Label und Konstanten
+
+Bei Symbol- und Labelnamen ist man folgenden „Einschränkungen“ unter-
+worfen:
+
+Ein Symbol darf aus maximal 23 Zeichen bestehen, wobei alle Zeichen signi-
+fikant sind, d.h., der Assembler unterscheidet Symbole bis zum 23. Zeichen
+voneinander (Bei anderen Assemblern sind nur die ersten 8 Buchstaben si-
+gnifikant!).
+
+Was (soweit uns bekannt ist) noch kein anderer Assembler erlaubt, aber
+gerade im deutschen Sprachraum nützlich ist: Der Assembler erlaubt auch
+Umlaute in Symbolnamen (z.B. „menüpunkt: EQU 1“). Ein Symbol darf
+beim OMIKRON. Assembler folgende Zeichen enthalten:
+
+e Als erste Zeichen sind erlaubt: „A“-„Z“, „a“-„z“, „@_{}“, sowie alle
+Zeichen mit einem ASCII-Code > 126 (Ausnahme: 255). In der Grund-
+version ist kein Punkt als erstes Zeichen erlaubt, da dieser als Kenn-
+zeichnung für lokale Label in der Makro-Version dient.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 59
+
+ 
+
+Dazu ein paar Erklärungen: Das Gemdos benötigt stets Program-
+me, die ab Adresse 0 laufen und eine Tabelle aller absoluten Adres-
+sen beinhalten. Beim Laden eines Programms, welches ja im Atari
+nicht, wie bei den Homecomputern, an eine fixe Adresse geladen
+wird (siehe z.B. C-64 nach Adresse $801), paßt das Gemdos das
+Programm dann automatisch an die Ladeadresse an, d.h., das
+Gemdos reloziert das Programm. Da nun aber z.B. Modulpro-
+gramme stets an einer fixen Adresse liegen und nicht reloziert
+werden können (ist halt ein ROM), kann man mit diesem Button
+das Programm bereits durch den Assembler relozieren lassen.
+Wenn man diesen Button anklickt, erscheint eine Dialogbox, in
+der man zum einen die gewünschte Basisadresse des Programms
+eintragen kann (bei Modulen z.B. $FA0000), und zum anderen
+drei weitere Buttons zur Auswahl hat:
+
+ABBRUCH: Springt in den Editor zurück.
+SPEICHERN: Speichert das relozierte Programm ab,
+
+KOPIEREN: Reloziert und kopiert das Programm an die Ad-
+resse, für die es reloziert worden ist. Achtung: Da
+der Assembler hierbei keinerlei Sicherheitsabfra-
+gen hat, besteht die Chance, daß er bei falscher
+Bedienung zerstört wird! Sie sollten diese Funk-
+tion daher nur benutzen, wenn Sie ihre Wirkung
+voll verstanden haben.
+
+BASIC: Mit diesem Button können Sie ein beliebiges Programm in
+BASIC einbinden (natürlich auch in andere Programmierspra-
+chen). Dabei wird einem relozierbaren Programm eine Relozier-
+routine angefügt, welche das Programm automatisch beim ersten
+Aufruf an die entsprechende Adresse reloziert. Einzige Vorausset-
+zung dabei ist, daß das Programm beim ersten Aufruf ab der er-
+sten Adresse gestartet wird, danach löscht sich die Relozierroutine
+selbsttätig.
+
+INLINE: Dieser Button erlaubt das Erzeugen einer INLINE-Zeile für
+OMIKRON.BASIC (also INLINE “Hexdaten" ).
+
+PARALLEL: Dieses Modul überträgt das fertige Programm über die
+Parallel-Schnittstelle. Das dient in erster Linie für den Amiga.
+
+
+
+TRANSLATED
+==========
+
+

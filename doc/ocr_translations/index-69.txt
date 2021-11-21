@@ -1,0 +1,71 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 67
+
+ 
+
+KUN Der 13
+
+20,
+atzen... SF3
+AL
+
+  
+
+yrbal sec
+Syabol ers:
+Text suchen...
+Text ersetzen... E
+Sprung zu Zeile... 0Z
+Kächster Fehler 9J
+Nächster SFehler 95
+Es g
+
+hster_ Merk
+
+    
+          
+
+ 
+
+Abbildung 5.23: Das Menü „Suchen“
+
+einem Texteditor möglich ist (Beispiel: Ersetzen Sie mal mit einem Textver-
+arbeitungsprogramm das Symbol „move“ durch „label“, ohne alle „move“-
+Befehle oder Symbole namens „move2“ ebenfalls zu ersetzen).
+
+Der erste Eintrag lautet „Symbol suchen...“ (F3 oder CONTROL-F). Hier-
+mit kann man z.B. alle Stellen suchen, wo das Symbol „test“ benutzt wird.
+Um schnell von einer Stelle zur nächsten zu springen, geben Sie das gesuchte
+Symbol einmal an und drücken RETURN. Wenn das Symbol im Sourcetext
+vorhanden ist, springt der Cursor sogleich auf die entsprechende Stelle. Mit
+ALT-F können Sie dann zur nächsten Stelle springen, ohne die Dialogbox er-
+neut zu bekommen. Es stehen zwei Platzhalter zur Verfügung: der Allquantor
+„*“, der für beliebig lange Textteile steht, und der Existenzquantor „?“, der
+ein beliebiges Zeichen ersetzt. Im Symbolnamen dürfen beliebig Existens-
+quantoren (also „?“) verwendet werden. Der Allquantor ist jedoch nur als
+Abschluß eines Symbols erlaubt (Beispiel: Sie suchen alle Symbole, die mit
+„A_*“ anfangen). Der Editor erstellt dann einen binären Baum von allen pas-
+senden Symbolen und kann so sehr schnell von Symbol zu Symbol springen.
+Die Buttons erlauben drei Möglichkeiten des Suchens:
+
+e ab der aktuellen Cursorposition,
+e ab dem Textanfang
+
+8 im markierten Block.
+
+Ein Ändern des Allquantors bzw. des Existenzquantors ist bei Symbolen
+nicht nötig, da sowohl „*“, als auch „?“ in Symbolnamen nicht vorkommen
+dürfen.
+
+Sie können „Symbol suchen. ..‘“ auch aktivieren, indem Sie mit der linken
+Maustaste auf ein Symbolnamen doppelklicken, wenn der Cursor auf der
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+72 5.5 Der Editor
+
+ 
+
+Beispiel: A* springt zur nächsten Symboldefinition eines Symbols, das mit
+einem großen „A“ anfängt. Mit ALT-SHIFT-Z können Sie zum nächsten Sym-
+bol springen, ohne vorher die Dialogbox mit RETURN bestätigen zu müssen.
+
+„Nächster Fehler“ (ALT-J) springt zur nächsten Zeile, welche bei einer
+Assemblierung als fehlerhaft markiert wurde. Falls keine Fehler vorhanden
+sind, erscheint kurz eine Box mit der Meldung „keine weiteren Fehler“ (siehe
+Kapitel 5.5.5 auf Seite 56).
+
+Mit „Nächster SFehler“ (ALT-S) springt man zum nächsten Syntax-Fehler,
+genaugenommen zur nächsten nicht-tokenisierbaren Zeile. Nicht tokenisier-
+bare Zeilen werden beim ASCII-Laden oder Zuladen ja als Remark gekenn-
+zeichnet. Man kann mit CONTROL-RETURN einzelne Zeilen als „mit Syntax-
+Fehler versehen“ kennzeichnen (s. u.).
+
+ALT-SHIFT-S: Wie ALT-S, nur wird aufwärts gesucht.
+
+CONTROL-RETURN: Zeile als nicht tokenisierbar übernehmen (d. h., als Remark,
+s.u.). Wenn man eine Zeile geändert hat, aber der Editor die Zeile nicht
+übernehmen will, weil z.B. der Operand noch fehlt (wie das Symbol hieß,
+muß man erst nachgucken), kann man CONTROL-RETURN drücken. Die Zeile
+wird dann als Remark übernommen. Zeilen, die so markiert worden sind,
+kann man mit ALT-S schnell wieder auffinden.
+
+Mit „Nächster Merker“ (CONTROL-S) können Sie zum nächsten Remark-
+Merker springen. Im Editor-Menü können Sie ein Zeichen als Merker angeben
+(Voreinstellung ist „”“). Wenn Sie nun am Anfang von Remarks dieses Zei-
+chen angeben, können Sie mit dieser bzw. der nächsten Tastenkombination
+sehr schnell solche Zeilen anspringen.
+
+Ein Beispiel für Remark-Merker: Sie ändern in einem längeren Pro-
+gramm häufiger drei bestimmte Routinen, probieren dann aus, ob sie jetzt
+besser funktionieren, ändern dann wieder diese Routinen usw. Damit Sie
+sich nicht Zeilennummern, Labelnamen o.ä. merken müssen, um diese Rou-
+tinen wiederzufinden, stellen Sie im Editor-Menü „*“ als Merker ein. Dann
+schreiben Sie an den Anfang jeder der drei Routinen: „;*“ (und meinetwe-
+gen noch einen Erklärungstext). Dann können Sie die markierten Stellen mit
+CDONTROL-S problemlos wiederfinden. Der Merker wird in jedem Sourcetext
+mit abgespeichert.
+
+
+
+TRANSLATED
+==========
+
+

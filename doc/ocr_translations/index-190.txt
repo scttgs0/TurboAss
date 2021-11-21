@@ -1,0 +1,26 @@
+ORIGINAL
+======== 
+
+
+188
+
+ 
+
+Programms mit dem Debugger die Labels mit angezeigt werden
+können (damit man sich besser im Programm zurechtfinden kann).
+
+2. Es gibt aber auch noch eine Symboltabelle in einem anderen Zu-
+sammenhang: Dateien mit der Endung SYM beinhalten nur Kon-
+stantendefinitionen und können zu einem Sourcetext geladen wer-
+den, um dort die Definitionen zu nutzen, ohne die EQUs jedesmal
+im Programmtext zu haben.
+
+Word: ein Word (oder eingedeutscht Wort) ist ein Wert, der zwei Byte lang
+ist (erst das höherwertige, dann das niederwertige Byte).
+
+
+
+TRANSLATED
+==========
+
+

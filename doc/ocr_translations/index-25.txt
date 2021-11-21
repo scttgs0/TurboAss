@@ -1,0 +1,41 @@
+ORIGINAL
+======== 
+
+
+Kapitel 5
+
+Der Assembler
+
+5.1 Zur Geschichte des Assemblers
+
+Die Idee zum OMIKRON. Assembler ist etwa Ostern 1987 geboren worden,
+als wir (der Sören und ich, Markus) uns über die Assemblierzeiten von einigen
+Minuten bei den herkömmlichen Assemblern ärgerten. Es wurden einige Tage
+mit der Entwicklung des Konzepts verbracht und dann, tja, dann wurde das
+Projekt wegen zu komplizierter Strukturen wieder vergessen.
+
+Bis Anfang 1988, dann bekam ich über einige Ecken das Angebot, für OMI-
+KRON.Software einen Assembler zu entwickeln. Also setzten Sören und ich
+uns wieder zusammen und entwickelten in etwa zwei Monaten ein Konzept
+für einen tokenisierenden Assembler (welcher genaugenommen bei der Ein-
+
+gabe schon assembliert). Das Konzept stand, und wir steckten mitten im
+Abitur.
+
+Sofort nach dem schriftlichen Abitur (kurz vor Ostern 1988) fingen wir an, zu
+programmieren. Sören versuchte sich an einem Editor, der bei der Eingabe
+bereits assembliert, und ich wandte mich einem Debugger zu, der für die
+Entwicklung dringend gebraucht wurde. Als der Debugger halbwegs funktio-
+nierte, kam die Benutzeroberfläche dran (eigene Dialogboxen, I/O-Routinen
+(erstmals auch mit eigenem Tastaturtreiber) und allem, was dazugehört).
+Daraus entstand die V0.1-Version des Debuggers, die vielleicht einigen als
+PD-Programm aus einer Hamburger Mailbox schon bekannt ist.
+
+23
+
+
+
+TRANSLATED
+==========
+
+

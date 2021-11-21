@@ -1,0 +1,46 @@
+ORIGINAL
+======== 
+
+
+142 6.6 _ Die Befehle
+
+ 
+
+Das ganze hat nun folgenden Sinn: Obwohl der OMIKRON.Debugger eine
+ganze Menge mitmacht, kann es doch vorkommen, daß man einige Unterpro-
+gramme nicht direkt debuggen kann. Wenn Sie an einer bestimmten Stelle im
+Programm in den Debugger zurückkehren möchten und im Debugger auch
+noch alle Registerinhalte haben wollen, SHIFT-SHIFT aber nicht funktioniert,
+können Sie eine Routine an diese Stelle ins Programm einbauen, die alle Re-
+gisterinhalte rettet. Eine solche Routine finden Sie im Librarys-Ordner un-
+ter dem Namen BREAK.S. Wenn Sie dann RESET drücken, müßten Sie sich
+igentlich im Debugger befinden (wenn Sie im Desktop landen, starten Sie
+den Debugger einfach neu). Dann können Sie sich die Registerinhalte mit
+GETREGISTER zurückholen.
+
+Bssclear
+
+Syntax : BSSCLEAR
+Kurzform : BS
+
+Löscht das Block-Storage-Segment (BSS) (füllt es mit 0). Dies ist nützlich,
+wenn Sie ein Programm gestartet haben und es dann vom Ausgangszustand
+aus noch einmal neu starten wollen.
+
+Initregister
+
+Syntax : INITREGISTER
+Kurzform : INI
+
+Setzt alle Daten- und Adreßregister auf 0 und PC sowie Statusregister auf
+die Anfangswerte.
+
+Syntax : JBefehl
+Kurzform : |
+
+
+
+TRANSLATED
+==========
+
+

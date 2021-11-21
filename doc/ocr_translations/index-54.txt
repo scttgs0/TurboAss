@@ -1,0 +1,66 @@
+ORIGINAL
+======== 
+
+
+52 5,5 Der Editor
+
+ 
+
+ 
+
+Sunboltabelle nit
+2 Symbolen erzeugt,
+
+.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.8: Eine Symboltabelle wurde erzeugt
+
+Beispiel:
+Test: EQU 1
+
+Dieses Beispiel mit F1 assemblieren und als Symboltabelle abspeichern. Dann
+ändern Sie den Wert des Symbols Test auf 228.
+
+Test: EQU 228
+
+Wenn Sie nun die eben erstellte Symboltabelle wieder einladen, ergibt sich
+folgendes Bild:
+
+Test: EQU 1
+
+Noch eine Bemerkung zu den Symboltabellen: Die hier beschriebenen Sym-
+boltabellen haben nichts mit den Symboltabellen zu tun, die an ein assemb-
+liertes Programm angehängt werden können.
+
+Mit dem Menüpunkt „Sichern“ (CONTROL-Q) können Sie Ihren Sourcetext
+unter dem in der Statusgeile angegebenen Namen abspeichern. Es wird dazu
+kein File-Selector ausgegeben. Als Extension wird stets .SRC angehängt. Der
+Sourcetext wird dabei im eigenen Format abgespeichert. Wie bereits erwähnt,
+werden solche Sourcetexte nicht nur schneller gespeichert und geladen, sie
+sind auch kürzer als im ASCII-Format. Wenn der Source unter diesem Namen
+schon existiert, wird eine Dialogbox ausgegeben (Siehe Abbildung 5.9 auf
+Seite 53).
+
+„Sichern unter...“ (F9) entspricht dem Menüpunkt „Sichern“, diesmal
+wird jedoch der File-Selector ausgegeben.
+
+Noch etwas zum eigenen Sourcetextformat; Es werden (und das macht die-
+ses Format so praktisch) alle aktuellen Einstellungen, die den Sourcetext
+betreffen, mit abgespeichert. Das sind: Die Cursorposition, die 10 Textmar-
+ker, Datum und Uhrzeit der Erstellung des Sourcetextes, Datum und Uhr-
+zeit der letzten Änderung des Sourcetextes, die Stelle der letzten Änderung
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 51
+
+ 
+
+line auswertet. Sie können ihn also als Anwendung mit der SRC-Extension
+(natürlich auch mit S, ASM usw.) anmelden. Ein Doppelklick auf einen Source-
+text lädt dann den Assembler und den Source.
+
+Der Menüpunkt „Zuladen. ..‘“ (SHIFT-F8) erlaubt es Ihnen, in den bereits
+im Speicher stehenden Sourcetext weitere ASCII-Sourcetexte einzufügen.
+Dazu stellen Sie den Cursor an die Stelle, an die eingefügt werden soll (nur
+die Zeile ist entscheidend) und rufen dann diese Funktion auf. Danach werden
+wie beim normalen Laden von ASCII-Sourcen die nicht tokenisierbaren Zeilen
+gekennzeichnet. Da jedoch jede Zeile einzeln eingefügt werden muß, kann es
+beim Zuladen zu ganz erheblichen Wartezeiten kommen, wenn Ihr Sourcetext
+schon etwas größer ist. Diese Wartezeit können Sie drastisch verkürzen, wenn
+Sie stets ans Sourcetext-Ende zuladen und dann die zugeladenen Zeilen als
+Block markieren, um sie an die endgültige Stelle im Sourcetext zu verschie-
+ben. Da bei dieser Methode nur angefügt werden muß (und nicht eingefügt),
+geht das Laden erheblich schneller. Aber, wie bereits gesagt, lohnt sich dieser
+Trick erst bei längeren Sourcetexten.
+
+Unter dem Menüpunkt „Symbole laden...“ können Sie nicht einen kom-
+pletten Sourcetext einladen, sondern nur eine Symboltabelle. Eine solche
+Symboltabelle besteht nur aus Konstanten-Zuweisungen (siehe Kapitel D.3
+auf Seite 192). Bine Symboltabelle können Sie ganz einfach erzeugen, indem
+Sie ein Programm assemblieren, welches nur EQU-Befehle enthält (genauge-
+nommen nur Befehle, die keinen Code produzieren. Kommentare, OUTPUT-
+Befehle usw. sind also auch möglich). Der Assembler meldet dann, daß er
+eine Symboltabelle mit n Symbolen erzeugt habe (Siehe Abbildung 5.8 auf
+Seite 52). Diese Symboltabelle können Sie dann mit der Extension SYM abspei-
+chern und mit dieser Funktion wieder einladen. Diese Symboltabellen haben
+den Vorteil, daß Sie sich beim Blättern in Ihrem Listing nicht durch viele Sei-
+ten von EQUs wühlen müssen, denn diese Symboltabellen sind nicht sichtbar
+(als Beispiele seien die im LIBRARYS .OMI stehenden Dateien SYS_VARS.S und
+GEM_VARS.S genannt). Allerdings müssen Sie, um einen Wert zu ändern, den
+Sourcetext der Symboltabelle haben, diese neu assemblieren und dann wieder
+neu laden. Und das ist auch gleich die zweite Besonderheit der Symboltabel-
+len: Sie können eine Symboltabelle beliebig häufig laden, bei jedem Laden
+werden die alten Werte eines bereits existierenden Symbols überschrieben.
+
+
+
+TRANSLATED
+==========
+
+

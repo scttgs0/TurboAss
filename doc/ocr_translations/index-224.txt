@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+222 I11  GAME.OMI
+
+ 
+
+1.11 GAME. OMI
+
+Dieser Ordner enhält das Spiel „Think and Work“ mit Sourcetext. Think &
+Work ST entspricht der Version für die Atari XL-Serie, welche in Ausgabe
+2/89 der Happy Computer Listing des Monats war, Ich habe zwar keinen XL,
+aber mein 6502-Assemblerwissen und etwas logisches Verständnis ermöglich-
+ten es mir, die XL-Level unverändert auf den ST zu übernehmen. Das Spiel
+ist sonst jedoch völlig unabhängig von der XL-Version in zwei Tagen pro-
+grammiert worden
+
+Das Spiel enthält folgende Features:
+
+e lauffähig auf Monochrom- und Farbmonitoren
+
+e eingebauter Level-Editor
+
+oe Demo-Modus
+
+e Joystick- oder Tastatursteuerung (Tastatur geht besser)
+e maximal 99 Level (25 sind dabei)
+
+e Highscore von jedem Level (speicherbar)
+
+e ist etwa so lang wie die XL-Version (also ziemlich kurz)
+
+Der Sinn des Spiels): Das Männchen muß die Blöcke auf die als Rauten
+markierten Zielfelder schieben. Es kann nur ein Block auf einmal verschoben
+werden. Wenn sich alle Blöcke auf den Zielfeldern befinden, bringt einen der
+Exit in den nächsten Level (Demo beseitigt wohl die Unklarheiten, zur Not
+hilft ein Blick in die Happy Computer weiter) Jeder Block bringt beim Start
+100 Punkte, jede Verschiebung kostet 5 Punkte, jede Sekunde Zeit einen
+Punkt.
+
+Einzelheiten können dem Sourcetext entnommen werden.
+
+Wichtig: Für dieses Programm brauchen Sie eine neue 0OM-ASSEM.DAT-Datei.
+Assemblieren Sie dazu 0M_MODUL . SRC — bewahren Sie sich aber die alte Datei
+auf; wenn Sie nicht mit dem Spiel arbeiten kostet die neue nur sinnlos Zeit
+und Speicher, Verlassen Sie den Assembler und starten Sie ihn neu, damit
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+4 _ GEMEINSAMES VON ASSEMBLER_UND DEBUGGER 21
+
+ 
+
+Tabelle 4.1; Die Tasten in Dialogboxen
+
+ 
+
+RETURN | Betätigt den Default-Button.
+| oder TAB | Der Cursor springt zum nächsten Eingabefeld.
+ft | Der Cursor springt ein Eingabefeld zurück.
+CLR/HOME | Der Cursor springt zum ersten Eingabefeld.
+ESC | Löscht das Eingabefeld, in dem der Cursor steht.
+DELETE | Löscht das Zeichen unter dem Cursor.
+BACKSPACE | Löscht das Zeichen links vom Cursor.
++ und = | Bewegt den Cursor im Eingabefeld; Autoinsert ist
+immer an.
+UNDO | Bricht die Eingabe ab. Alle Eingaben werden
+ungültig, kein Knopf wird gedrückt. Rücksprung
+in die Haupteingabe.
+CONTROL-< | Springt an den Anfang des aktuellen Eingabefel-
+des.
+CONTROL-=> | Springt an das Ende des aktuellen Eingabefeldes.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Die Tasten mit besonderer Funktion in den Dialogboxen sind in Tabelle 4.1
+aufgeführt.
+
+Außerdem können Sie mit der linken Maustaste den Cursor in ein Eingabefeld
+setzen.
+
+Oben links in jedem Button steht ein kleiner Buchstabe. Sie können einen
+Button auch anwählen, indem Sie ALT-Buchstabe drücken.
+
+
+
+TRANSLATED
+==========
+
+

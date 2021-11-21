@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 153
+
+ 
+
+6.6.7 Listende Befehle mit Scrolling
+
+Alle in diesem Abschnitt angegebenden Befehle erlauben den gleichen Syn-
+tax bei den Parametern, der deswegen an dieser Stelle erklärt wird, und im
+folgenden nur noch mit [Parameter] bezeichnet wird. Es gilt also:
+[Parameter] = [Von]([[,]#C[Zeilen]|,Bis|(,](Bytes(]1]
+
+Es sind also alle Parameter wahlfrei, d.h. man braucht keine Parameter an-
+geben. Der Debugger nimmt dann vorgegebene interne Werte.
+
+Wenn der Ausdruck „Von“ fehlt, wird ab der aktuellen Adresse z.B. disas-
+sembliert. Die aktuelle Adresse ist die Zahl am Zeilenanfang, bzw. wenn diese
+fehlt, die zuletzt benutzte Adresse.
+
+Als Endadresse gilt der Ausdruck „Bis“, der jedoch nicht angegeben werden
+muß. Wird statt „Bis“ ein „#"“ angegeben wird genau eine Zeile ausgege-
+ben. Ein dem „#“ folgender Term, gilt als Zeilenanzahl. Es können somit
+z.B. genau 8 Zeilen ausgegeben werden. Es werden jedoch maximal 99 Zei-
+len ausgegeben, Fehlt die Endangabe gänzlich, werden (normalerweise) 16
+Zeilen ausgegeben. Die Anzahl läßt sich jedoch einstellen, indem man die
+Variable „Lines“ entsprechend ändert. Die letzte Möglichkeit ist die Angabe
+der Byteanzahl in eckigen Klammern. Sie kann genauso, wie die Zeilenanzahl
+angegeben werden. Die „}“ ist optional, d.h. man kann sie auch weglassen.
+
+Beispiel: „d text #5“
+
+Disassembliert 5 Zeilen ab Anfang des geladenen Programms,
+Beispiel: „m data[30]“
+
+Ein Memorydump des DATA-Segments (48 Bytes lang).
+
+Disassemble
+
+Syntax : DISASSEMBLE [Parameter]
+Kurzform : D
+
+Durch DISASSEMBLE wird ein Speicherbereich disassembliert. Rechts sehen
+Sie den Opcode, links die entsprechenden Hex-Werte. Der Hex-Teil kann
+geändert werden. Da der disassemblierte Teil durch Semikola abgegrenzt ist,
+werden Änderungen in ihm ignoriert. Beim Disassemblieren und Listen ist
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 91
+
+ 
+
+PATH ’Pfad’ gibt den Pfad für IBYTES an. Der Pfad kann maximal 31
+Zeichen lang sein.
+
+IBYTES ’Filename’[,Anzahl[,Position]] (INCBIN) fügt eine Datei in
+den Programmcode ein. Diese Datei wird nicht assembliert, sondern
+so übernommen. Damit können Sie zum Beispiel Graphikbilder oder
+fertig assemblierten Programmcode (position-independent) einbinden.
+Der Filename darf nicht länger als 19 Zeichen sein. Da das bei längeren
+Pfaden zu Problemen führen kann, gibt es den Befehl PATH. „Anzahl“
+gibt an, wieviele Byte eingefügt werden sollen. Fehlt dieser Parameter,
+wird die komplette Datei genommen. „Position“ legt fest, wieviele Byte
+der Datei übersprungen werden sollen. Wenn Sie also z.B. Position 5
+angeben, wird die Datei erst ab dem 5. Byte gelesen.
+
+Bei diesen Befehlen können die Fehler „Filename zu lang“ und „Illegaler
+Filename“ auftreten. Illegal ist ein Filename, wenn er Zeichen wie „*“
+oder „?“ enthält.
+
+Ein Beispiel: Wir wollen das DEGAS-Bild „TITEL.PI3“ ohne Farb-
+und Animationsinformationen) einbinden. DEGAS-Bilder sind folgen-
+dermaßen abgespeichert:
+
+e 1 Word Auflösung (bei uns 2 für hohe Auflösung) und Kompres-
+sions-Kennung
+
+e 16 Words Farbpalette
+
+e 32000 Byte Bild
+
+e 16 Words Animationsinformationen, wenn nötig.
+
+Wir fügen in unser Programm nun ein:
+titel: IBYTES ’TITEL.PI3’ ‚32000 ,34
+
+Die ersten 34 Byte werden überlesen, die folgenden 32000 Byte werden
+eingebunden. Unser Programm kann das Bild nun anzeigen, indem es
+32000 Byte ab „titel“ in den Bildschirmspeicher kopiert:
+
+OUTPUT ’GRAPHIK.PRG’ ;Programmnamen vorgeben
+move.w #2,-(sp) ;Physbase()
+trap #14 ;Bildschirmadresse ermitteln
+
+
+
+TRANSLATED
+==========
+
+

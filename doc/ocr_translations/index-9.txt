@@ -1,0 +1,41 @@
+ORIGINAL
+======== 
+
+
+5 Q 6 >
+
+A ET
+Scrolloff ........ AT
+
+Help: HR KEN SE
+6.7 Internas zum Debugger ...........0.0.0404
+6.8 Die Datei „OM-DEBUG.INF“ ...........
+6.9 Ein paar Tips... 2000000000000 0004
+6.10 Externe Abbruchmöglichkeiten. ..........
+6.11 Meldungen des Debuggers .............
+6.12 Der „Resident“-Befehl .......0.0...00004
+6.13 Debugger-Demo .....0.0.0.000000000004
+
+Die Makro-Version
+Ein kleines internes Problem...
+Einige Begriffserklärungen
+
+Aufbau von Betriebssystemstrukturen
+
+D.1 Boot-Sektor 1. .0.0.0.0.00000000000.0040
+D.2 Aufbau einer Symboltabelle ...........-.
+D.3 Die Symboltabelle des Assemblers .........
+D.4 Relozierinformationen. ,........0.0.0000 4
+D.5 Der Druckertreiber .........0.0.0000004
+
+Probleme mit älteren TOS-Versionen
+Assembler und OMIKRON.BASIC
+
+Laden an beliebige Adressen
+
+
+
+TRANSLATED
+==========
+
+

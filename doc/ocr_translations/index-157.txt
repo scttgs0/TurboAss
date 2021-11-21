@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 155
+
+ 
+
+Symboltable
+
+Syntax : SYMBOLTABLE [Parameter]
+Kurzform : SY
+
+Gibt die Symboltabelle, wenn vorhanden, aus. Dann kann mit den Cursor-
+tasten oder der Maus durch die Tabelle gescrollt werden.
+
+Wenn Sie eine Start- und eine Endadresse angeben, werden nur die Symbole
+angezeigt, deren Wert zwischen diesen beiden Adressen liegt. Es kann auch
+nur die Start- oder Endadresse vorgegeben werden; es wird dann ab Anfang
+bzw. bis zum Ende gesucht. Sie können als Adressen auch Labels (mit „.“
+markiert) verwendet werden.
+
+Hinter den Adressen werden noch weitere Informationen angegeben. Die Zei-
+chen bedeuten folgendes:
+
+1. + Defined
+Das Label wurde definiert. Das ist bei der Grundversion immer der Fall,
+nur bei der Linkerunterstützung wird es möglich sein, Labels vorüber-
+gehend nicht zu definieren.
+
+2. K Equated
+(oder auf gut deutsch: Konstante): Dieses Label wurde mit einem EQU-
+Befehl definiert. Der OMIKRON. Assembler nimmt solche Symbole gar
+nicht erst in die Symboltabelle auf, da Sie nur irritierten.
+
+3. G Global
+Dieses Label ist global definiert. Das kann beim OMIKRON. Assembler
+intern dadurch erreicht werden, das Sie nach der Labeldefinition nicht
+einen, sondern zwei Doppelpunkte schreiben. Das ist aber nur für Lin-
+kerunterstützung sinnvoll.
+
+4. R Registerlist
+Registerliaten werden vom OMIKRON. Assembler auch nicht abgespei-
+chert. ;
+
+5. X External
+Diese Variable wird beim Linken definiert (wird jetzt also auch noch
+nicht benutzt).
+
+
+
+TRANSLATED
+==========
+
+

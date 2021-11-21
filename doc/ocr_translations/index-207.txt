@@ -1,0 +1,38 @@
+ORIGINAL
+======== 
+
+
+Anhang G
+
+Laden an beliebige Adressen
+
+Einige unsauber programmierte Software legt sich an absolute Adressen (mei-
+stens unten im Speicher, damit sie auch auf kleinen Rechnern läuft). Wenn
+Sie nun den Debugger normal in den Speicher laden, wird er meist dahin
+gelegt, wohin sich auch das Programm kopiert. Um auch solche Programme
+debuggen zu können, gibt es das Programm L_xxxxxx.PRG in dem Ordner
+UTILITY.OMI. Die „xxxxxx“ geben die Adressen an, ab welcher der OMI-
+KRON.Debugger liegen soll.
+
+Das ganze funktioniert folgendermaßen: Mit Fafirst wird auf der Diskette
+nach einer Datei mit der Maske „L_+*,PRG“ gesucht und die sechs Ziffern
+dahinter als Adresse interpretiert. Dann wird ein Speicherbereich mit Malloc
+angefordert, der so groß ist, daß unmittelbar nach dem Speicherbereich der
+Bereich anfängt, in den der Debugger geladen werden soll. Der Debugger
+wird mit Pexec geladen; das Betriebssystem legt ihn in den gewünschten
+Bereich. Der mit Malloc angeforderte Speicher wird wieder freigegeben und
+der Debugger gestartet.
+
+Der Source liegt auch im UTILITY . OMI-Ordner — Sie können damit natürlich
+auch andere Programme als den OMIKRON.Debugger laden. Auch der Da-
+teinamenanfang „L.“ kann abgeändert werden, wenn er bei Ihnen zu Kom-
+plikationen führt.
+
+205
+
+
+
+TRANSLATED
+==========
+
+

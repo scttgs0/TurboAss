@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+148 6.6 _ Die Befehle
+
+ 
+
+gefolgt von zwei Hex-Ziffern, wird der entprechende ASCII-Code ausgege-
+ben. Das Zeichen selbst wird mit \\ ausgegeben. Mit einem „;“ am Zeile-
+nende wird kein gesendet (das gute, alte BASIC. ..). Ansonsten wird ein
+" am Zeilenende ignoriert. Damit ergibt sich auch noch eine weitere Anwen-
+dungsmöglichkeit: Es können Steuerzeichen an den Drucker gesendet werden.
+Haben Sie beispielsweise einen EPSON-Kompatiblen Drucker, schalten Sie
+ihn mit P"\OF"; auf Schmalschrift.
+
+Erase, Kill A
+
+Syntax : [ERASE|KILL] Filename
+Kurzform : ER, KI
+
+Löscht eine oder mehrere Datei auf Diskette oder Festplatte. Es wird nur die
+Fdelete (Gemdos 65) ausgeführt. Achtung: „KILL *.*“ löscht alle Datei (bis
+auf die Ordner) im aktuellen Verzeichnis!
+
+Free A
+
+Syntax : FREE [Laufwerk]
+Kurzform : FR
+
+Wenn kein Laufwerk angegeben wird, gibt der Debugger den freien Speicher
+im RAM, sonst auf dem entsprechenden Laufwerk, aus, Diese Funktion ruft
+Dfree (Gemdos 54) bzw. Malloc (Gemdos 72) auf. Bei Harddisk® wird eine
+eigene schnelle Routine verwendet,
+
+Mkdirectory A
+
+Syntax : MKDIRECTORY Filename
+Kurzform : MK
+
+Erstellt einen neuen Ordner (Make Directory). Dazu wird Dcreate (Gemdos
+57) aufgerufen.
+
+ 
+
+Soder Ramdisk mit 16-Bit-FAT
+
+
+
+TRANSLATED
+==========
+
+

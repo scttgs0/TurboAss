@@ -1,0 +1,68 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 71
+
+ 
+
+ 
+
+Text suchen und ersetzen!
+
+ 
+
+ 
+
+Allquanters# Existenzquantor:2
+
+Großzklein: Far] IB
+
+Anzahlı
+EX
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.27: Der Dialog „Text ersetzen“
+
+werden sollen, oder der Assembler vor jedem einzelnen Ersetzen fragen
+soll, ob dieser String ersetzt werden soll.
+
+® Der Text, der den alten ersetzen soll, muß auch entsprechende Stern-
+chen (keine Fragezeichen) enthalten. Wenn wir also z.B. alle „RTS“
+durch „RTE“ ersetzen wollen, schreiben wir „RTS“ in die erste Zeile
+und „“RTE*“ in die zweite.
+
+Der folgende Eintrag lautet „Sprung zu Zeile...“ (ALT-Z). Nach ihrem
+Aufruf erscheint dazu eine Dialogbox (Siehe Abbildung 5.28 auf Seite 71),
+welche die Eingabe einer Zeilennummer oder eines Symbolnamens erlaubt.
+Bei einem Symbolnamen wird die Zeile angesprungen, in der das Symbol
+definiert ist. Bei Symbolen sind Quantoren am Ende des Namens möglich!
+
+ 
+
+Springe zu
+Zeilenzunger cder Syrbolnarne:
+|
+Kl Fe]
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.28: Der Dialog „Sprung zu Zeile“
+
+
+
+TRANSLATED
+==========
+
+

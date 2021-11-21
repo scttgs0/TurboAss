@@ -1,0 +1,48 @@
+ORIGINAL
+======== 
+
+
+214 H.7_ Der RSC-Editor
+H.7 Der RSC-Editor
+
+ 
+
+H.7.1 Der Aufbau des Formats
+
+Die Dialogboxen müssen nach einem eigenen Format aufgebaut sein:
+
+Zur Beachtung
+
+es Die RSC muß stets an einer geraden Adresse anfangen, Icondaten eben-
+falls.
+
+e Texte können an beliebigen Adresse stehen.
+e Bei form. do wird automatisch zentriert,
+e objc_draw zeichnet atets den gesamten Baum neu.
+
+e Wird UNDO während der form_do-Routine gedrückt, wird in die Haupt-
+schleife zurückgesprungen
+
+e Die Rückgabe in DO enthält die Buttonnummer (gemäß der RSC, dabei
+werden nur die Buttons gezählt und zwar ab 1)
+
+Allgemeiner Aufbau
+
+ 
+
+Header: | Word | 0
+
+Word | 0
+
+Word | Breite des Baumes (für den
+Rahmen und den Redraw)
+Word | Höhe des Baumes
+
+Word | (wird intern verwaltet)
+
+
+
+TRANSLATED
+==========
+
+

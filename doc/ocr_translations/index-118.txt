@@ -1,0 +1,102 @@
+ORIGINAL
+======== 
+
+
+116
+
+6.4 Allgemeine Bedienung
+
+ 
+
+Tabelle 6.3: Zusätzliche Tastenkommandos
+
+ 
+
+ALT-<=, >
+
+ALT-CLR/HOME
+
+Damit können Sie durch den Cache blättern
+(entspricht den Pfeilen links neben der
+Registeranzeige)
+
+Zeigt die aktuellen Register an (entspricht
+dem & links von der Registeranzeige)
+
+ 
+
+CONTROL-P
+CONTROL-G
+CONTROL-B
+
+Setzt den PC an die aktuelle Adresse
+Startet das Programm
+Setzt einen Breakpoint (siehe Seite 112)
+
+ 
+
+SHIFT-SHIFT
+
+das laufende Programm wird unterbrochen
+und es wird in den Debugger zurückgekehrt
+
+ 
+
+ 
+
+CONTROL-HELP
+CONTROL-ALT-DELETE
+CONTROL-ALT-
+
+SHIFT rechts-DELETE
+ALT-SHIFT-HELP
+
+ 
+
+Der Debugger wird beendet
+
+Warmstart des Debuggers +RESET
+Kaltstart des Rechners, der gesamte
+Speicher wird gelöscht!!!
+
+Der Bildschirminhalt wird abgespeichert®.
+
+ 
+
+Tabelle 6.4: Der Zehnerblock
+
+normal und mit SHIFT
+
+mit CAPSLOCK ohne SHIFT
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+( ) / * A B C D
+
+7 8 9 - 7 8 9 E
+
+4 5 6 + 4 5 6 F
+
+1 2 3 Enter 1 2 3 Bater
+0 0 ,
+
+
+
+TRANSLATED
+==========
+
+

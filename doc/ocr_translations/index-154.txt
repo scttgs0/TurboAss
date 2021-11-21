@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+152 6.6 _ Die Befehle
+
+ 
+
+Liest einen Sektor von der Diskette ein. Dazu wird die XBIOS 8-Funktion
+verwendet. Geben Sie weder Track noch Sektor an, werden die Werte der
+entsprechenden Variablen TRACK, SEKTOR, SIDE, SEKBUFF und DRIVE
+genommen - Voreinstellung ist Track 0, Sektor 1, Seite 0, Laufwerk A (0); also
+der Boot-Sektor von Laufwerk A. Wenn Sie andere Werte angeben, werden
+die genannten Variablen geändert, so daß Sie den Sektor wieder abspeichern
+können, ohne sich die Werte merken zu müssen. Die aktuelle Adresse wird
+danach auf SEKBUFF gesetzt, Sie können den Sektor also mit MEMORY ohne
+Adreßangabe ansehen,
+
+Writesector 4
+
+Syntax : (WS|WRITESECTOR) [Parameter]
+Parameter : [Track(,Sektor(,Seite[,Adresse[,Laufwerk]]]]]
+Kurzform : W
+
+WRITESEKTOR ist das Gegenstück zu READSEKTOR - er schreibt einen
+Sektor mit XBIOS 9 auf Diskette. Vor dem Schreibe erfolgt noch eine Sicher-
+heitsabfrage. Alles andere ist genauso wie bei READSEKTOR.
+
+Readtrack
+
+Syntax : (READTRACKIRTRACK) [Parameter]
+Parameter : [Track[,Seite[,Adresse[,Laufwerk]]]]
+Kurzform : READT, RT
+
+READTRACK liest eine komplette Spur von einer Diskette ein. Dabei werden
+auch alle Daten zwischen den Sektoren eingelesen. Mit MEMORY können Sie
+sich die Spur danach ansehen. Ein erneutes Schreiben der Spur ist natürlich
+nicht möglich, da der FDC dies nicht zuläßt.
+
+Für „Seite“ sind 0 oder 1 zulässig; „Laufwerk“ 0 = A und 1 = B. Von
+Festplatte ist READTRACK natürlich nicht möglich. „Adresse“ ist die Start-
+adresse des Buffers, in den die Spurdaten gelegt werden sollen.
+
+
+
+TRANSLATED
+==========
+
+

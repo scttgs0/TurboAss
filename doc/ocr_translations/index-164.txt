@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+162 6.6 Die Befehle
+
+ 
+
+Löscht einen Speicherbereich (füllt ihn mit Nullbytes). Es entspricht also
+einem speziellen FILL-Befehl, CLR ist aber schneller. Werden keine Adres-
+sen angegeben, nimmt der Debugger die erste und letzte freie Adresse, also
+den Bereich, in den normalerweise Programme geladen werden. Die Benut-
+zung von CLR ohne Parameter dürfte wohl der Normalfall sein. Vor dem
+Löschvorgang erfolgt noch eine Sicherheitsabfrage, da es ab und zu mal vor-
+kam, daß ich mich vertippt habe und daraufhin der ganze Speicher gelöscht
+wurde,
+
+Compare
+
+Syntax : COMPARE Von,Bis,Adresse
+Kurzform : CO
+
+Dieser Befehl dient zum Vergleichen von zwei Speicherbereichen miteinander.
+Dabei wird „Von“ bis „Bis“ und „Adresse“ bis „Adresse+Bis-Von“ miteinan-
+der. Die ungleichen Stellen werden ausgegeben. Die Ausgabe der ungleichen
+Stellen, kann, wie bei FIND auch, mit SPACE gestoppt und dann mit ESC ab-
+gebrochen werden. SPACE für bei gestoppter Ausgabe auch wieder fort. Der
+Befehl CONTINUE in nicht möglich.
+
+Checksumme
+
+Syntax : CHECKSUMME [Adresse] [‚,Pr"ufsumme) [ ‚ Anzahl]
+Kurzform : CH
+
+Dieser Befehl berechnet eine Prüfsumme über die 512 Byte ab „Adresse“
+bzw. ab BUFFER (somit über den Sektor, der im Diskettenbuffer steht).
+Er gibt den Wert aus, den Sie zu einem Word addieren müssen, damit die
+Prüfsumme $1234 bzw. „Prüfsumme“ ergibt. Sinn des ganzen ist es, Boot-
+Sektoren ausführbar zu machen.
+
+Das ganze nochmal langsam: Damit ein Boot-Sektor einer Diskette ausführ-
+bar ist, d.h. damit beim Einschalten des Rechners ein Programm im Boot-
+Sektor gestartet wird, das dann ein Betriebssystem o. ä. lädt, muß die Summe
+aller Worte im Boot-Sektor $1234 ergeben (Überläufe werden nicht beachtet).
+
+
+
+TRANSLATED
+==========
+
+

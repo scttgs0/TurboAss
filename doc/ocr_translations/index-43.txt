@@ -1,0 +1,69 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER
+
+41
+
+ 
+
+CONTROL-INSERT
+
+CONTROL-D
+
+CONTROL-M
+
+ALT-M
+
+SHIFT-DELETE
+
+SHIFT-RETURN
+
+Fügt eine Leerzeile ein, die Cursorzeile rückt nach
+unten, und der Cursor steht in der eingefügten lee-
+ren Zeile
+
+Dupliziert die Zeile, in der der Cursor steht. Da-
+bei werden Remarks und Labeldefinitionen nicht
+dupliziert, da es sich in der Praxis gezeigt hat,
+daß dies gewöhnlich nicht sinnvoll ist (doppelte La-
+beldeklaration etc.)
+
+Übernimmt eine Zeile in einen internen Buffer und
+löscht sie
+
+Gibt den internen Buffer wieder aus. Das ist belie-
+big häufig möglich. In Verbindung mit CONTROL-M
+kann man sehr einfach Zeilen verschieben bzw. ko-
+
+pieren
+
+Verkettet zwei Zeilen (wenn syntaktisch möglich).
+Der Befehl erlaubt es beispielsweise, folgende Zei-
+len zu verketten:
+
+;Remark
+label:
+move.w #1000,d0
+
+Wenn Sie zweimal SHIFT-DELETE auf der Remark-
+zeile drücken, ergibt sich folgende Zeile:
+
+label: move.w \#1000,d0 ;Remark
+
+bewirkt den Gegensatz zu SHIFT-DELETE; mit die-
+ser Kombination kann man eine Zeile auseinander-
+trennen. Wenn man im obigen Beispiel zwischen
+„label:“ und „move“ SHIFT-RETURN drückt, erhält
+man wieder zwei Zeilen. Bei DC-Zeilen (siehe bei
+den Pseudo-Opcodes) ist dies nicht möglich, hier
+hilft nur CONTROL-D und Löschen des Zeilenrestes
+mit ALT-<
+
+
+
+TRANSLATED
+==========
+
+

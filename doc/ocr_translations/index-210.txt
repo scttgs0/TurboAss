@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+208 H.3 Die Routine „init“:
+
+ 
+
+e Der Modulname besteht aus maximal 8 Großbuchstaben (Ziffern und
+Sonderzeichen sind auch möglich), welcher mit Spaces auf die Länge
+von 8 Zeichen aufgefüllt sein muß.
+
+e Das letzte Langwort gibt die Gesamtlänge des Moduls an. Die Mo-
+dullänge hängt nur vom Speicherplatz im Ram ab, sie ist also nicht auf
+32KB o.ä. beschränkt.
+
+H.3 Die Routine „init“:
+
+Diese Routine wird direkt nach dem Laden der Module, noch vor der In-
+itialisierung des Assemblers angesprungen, man kann nun z.B. eine RSC
+relozieren (ACHTUNG! eigenes Format bei Resourcen)
+
+Übergabeparameter:
+A6 — Basisadresse des Moduls
+Rückgaben in DO
+
+@_init_debugger:EQU 1 ;init ok, Debugger-Modul
+@_init_ok: EQU -1 ;init ok
+@_init_error: ZEQU 0 jinit fehlerhaft
+
+;Modul nicht uebernehmen
+
+Neu ist der Rückgabewert 1, er besagt, daß das Modul den Debugger aufruft
+und der Assembler eine spezielle Symboltabelle für den Debugger erzeugen
+soll (wenn gewünscht), früher wurde die normale Symboltabelle an den De-
+bugger übergeben, der dann ganz schön gestaunt hat (Interne Bomben...)
+Wenn dieser Rückgabewert allerdings vergessen wird (und stattdessen -1
+zurückgegeben wird) nimmt der Debugger einfach gar keine Symboltabelle
+an, da der Debugger, wenn er vom Assembler aufgerufen wird, keine normale
+Symboltabelle erlaubt.
+
+Ach ja, noch was, zu diesem Zeitpunkt ist nur Mshrink() vom Assembler aus-
+geführt worden und der Prozessor in den Supervisormode geschaltet worden,
+es sind somit noch keine der Zusatzfunktionen (siehe unten) verfügbar, d.h.
+das GEMDOS muß mit TRAP #1 und nicht über JSR @trap_1(A4) aufgeru-
+fen werden!!!
+
+
+
+TRANSLATED
+==========
+
+

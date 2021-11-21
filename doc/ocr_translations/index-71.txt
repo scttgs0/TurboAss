@@ -1,0 +1,58 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 69
+
+ 
+
+ 
+
+Sunbalnaren suchen
+E] und ersetzen durch
+Allquantori# Existenzquanter:?
+
+Bereich!
+PAEUCH)
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.25: Die Dialogbox „Symbol ersetzen“
+Ersetzbegriff : block_* mit dem Suchmodus „Block“
+
+Das Symbol „unsinn“ soll im Sourcetext durch das bereits vorhandene Symbol
+„test“ ersetzt werden.
+
+Suchbegriff : unsinn
+
+Ersetzbegriff : test mit dem Suchmodus „alles“
+
+Die Warnbox ist mit „Ersetzen“ zu beantworten.
+
+Der nächste Eintrag in der Menüleiste ist „Text suchen...“ (CONTROL-L).
+Hiermit können Sie einen ASCII-Text suchen. Dazu wird der Sourcetext Zeile
+für Zeile diaassembliert und dann mit dem Suchstring verglichen (wie beim
+ASCFIND-Befehl des Debuggers). Das geht natürlich nicht besonders schnell.
+
+Mit den Quantoren (die Sie in beliebiger Anzahl benutzten dürfen; Aus-
+nahme: Dem Allquantor darf kein Existenzquantor folgen, also „*?“ ist nicht
+erlaubt!) können Sie den Suchbegriff genau einschränken. Wenn Sie nach „*“
+oder „?“ suchen wollen, können Sie allerdings andere Zeichen als Quantoren
+definieren. Quantoren am Anfang eines Suchbegriffs werden überlesen.
+
+„Groß/klein“ legt fest, ob zwischen Groß- und Kleinschreibung unterschieden
+werden soll. Darunter können Sie einstellen, ab welcher Stelle der Text durch-
+sucht werden soll. „Anfang“ bedeutet „ab dem Textanfang suchen“, „Cursor“
+steht für „ab der aktuellen Cursorposition suchen“ und „Block“ sucht nur im
+Blockbereich,
+
+
+
+TRANSLATED
+==========
+
+

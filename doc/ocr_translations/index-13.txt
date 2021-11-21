@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+Abbildungsverzeichnis
+
+5.1
+5.2
+5.3
+5.4
+5.5
+5.6
+5.7
+5.8
+5.9
+5.10
+5.11
+5.12
+5.13
+5.14
+5.15
+5.16
+5.17
+5.18
+5.19
+5.20
+
+Die Drop-Down-Menüs (eingeklappt) ..........0.00004 45
+Das Menü „Atarl“ 2... 00 40H WERK RER 47
+Die Info-BoX: .. 4 5 HRKEKEM EMRK HE 47
+Die Dankesliste .......0.0.00000000 0000000004 48
+Das Menü „Datei“ ı 100000 48
+Die Sicherheitsabfrage bei „Neu anlegen...“ .....,.,..-. 49
+Die Passwordabfrage beim Laden ......0.0.0.0.00000004 50
+Eine Symboltabelle wurde erzeugt .......0...0.0.0.00004 52
+Die Sicherheitsabfrage vor dem Überschreiben ........- 53
+Setzen des Passwords oder Seriennummerschutzes ....... 54
+Die Löschen-Dialogbox .......0.0000000000 00004 54
+Die Dialogbox beim Beenden. .......0.000000004004 55
+Das Menü „Assembler“ .....0.0.000000000 0000000 55
+Die Dialogbox nach dem Assemblieren .............4 57
+Die Sicherheitsabfrage zum Löschen des Debuggers ...... 61
+Das Menü „Editor“ ......010.0000000 00 000 0 U Hn 62
+Der Taschenrechner . ......0.0.0.0.00000000000 004 62
+Die Zeichentabelle. ......0.0.00000000 000000004 63
+Die Informationsbox ....0.00000000 0000000 HU He 64
+Der Reorganisations-Dialog ......0.000000000000 4 65
+
+
+
+TRANSLATED
+==========
+
+

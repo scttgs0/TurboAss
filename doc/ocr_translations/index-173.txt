@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+6 DER DEBUGGER 171
+
+ 
+
+gen möchte, legt wahrscheinlich Wert darauf, daß er stets in den Debugger
+zurückspringen kann. Dazu gibt es zwei Möglichkeiten:
+
+Der Debugger ist resetfest. Das bedeutet, der Debugger wird nicht dadurch
+verlassen, daß Sie RESET drücken. Wenn ein Programm sich aufhängt, so
+daß die Tastaturabfrage und somit SHIFT-SHIFT nicht mehr funktioniert,
+können Sie durch Reset in den Debugger zurückkehren. Es kann Ihnen auch
+passieren, daß Sie zwar das Bild des Debuggers sehen, aber nichts über die
+Tastatur eingeben können. Nach einem Reset funktioniert die Tastatur meist
+wieder fehlerfrei. Bei einem Reset werden vom Betriebssystem, bevor es die
+Kontrolle an den Debugger übergibt, die Register DO, AO, A5, A6, SR, SSP
+und PC verändert, Die Registerinhalte, die Ihnen der Debugger anzeigt, sind
+also nach einem Reset nicht alle richtig!
+
+Einen etwas sanfteren Abbruch können Sie über den „Ring Indicator“ aus-
+lösen. Dazu basteln Sie sich einen Taster, der am seriellen Port die Pins 22
+und 20 miteinander verbinden kann. Den Namen „Ring Indicator“ hat dieser
+Pin daher, daß ein Modem hierüber einen Interrupt auslöst, wenn angerufen
+wird. Achten Sie also darauf, daß Sie beim Debuggen kein eingeschaltetes
+Modem an den ST angeschlossen haben: Wenn Sie angerufen werden, wird
+das Programm unterbrochen. Bei diesem Abbruch werden keine Registerin-
+halte zerstört, er kann aber vom debuggten Programm durch Ändern des
+Vektors an Adresse $138 bzw. Verbieten des Interrupts im MfP verhindert
+werden.
+
+Beide Möglichkeiten sind mit Vorsicht einzusetzen. Es ist nämlich nicht si-
+chergestellt, daß Sie nach einem externen Abbruch das Programm noch feh-
+lerfrei starten können. Das AES hat Schwierigkeiten, wenn es bei der Arbeit
+abgewürgt wird und dann ohne Neuinitialisierung weitermachen soll. Daher
+sollten Sie Resets nur auslösen, wenn sich das Programm nicht im Betriebs-
+system befindet (leicht gesagt, ich weiß).
+
+6.11 Meldungen des Debuggers
+
+Der Debugger kann folgende (Fehler)meldungen ausgeben:
+
+® ?Befehl unbekannt
+Ein Tippfehler, den Befehl gibt es nicht.
+
+
+
+TRANSLATED
+==========
+
+

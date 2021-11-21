@@ -1,0 +1,58 @@
+ORIGINAL
+======== 
+
+
+58
+
+5.5 Der Editor
+
+ 
+
+belle, soweit der Speicher reicht. Nähere Informationen zum Aufbau
+einer Symboltabelle finden Sie im Tabelle D.4 auf Seite 197.
+
+. Als zweiten Punkt haben Sie die Wahl zwischen verschiedenen Möglich-
+
+keiten, das erzeugte Programm abzuspeichern bzw. in den Debugger zu
+springen.
+
+Der Assembler kann dabei maximal 12 verschiedene Auswahlmöglich-
+keiten verwalten, die vom Anwender vollkommen frei programmierbar
+sind. Dazu wurde eine ziemlich komfortable Schnittstelle implemen-
+tiert, die einem den Assembler nach allen Seiten offen hält. Eine Doku-
+mentation der Schnittstelle mit dokumentierten Beispielen, RSC-Editor
+für die internen Resourcen des Assemblers sowie einem Spiel als Bei-
+spiel zur Programmierung der Schnittstelle finden Sie im Anhang H auf
+Seite 206,
+
+Die Datei OM-ASSEM.DAT, die in der Grundversion mitgeliefert wird,
+enthält bereits einige Module, die im folgenden erklärt werden:
+
+DEBUGGER: Dieses Modul tut nichts anderes, als das Programm
+dem Debugger zu übergeben; dabei wird wahlweise eine Symbol-
+tabelle mit übergeben sowie die gesamte Assembler+=Debugger-
+Schnittstelle (siehe Kapitel 5.8 auf Seite 104) mitverwaltet.
+
+STANDARD: Hiermit kann das vorher assemblierte Programm als
+Programm (bzw. Accessory o.ä.) abgespeichert werden. Auch hier
+kann eine Symboltabelle zum späteren Debuggen an das Pro-
+gramm angefügt werden.
+
+DATAS: Für BASIC-Programmierer ziemlich interessant, wenn man
+ein Assemblerprogramm einbinden will. Der Assembler erzeugt aus
+dem Programm automatisch DATA-Zeilen, welche er zudem auch
+gleich mit einer Initialisierungsschleife versieht (Speicher reservie-
+ren und Datas einlesen). Unter OMIKRON.BASIC können Sie
+die Zeilen einfach mit „BLOCK LOAD *,*“ einlesen. Für andere
+BASIC-Dialekte müssen Sie mit einem Texteditor die erste Zeile
+entfernen und eventuell alle „$“-Zeichen entfernen.
+
+ABSOLUT: Dieser Button bietet Ihnen die Möglichkeit, ein Pro-
+gramm schon im Assembler zu relozieren.
+
+
+
+TRANSLATED
+==========
+
+

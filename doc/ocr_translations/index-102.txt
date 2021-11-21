@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+100 5.7__ Fehlermeldungen des Assemblers
+
+ 
+
+5.7 Fehlermeldungen des Assemblers
+
+Folgende Fehlermeldungen gibt der Assembler direkt bei der Eingabe aus:
+
+5.7.1 Optimierungen
+
+Die Optimierungs- und Warnmeldungen werden nur ausgegeben, wenn dies
+nicht mit OPT W- ausgeschaltet wurde (siehe Kapitel 5.6.5 auf Seite 89).
+Diese Optimierungsmeldungen werden vom Assembler bei der automatischen
+Optimierung genutzt (siehe Kapitel 5,5.1 auf Seite 34).
+
+Kann zu B??,S optimiert werden Diese Meldung bedeutet, daß der be-
+mängelte Branch-(conditionally) Befehl zu einem Branch.Short gekürzt
+werden kann.
+
+Kann zu relativem Sprung optimiert werden Man kann den JSR-Be-
+fehl durch einen BSR- bzw, ein JMP- durch einen BRA-Befehl ersetzen.
+Eventuell kann beim nächsten Assemblieren die Meldung „Kann zu
+Bec.S optimiert werden“ erscheinen.
+
+5.7.2 Warnungen
+
+Adresse wurde begradigt Wenn z.B. ein Befehl an einer ungeraden Ad-
+resse läge, wird vom Assembler automatisch ein Null-Byte davorgesetzt
+und diese Warnung gegeben.
+
+Offset/Wert wird negativ Diese Meldung erklärt sich wohl selbst.
+
+B??.S in NOP gewandelt Wenn ein Branch Short auf die nächste Adresse
+ausgeführt werden soll, müßte der Assembler als Sprungweite 0 ange-
+ben. 0 ist für den 68 000er nun aber die Kennung dafür, daß es sich
+nicht um einen Branch Short, sondern um einen normalen Branch han-
+delt; nach der 0 erwartet er ein Word Sprungweite. Dieses Word ist
+nun aber wieder der Opcode des nächsten Befehls. Der Branch Short
+kann nun aber nicht ohne weiteres in einen normalen Branch umgewan-
+delt werden, weil sich dadurch alle anderen Adreßdistanzen änderten.
+
+
+
+TRANSLATED
+==========
+
+

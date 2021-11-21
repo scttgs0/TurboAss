@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+E_PROBLEME MIT ÄLTEREN TOS-VERSIONEN _199
+
+ 
+
+RETURN abzuschließen.
+
+Zuerst das Auffinden von „kbshift“:
+
+1. 1,MOVE.L #BFFFF,-(SP)“
+
+2. !„TRAP #D“ (Das Ausrufezeichen wird vorgegeben)
+
+. F1 drücken (normales Trace)
+
+. F4 drücken (Trap tracen)
+
+5. mit ESC den Bildschirm löschen
+
+6. „IF { PC}. w=4E90“ (Abbruch, wenn der PC auf „JSR (A0)“ steht)
+7. „U“ für Untrace eingeben
+
+8. F1 drücken
+
+9. Das Listing ansehen, es muß dem Folgebeispiel (aus dem Blitter-TOS)
+ähnlich sehen:
+
+MOVEQ #0,D0
+MOVE.B $E61(A5) ,D0
+MOVE.W 4(SP),D1
+
+BMI AS mann
+MOVE.B D1,$E61(AS) |
+RTS EEE
+
+Wenn es bis auf $E61 übereinstimmt, ist die Stelle richtig. Die Zahl, welche
+an der Stelle von $E61 steht, ist unsere Adresse, welche wir notieren sollten
+(„kbshift“-Variablenadresse).
+
+So, hat das Auffinden von „kbshift“ geklappt? Dann ist „act_pd“ auch kein
+Problem mehr:
+
+1. „RESET ALL“ eingeben und bestätigen, um den Speicher zu löschen,
+etc.
+
+
+
+TRANSLATED
+==========
+
+

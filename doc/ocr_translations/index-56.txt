@@ -1,0 +1,63 @@
+ORIGINAL
+======== 
+
+
+54 5.5 Der Editor
+
+ 
+
+ 
+
+Sourcetextschutz:
+Passwort! alla |
+
+KR
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.10: Setzen des Passwords oder Seriennummerschutzes
+
+malen ASCII-Format zu speichern; dabei gehen dann natürlich alle Ein-
+stellungen, die im SRC-Format mitabgespeichert werden, verloren. Dadurch
+können Sie Ihre Programme auch an Leute weitergeben, die keinen OMI-
+KRON.Assembler haben. Außerdem ist das nötig, wenn Sie Ihr Programm
+in ein anderes einfügen wollen (mit der Funktion „Zuladen...“). Falls Sie
+einen Block markiert haben, erscheint eine Dialogbox, die es Ihnen erlaubt,
+entweder nur diesen Block oder das ganze Programm zu speichern. Das Ab-
+speichern eines Blockes ist nur im ASCIHI-Format möglich.
+
+Mit „Datei löschen...“ können Sie Ihre gesamte Harddisk fileweise leeren,
+nur um Platz für die neuesten Sourcetexte zu schaffen. Dazu erscheint ein
+Fileselector, der Ihnen die Auswahl des zu löschenden Programms erlaubt;
+wenn Sie die darauffolgende Sicherheitsabfrage (Siehe Abbildung 5.11 auf
+Seite 54) mit „Ja“ beantworten, sind Sie das File los.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.11: Die Löschen-Dialogbox
+
+„Ende...“ (SHIFT-F10 oder CONTROL-X) gibt Ihnen die Möglichkeit, den
+Assembler ohne RESET zu verlassen und zum Desktop zurückzukehren.
+Wenn Sie Ihren aktuellen Sourcetext brav gesichert haben, erscheint nach
+CONTROL-X keine Abfrage mehr. SHIFT-F10 oder der Menüeintrag erzwin-
+gen jedoch eine Abfrage. Falls Sie den Sourcetext nicht gesichert haben, er-
+scheint eine Dialogbox (Siehe Abbildung 5.12 auf Seite 55), welche Ihnen
+
+
+
+TRANSLATED
+==========
+
+

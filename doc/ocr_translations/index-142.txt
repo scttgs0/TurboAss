@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+140 6.6 Die Befehle
+
+ 
+
+VDI Nummer 2B
+BIOS Nummer 13 oder D
+XBIOS Nummer 14 oder E
+
+Außerdem werden bei jedem Trapaufruf — unabhängig von OBSERVE - die
+Parameter einem Plausibilitätstest unterworfen. Bei einigen Programmen ist
+das störend, weil sie für ungenutzte Arrays als Adresse 0 angeben, was der
+Debugger bemängelt. Deshalb kann dieser Test mit der Variable AESFLAG
+(siehe Kapitel 6.6.3 auf Seite 128) unterbunden werden.
+
+Cacheeclr
+
+Syntax : CACHECLR
+Kurzform : CACHEC
+
+Löscht den Cache, d.h. alle Register werden auf 0 gesetzt (bis auf die aktuel-
+len natürlich).
+
+Cacheget
+
+Syntax : CACHEGET
+Kurzform : CACHEG
+
+GETCACHE holt die Werte der Registeranzeige, die momentan angezeigt wer-
+den, zurück in die aktuellen Register. Das bedeutet: Wenn Sie ein Programm
+mit UNTRACE durchlaufen haben, im Cache danach zurückblättern und dann
+das Programm ab einer Stelle nochmal durchlaufen lassen wollen, geben Sie
+GETCACHE ein. Dann schreibt der Debugger die Register D0-D7, A0-A7
+(Supervisor und User), das Statusregister und den PC zurück.
+
+Beim Benutzen dieses Befehls muß man natürlich aufpassen: Wenn das Pro-
+gramm Speicherstellen modifiziert, kann eine mehrmalige Ausführung zu
+anderen Ergebnissen führen. Probleme kann es selbstverständlich auch bei
+selbstmodifizierenden Programmen geben.
+
+
+
+TRANSLATED
+==========
+
+

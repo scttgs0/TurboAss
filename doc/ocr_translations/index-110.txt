@@ -1,0 +1,95 @@
+ORIGINAL
+======== 
+
+
+108 6.3 Für den Anfänger
+
+ 
+
+3. Weitere Möglichkeiten entnehmen Sie bitte Kapitel 6.12 auf Seite 174.
+
+Wenn der Debugger resident im Speicher liegt, können Sie mit ihn auch vom
+
+Desktop aus aufrufen, indem Sie das Programm CALL.PRG starten.
+
+6.3 Für den Anfänger
+
+Es ist nicht nötig, alles zu verstehen, um sinnvoll mit dem Debugger arbei-
+ten zu können. Einige Befehle reichen aus, um die meisten Fehler finden zu
+können. Für Spezialfälle ist es jedoch wichtig, über ein Höchstmaß an Fle-
+xibilität zu verfügen. Wir wollen dem Fortgeschrittenen diese Möglichkeiten
+
+nicht vorenthalten.
+
+6.4 Allgemeine Bedienung
+
+6.4.1 Der Bildschirmaufbau
+
+   
+     
+ 
+ 
+ 
+
+ 
+
+    
+ 
+
+Yoxdunp Oise
+Part Marker Em Info
+
+irete Do Pe
+ir 630? 6 Le (0
+310 Ü
+
+(aD+
+dbra at aa
+moaven,) (SP)+,D0-RS
+
+Pt5
+get.cher: 102 $RB(RE), RO
+
+ 
+
+Cine
+
+  
+
+ROVER D3
+
+Hier aktuelle PC AOVE,D $16(09),03
+up
+
+novep.m SFFFF(RB),DI
+
+Rove.b N” ‚02
+
+ext.N
+
+D rts
+1® verzugerung! move,n #$4E20,D0
+Bl ereereenl dir” 59, ‚verzögerungl
+
+ 
+
+Abbildung 6.1: Die Bildschirmseite
+
+  
+      
+
+    
+
+Sudtch
+
+ 
+
+8888 FFFFFFFF
+9107268 EB ß
+
+
+
+TRANSLATED
+==========
+
+

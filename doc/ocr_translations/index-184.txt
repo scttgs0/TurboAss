@@ -1,0 +1,41 @@
+ORIGINAL
+======== 
+
+
+Anhang B
+
+Ein kleines internes Problem...
+
+Dann gibt es noch eine weitere Dialogbox, die wir wohl erklären müssen,
+obwohl wir hoffen, daß Sie sie nicht erreichen werden:
+
+Der OMIKRON. Assembler fängt (hoffentlich) alle Fehler ab, die entstehen
+können (also Busfehler, Adreßfehler usw.). Dann gibt er alle Daten- und
+Adreßregister, und was sonst noch zur Fehlersuche praktisch ist, in dieser
+Dialogbox aus. Schreiben Sie bitte alle diese Werte ab (für die Schreibfau-
+len gibt es den „Drucken“-Button, der alles auf einem beliebigen Drucker
+(naja gut, einen Laserdruckertreiber haben wir nicht drin) ausgibt. Mit dem
+„Ende“-Button wird dann der Assembler verlassen (ohne irgendetwas zu spei-
+chern), mit dem „zurück“-Button kommt man wieder in den Editor. Versu-
+chen Sie dann, den Fehler noch einmal zu produzieren, indem Sie das gleiche
+wie beim letzten Mal tippen. Wenn der Fehler auch reproduzierbar ist, wenn
+Sie den Rechner ausgeschaltet haben und das ganze von vorne versuchen,
+dann schicken Sie uns bitte den Ausdruck dieser Dialogbox mit einer weite-
+ren Beschreibung des Fehlers zu. Wenn der Fehler nur bei bestimmten Sources
+auftritt, packen Sie diese am besten dazu. Sie können auch Ihren Assembler
+dazulegen, wenn auf der Diskette noch Platz ist. Dann können wir Ihnen
+gleich eine neue Version zuschicken, wenn wir den Fehler behoben haben.
+Eine Adresse von XZ-soft finden Sie auf der Titelseite.
+
+182
+
+AR
+
+SE
+
+
+
+TRANSLATED
+==========
+
+

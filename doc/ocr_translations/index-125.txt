@@ -1,0 +1,32 @@
+ORIGINAL
+======== 
+
+
+6_ DER DEBUGGER 123
+
+ 
+
+6.5.20 SHIFT-F10 — Quit
+
+Mit „Quit“ kann man den Debugger nach einer Sicherheitsabfrage verlassen
+(Siehe Abbildung 6.6 auf Seite 123).
+
+ 
+
+Möchten Sie den
+Debunger verlassen?
+
+ 
+
+ 
+
+ 
+
+Abbildung 6.6: Programmende des Debuggers
+
+
+
+TRANSLATED
+==========
+
+

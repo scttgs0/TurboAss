@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+46
+
+5.5 Der Editor
+
+ 
+
+Tabelle 5.3: Die Escape-Belegungen
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Taste | ohne SHIFT | mit SHIFT
+A | ADD.W ADD.L
+B |BRA BSR
+C |CMP CLR
+D [|DBRA DIVU
+E |EOR EXT
+F FAIL
+I ILLEGAL IBYTES
+J JSR JMP
+L LEA
+M | MOVE MULU
+N |NOT NEG
+Oo |OR OUTPUT
+P |PEA PATH
+Q | ADDQ MOVEQ
+R |RTS ROL
+Ss SUB SWAP
+T [|TST TRAP
+U [|UNLK
+X |XOR
+
+ 
+
+TRANSLATED
+==========
+
+

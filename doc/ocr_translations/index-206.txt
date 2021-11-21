@@ -1,0 +1,84 @@
+ORIGINAL
+======== 
+
+
+204
+
+ 
+
+move.l 28(a0),d5
+move.l -6(a6),d7
+
+loop: move.l (a6)+,a5
+
+add.l d5,a5
+move (a6)+,d6
+subg #1,d6
+
+sloop:moveq #0,d0
+move.b (aS)+,d0
+move d0,-(sp)
+
+move #2,-(sp)
+trap #1
+addq.l #4,sp
+
+dbra d6,sloop
+
+pea cr(pc)
+move #9,-(sp)
+trap #1
+
+addq.l #6,sp
+
+dbra d7,loop
+rts
+er: de.b 13,10,0
+
+;Stringbufferadresse -> d5
+
+;Anzahl der Strings-1
+
+;-6: eindimensionale Arrays)
+;Zeiger auf ersten String relativ
+;zum Stringbuffer
+
+‚Adresse des Stringbuffers addieren
+;Laenge des Strings
+
+;Fuer DBRA eins subtrahieren
+
+;D0 erstmal loeschen
+
+;Ein Zeichen holen
+
+;Der Umweg muss sein, da das Zeichen
+;als Word auf dem Stack stehen muss.
+;Funktionsnummer
+
+;Gemdos
+
+;Stackkorrektur
+
+;Ganzen String ausgeben
+
+;CR und LF ausgeben
+;Cconws
+
+;Naechster String
+
+;CR und LF
+
+Über zerstörte Registerinhalte müssen wir uns innerhalb des Assemblerpro-
+gramms keine Gedanken machen: Die Register D5-D7 und A5-A6 werden
+durch einen Gemdos-Aufruf nicht verändert (und den Wert von D0 müssen
+wir uns nicht merken). Ich habe Gemdos 9 (Cconws) für den String nicht
+benutzt, sondern alle Zeichen einzeln ausgegeben, weil ein String nicht null-
+terminiert im Speicher liegen muß.
+
+
+
+TRANSLATED
+==========
+
+

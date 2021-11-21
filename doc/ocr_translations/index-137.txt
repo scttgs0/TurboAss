@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 135
+
+ 
+
+führt ein Unterprogramm ab der Adresse aus, Das Unterprogramm sollte
+mit einem RTS abgeschlossen sein - es kehrt dann wieder in den Debugger
+zurück. Wenn weder Adresse noch Breakpoint angegeben werden, wird ein
+Breakpoint hinter den nächsten Befehl gesetzt und der aktuelle ausgeführt.
+Normalerweise entspricht DO ohne Adresse/Breakpoint also TRACE ohne
+Term, nur wenn der aktuelle Befehl ein JSR oder BSR ist, wird bei DO das
+ganze Unterprogramm ausgeführt. Bei JMP, BRA o.ä. ist DO meist nicht
+sinnvoll, da der PC wohl nicht so schnell hinter dem JMP (o. ä.) landen wird.
+
+Achtung: CALL ist der einzige Fall, in dem der Debugger unter Umständen
+den TRAP # 3 belegt.
+
+Untrace
+
+Syntax : UNTRACE [Adresse] (‚Anzahl]
+Kurzform : U
+
+Mit UNTRACE können Sie ein Programm wie mit TRACE durchlaufen lassen;
+der Debugger kontrolliert aber nach jedem Befehl, ob eine Abbruchbedingung
+erfüllt ist. Diese Bedingungen werden mit IF gesetzt.
+
+Der Programmablauf wird dabei natürlich erheblich verlangsamt, weil pro
+Befehl des Programms eine ganze Reihe von Vergleichsbefehlen des Debug-
+gers ausgeführt werden müssen.
+
+Außerdem speichert der Debugger die letzten 256 Befehle in einem soge-
+nannten Cache. Sie können die Befehle mit den zugehörigen Registerinhalten
+nachträglich ansehen. Dazu klicken Sie auf einen der Pfeile, die links neben
+der Registeranzeige stehen.
+
+Mit dem Pfeil nach links „blättern“ Sie einen Befehl zurück, das heißt, Sie
+sehen den Befehl, der zuletzt ausgeführt wurde sowie die Registerinhalte.
+Mit dem Pfeil nach rechts „blättern“ Sie dementsprechend wieder nach vorn.
+Mit dem „Fuller“ oben links können Sie zum aktuellen Befehl springen. Mit
+der rechten Maustaste können Sie gleich neun Befehle überspringen, also in
+Zehnerschritten blättern.
+
+
+
+TRANSLATED
+==========
+
+

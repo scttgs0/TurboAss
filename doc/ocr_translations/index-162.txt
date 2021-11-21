@@ -1,0 +1,47 @@
+ORIGINAL
+======== 
+
+
+160 6.6__Die Befehle
+
+ 
+
+CONTINUE setzt die Ausführung von FIND, HUNT und ASCFIND fort, wenn
+diese nach Space abgebrochen wurde, Dies ist nicht mehr möglich, wenn
+zwischendurch |Befehl (direkt ausführen) oder FILL ausgeführt wurde. Wenn
+die Endadresse erreicht wurde, ist CONTINUE natürlich auch nicht mehr
+möglich.
+
+Info
+
+Syntax : INFO
+Kurzform : I
+
+Dieser Befehl gibt den Start von Text-, Data- und Block-Storage-Segment
+(BSS) entsprechend den Einträgen der Basepage an. Dieser Befehl ist auch
+über eine Funktionstaste erreichbar; dann werden die Informationen aber in
+einer Dialogbox ausgegeben.
+
+?
+Syntax : ?Tern{,Term}
+Kurzform : ?
+
+Der Befehl (angelehnt an den PRINT-Befehl in BASIC) rechnet den Term
+aus und zeigt das Ergebnis in hex, dezimal, binär und ASCII an.
+
+Sie können diesen Befehl also benutzen, um in andere Zahlensysteme umzu-
+rechnen, Zahlen mit Registern zu verrechnen o.ä.
+
+Beispiel: „?15*.10+7a5“
+$72534 ‚468276 %1110010010100110100 " %4"
+Move, Copy
+
+Syntax : (MOVEICDPY] Von,Bis,Nach
+Kurzform : MO, COP
+
+
+
+TRANSLATED
+==========
+
+

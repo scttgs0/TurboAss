@@ -1,0 +1,64 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 117
+
+ 
+
+6.5 Die Funktionstasten
+
+ 
+   
+
+         
+ 
+
+   
+
+iracc Do PR Tracris ftraDs
+3063028 inosubs Tracrte Go
+
+Shıp PC Dır Herdunp Dısasen 147 SHE
+Överwet Marker ercako_ info Siruct Quar
+
+  
+
+Abbildung 6.2: Die Funktionstastenleiste
+
+Mit den Funktionstasten (Siehe Abbildung 6.2 auf Seite 117) können Sie viele
+häufig benutzte Befehle des Debuggers abrufen.
+
+6.5.1 F1-— Trace
+
+„Trace“ führt den aktuellen Befehl im Einzelschrittmodus aus. Den aktuellen
+Befehl sehen Sie über der Registeranzeige. Wenn dann kein Listing Ihres
+Programms auf dem Bildschirm steht, wird ab dem PC gelistet. Die Zeile,
+auf der der PC steht, wird immer mit „>“ statt „>“ nach der Adresse (links)
+gekennzeichnet (Siehe Abbildung 6.1 auf Seite 108),
+
+Beim Einzelschrittmodus wird vor der Befehlsausführung der Bildschirm
+physikalisch umgeschaltet. Dadurch kann es manchmal zu schwachem Bild-
+schirmflackern kommen; meistens wird dieses jedoch durch eine gute Syn-
+chronisation vermieden, Dieses Verfahren hat gegenüber dem logischen Um-
+schalten anderer Debugger den entscheidenden Vorteil, daß das debuggte
+Programm immer auf den richtigen Bildschirm schreibt.
+
+6.5.2 SHIFT-F1 — Tracesimulator 68 020
+
+„Trace 68 020“ simuliert den Trace-Befehl des 68 020. Es wird das Programm,
+ähnlich dem normalen Trace, ausgeführt; abgebrochen wird aber bei jedem
+TRAP oder irgendeinem Sprungbefehl (Branch, Jump, RTS o.ä.). Er ist in
+der Ausführung etwas schneller als UNTRACE, obwohl er nach jedem Schritt
+den Opcode am PC (Programm-Counter) testen muß.
+
+6.5.3 F2— Do PC
+
+„Do PC“ setzt einen Breakpoint hinter den aktuellen Befehl und startet
+
+
+
+TRANSLATED
+==========
+
+

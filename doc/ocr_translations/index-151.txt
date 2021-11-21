@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+6 DER DEBUGGER 149
+
+ 
+
+Rmdirectory A
+
+Syntax : RMDIRECTORY Filename
+Kurzform : RM
+
+Löscht einen Ordner (Remove Directory). Der Ordner muß leer sein - alle
+Dateien innerhalb des Ordners müssen zuvor einzeln mit KILL bzw. ERASE
+gelöscht werden. Diese Funktion ruft Ddelete (Gemdos 58) auf.
+
+Name 4A
+
+Syntax : NAME Altname,Neuname
+Kurzform : N
+
+Dieser Befehl dient zum Ändern eines Dateinamens. Es ist nicht nötig, den
+Pfad zweimal einzugeben: Wenn die Datei nicht im aktuellen Inhaltsverzeich-
+nis liegt, reicht es, NAME Alter Name, Pfad\Neuer Name einzutippen. Der
+aktuelle Pfad wird entsprechend neu gesetzt. Dieser Befehl ruft Frename
+(Gemdos 86) auf.
+
+Fattribut A
+
+Syntax : FATTRIBUT [Name] [‚Attribut]
+Kurzform : FA
+
+Dieser Befehl setzt das Fileattribut (siehe Tabelle 6.8 auf Seite 150) für das
+angegebene File. Wird kein Name angegeben, wird der aktuelle Name be-
+nutzt. Wenn kein Attribut angegeben wird, gibt der Debugger das Attribut
+aus,
+
+Wenn Sie ein File als schreibgeschützt und hidden kennzeichnen wollen, tip-
+pen Sie „FA NAME, 11|2“ oder „FA NAME 3“. Bis zur Betriebssystemversion 1.3
+ist das Ändern von Ordnern nicht möglich. Achtung: Wenn Sie ein File als
+Diskettennamen deklariert haben (Bit 3 gesetzt), können Sie es danach mit
+FATTRIBUT nicht mehr ändern.
+
+
+
+TRANSLATED
+==========
+
+

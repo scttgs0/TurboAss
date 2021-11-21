@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+5__DER ASSEMBLER 75
+
+ 
+
+1. In der linken Spalte können Sie die Tabulatorpositionen festlegen. Die
+Labels werden immer am linken Rand (nicht eingerückt) ausgegeben.
+Alle anderen Einrückungen können frei definiert werden:
+
+Befehlstab: Position der Opcodea
+Operandentab: Position der Operanden
+Remarktab: Position der Kommentare
+
+Pseudooptab: Position der Pseudoopcodes (ist normalerweise =
+Befehlstab)
+
+Pseudo-Remtab: Position der Kommentare, die hinter Pseudoopco-
+des stehen. Da Pseudoopcodes meist kürzer als Be-
+fehle mit Operanden sind, wird dieser Wert meist
+kleiner als der Remarktab gesetzt.
+
+2. In der rechten Spalte können Sie das Format für den Disassembler be-
+einflussen. Sie können getrennt für Opcodes (Befehle), Pseudoopcodes,
+Register (das „D“ bzw. „A“) und die Buchstaben von Hexzahlen einstel-
+len, ob sie in Groß- oder Kleinbuchstaben ausgegeben werden sollen. Sie
+können wählen, ob „A7“ durch „SP“ ersetzt werden soll (wobei die Ein-
+stellung „Register groß/klein“ beeinflußt, wie „SP“ geschrieben wird)
+und ob führende Nullen bei Zahlen weggelassen werden. Wenn „Zahl
+kürzen“ ausgeschaltet ist, werden Zahlen entsprechend der Länge ange-
+zeigt, in der sie auch im Programmcode abgespeichert sind, Wenn Sie
+beispielsweise „move.w #$124,d0“ eingeben, wird die Zahl als „$0124“
+(Wordbreite). Bei „move.] #$124,d0“ oder „move.w $124,d0“ wird dar-
+aus „$00000124“, „Kürzen“ bedeutet für den Assembler, daß er die
+führenden Nullen auf Bytebreite kürzt. Also würde die Zahl in jedem
+der drei Beispiele als „$0124“ angezeigt.
+
+Diese Einstellungen haben keinerlei Auswirkungen auf die Funktion
+des Assemblers. Sie dienen lediglich dazu, die Ausgabe nach Ihrem Ge-
+schmack übersichtlicher zu gestalten.
+
+Editor 1... (F4): In der Dialogbox (Siehe Abbildung 5.32 auf Seite 76) kön-
+nen verschiedene Einstellungen gemacht werden. Oben wird die Cursorform
+festgelegt. Die Ziffern bedeuten folgendes:
+
+
+
+TRANSLATED
+==========
+
+

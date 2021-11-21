@@ -1,0 +1,39 @@
+ORIGINAL
+======== 
+
+
+Kapitel 4
+
+Gemeinsames von Assembler
+und Debugger
+
+4.1 Die Benutzeroberfläche
+
+Die Benutzeroberfläche lehnt sich an GEM an, wurde aber vollkommen neu
+programmiert, Dies ist nötig, weil Abstürze von GEM-Programmen (die be-
+sonders durch Assemblerprogramme leicht zu erzeugen sind) häufig das ge-
+samte GEM lahmlegen. Sie können mit dem OMIKRON. Assembler jedoch
+auch bei zerstörtem GEM noch weiterarbeiten, bzw., was sicherlich besser ist:
+Ihren Sourcetext abspeichern‘, RESET drücken und das System neu starten.
+
+4.2 Die Dialogboxen
+
+Die Dialogboxen entsprechen denen des GEM, arbeiten aber auch vom Be-
+triebssystem gänzlich unabhängig. Wie unter GEM gibt es Radio-Buttons
+(von denen immer nur einer angewählt (selected) ist) und Exit-Buttons. Mit
+letzteren wird ein Dialog verlassen. In ihnen stehen nur Großbuchstaben, da-
+mit sie sofort als Exit-Buttons erkannt werden können. Der Default-Button
+ist mit etwas breiterem Rahmen dargestellt.
+
+ 
+
++Wenn das Gemdos beschädigt wurde, ist das eventuell nicht mehr möglich. ..
+
+20
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,69 @@
+ORIGINAL
+======== 
+
+
+56_ DER DEBUGGER 127
+
+o "D(0-7):
+o ”A(0-7):
+o SHIFT:
+
+CONVERT:
+
+ACT-PD:
+o KLICK:
+
+IKBD:
+
+o TDELAY:
+
+o SCROLLD:
+
+ 
+
+Die Datenregister
+Die Adreßregister
+
+1= Abfrage SHIFT-SHIFT wird verhindert. Damit klinkt
+der Debugger sich nicht vor den Tastaturtreiber.
+
+zeigt auf eine 256 Byte-ASCII-Konvertierungstabelle. Wenn
+der Debugger bei MEMORY und ASCII ein Zeichen ausge-
+ben will, wird das Zeichen gemäß dieser Tabelle konvertiert.
+Der Aufbau der Tabelle ist in Kapitel 6.8 auf Seite 169 be-
+schrieben.
+
+Basepage des aktuellen Prozesses
+
+0 Disassemble, = 0 Memory/Dump nach Doppelklick auf
+Adresse
+
+Zeiger auf einen 20 Byte-Buffer, der vor jedem Befehl (wie
+TRACE, GO u.s.w.) zum Tastaturprozessor gesendet wird.
+Das erste Byte gibt die Länge des Buffers an. Sinnvoll ist
+das z. B., wenn Sie eine automatische Joystickmeldung ein-
+gestellt haben. Der Debugger muß dies natürlich immer
+wieder abschalten, damit die Maus und Tastatur normal
+funktionieren. Dann können Sie den Befehl zur automati-
+schen Joystickmeldung in diesen Buffer schreiben.
+
+Mit dieser Varbiablen kann eingestellt werden, wie lange
+nach einem TRACE (F1-F5) gewartet werden soll. Default
+ist 0. Bei einigen Rechnern prellt die Tastatur (minimal),
+deshalb werden bei ihnen bei einem Tastendruck gleich 2
+Befehle ausgeführt. Dann können Sie TDELAY auf Werte bis
+65535 hochsetzen. Auf einem unserer ST’s hat sich 30 000
+als praktisch erwiesen.
+
+Scrollverzögerung bei CONTROL. Wenn Sie beim Scrollen die
+CONTROL- Taste drücken, wird die Geschwindigkeit verrin-
+gert (da werden Erinnerungen an den 64er wach...). Je
+größer dieser Wert ist, desto langsamer wird gescrollt. Die
+Voreinstellung ist 20000. Möglich sind Werte bis zu 65 535.
+
+
+
+TRANSLATED
+==========
+
+

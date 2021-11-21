@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+D_ AUFBAU VON BETRIEBSSYSTEMSTRUKTUREN 191
+
+D.1 Boot-Sektor
+
+Der Aufbau des Bootsektors ist in Tabelle D.3 beschrieben. Dazu noch fol-
+gende Ergänzungen:
+
+Das letzte Word wird meist dazu verwendet, die Prüfsumme über den Boot-
+sektor auf $1234 zu setzen,
+
+Wie konvertiert man nun das eklige low Byte/high Byte-Format in das nor-
+male high Byte/low Byte-Format? Einfach ist es, wenn das low Byte an einer
+ungeraden Adresse liegt, wie z.B. bei Nsects. Wir nehmen an, Sie haben in
+A0 den Anfang des Boot-Sektors:
+
+move.w $14(a0),d0 ;High Byte laden 12 Taktzyklen
+move.b $13(a0),d0 ;Low Byte laden 12 Taktzyklen
+
+Zusammen also 24 Taktzyklen, Schwieriger ist es bei geraden Adressen (z. B.
+Nsides; $1A). Ungünstig ist folgendes:
+
+move.b $1B(a0),d0 ;High Byte laden 12 Taktzyklen
+asl.w #8,d0 jund verschieben 24 Taktzyklen
+move.b $1A(a0),d0 ;Low Byte laden 12 Taktzyklen
+Dieses Verfahren benötigt also 48 Taktzyklen. Günstiger ist es mit MOVEP:
+
+movep.w $1B(a0),d0 ;High Byte laden 16 Taktzyklen
+move.b $1A(a0),d0 ;Low Byte laden 12 Taktzyklen
+
+Hierbei werden also nur 28 Taktzyklen gebraucht.
+
+D.2 Aufbau einer Symboltabelle
+
+Die Länge der Symboltabelle steht in der Basepage. Wenn eine Symboltabelle
+vorhanden ist, liegt sie hinter dem DATA-Segment. Jeder Eintrag ist 14 Byte
+lang:
+
+ 
+
+1L/H bedeutet, daß der Wert im MS-DOS-kompatiblen low Byte/high Byte Format
+abgespeichert ist (Also das niederwertige Byte zuerst). Es wird auch Intel-Format genannt.
+
+
+
+TRANSLATED
+==========
+
+

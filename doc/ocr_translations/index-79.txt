@@ -1,0 +1,61 @@
+ORIGINAL
+======== 
+
+
+5_DER ASSEMBLER 77
+
+ 
+
+bleibt der Cursor auf der fehlerhaften Zeile stehen. Bei „von vorne“ springt
+der Cursor nach dem letzten Fehler wieder auf den ersten Fehler im Source.
+Dann gibt es nicht die Einstellung „letzte Zeile“; der Cursor springt, wenn
+es keine weiteren Fehler im Source gibt, hinter die letzte Zeile des Sources,
+
+Mit „Suchzeichen“ kann das Zeichen eingestellt werden, das auf das Semi-
+kolon folgen muß, um diese Zeile mit ALT-S anspringen zu können. Wenn
+Sie also „#“ einstellen und dann an einen Zeilenanfang „;#“ schreiben, wird
+diese Zeile angesprungen, sobald Sie ALT-(SHIFT-)S drücken (siehe Kapi-
+tel 5.5.5 auf Seite 56).
+
+Editor 2... (SHIFT-F7): In dieser Box (Siehe Abbildung 5.33 auf Seite 77)
+können Sie verschiedenes einstellen. „Sicherheitskopie“ bedeutet, daß beim
+
+ 
+
+Sicherhaitskopie: E7Jar}
+Tastaturklick : Fa] MM
+Sunbolnenen : [re]
+Sprung in den Dabugger:
+
+Extension für ASCII-Sourcen:; S_
+
+Rutokonfig. beim Laden: Fan)
+PRN-Ausgabe Uber 8105: Jar]
+Buicknaus: F Ja] | |
+Konpakter: SIENN Cöein]
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.33: Die Dialogbox „Editor 2“
+
+Abspeichern von SRC-Dateien eine Sicherheitskopie angelegt wird. Dazu wird
+erst der alte Source als BAK-Datei umbenannt, dann wird der neue mit SRC-
+Extension gespeichert. Dadurch kann auch nichts passieren, wenn beim Ab-
+speichern der Strom ausfällt (dann haben Sie wenigstens noch den alten
+Source).
+
+Unter „Tastaturklick“ können Sie den Tastaturklick abschalten, nicht aber
+den Ton, der bei Erstbenutzung von Symbolen erklingt.
+
+„Symbolnamen“ ermöglicht Unterscheidungen zwischen Groß- und Klein-
+
+
+
+TRANSLATED
+==========
+
+

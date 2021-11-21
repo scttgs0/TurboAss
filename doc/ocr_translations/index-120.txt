@@ -1,0 +1,48 @@
+ORIGINAL
+======== 
+
+
+118 6.5 Die Funktionstasten
+
+ 
+
+das Programm. Im Normalfall bewirkt diese Funktion damit das gleiche wie
+Trace. Wenn der Befehl jedoch ein Unterprogrammaufruf ist, wird das ganze
+Unterprogramm ausgeführt (so, als wäre es ein Befehl). Ist der Befehl je-
+doch ein Sprungbefehl, kann es sein, daß das Programm nicht mehr abge-
+brochen wird, weil ja der Breakpoint nie erreicht wird. Außerdem kann mit
+„Do PC“ ein Permanent-Breakpoint übersprungen werden. Wenn man auf ei-
+nem DBRA o.ä. steht, wird die ganze Schleife ausgeführt und das Programm
+erst wieder abgebrochen, wenn die Schleife verlassen wurde.
+
+6.5.4 SHIFT-F2 — Trace no subroutines
+
+„Trace no subroutines“ führt einen Befehl aus (wie Trace (siehe Kapitel 6.6.5
+auf Seite 134)), überspringt aber Unterprogramme (d.h. sie werden nicht im
+Einzelschrittmodus ausgeführt). DBRA-Schleifen u.ä. werden aber wie bei
+Trace behandelt. Außerdem kann es Ihnen nicht wie bei „Do PC“ passieren,
+daß Sie nach einem ausgeführten Branch nicht beim Breakpoint ankommen
+(Wenn Sie auf einem BRA „Do PC“ drücken, wird sich der Debugger meist
+nicht wieder melden; bei „Trace no subroutines“ wird nur der BRA aus-
+geführt.).
+
+6.5.5 F3 — Trace until RTS
+
+„Trace to RTS“ startet das Programm und bricht erst ab, wenn das aktuelle
+Unterprogramm verlassen wurde. Das heißt, wenn Sie ein Unterprogramm
+mit Trace gestartet haben und nun den Rest bis zum RTS überspringen wol-
+Jen, drücken Sie F3. Der Debugger orientiert sich dabei am PC und nicht
+an RTS-Befehlen; wenn das Unterprogramm also weitere Unterprogramme
+aufruft, die ihrerseits mit RTS zurückspringen, werden deren RTS-Befehle
+nicht berücksichtigt. Technisch wurde diese Funktionen relativ einfach rea-
+lisiert, indem das oberste Langwort auf dem Stack gerettet wird und eine
+Rücksprungadresse in den Debugger dort abgelegt wird. Wenn in diese Rou-
+tine durch den RTS gesprungen wird, wird die gemerkte Rücksprungadresse
+wieder auf dem Stack abgelegt.
+
+
+
+TRANSLATED
+==========
+
+

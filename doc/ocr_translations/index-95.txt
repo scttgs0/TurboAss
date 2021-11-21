@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 93
+
+ 
+
+move.1l wert2-varbase(a4),a0 ;2.Wert holen
+
+BSS
+varbase:
+wert2:ds.l 1
+wert:ds.w 1
+
+Beispiel 1.b) (Verwendung von BASE):
+
+lea varbase ‚a4 ;Zeiger auf Variablentabelle
+
+base a4 ,varbase ;Bezugsadresse zu A4 setzen
+
+move.W wert(a4),d0 ;der Assembler setzt hier
+;automatisch
+
+move.1 wert2(a4),a0 ;den Offset wert-varbase bzw.
+;wert2-varbase ein
+varbase:BSS
+wert2:ds.1l 1
+wert:ds.wW 1
+
+2. „BASE DC.(B|W)“: Bei jedem folgenden DC-Befehl entsprechender
+Breite wird der Wert subtrahiert, wenn er relozierbar ist. Zusätzlich
+steht hier noch als Bezugswert PC zur Verfügung. Damit ist es möglich,
+Tabellen anzulegen, die man auf folgene Weise ansprechen kann:
+
+Beispiel 2.a) (konventionelle Methode):
+
+move.w tabelle(pc,d0),d0 ;Sprungoffset holen
+jmp tabelle(pc,d0) ;Sprung in Routine
+tabelle: dc.w routine-tabelle,routine2-tabelle,..
+;Tabelle mit Sprungoffsets
+routinel: ...,
+routine2: ....
+
+Mit dem BASE-Befehl kann die Sprungtabelle vereinfacht werden:
+Beispiel 2.b):
+
+BASE DC.W,tabelle
+;Bezugsadresse zu Label
+
+
+
+TRANSLATED
+==========
+
+

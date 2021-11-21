@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+56 5.5__Der Editor
+
+ 
+
+eo Einfache Warnungen (Kann zu Bcc.S optimiert werden)
+
+Eine vollständige Liste aller Fehlermeldungen steht weiter hinten (siehe Ka-
+pitel 5.7 auf Seite 100).
+
+Bei fatalen Fehlern wird die Assemblierung sofort abgebrochen, eine Dialog-
+box mit der Fehlerursache erscheint, und nach RETURN springt der Editor in
+die entsprechende Zeile.
+
+Bei allen anderen Fehlern assembliert der Assembler weiter und markiert alle
+fehlerhaften Zeilen. Falls bei der Assemblierung ein (oder mehrere) Fehler auf-
+getreten ist/sind, wird (solange der Sourcetext fehlerhaft ist) der Abbruch-
+Button default. Es wird bei Auslösen des Abbruch-Buttons dann automa-
+tisch zum ersten Fehler gesprungen. Wenn Sie den Dialog jedoch mit der
+UNDO- Taste abbrechen, bleibt der Cursor in der aktuellen Zeile. Erwähnens-
+wert ist noch, daß der Editor sich alle fehlerhaften Zeilen merkt (und nicht
+nur 20 oder 30, wie andere Assembler), und daß z.B. das Duplizieren einer
+fehlerhaften Zeile auch die Fehlermarkierung verdoppelt. Sie können auch
+einen fehlerhaften Sourcetext abspeichern. Beim späteren Einladen sind alle
+Fehler (leider) noch vorhanden. Wenn sich der Cursor auf einer fehlerhaften
+Zeile befindet, wird in der Statuszeile dann die entsprechende Fehlermeldung
+angezeigt. Um solche fehlerhaften Zeilen einfach finden zu können, brauchen
+Sie lediglich ALT-J (Jump to error) drücken, und schon befinden Sie sich in
+der nächsten fehlerhaften Zeile. Mit SHIFT-ALT-J können Sie auch aufwärts
+suchen lassen. Wenn Sie eine Zeile korrigiert haben, sollten Sie mit CONTROL-J
+zum nächsten Fehler springen, dies hat den Vorteil, daß die eben noch als
+fehlerhaft gekennzeichnete Zeile aus der Fehlerliste entfernt wird und sie von
+ALT-J nicht mehr gefunden wird.
+
+Der zweite Menüpunkt „Assemblieren...“ (F1 oder CONTROL-A) assemb-
+liert den Sourcecode, gibt aber im Gegensatz zu „Assemblieren“ eine Dia-
+Jlogbox aus (Siehe Abbildung 5.14 auf Seite 57), in der Sie zwei Dinge tun
+können:
+
+1. Sie können Ihr Programm mit einer Symboltabelle versehen, d.h., alle
+im Sourcetext benutzten Label werden an das fertige Programm an-
+gehängt. Eine Symboltabelle erlaubt eine wesentlich bessere Orientie-
+rung im Programm, wenn Sie es mit dem Debugger auf Fehler testen,
+da statt Adressen eben Symbole angezeigt werden. Eine Symboltabelle
+
+
+
+TRANSLATED
+==========
+
+

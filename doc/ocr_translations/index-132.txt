@@ -1,0 +1,68 @@
+ORIGINAL
+======== 
+
+
+130 6.6 Die Befehle
+
+ 
+
+6.6.4 Die Formelauswertung
+
+Die Zahlen können gemäß Tabelle 6.5 in verschiedenen Zahlensystemen an-
+gegeben werden.
+
+Tabelle 6.5: Die Zahlensysteme
+
+ 
+
+% Binär
+. Dezimal
+
+$ Hexadezimal
+"oder ’ | ASCH
+
+ 
+
+ 
+
+ 
+
+ 
+
+Wenn keine Zahlenbasis angegeben wird, wird das Hexadezimalsystem ange-
+nommen. ASCII-Strings bis zu vier Zeichen werden als Zahl gewertet.
+
+Tabelle 6.6: Die erlaubten Vorzeichen
+
+ 
+
++ | Plus (wer hätte es gedacht)
+
+- | Minus (auch nicht schlecht) (2er Komplement)
+7 | NOT (1er Komplement)
+
+! | logisches NOT (Ergebnis ist 0 oder —1)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Die Formelauswertung des OMIKRON.Debuggers funktioniert genauso wie
+im Assembler, d.h. es wird (natürlich) Punkt- vor Strichrechnung beachtet,
+zudem stehen neben den Grundrechenarten alle für Assemblerprogrammierer
+wichtigen Rechenarten zur Verfügung (siehe Tabelle 6.6 und Tabelle 6.7).
+Zudem können Sie mit geschwungenen Klammern indirekt adressieren: {”A4}
+hat als Wert den Inhalt der Adresse, auf den das Register A4 zeigt. Hinter der
+} kann optional noch ein „.B“, „.W“ oder „.L“ angegeben werden, welches
+die Breite der Adresse angibt (Wortbreite ist Default).
+
+
+
+TRANSLATED
+==========
+
+

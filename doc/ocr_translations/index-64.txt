@@ -1,0 +1,73 @@
+ORIGINAL
+======== 
+
+
+62 5.5 Der Editor
+
+ 
+
+pEtastel lungen AUMfa
+Informationen... OF4
+Drucken... F7)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.16: Das Menü „Editor“
+
+Der erste Menüpunkt „Rechner...“ (F5) enthält einen vollständigen Ta-
+schenrechner (Siehe Abbildung 5.17 auf Seite 62). Dieser Rechner ist speziell
+auf den Assemblerprogrammierer zugeschnitten (wie alle anderen Features
+des Assemblers auch). Der Rechner erlaubt die Eingabe einer beliebigen For-
+mel in der Schreibweise, die der Assembler sonst auch fordert. Vergleiche
+beherrscht der Taschenrechner jedoch nicht!
+
+ 
+
+ 
+
+ 
+
+ABBES
+
+15 Rechenzeichen: ot ! A
+
+$ 23 Vorzeichen :+- 1“
+
+x 1118011 EEE
+
+ 
+
+ 
+
+Abbildung 5.17: Der Taschenrechner
+
+Diese Formel darf auch Symbole des Sourcetextes enthalten. Dabei gibt es
+allerdings zwei Punkte zu beachten:
+
+oe Konstanten, die mit EQU zugewiesen werden und keine Formel enthal-
+ten, können jederzeit benutzt werden.
+
+e Label jedoch bekommen ihren Wert erst bei der Assemblierung, d.h.,
+um z. B. die Länge einer Prozedur zu ermitteln, müssen Sie den Source-
+code erst einmal assemblieren, danach gehen Sie direkt in den Taschen-
+rechner und geben z.B. ein: ENDE-ANFANG. Bin Druck auf die RETURN-
+Taste bzw. den „ausrechnen“-Button zeigt Ihnen dann die gewünschte
+Länge.
+
+Da es in Assembler manchmal praktisch ist, eine Zahl vorzeichenlos zu be-
+trachten, gibt es den Button „ohne Vorzeichen“. Das Ergebnis wird dann in
+
+
+
+TRANSLATED
+==========
+
+

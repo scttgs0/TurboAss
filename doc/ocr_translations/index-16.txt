@@ -1,0 +1,43 @@
+ORIGINAL
+======== 
+
+
+Kapitel 1
+
+Vorwort
+
+Lieber Programmierer,
+
+mit dem OMIKRON. Assembler haben Sie ein schnelles und komfortables
+Entwicklungssystem erworben, das Sie in jeder Phase der Programm-Ent-
+wicklung optimal unterstützt.
+
+Der OMIKRON.Assembler ist für Profis entwickelt worden, d.h., es wur-
+den viele neue Funktionen und Ideen implementiert, die noch kein anderer
+Assembler bietet; jeder Programmierer, der einmal mit diesem Assembler
+gearbeitet hat, wird diese Funktionen zu schätzen wissen.
+
+Das soll aber nicht heißen, daß Anfänger mit diesem Assembler falsch be-
+raten sind. Ganz im Gegenteil, gerade die sehr einfachen und zugleich sehr
+komfortablen Möglichkeiten des Debuggens in Verbindung mit einer extrem
+hohen Sicherheit gegen Fehlbedienung erlauben es dem Anfänger, diese Pro-
+grammiersprache nach dem Trial-and-Error-Prinzip zu erlernen, was bisher
+nur bei BASIC-Interpretern möglich war. Daß der Editor Fehler bereits bei
+der Eingabe bemerkt, ist dabei wohl selbstverständlich. Wir mußten in die-
+ser Anleitung natürlich einige Fachbegriffe verwenden. Wenn Ihnen ein Wort
+nicht kennen, sehen Sie bitte im Anhang C ab Seite 184 nach.
+
+Welcher andere Assembler erlaubt es z. B., ein Programm mit einem Tasten-
+druck zu assemblieren, das fertige Programm dem Debugger zu übergeben
+und das Programm automatisch zu starten? Und bei Sourcetexten mit we-
+niger als 10000 Zeilen dauert das ganze nicht einmal eine Sekunde, Wenn
+das Programm ordnungsgemäß beendet wurde, wird ebenfalls automatisch
+
+14
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,89 @@
+ORIGINAL
+======== 
+
+
+196
+
+D.5 Der Druckertreiber
+
+ 
+
+Das folgende wird meist nicht benutzt (diente nur für das RAM-TOS), ist
+aber von Atari so dokumentiert worden:
+
+ 
+
+31E
+
+$20
+
+$22
+$24
+$26
+
+$2A
+$2E-$38
+
+$39
+$3A-$FF
+
+ 
+
+ 
+
+word
+
+word
+
+word
+word
+long
+
+long
+
+byte
+
+ 
+
+$0000
+
+$0000
+
+$0000
+$0000
+$00040000
+
+$00008000
+„TOS.IMG“
+
+$00
+
+ 
+
+Execflag: wenn £ Null, wird „COM-
+MAND.PRG“ vor Initialisierung des
+Desktops geladen und gestartet.
+Ldmode: Wenn Ldmode = 0 ist, liegt
+das Betriebssystem als Datei vor, sonst
+liegt es ab Ssect und ist Sectcnt lang.
+Ssect: Startsektor des Betriebssystems
+Sectcnt: Länge des Betriebssystem
+Ldaddr: Ladeadresse für das Betriebs-
+system
+
+Fatbuf: Zeiger auf Buffer für Fat und
+Inhaltsverzeichnis
+
+Fname: Name der Betriebssystem-Da-
+tei
+
+Dummy: Füllbyte
+
+Hier steht die Bootroutine.
+
+
+
+TRANSLATED
+==========
+
+

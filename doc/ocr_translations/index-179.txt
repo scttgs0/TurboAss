@@ -1,0 +1,60 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 177
+
+ 
+
+Wenn Sie nur ein halbes Megabyte RAM haben, müssen Sie das Programm
+vom Assembler aus abspeichern, den Assembler verlassen und vom Debugger
+aus mit LEXECUTE das Programm laden (siehe Kapitel 6.6.6 auf Seite 143).
+Danach erscheint eine entprechende Meldung.
+
+Um ein Programm zu laden, können wir den DIRECTORY-Befehl benutzen.
+Vor jedem Programm steht ein „10“ (Abkürzung für LOAD, das wir mit „le“
+(Abkürzung von LEXECUTE) überschreiben können.
+
+So, nun haben wir unser Programm auf irgendeine dieser Arten in den Spei-
+cher bekommen und reloziert!®, Zuerst einmal können wir feststellen, ob un-
+sere VBL-Routine bei ALTERNATE-HELP überhaupt angesprungen wird. Dazu
+setzen wir einen Breakpoint an ihren Anfang. Wir müssen dafür natürlich
+die Adresse der Routine ermitteln.
+
+Wir können z.B. mit LIST durch das Programm blättern, bis wir „tst.w
+$4EE.w“ gefunden haben (so fängt unsere VBL-Routine an). Dann setzen
+wir z.B. Breakpoint 1 auf die Adresse. Mit ESC können wir den Rest des
+Bildschirms löschen. Dann tippen wir „bi=“ und klicken mit der rechten
+Maustaste auf die Adresse, die links vor „tst.w $4EE.w“ steht, wodurch
+diese hinter „=“ kopiert wird, und drücken RETURN.
+
+Das ist natürlich sehr umständlich. Sie müssen sich für dieses Verfahren mer-
+ken, wie Ihre gesuchte Routine aussieht. Das kann bei längeren Programmen
+schon schwieriger werden. Einfacher geht es, wenn Sie beim Assemblieren
+eine Symboltabelle erzeugen. Dann werden die Namen aller Routinen mit
+abgespeichert. Versuchen Sie es einmal:
+
+Verlassen Sie den Debugger mit CONTROL-HELP. Nun befinden Sie sich wieder
+im Assembler.!! Mit F1 assemblieren Sie das Programm neu und klicken eine
+Symboltabellenart an (in diesem Fall ist es egal welche, da Sie das Programm
+nicht abspeichern, sondern nur an den Debugger übergeben wollen.). Dann
+wählen Sie wieder den Debugger an.
+
+Wenn Sie jetzt das Programm listen, steht links von der VBL-Routine der
+Symbolname: „vbl_init:“. Sie können die Adresse aber noch einfacher er-
+mitteln. Sie können sich mit SYMBOLTABLE alle Symbole anzeigen lassen. Dann
+
+ 
+
+10gdas ist vor der Ausführung eines Programmes notwendig, wenn es nicht positionsun-
+abhängig ist (gibt der Assembler nach der Assemblierung aus). Deshalb dürfen wir statt
+LEXECUTE nicht LOAD verwenden! Ferner wird bei ersterem eine Basepage angelegt.
+
+1 Auf einem 512 KB-Rechner müssen Sie natürlich den Assembler laden...
+
+
+
+TRANSLATED
+==========
+
+

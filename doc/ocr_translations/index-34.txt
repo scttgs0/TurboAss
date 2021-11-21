@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+32 5.5 Der Editor
+
+ 
+
+Konvertierungen in den Motorola-Standard
+
+Die Befehle werden, wie schon erwähnt, sofort vorassembliert und nicht als
+ASCII-Text gespeichert. Daher werden Sie gleich bei der Eingabe auf Syntax-
+und ähnliche Fehler hingewiesen. Die Zeile wird gleich wieder disassembliert
+und neu ausgegeben. Daher kann Ihre Zeile vom Assembler anders angezeigt
+werden, als Sie sie eingegeben haben. Ein Beispiel: Sie geben ein „move.l
+d3,a2“. Laut Motorola-Standard ist diese Schreibweise nicht richtig: Wenn
+Sie etwas in ein Adreßregister schreiben, heißt der Befehl „movea“. Der As-
+sembler korrigiert die Schreibweise dann automatisch — dabei ist er noch
+ziemlich tolerant; er konvertiert beispielsweise „movea“ zurück nach „move“
+(für den Fall, daß Sie ein Adreßregister in ein Datenregister ändern). Die
+genauen Konvertierungen sind in Tabelle 5.1 angegeben.
+
+Bei Conditions (B??, DB?? und S??) wird „Z“ (Zero) zu „EQ“ (EQual) und
+„NZ“ (Not Zero) zu „NE“ (Not Equal) konvertiert. „DBF“ wird zu „DBRA“
+gewandelt.
+
+Statt „CC“ und „CS“ können Sie auch „HS“ (Higher or Same) bzw. „LO“
+(Lower) angeben. Dies wird nicht in den Standard konvertiert — es bleiben
+eventuell zwei unterschiedliche Befehle stehen, die aber den gleichen Code
+produzieren. Achtung: Dieses gilt nur für Branch- und Set-Befehle (also BHS,
+SLO usw.), DBHS und DBLO wird in DBCC bzw. DBCS.
+
+Als Tipperleichterung können Sie das „#“ bei TRAP- und MOVEQ-Befehlen
+weglassen.
+
+Wir haben uns bemüht, möglichst alle Formate von allen uns bekannten
+Assemblern zu konvertieren. Deshalb wird z.B. auch „LEA.L Adresse,Ax“
+oder „LEA.W Adresse,Ax“ in ”"LEA xx,Ax“ gewandelt.
+
+Lokale Label
+
+Da der Editor von Grund- und Makroversion gleich ist, können Sie auch in
+der Grundversion lokale Label eingeben — diese werden mit einem Punkt
+am Anfang gekennzeichnet. Da der Assembler diese aber noch nicht richtig
+
+ 
+
+3wobei <ea> nicht Dn sein darf
+4Um das Zielregister einfach z. B. A0 in D7 ändern zu können
+
+
+
+TRANSLATED
+==========
+
+

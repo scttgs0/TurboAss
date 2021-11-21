@@ -1,0 +1,99 @@
+ORIGINAL
+======== 
+
+
+J_LITERATURHINWEISE
+
+239
+
+ 
+
+Unterprogrammaufruf 778
+Untrace 135
+User-Stack-Pointer 109
+USP 109
+
+V:* 126
+
+V:ACT.PD 127
+V:AESFLAG 128
+Variablen des Debuggers 125
+V:" A(0-7) 127
+V:BASEPAGE 126
+V:BP 126
+
+V:BSS 125
+V:"B(Term) 126
+V:BUFFER 126
+V:CCR 126
+V:CHECKSUM 128
+V:COLORS 128
+V:COLO 128
+V:COL1 128
+V:CONTERM 128
+V:CONVERT 127
+V:DATA 125
+V:DISBASE 126
+VDISK 227
+V:DRIVE 126
+V:"D(0-7) 127
+ViEND 125
+Vergleiche 36
+verketten 41
+Vi:IKBD 127
+V:KLICK 127
+V:LINES 129
+V:MEMBASE 129
+V:"M(0-9) 126
+Vordergrundfarbe 76
+Vorzeichen 130
+V:PC 126
+
+V:REZ 128
+V:SAVEAREA 129
+V:SCROLLD 127
+V:SEKBUFF 126
+V:SEKTOR 126
+V:SHIFT 127
+ViSIDE 126
+V:SIZE 129
+V:SMALL 128
+V:SP 126
+
+V:SR 126
+
+V:SSP 126
+V:START 125
+V:SYMBOLS 126
+V:TDELAY 127
+V:TEXT 125
+V:TRACE 128
+V:TRACK 126
+V:TRKBUFF 126
+V:USP 126
+
+V:UT 128
+V:UTRACE 128
+‚W 157
+
+Warmstart 45,176
+Warnungen 56,76,100
+Word 188
+Writesector 152
+Zahlenbasis 35,43
+Zahlensysteme 130
+Zehnerblock 773,116
+Zeichentabelle 63
+Zielcodespeicher 57
+Zuladen 51
+Zusätzliche Tastenkommandos 716
+68020 15,117
+
+- 164
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+192 D.3_ Die Symboltabelle des Assemblers
+
+ 
+
+Ein Beispiel Die haben das Label „ein_sehr_langes_Label“ im GST-
+Format abgespeichert.
+
+Dann steht in der Symboltabelle:
+
+"ein_sehr“ (die ersten 8 Zeichen)
+
+$82 (0. ä.; Symbolstatus)
+
+$48 (Erweiterung folgt)
+
+$00000000 (0. ä.; Symbolwert)
+"_langes_Label"” (Ergänzung)
+
+$00 (ungenutzte Byte durch 0 gefüllt)
+
+Es sind also im DRI-Format maximal 8 und im GST-Format maximal 8+14 =
+22 Zeichen für den Symbolnamen möglich. Wenn Sie ein Programm vom
+Assembler direkt an den Debugger übergeben, wird die Symboltabelle in
+einem eigenen Format mit maximal 23 Zeichen länge weitergereicht.
+
+D.3 Die Symboltabelle des Assemblers
+
+Diese Symboltabellen (nicht mit den obengenannten verwechseln!) bestehen
+aus Konstantenzuweisungen (EQU) die zu einem Programm zugeladen wer-
+den können („Symbole laden“, siehe Seite 51). Ihr Aufbau ist in Tabelle D.5
+angegeben.
+
+D.4 Relozierinformationen
+
+Die Relozierinformationen stehen am Ende der Programmdatei, noch hin-
+ter einer eventuellen Symboltabelle. Ihr Aufbau läßt sich nicht tabellarisch
+wie alle anderen Informationen beschreiben. Der Assembler berechnet alle
+Adressen so, als ob das Programm an die Adresse 0 geschrieben würde, und
+legt eine Tabelle aller Adressen an, die nach dem Programmladen angepaßt
+werden müssen.
+
+Die Relozierinformationen beginnen an einer geraden Adresse mit einem
+Longword, das auf die erste zu relozierende Adresse relativ zum Programm-
+anfang zeigt. Das Betriebssystem addiert nach dem Laden die tatsächliche
+
+
+
+TRANSLATED
+==========
+
+

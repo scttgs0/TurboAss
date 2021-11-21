@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+60 5.5 Der Editor
+
+ 
+
+Entsprechende Empfangsroutinen sind bei AssAge Entertainment
+Software erhältlich (Adresse steht auf der Titelseite).
+
+SMALLDRI: Hiermit wird die Datei im DRI-Linker-Format abge-
+legt. Sie können Ihr Assemblerprogramm dann problemlos bei-
+spielsweise zu C-Programme linken. „Small“ bedeutet, daß noch
+keine Importe möglich sind. Alle Symbole, die in Ihrem Assem-
+blerprogramm verwendet werden, müssen auch in diesem definiert
+
+sein. Wenn Sie Parameter übergeben wollen, können Sie das am
+einfachsten über den Stack.
+
+Globale Symbole können durch einen 2. Doppelpunkt markiert
+werden; z.B. „main:: nop“. Durch den GLOBAL-Opcode können
+Symbole automatisch mit zwei Doppelpunkten versehen; sprich:
+als global definiert werden (siehe Kapitel 5.6.7 auf Seite 95) .
+Achtung: Zum Linken ist natürlich eine Symboltabelle nötig; Sie
+
+sollten daher an den Anfang eines Programms, das gelinkt werden
+soll, „OPT D+“ schreiben.
+
+Der Beginn eines Opcodes (30007) im Relocinfo des DRI-Pro-
+gramms wird nicht gesetzt. Er ist jedoch für das Linken auch nicht
+erforderlich.
+
+Die einzelnen Buttons sind nicht immer alle anwählbar. Die Gründe für das
+Disabeln der Buttons sind in Tabelle 5.4 angegeben.
+
+Der Menüpunkt „= Debugger“ (F2) ist enabled, wenn der residente De-
+bugger vorhanden ist, Er erlaubt den Sprung in den Debugger, ohne ein
+Programm zu übergeben, z. B. um vom Debugger aus eine Diskette zu forma-
+tieren. Wenn Sie mit diesem Menüpunkt in den Debugger springen, können
+Sie auch ein Programm nachladen und dieses debuggen, dies ist ja nach ei-
+nem Einsprung von „Assemblieren“ aus nicht möglich. Es ist allerdings zu
+beachten, daß 40000 Bytes weniger Gemdos-Speicher zur Verfügung stehen
+als Sie bei „REORGANISIEREN“ angegeben haben (siehe Kapitel 5.5.5 auf
+Seite 65). Diese 40 000 Bytes stehen Ihnen wiederum nur nach „Assemblieren“
+im Debugger zur Verfügung.
+
+„Debugger nachladen‘“ (ALT-D ermöglicht es Ihnen, den Debugger nach-
+träglich zu laden. Wenn Sie den Assembler verlassen, wird der Debugger
+auch wieder gelöscht. Um dieses Kommando ausführen zu können, müssen
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,71 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 55
+
+ 
+
+die Möglichkeit gibt, dies nachzuholen, Falls dort beim Speichern ein Feh-
+ler auftritt, wird der Assembler nicht verlassen. Durch einen Klick auf den
+„Weiter“-Button verlassen Sie den Assembler endgültig.
+
+ 
+
+Die änderungen xurden acch alcht gesichert !
+
+FGERLASSEN ] SPEICHERN]
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.12: Die Dialogbox beim Beenden
+
+Das Menü „Assembler“
+
+  
+ 
+
+> Debut
+Dabuggi
+ÜRDuGn
+
+ 
+   
+ 
+
+ger F2
+er nachladen RO
+
+hen
+
+ 
+
+Abbildung 5.13: Das Menü „Assembler“
+
+Hier kommen wir endlich zum wesentlichen Bestandteil des Assemblers (der
+hat ihm doch tatsächlich seinen Namen gegeben).
+
+Der oberste Menüpunkt „Assemblieren“ (ALT-A) assembliert den vorhan-
+denen Sourcetext und löst den Default-Button aus.
+
+Fehler bei der Assemblierung: Da der Editor natürlich nicht alle Fehler
+bereits bei der Eingabe finden kann, können natürlich auch Fehler bei der
+Assemblierung auftreten. Dabei gibt es vier Arten von Fehlern:
+
+® Fatale Fehler (z. B. Datei bei IBYTES nicht gefunden, aber auch FAIL)
+e Allgemeine Fehler (z. B. Division durch Null)
+
+e Korrigierbare Fehler (Adresse wurde begradigt)
+
+
+
+TRANSLATED
+==========
+
+

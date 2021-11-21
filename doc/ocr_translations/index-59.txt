@@ -1,0 +1,71 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 57
+
+ 
+
+ 
+
+34 Bytes relativen Codas erzeugt,
+1 Zeile nit 8 Fehlern und 8 Warnungen
+Synboltaballe
+PDEBUSSER ] [ESTRNGARD ]
+
+Was nun?
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SHALLORT ]
+RESRUCH E J E55 1E ]
+LA 42688 Zellen pro Minute) |
+
+Abbildung 5.14: Die Dialogbox nach dem Assemblieren
+
+kann das Programm manchmal erheblich verlängern, behindert das
+Programm aber nicht, da das Gemdos die Symboltabelle gar nicht erst
+lädt. Der OMIKRON. Assembler unterstützt drei verschiedene Symbol-
+tabellenformate:
+
+(a) Das Standard-Format von Digital Research: Die maximale Sym-
+bollänge beträgt dabei 8 Zeichen, d.h., der Assembler kürzt alle
+Symbole auf 8 Zeichen.
+
+(b) Das Format der Firma GST: Dabei handelt es sich um eine Er-
+weiterung des Standard-Formats, welches nun maximal 22 Zeichen
+lange Symbole kennt.
+
+{c) Das Übergabeformat an den Debugger: Der Debugger bekommt
+vom Assembler, wenn eine Symboltabelle gewünscht wurde, nur
+die Zeiger auf die Symbolnamen übergeben, d.h., er ist in der
+Lage, Symbole bis maximal 23 Zeichen (Einschränkung durch den
+Editor des Assemblers) zu verwalten.
+
+Das Format 1c kann nicht abgespeichert werden (im Gegensatz zu la
+und 1b); der Assembler erzeugt das Format automatisch, wenn eines
+der Formate 1a oder 1b gewählt wurde und in den Debugger gesprun-
+gen wird. Falls der zur Verfügung stehende Zielcodespeicher nicht für
+eine Symboltabelle reicht, erscheint eine Dialogbox, die eine entspre-
+chende Meldung ausgibt. Der Assembler erzeugt dann eine Symbolta-
+
+
+
+TRANSLATED
+==========
+
+

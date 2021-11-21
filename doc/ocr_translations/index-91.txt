@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 89
+
+ 
+
+Symbol (.)SET Wert funktioniert ähnlich EQU, jedoch besteht bei mit
+SET gesetzten Symbolen die Möglichkeit, den Wert nachträglich mit
+einem weiteren SET-Opcode zu ändern. Als Beispiel sei auf das REPT-
+Beispiel auf Seite 96 verwiesen,
+
+Symbol (.)REG Registerliste hat eine ähnliche Funktion wie EQU, REG
+legt eine Registerliste für MOVEM fest. So können Sie z. B. definieren:
+stard_r REG D0-A3/A5; bei MOVEM stnrd._r,-(sp) werden dann die Re-
+gisterinhalte DO, D1,...,D6, D7, AO, Al, A2, A3 und AS auf den Stack
+geschoben.
+
+5.6.5 Assembleroptionen
+
+OPT (XIDIWIP(+1-),... legt einige Optionen fest. Jede Option wird
+durch einen Buchstaben gekennzeichnet (s. u.), gefolgt durch ein „+“
+für „einschalten“ oder ein „-“ für „ausschalten“, Danach können weitere
+Optionen, durch Kommata getrennt, angegeben werden. Die Buchsta-
+ben bedeuten:
+
+(-) D Debugging-Informationen einbinden. Wenn eingeschaltet, wird
+eine Symboltabelle an das Programm angehängt. Wenn Sie dieses
+Programm dann im Debugger LISTen, werden alle Symbole mit
+ausgegeben.
+
+(-) X eXtended Symboltable. Es wird eine erweiterte Symboltabelle
+im GST-Format eingebunden.
+
+(+) W Warnungen ausgeben. Der Assembler warnt Sie z.B., wenn
+eine Adresse begradigt wurde oder ein BRA.S zu einem NOP
+gewandelt werden mußte. Wenn Warnungen ausgegeben werden,
+heißt das noch nicht, daß sie bei CONTROL-J auch angesprungen
+werden. Dies ist im Menü „Editor 1“ einstellbar. Ferner warnt
+der Assembler alle Stellen an, die seiner Meinung nach optimiert
+werden können. Als optimierbar gelten:
+
+e bedingte Branches, die in ihre kurze Form gewandelt werden
+können (z. B. BEQ Label in BEQ.S Label)
+
+e alsolute Sprünge, die in relative gewandelt werden können
+(z.B. JSR Label in BSR Label)
+
+
+
+TRANSLATED
+==========
+
+

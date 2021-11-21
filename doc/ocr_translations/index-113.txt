@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 111
+
+ 
+
+TABLE wird automatisch weiter ausgegeben, wenn Sie, mit dem Cursor am
+oberen oder unteren Rand angekommen, scrollen. Dies geht auch mit der
+Maus, dazu bewegen Sie die Maus an den oberen oder unteren Rand und
+drücken kurz auf die rechte Maustaste. Wenn auf dem Bildschirm Daten ste-
+hen, fängt der Bildschirm an zu scrollen. Stoppen können Sie, indem Sie die
+Maus in Bildschirmmitte bewegen.
+
+6.4.2 Die Tastaturbelegung
+
+Die Tastaturbelegung entspricht soweit es möglich ist, der Tastaturbelegung
+der Assemblers, so daß sie wahrscheinlich keine Probleme haben werden.
+Der Editor verfügt über eine ganze Reihe von Tastaturkommandos (siehe
+Tabelle 6.2 auf Seite 115).
+
+UNDO: eignet sich sehr gut zur Wiederholung des letzten
+Befehls.
+CONTROL-M: Rettet die Cursorzeile in einem internen Buffer,
+
+welcher mit mit den Einstellungen (siehe Kapi-
+tel 6,8 auf Seite 168) gespeichert wird.
+
+ALT-M: Holt die gerettete Zeile aus dem Buffer zurück.
+
+CONTROL/ALT 1-9: bevor man ein Unterprogramm traced, kann man
+die Bildschirmseite des Debuggers (mit Cursor-
+position) retten, um später wieder auf der Bild-
+schirmseite arbeiten zu können. Mit 1-9 sind nicht
+die Zifferntasten des Zehnerblocks gemeint.
+
+Zusätzlich zu diesen Tasten gibt es noch einige, die spezielle Funktionen
+haben (siehe Tabelle 6.3 auf Seite 116).
+
+ALT-&, -=>:! Der Debugger merkt sich die letzten 256 Befehle in
+einem internen Buffer, dem sogenannten Cache. Er
+rettet zu jedem Befehl den kompletten Register-
+satz, und Sie haben mit diesen Tasten die Möglich-
+keit, rückwärts durch die Befehlsliste zu gehen.
+
+
+
+TRANSLATED
+==========
+
+

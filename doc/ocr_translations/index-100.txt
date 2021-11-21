@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+98 5.6 Die Pseudo-Opcodes
+
+ 
+
+IFGT Ausdruck Der Code wird assembliert, wenn der Ausdruck > 0 ist.
+IFGE Ausdruck Der Code wird assembliert, wenn der Ausdruck > 0 ist.
+
+ELSE der Folgende Teil wird berücksichtigt, wenn der vorhergehende nicht
+berücksichtigt worden ist (siehe Beispiel).
+
+ENDC (ENDIF) kennzeichnet das Ende des Bereichs, der nur bedingt as-
+sembliert werden soll. Der folgende Code wird immer assembliert (wenn
+nicht neue IF-Befehle folgen).
+
+IFD Label Der folgende Code wird ausgeführt, wenn das Label bereits de-
+finiert worden ist.
+
+IFND Label Der folgende Code wird ausgeführt, wenn das Label noch nicht
+definiert worden ist.
+
+FAIL [Text] bricht den Assembliervorgang ab. Wenn Sie keinen „Text“ an-
+geben, meldet der Assembler „Benutzer-Fehler (FAIL)“, sonst wird
+„Text“ ausgegeben. Dieser Befehl ist im Zusammenhang mit bedingter
+Assemblierung sinnvoll.
+
+Zum Beispiel:
+
+IF  ende-anfang<>512
+FAIL "Falsche Prglänge‘,, ENDC
+
+Beispiel für bedingtes Assemblieren: Wenn Sie eine Testversion Ihres
+Programms erstellen wollen, schalten Sie mit OPT eine Symboltabelle an,
+die Variable *°SYMTAB hat dann einen Wert von ungleich 0. Sie assemblie-
+ren damit den ersten Teil der IF-Struktur. Wenn Sie OPT D- schreiben hat
+“*SYMTAB den Wert 0, damit erstellen Sie die Endversion ihres Programms
+ohne Symboltabelle,
+
+OPT D+
+IF “”SYMTAB ;Interne Testversion erstellen
+jmp show.coord ;Maus-Koordinaten anzeigen
+
+prompt: DC.B ’Waddayawannado?’ ‚0
+
+
+
+TRANSLATED
+==========
+
+

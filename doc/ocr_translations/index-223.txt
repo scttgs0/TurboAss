@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+I_ DIE BEILIEGENDEN DATEIEN 221
+
+ 
+
+Sie Ihr Programm vom Debugger aus starten. Dann können Sie z.B. beim
+Druck einer bestimmten Taste mit dieser Routine den Debugger aufrufen.
+
+1.8 DAY_CALC.SRC
+
+Dieses Programm berechnet aus dem Tagesdatum (XBIOS) den Wochentag
+und gibt ihn in DO als Ziffer; in AO einen Pointer auf den Wochentag als
+ASCI-Text zurück.
+
+1.9 DESKTOP.PRG und DESKTOP .SRC
+
+Das assemblierte DESKTOP. PRG sollte als letztes Programm im AUTD-Ordner
+stehen, denn es tut nichts anderes als das Desktop zu starten. Man kann
+damit allerdings einen eigenen Environment-String vor der Assemblierung
+zu definieren.
+
+Dies erlaubt es z. B., eine Environment- Variable für den OMIKRON.Assem-
+bler zu definieren (siehe Sourcetext):
+
+’SIGMA=D: \OM_ASSEM.ALG\’,0
+
+Der OMIKRON. Assembler (und auch der Debugger) sucht dann seine INF,
+CFG und DAT-Datei zuerst in diesem Directory.
+
+Die Environment- Variable läßt sich auf dem ST (meines Wissens nach) nicht
+besser ändern. Die zweite Möglichkeit wäre ein Programm, welches vom Desk-
+top aus zu starten ist und dann alle Zeiger auf den Environment-String seiner
+Parents auf einen eigenen zu verbiegen. Das Programm muß danach resident
+im Ram bleiben. Da ein Accessory keinen Parent hat, verbietet sich auch die
+Möglichkeit, den Environment-String über ein Accessory zu verändern.
+
+Die erste Environment- Variable sollte nicht geändert werden, denn das De-
+sktop sucht dort die RSC-Dateien (siehe auch Shel_Find).
+
+1.10 EPSON.HEX
+
+(siehe MAKE_CFG .PRG)
+
+
+
+TRANSLATED
+==========
+
+

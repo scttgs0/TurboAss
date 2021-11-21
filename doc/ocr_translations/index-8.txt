@@ -1,0 +1,39 @@
+ORIGINAL
+======== 
+
+
+6.6.8
+
+HH HE NR UN 154
+Symboltable .....0.0.000000000000.000.0004 155
+Dump, Memory . 0. 156
+‚W und .L se 157
+KORK RR 157
+) HE ONE NEERERKEREUN KHK 157
+ASCH 0. 0 HR KERN HEN KK 158
+) ORERVWEHMERSTRLKEOHEREHE THE 158
+Allgemeine Befehle .......00000000000004 158
+Find 00 158
+Hunt 00 159
+Ascfind 2000 159
+Continue . . 1.000000 000 159
+TAT 160
+HERE NLHAEHMLRLEFFNAHNHEAHEMEE 160
+Move, Copy ı. 000 RR RK 160
+A En 161
+A DE 161
+Compare 0. 162
+Checksumme . 000 162
+Resident A 0 163
+Exit, Quit, System Ar 0 163
+: PA 163
+Set, Let. ..0 4 04 5 0 HEHE REKEN HEN 164
+TE FORMEN 164
+Reset all A 0 165
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,84 @@
+ORIGINAL
+======== 
+
+
+6_ DER DEBUGGER 109
+
+ 
+
+Tabelle 6.1: Die Flags des Statusregisters
+
+ 
+
+Bit Das SR-Register
+
+ 
+
+15 | T | Trace
+
+13 | S | Supervisor
+
+10 | 12
+
+9 |I1 | Interrupt-Maske
+8 |I10
+
+ 
+
+Das CCR-Register
+
+X | eXtend — Erweiterungs-Bit
+N | Negative — Vorzeichen-Bit
+
+Z | Zero — Null-Bit
+V
+
+C
+
+ 
+
+oVerflow — Überlauf-Bit
+Carry — UÜbertrags-Bit
+
+ 
+
+ 
+
+ 
+
+ 
+
+© DC
+
+ 
+
+Sie sehen oben auf dem Bildschirm die Menüleiste: die Befehle in der ersten
+Zeile können Sie mit F1 bis F10 aufrufen, die der zweiten mit SHIFT-F1 bis
+SHIFT-F10. Sie können auch mit der Maus direkt auf den Befehl klicken.
+Näheres zu den Funktionstasten steht in Kapitel 6.5 auf Seite 117.
+
+Darunter sehen Sie alle Register des 68000 Prozessors mit ihren aktuellen
+Inhalten: Zuerst der Programmzähler (PC), das ist die Adresse, ab der der
+nächste Opcode abgearbeitet wird.
+
+Dann folgen der User-Stack-Pointer und Supervisor-Stack-Pointer (Durch
+USP und SSP abgekürzt).
+
+Rechts davon sehen Sie das Statusregister (SR). Die einzelnen Flags des SR
+werden durch einen Buchstaben bzw. einer Ziffer angezeigt. Wenn das Zeichen
+in Light-Schrift dargestellt wird, ist das Flag gelöscht. Mit einem Mausklick
+auf ein Flag kann sein Zustand gewechselt werden. In Tabelle 6.1 sind die
+Bedeutungen der einzelnen Flags angegeben.
+
+Den Abschluß der Zeile bildet der aktuelle Befehl (den Befehl, auf den der
+PC zeigt).
+
+In der nächsten Zeile stehen alle 8 Datenregister des Prozessors (D0-D7) und
+in der Folgezeile die 8 Adreßregister (A0-A7), wobei A7 stets entweder dem
+
+
+
+TRANSLATED
+==========
+
+

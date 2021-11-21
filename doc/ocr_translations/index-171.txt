@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 169
+
+ 
+
+diesen Vorgang an der Zeile „Installation wurde geladen“ unmittelbar nach
+dem Laden.
+
+In der Info-Datei werden folgende Einstellungen gespeichert:
+
+® Autoinsert (kann mit SHIFT-INSERT oder SHIFT-FS umgeschaltet wer-
+den)
+
+e Cursor Form (kann mit CURSOR umgeschaltet werden)
+® Zahlenbasis des Disassemblers (Variable DISBASE)
+
+e LINES (die Anzahl der Zeilen, die bei MEMORY, LIST o. ä. ausgegeben
+werden)
+
+o Anzahl der Werte, die bei DUMP/MEMORY pro Zeile ausgegeben wer-
+
+den
+
+se Ob beim Tracen mit den Funktionstasten disassembliert oder gelistet
+wird
+
+e Ob mit der Maus gescrollt werden kann sowie der Fangradius
+
+e Ob Groß- oder Kleinschrift bei Hexzahlen verwendet wird
+
+e Farben des Debuggers
+
+eo Tastaturklick
+
+e Der Inhalt des CONTROL-M-Buffers
+
+e Die Funktionstastenbelegung
+
+eo Zeichenfilter für ASCII-Anzeigen (Wenn der Debugger das ASCII-Zei-
+chen z ausgeben will, gibt er das x-te Zeichen des Filters aus. Wenn Sie
+
+also ein Zeichen herausfiltern wollen, ersetzen Sie es durch „.“ CHR(FA)
+(siehe auch bei der Variablen CONVERT) auf Seite 127).
+
+
+
+TRANSLATED
+==========
+
+

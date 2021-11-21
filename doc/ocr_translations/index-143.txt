@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 141
+
+ 
+
+Cls A
+
+Syntax : CLS
+Kurzform : CL
+
+Löscht den Programm-Bildschirm (nicht den des Debuggers). Dazu wird mit
+der Bios-Funktion 3 (Bconout) ESC E ausgegeben (damit auch der Cursor
+nach oben links gesetzt wird).
+
+Mouseon A
+
+Syntax ; M[OUSEJON
+Kurzform : MOU, MON
+
+Schaltet die Maus (für das debuggte Programm; im Debugger ist sie immer
+an) ein. Dazu wird die entsprechende Line-A-Routine verwendet. Die Maus
+wird bei diesem Befehl immer eingeschaltet, unabhängig davon, wie häufig
+sie ausgeschaltet worden ist.
+
+Mouseoff A
+
+Syntax : MLOUSE]OFF
+Kurzform : MOUSEOF, MOF
+
+Schaltet die Maus aus. Auch hier wird Line-A benutzt. Die Maus wird immer
+ausgeschaltet, unabhängig davon, wie häufig sie eingeschaltet worden ist.
+
+Getregister
+
+Syntax : GETREGISTER [Adresse]
+Kurzform : GE
+
+Dieser Befehl holt die Register ab „Adresse“. Dabei müssen die Registerin-
+halte, wie bei IF auf Seite 136 beschrieben, im Speicher liegen.
+
+Wird keine Adresse angegeben, nimmt der Debugger $300 an.
+
+
+
+TRANSLATED
+==========
+
+

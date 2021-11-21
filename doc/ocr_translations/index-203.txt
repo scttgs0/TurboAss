@@ -1,0 +1,42 @@
+ORIGINAL
+======== 
+
+
+E_ PROBLEME MIT ÄLTEREN TOS-VERSIONEN 201
+
+1. „LO OM-DEBUG . PRG“
+2. „M.L START+22#*“
+
+3. Die Ausgabe müßte folgendermaßen aussehen: .1 00000E1B,0000602C,
+...(der Rest der Zeile ist unwichtig)
+
+Die erste Zahl entspricht der „kbshift“-Varjablenadresse, die zweite
+der „act_pd“-Variablenadresse. Wir bewegen nun den Cursor auf die
+erste Zahl und überschreiben diese mit unserem „kbshift“-Wert, eben-
+so verfahren wir mit der zweiten Zahl (dort setzen wir natürlich den
+„act_pd“-Wert ein).
+
+Wenn ich die Adressen der obigen Beispiele einsetze sieht das Ergebnis
+so aus: „.1 00000E61,000087CE, ...“
+
+Nun übernehmen wir die Werte mit der RETURN-Taste. Wir können mit
+„M.L START+22#“ die Bingabe evtl. noch einmal vergleichen.
+
+4. „SA“ zum Speichern eingeben und die Frage bejahen.
+5. Hoffen, daß alles geklappt hat.
+
+es Nochmals möchte ich alle warnen: Wenn Ihr Rechner ein anderes TOS
+als die oben angegebenen hat, ist die obige Installation unbedingt nötig,
+da sonst spätestens nach dem Laden eines Programms mit „LEXE-
+CUTE“ intern alles quer läuft, ein Programmabbruch mit SHIFT-SHIFT
+wäre zudem auch nicht möglich.
+
+oe Wenn Sie die Beispiele nicht nachvollziehen können, wenden Sie sich
+bitte an OMIKRON.Software, wir helfen ihnen dann gern weiter.
+
+
+
+TRANSLATED
+==========
+
+

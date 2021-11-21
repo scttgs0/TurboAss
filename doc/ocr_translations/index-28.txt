@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+26 5.2 Einführung in den Assembler
+
+ 
+
+OM-ASSEM.CFG — Die Druckeranpassung (siehe Kapitel D.5 auf Seite 194)
+OM-ASSEM.DAT — Eine Hilfsdatei für den Assembler (wichtig!)
+OM-ASSEM.INF — Die individuellen Einstellungen des Assemblers
+OM-DEBUG . INF — Die individuellen Einstellungen des Debuggers
+
+CALL „PRG — Den residenten Debugger vom Desktop starten
+
+Alle Hilfsdateien (CFG, DAT und INF) können als hidden-Dateien vorliegen.
+Mit dem Befehl FATTRIBUT (siehe Kapitel 6.6.6 auf Seite 149) des Debuggers
+ist es ohne Probleme möglich, die Dateien als hidden zu deklarieren. Sie stören
+dann das Erscheinungsbild im Desktop nicht mehr.
+
+OM-ASSEM.CFG wie auch OM-ASSEM.DAT werden vom Assembler nach folgen-
+dem Schema gesucht:
+
+1. Wenn die Environment- Variable „SIGMA“ vorhanden ist, wird in die-
+sem Pfad zuerst gesucht (siehe Kapitel 4.3 auf Seite 22)
+
+2. Es wird im aktuellen Verzeichnis gesucht.
+3. Es wird im Hauptverzeichnis gesucht.
+
+4. Es werden alle Laufwerke von C bis P in deren aktuellen Pfaden durch-
+sucht.
+
+5. Es wird auf Laufwerk A gesucht.
+
+OM-ASSEM.INF und OM-DEBUG .INF können vom Assembler bzw. Debugger aus
+erzeugt werden (siehe Kapitel 5.5.5 auf Seite 80 bzw, Kapitel 6.8 auf Seite
+168).
+
+Wie starte ich den Assembler, wenn ich eine Systemdiskette er-
+stellt habe? Das geht an sich ganz einfach: Mit einem Doppelklick auf
+OM-ASSEM.PRG wird der Assembler (mit integriertem Editor) geladen. Man
+kann dann sofort loslegen. Allerdings kann ich nur empfehlen (wenn minde-
+stens 1 MB vorhanden ist), einen residenten Debugger zu benutzen, da man
+erst dann die volle Leistungsfähigkeit des Assemblers ausschöpfen kann.
+
+
+
+TRANSLATED
+==========
+
+

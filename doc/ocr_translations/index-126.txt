@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+124 6.6 Die Befehle
+
+ 
+
+6.6 Die Befehle
+
+6.6.1 Allgemeines
+
+Hinweis: In der folgenden Befehlsbeschreibung sind einige Befehle mit 4 ge-
+kennzeichnet, Diese rufen Betriebssystemroutinen auf. Sie müssen also, wenn
+Sie diese benutzen wollen, darauf achten, daß die entsprechenden Teile des
+Betriebssystems nicht durch ihr debuggtes Programm gestört wurden. Ein-
+gaben sind stets in Anführungszeichen angegeben und in Typewriter. Ta-
+stendrücke und Filenamen ohne Anführungszeichen in Typewriter. Wenn
+lediglich der Befehl im Allgemeinen gemeint ist, wird er in Sans Serif ge-
+schrieben.
+
+Die folgenden Befehle können über die Tastatur eingegeben werden (am
+Ende RETURN drücken). Die meisten Befehle können abgekürzt eingegeben
+werden. Sie müssen also nicht jedesmal „DISASSEMBLE“ tippen, Sie können
+auch „DISASS“, „DIS“ oder „D“ eingeben. Wenn jedoch mehrere Befehle
+mit den gleichen Buchstaben anfangen, kann jeweils einer mit nur einem
+Buchstaben abgekürzt werden. Sie können zum Beispiel „DUMP“ mit „DU“
+abkürzen, wenn Sie jedoch nur „D“ eingeben, interpretiert der Debugger dies
+als „DISASSEMBLE“. Wie weit Sie jeweils kürzen dürfen, ist bei jedem Be-
+fehl angegeben. Wenn Sie einen Befehl nicht vollständig eingegeben haben,
+muß dahinter vor dem ersten Term ein Space stehen. Beispiel: „DIS 1000“,
+„D 7A5“ aber: „DISASSEMBLE”A3“ (da der Befehl ausgeschrieben wurde, ist
+kein Space nötig.)
+
+6.6.2 Schreibweise der Befehle
+
+Bei der Befehlsbeschreibung haben wir für den Syntax eine Schreibweise be-
+nutzt, die wohl einer Erklärung bedarf. Angaben in Großbuchstaben und
+Kommata sind so (oder abgekürzt) einzutippen, wobei es egal ist, ob Sie
+sie in Groß- oder Kleinbuchstaben oder gemischt eingeben. Angaben in ecki-
+gen Klammern können weggelassen werden, Außerdem haben wir als logische
+Operation | (exklusiv oder) und runde Klammern verwendet.
+
+„Term“ (manchmal auch „Von“ bzw. „Bis“ oder „Adresse“) steht für eine
+Zahl oder eine Formel, die der Debugger zu einer Zahl ausrechnet. Wenn
+
+
+
+TRANSLATED
+==========
+
+

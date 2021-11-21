@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+170 6.9 Ein paar Tips...
+
+ 
+
+6.9 Ein paar Tips...
+
+e Noch ein Tip für Programmierer, welche Farbprogramme (ohne GEM)
+entwickeln wollen (z. B. Spiele):
+
+1. einen elektronischen Monitorumschalter besorgen und s/w ein-
+schalten.
+
+2. im Debugger „@”rez=0“ eingeben und Einstellungen sichern (siehe
+Kapitel 6.8 auf Seite 168); dann den Debugger resident im Speicher
+halten (siehe Kapitel 6.12 auf Seite 174).
+
+3. Assembler laden und im Spezialmenü „starten & zurück“ anwäh-
+len.
+
+4. Wenn nun ALT+A gedrückt wird, wird das Programm assembliert,
+in den Debugger gesprungen, auf Farbe umgeschaltet, das Pro-
+gramm gestartet und bei fehlerfreier Beendigung wieder in den
+Assembler zurückgesprungen.
+
+5. Programmentwicklung für Farbe auf Monochrom, was für eine
+Freude für die Augen... Wer allerdings mit F1 im Debugger tracen
+will, sollte mit „"rez=2“ die Auflösung des Programms wieder auf
+Monochrom stellen, das ist besser für Augen und Monitor. Evtl.
+sollte man sich die Auflösungsumschaltung auf Funktionstasten
+legen (siehe Kapitel 6,6,8 auf Seite 164).
+
+e Aus unerklärlichen Gründen ist es zu empfehlen zum Debuggen das
+Kontrollfeld zu entfernen (d.h. Umbenennen). Sonst kann es passieren,
+daß der Fileselector eines zu debuggenden Programm abstürzt! Warum?
+Keine Ahnung, ich habe das auch nur von einem Freund, dessen Pro-
+gramm im Debugger mit Kontrollfeld abstürzte; jedoch ohne Kontroll-
+feld bzw. mit Kontrollfeld und ohne Debugger einwandfrei funktioniert.
+
+6.10 Externe Abbruchmöglichkeiten
+
+Die sicherste Methode ein Programm abzubrechen, ist es den Rechner für
+mindestens 10 Minuten auszuschalten. Wer jedoch ein Programm debug-
+
+
+
+TRANSLATED
+==========
+
+

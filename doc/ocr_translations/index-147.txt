@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+ 
+
+6_DER DEBUGGER 145
+
+Save A
+
+Syntax : SAVE [Dateiname] [‚Anfangsadresse ‚Endadresse]
+Kurzform : S
+
+SAVE speichert einen Speicherbereich auf Diskette (oder Festplatte, RAM
+Disk) ab. Wenn Sie vorher etwas mit LOAD geladen haben (nicht mit LEXE-
+CUTE!), werden die Start- und Endadresse und der Name von LOAD über-
+nommen, wenn nichts anderes angegeben wird. Bei LEXECUTE wurde dies
+absichtlich verhindert, damit man nicht versehentlich ein Programm über-
+schreibt (Da bei LEXECUTE reloziert wird, ist ein Abspeichern nicht mehr
+ohne weiteres möglich). Vor dem Abspeichern kommt noch eine Sicherheits-
+abfrage.
+
+Beispiel: „SAVE ‚10000 ,20000“
+Saving Test.Tos from 10000 to 20000
+(Der Name stammt noch vom LOAD-Befehl)
+
+Wird als Filename „!“ angegeben, werden die Einstellungen des Debuggers
+in der Datei 0OM-DEBUG.INF angespeichert (siehe Kapitel 6.8 auf Seite 168).
+
+Directory A
+
+Syntax : DIRECTORY [Drive:] [Pfad} (Suchmaske)
+Kurzform : DIR
+
+DIRECTORY dient zum Anzeigen eines Inhaltsverzeichnisses von Diskette
+oder Festplatte. Es können das gewünschte Laufwerk, gefolgt von einem
+Doppelpunkt, und der Pfad (wie unter GEM üblich) angegeben werden,
+sonst wird der aktuelle Pfad genommen (der letzte bzw. beim erstem Mal
+der Pfad, von dem der Debugger geladen wurde). Außerdem wird dabei der
+aktuelle Pfad gesetzt. Das bedeutet: Wenn Sie „DIR C:\ASSEMBLE\“ einge-
+geben haben und dann „LOAD HALLD.TXT“ eingeben, versucht der Debugger,
+C:\ASSEMBLE\HALLO.TXT, also HALLO. TXT aus dem ASSEMBLE-Ordner des C-
+Laufwerks, zu laden. Das Inhaltsverzeichnis wird stets nach Namen sortiert
+ausgegeben.
+
+Hinter dem Pfad kann eine Suchmaske angegeben werden. So zeigt zum Bei-
+spiel DIR D:\ASSEMBLER\*.SRC alle Dateien im ASSEMBLER-Ordner, deren
+
+
+
+TRANSLATED
+==========
+
+

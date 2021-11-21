@@ -1,0 +1,73 @@
+ORIGINAL
+======== 
+
+
+128
+
+6.6__Die Befehle
+
+ 
+
+UTRACE:
+
+UT:
+o TRACE:
+
+o COLO:
+o COLL:
+o REZ:
+
+o CONTERM:
+o AESFLAG:
+
+CHECKSUM:
+
+COLORS:
+o SMALL:
+
+Zeigt auf den Speicher, in dem das Programm steht, das bei
+UNTRACE die Abbruchbedingungen testet. Näheres steht
+unter dem Befehl UNTRACE. Die Testprogramme für die
+Breakpoints stehen ab UTRACE-$2000 und sind je $200
+Byte lang.
+
+Entspricht UTRACE
+
+1 = Disassemblieren bei Trace mit F1, 0= Listen bei Trace
+mit F1
+
+Die Hintergrundfarbe des Debuggers
+Die Vordergrundfarbe des Debuggers
+
+Setzt die Auflösung des debuggten Programms. Der De-
+bugger stellt die Auflösung dann je nach Bedarf automa-
+tisch ein. Sie können also beispielsweise den Debugger auf
+einem Monochrommonitor starten und nach 7REZ=0 ein
+Programm in der niedrigen Auflösung debuggen. Wenn Sie
+einen automatischen Monitorumschalter haben, wird auch
+der Monitor umgeschaltet.
+
+1= Tastaturklick an, 0= aus
+
+1= Schaltet den Plausibilitätstests bei VDI- und AES-
+Funktionen aus. (Erklärung siehe OBSERVE (siehe Kapi-
+tel 6.6.5 auf Seite 138))
+
+Die Befehle READSEKTOR und WRITESEKTOR ziehen au-
+tomatisch eine Prüfsumme über den Sektor (alle Worte wer-
+den addiert). Diese Prüfsumme steht dann in CHECKSUM.
+Wenn Sie einen Boot-Sektor gelesen haben, können Sie mit
+„?CHECKSUM“ sehen, ob er ausführbar ist (das ist er bei
+$1234)
+
+Zeigt auf die Farbpalette des debuggten Programms
+
+1 = Hex-Zahlen in Kleinbuchstaben, 0 = in Großbuchstaben
+ausgeben
+
+
+
+TRANSLATED
+==========
+
+

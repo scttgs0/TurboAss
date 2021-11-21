@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+224 1.15  HEADER.S
+
+ 
+
+1.15 HEADER.S
+
+Header ist ein Programmskelett, das Sie vor Ihre Programme setzen können.
+
+Wenn ein Programm gestartet wird, übergibt das Betriebssystem ihm den
+ganzen zu Verfügung stehenden Speicher. Wenn dann noch ein anderes Pro-
+gramm Speicherplatz braucht (z.B. ein Accessory), und sich welchen mit
+Malloc anfordern möchte, ist natürlich keiner mehr da. Deshalb sollten Sie
+allen Speicher, den Sie nicht mehr (oder im Moment nicht) benötigen, mit
+Mshrink freigeben. Dieser Header erledigt nun genau dieses. Er berechnet,
+wie lang das Programm ist, reserviert noch ein wenig Platz für den Stack
+und gibt den Rest frei. Dann kann Ihr Programm folgen. Wenn Sie später
+wieder mehr Platz benötigen sollten, können Sie diesen ja wieder mit Malloc
+anfordern. Am Ende steht ein Pterm, um das Programm zu beenden.
+
+1.16 L_XXXXXX.SRC und L_0C0000.PRG
+
+Mit diesem Programm können Sie den Debugger an eine beliebige Adresse
+laden. Eine Erklärung finden Sie im Kapitel G auf Seite 205,
+
+1.17 MAKE_CFG.SRC, EPSON.HEX und NEC.HEX
+
+Die Druckeranpassungsdatein haben die Extension CFG. Sie entsprechen dem
+1st-Word-Format; wenn Sie also schon 1st-Word auf Ihren Drucker angepaßt
+haben, brauchen Sie die CFG-Datei nur als OM-ASSEM.CFG in das gleiche In-
+haltaverzeichnis wie den Assembler zu kopieren.
+
+Da CFG-Dateien schwierig zu ändern sind, gibt es eine ASCII-Klartext-Datei,
+in der alle benutzten Steuerzeichen mit Kommentaren abgelegt sind. Das
+Programm MAKE_CFG.PRG konvertiert nun die Klartext-Datei (HEX) in eine
+CFG-Datei. Der Aufbau einer .HEX- und einer CFG-Datei ist im Kapitel D.5
+auf Seite 194 beschrieben.
+
+EPSON.HEX sind die Voreinstellungen für einen EPSON FX-80 und kompati-
+ble, NEC.HEX für einen NEC-P6 und kompatible Drucker.
+
+
+
+TRANSLATED
+==========
+
+

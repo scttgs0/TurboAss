@@ -1,0 +1,35 @@
+ORIGINAL
+======== 
+
+
+Kapitel 3
+Installation
+
+Zuerst sollten Sie den Assembler und den Debugger installieren; starten Sie
+dazu das Programm INSTALL.PRG auf Ihrer Originaldiskette.
+
+Das Programm fragt Sie nach Namen und Adresse. Geben Sie zuerst Ih-
+ren Namen ein, und schließen Sie die Eingabe mit RETURN ab. Korrekturen
+können mit den Cursortasten und DELETE vorgenommen werden. Danach ge-
+ben Sie bitte die Straße und Ihren Wohnort an. Wenn alle Eingaben richtig
+sind, können Sie die letzte Frage mit „J“ für „Ja“ beantworten, sonst geben
+Sie „N“ für „Nein“ ein — Sie erhalten dann die Möglichkeit, Ihre Eingaben
+noch einmal zu korrigieren.
+
+Achtung: Geben Sie bitte wirklich Ihren korrekten Namen an. Wenn Sie einen
+falschen eingeben, haben Sie keinen Anspruch auf spätere Updates.
+
+Sie müssen darauf achten, daß kein Dritter an Kopien von Ihrem OMIKRON.
+Assembler gelangen kann. Da Ihr Name im Programmcode steht (auch ver-
+schlüsselt), können wir bei jeder Raubkopie zurückverfolgen, wer sie in Um-
+lauf gebracht hat. OMIKRON.Software behält sich gerichtliche Schritte gegen
+Raubkopierer vor.
+
+19
+
+
+
+TRANSLATED
+==========
+
+

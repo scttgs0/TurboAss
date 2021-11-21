@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 29
+
+ 
+
+wurde, in den Rechner übernommen (siehe Kapitel 5.5.5 auf Seite 62). Von
+dort kann dann die Formel nach dem Rechnen und eventuellen Veränderun-
+gen zurückkopiert werden.
+
+Natürlich können Sie auch mit der Maus scrollen, ohne dabei einen Block zu
+markieren. Dazu drücken Sie die rechte Maustaste und bewegen die Maus
+zum oberen oder unteren Bildschirmrand. Während des Scrollings können
+Sie dann die Maustaste wieder loslassen: Der Editor stoppt erst dann das
+Scrollen, wenn er den Anfang oder das Ende des Sourcetextes erreicht hat,
+oder Sie die Maus wieder in Richtung Bildschirmmitte bewegen.
+
+Wenn Sie den Cursor erst auf die Formel setzen (z. B. durch Linksklick) und
+dann auf den Cursor doppelklicken (mit rechts), wird die Formel auch in
+den Rechner übernommen. Wenn Sie dann den Rechner wieder verlassen
+und die Formel einsetzen lassen, wird sie nicht an der Cursorposition ein-
+gefügt, sondern durch das Ergebnis ersetzt (am besten, Sie probieren es mal
+aus!). Das Ersetzen klappt nur richtig in einem Einfügemodus (s. u.); beim
+Überschreibmodus können Formelreste stehenbleiben oder andere Textteile
+überschrieben werden.
+
+Die Funktion der Statuszeile*: In dieser Zeile wird am linken Rand die
+Cursorposition im Sourcetext angegeben, und zwar erst die aktuelle Zeile „Z“
+und dann die aktuelle Spalte „S“.
+
+Ein Klick auf das „Z“ von „Zeile“ bringt sie abwechselnd an den Anfang
+bzw. das Ende des Sourcetextes. Ein Linksklick auf die Zeilennummer läßt
+eine Dialogbox erscheinen, in der Sie entweder eine Zeilennummer oder ein
+Symbol angeben können, zu der/dem gesprungen werden soll (siehe auch
+ALT-Z, die Tastaturkommandos sind im Kapitel 5.5.4 ab Seite 40 beschrie-
+ben). Ein Rechtsklick auf die Zeilennummer bringt Sie zur letzten geänderten
+Stelle (siehe auch CONTROL-Z).
+
+Ein Linksklick auf die Spaltennummer setzt den Cursor an den Zeilenan-
+fang (siehe auch CONTROL-<=), ein Rechtsklick auf das Zeilenende (siehe auch
+CONTROL-=).
+
+In der Mitte der Zeile steht entweder der Filename des aktuellen Programms
+oder eine Fehlermeldung, falls der Cursor in einer fehlerhaften Zeile steht.
+
+ 
+
+2Das ist die Zeile, die direkt unter der Menüleiste steht
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+ 
+
+H_DAS MODULKONZEPT 213
+
+LEA dialog_rsc (PC) ‚AO
+JSR @form_do(A4)
+
+AO zeigt auf einen RSC-Baum, des eigenen Formates (siehe Kapi-
+tel H.7 auf Seite 214)
+
+oe Hexzahl ab A0 nach DO holen
+
+LEA buffer(PC),A0
+JSR Ohexlin(A4)
+
+AO enthält die Adresse, ab der die Hexzahl in ASCII steht, als
+Rückgabe steht die Zahl in DO, Das Z-Flag ist gesetzt, falls keine
+Hexzahl im Buffer steht (nur Spaces mit einem Nullbyte abge-
+schlossen), das N-Flag zeigt an, das eine fehlerhafte Hexzahl vor-
+liegt, der Buffer wird ab der Fehlerstelle bis zum Nullbyte gelöscht.
+
+3. Und zum Schluß was für die Profis...
+
+es Das GEMDOS ausrufen dA
+
+MOVE.W #$E,-(SP) ;Dgetdrv()
+JSR Otrap.1(A4)
+ADDQ.L #2,SP ;Nicht vergessen!
+
+Wird wie der Befehl TRAP #1 verwendet, ist anstelle von diesem
+nötig
+® Auf die originalen Treiber (Tastatur etc.) schalten A
+JSR Qorg_driver(A4)
+e und wieder auf die Treiber des Assemblers zurück A
+
+JSR Qass_driver(A4)
+
+Ist nach „org-driver“ vor dem Rücksprung oder den eigenen Funk-
+tionen unbedingt auch nötig!!!
+
+
+
+TRANSLATED
+==========
+
+

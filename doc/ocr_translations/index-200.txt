@@ -1,0 +1,41 @@
+ORIGINAL
+======== 
+
+
+Anhang E
+
+Probleme mit älteren
+TOS- Versionen
+
+Damit der Debugger z. B. bei LEXECUTE den Hauptspeicher komplett wieder
+freigeben kann, war es notwendig, auf einige mehr oder weniger dokumen-
+tierte Systemvariablen zuzugreifen. Die beiden Variablen, welche vom De-
+bugger benötigt werden, sind zum einen „kbshift“ (Ergebnis der BIOS(11)-
+Funktion) und „act_pd“ (Zeiger auf das aktuelle Programm, für das GEM-
+DOS nötig). Die Adressen dieser Variablen müssen im Debugger eingestellt
+werden.
+
+Alle, die ein neueres TOS im Rechner haben (Blitter-TOS oder TOS 1.4),
+können jetzt weiterblättern, Atari hat ab dem Blitter-TOS diese Variablen
+dokumentiert und der Debugger kann so die Adresse selbat ermitteln. Die
+Mehrheit der Atari-Besitzer haben wohl das 86’er ROM-TOS. Auch diese
+können weiterblättern, die Adressen sind als Default eingestellt (für Interes-
+sierte: „kbshift“ liegt bei $E1B und „act_pd“ bei $602C).
+
+Was, immer noch welche übrig geblieben? Ok, dann werde ich mal erklären,
+wie man (mit dem Debugger) diese beiden Variablenadressen ermitteln kann:
+Damit keine Probleme auftreten, sollten ersteinmal alle Utilities entfernt wer-
+den (AUTO-Ordner und ACCs). Aber keine Sorge, der Debugger verträgt sich
+mit den Utilities, sie sollten nur zum Ermitteln der beiden Variablenadressen
+aus dem Speicher genommen werden. Nun laden wir den Debugger.,
+
+e Die Texte in Anführungszeichen sind so einzugeben und mit der Taste
+
+198
+
+
+
+TRANSLATED
+==========
+
+

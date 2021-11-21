@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+40 5.5 Der Editor
+
+ 
+
+5.5.4 Tastaturkommandos
+
+Der OMIKRON. Assembler unterstützt eine Vielzahl von Tastaturkomman-
+dos, Die nun folgenden Kommandos können nicht über die Drop-Down-
+Menüs erreicht werden, da diese dadurch viel zu lang und unübersichtlich
+würden:
+
+Auf ein oder zwei Zeilen bezogene Kommandos
+
+BACKSPACE Löscht das Zeichen links vom Cursor
+
+DELETE Löscht das Zeichen unter dem Cursor
+CONTROL-T Löscht das Wort unter dem Cursor (ähnlich bei
+
+TEMPUS)
+
+CONTROL-SHIFT-T Löscht ab dem Cursor den Zeilenrest
+
+ALT-< Löscht ab dem Cursor den Zeilenrest
+
+INSERT Fügt ein Space an der Cursorposition ein
+
+TAB Springt zur nächsten Tabulatorposition (Im Dar-
+
+stellungsmenü einstellbar). Dabei werden Spaces
+bis zu der nächsten Tabulatorposition eingefügt
+
+SHIFT-TAB Springt zur nächsten Tabulatorposition, ohne da-
+bei Spaces einzufügen
+
+CONTROL-= Sprung ans Zeilenende
+
+SHIFT-= Sprung ans Zeilenende
+
+CONTROL-+ Sprung an den Zeilenanfang
+
+SHIFT-= Sprung an den Zeilenanfang
+
+CONTROL-DELETE Löscht die aktuelle Zeile
+CONTROL-Y Löscht die aktuelle Zeile
+
+
+
+TRANSLATED
+==========
+
+

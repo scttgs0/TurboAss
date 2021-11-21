@@ -1,0 +1,62 @@
+ORIGINAL
+======== 
+
+
+F_ASSEMBLER UND OMIKRON.BASIC _203
+
+ 
+
+1. ein Zeiger auf den String relativ zu LPEEK(SEGPTR+28) (1 Lang-
+wort)
+
+2. die Länge des Strings (1 Word)
+Folgendes BASIC-Programm soll das verdeutlichen:
+
+A$(0)="Test"
+
+A$(1)="0OMIKRON. Software"
+
+A$(2)="Sigma-soft"
+
+Adr= LPEEK( VARPTR(A$(0)))+ LPEEK( SEGPTR +20)
+
+’ Zeiger auf Array
+
+Seg=LPEEK( SEGPTR +28)
+
+FOR J=0 TO 2 ’String 0 bis 2 ausgeben
+FOR I=0 TO WPEEK(Adr+4+6*J)-1 ’Das ist die Laenge
+
+PRINT CHR$( PEEK( LPEEK(Adr+6*J)+ Seg+1));
+
+NEXT I
+PRINT
+
+NEXT J
+
+Jetzt entsprechendes in Assembler:
+
+DIM A$(2)} ? Sonst dimensioniert OMIKRON.BASIC
+
+” auf 10, und die Assembler-Routine
+
+” versucht, 10 Texte auszugeben
+A$(0)="Test" ’ Texte, die ausgegeben werden sollen.
+A$(1)="DMIKRON.Software"
+A$(2)=" |$\Sigma$\verbl-soft"
+Assprg=MEMORY (500) ’Speicher reservieren
+BLOAD "PRINTARR.B",Assprg ’Programm laden
+Ad= LPEEK( VARPTR(A$(0))) Adresse des Arrays ermitteln
+CALL Assprg(L Ad) ’beim alten OMIKRON.BASIC:
+’CALL Assprg(HIGH(Ad) ‚LOW(Ad))
+
+move.l 20(a0),a6 ;Entspricht LPEEK(SEGPTR+20),
+;Also Anfang des Arraybuffers
+add.l 4(sp),a6 ;a6 entspricht jetzt Adr
+
+
+
+TRANSLATED
+==========
+
+

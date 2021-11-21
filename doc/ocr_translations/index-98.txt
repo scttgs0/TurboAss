@@ -1,0 +1,59 @@
+ORIGINAL
+======== 
+
+
+96
+
+5.6 Die Pseudo-Opcodes
+
+ 
+
+Dazu wird noch „Offset“ addiert. Achtung: Justierung auf Longword-
+grenze bedeutet nur, daß die Adreßdistanz zum Programmanfang durch
+4 teilbar ist; oder auf Deutsch: der folgende Befehl liegt nur auf Long-
+wordgrenze, wenn der Programmanfang auch auf einer Longwordgrenze
+liegt. Das ist aber nicht unbedingt gewährleistet. „Offset“ darf nicht
+größer als 65535, „Justierung“ nicht größer als 255 sein.
+
+ORG Adresse[,*] legt fest, für welche Adresse das Programm angepaßt
+
+werden soll. Wenn kein ORG-Befehl im Programm vorkommt, wird
+eine Reloziertabelle angelegt (sofern es nicht positionsunabhängig ist).
+Wenn Sie jedoch ein Programm für [EP]ROMs schreiben, also eins,
+das in einem Modul laufen soll, oder ein Betriebssystem, ist Relozie-
+ren natürlich nicht möglich. Dann können Sie mit ORG den endgülti-
+gen Adreßbereich angeben — der Assembler reloziert dann schon vor
+dem Abspeichern. Wenn Sie „,°*“ hinter die Adresse schreiben, wird das
+fertige Programm unmittelbar nach dem Assemblieren dort hingelegt.
+Achtung: Der Assembler prüft nicht, ob der angegebene Adreßbereich
+sinnvoll ist. Dadurch wird es beispielsweise möglich, ein Programm in
+RAM zu legen, das normalerweise nicht im ST existiert. Wenn Sie aber
+ORG 8,” eingeben, wird der Rechner natürlich abstürzen. Es ist nur ein
+ORG-Befehl pro Sourcetext möglich; wenn mehrere vorkommen, ist der
+letzte ausschlaggebend.
+
+REPT Anzahl Anzahl darf nicht größer als 65535 sein, wenn es als Zahl
+
+eingegeben wird. Als Symbol ist ein Longword erlaubt. Der in der
+REPT-Schleife stehende Code wird entsprechend „Anzahl“ eingefügt.
+
+ENDR beendet eine REPT-Schleife.
+
+Ein Beispiel:
+
+Zahl: SET 0
+
+REPT 256
+DC.B Zahl
+
+Zahl: SET Zahl+1
+ENDR
+
+entspricht: DC.B 0, 1, 2, ... , 255
+
+
+
+TRANSLATED
+==========
+
+

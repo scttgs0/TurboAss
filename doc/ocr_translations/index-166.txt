@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+164 6.6 Die Befehle
+
+ 
+
+Das ist sogenannte Batch-Befehl, er ermöglicht es beim Einsprung in den (re-
+sidenten) Debugger automatisch einen Befehl ausführen zu lassen. Der hinter
+@ angegebene Befehl wird nicht ausgeführt, er wird nur intern gespeichert
+und beim nächsten Einsprung in den Debugger ausgeführt.
+
+Beispiel: „Qinfo“
+
+Beim Einsprung in den Debugger wird automatisch der Befehl INFO aus-
+geführt. Man kann aber auch z.B. die Auflösung beim Einsprung in den
+Debugger umschalten (siehe Kapitel 6.9 auf Seite 170).
+
+Wenn der Batch-Befehl nicht mehr ausgeführt werden soll, kann durch Ein-
+gabe eines einzelnen „@“ ohne Parameter der Batch-Befehl gelöscht werden.
+Ein Batch-Befehl kann mit SAVE ! gespeichert werden.
+
+Set, Let
+
+Syntax : [SETJLET!”] (ALLIVariable)=Term
+Kurzform : SE, LET, ”
+
+Mit SET (bzw. LET) können Sie ein Register auf einen bestimmten Wert
+setzen oder alle Daten- und Adreßregister (SET ALL) auf einmal auf den
+gleichen Wert.
+
+Als Register sind zugelassen: D0-D7, A0-A7, SP, SSP, USP, SR, PC
+Beispiele:
+® „SET ALL=0“, löscht DO-A6
+
+© „SE a3=a4+pc“, setzt Register A3 auf PC+3A4 (nicht Adreßregister
+A4!); das hieße SE a3="a4+pc)
+
+® „ Ssp="a4“, setzt den aktuellen Stackpointer (abhängig vom Supervisor-
+Bit)
+Key
+
+Syntax : KEY [([C|A]JFNummersText)]
+Kurzform : K
+
+
+
+TRANSLATED
+==========
+
+

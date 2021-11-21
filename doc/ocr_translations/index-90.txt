@@ -1,0 +1,48 @@
+ORIGINAL
+======== 
+
+
+88 5.6 Die Pseudo-Opcodes
+
+ 
+
+DATA ;Damit die Daten vom
+;Programm getrennt werden
+
+copyright: DC.B "©1988 by Z-soft",0
+
+BSS ;Der folgende Teil wird
+;nicht mit abgespeichert
+buffer: DS.L 14 ;14 Register Speicherplatz
+buffend: ;Ende des Registerspeichers (wegen des
+;Predekrements bei MDVEM)
+
+Da der Speicherbereich für die Registerinhalte sowieso variiert, muß er
+nicht mit abgespeichert werden. Daher wird er in das BSS gelegt.
+
+An dieser Stelle sei darauf hingewiesen, daß man mit ALT-ß - ALT-#
+an den Anfang des Text-Segments - BSS springen kann.
+
+(.JEND kennzeichnet das Ende des Programms. Auch dieser Befehl ist nur
+aus Kompatibilitätsgründen vorhanden — er kann entfallen. Sämtlicher
+Code hinter END wird ignoriert.
+
+5.6.4 Symbole
+
+Symbol (.)JEQU Wert ((.)=|==) ordnet einem Label einen Wert zu. So
+können Sie z. B. am Anfang Ihres Programms definieren: etv_timer EQU
+$400. Dann müssen Sie sich nicht bei jedem Zugriff auf diese Speicher-
+stelle an die Adresse des Vektors erinnern, sondern können statt move
+$400,d0 einfach move etv_timer, d0 schreiben. Wenn .w hinter einem
+Symbolaufruf (nicht hinter der Definition) steht, schreibt der Assem-
+bler die Adresse auf Wordbreite (das spart Speicherplatz und Rechen-
+zeit). Das ist nur bei Adressen bis 32767 und Adresse größer gleich
+$FFFF8800 möglich. Das obige Beispiel können Sie also auch als move
+etv.timer.w, dO angeben.
+
+
+
+TRANSLATED
+==========
+
+

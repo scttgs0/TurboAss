@@ -1,0 +1,62 @@
+ORIGINAL
+======== 
+
+
+66 5.5__Der Editor
+
+ 
+
+den gesamten Sourcetext ausdrucken. Wenn ein Block markiert ist, erscheint
+eine Dialogbox (Siehe Abbildung 5.21 auf Seite 66), in der Sie wählen können,
+ob Sie den gesamten Text oder nur den Block drucken wollen. Der Ausdruck
+
+ 
+
+Scurcetext drucken 7
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.21: Die Dialoxbox Block/Alles drucken
+
+erfolgt stets über die Centronics-Schnittstelle. Eine Druckeranpassung ist
+ohne Probleme möglich. Im Ordner UTILITY.OMI befinden sich bereits zwei
+Anpassungen, eine für den NEC P6 und eine für einen EPSON-kompatiblen
+9-Nadler. Die ASCH-HEX-Druckerdateien können mit dem als Sourcetext
+vorhandenen MAKE_CFG.SRC in das endgültige CFG-Format gebracht werden.
+Falls Sie Besitzer von 1st Word (Plus) sind, brauchen Sie dessen Drucker-
+treiber nur in OM-ASSEM.CFG umzubenennen (Wegen des Bindestriches geht
+das am besten mit dem Debugger: NAME OLDNAME,NEWNAME). Der Aufbau
+des Druckertreibers kann dem Anhang (siehe Kapitel D.5 auf Seite 194) ent-
+nommen werden. Wenn der Drucker ausgeschaltet ist, wird eine Dialogbox
+ausgegeben (Siehe Abbildung 5.22 auf Seite 66).
+
+ 
+
+Drucker antxortet nicht !
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.22: Der Drucker antwortet nicht...
+
+Das Menü „Suchen“
+
+Der OMIKRON. Assembler beherscht ebenfalls alle nötigen Such- und Er-
+setzbefehle; er enthält sogar erheblich mehr als jedes andere Programm, da
+der Assemblerprogrammierer viel spezieller suchen und ersetzen will, als es in
+
+
+
+TRANSLATED
+==========
+
+

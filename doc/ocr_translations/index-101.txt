@@ -1,0 +1,48 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 99
+
+ 
+
+ELSE
+
+jmp password ;Password abfragen
+prompt: DC.B 'What do you want me to do?’,0
+
+ENDC
+
+Hinweis: Wenn Sie zum zweiten Mal das Label „prompt“ definieren wollen,
+werden Sie darauf hingewiesen, daß solch ein Symbol schon existiert. Um
+es trotzdem eingeben zu können, ignorieren Sie die Warnung und drücken
+RETURN.
+
+Da der IF-Befehl in der Grundversion nicht geschachtelt werden darf, gibt es
+noch den Befehl SWITCH, der der Programmiersprache C entlehnt ist. Der
+Befehl ist besonders dort sinnvoll, wo ein Assemblerprogramm für verschie-
+dene Sprachen erstellt werden soll:
+
+Beispiel:
+language: EQU 1 ;1=Deutsch, 2=Englisch, 3=Latein
+
+SWITCH language ;Ein beliebiger Ausdruck ist erlaubt
+CASE 1 ;Bei CASE sind nur Zahlen erlaubt!
+DC.B ’Spielende’
+CASE 2
+DC.B ’Game Over’
+CASE 3
+DC.B ’Finis ludi’
+CASE
+;Default-Fall, wenn keiner
+;der obigen CASES zutraf
+FAIL ’Unerlaubte Sprache’
+;dann einen fatalen Fehler ausgeben
+ENDS ;Ende der Konstruktion
+
+
+
+TRANSLATED
+==========
+
+

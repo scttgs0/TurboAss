@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+132 6.6 _ Die Befehle
+
+ 
+
+6.6.5 Trace-Funktionen
+
+Breakpoints
+
+Syntax : (BREAKPOINTS]B) [Parameter]
+
+Parameter : NummersAdresse, (+*|=Wert | Anzahl | ?Bedingung]
+K [Nummer]
+
+Kurzform : B
+
+Die Nummer ist ein Term, dessen Wert zwischen 0 und 15 liegt.
+
+„BREAKPOINTS“ allein zeigt alle Breakpoints an, „BREAKPOINTS+Nummer“ nur
+einen. „BREAKPOINTS K“ löscht alle Breakpoints. Es kann natürlich auch nur
+ein einzelner Breakpoint kann gelöscht werden, indem man „BREAKPOINTS
+K+Nummer“ eingibt. Wenn „BREAKPOINTS NummersAdresse“ eingegeben wird,
+wird der entsprechende Breakpoint auf die Adresse gesetzt.
+
+Beispiele:
+
+e „Break 5=pc+.100“ setzt Breakpoint Nummer 5 100 Byte hinter den
+Program Counter.
+
+se „BREAKPOINTS K“ löscht alle Breakpoints
+e „B“ zeigt alle Breakpoints an
+® „BK 3“ löscht Breakpoint 3
+
+Wenn ein Breakpoint ausgeführt wurde, wird er automatisch gelöscht, Es
+gibt neben diesen „normalen“ Breakpoints aber auch andere, die Sie setzen
+können, indem Sie nach der Adresse noch ein Komma, gefolgt von der Art,
+angeben:
+
+1. „‚Anzahl“ setzt einen Stop-Breakpoint. Der Breakpoint muß „Anzahl“
+mal aufgeführt werden, bis das Programm abgebrochen wird. Dann
+wird der Breakpoint gelöscht. Wenn Sie sich mit B die Breakpoints
+anzeigen lassen, steht hinter jedem Stop-Breakpoint, wie oft er noch
+ausgeführt werden muß.
+
+
+
+TRANSLATED
+==========
+
+

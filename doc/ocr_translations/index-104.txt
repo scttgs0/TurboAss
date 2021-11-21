@@ -1,0 +1,59 @@
+ORIGINAL
+======== 
+
+
+102 5.7 _ Fehlermeldungen des Assemblers
+
+ 
+
+ 
+
+Keine weiteren Fehler
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.39: Keine weiteren Fehler vorhanden
+
+Symbolname zu lang Ein Symbol darf nicht länger als 23 Zeichen sein.
+
+Syntax-Fehler Die ersten Zeichen wurden als Befehl identifiziert, danach
+ist dann ein Fehler aufgetreten. „move “d0,a0“ produziert z.B. einen
+Syntax-Fehler.
+
+Unbekannter Befehl Die eingegebene Zeile kann nicht als Befehl inter-
+pretiert werden. Meistens ist der Grund ein Tippfehler; den kann man
+jedoch recht einfach beheben, da man ja sofort nach dem RETURN darauf
+hingewiesen wird.
+
+Unerlaubter Operand In einer Formel wurde eine Registerliste verwendet.
+
+Unzulässige Adressierung Prinzipiell gibt es diese Adressierungsart; bei
+diesem Befehl ist sie aber nicht zulässig. So führt z. B. „cmpi.w #5,A0“
+zum Fehler „Unzulässige Adressierung“.
+
+Wert zu groß/zu klein Sie haben versucht, einen Wert einzugeben, der zu
+groß für diese Befehlsbreite war; d.h. einen Wert
+
+® kleiner als —127 oder größer als 255 bei Bytebreite
+® kleiner als —32767 oder größer als 65535 bei Wordbreite
+
+® kleiner als —2147483647 oder größer als 4294967295 bei Long-
+wordbreite
+
+Zweiter Operand fehlt z.B. „move #50“
+
+5.7.4 Fehler bei der Assemblierung
+
+Offset zu klein Dieser Fehler tritt nur bei BSR.S mit einer Sprungweite
+von 0 auf. Da eine Wandlung in einen NOP mit ziemlicher Sicherheit
+
+
+
+TRANSLATED
+==========
+
+

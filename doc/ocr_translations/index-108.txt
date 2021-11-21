@@ -1,0 +1,41 @@
+ORIGINAL
+======== 
+
+
+Kapitel 6
+
+Der Debugger
+
+6.1 Vorwort
+
+Assemblerprogramme reagieren besonders empfindlich auf Fehler, da es bis
+auf wenige Ausnahmen keine Möglichkeit der Plausibilitätsprüfung gibt. Eine
+Hochsprache (außer teilweise vielleicht C) kann z. B. erkennen, ob
+
+1. der Wertebereich einer Variablen überschritten wird („Overflow“ oder
+„String too long“)
+
+2. oder ob eine Schleifenkonstruktion fehlerhaft ist („RETURN without
+GOSUB“ oder „UNTIL without REPEAT“)
+
+Der 1. Fall führt bei Assemblerprogrammen meistens nicht zum Absturz, je-
+doch ist mit falschen Ergebnissen zu rechnen. Im 2. Fall ist ein Absturz vor-
+programmiert; da es in Assembler keine Fehlermeldungen solcher Art gibt,
+würde der Computer ein „RETURN“ (in Assembler also ein „RTS“) auch
+dann ausführen, wenn gar kein „GOSUB“ (also ein „JSR“ oder „BSR“) vor-
+
+handen ist.
+
+Der Debugger dient nun dazu, die während der Testphase auftretenden Feh-
+ler zu lokalisieren, um sie dann beheben zu können. Der Debugger erlaubt
+Ihnen, auf komfortable Weise Progamme zu testen. Dabei werden prak-
+tisch alle durch Programmierfehler bedingte Abstürze abgefangen. Es können
+
+106
+
+
+
+TRANSLATED
+==========
+
+

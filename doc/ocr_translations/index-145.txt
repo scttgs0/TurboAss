@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+6_ DER _DEBUGGER 143
+
+ 
+
+Der hinten angegebene Befehl wird sofort ausgeführt und die Registeranzeige
+entsprechend aktualisiert. Dadurch kann jedoch kein Programm gestartet
+werden; es wird immer nur der eine Befehl ausgeführt. „|bra $50000“ setzt
+z.B. nur den PC, führt dann aber nichts weiter aus.
+
+Sync50, Sync60
+
+Syntax ; SYNCSO bzw. SYNC60
+Kurzform : SYN
+
+Schaltet die Bildfrequenz des zu debuggenden Programms auf 50Hz bzw.
+60Hz um (dies gilt natürlich nur für Farbmonitore).
+
+6.6.6 I/O-Befehle
+
+Lexecute A
+
+Syntax ; LEXECUTE [“Filename"] [,"Commandline“]
+Kurzform : LE
+
+Ein Programm wird geladen und reloziert. Letzteres ist notwendig, um es
+zu starten (es sei denn, es ist positionsunabhängig); man kann es danach
+aber nicht mehr abspeichern, da das Relozieren irreversibel ist. Wenn bereits
+ein anderes Programm im Speicher stand, wird es vorher gelöscht. Es wer-
+den auch alle Speicherbereiche, die das Programm angefordert haben sollte,
+freigegeben. Dadurch ist es möglich, beliebig viele Programme zu debuggen,
+ohne den Debugger jedesmal neu laden zu müssen.
+
+Wird kein Programmname angegeben, wird das zuletzt geladene Programm
+noch einmal geladen. Dies ist zum Beispiel sinnvoll, wenn Sie ein Programm
+mit LOAD geladen, dann geändert und wieder abgespeichert haben und es
+jetzt testen wollen.
+
+Wird keine Commandline angegeben, wird keine übergeben (nicht die vom
+letzten LEXECUTE). Als Environment-String wird der übergeben, mit dem
+auch der Debugger aufgerufen wurde.
+
+
+
+TRANSLATED
+==========
+
+

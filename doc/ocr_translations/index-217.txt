@@ -1,0 +1,109 @@
+ORIGINAL
+======== 
+
+
+H_ DAS MODULKONZEPT
+
+215
+
+ 
+
+ 
+
+Aufbau eines Objektes
+
+ 
+
+ 
+
+ 
+
+X-Offset (zeichenweise!) zur
+linken oberen Ecke des Bau-
+mes
+
+Y-Offset (wie oben)
+
+Zeiger auf Text, bzw. Icon-
+daten
+
+Typ (siehe unten)
+
+ 
+
+ 
+
+ 
+
+Ende der RSC-Daten
+
+ 
+
+ 
+
+—1 (der Wert muß negativ
+sein)
+
+ 
+
+ 
+
+Die verschiedenen Typen
+
+ 
+
+Typ 0—unbelegt
+
+ 
+
+Typ 1—ausgefülltes Rechteck mit Doppelrahmen
+Typ 2—wie Typ 1, aber nicht ausgefüllt
+Typ 3—Icon (siehe Kap 4)
+
+ 
+
+ 
+
+Wenn im Typ des Baumes (erstes Objekt) Bit 7 gesetzt wird, wird der
+löschende (und flackernde) Redraw unterlassen. Das Bit wird automatisch
+
+gelöscht
+
+ 
+
+ 
+
+Bit 2 = 1:Button (= umrahmter selektierbarer Text)
+Bit 3 = 1:Text ((fast) ohne jegliche Extras)
+
+ 
+
+ 
+
+Wichtig: Es darf nur Bit 2 oder (!!l) Bit 3 gesetzt sein, nie beide!
+Wenn Bit 2 oder Bit 3 gesetzt sind, gelten folgende Zusätze:
+
+ 
+
+schrift
+
+ 
+
+Bit 0 = 1:invers (bzw. selektiert)
+
+Bit 1 = 1:Defaultbutton
+Bit 4 = 1:light (bzw. disabled)
+
+Bit 5 = 1:Exitbutton; bei Texten : = 1 — nur
+(m Ziffern bei der Eingabe
+
+Bit 6 = 1:Radiobutton; bei Texten : = 1 — Fett-
+
+Bit 7 = l:editierbarer Text (für Bit 3 = 1)
+
+
+
+TRANSLATED
+==========
+
+

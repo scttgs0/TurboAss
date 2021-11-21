@@ -1,0 +1,60 @@
+ORIGINAL
+======== 
+
+
+H_DAS MODULKONZEPT 217
+
+ 
+
+werden kann. Sie können diese Datei in Ihr Assemblerprogramm einbinden
+und brauchen, um dieses Alert anzeigen zu lassen, nur noch die form.do
+Routine aufrufen und ihr den Namen zu übergeben. Als Name wird der Da-
+teiname verwendet. Intern werden die Labels „(Dateiname) (Nummer)“, also
+beim Dateinamen „RSC*“ die Label “RSC_1“, „RSC_2“ usw. verwendet.
+
+Wenn Sie innerhalb des Alerts an eine leere Stelle klicken, erscheint ein Po-
+pupmenü, in dem Sie auswählen können, ob Sie ein Icon, einen Text oder
+einen Button setzen wollen. Buttons unterscheiden sich von Texten nur da-
+durch, daß Sie umrahmt werden. Wenn Sie in die linke obere Ecke eines
+Textes/Buttons/Icons klicken, können Sie es
+
+ 
+
+Ohne Tasten | verschieben
+Mit CONTROL | kopieren und die Kopie verschieben
+Mit SHIFT | löschen
+Mit ALT | zentrieren (alle Texte/Buttons in der
+Zeile werden zentriert)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Wenn Sie ein Objekt mit der rechten Maustaste anklicken, können Sie es
+editieren,
+
+Die Iconlibrary
+
+Icons, die Sie häufig benutzen, können Sie in einer Iconlibrary ablegen. Das
+bedeutet, Sie kopieren alle (z. B. mit STAD) in ein Grafikbild und speichern es
+unter dem Namen LIBRARY .PIC im Screen-Format ab (ins gleiche Directory
+wie den Editor). Der Editor lädt es dann gleich mit ’rein. Wenn Sie dann ein
+Icon einsetzen wollen, brauchen Sie nicht mehr zu laden, sondern nach einem
+BITBLT ist es da.
+
+Achtung beim Benutzen von Farbmonitoren (nur mittlere Auflösung):
+
+Es können keine neuen Icons gesetzt werden. Icons, die in geladenen Alerts
+sind, werden jedoch angezeigt und können auch verschoben, kopiert u.ä,
+werden.
+
+
+
+TRANSLATED
+==========
+
+

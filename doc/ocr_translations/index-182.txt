@@ -1,0 +1,35 @@
+ORIGINAL
+======== 
+
+
+180 6.13_ Debugger-Demo
+
+ 
+
+die Adressen aller VBL-Routinen. moveq #-1,D2; in D2 steht der Fehler, wir
+setzen erst D2 auf —1: „Fehler aufgetreten“ und löschen D2, wenn wir unsere
+VBL-Routine installieren konnten. 1oop0: tst.1l (a0)+/ dbeq DO,loop0,
+wir testen jeden VBL-Slot auf Null, denn wenn er gleich Null ist, ist er noch
+frei. Wenn einer belegt ist, steht in ihm die Adresse der VBL-Routine, die
+ja immer ungleich Null sein muß. Die Schleife wird beendet, wenn ein freier
+Slot gefunden oder die ganze Queue durchsucht wurde. bne.s return; wenn
+kein Slot gefunden wurde, wird die Routine beendet — D2 steht ja schon
+auf —1 = Fehler, move.l #(Adresse),A0; die Adresse der eigenen VBL-
+Routine wird in — Moment mal, das darf ja wohl nicht wahr sein!!! Das soll
+natürlich nicht „nach A0“, sondern „indirekt A0“ heißen, denn AO zeigt ja
+noch auf den freien Platz in der VBL-Queue. Durch den Postinkrement beim
+Schreiben ist A0 jedoch ein Longword zu hoch, das können wir durch einen
+Predekrement beim Schreiben der Adresse beheben. Wir ersetzen das „,A0“
+durch „,-(A0)“. Endgültig müssen wir es natürlich im Sourcetext ändern.
+
+Damit ist unser Debugger-Demo beendet. Die meisten (und die mächtigeren)
+Befehle haben wir hier nicht verwendet, damit das Demo für den Anfänger
+nicht zu unübersichtlich wird. Wir hoffen, daß Ihnen jetzt die Methode des
+Einkreisens von Fehlern ungefähr klar geworden ist.
+
+
+
+TRANSLATED
+==========
+
+

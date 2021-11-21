@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 25
+
+ 
+
+stem endlich auch eigene Drop-Down-Menüs enthält (die sich fast genauso
+bedienen lassen, wie die Drop-Down-Menüs des GEM). Dies ermöglicht es
+uns, einfacher neue Funktionen zu implementieren, als dies bei 20 Buttons
+(Funktions- Tasten) möglich wäre.
+
+Abschließend möchte ich mich bei allen unseren unermüdlichen Testern noch-
+mals bedanken, welche nicht nur Fehler gefunden, sondern auch viele kon-
+struktive Verbesserungsvorschläge gemacht haben.
+
+Markus Fritze
+
+5.2 Einführung in den Assembler
+
+Der OMIKRON. Assembler ist ein integriertes Entwicklungspaket für Assem-
+blerprogramme, d. h., es gibt keinen separaten Assembler; der Assembler ist
+statt dessen im Editor mit integriert. Dies ermöglicht eine viel bessere Zusam-
+menarbeit von Assembler und Editor — man denke nur an die Möglichkeit,
+mit CONTROL-J (siehe Kapitel 5.5.5 auf Seite 56) in eine fehlerhafte Zeile
+zu springen. Ganz nebenbei wird die Entwicklungszeit natürlich drastisch
+verkürzt.
+
+Wie fange ich an? Zuerst sollten Sie sich eine Diskette mit den nötigen
+Programmen zusammenstellen. Harddisk-Besitzer reservieren sich dafür ei-
+nen Ordner. Damit stellt sich gleich die nächste Frage:
+
+Welche Programme sind für die Entwicklung nötig? Bei genügen-
+dem Speicher (1 MB oder mehr) empfiehlt es sich, den Debugger in den AUTO-
+Ordner zu legen, er wird damit automatisch resident und kann direkt vom As-
+sembler oder vom Programm CALL.PRG aufgerufen werden. Ansonsten kann
+er jederzeit per Doppelklick vom Desktop aus gestartet werden.
+
+Beispieldiskette:
+
+AUTO\OM-DEBUG . PRG — Der Debugger liegt somit stets resident im RAM
+OM-ASSEM.PRG — Der Assembler und Editor (nicht ganz unwichtig)
+
+
+
+TRANSLATED
+==========
+
+

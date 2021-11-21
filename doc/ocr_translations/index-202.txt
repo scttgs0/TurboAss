@@ -1,0 +1,67 @@
+ORIGINAL
+======== 
+
+
+200
+
+ 
+
+“© > & 8
+
+SS © 5 ©
+
+10.
+
+. !,MOVE.W #B,-(SP)“
+
+. 1, TRAP #1“
+
+. F1 drücken (normales Trace)
+
+. F4 drücken (Trap tracen)
+
+. mit ESC den Bildschirm löschen
+
+. „IF { PC}.w=4E90“ (Abbruch, wenn der PC auf „JSR (A0)“ steht)
+. „U“ für Untrace eingeben
+
+. F1 drücken
+
+Das Listing ansehen, es muß dem Folgebeispiel (aus dem Blitter-TOS)
+ähnlich sehen:
+
+LINK A6 ,#FFFC
+
+MOVEA.L $87CE,A0
+
+MOVE.B $30(A0),D0
+
+EXT.W DO
+
+MOVE.W DO, (SP)
+
+ADDQ.W #3, (SP)
+
+BSR.S xxx ;Adresse unwichtig
+UNLK A6
+
+RTS
+
+Hier steht $87CE für die Adresse der „act_pd“-Variable, sie sollte also
+bei Ihrer TOS-Version einen anderen Wert haben.
+
+11. Jetzt verlassen wir den Debugger mit Shift-F10 und RETURN
+
+So, nun müssen wir die beiden Adressen nur noch in den Debugger eintragen.
+Wir machen erst einmal eine Kopie vom Debugger (nicht für Freunde und
+Bekannte, sondern eine Sicherheitskopie; falls etwas schief geht, können wir
+dann immer noch auf die Kopie zurückgreifen.
+
+Nun laden wir den Debugger erneut, um von ihm aus sich selbst zu patchen.
+
+
+
+TRANSLATED
+==========
+
+

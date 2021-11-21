@@ -1,0 +1,68 @@
+ORIGINAL
+======== 
+
+
+              Optimierungen ............................... 34
+        5.5.2 Formelrechnungen ............................ 34
+        5.5.3 Symbole,Label und Konstanten ................ 37
+              Rechnen mit Symbolen ........................ 38
+        5.5.4 Tastaturkommandos ........................... 40
+        5.5.5 Die Drop-Down-Menüs ......................... 45
+              Das Menü „Atari“ ............................ 47
+              Das Menü „Datei“ ............................ 48
+              Das Menü „Assembler“ ........................ 55
+              Das Menü „Editor“ ........................... 61
+              Das Menü „Suchen“ ........................... 66
+              Das Menü „Block“ ............................ 73
+              Das Menü „Einstellungen“ .................... 73
+              Das Menü „Hilfe“ ............................ 80
+              Die ASCII-Anzeige ........................... 81
+              Die Uhrzeit ................................. 81
+    5.6 Die Pseudo-Opcodes ................................ 81
+        5.6.1 Definition von Datenbereichen ............... 82
+        5.6.2 Daten-Strukturen mit RS ..................... 85
+        5.6.3 Segmentierung ............................... 86
+        5:6.4 Symbole ..................................... 88
+        5.6.5 Assembleroptionen ........................... 89
+        5.6.6 Dateioperationen ............................ 90
+        5.6.7 Allgemeines ................................. 92
+        5.6.8 Bedingte Assemblierung ...................... 97
+    5.7 Fehlermeldungen des Assemblers. .................. 100
+        5.7.1 Optimierungen .............................. 100
+        5.7.2 Warnungen .................................. 100
+
+
+
+TRANSLATED
+==========
+
+
+              Optimizations ............................... 34
+        5.5.2 Formula Calculations ........................ 34
+        5.5.3 Symbols, Labels and Constants ............... 37
+              Computing with Symbols ...................... 38
+        5.5.4 Keyboard Commands ........................... 40
+        5.5.5 The Drop-Down Menus ......................... 45
+              The "Atari" Menu ............................ 47
+              The "File" Menu ............................. 48
+              The "Assembler" Menu ........................ 55
+              The "Editor" Menu ........................... 61
+              The "Search" Menu ........................... 66
+              The "Block" Menu ............................ 73
+              The "Settings" Menu ......................... 73
+              The "Help" Menu ............................. 80
+              The ASCII Display ........................... 81
+              The Time .................................... 81
+    5.6 The Pseudo-Opcodes ................................ 81
+        5.6.1 Definition of Data Areas .................... 82
+        5.6.2 Data Structures with RS ..................... 85
+        5.6.3 Segmentation ................................ 86
+        5.6.4 Symbols ..................................... 88
+        5.6.5 Assembler Options ........................... 89
+        5.6.6 File Operations ............................. 90
+        5.6.7 General ..................................... 92
+        5.6.8 Conditional Assembly ........................ 97
+    5.7 Error Messages of the Assembler. ................. 100
+        5.7.1 Optimizations .............................. 100
+        5.7.2 Warnings ................................... 100
+

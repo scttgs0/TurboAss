@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 83
+
+ 
+
+ben, ist maximal 65535 zugelassen; bei Symbolen und Formeln wird
+natürlich das ganze Symbol bzw. die Formel berücksichtigt.
+Ein Beispiel für DC und DS:
+
+Der Text „Bitte geben Sie Ihren Namen ein:“ soll auf dem Bildschirm
+ausgegeben werden
+
+pea nam ;Adresse des Textes im Speicher
+move #9,-(sp) ;Funktionsnummer von Cconws
+trap #1 ;Funktion aufrufen
+
+addq.l #6,sp ;Stackkorrektur,
+
+;6 Byte vom Stack entfernen
+;Jetzt gibt der Benutzer seinen Namen ein
+
+lea buffer,a0 ;Adresse des Eingabebuffers
+
+move.b #14,(a0) Maximal 15 Zeichen eingeben
+move.l a0,-(sp) Adresse auf den Stack
+
+move #10,-(sp) ;Funktionsnummer von Cconrs
+trap #1 ;Funktion aufrufen
+
+addq.l #6,sp ;Stackkorrektur
+
+nam: DC.B 27,’Y35Bitte geben Sie Ihren Namen ein’
+;ESC Y positioniert den Cursor
+
+;Der mit DC eingesetzte Text wird
+;im Programmcode abgespeichert.
+
+buffer: DS.B 15 ;15 Byte Namensbuffer
+
+;Es wird keine 15 in den Programmcode eingeschoben,
+;sondern 15 Byte Speicher reserviert.
+
+DCB.x verhält sich genauso wie DS.x; ist nur aus Kompatibilitätsgründen
+enthalten.
+
+
+
+TRANSLATED
+==========
+
+

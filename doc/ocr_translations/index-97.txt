@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+5_DER ASSEMBLER 95
+
+ 
+
+jumpi1: . . . ;hier folgen die
+
+jump2: . . . einzelnen Unterprogramme,
+jump3: . .. ;die angesprungen werden
+jump4: . ..
+
+Dabei ist zu beachten, daß bei der Verwendung eines Labels als Offset
+zu einem Adressregister stets ein Bezugswert angegeben werden muß:
+
+lea record2(PC) ,A0
+BASE AO ‚record2 ;darf nicht fehlen
+move.w y(A0O),DO
+
+trecord:
+
+x: DC.W 0
+
+y: DC.W 24
+1: DC.W 80
+
+record2:DC.W 5,12,70
+
+Der Parameter OFF erlaubt es, die Wirkung des BASE-Befehls wieder
+auszuschalten.
+
+GLOBAL Symbol{,Symbol} alle in der Liste enthaltenen Symbole wer-
+den als global markiert (was daran ersichtlich ist, daß sie zwei Dop-
+pelpunkte haben). Das ist für alle Symbole erforderlich, die von einem
+Linker berücksichtigt werden müssen. Wenn Sie also beispielsweise ein
+C-Programm schreiben, daß die Assembler-Routine „Test“ aufruft. Im
+Assembler müssen Sie „Test, dann für den Linker den Status global
+geben.
+
+CNOP Offset, Justierung „begradigt“ den Programmzähler, so daß er
+durch „Justierung“ teilbar ist, d. h.:
+
+oe Justierung=2; auf Wordgrenze;
+
+eo Justierung=4: auf Longwordgrenze usw.
+
+
+
+TRANSLATED
+==========
+
+

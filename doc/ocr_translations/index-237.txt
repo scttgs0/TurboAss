@@ -1,0 +1,122 @@
+ORIGINAL
+======== 
+
+
+J _LITERATURHINWEISE
+
+235
+
+ 
+
+Hallo 53
+Harddiskoperationen 48
+HEADER .S 224
+
+Help 167
+
+hex 186
+Hintergrundfarbe 76
+Hunt 159
+
+IBYTES 91
+
+IF 99
+
+If 236
+
+IFD 98
+
+IFEQ 97
+
+IFGE 98
+
+IFGT 98
+
+IFLE 97
+
+IFLT 97
+
+IFND 98
+
+IF[NE] 97
+ILLEGAL 97
+Include-Datei 181
+info 144
+
+Info 121,144,160
+Informationen 64
+INF-Datei 26
+Initregister 142
+Inline 59
+
+Insert 119
+Installation 19
+Internes 167
+internes Problem 182
+I/O-Befehle 143
+Joystickabfrage 127
+Kaltstart 45,116
+keine Ahnung 7122
+Key 164
+
+Kill 148
+
+klicken 186
+
+Kommentare 39
+Kompaktor 78
+Kompatibilität 82
+Komplement 34
+Konstanten 37,38,88
+Kontrollfeld 2170
+Konvertierung 32
+
+.L 157
+
+Label 37,39
+
+Labelbase 744
+
+Laden 49
+
+Let 164
+
+Lexecute 143
+
+Line 147
+
+Linker 16,60,95,181
+List 110,154
+
+List PC 122
+
+Listende Befehle 153
+Literaturhinweise 229
+Load 144
+
+logische Sektoren lesen 751
+lokale Label 32
+Longword 186
+L_xxxxxx.PRG 205
+Makro 16
+Makro-Version 16,181
+Marker 43,105
+
+Marker anzeigen 120
+Marko 181
+
+Maus anschalten 747
+Maus ausschalten 747
+Mausbeschleunigung 78
+Mausscrolling 166
+Meldungen des Debuggers 177
+Memory 110,156
+Memorydump PC 120
+Memoryinfo 121
+
+
+
+TRANSLATED
+==========
+
+

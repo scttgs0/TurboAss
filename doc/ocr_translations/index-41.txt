@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 39
+
+ 
+
+Label sind relozierbare Symbole, welche Adressen darstellen, die evtl. vom
+Gemdos beim Laden reloziert werden müssen.
+
+Beispiel:
+
+label: NOP ;Ein Symbol vor einem Opcode
+
+label2: EQU label+100 ;Da label ein Label ist, ist label2
+auch eins.
+
+label3: DS.W 10 ;Auch ein Label
+
+aber:
+
+wert3: EQU label2-label ;Zwei Label voneinander subtrahiert
+;ergeben eine Konstante
+
+wert4: EQU label2*label ;Das geht NICHT !!!
+
+wert5: EQU label+label2 ;Das geht AUCH NICHT!!!
+
+label3: EQU label+label2-label3 ;Das geht wieder, da
+;label2-label3 ein Offset ist,
+;welcher zu label addiert werden
+;kann!
+
+Noch einige Erklärungen zu Remarks: Bei anderen Assemblern (z.B.
+dem Assembler des Entwicklungspaketes) beginnen Remarks stets mit einem
+„*“. Da aber der „*“ auch ein Rechenzeichen ist, bricht der Assembler mit
+einer Formel ab, wenn er auf ein Space trifft. Allerdings beginnt dann nicht
+automatisch ein Remark, sondern der Assembler erwartet vor einem Remark
+zwingend entweder ein „;“ oder ein „*“,
+
+Beispiel: move.w #0,wert*2 *2
+Ergebnis: move.w #0 ,wert*2 *2
+
+aber: move,w #0,wert*2;2
+Ergebnis: move.w #0,wert*2 ;2
+
+
+
+TRANSLATED
+==========
+
+

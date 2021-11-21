@@ -1,0 +1,93 @@
+ORIGINAL
+======== 
+
+
+238
+
+ 
+
+Gemdos- 78
+Speicherplatz 64,65
+Sprung zu Zeile 71
+Sprünge im Sourcetext 42
+SR 109
+SRC-Format 49
+SSP 109
+Starten des DBG 107
+Statistik 64
+Statusregister 109
+Statuszeile 29
+Steuerzeichen 45
+stöhn 24
+Suchen 66
+Suchfunktionen 76
+Suchkommandos 42
+Suchzeichen 77
+Supervisor-Flag 110
+
+Supervisor-Stack-Pointer 109
+
+Switch 166
+SWITCH 99
+Symbol 37,60
+-definition 28
+ersetzen 68
+laden 51
+-namen 77
+relozierbar 39
+suchen 67
+-typen 155
+Symboltabelle
+37,51,52,56,65,187,197
+Symboltable 111,155
+**SYMTAB 37,98
+Sync 149
+System 123,163
+Systemvariablen 35,37
+| 142
+
+Tabulator 40,75
+Tabulator
+Befehls- 75
+Operanden- 75
+Pseudoopcode- 75
+Pseudo-Rem- 75
+Remark- 75
+Taschenrechner 62,63
+Tastaturbelegung 111
+Tastaturklick 77
+Tastaturkommandos 40
+Teach-In-Tasten 181
+TEXT 86
+Text ersetzen 70
+Text suchen 69
+TEXT-Segment 43
+Think and Work 222
+“TIME 35,82
+Tips 170
+Toggle Screen 122
+tokenisieren 50
+tokenisierender Editor 15
+Trace 134
+trace 117
+Trace no subroutines 118
+Trace Traps 119
+Trace until RTS 118,119
+Trace-Funktionen 192
+Tracesimulator 68020 117
+Trap tracen 119
+Trial-and-Error 14
+Turbo-C 144
+Type 150
+Überschreiben 30
+Uhr 80,81
+UNDO 111
+
+Unterprogramm verlassen 118
+
+
+
+TRANSLATED
+==========
+
+

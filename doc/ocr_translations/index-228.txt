@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+226 J.23_ SHIP.ACC, SHIP.PRG und SHIP.SRC
+
+ 
+
+finden Sie in Kapitel H.7 auf Seite 214.
+
+1.23 SHIP.ACC, SHIP.PRG und SHIP.SRC
+
+Dieses Accessory parkt die Festplatte mit der Nummer 0 (normalerweise hat
+jede Festplatte diese Nummer, sie dient nur zur Unterscheidung, wenn meh-
+rere Festplatten u. ä. angeschlossen sind.). Das gleiche können Sie auch mit
+dem beigelegten HDX-Programm erreichen; da das Accessory jedoch immer
+griffbereit ist, kann man nun die Festplatte vor jedem Ausschalten problemlos
+parken.
+
+SHIP.PRG ist das gleiche als Programm. Das Interessante, weshalb wir es
+auch als Demo zum Assembler gepackt haben, ist, daß beide Programme,
+SHIP.ACC und SHIP.PRG identisch sind. Das Programm erkennt automatisch,
+ob es als Programm oder als Accessory gestartet worden ist.
+
+Das geht so: Wenn ein Programm gestartet wird, legt das Betriebssystem
+davor eine Basepage an. Bei einem Accessory ist nun kein Parent eingetragen
+(das Programm, daß dieses Programm gestartet hat). Also muß man nur in
+der Basepage nachgucken. Sie können diesen Programmheader natürlich für
+ihre eigenen Accessories verwenden.
+
+1.24 SYS _VARS.S und SYS_VARS.SYM
+
+Dies ist eine Zusammenstellung aller wichtigen und dokumentierten System-
+variablen. Für weitere Erläuterungen müssen wir Sie natürlich wieder auf
+entsprechende Fachbücher verweisen. Da diese Datei nur aus Konstantende-
+finitionen besteht, eignet Sie sich zum Erstellen einer Symboltabelle (SYM).
+
+1.25 TAKT_TAB.DOC
+
+In diesen Tabellen haben wir die Taktzyklen für die meisten Befehle des
+68000 zusammengestellt. Wir haben Sie selbst gemessen — deshalb fehlen
+auch die Befehle, die etwas schwerer zu messen sind.
+
+
+
+TRANSLATED
+==========
+
+

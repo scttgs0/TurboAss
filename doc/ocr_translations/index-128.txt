@@ -1,0 +1,69 @@
+ORIGINAL
+======== 
+
+
+6.6 _ Die Befehle
+
+ 
+
+126
+
+BASEPAGE:
+
+BP: Die Adresse der Basepage des mit LEXECUTE geladenen
+Programms
+
+08 PC: Liefert den Wert des Program Counters
+
+o USP: Liefert den Wert des User Stack Pointers
+
+o SP: Liefert den Wert des aktuellen Stack Pointers (entsprechend
+dem Supervisor-Bit im Status Register)
+
+SYMBOLS: Anzahl der Einträge in der Symboltabelle
+
+o SSP: Liefert den Wert des Supervisor Stack Pointers
+
+o SR: Liefert den Wert des Status Registers
+
+o CCR: Liefert den Wert des Condition Code Registers
+
+*; Liefert die aktuelle Adresse (siehe Zeilenanfang)
+
+o DISBASE:
+o BUFFER:
+SEKBUFF:
+TRKBUFF:
+o TRACK:
+o SEKTOR:
+o SIDE:
+
+o DRIVE:
+
+o "B(Term):
+o "M(0-9):
+
+Zahlenbasis des Disassemblers (10 oder 16)
+
+Liefert die Adresse des aktuellen Sektor-Buffers
+Liefert die Adresse des Default-Sektor-Buffers
+Liefert die Adresse des Track Buffera (= MEMBASE)
+Track für READTRACK/SEKTOR usw.
+
+Sektor für READSEKTOR usw.
+
+Seite für READTRACK/SEKTOR usw.
+
+Laufwerk für READTRACK/SEKTOR usw.
+
+Liefert den Wert eines Breakpoints
+
+Zehn Zahlenspeicher als Ersatz für eine Notizzettel (enthält
+die Marker vom Assembler (siehe Kapitel 5.8 auf Seite 104))
+
+
+
+TRANSLATED
+==========
+
+

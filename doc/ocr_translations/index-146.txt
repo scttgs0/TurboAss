@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+144 6.6__Die Befehle
+
+ 
+
+Wir laden z.B. ein Programm mit „LE SCREENDUMP.PRG“. Als Antwort er-
+scheint dann:
+
+Start des Text-Segments : $O5B46E Länge: $00000118
+Start des Data-Segments : $05B586 Länge: $0000000C
+Start des BSS-Segments : $05B592 Länge: $00000022
+Erste freie Adresse ;: $05BSB4
+
+(Sie werden wahrscheinlich bei Ihrem Rechner andere Adressen erhalten.)
+
+Labelbase
+
+Syntax =: LABELBASE [S|P]
+Kurzform : LA
+
+Dieser Befehl schaltet zwischen zwei Symboltabellenformaten um. Das ist
+nötig geworden, als ich bemerkte, daß Turbo-C ein anderes Symboltabellen-
+format hat, als wir verwenden. Ich habe bis heute nicht herausbekommen
+können, wie das „richtige“ Format lautet.
+
+LABELBASE P alle Symbole der Symboltabelle sind relativ zum TEXT-
+Segment. Nötig bei: Turbo-C, GFA-Assembler
+
+LABELBASE S alle Symbole der Symboltabelle sind relativ zum Segment
+in dem sie stehen (Default-Einstellung). Bei: OMIKRON. Assembler,
+sowie alle Linker, welche GST-Linkformat benötigen (z.B. Devpac, Me-
+tacomco Macro Assembler, GST-Assembler)
+
+Load A
+
+Syntax : LOAD [Filename] [‚Adresse]
+Kurzform : LO
+
+lädt ein File in den Speicher. Es wird dabei nicht reloziert. Wenn keine
+Adresse angegeben wird, wird in den Programmspeicher geladen. Wenn schon
+ein Programm geladen worden ist, wird es überschrieben, Start und End-
+adresse des File können Sie mit INFO abfragen — sie werden jedoch auch
+nach dem Laden ausgegeben. Die Adressen und der Name merkt sich der
+Debugger für SAVE automatisch.
+
+
+
+TRANSLATED
+==========
+
+

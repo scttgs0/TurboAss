@@ -1,0 +1,60 @@
+ORIGINAL
+======== 
+
+
+120 6,5 Die Funktionstasten
+
+ 
+
+Stelle immer, welcher der beiden Modi gerade aktiviert ist. Wenn „Insert“
+aktiviert ist, wird stets an der Cursorposition eingefügt, wogegen bei „Over-
+write“ der bestehende Text überschrieben wird (man kann natürlich mit der
+INSERT-Taste zusätzlich Platz schaffen).
+
+6.5.11 F6 — Directory
+
+„Directory“ entspricht dem Befehl DIRECTORY ohne Parameter. Es wird das
+Inhaltsverzeichnis des aktuellen Laufwerks alphabetisch sortiert ausgegeben.
+6.5.12 SHIFT-F6 — Marker anzeigen
+
+„Marker“ zeigt alle Marker mit Labelnamen an (Siehe Abbildung 6.3 auf
+Seite 120), die vom Assembler übergeben wurden. Wenn der Debugger nicht
+
+vom Assembler gestartet wurde, oder Sie keine Marker gesetzt haben, sind
+alle Marker gleich Null.
+
+ 
+
+Harkerlistet [|
+
+Rdrasse: Zeile: Lebelnang:
+Pn MIISOBLEECEL 49 start
+[1 MZI$C0LEESFC 421 Ggetpar
+M3ı$001EEB72 83 atoll
+Ma1$E0LEEULZ 621 form_alert
+
+DH N6:$80LEE678 165 doit
+[]48:$6QLEECS2 787 randisk
+
+H9l 3E 1191 aes.parablk
+]NSSCOLEFLIZ 1216 loesch
+
+ 
+
+ 
+
+ 
+
+Abbildung 6.3: Marker anzeigen im Debugger
+
+6.5.13 F7 — Memorydump PC
+
+„Hexdump“ zeigt den Speicherinhalt ab dem PC an. Das entspricht dem
+Befehl MEMORY bzw. DUMP mit PC als Adresse.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+H_DAS MODULKONZEPT 211
+
+ 
+
+o Datei existiert bereits
+Testen, ob das gewählte File existiert, wenn ja, Alert ausgeben
+(Überschreiben ja/nein) und dann evtl. das überflüssige File 1ö-
+schen (interner Filename wird verwendet).
+
+JSR Qoverwrite_file(A4)
+
+e Das mit dem Fileselector gewählte File erstellen
+
+MOVEQ #0,D0
+JSR Ofcreate(A4)
+D0—Das Fileattribut
+e Das mit dem Fileselector gewählte File öffnen A
+
+MOVEQ #0,D0
+JSR Ofopen(A4)
+
+D0—Das R/W-Flag
+e Daten aus dem geöffneten File lesen A
+
+MOVE.L #$20000 ‚DO
+LEA $1F8000 ‚ A0
+JSR Ofread(A4)
+
+D0— Anzahl der Bytes
+A0—Ladeadresse
+
+e Daten ins geöffnete File schreiben
+
+MOVE.L #$20000 ‚DO
+LEA $1F8000 ‚A0
+JSR Qfwrite(A4)
+
+D0— Anzahl der Bytes
+A0— Adresse ab der geschrieben wird
+
+o Die geöffnete Datei schließen
+JSR @fclose(A4)
+
+keine Parameter nötig
+
+e Die aktuelle Datei ohne Nachfrage löschen A
+
+
+
+TRANSLATED
+==========
+
+

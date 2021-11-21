@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+178 6.13 _ Debugger-Demo
+
+ 
+
+führen Sie einen Doppelklick auf dem Symbol „vbl_init“ aus, dann wird ab
+dieser Adresse gelistet.
+
+Sie können auch statt der Adresse bei LIST das Symbol angeben (mit einem
+Punkt davor), also in unserem Fall: „List ‚vbl_init“,
+
+Es gibt noch eine weitere Möglichkeit, eine Sourcetext-Stelle im Debugger
+wiederzufinden. Verlassen Sie dazu wieder den Debugger (CONTROL-HELP)
+und suchen Sie im Sourcetext die Routine. Setzen Sie dann mit CONTROL und
+einer Ziffer!? einen Marker. Nach der Neuassemblierung springen Sie wieder
+in den Debugger und drücken SHIFT-F6 (Marker). Dort sehen Sie dann die
+Adresse der VBL-Routine. Mit dem Button links davon können Sie ab dieser
+Adresse listen. Die Werte der Marker finden Sie auch in den Variablen "MO
+bis °M9 (siehe Kapitel 5,8 auf Seite 104).
+
+So, nachdem wir nun zum x-ten Mal an der VBL-Routine angekommen sind,
+setzen wir endlich unseren Breakpoint. Statt mit „B1= Adresse“ geht es auch
+mit „LET B1= Adresse“, da die Variablen "BO bis "BF auch die Breakpoint-
+werte enthalten. Aber auch hier gibt es eine weitere Möglichkeit (um die
+Verwirrung komplett zu machen): Wenn Sie mit BREAKPOINTS oder LET
+einen Breakpoint setzen wollen, müssen Sie immer einen Teil des Bildschirms
+löschen. Das ist natürlich umständlich und störend. Deshalb können Break-
+points auch mit der Tastenkombination CONTROL-B und der Breakpointnum-
+mer danach eingegeben werden, Stellen Sie also den Cursor auf die Zeile, in
+die der Breakpoint soll, drücken Sie CONTROL-B und anschließend 1.
+
+Nun müssen wir unser Programm starten. Das können wir mit dem Befehl
+GO oder mit dem entsprechenden Eintrag in der Menüleiste. Der Bildschirm
+flackert kurz, weil der Debugger vor der Ausführung des Programms natürlich
+auf den Programm-Bildschirm umschalten muß. Dann meldet sich der De-
+bugger mit:
+
+‚49 - Programmende bei TRAP #1 an Adresse $XxxXxXx
+GEMDOS - Funktion #$31 = Ptermres()
+
+Nur eine Kleinigkeit haben wir vergessen: Wenn wir jetzt ALTERNATE-HELP
+drücken, wird weder eine Hardcopy- noch unsere Abspeicherroutine ange-
+sprungen, da der Debugger ja einen eigenen Tastaturtreiber hat, der so etwas
+nicht unterstützt.
+
+1?2nicht auf dem Zehnerblock!
+
+
+
+TRANSLATED
+==========
+
+

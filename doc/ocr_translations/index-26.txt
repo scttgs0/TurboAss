@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+24 5.1 _ Zur Geschichte des Assemblers
+
+ 
+
+Erst nachdem die I/O-Routinen in den Assembler eingebaut waren (und funk-
+tionierten (stöhn)), gingen wir dazu über, die eigentliche Assemblierung zu
+schreiben. Unser Ziel war es, eine Geschwindigkeit von ca. 250000 Zeilen pro
+Minute zu schaffen. Wie sich allerdings herausstellte, waren diese Schätzun-
+gen „etwas“ zu niedrig, der Assembler schaffte ca. 2000000 Zeilen pro Mi-
+nute. Die Geschwindigkeit wurde durch nötige Abfragen (Reicht der Spei-
+cherplatz noch?) zwar noch etwas geringer, aber sie blieb doch hinreichend
+hoch.
+
+Zu diesem Zeitpunkt verpaßte Artur Södler (seines Zeichens Programmie-
+rer von OMIKRON.BASIC) unserem Assembler neue Zeichenausgaberouti-
+nen, welche die Geschwindigkeit von 3 Seiten pro Sekunde auf über 10 beim
+seitenweisen Blättern brachte. Damit war die Darstellung des Assemblers
+ausreichend schnell, fehlte nur noch ein vernünftiger Editor (Block-Befehle,
+Suchen und Ersetzen, ...). Während Sören den Rest des Jahres mit solchen
+„Kleinigkeiten“ verbrachte, versuchte ich, den Debugger zu verbessern, in-
+dem ich fast alle Funktionen implementierte, die mir vorgeschlagen wurden.
+Besonders lange haben Sören und ich jedoch an der Benutzeroberfläche ge-
+feilt; damit alle Funktionen, die häufig gebraucht werden einfach aufgerufen
+werden können. Das fängt mit Symbolsuche an und hört damit auf, daß man
+seine Einstellungen abspeichern kann. Dann haben wir nochmals alles auf
+Geschwindigkeit optimiert.
+
+Weil wir bei der Eingabe bereits assemblieren, kam uns die Idee, daß es doch
+möglich sein müßte, den PC des Debuggers in eine Zeilennummer zurück-
+zurechnen. Gesagt, getan, Sören machte das Unmögliche möglich und im-
+plementierte eine Umrechnung von PC in Zeilennummer und umgekehrt. Er
+setzte dem ganzen noch die Krone auf, als er auf die Idee kam, die Marker
+auch noch umzurechnen. Etwa 8 Stunden später (es muß so 5 Uhr Samstag-
+morgen gewesen sein) war die Schnittstelle fertig (sie wurde im Laufe der Zeit
+allerdings mehrfach erweitert und überarbeitet). Die Möglichkeit, auf einen
+Tastendruck ein Programm zu assemblieren, das Programm dem Debugger
+zu übergeben und zu starten, ist wohl einmalig und war vorher höchstens
+bei Interpretern vorhanden. Der Rücksprung in den Assembler geschieht bei
+Programmende automatisch oder bei Programmabbruch mit SHIFT-SHIFT
+an die entsprechende Stelle (Option ist ausschaltbar) — und das ohne nen-
+nenswerte Verzögerung.
+
+So kommen wir also zur neuesten Version des Assemblers, welche seit neue-
+
+
+
+TRANSLATED
+==========
+
+

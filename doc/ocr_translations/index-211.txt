@@ -1,0 +1,66 @@
+ORIGINAL
+======== 
+
+
+H_DAS MODULKONZEPT
+
+H.4
+
+Die Routine wird vor der Ausgabe der Dialogbox des Assemblers aufgerufen,
+sie dient dazu den Menüpunkt zu „enablen“ oder „disablen“, da es evtl.
+nötig ist einen Aufruf bei bestimmten Vorraussetzungen zu verhindern (siehe
+Sourcetext). Noch was, die Routine darf den Modulnamen ändern; er wird
+
+209
+
+ 
+
+Die Routine „disable“:
+
+dann in der Dialogbox auch entsprechend geändert.
+
+Übergabeparameter:
+
+A6 — Basisadresse des Moduls
+
+A5— Startadresse des erzeugten Programms
+(Format wie auf der Diskette)
+
+A4 — Assembler intern
+
+A3 — 2KB-Diskbuffer
+
+A2— 32KB-Screenbuffer (möglichst nicht benutzen, gibt aber keine
+Probleme, wenn er doch benutzt wird)
+
+D7 — ORG-Adresse (0 = keine ORG-Adresse, wenn das oberste Byte
+gesetzt ist, wurde ein ORG Adr,” eingegeben)
+
+D6— 0- OPT D- oder OPT X-
+1- OPT D+
+2- OPT X+
+
+D5— =0- relatives Programm erzeugt
++ 0 - relozierbares Programm erzeugt
+
+D4 — Endadresse+1 des erzeugten Programms
+
+D3— = 0 - kein Debugger vorhanden
+
+<0 - Debugger resident vorhanden
+>0 - reserviert
+
+Rückgaben in DO
+
+Q_enable: EQU -1 ;Modul darf aufgerufen werden
+O_disable: EQU 0 ;Modul wird disabled
+H.5 Die Routine „choose“:
+
+Diese Routine wird aufgerufen, wenn der Menüpunkt angewählt wurde.
+
+
+
+TRANSLATED
+==========
+
+

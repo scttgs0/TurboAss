@@ -1,0 +1,34 @@
+ORIGINAL
+======== 
+
+
+OMIKRON Turbo-Assenbler
+        von Σ-soft
+ 
+
+Autoren:    Sören Hellwig
+            Markus Fritze
+Anleitung:  Christoph Pagalies
+            Markus Fritze
+ 
+
+Der Assembler für den Atarı ST
+Version 1.8
+
+
+
+TRANSLATED
+==========
+
+
+OMIKRON Turbo Assembler
+        by Σ-soft
+
+Authors:    Sören Hellwig
+            Markus Fritze
+Manual:     Christoph Pagalies
+            Markus Fritze
+
+The Assembler for the Atari ST
+Version 1.8
+

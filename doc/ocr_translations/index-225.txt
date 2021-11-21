@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+I_DIE BEILIEGENDEN DATEIEN 223
+
+ 
+
+die OM-ASSEM.DAT-Datei neu geladen wird. Nach dem Assemblieren sehen Sie
+nun zwei neue Buttons: „RUN GAME“ und „SAVEGAME“. Diese binden
+die Grafik automatisch ins Programm ein (Die beiden Bilder werden beim
+Start des Assemblers geladen). Durch diesen Trick werden die Turn-Around-
+Zeiten nochmals drastisch verkürzt, trotzdem kann man jederzeit z.B. die
+Bilder ändern, den Assembler neu laden und sich die Änderungen sofort
+ansehen, alle Konvertierungen übernimmt das Modul.
+
+Falls jemand dem Programm einen Sound oder neue Level verpaßt hat, wäre
+ich dankbar, wenn ich eine solche Version bekommen könnte.
+
+1.12  GEMDOS.S
+
+(siehe BIDS.S)
+
+1.13 GEM_VARS.S und GEM_VARS.SYM
+
+Diese Symboltabelle enthält Konstanten, die zu GEM-Aufrufen benutzt wer-
+den können. Es sind alle Funktionen implementiert — also auch die vom
+TOS 1.4 und vom GEM 2.0. Diese Funktionskonstanten können z. B. der im
+AES_DEMO enthaltenen AES-Routine übergeben werden. Die Konstante setzt
+sich aus der Funktionsnummer und der Anzahl der Einträge im int in, int_out
+und addr_in zusammen.
+
+In der Konstantensammlung sind auch die Message-Nummern, Objekt-Sta-
+tus, Mausformen u. v. a. m. enthalten,
+
+1.14 HANOI.SRC
+
+Das „Türme-von-Hanoi-Problem“ ist Ihnen sicherlich bekannt: Es müssen
+Scheiben unterschiedlicher Größe von einem Stapel auf einen anderen um-
+gepackt werden, wobei nur eine Zwischenablage vorhanden ist, und größere
+Scheiben nicht auf kleinere gelegt werden dürfen. Dieses Programm löst die-
+ses Problem nun ziemlich schnell — Die Positionen werden jedoch in der
+jetzigen Programmversion nicht ausgegeben.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,41 @@
+ORIGINAL
+======== 
+
+
+Anhang H
+
+Das Modulkonzept
+
+So, nun noch etwas ganz feines für die absoluten Profis, die nie genug be-
+kommen können: Das Modulkonzept des OMIKRON.Assemblera. Der OMI-
+KRON.Assembler erlaubt es nach der Assemblierung (z. B. mit F1) beliebige
+eigene Assemblermodule aufzurufen, d.h. die 12 Buttons in der Dialogbox
+nach der Assemblierung können frei mit eigenen Routinen belegt werden.
+Neben den bekannten Möglichkeiten gibt es somit noch die Möglichkeit, ein
+Programm automatisch zu kodieren, eine Prüfsumme darüber zu bilden und
+in einem speziellen Format auf Disk abzulegen.
+
+Zum besseren Verständnis der Dokumentation empfehle ich jedem, die Datei
+OM-MODUL . SRC einmal auszudrucken, um die Richtlinien am Sourcetext direkt
+nachzuvollziehen.
+
+Kommen wir nun aber endlich zur Dokumentation der Schnittstelle:
+
+H.1 Allgemeine Richtlinien:
+
+® Das Modul darf alle Register verändern (auch den Stackpointer, wenn
+die Rücksprungadresse gerettet wird) Ausnahme: das A4-Register darf
+unter keinen Umständen geändert werden, der Assembler stürzt sonst
+ab!!!
+
+se Das Modul muß PC-relativ, d.h. im Speicher frei verschieblich, sein.
+Zur Not kann eine RSC o.ä. beim init-Aufruf reloziert werden. Ferner
+
+206
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,84 @@
+ORIGINAL
+======== 
+
+
+(A
+
+D_AUFBAU VON BETRIEBSSYSTEMSTRUKTUREN
+
+Tabelle D.4: Die Symboltabelle
+
+ 
+
+0-7
+
+ 
+
+10-13
+
+ 
+
+Symbolname (im DRI-Format), unbenutzte
+Zeichen mit 0 aufgefüllt
+
+Symbolstatus, Bitweise aufgeschlüsselt; 1 be-
+deutet „Ja“:
+
+Bit 0: BSS-relativ
+
+Bit 1: Text-Segment-relativ
+
+Bit 2: Data-Segment-relativ
+
+Bit 3: External
+
+Bit 4: Registerlist
+
+Bit 5: Global
+
+Bit 6: Equated (Konstante)
+
+Bit 7: Defined
+
+reserviert;
+
+im GST-Format bedeutet $48: Dem Symbol-
+wert folgen 14 Byte Namensergänzung; sonst
+gleich 0
+
+Bit 6: Archieve (für den ALN)
+Bit 7: File
+
+ 
+
+Symbolwert
+
+ 
+
+Tabelle D.5: Die Symboltabelle des Assemblers
+
+4 Byte Header: „ZSYM“;
+
+197
+
+ 
+
+Byte 0-3: Symbolwert
+Byte 4-5: 380FD (Assembler intern)
+
+dann 32 Byte je Symbol:
+
+ 
+
+Byte 6-7: $0000
+Byte 8-31:
+
+Symbolname (maximal 23 Zeichen)
+Rest mit 0 aufgefüllt
+
+
+
+TRANSLATED
+==========
+
+

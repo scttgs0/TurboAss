@@ -1,0 +1,80 @@
+ORIGINAL
+======== 
+
+
+6_ DER DEBUGGER 121
+
+ 
+
+6.5.14 SHIFT-F7 — Breakpoints anzeigen
+
+„Breakpoints“ listet alle Breakpoints mit den dazugehörigen Daten (Break-
+pointart und -zählerstand) (Siehe Abbildung 6.4 auf Seite 121). Dieser Befehl
+verhält sich somit genauso, wie der Befehl BREAKPOINTS ohne Parame-
+ter; allerdings werden die Werte in einer Dialogbox angezeigt, die nach dem
+Drücken auf den OK-Button wieder verschwindet. Dadurch bleiben die an-
+deren Daten auf dem Bildschirm erhalten.
+
+ 
+
+M00-$0R260n, +32
+891=5036630,#
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+B8F2$227777
+
+EX
+
+ 
+
+ 
+
+ 
+
+Abbildung 6.4: Die Breakpointanzeige
+
+6.5.15 F8 — Disassemble PC
+
+Es wird ab dem PC disassembliert, als ob Sie „DISASSEMBLE PC“ eingegeben
+hätten.
+
+6.5.16 SHIFT-F8 — Memoryinfo
+
+„Info“ zeigt die Startadressen von Text-, Data- und Block-Storage-Segment,
+die Endadresse des freien Speichers, die erste nicht mehr vom Programm be-
+nutzte Adresse und eventuell die Anzahl der Einträge in der Symboltabelle an
+(Siehe Abbildung 6.5 auf Seite 122). Außerdem wird gesagt, wo der Debugger
+
+
+
+TRANSLATED
+==========
+
+

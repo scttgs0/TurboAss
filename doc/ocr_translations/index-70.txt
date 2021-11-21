@@ -1,0 +1,58 @@
+ORIGINAL
+======== 
+
+
+68 5.5 Der Editor
+
+ 
+
+Symboldefinition stand (siehe Kapitel 5.4 auf Seite 28). Dann wird dieser
+Dialog angezeigt (Siehe Abbildung 5.24 auf Seite 68) und der Symbolname
+in den Dialog übernommen.
+
+ 
+
+Syaboalnaren suchen
+
+AklquanterI# Existenzquanteri?
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.24: Der Dialog „Symbol suchen“
+
+Der Eintrag „Symbol ersetzen...“ (SHIFT-F3 oder CONTROL-E) ist wohl
+die mächtigste Funktion des Assemblers. Mit ihr kann ein Symbol in Se-
+kundenbruchteilen umbenannt werden, mehrere Symbole umbenannt werden
+oder aber (und das ist wirklich wichtig) nach einem „Block copy“ alle Sym-
+bole im Block umbenannt werden. Das spart viele Fehler aufgrund doppelter
+Deklarationen. Man kann aber auch global alle Zugriffe auf das Label „test“
+durch Zugriffe auf das Label „sprung“ ersetzen.
+
+Kommen wir aber nun zur Erklärung des Kommandos: In der Dialogbox
+stehen zwei Zeilen (Siehe Abbildung 5.25 auf Seite 69). In der obersten
+wird die gesuchte Symbolmaske, in der unteren die Symbolmaske eingetragen,
+durch die ersetzt werden soll. Der Button zwischen den beiden Eingabefeldern
+tauscht die beiden Strings aus. Damit kann man z. B. eine falsche Ersetzung
+rückgängig machen. Die Buttons „alles“ und „Block“, geben den Suchmodus
+an. Bei „alles“ wird ein Symbol global umbenannt, bei „Block“ wird ein
+neues Symbol mit neuem Namen eingerichtet. Falls bei der Symbolersetzung
+ein Symbol entsteht, welches bereits existiert, erscheint eine Warnbox; nun
+kann man entscheiden, ob man das Symbol ersetzen will, nicht ersetzen will,
+aber fortfahren, oder Abbrechen einem sinnvoll erscheint.
+
+Zwei Beispiele:
+Alle Symbole im Block sollen zusätzlich block_ vorangestellt bekommen:
+Suchbegriff : *
+
+
+
+TRANSLATED
+==========
+
+

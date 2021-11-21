@@ -1,0 +1,62 @@
+ORIGINAL
+======== 
+
+
+122 6.5 Die Funktionstasten
+
+ 
+
+liegt. Diese Funktionstaste entspricht dem Befehl INFO (siehe Kapitel 6.6.8
+auf Seite 160), gibt die Daten aber in einer Dialogbox und nicht auf dem
+Textbildschirm aus.
+
+ 
+
+Speicherbelagungt
+
+Start des Debuggers 19054584
+Enda das Dekuggers 19080889
+Start das freien Speichersi$050880
+Ende das freien Speichers : Men]
+Start des TEXT-Segrants :$0507R
+
+Start des DATA-Sepnants seCin
+Start des 55S-Segrents !9999510
+Erste freie Rdrasse 35ERACE2
+
+[CE
+
+ 
+
+ 
+
+ 
+
+Abbildung 6.5: Die Speicherinfoanzeige
+
+6.5.17 F9— List PC
+
+Es wird ab dem PC gelistet (wie der Befehl „LIST PC“). Im Unterschied
+zu Disassemble wird kein Hex-Teil, dafür aber werden eventuell vorhandene
+Symbole ausgegeben,
+
+6.5.18 SHIFT-F9 — Direct
+
+„Direct“? löscht den Bildschirm und gibt die Einschaltmeldung aus.
+
+6.5.19 F10 — Toggle Screen
+
+„Switch“ schaltet zwischen dem Bildschirm des OMIKRON.Debuggers und
+des debuggten Programms hin und her. Dabei werden, falls nötig, auch die
+Auflösung und der Monitor umgeschaltet. Wenn Sie keinen automatischen
+Monitorumschalter verwenden, müssen Sie dann per Hand umschalten bzw.
+„stecken.
+
+4Warum „Direct“? Ich habe keine Ahnung...
+
+
+
+TRANSLATED
+==========
+
+

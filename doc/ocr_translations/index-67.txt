@@ -1,0 +1,61 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 65
+
+ 
+
+Da die Verwaltung der vier Blöcke sehr aufwendig ist, ist der Assembler der
+jetzigen Version nicht in der Lage, den Speicher selbst zu organisieren, wie
+z.B. ein Texteditor, der 8 unabhängige Texte im Speicher verteilen muß.
+
+Die vom Assembler vorgegebene Verteilung entspricht jedoch der Praxis, und
+es kann normalerweise nur bei der Größe dea Zielcodespeichers Probleme ge-
+ben. Für einen solchen Fall gibt es den „REORGANISIEREN“-Button, der
+eine neue Dialogbox aufruft (Siehe Abbildung 5.20 auf Seite 65), in wel-
+cher man die Länge des zu erzeugenden Programms einstellen kann. Denken
+Sie dabei daran, daß eine Symboltabelle zusätzlich Speicherplatz belegt. Bei
+Mammut-Programmen muß man also u. U. auf sie verzichten.
+
+ 
+
+Speichsrreservierung
+freier Spaicher : 1443712 Bytes
+davon freihalten: 169020 Bytes
+Zielccdespaicher: _130745 Bytes
+
+EX) MO
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.20: Der Reorganisations-Dialog
+
+Für den Debugger benötigt man (leider) auch noch Speicher, dazu noch für
+das zu debuggende Programm, da es mit der Gemdos-Funktion Pexec() an-
+gemeldet werden muß. Der freie Speicher muß größer als die Länge aller drei
+Programmsegmente (TEXT, DATA und BSS) sein! Eine übergebene Sym-
+boltabelle kostet allerdings keinen zusätzlichen Platz (ein Glück). Wenn Sie
+den Debugger nachladen wollen (siehe Kapitel 5.5.5 auf Seite 60), müssen
+hier mindestens 240000 Bytes Gemdos-Speicher reserviert werden.
+
+Machen Sie sich allerdings nicht allzuviel Gedanken über die Speichervertei-
+lung; wer große Programme schreibt, hat meistens auch entsprechend Haupt-
+speicher zur Verfügung.
+
+Der Sourcetext geht beim Reorganisieren nicht verloren. Wenn der Speicher
+nicht reicht, warnt eine Dialogbox, und man hat die Möglichkeit, den Source-
+text zu löschen (um den Speicherplatz frei zu haben) oder abzubrechen.
+
+Der letzte Menüpunkt lautet „Drucken...“ (F7). Von hier aus kann man
+
+
+
+TRANSLATED
+==========
+
+

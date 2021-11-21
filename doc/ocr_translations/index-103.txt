@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 101
+
+ 
+
+Deshalb wandelt der Assembler den Branch Short in einen NOP um.
+Da dies z.B. bei selbstmodifizierendem Code Probleme ergeben kann,
+warnt Sie der Assembler.
+
+Offset zu groß Ein Branch (oder Branch Short) war zu weit gesetzt.
+
+5.7.3 Sofort auftretende Fehler
+
+Doppelte Deklaration Es wurde versucht, ein bereits definiertes Label
+noch einmal zu definieren. Wenn das ein Versehen war, können Sie
+das Label ändern und erneut RETURN drücken. Sie können jedoch auch
+gleich RETURN drücken — die Zeile wird dann übernommen und Sie
+können normal weiterarbeiten. Wenn bei der Assemblierung dann je-
+doch zweimal das Label definiert werden soll, wird wieder mit dieser
+Fehlermeldung abgebrochen. In Verbindung mit bedingter Assemblie-
+rung ist es sinnvoll, Label mehrfach einzugeben; deswegen kann der As-
+sembler durch RETURN dazu gezwungen werden, diesen Fehler zu über-
+gehen.
+
+Filename zu lang Ein Filename darf natürlich maximal 8 Zeichen plus
+(Punkt plus) 3 Zeichen Extension umfassen.
+
+IMegaler Filename In einem Filenamen wurden Zeichen verwendet, die das
+GEMDOS nicht erlaubt, z.B. Zeichen mit einem ASCII-Wert kleiner
+32.
+
+Keine weiteren Fehler Dieser „Fehler“ gehört eigentlich nicht in diese Li-
+ste, er wird nämlich nicht bei der Eingabe einer Zeile, sondern beim
+Drücken von CONTROL-J oder ALT-J, Wenn Sie mit einer dieser Ta-
+stenkombinationen versuchen, einen Fehler anzuspringen, obwohl die
+Fehlerliste leer ist, erscheint in der Mitte des Bildschirms eine Box mit
+diesem Text (Siehe Abbildung 5.39 auf Seite 102), die ungefähr eine
+Sekunde angezeigt wird. Wenn Warnungen vorhanden sind, diese aber
+gemäß der Einstellung im Editor-Menü nicht angesprungen werden sol-
+len, kann diese Meldung nie auftreten.
+
+Operandensyntax falsch In der Adressierungsart, die für diesen Befehl
+erlaubt ist, ist ein Syntax-Fehler.
+
+
+
+TRANSLATED
+==========
+
+

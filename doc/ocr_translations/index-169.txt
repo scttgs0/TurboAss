@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 167
+
+ 
+
+Cursor
+
+Syntax : CURSOR Nummer
+Kurzform : CU
+
+Mit diesem Befehl können Sie die Cursorform umschalten. Die Nummer be-
+deutet:
+
+Nummer Cursorform
+
+0= | A
+1= 1,
+2 =
+
+3= m
+
+Diese Nummern bzw. Cursorformen sind die gleichen wie beim Assembler.
+
+Help
+Syntax : HELP
+Kurzform : HE
+
+Gibt alle Befehle des Debuggers unformatiert aus...
+
+6.7 Internas zum Debugger
+Intern werden folgende Vektoren belegt:
+
+® etv.term
+
+e etv.critic (bei Gemdos-Fehlern z. B. Disk schreibgeschützt)
+
+e swv_vec (auf RTS)
+
+e Trap # 1 (für Gemdos-Patches bei Term und intern für LEXEC)
+
+e 200Hz-Timer für Autorepeat (nur intern)
+
+
+
+TRANSLATED
+==========
+
+

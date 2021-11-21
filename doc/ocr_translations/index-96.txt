@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+94
+
+5.6_ Die Pseudo-Opcodes
+
+ 
+
+;in DC.W-Zeilen
+tabelle:dc.w routine,routine2,..,
+‚Tabelle mit den Sprungadressen
+
+Der Rest des Programms bleibt gleich; bei der Assemblierung werden
+die Adressen automatisch in den Offset umgerechnet,
+
+Und nun ein Beispiel für BASE DC.W mit Bezugswert * (siehe System-
+variablen (siehe Kapitel 5.5.2 auf Seite 35)):
+
+BASE DC.W,* ;setzt Bezugswert zu den
+jLabel in DC.W-Zeilen
+tab: DC.W ’AB’,jump1 ;Jump1: relativ zu tab+2
+DC.W ’CD’,jump2 ;Jump2: relativ zu tab+6
+DC.W ’EF’,jump3 ;Jump3: relativ zu tab+10
+DC.W ’GH’ ,jump4 ;Jump4; relativ zu tab+14
+;Die folgende Routine durchsucht die Tabelle
+;nach der Buchstabenkombination in DO und
+‚springt in die zugeordnete Routine
+move.wW #’EF’,D0 ;"Name" des Unterprogramms
+lea tab-2(PC),A0 ;Zeiger auf den Anfang
+;der Tabelle minus 2
+
+moveq #3,D1 ;Anzahl der Texte in
+;der Tabelle
+loop:addq.1l #2,A0 ;Zeiger plus 2
+
+cmp.wW (A0)+,D0 ;Wert in DO mit
+;Tabellenwert vergleichen
+dbeq Di,loop ;wenn die Bedingung
+;wahr oder D1 gleich
+;Null ist wird die Schleife verlassen,
+jansonsten wird D1 um eins erniedrigt
+;und zum Label "loop" gesprungen
+bne error ;der Wert wurde in der
+;Tabelle nicht gefunden
+adda.w (A0),A0 ;Berechnung der Sprungadresse
+jsr (A0) ;Aufruf des Unterprogramms
+usw.
+
+
+
+TRANSLATED
+==========
+
+

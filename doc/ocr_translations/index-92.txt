@@ -1,0 +1,61 @@
+ORIGINAL
+======== 
+
+
+90
+
+5.6 Die Pseudo-Opcodes
+
+ 
+
+Dabei werden sowohl Vorwärts- wie auch Rückwärts-Referenzen
+erkannt. Weiteres zu den Optimierungen finden Sie auf Seite 34.
+
+{-) P PC-relativen Code überwachen. Wenn diese Option eingeschal-
+tet ist, wird die Assemblierung abgebrochen (fataler Fehler), wenn
+der Assembler auf nicht PC-relativen Code stößt (Siehe Abbil-
+dung 5.38 auf Seite 90).
+
+Das Plus bzw. Minus vor den einzelnen Optionen bedeutet, ob die Funk-
+tion normalerweise ein- oder ausgeschaltet ist (Plus bedeutet dabei ein-
+geschaltet).
+
+ 
+
+© Assenblierung während des 2.Pass
+in Zeile 4 abgebrochen 1!
+
+kein PC-relatives Programm erzeugt
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.38: Abbruch bei OPT P+
+
+5.6.6 Dateioperationen
+
+OUTPUT ’Filename’[,’Commandline’] gibt den Namen an, unter dem
+
+das fertig assemblierte Programm gespeichert werden soll. Wenn ein
+OUTPUT-Befehl im Programm vorkommt, werden der Name und der
+Pfad dem File-Selector übergeben, so daß Sie nach der Assemblierung
+nur einmal RETURN drücken müssen, um das Programm zu speichern.
+Wenn der Filename ohne Extension angegeben wird, wird die Extension
+vom Fileselector vorgegeben.
+
+Die Commandline wird, wenn angegeben, an das zu debuggende Pro-
+gramm übergeben, wenn dies im Debugger gestartet wird. Der Com-
+mandline-Parameter ist z. B. sehr nützlich, wenn Sie ein TTP-Programm
+entwickeln. Die Environment- Variable wird unverändert weitergegeben
+— Ihr Programm erhält also die gleiche, die dem Assembler übergeben
+worden ist.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+6 DER DEBUGGER 125
+
+ 
+
+also die Syntaxbeschreibung des Befehls lautet: „?Term“ können Sie einge-
+ben: „75“, „?7+3“ oder „?7*2“. Sie können auch Register einsetzen: „?”A3“
+(Der Inhalt vom Register A3 wird ausgegeben) oder „?”d0*2“ (Der Inhalt
+vom Register DO mal 2 wird ausgegeben). Die Kennzeichnung durch „”“ ist
+nötig, um Register von den entsprechenden Hex-Zahlen zu unterscheiden.
+Ein Beispiel:
+
+Syntax: (BREAKPOINTS|B) [Nr=AdrIK[Nr]]
+
+Als erstes müssen Sie „B“ oder „Breakpoints“ oder eine Abkürzung davon,
+also z.B. „break“ oder „brE“, eingeben. Das „B“ ist einzeln aufgeführt, da
+es deshalb nicht mehr als Abkürzung gilt (siehe oben). Sie müssen nach „B“
+also kein Space setzten; nach „break“ usw. ist jedoch eins erforderlich.
+
+Der Rest nach „Breakpoints“ kann weggelassen werden, da er in eckigen
+Klammern steht. Sie können dahinter auch eine Nummer eingeben. Dann ist
+es noch möglich, „=“ und eine Adresse einzugeben.
+
+Wenn Sie statt der Nummer „K“ eingeben, können Sie dahinter noch eine
+Nummer schreiben.
+
+Eine vollständige Beschreibung des BREAKPOINT-Befehls können Sie ab der
+Seite 132 in Kapitel 6.6.5 nachlesen.
+
+Achtung: Alle Endadressen („Bis“) müssen + 1 angegeben werden. D.h.,
+wenn Sie den Bereich von 60000 bis 60005 kopieren wollen, müssen Sie
+„MOVE 60000,60006,...“ eingeben.
+
+6.6.3 Variablen des Debuggers
+
+Sie können in einem Term auch Variablen verwenden:
+
+TEXT: Anfang des Programmspeichers
+
+DATA: Anfang des DATA-Segments
+
+BSS: Anfang des Block-Storage-Segments (BSS)
+START: Start des zuletzt mit LOAD geladenen Programms
+
+END: Ende des zuletzt mit LOAD geladenen Programms
+
+
+
+TRANSLATED
+==========
+
+

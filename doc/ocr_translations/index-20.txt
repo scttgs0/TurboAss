@@ -1,0 +1,39 @@
+ORIGINAL
+======== 
+
+
+18
+
+ 
+
+Der Ordner AUTO mit folgenden Dateien:
+AUT0300S .PRG — Kopiert Desktop-Infos, paßt Drucker an... (siehe
+
+DESKTOP
+DESKTOP
+DESKTOP
+FSELECT
+
+Kapitel I.3 auf Seite 219)
+
+‚INO — Desktop-Info für niedrige Auflösung
+„IN1 — Desktop-Info für mittlere Auflösung
+„IN2 — Desktop-Info für hohe Auflösung
+.PRG — Ein neuer File-Selector
+
+Die Ordner DEMDS.OMI, LIBRARYS.OMI und UTILITY.OMI, in denen einige
+nützliche Utilities u.ä. (wie eben die Namen sagen) enthalten — die Bedeu-
+tung der einzelnen Dateien sind im Anhang I erläutert.
+
+Der Ordner GAME. OMI enthält das Spiel „Think and Work“. Er wird auch im
+Anhang I beschrieben.
+
+Der Ordner Z-RSC enthält einen eigenen RSC-Editor, der für das Erstellen
+eigener Module nützlich ist, Das Modulkonzept ist im Anhang H erklärt.
+
+
+
+TRANSLATED
+==========
+
+

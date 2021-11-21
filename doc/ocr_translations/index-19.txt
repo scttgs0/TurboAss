@@ -1,0 +1,39 @@
+ORIGINAL
+======== 
+
+
+Kapitel 2
+
+Inhalt der Diskette
+
+Achtung: Die Diskette ist doppelseitig formatiert. Die ganzen Dateien hatten
+auf einer einseitigen Diskette keinen Platz — da fast alle Atari ST-Besitzer
+ein doppelseitiges Laufwerk haben, wollten wir das Programm nicht durch
+eine zweite Diskette unnötig verteuern. Wenn Sie über kein doppelseitiges
+Laufwerk verfügen sollten, können Sie sich Ihre Originaldiskette bei Ihrem
+
+Händler oder einem Freund sicherlich auf zwei Disketten umkopieren.
+
+Auf der beiliegenden Diskette befinden sich folgende Dateien:
+OM-ASSEM.PRG — Der Assembler (siehe Kapitel 5 auf Seite 23)
+OM-DEBUG.PRG — Der Debugger (siehe Kapitel 6 auf Seite 106)
+
+CALL „PRG — ruft den residenten Debugger auf (siehe Kapitel 1.7
+auf Seite 220)
+
+0M-ASSEM.CFG — Druckeranpassung des Assemblers (siehe Kapi-
+tel D.5 auf Seite 194)
+
+OM-ASSEM.DAT — Module des Assemblers (siehe Kapitel H auf
+Seite 206)
+
+README .TXT — Korrekturen der Anleitung, etc. (als erstes lesen!)
+
+17
+
+
+
+TRANSLATED
+==========
+
+

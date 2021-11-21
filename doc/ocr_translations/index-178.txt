@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+176 6.13 _ Debugger-Demo
+
+ 
+
+Sinn einiger Befehle vielleicht verständlicher, wenn Sie deren Anwendung in
+der Praxis sehen. Auf der Programmdiskette befindet sich das Programm
+Screendump (SCRNDUMP.PRG und SCRNDUMP.SRC). Nachdem Sie es geladen
+haben, befinden Sie sich gleich wieder auf dem Desktop. Wenn Sie ab jetzt
+ALTERNATE-HELP drücken, wird keine Hardcopy mehr auf dem Drucker aus-
+gegeben, sondern auf Diskette oder Festplatte gespeichert. Es gibt zwar schon
+eine ganze Reihe von Programmen, die das gleiche tun, es geht hierbei aber
+nur um die Demonstration des Debuggers. Das Programm enthält noch einen
+Fehler, den wir nun zu beheben versuchen. Die Datei SCRNDUMP.SRC ist der
+fehlerfreie Sourcetext, für dieses Demo benutzen Sie bitte SCRNERR. SRC.
+
+Das Programm Screendump läßt sich zwar laden, und man landet auch wie-
+der auf dem Desktop; nach ALTERNATE-HELP kommt aber eine ganz normale
+Drucker-Hardcopy (Frust!). Wir starten also den Debugger (Doppelklick auf
+OM-DEBUG .PRG). Weil wir mit Assembler und Debugger „gleichzeitig“ arbei-
+ten wollen?, geben wir erst einmal RESIDENT ein (siehe Kapitel 6.12 auf
+Seite 174). Wir kommen zwar wieder aufs Desktop zurück, der Debugger be-
+findet sich aber weiterhin im RAM, fängt alle „Bomben-Vektoren“ ab und
+kann vom Assembler aufgerufen werden.
+
+Nun laden wir den OMIKRON. Assembler und den Source SCRNERR . SRC., Stel-
+len Sie im Menü „Editor 2...“ bei „Sprung in den Debugger“ auf „nichts“.
+Dann assemblieren wir mit F1. Dann klicken Sie auf den Button „DEBUG-
+GER“. Dadurch wird der Debugger aufgerufen und das assemblierte Pro-
+gramm übergeben (siehe Kapitel 5.8 auf Seite 104). Mit ALTERNATE-A er-
+reichen wir das gleiche wie mit F1 und dem Klick auf den Default-Button
+(drückt sich nur einfacher).
+
+Auf dem Bildschirm erscheint die Meldung:
+
+Start des Text-Segments : $05B46E Länge: $00000118
+Start des Data-Segments : $05B586 Länge: $0000000C
+Start des BSS-Segments : $05B592 Länge: $00000022
+Erste freie Adresse : $05B5B4
+
+Auf Ihrem Rechner werden Sie wohl andere Adressen erhalten, sie hängen
+von den Accessories u. ä. ab.
+
+9, .was aber mindestens 1 MB Speicher erfordert. Wenn Sie nur einen 520 ST haben,
+verzichten Sie auf den RESIDENT-Befehl und laden Sie das Programm mit LEXECUTE
+
+
+
+TRANSLATED
+==========
+
+

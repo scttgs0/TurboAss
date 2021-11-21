@@ -1,0 +1,74 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 35
+
+ 
+
+Der Assembler kann mit vier verschiedenen Zahlenbasen rechnen, die da
+
+wären:
+
+ 
+
+ 
+
+. bzw. nichts | Dezimal (Zahlenbasis 10)
+
+$ | Hexadezimal (Zahlenbasis 16)
+% | Binär (Zahlenbasis 2)
+
+"oder ' | ASCII (Zahlenbasis 256)
+
+ 
+
+ 
+
+ 
+
+Man kann z. B. schreiben "A"*2-$10+%11011-"soft“
+
+ASCII-Zahlen dürfen (natürlich) nur aus maximal 4 Buchstaben bestehen,
+um im 32-Bit-Zahlenbereich zu bleiben. Die vorhandenen Rechenoperationen
+stehen in Tabelle 5.2.
+
+Wenn ein Vergleich wahr ist, lautet das Ergebnis „TRUE“ (—1), sonst ist es
+
+„FALSE“ (0).
+
+Der Assembler kennt dazu noch einige Systemvariablen, welche (bis auf *)
+alle durch „“*“ am Anfang gekennzeichnet sind:
+
+°°DATE
+
+"TIME
+
+dient für relative Sprünge im Programm, ohne ein Label zu
+verwenden, Das spart Platz in der Symboltabelle und As-
+semblierzeit (da Ausdrücke wie „*+Wert“ sofort berechnet
+werden) — obwohl das beim OMIKRON. Assembler wohl
+kaum ins Gewicht fällt. „JMP *+100“ springt beispielsweise
+100 Byte hinter den Anfang des JMP-Befehls.
+
+ergibt das aktuelle Datum im TOS-Format (Bit 0-4: Tag;
+Bit 5-8: Monat; Bit 9-15: Jahr— 1980). Damit ist es ohne
+Probleme möglich, das Datum in seine Programme einzu-
+binden. Es kann dann von Ihrem Programm ausgegeben
+werden, und Sie sehen sofort, wann diese Version Ihres Pro-
+gramms erstellt wurde. So wissen Sie immer, ob Sie eine
+aktuelle Programmversion vor sich haben.
+
+liefert entsprechend die Uhrzeit im TOS-Format (Bit 0-4:
+Sekunden; Bit 5-10: Minuten; Bit 11-15: Stunden)
+
+ 
+
+5 Vergleiche sind im Tasch hner nicht vorhand
+
+
+
+TRANSLATED
+==========
+
+

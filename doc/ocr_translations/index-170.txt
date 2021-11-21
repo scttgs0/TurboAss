@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+168 6.8 Die Datei „OM-DEBUG.INF“
+
+ 
+
+e Keyboard-IRQ (nur intern / Abfrage von Shift-Shift)
+e VBL für die Maus
+
+® Trap # 3 zeigt auf RTR (Supervisormode an)
+
+Ring Indicator (für External Break)
+
+Abhängigkeit vom Betriebssystem Aus der Adresse $4F2 (Sysbase)
+wird die Betriebssystemsversion ermittelt. Beim Blitter-TOS (oder neue-
+ren Versionen) werden Kbshift und act_pd aus dem Systemheader geholt,
+sonst aus den Speicherstellen $E1B und $602C, Die Fontadressen werden mit
+LINE-A ermittelt. Beim CLS-Befehl werden BIOS-Routinen genutzt (Zurück-
+setzen des Cursora).
+
+Bei Disketten-/Festplattenzugriffen: XBIOS 8/9 beim Lesen/Schreiben eines
+Sektors, XBIOS 10/18/9 beim Formatieren.
+
+Die Adresse der Media-Change-Variable wird durch eine eigene VBL-Routine
+ermittelt: Es wird Mediach aufgerufen (BIOS 9). Wenn ein Wert ungleich 2
+zurückgegeben wird (Diskette wurde nicht mit Sicherheit gewechselt), wird
+Getbpb (BIOS 7) aufgerufen. Dann wird Mediach erneut gestartet, bis sie
+den Wert 2 liefert - AO zeigt dann auf die Media-Change-Varjable, Dieser
+Trick von Artur Södler funktioniert mit allen TOS-Versionen (auch mit dem
+TOS 1.4).
+
+Bei allen Dateioperationen wird (natürlich) das GEMDOS benutzt.
+
+6.8 Die Datei „OM-DEBUG.INF“
+
+Mit dem Befehl SAVE ! speichert der Debugger alle Einstellungen in der
+Datei „OM-DEBUG.INF“ ab. Wenn Sie hinter dem Ausrufungszeichen ein
+„H“ eingeben, wird die Datei als „hidden“ abgespeichert, d.h., sie ist im
+Inhaltsverzeichnis nicht sichtbar. Wenn Sie ein „R“ angeben, ist der Debugger
+nach dem nächsten Laden resident (siehe Kapitel 6.12 auf Seite 174). Findet
+der OMIKRON.Debugger, nachdem er geladen wurde, diese Datei, wird sie
+wieder geladen und alle Einstellungen entsprechend gesetzt. Sie erkennen
+
+
+
+TRANSLATED
+==========
+
+

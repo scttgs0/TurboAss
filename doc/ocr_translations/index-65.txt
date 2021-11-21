@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 63
+
+ 
+
+eine vorzeichenlose Zahl gewandelt (z. B. —123 in $FFFFFF85). Eine Zurück-
+wandlung in eine vorzeichenbehaftete Zahl ist durch erneutes Drücken von
+RETURN möglich. Um nun ein Ergebnis auch nutzen zu können, gibt es drei
+Buttons, die links von den Ergebnissen stehen. Mit ihnen kann das Ergeb-
+nis an die Cursorposition übernommen werden (gemäß ihrer Zahlenbasis).
+Ferner ist auch die Übernahme der gesamten Formel an die Cursorposi-
+tion möglich, indem man auf den Button „Formel übernehmen“ klickt. Der
+„ENDE“-Button oder die Taste UNDO bringen Sie ohne Übernahme einer
+Formel in den Editor zurück. Es sei an dieser Stelle noch einmal daran erin-
+nert, daß ein Doppelklick mit der rechten Maustaste auf eine Zahl, Formel
+etc. den Taschenrechner aufruft, und, daß die Zahl, Formel o.ä. in densel-
+ben übernommen wird. Noch eine nicht unwichtige Bemerkung am Rande:
+Der Taschenrechner kennt keine Fehlermeldungen; wenn ein Fehler gefunden
+wurde, ist das Ergebnis stets 0, d.h., 1/0+100 ist 0, da bei 1/0 ein Fehler
+auftrat.
+
+Der nächste Menüpunkt ist „Zeichentabelle...“ (CONTROL-+). Falls Sie ein
+Zeichen eingeben wollen, das Sie nicht auf der Tastatur finden und des-
+sen ASCII-Code Sie nicht auswendig wissen’, können Sie hiermit alle 255
+möglichen Zeichen des STs auf einmal zu sehen bekommen (Siehe Abbil-
+dung 5.18 auf Seite 63). Sie können dann mit einfachem Anklicken das ent-
+sprechende Zeichen auswählen. Es wird dann an die Cursorposition über-
+nommen. Falls Ihnen keines der Zeichen zusagt, können Sie kurz die rechte
+Maustaste drücken, eine beliebige Taste der Tastatur oder mit der linken
+Maustaste außerhalb der Dialogbox klicken. Darauf verschwindet die Dialog-
+box wieder.
+
+[ERSEDEFSHZIKLAN
+
+ 
+
+i SETMEEEEATELN Er SU30RE
+[Uxa 3107 10° 270:0s0e EN [IM
+
+Abbildung 5.18: Die Zeichentabelle
+
+ 
+
+7Mit Eingabe eines ASCII-Codes über ALTERBATE-Zehnerblock können beliebige Zei-
+chen eingegeben werden. (siehe Kapitel 5.5.4 auf Seite 44).
+
+
+
+TRANSLATED
+==========
+
+

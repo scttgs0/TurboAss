@@ -1,0 +1,65 @@
+ORIGINAL
+======== 
+
+
+6_ DER DEBUGGER
+
+113
+
+ 
+
+CONTROL-HELP:
+
+ALT-Zahl:
+
+CAPSLOCK:
+
+Sie nicht abbrechen, da der PC stets im TOS
+ist!
+
+2. Diese Einschränkung hat jedoch den großen
+Vorteil, daß der Programmabbruch (norma-
+
+lerweise) nur im eigenen Programm stattfin-
+det.
+
+3. Bei ausgeschalteten Interrupts passiert (na-
+türlich) gar nichts!
+
+4. Für die Abfrage klinkt sich der Debugger in
+Keyboard-Vektor ein. Bei dem Drücken von
+den Tasten SHIFT-SHIFT wird ein Flag ge-
+setzt, damit dann in der VBL-Routine der
+eigentliche Abbruch durchführt wird.
+
+5. Ein Abbruch kann im VBL-Interrupt erfol-
+gen oder aber bei TOS-Aufrufen (dies wird
+nebenbei von OBSERVE erledigt).
+
+Der Debugger wird ohne Sicherheitsabfrage verlas-
+sen! Wenn der Debugger vom Assembler aus aufge-
+rufen wurde, lesen Sie bitte in Kapitel 5.8 näheres
+über die Schnittstelle von Assembler&Debugger.
+Wenn man CONTROL-HELP mit SHIFT zusammen
+gedrückt, erfolgt keine PC-Umrechnung in eine
+Zeilennummer.
+
+Wenn Sie eine Zahl über den Zehnerblock einge-
+ben, wird das entsprechende ASCII-Zeichen ausge-
+geben (wie bei den PC-kompatiblen). Halten Sie
+ALTERNATE gedrückt und tippen Sie auf dem Zeh-
+nerblock einen ASCII-Code ein, z.B. „228“. Las-
+sen Sie dann ALTERNATE los. Es wird „X“ ausge-
+geben.
+
+Wie zu erwarten werden alle Buchstaben in Groß-
+buchstaben gewandelt. Zudem wird der Zehner-
+block mit Hexziffern belegt, damit Listings ein-
+facher eingegeben bzw. größere Änderungen im
+
+
+
+TRANSLATED
+==========
+
+

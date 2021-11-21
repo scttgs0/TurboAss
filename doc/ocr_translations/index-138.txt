@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+136 6.6__ Die Befehle
+
+ 
+
+If
+
+Syntax : IF Term
+Kurzform : IF
+
+Wenn Sie IF ohne Parameter angeben, werden die Bedingungen für UNTRACE
+angezeigt, sonst werden sie gesetzt. In der Abbruchbedingung können Sie den
+PC, alle Register incl. SR, CCR, USP, SSP, SP und Speicherinhalte abfragen
+und miteinander oder mit Konstanten vergleichen. Als Vergleiche sind =, #,
+< und > zugelassen. Außerdem sind die logischen Operationen & (and), |
+(or), ” (xor) und (not) zugelassen. Auch Klammern können gesetzt werden.
+
+Der Debugger erzeugt aus der Zeile ein Programm, daß die Bedingungen
+entsprechend abfragt und das Zero-Flag setzt bzw. löscht. Die Variable UT
+(wie UNTRACE) zeigt auf den Anfang dieses Programms; Sie können es
+sich also mit „L UT“ ansehen und eventuell verändern. Dadurch ist es Ihnen
+auch ermöglicht, schwierigere Abbruchbedingungen zu testen. Das Programm
+erhält in Al einen Zeiger auf eine Registertabelle; d.h., die Registerinhalte
+des debuggten Programms stehen in einer Tabelle, auf deren Anfang A1 zeigt.
+
+Die Tabelle hat das gleiche Format wie bei GETREGISTER erforderlich:
+
+1 Langwort DO
+1 Langwort D1
+
+1 Langwort D7
+1 Langwort AO
+
+Langwort A7
+
+Langwort PC
+
+Langwort USP
+Langwort SSP
+Word SR
+
+a
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+6 DER DEBUGGER 119
+
+ 
+
+6.5.6 SHIFT-F3 — Trace until RTE
+
+„Trace to RTE“ entspricht „Trace to RTS“, es wird jedoch bis zum RTE,
+also ein TRAP zu Ende getraced (anderes Stack-Format!)
+
+6.5.7 F4 — Trace Traps
+
+„Trace Traps“ wirkt wie Trace. Es werden jedoch auch alle Traps im Ein-
+zelschrittmodus ausgeführt. Das wurde bei Trace extra verhindert, da das
+Durchwühlen einer Stringausgabe o.ä. meist sehr langweilig und nicht sinn-
+voll ist. Sie können sich mit F4 die Trap-Routinen aber trotzdem ansehen,
+wenn Sie das Betriebssystem kennenlernen wollen oder wenn Sie eigene Trap-
+Routinen geschrieben haben.
+
+6.5.8 SHIFT-F4 — Go PC
+
+„Go“ startet das Programm ab dem PC, ohne irgendwelche Abbruchbedin-
+gungen zu setzen. Diese Taste entspricht dem gleichnamigen Befehl. Abge-
+brochen wird nur an Breakpoints oder manuell (durch SHIFT-SHIFT, RESET
+oder einen External Break). CONTROL-G bewirkt genau das gleiche. Der Befehl
+GO ist auch auf Seite 133 in Kapitel 6.6.5 aufgeführt.
+
+6.5.9 F5— Skip PC
+
+„Skip PC“ ist der letzte der Trace-Befehle. Der PC wird hinter den aktuel-
+len Befehl gesetzt, ohne diesen auszuführen. Der aktuelle Befehl wird also
+übersprungen. Das ist z. B. sinnvoll, wenn Sie ein Programm testen, welches
+gerade den Trace-Vektor ändern will. Das geht natürlich nicht, weil der De-
+bugger diesen unbedingt benötigt. Also überspringen Sie diesen einen Befehl
+mit F5 und tracen dann normal z.B. mit F1 weiter.
+
+6.5.10 SHIFT-F5 — Insert/Overwrite
+
+„Overwrite/Insert“ schaltet den Autoinsertmodus ein oder aus. Das gleiche
+erreichen Sie auch über SHIFT-INSERT. In der Menüzeile sehen Sie an dieser
+
+
+
+TRANSLATED
+==========
+
+

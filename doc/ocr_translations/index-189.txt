@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+C_ EINIGE BEGRIFFSERKLÄRUNGEN 187
+
+ 
+
+an der Stelle des DCs ins Programm) und OUTPUT (legt den Filenamen
+fest, unter dem das assemblierte Programm abgespeichert wird).
+
+relozieren: Wenn man ein Programm für den ST schreibt, weiß man in der
+Regel nicht, wo das Programm liegen wird, wenn es läuft. Da es so pro-
+grammiert sein sollte, daß es überall liegen kann, muß man sein Pro-
+gramm entweder positionsunabhängig (position independent) schrei-
+ben, das heißt keine absoluten Adressen verwenden, oder mit einer
+Reloziertabelle versehen (macht der Assembler automatisch), wo alle
+absoluten Adressen eingetragen sind. Wenn nun solch ein Programm
+gestartet wird, sieht das Betriebssystem nach, ob eine Reloziertabelle
+vorhanden ist und paßt die Adressen bei Bedarf an.
+
+Im Debugger können Sie selbst entscheiden, ob reloziert werden soll
+oder nicht: LOAD lädt ein Programm nur in den Speicher, LEXECUTE
+lädt und reloziert.
+
+Der Aufbau der Relozierinformationen ist im Anhang D.4 auf Seite 192
+erklärt.
+
+Scrollen: Wenn Sie mit den Cursortasten bei LIST, DISASSEMBLE oder
+DUMP/MEMORY den Cursor nach unten beziehungsweise oben zu be-
+wegen versuchen, obwohl er schon am Rand steht, wird der Inhalt des
+Bildschirms verschoben und unten oder oben steht eine weitere Zeile,
+so als ob der Bildschirm ein verschiebbares Fenster wäre, durch das
+man einen Ausschnitt aus dem ganzen Speicherbereich sehen könnte.
+
+Source: Source (englisch Quelle) nennt man ein Programm, das noch nicht
+assembliert wurde (das lesbare Programm) — auch Quelltext genannt.
+
+Space: Englisch für Leertaste oder Leerzeichen (Das Wort wurde langsam
+eingedeutscht)
+
+Symboltabelle: Dieses Wort hat leider zwei verschiedene Bedeutungen:
+
+1. In der Symboltabelle stehen alle Labels, die in Ihrem Programm
+verwendet wer den, mit den Adressen, auf die das Label zeigt (re-
+lativ zum Programmanfang). Nach der Assemblierung können Sie
+angeben, ob die Symboltabelle an das Programm angehängt wer-
+den soll. Der Sinn einer Symboltabelle ist, daß beim Listen eines
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+210 H.6 _ Die vorhandenen Prozeduren:
+
+ 
+
+Übergabeparameter:
+wie bei „disable“
+
+Rückgaben in DO normales Verlassen
+
+Q_debug: EQU 2 ;Dialog verlassen,
+
+;in den Debugger springen
+@_continue: EQU 1. ;Im Dialog bleiben
+
+;(zur Anwahl weiterer Funktionen)
+@_exit: EQU 0 ;Dialog verlassen
+
+Fehlermeldungen ausgeben (werden bei den Funktionen (s. u.) genutzt)
+
+@_no_menory : EQU -1 ;der Speicher reicht nicht \atn
+@_fail: EQU -2 ;FAIL-Fehler (nicht benutzen) \atn
+O_file_error: EQU -3 ;Fehler bei Dateien \atn
+O_disk_full: EQU -4 ;Die Disk ist voll \atn
+
+H.6 Die vorhandenen Prozeduren:
+
+Bei Fehlern (siehe File-Funktionen) wird automatisch abgebrochen! Außer
+den angegebenen Registern werden keine verändert
+
+1. Zuerst mal was einfaches...
+
+eo Aufruf des Fileselectors:
+
+MOVE.L #’SAB’ ‚DO ;’BAS’
+LEA titel_txt(pc),A0
+JSR @fsel_input(A4)
+
+D0—Die Extension (Buchstaben in umgedrehter Reihenfolge!)
+A0—Zeiger auf einen max.31 Zeichen langen String, welcher
+—eine Überschrift für einen TOS 1.4-Fileselector enthält.
+Der Fileselector wird dargestellt, der Pfad und Filename wird in-
+tern verwaltet. Nach dem Aufruf wird ein Redraw vom Bildschirm
+gemacht.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 151
+
+ 
+
+anzusehen. Mit PTYPE können Sie sich natürlich diese Dateien ausdrucken
+lassen.
+
+Rwabs 4A
+
+Syntax : RWABS Rwflag,Buffer ‚Anzahl ‚Recno ‚Laufwerk
+Kurzform : RW
+
+Dieser Befehl dient zum direkten Schreiben oder Lesen auf/von Disketten,
+Festplatten und RAM-Disks. Er ruft BIOS 4 auf, welcher seinerseits even-
+tuelle Festplatten- oder RAM-Disk-Treiber aufruft (über hdv_rw $476). Bei
+diesem Befehl ist äußerste Vorsicht geboten: Man kann damit nicht nur Dis-
+ketten, sondern auch Festplatten zerstören. Wenn Sie z. B. den Boot-Sektor
+der C-Partition löschen, haben Sie Schwierigkeiten, an irgendwelche Daten
+der gesamten Festplatte heranzukommen.
+
+„Rwflag“ ist nach Bits aufgeschlüsselt:
+
+Bit 0: 0 = Lesen; 1 = Schreiben
+Bit 1: 1 = Diskettenwechsel ignorieren
+Und nur für Festplatten:
+Bit 2: 0 = 3 Leseversuche, dann 6 critical error handler
+1 = 1 Leseversuch, kein critical error handler
+Bit 3: 0 = Logische Sektor- und Laufwerksnummern
+1 = Physikalische Sektor- und Laufwerksnummern (d.h. 2 für
+Festplatte 0, 3 für Nr. 1 usw.)
+
+„Buffer“ gibt an, wo die Daten im Speicher zu finden sind, bzw. hingeschrie-
+ben werden sollen. „Anzahl“ ist die Anzahl der Sektoren, die übertragen
+werden sollen. „Recno“ gibt die Nummer des ersten Sektors und „Laufwerk“
+das Laufwerk an (wer hätte das gedacht?). Bei letzterem bedeutet 0=A, 1=B
+u8wW.
+
+Readsector A
+
+Syntax : (RS]READSECTOR) [Parameter]
+Parameter : [Track[,Sektor[,Seite[,Adresse[,Laufwerk]1]1]1]
+Kurzform : RS, RE
+
+
+
+TRANSLATED
+==========
+
+

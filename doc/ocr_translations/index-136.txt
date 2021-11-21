@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+ 
+
+134_ 6.6 Die Befehle
+Trace
+Syntax : TRACE [Anzahl]
+
+Kurzform : T
+
+Trace führt einen (beziehungsweise eine Anzahl) Befehl(e) aus. Danach wird
+wieder in den Debugger zurückgesprungen. Der Debugger zählt wirklich die
+ausgeführten Befehle und setzt keine Breakpoints (so, als ob Sie „Anzahl“
+mal F1 gedrückt hätten). Das heißt, es funktioniert auch im ROM.
+
+Showmemory
+
+Syntax : SHOWMEMORY [Term, [B|WIL] CAnzahl]]| [, . Nummer]
+Kurzform : SH
+
+Sie können sich wichtige Speicherbereiche auch ständig anzeigen lassen. Dazu
+geben Sie die Adresse mit SHOWMEMORY ein; es wird dann unter der Regi-
+steranzeige eine weitere Zeile eingefügt, in der, wie bei MEMORY, der Spei-
+cherinhalt ab dem Wert des Terms angezeigt wird. Diese Anzeige wird laufend
+akutalisiert, also nach jedem Trace, Return usw,
+
+Wenn der Term Register beinhaltet, wird die Adresse jedesmal neu berechnet.
+Das bedeutet: „SHOWMEMORY ”A0+100“ zeigt den Speicherinhalt ab dem In-
+halt von Adreßregister A0+$100 an, wobei die Adresse immer neu berechnet
+wird, wenn A0 sich ändert.
+
+Mit dem B, W oder L kann angegeben werden, ob in Byte-, Word- oder
+langwortbreite ausgegeben weren soll. „Anzahl“ legt fest, wieviele Byte in
+der Zeile angezeigt werden sollen.
+
+Vor jeder Zeile der Anzeige steht eine Nummer. Eine Zeile kann wieder
+gelöscht werden, indem Sie „SHOWMEMDRY ‚,.Nummer“ eingeben.
+
+Do, Call
+
+Syntax : DOJCALL [Adresse] [,Breakpoint])
+Kurzform : DO oder C
+
+
+
+TRANSLATED
+==========
+
+

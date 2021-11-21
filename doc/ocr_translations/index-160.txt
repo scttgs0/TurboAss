@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+158 6.6 Die Befehle
+
+ 
+
+Ascii
+
+Syntax : ASCII [Parameter]
+Kurzform : A
+
+Mit ASCIH wird der Speicherinhalt in ASCII ausgegeben. Er kann wie bei
+DUMP bzw. MEMORY geändert werden.
+
+)
+
+Syntax : )ASCII-Daten
+Kurzform : )
+
+Vor jeder ASCII-Dump-Zeile steht ein „)“. Dann kann der ASCII-Teil ent-
+sprechend geändert werden und mit RETURN übernommen werden.
+
+6.6.8 Allgemeine Befehle
+Find
+
+Syntax : FIND [Von,Bis],Term
+Kurzform : F
+
+FIND sucht den angegebenen Bereich bzw. den Programmbereich (TEXT
+und DATA, aber nicht BSS) durch und zeigt alle Adressen an, bei denen
+„Term“ vorkommt. „Term“ kann ein belieber Ausdruck sein, dessen Wert
+auch länger als ein Langwort sein kann (wichtig für ASCII-Suche). Es sind
+auch Opcodes (!) möglich. Ist „Term“ länger als ein Byte, wird immer die
+Adresse des ersten übereinstimmenden Bytes angezeigt.
+
+Bei Zahlen kann die Länge durch Anhängen von „.B“ (Byte), „.W“ (Word)
+„A“ (Adresse,3 Byte) oder „.L“ (langwort) angegeben werden. Wenn nichts
+angegeben wird, nimmt der Debugger die kürzestmögliche Länge an. Ist der
+Wert länger als Ihre Wunschlänge, werden entsprechend viele niedrigwertige
+Bytes genommen (näheres siehe FILL (siehe Kapitel 6.6.8 auf Seite 161)).
+
+
+
+TRANSLATED
+==========
+
+

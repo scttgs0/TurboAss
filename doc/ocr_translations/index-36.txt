@@ -1,0 +1,58 @@
+ORIGINAL
+======== 
+
+
+34 5.5__ Der Editor
+
+ 
+
+verarbeiten kann, sollten Sie dies vermeiden! Symbole dürfen also nie mit
+einem Punkt beginnen.
+
+Optimierungen
+
+Der OMIKRON.Assembler beherrscht „halb-“automatische Optimierungen.
+Wenn bei der Assemblierung Optimierungsmöglichkeiten erkannt werden,
+werden diese mit entsprechenden Warnmeldungen versehen (siehe Kapi-
+tel 5.7.1 auf Seite 100). Über dem „ABBRUCH“-Button erscheint ein But-
+ton „ANPASSEN“ . Wenn Sie darauf klicken, wird der Dialog beendet und
+alle Zeilen mit entsprechenden Warnmeldungen angepaßt. Dann müssen Sie
+nochmal neu Assemblieren. Eventuell müssen Sie diese Prozedur noch ein-
+mal wiederholen: Ein JMP kann in einem Durchgang zu einem BRA optimiert,
+in einem zweiten kann dieser zu einem BRA.S geändert werden (wenn der
+Sprung dadurch nicht zu weit wird, natürlich).
+
+Dieses Verfahren mag jemandem im Vergleich zu anderen Assemblern etwas
+umständlich vorkommen, weil diese bei der Assemblierung gleich mit opti-
+mieren können. Durch unser Konzept ist dieses jedoch nicht möglich. Der
+Assembler wird durch die Optimierungsabfragen aber praktisch nicht lang-
+samer, und das Doppelt-Assemblieren beim OMIKRON. Assembler geht wohl
+immer noch wesentlich schneller als das Binmal-Assemblieren bei einem an-
+deren.
+
+5.5.2 Formelrechnungen
+
+Der OMIKRON. Assembler erlaubt, mit 16 verschiedenen Rechenoperationen
+zu arbeiten. Dabei handelt es sich um die Grundrechenarten, die booleschen
+Algebra sowie Vergleiche. Alle Operationen werden mit 32 Bit Genauigkeit
+ausgeführt. Er beherrscht natürlich Punkt-vor-Strich-Rechnung.
+
+Fangen wir mit den Vorzeichen an:
+
+ 
+
+Plus (wer hätte es gedacht)
+
+Minus (auch nicht schlecht) (2er Komplement)
+NOT (1er Komplement)
+
+logisches NOT (Ergebnis ist 0 oder —1)
+
+v8 8
+
+ 
+
+TRANSLATED
+==========
+
+

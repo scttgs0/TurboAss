@@ -1,0 +1,61 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 79
+
+ 
+
+ 
+
+ 
+
+MIDI-Tastaturabfrage ı Ta JE
+Bebugger nachladen ı Ta ee
+ASCIT-Tabs expandieren : Ja] SE
+Überschreiben-Alert : [Ta NEM
+Biltter anschalten : Ja ]eE
+fsel_exinput autzen : [Ja GEM
+Zehnarblockbelegung
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.34: Die Dialogbox „Editor 3...“
+
+Im der Dialogbox „Editor 3...“ (Siehe Abbildung 5.34 auf Seite 79) können
+Sie folgendes einstellen:
+
+e Ob über die MIDI-Schnittstelle ankommende Daten als Scancodes aus-
+gewertet werden sollen. Sie senden also von einem zweiten Computer,
+von einer externen Tastatur o.ä. die Scancodes der gedrückten Tasten,
+und der Assembler wertet sie so aus, als ob sie auf der normalen ST-
+Tastatur gedrückt worden wären.
+
+e Ob der Debugger automatisch beim Laden des Assemblers nachgeladen
+werden soll.
+
+Ob Tabulator-Zeichen (ASCII-Zeichen 9) innerhalb von Anführungszei-
+chen beim ASCII-Laden expandiert (durch entsprechend viele Spaces
+bis zur nächsten Tabulatorposition ersetzt) werden sollen. Außerhalb
+von Anführungszeichen (innerhalb von Remarks) werden sie immer ex-
+pandiert — innerhalb von Anführungszeichen könnten sie beabsichtigt
+sein. Deshalb können Sie hier festlegen, ob sie expandiert werden sol-
+len. Achtung: Wenn Sie hier „ja“ einstellen, werden auch Tabulatoren
+in Konstanten expandiert, was zu nicht tokenisierbaren Zeilen führen
+kann.
+
+e Ob beim Abspeichern vor dem Überschreiben einer bestehenden Datei
+gewarnt werden soll (Siehe Abbildung 5.9 auf Seite 53).
+
+
+
+TRANSLATED
+==========
+
+

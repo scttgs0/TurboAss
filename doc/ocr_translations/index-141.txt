@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 139
+
+ 
+
+oe OBSERVE ohne Parameter zeigt alle Trap-Breakpoints an, die zur Zeit
+gesetzt sind.
+
+e OBSERVE OFF schaltet OBSERVE ganz (!!!) aus. Die Trap- Vektoren
+werden nicht mehr geändert.
+
+es OBSERVE Trapnummer setzt alle Trap-Breakpoints für diesen Trap.
+se OBSERVE Trapnummer. löscht alle Trap-Breakpoints für diesen Trap.
+
+se OBSERVE Trapnummer,? zeigt die Trap-Breakpoints für diesen Trap
+an.
+
+° OBSERVE Trapnummer, Liste setzt einzelne Trap-Breakpoints, Mit ei-
+nem Punkt gekennzeichnete Breakpoint-Nummern werden gelöscht.
+Beispiel: „DBESERVE 14,A,20.“
+
+Es wird Flopfmt() (XBIOS 10), aber nicht mehr Dosound() (XBIOS
+32) abgefangen.
+
+Gemdos 0 (Pterm0), 76 (Pterm), 49 (Ptermres) und TRAP # 2 Funktion 0,
+sowie CONTROL-C bei GEMDOS-Funktionen werden immer abgefangen (wenn
+OBSERVE nicht ausgeschaltet ist!)
+
+Wenn das Programm auf einen Trap-Breakpoint läuft, meldet sich der De-
+bugger mit dem Namen der aufgerufenen Funktion (bevor die Funktion aus-
+geführt wird). Die übergebenen Parameter werden in einem C-ähnlichen Syn-
+tax ausgegeben: Hinter dem Funktionsnamen werden in Klammen die Para-
+meter, durch Kommas getrennt, angezeigt. Vor jedem Parameter steht „w:“
+für Wordbreite oder „1:“ für Langwortbreite. Bei AES- und VDI-Funktionen
+werden nur die Adressen der Arrays ausgegeben, Wenn Sie sich dann mit
+OBSERVE oder „OBSERVE x,?“ die beobachteten Traps anzeigen lassen, wird
+der Trap, bei dem abgebrochen wurde, mit einem „*“ gekennzeichnet. Das
+Programm kann mit GO fortgesetzt werden.
+
+Bei den Trapnummern steht:
+
+GEMDOS Nummer 1
+AES Nummer 2A
+
+
+
+TRANSLATED
+==========
+
+

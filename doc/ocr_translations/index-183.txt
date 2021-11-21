@@ -1,0 +1,32 @@
+ORIGINAL
+======== 
+
+
+Anhang A
+
+Die Makro- Version
+
+Wir arbeiten zur Zeit an einer stark erweiterten Version des OMIKRON.
+Assembler. Sie wird wahrscheinlich folgende Verbesserung haben:
+
+oe Makros,
+e Linker,
+a Teach-In-Tasten,
+® Include-Dateien,
+
+8 Sourcecode-Debugging. ..
+
+Wenn Sie noch Verbesserungsvorschläge haben, schreiben Sie uns bitte (Die
+Adresse steht auf der Titelseite).
+
+Wenn Sie Ihre Registrierkarte eingesandt haben, werden wir Sie informieren,
+sobald die neue Version fertig ist.
+
+181
+
+
+
+TRANSLATED
+==========
+
+

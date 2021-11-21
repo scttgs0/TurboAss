@@ -1,0 +1,62 @@
+ORIGINAL
+======== 
+
+
+76 5.5 Der Editor
+
+ 
+
+ 
+
+Curserdarstellungı SEMFZTEZIES)
+Farbe 1 0:828 MiBSS
+
+Bildabschaltung | J00 sek
+Mausfangradius 1! _2 Pixel
+
+ 
+
+ 
+
+Warnungen ı DA
+
+Suchfunktionen |
+
+Suchzeichen ı= .
+EX
+
+ 
+
+Abbildung 5.32: Die Dialogbox „Editor1“
+
+0=81=1,2=_,3=[)
+
+Wenn Sie auf einem Farbmonitor arbeiten, können Sie die Bildschirmfarben
+frei wählen. „V“ steht dabei für die Vordergrund-(Zeichen-)Farbe, „H“ für
+die Hintergrundfarbe. Die einzelnen Ziffern stehen für den Rot-, Grün- und
+Blauanteil der Farbe. Es sind jeweils Werte zwischen 0 und 7 zulässig. Auf
+Monochrommonitoren können Sie mit der Hintergrundfarbe (Bit 0 setzen
+oder löschen) zwischen normaler und inverser „Farbe“ umschalten.
+
+Damit das Bild nicht in Ihren Monitor einbrennt, wenn Sie eine längere Pause
+einlegen, ohne den Rechner auszuschalten, enthält der OMIKRON. Assembler
+einen Bildschirmabschalter. Wenn er eingeschaltet ist und Sie innerhalb der
+eingestellten Zeit keine Taste gedrückt und die Maus nicht bewegt haben,
+wird der Bildschirm schwarz. Das Bild kommt zurück, sobald Sie eine Taste
+drücken (keine SHIFT- o.ä, Taste) oder die Maus bewegen. Abschaltzeiten
+unter 10 Sekunden sind nicht zugelassen, abgeschaltet wird diese Funktion,
+indem Sie auf den „nein“-Button klicken. Der Bildschirmabschalter schaltet
+übrigens nicht die Synchronisation ab.
+
+Mit „Warnungen“ können Sie anwählen, ob bei Sprüngen zu Fehlern (mit
+CONTROL-ALT-J) auch Warnungen angesprungen werden sollen.
+„Suchfunktionen“ gibt an, wie Fehler, nicht tokenisierbare Zeilen usw. an-
+gesprungen werden sollen. „normal“ ist, daß der nächste Fehler ab der Cur-
+sorposition angesprungen wird. Auf dem letzten Fehler im ganzen Source
+
+
+
+TRANSLATED
+==========
+
+

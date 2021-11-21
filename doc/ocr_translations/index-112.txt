@@ -1,0 +1,59 @@
+ORIGINAL
+======== 
+
+
+110 6.4 Allgemeine Bedienung
+
+ 
+
+USP oder dem SSP (s. 0.), in Abhängigkeit des S(upervisor)-Flags, entspricht,
+
+Sie können alle Register ändern, indem Sie mit der Maus auf die Register-
+anzeige klicken. Daraufhin wird der Cursor in die Anzeige gesetzt, und man
+kann einen neuen Wert eintragen. Mit den Tasten & und = kann man den
+Cursor nach links und rechts bewegen. Mit UNDO, ESC oder durch Druck auf
+die rechte Maustaste kann die Eingabe abgebrochen werden — dann wird das
+Register nicht geändert. Drücken Sie RETURN, um die Eingabe abzuschließen
+und dem Register einen neuen Wert zuzuweisen.
+
+Neben den Registern werden Ihnen wohl zwei Pfeile auffallen; wenn Sie mit
+der Maus auf <= klicken, ändern sich die Registerinhalte, zudem erscheint ein
+®, Mit den Pfeilen können Sie durch den Cache blättern. Näheres dazu siehe
+bei Kapitel 6.4.2 und 6.6.5 auf den Seiten 111 und 140.
+
+Die restlichen 20 Zeilen des Bildschirms gehören zum Screeneditor. Dort er-
+scheinen alle Ausgaben. Außerdem werden dort alle Befehle eingegeben. Der
+Bildschirmeditor erinnert ein wenig an OMIKRON.BASIC oder an den C-64,
+jedoch ist die Tastaturbelegung (siehe Kapitel 6.4.2 auf Seite 111) weitgehend
+kompatibel zum Assembler.
+
+Den Cursor können Sie beliebig setzen, indem Sie an entsprechender Stelle
+mit der linken Maustaste hinklicken. Natürlich kann der Cursor auch mit den
+Cursortasten bewegt werden.
+
+Wenn Sie die rechte Maustaste drücken, wird der unter der Maus stehende
+Text bis zu einem der folgenden Zeichen:
+
+1 \+{D-  =, ii #07 >>
+
+(oder Space, Zeilenanfang bzw. -ende) an die Cursorposition kopiert (davor
+wird noch ein Space eingefügt).
+
+Der Sinn ist folgender: Sie lassen sich zum Beispiel einen Programmteil mit
+LIST anzeigen. Vor einen Befehl möchten Sie Breakpoint 1 setzen. Sie tippen:
+„B1=“ und klicken mit der rechten Maustaste auf die Adresse vor dem Befehl
+und drücken RETURN. Genauso kann man auch Textstücke kopieren.
+
+Wenn Sie ein Programm geladen haben, wird nach einem Doppelklick (mit
+der linken Taste) auf eine beliebige Zahl ab dieser Adresse disassembliert,
+wenn sie innerhalb des Text-Segments liegt, sonst ein Memorydump ange-
+zeigt.
+
+Bei Ausgaben von MEMORY, DUMP, DISASSEMBLE, LIST und SYMBOL-
+
+
+
+TRANSLATED
+==========
+
+

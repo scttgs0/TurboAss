@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+H_DAS MODULKONZEPT 207
+
+ 
+
+sollte die Adressierungsart d(PC) bzw. d{(An) genutzt werden. Das Mo-
+dul sollte als ABSOLUT-Programm abgespeichert werden (nur die vor-
+geschlagene Extension B ist richtig), da der 28-Byte-Programmheader
+unnötig ist (Er wird aber überlesen, falls man es doch mal vergißt)
+
+ee Dem Modul muß ein EVEN folgen, damit das folgende Modul stets auf
+einer geraden Adresse beginnt (Sicher ist Sicher. ..).
+
+se Ein Modul wird stets om Supervisormode aufgerufen und darf diesen
+auch nicht verlassen.
+
+e Punkte, welche mit A markiert sind, sind noch nicht getestet!
+
+H.2 Der Aufbau des Modulheaders:
+
+© folgender 32-Byte Header ist vorgeschrieben (Die Symbolnamen sind
+wahlfrei, sollten aber möglichst mit „Buchstabe“ +,.“ anfangen, da der
+Zusammenhang dann besser deutlich wird (siehe auch im Sourcetext
+der mitgelieferten Module)).
+
+a_start: DC.B ’d-soft01’ ;0 Modulkennung
+bra.wW a_init ;8 Init nach dem Laden
+bra.w a_disable ;12 evtl. disablen
+bra.w a_choose ;16 Modul anwaehlt
+DXSET 8,’ °
+DX.B ’NAME’ ;20 Name des Moduls
+DC.L a_end-a_start ;28 Laenge des Moduls
+
+e Der Header beginnt mit der Modulkennung, wobei die letzten beiden
+Ziffern die Version des Modulkonzepts darstellen, sie werden allerdings
+nur bei Änderungen, welche zur Inkompatibilität (was für ein Wort)
+führen geändert,
+
+e Die drei folgenden Befehle sind jeweils 2 Word lang (BRA.W !!!) Sie
+dürfen unter keinen Umständen eine andere Länge bekommen!
+
+
+
+TRANSLATED
+==========
+
+

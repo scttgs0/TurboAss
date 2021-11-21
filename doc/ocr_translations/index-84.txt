@@ -1,0 +1,64 @@
+ORIGINAL
+======== 
+
+
+82 5.6_ Die Pseudo-Opcodes
+
+ 
+
+ 
+
+Stunden :13 Minuten @ Schundeni 38
+Tag 14 Monat 04 Jakr 11589
+
+Keute ist nin Freitag
+FM AUSCHLTENIE
+
+CUR_STELLEW ]
+
+ 
+
+ 
+
+  
+
+ 
+
+Abbildung 5.37: Die Dialogbox zum Uhrstellen
+
+In Klammern sind andere Befehlssyntaxen angegeben, die der Assembler ver-
+steht, um kompatibel zu älteren Assemblern zu sein. Diese werden dann in
+den an erster Stelle stehenden Syntax konvertiert. Ein Punkt in Klammern
+vor einem Befehl bedeutet, daß aus Kompatibilitätsgründen ein Punkt vor
+dem Befehl ignoriert wird. Ein „.x“ bedeutet, daß sowohl „.B“, „.W“ als auch
+„-L„ erlaubt sind,
+
+Einige Befehle sind unter verschiedenen Namen implementiert — so z.B.
+DS und DCB. Dadruch können Sie theoretisch sogar die unter dem OMI-
+KRON. Assembler geschriebenen Programme wieder auf anderen Assemblern
+verwenden.
+
+5.6.1 Definition von Datenbereichen
+
+(.)DC.x Wert{,Wert} fügt Konstanten in den Programmcode ein. „Wert“
+kann ein beliebiger Ausdruck sein, der auch Formeln enthalten darf.
+Theoretisch sind sogar Conditions möglich, also z, B.:
+
+DC.B **TIME=$6000
+
+(Um 12 Uhr wird $FF, sonst 0 eingefügt) (Daß das sinnvoll ist, hat ja
+keiner behauptet!). Wenn keine Länge angegeben wird, wird Wordbreite
+(.W) vorausgesetzt.
+
+(.)DS.x Wert[,Füllwert] (BLK.x) reserviert „Wert“ Bytea (bzw. Words,
+Longwords) Speicher. „Füllwert“ gibt an, mit welchem Wert der Spei-
+cher gefüllt werden soll (wird keiner angegeben, ist der Speicher mit
+0 gefüllt). Die Angabe eines Füllwerts ist natürlich nicht im Block-
+Storage-Segment (BSS) erlaubt. Wenn Sie den „Wert“ direkt ange-
+
+
+
+TRANSLATED
+==========
+
+

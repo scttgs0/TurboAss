@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER
+
+131
+
+ 
+
+Tabelle 6.7: Die erlaubten Rechenzeichen
+
+ 
+
+ 
+
+ 
+
+ 
+
+Rechenzeichen | Funktion:
+
++ Addition
+
+- Subtraktion
+
+| OR
+
+° EOR (XOR)
+
+<< Linksverschiebung
+(LSL-Befehl des Prozessors)
+
+>> Rechtsverschiebung
+(LSR-Befehl des Prozessors)
+
+* Multiplikation
+
+/ Division
+
+& AND
+
+% Modulo
+
+
+
+TRANSLATED
+==========
+
+

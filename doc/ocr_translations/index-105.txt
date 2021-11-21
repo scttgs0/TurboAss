@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 103
+
+ 
+
+die Wirkung des Programms verändert. Der BSR.S ist wahrscheinlich
+in ein BSR.W zu ändern, und der Fehler ist behoben.
+
+Ausdruck zu komplex Die Formel kann so nicht berechnet werden. Ver-
+suchen Sie, sie in mehrere einfachere Ausdrücke zu zerlegen.
+
+Im BSS-Segment nicht erlaubt Im BSS sind keine Opcodes o. ä. codeer-
+zeugende Befehle zugelassen.
+
+Division durch Null in einer Formel wurde durch 0 dividiert.
+
+ELSE ohne IF zu einem ELSE-Befehl wurde kein vorhergehendes IF gefun-
+den,
+
+ENDC ohne IF zu einem ENDC-Befehl fehlt ein passendes IF.
+
+EQU-Wert nicht änderbar es wurde versucht, einem mit EQU definierten
+Symbol mit SET einen anderen Wert zuzuweisen, was aber prinzipiell
+nicht möglich ist.
+
+Falsche Segmentfolge Die Segmente dürfen nur in der Reihenfolge TEXT
+— DATA — BSS eingegeben werden.
+
+IF nicht abgeschlossen eine bedingte Assemblierung wurde mit IF begon-
+nen, es fehlt aber der ENDC-Befehl.
+
+Im BSS-Bereich nur DS.X Im Block-Storage-Segment sind nur DS-, RS-,
+RSEVEN- u.ä. Befehle zugelassen, da es nicht mit abgespeichert wird.
+Es wird nur im Programmheader die Größe des BSS eingetragen.
+
+Position außerhalb der Datei Bei IBYTES wird eine Position (2. Para-
+meter) angegeben, d.h. es sollen mehr Byte ab dem Anfang überlesen
+werden, als die Datei überhaupt lang ist. Wenn die Länge (1. Parame-
+ter) zu groß ist, wird dieser Parameter einfach ignoriert.
+
+String zu lang Ein bei DX.B angegebener String ist länger, als mit DXSET
+eingestellt.
+
+Symbol nicht definiert Es wurde in einer Formel o. ä. ein Symbol verwen-
+det, das noch nicht definiert wurde.
+
+
+
+TRANSLATED
+==========
+
+

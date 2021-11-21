@@ -1,0 +1,42 @@
+ORIGINAL
+======== 
+
+
+H Das Modulkonzept 206
+H.1 Allgemeine Richtlinien: ......0.0.0.000000000.00004 206
+H.2 Der Aufbau des Modulheaders: ......0.0.0.000000004 207
+H.3 Die Routine „init“: „2... .00.0 004040 1 WR WA 208
+H.4 Die Routine „disable“: ....00000000000.0000.0004 209
+H.5 Die Routine „choose“: ...0.0.000000000000004 ‚209
+H.6 Die vorhandenen Prozeduren: ......00000040000004 210
+H.7 Der RSC-Editor .....0.0.0.0000 000000 RR HH 214
+
+H.7.1 Der Aufbau des Formats ......0.000000000004 214
+Zur Beachtung 00.000000 0 214
+Allgemeiner Aufbau. ....0.0.000000000.044 44 214
+Die verschiedenen Typen .......0.0.000000004 215
+Ce TEE 216
+
+H.7.2 Der Editor... ..0000000000 000 00 216
+Die Iconlibrary +... 000000 0 217
+
+I Die beiliegenden Dateien 218
+I.1 AES_DEMO.SRC und AES_DEMO.PRG . . 0000000000000 218
+12 AESMVDI SS er RR 219
+13 AUTOBOOT-SRC ; au 24 5 00 41H EHER WEMRRMEN 219
+1.4 BIOS.S, XBI0S.S und GEMDDS.S . 0 .01.0.000000000004 219
+1.5 BO0T_2-0.PRG 0. 220
+16 BREAKS 2 220
+1.7 CALL.SRC und CALL.PRG 0... 0.444000 0 4 We ke HG 220
+1:8 DAYCALC.SRÄC 4 4 0: 4 HH VERKEHR RER KKER 221
+1.9 DESKTOP.PRG und DESKTOP.SRC . 00 221
+110 EPSOUN.HEX » + > 44 44 5 40H RENNER NEN 221
+
+L11 GAME,ÜME > 00 44 44 HR ENG EM ANKER 222
+
+
+
+TRANSLATED
+==========
+
+

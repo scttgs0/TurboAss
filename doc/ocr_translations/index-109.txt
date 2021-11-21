@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+6_ DER DEBUGGER 107
+
+ 
+
+sogar residente Programme (wie Ramdisktreiber) und Accessories debuggt
+werden.
+
+Besonderheiten des Debuggers:
+
+e Bis auf die Operationen wie Laden und Speichern werden keine I/O-
+Routinen des Atari ST benutzt. Damit können auch Programme de-
+buggt werden, die das Betriebssystem des ST teilweise zerstören.
+
+se Der Debugger verwaltet eine eigene Bildschirmseite. Dies ermöglicht
+das problemlose Testen von Programmen die Daten auf den Bildschirm
+schreiben (inbesondere GEM-Programme und Spiele)
+
+e Er ermöglicht auch das Debuggen von compilierten Programmen einer
+beliebigen Hochsprache. Eine ans Programm angebundene Symbolta-
+belle wird unterstützt.
+
+e Der Debugger kann an (fast) alle Situationen angepaßt werden.
+e Das Debugging kann bequem mit Tastatur und Maus erfolgen.
+
+6.2 Starten des Debuggers
+
+Als einfachste Möglichkeit können Sie den Debugger starten, indem Sie ein-
+fach OM-DEBUG.PRG laden (Wer hätte es gedacht?). Um jedoch den De-
+bugger vom Assembler aus aufrufen zu können, sollte der Debugger stets im
+Speicher verbleiben. Dabei werden auch alle Abstürze („Bomben“) umge-
+lenkt, so daß Sie bei einem Absturz stets in den Debugger gelangen.
+
+Aber auch zum residenten Laden gibt es mehrere Möglichkeiten:
+
+1. Tippen Sie, nachdem Sie den Debugger geladen haben, „RESIDENT“ ein,
+und beantworten Sie die folgende Sicherheitsabfrage mit „J“.
+
+2. Kopieren Sie den Debugger in den AUTO-Ordner. Beachten Sie dabei
+jedoch, daß der Debugger möglichst als erstes Programm in den Ordner
+kopiert wird. Der Debugger wird nun bei jedem RESET automatisch
+geladen.
+
+
+
+TRANSLATED
+==========
+
+

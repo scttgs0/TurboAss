@@ -1,0 +1,62 @@
+ORIGINAL
+======== 
+
+
+44
+
+5.5__ Der Editor
+
+ 
+
+CONTROL-G
+
+CONTROL-U
+
+ALT-Zehnerblock
+
+ALT-SHIFT-HELP
+
+Zweifelsfall sollte man es ausprobieren, dadurch
+können jedenfalls keine Daten zerstört werden.
+
+Löst eine sogenannte Garbage-Collection aus. Es
+werden intern überflüssige Symboleinträge wieder
+freigegeben. Diese Funktion ist normalerweise un-
+nötig, da diese Funktion vor dem Speichern und
+beim Anzeigen des Sourcetextinfos (SHIFT-F4) au-
+tomatisch aufgerufen wird. Wer jedoch mehrfach
+hintereinander „Symbol ersetzen“ aufruft und an-
+schließend Warnungen zu Symbolen erhält, wel-
+che man, weil gerade ersetzt, gar nicht mehr im
+Sourcetext hat, sollte Abbrechen und CONTROL-G
+drücken (bei „Symbol ersetzen“ können freie Sym-
+boleinträge nicht automatisch erkannt werden)
+
+Markiert alle Zeilen als fehlerhaft, in welchen ein
+Symbol definiert wird, das sonst nirgends im Pro-
+gramm verwendet wird. Damit lassen sich nun ein-
+fach alle Unterprogramme finden, die nicht benutzt
+werden. Sie können die „fehlerhaften“ Zeilen wie
+gewohnt mit CONTROL-J anspringen.
+
+Man kann mit ALTERNATE und Ziffern auf dem Zeh-
+nerblock einen ASCII-Code eingeben (so wie bei
+IBM-kompatiblen). Ein Beispiel: ALTERNATE drük-
+ken (gedrückt halten) und 228 auf dem Zehner-
+block eintippen, dann ALTERNATE loslassen. Es er-
+scheint ein X an der Cursorposition. Weil die Kom-
+bination ALT-Zehnerblock im Tastaturtreiber ver-
+ankert ist, funktioniert diese Methode auch in Dia-
+logboxen (z.B. ALT-27 löscht das Eingabefeld, da
+ESC das Eingabefeld ebenfalls löscht).
+
+Speichert den Inhalt des Bildschirms im DEGAS-
+Format auf dem Laufwerk ab, von dem der Assem-
+bler gestartet wurde.
+
+
+
+TRANSLATED
+==========
+
+

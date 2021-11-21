@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 97
+
+ 
+
+Ein zweites Beispiel:
+
+moveq #15,d0
+loop: REPT 16
+
+move.b d1,(a0)+
+
+ENDR
+
+dbra d0 ‚loop
+
+fügt zwischen den moveq und den dbra 16 mal move.b ein. Wenn das
+Programm ausgeführt wird, wird der Inhalt von D1 256 mal ab AO in
+den Speicher kopiert.
+
+ILLEGAL fügt $4AFC in den Programmcode ein. Dieser Befehlscode ist
+nicht belegt; wenn der Prozessor versucht, ihn auszuführen, wird Ex-
+ception #4 (Illegal Instruction) ausgeführt. Auf dem Desktop führt
+das zu 4 Bomben; der Debugger fängt sie ab. Das kann dazu benutzt
+werden, um einen „Breakpoint“ gleich in das Programm hineinzuas-
+semblieren.
+
+DEFAULT Nummer In der Dialogbox nach der Assemblierung ist der
+Button „Nummer“ stets default. Der Parameter „Nummer“ darf dabei
+einen Wert von 0 bis 12 annehmen, wobei der Wert 0 dem Abbruch-
+Button entspricht, 1 dem Debugger, 2 Standard, u. s. w. An dieser Stelle
+soll nochmals an die Tastenkombination ALT-A erinnert werden, die den
+Sourcetext assembliert und den Default-Button auslöst.
+
+5.6.8 Bedingte Assemblierung
+
+IF{NE}] Bedingung Der folgende Teil wird nur assembliert, wenn die Be-
+dingung erfüllt (ungleich 0) ist.
+
+IFEQ Bedingung Der folgende Teil wird nur assembliert, wenn die Bedin-
+gung nicht erfüllt (= 0) ist.
+
+IFLT Ausdruck Der Code wird assembliert, wenn der Wert des Ausdrucks
+< 0 ist.
+
+IFLE Ausdruck Der Code wird assembliert, wenn der Ausdruck < 0 ist.
+
+
+
+TRANSLATED
+==========
+
+

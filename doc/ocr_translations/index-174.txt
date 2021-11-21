@@ -1,0 +1,42 @@
+ORIGINAL
+======== 
+
+
+ 
+
+172 6.11 _ Meldungen des Debuggers
+s ?Überlauf
+z.B. 10000*10000 wird größer als ein Langwort
+e ?Syntax-Fehler
+Ein Tippfehler in den Parametern eines Befehls.
+e ?Wert nicht erlaubt
+z.B. Ein Spur 100 bei READSEKTOR
+e ?Klammer fehlt
+z. B. Die Klammerebenen in einer Formeln stimmen nicht.
+oe 7Welcher Drucker
+Der Drucker ist off-line oder nicht angeschlossen.
+® ?Datei nicht mit FOPEN geöffnet
+Bevor man die Ausgabe in eine Datei umlenken kann, muß diese geöff-
+net worden sein.
+e ?Datei wurde bereits geöffnet
+Man kann nur in eine Datei zur Zeit die Ausgabe umlenken.
+s ?Es ist kein Programm geladen
+z. B. HUNT ohne Parameter funktioniert nur mit geladenem Programm.
+e ?Label existiert nicht
+Das Symbol wurde in der Symboltabelle nicht gefunden.
+e ?Keine Symboltabelle
+z.B. SYM ohne Symboltabelle
+® ?Interner Fehler (Bitte Eingabe notieren!)
+Nur in convert formel möglich (Formel => Assemblerprg).
+e ?Nicht erlaubt
+LEXECUTE im vom Assembler aus aufgerufenen Debugger.
+® ?Illegaler Breakpoint
+
+z.B. „BO=100“ (Adresse ist zu klein)
+
+
+
+TRANSLATED
+==========
+
+

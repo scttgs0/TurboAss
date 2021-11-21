@@ -1,0 +1,48 @@
+ORIGINAL
+======== 
+
+
+I_ DIE BEILIEGENDEN DATEIEN 225
+
+ 
+
+1.18 NEC.HEX
+
+(siehe MAKE_CFG . PRG)
+
+1.19 0OM_MODUL.SRC
+
+Dieses ist der Source für die Datei OM-ASSEM.DAT. Wie und wozu man so
+etwas braucht, steht im Anhang H auf Seite 206
+
+Achtung: Dieser Source enthält noch weitere Module als die auf ihrer Origi-
+naldiskette liegende OM-ASSEM.DAT-Datei. Diese werden für das Spiel „Think
+and Work“ benötigt (siehe GAME. OMI). Normalerweise kosten die Module nur
+unnötig Speicherplatz und Zeit — assemblieren Sie diese Datei also nur bevor
+Sie mit dem Spiel experimentieren wollen oder im Zusammenhang mit dem
+Kapitel H auf Seite 206.
+
+1.20 SCRNDUMP.SRC und SCRNDUMP.PRG
+
+Nachdem Sie dieses Programm gestartet haben, können Sie mit den Tasten
+ALTERNATE-HELP nicht mehr den Bildschirminhalt ausdrucken, sondern im
+DEGAS-Format abspeichern. Dabei wird auch die Farbpalette ausgelesen
+und abgespeichert. SCRNERR.SRC ist das gleiche Programm, beinhaltet aber
+einen Programmierfehler. Dieser dient. als Debugger-Demo und wird im Ka-
+pitel 6.13 behoben.
+
+1.21 SCRNERR.SRC
+
+(siehe SCRNDUMP ‚ SRC)
+
+1.22 Z-RSC
+
+Dieser Ordner enthält einen RSC-Editor für das E-soft-RSC-Format. Die
+damit erstellten RSC-Strukturen können Sie in Module einbinden — näheres
+
+
+
+TRANSLATED
+==========
+
+

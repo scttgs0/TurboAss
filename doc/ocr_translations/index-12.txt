@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+Tabellenverzeichnis
+
+4.1
+
+5.1
+5.2
+5.3
+5.4
+5,5
+
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+6.7
+6.8
+
+D.1
+D.2
+D.3
+D.4
+D.5
+
+Die Tasten in Dialogboxen .....0.000000000.004040004 21
+Konvertierungen in den Motorola-Standard ........... 33
+Die Rechenoperationen des Assemblers ............. 36
+Die Escape-Belegungen . .. 0... .0.000000000000404 46
+Die Gründe fürs Disabeln ....0.0.0.0.00000000004044 61
+Das DX-Demo’. + x. uk: WERFEN ERE KHK KK RE RE 85
+Die Flags des Statusregisters .........0.000000400 04 109
+Allgemeine Tastenkommandos . .....0.0000000004044 115
+Zusätzliche Tastenkommandos . . 000 116
+Der Zehnerblock . .. 1.000000 000 116
+Die Zahlensysteme .. 0.000000 130
+Die erlaubten Vorzeichen ......0.0.0.0000040040000404 130
+Die erlaubten Rechenzeichen .........00.0.0000000L 131
+Die Fileattribute ....0.0.00000.00000000000404044 150
+Der Programmheader . .....1.00.0000000000.00044 189
+Die Basepage 2.0.0000 000 190
+Der Boot-Sektor . . 1.00.0000 195
+Die Symboltabelle . ,. 0.0.0000 197
+Die Symboltabelle des Assemblera . 0. .000000000004 197
+
+10
+
+
+
+TRANSLATED
+==========
+
+

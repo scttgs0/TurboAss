@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+146 6.6__Die Befehle
+
+ 
+
+Name auf „.SRC“ endet. Ordner werden immer angezeigt, auch wenn sie eine
+andere Endung als die im Pfad vorgegebene haben.
+
+Vor den Namen steht dir, wenn es sich um einen Ordner handelt, bzw. 1o,
+wenn es eine Datei ist. Wenn Sie also mit dem Cursor auf einen Eintrag
+gehen und RETURN drücken, wird das Unterverzeichnis angezeigt bzw. die
+Datei geladen. Hinter jedem Dateinamen steht, durch Semikolon abgetrennt,
+die Dateilänge. Wir können uns also das Tippen des Namens sparen: Wir
+geben einfach „DIR“ ein und sehen unter anderem lo scrndump.prg. Man
+kann nun das „o“ durch “e“ überschreiben und RETURN drücken.
+
+Prn
+
+Syntax : PRNbefehl
+Kurzform : P (jedoch kein PR)
+
+Wenn Sie PRN vor einen Befehl setzen, werden alle dazugehörigen Ausgaben
+nicht auf dem Bildschirm, sondern auf dem Drucker gemacht.
+
+Beispiel: „Pd 10000,10100“
+Disassembliert ein Programm von $10000 bis $10100 und gibt es auf dem
+Drucker aus.
+
+File A
+
+Syntax : FILEbefehl
+Kurzform : F (jedoch ebenfalls kein FI,FIL)
+
+Entspricht PRN, gibt jedoch nicht auf dem Drucker, sondern in eine Datei
+aus. Die Datei muß mit FOPEN geöffnet worden sein.
+
+Fopen 4
+
+Syntax : FOPEN Filename
+Kurzform : FOP
+
+Eröffnet eine Datei, die mit FILE beschrieben werden kann.
+
+
+
+TRANSLATED
+==========
+
+

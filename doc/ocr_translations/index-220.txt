@@ -1,0 +1,39 @@
+ORIGINAL
+======== 
+
+
+Anhang I
+
+Die beiliegenden Dateien
+
+Auf der Diskette finden Sie einen Ordner mit dem Namen LIBRARYS.OMI
+(der Rechtschreibfehler ließ sich nicht vermeiden; „Libraries“ ist 9 Zeichen
+lang und somit als Filename nicht erlaubt), einen Ordner UTILITY.OMI und
+einen DEMOS .OMI., Darin finden Sie Demos u. ä., die in diesem Kapitel erklärt
+werden:
+
+1.1 AES_DEMO0.SRC und AES_DEMO.PRG
+
+Dieses Programm dient der Demonstration von AES- und VDI-Aufrufen.
+AES steht für Application Environment System und übernimmt die Be-
+nutzeroberfläche, also Windows, Drop-Down-Menüs und Maus-, Tastatur-,
+Zeitüberwachung usw. Das VDI (Virtual Device Interface) ist für primitivere
+Grafikfunktionen (Zeichnen von Linien, Rahmen, Ellipsen usw.) zuständig.
+Eine Liste aller VDI- und AES-Routinen wäre für diese Anleitung viel zu
+lang — wir müssen Sie also auf entsprechende Fachliteratur verweisen (siehe
+Anhang J).
+
+Wie diese Routinen aber von Assembler aus aufgerufen werden, kann an
+diesem Programm sehr schön verfolgt werden. Es werden 4 Windows geöff-
+net und mit allen Elementen abgefragt. Entsprechend der Slider-(Schieber-
+)stellung werden in den Windows verschiedene Ellipsen gezeichnet. Natürlich
+werden auch Redraw-Messages verwaltet.
+
+218
+
+
+
+TRANSLATED
+==========
+
+

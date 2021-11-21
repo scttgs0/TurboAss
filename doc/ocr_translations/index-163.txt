@@ -1,0 +1,68 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 161
+
+ 
+
+Kopiert einen Speicherbereich. Das Kopieren geschieht byteweise, daher sind
+auch ungerade Adressen möglich. Es wird dabei „intelligent“ verschoben, d.h.
+auch wenn der Quellbereich in den Zielbereich hereinragt, wird er trotzdem
+richtig verschoben. Am besten sich vergessen diesem Satz schnell wieder und
+merken sich nur, daß der Debugger stets richtig kopiert.
+
+Fill
+
+Syntax : FILL Von,Bis,Term{,Term}
+Kurzform : FIL
+
+Füllt einen Speicherbereich mit einem Wert. Auch ASCII (”) und Opcode (!)
+sind möglich. Bei Zahlen kann die Länge durch Anhängen von „.B“ (Byte),
+„.W“ (Word) „.A“ (Adresse, 3 Byte) oder „.L“ (Langwort) angegeben wer-
+den. Wenn nichts angegeben wird, nimmt der Debugger die kürzestmögliche
+Länge an. Ist der Wert länger als Ihre Wunschlänge, werden entsprechend
+viele niedrigwertige Bytes genommen.
+
+ 
+
+ 
+
+Beispiele:
+
+Eingabe: Wird interpretiert als
+
+100 $0100
+
+50 $50
+
+.128.W $0080
+
+123456.w $3456
+
+RTS $4E75
+
+100,/NOP,5.A $01004E71000005
+
+ 
+
+ 
+
+ 
+
+ 
+
+Die Werte werden hintereinander in einen 80 Byte großen Buffer geschrieben,
+der dann in den Speicher geschrieben wird.
+
+Clr
+
+Syntax : CLR [Von[,Bis]]
+Kurzform : CLR
+
+
+
+TRANSLATED
+==========
+
+

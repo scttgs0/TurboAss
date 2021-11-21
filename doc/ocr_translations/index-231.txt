@@ -1,0 +1,44 @@
+ORIGINAL
+======== 
+
+
+Anhang J
+
+Literaturhinweise
+
+Wir können in diesem Handbuch natürlich nur eine kurze Übersicht über
+die wichtigsten Teile des Betriebssystems geben. Für nähere Informationen
+können wir Ihnen folgende Bücher empfehlen:
+
+e Hans-Dieter Jankowski, Dietmar Rabich, Julian F. Reschke:
+Atari ST Profibuch
+SYBEX-Verlag GmbH, Düsseldorf — ISBN 3-88745-563-0
+
+Dieses Buch enthält Informationen zum Betriebssystem und zur Hard-
+ware (auch zum Mega ST), ist übersichtlich gegliedert (mit sehr umfas-
+senden Register) und fast fehlerfrei. Dieses Buch ist ein Standardwerk
+für praktisch alle Programmierer auf dem ST.
+
+e C. Vieillefond: Programmierung des 68 000
+SYBEX-Verlag GmbH, Düsseldorf — ISBN 3-88745-060-4
+
+Es ist zwar nicht speziell für den ST geschrieben, aber enthält doch alle
+wichtigen Informationen für den ST-Benutzer.
+
+e Frank Mathy: Programmierung von Grafik & Sound auf dem Atari ST
+Markt & Technik Verlag, Haar bei München — ISBN 3-89090-405-X
+
+e Motorola: MC 68000 16/32-Bit Microprocessor User’s Manual
+
+e Motorola: MC 68020 32-Bit Microprocessor User’s Manual
+Motorola Inc. — ISBN 0-13-566878-6 or
+Prentice Hall, Inc. — ISBN 0-13-566860-3
+
+229
+
+
+
+TRANSLATED
+==========
+
+

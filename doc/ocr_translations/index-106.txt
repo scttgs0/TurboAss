@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+104 5.8 Das Zusammenspiel Assembler — Debugger
+
+ 
+
+Unerlaubte Rechenoperation Sie wollten zum Beispiel mit einer Regi-
+sterliste rechnen oder haben z.B. zwei Label (also relozierbare Sym-
+bole!) miteinander multipliziert.
+
+5.8 Das Zusammenspiel Assembler —» De-
+bugger
+
+Der residente Debugger Um vom Assembler in den Debugger springen
+zu können, müssen Sie den Debugger vom Assembler nachladen oder bereits
+vor dem Laden des Assemblers resident installieren. Das geht ganz einfach,
+indem Sie vor dem Start des Assemblers den Debugger starten und mit dem
+RESIDENT-Befehl wieder verlassen (Es gibt noch weitere Möglichkeiten den
+Debugger resident zu machen (siehe Kapitel 6.12 auf Seite 174)) Dazu ist
+mindestens 1 MB RAM nötig; wenn Sie weniger haben, können wir Ihnen
+nur empfehlen, Ihren Rechner aufzurüsten — für professionelle Arbeiten sind
+1MB bei vielen Programmen erforderlich.
+
+Vom Assembler in den Debugger... Assemblieren Sie Ihren Quellcode
+mit einem Druck auf F1 (bzw. mit CONTROL-A). Sinnvoll ist es, wenn Sie
+eine Symboltabelle anmelden: Symboltabelle „Standard“ oder „erweitert“
+anklicken (zum Debugger werden dann stets alle max. 23 Zeichen übergeben,
+unabhängig von der Einstellung). Sie können dann alle Label Ihres Quellcodes
+im Debugger verwenden. Der Debugger arbeitet voll symbolisch. Ein Klick
+auf „DEBUGGER“ bringt Sie in denselben. Dabei wird der „DEBUGGER“-
+Button automatisch default, d. h., bei der nächsten Assemblierung brauchen
+Sie nur noch RETURN zu drücken, um in den Debugger zu kommen. Für ganz
+Eilige: Denken Sie an ALT-A. Sie können damit Ihren Sourcetext assemblieren
+und den Default-Button auslösen. Falls bei der Assemblierung ein Fehler auf-
+tritt, springt der Cursor zur fehlerhaften Stelle. Der Befehl DEFAULT 1 macht
+den „DEBUGGER“-Button zum Default (siehe Kapitel 5.6.7 auf Seite 97)
+
+...und zurück, an die richtige Stelle im Quellcode Nachdem Sie mit
+Untrace, Breakpoints und anderen hilfreichen Nettigkeiten einen Fehler ein-
+gekreist haben, sollten Sie ihn am besten gleich im Quellcode korrigieren.
+
+
+
+TRANSLATED
+==========
+
+

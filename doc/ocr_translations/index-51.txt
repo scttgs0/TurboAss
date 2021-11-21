@@ -1,0 +1,60 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER _49
+
+ 
+
+„Einstellungen sichern“ im „Einstellungen“-Menü).
+
+Der Menüpunkt „Neu anlegen...“ (SHIFT-F6) erlaubt es Ihnen, den ak-
+tuellen Sourcetext aus dem Speicher zu entfernen. Dabei werden alle internen
+Pointer zurückgesetzt und ein leerer Sourcetext mit dem Namen NONAME .SRC
+erzeugt. Eine Sicherheitsabfrage warnt Sie (Siehe Abbildung 5.6 auf Seite 49),
+denn der Sourcetext ist nach dieser Funktion unwiderruflich verloren.
+
+ 
+
+V Programm löschen?
+
+ER) HE]
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.6: Die Sicherheitsabfrage bei „Neu anlegen...“
+
+Der Menüpunkt „Laden...“ (F8) bringt den File-Selector auf den Bild-
+schirm; Sie können dann einen Sourcetext laden. Der OMIKRON.Assembler
+erkennt dabei automatisch das Format des Sourcetexts. Das eigene Format
+(zu erkennen an der SRC-Extension) wird im Gegensatz zum ASCII-Format
+erheblich schneller geladen und braucht weniger Speicherplatz auf der Dis-
+kette als ein ASCII-Sourcetext. Wenn sich der geladene Sourcetext im SRC-
+Format befindet, wird sofort eine Box angezeigt, welche das Erstellungsda-
+tum (und -Uhrzeit), sowie das Datum der letzten Änderung (und Uhrzeit)
+enthält. Diese Box wird für ca. 2 Sekunden angezeigt, dann erst wird der
+Sourcetext geladen. Wird während der 2 Sekunden eine Taste gedrückt oder
+die Maus bewegt, lädt der Assembler sofort weiter.
+
+Zum Erstellungsdatum: eine Datei gilt als neu erstellt, wenn der Sourcetext
+unter dem aktuellen Filenamen beim Speichern noch nicht existiert. Aller-
+dings kann man eine Datei laden und unter anderem Namen abspeichern,
+ohne daß das Erstellungsdatum verloren geht.
+
+Falls der Sourcetext mit einem Password geschützt ist, erwartet der Assem-
+bler die Eingabe (Siehe Abbildung 5.7 auf Seite 50) des bis zu 8 Zeichen
+langen Passwords (kann mit CONTROL-” gesetzt werden). Bei fehlerhaftem
+Password wird der Ladevorgang sofort abgebrochen, sonst wird weitergeladen
+(siehe Kapitel 5.5.5 auf Seite 53). Das Password wird während der Eingabe
+übrigens nicht angezeigt (falls Ihnen jemand auf den Monitor schaut... ).
+
+
+
+TRANSLATED
+==========
+
+

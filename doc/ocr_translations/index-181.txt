@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 179
+
+ 
+
+Also müssen wir an unser Programm zum Debuggen eine Endlosschleife o. ä.
+anhängen. Dann bleibt der Tastaturtreiber des Betriebssystems aktiv, bis
+wir manuell in den Debugger zurückkehren. Wir verlassen also den Debugger
+erneut.
+
+Dann fügen wir im Assembler die Zeile „DEBUG: bra.s DEBUG“ vor dem TRAP
+#1 (Ptermres) ein. Wir assemblieren neu und gehen wieder in den Debug-
+ger. Wir suchen die VBL-Routine (mit welcher Methode, ist egal), setzen
+Breakpoint 1 und starten mit GO.
+
+Statt den Debugger zu verlassen und das Programm neu zu assemblieren,
+können wir auch im Debugger mit LIST den TRAP #1 für Ptermres suchen
+und ihn durch „bra.s *“ überschreiben.
+
+Wir drücken ALTERNATE-HELP und ... der Drucker rattert los (Nerv!). Unsere
+VBL-Routine wird also wirklich nicht angesprungen. Nächster Versuch: Wir
+setzen Breakpoint 1 auf den Anfang der VBL-Init-Routine. Wir suchen mit
+LIST „move.w $454.w,D0“ und tippen wieder „bi=Adresse“, Statt selbst
+mit LIST das Programm nach der VBL-Routine durchzusuchen, können wir
+auch den Debugger mit „hunt ‚!move.w $454.w,d0“ dazu auffordern.
+
+Da der PC jetzt nicht mehr wie unmittelbar nach LEXECUTE bzw. dem Start
+des Debuggers auf dem Anfang des Programms steht, können wir es nicht
+mehr mit GO allein starten, sondern schreiben „g text“. „text“ ist eine Va-
+riable und steht für den Anfang des Text-Segments. Wir können den Anfang
+auch mit dem Befehl INFO ermitteln, der uns den Anfang aller Segmente und
+noch weitere Informationen über die Speicherverteilung gibt.
+
+Wir starten also das Programm. Nach kurzem Aufflackern des Bildschirms
+meldet der Debugger, daß er bei Breakpoint 1 angekommen ist. Also muß der
+Fehler in dieser Routine liegen. Nun entscheiden wir uns, den Fehler im Ein-
+zelschrittmodus zu suchen (es kommen ja nur noch 14 Befehle in Frage).
+
+Um einen einzelnen Befehl auszuführen, drücken wir F1. Die Register werden,
+wenn nötig, geändert und der PC in dem Listing markiert. Die Unterschiede
+der einzelnen Trace-Funktionen finden Sie im Kapitel 6.5.1 auf Seite 117.
+
+Wir führen nun den ersten Befehl aus: move.w $454.w,D0. In DO wird die
+Länge der VBL-Queue (Anzahl der VBL-Slots) geschrieben. Klingt ganz
+vernünftigt. subq.w #1,D0; eins davon abziehen. movea.l $456.w,A0, die
+Adresse der VBL-Queue wird nach AO geladen. In der VBL-Queue stehen
+
+
+
+TRANSLATED
+==========
+
+

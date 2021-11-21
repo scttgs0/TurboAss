@@ -1,0 +1,99 @@
+ORIGINAL
+======== 
+
+
+236
+
+ 
+
+Menüleiste 45,117
+Merker, nächster 72
+Metacomco Macro Assembler 144
+MISHELL 22
+Mkdirectory 148
+Modul
+
+Absolut 58
+
+BASIC 59
+
+Datas 58
+
+debugger 58
+
+Inline 59
+
+Parallel 59
+
+SmallDRI 60
+
+Standard 58
+Monitorumschalter 122,166
+Motorola-Standard 16,32
+Mouseoff 141
+Mouseon 141
+Move 160
+Name 149
+Neu anlegen 49
+nicht tokenisierbare Zeilen 51,76
+Observe 138
+Offset 186
+OM-ASSEM.CFG 26
+OM-ASSEM.DAT 26
+OM-ASSEM.INF 26,80
+OM-DEBUG.INF 26,145,168
+OMIKRON. Assembler 144
+OMIKRON.BASIC 58,202
+Opcodes 30
+Operanden 30
+OPT 60,89,98
+Optimierungen 34,100
+OPT 37
+Ordner erstellen 148
+Ordner löschen 149
+
+ORG 96
+OUTPUT 90
+Overwrite 119
+Password 49,53
+PATH 91
+PC 109,186
+PC setzen {12,116
+PC-kompatibel 113
+Permanent-Breakpoint 718
+Pfad 186
+Positionsmarkierung 43
+Printer 146
+Prın 146
+Problem, ein kleines internes 182
+Problem
+
+mit älterem TOS 198
+Programm starten 112,119,1338
+Programmabbruch 112,116,170
+Programmende 139
+Programmheader 189
+Pseudo-Opcode 16
+Pseudoopcode 186
+Pseudo-Opcodes 81
+Quantoren 67,69
+Quellcode 104
+Quickmaus 78
+Quit 129,163
+README 150
+Readsector 151
+Readtrack 152
+Rechenoperation 36
+Rechenoperationen 34
+Rechenzeichen 797
+Rechnen mit Symbolen 38
+Rechner 62,63
+rechte Maustaste 770
+REG 89
+
+
+
+TRANSLATED
+==========
+
+

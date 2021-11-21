@@ -1,0 +1,46 @@
+ORIGINAL
+======== 
+
+
+ 
+
+ 
+
+D_ AUFBAU VON BETRIEBSSYSTEMSTRUKTUREN 195
+Tabelle D.3: Der Boot-Sektor
+Adresse: | Breite: | Normalwert: | Beschreibung:
+$00 | word $6038 | Branch auf die Bootroutine ($3A Byte
+ab dem Bootsektor), wenn der Bootsek-
+tor ausführbar ist (muß nicht sein).
+$02-807 „Loader“ | Filler: 6 Füllbytes
+$08-$0A Serial: Seriennummer der Diskette
+$0B | word $0200 | Bps: Bytes pro Sektor (L/H')
+$0D | byte $02 | Spe: Sektoren pro Cluster
+$OE | word 50001 | Res: Reservierte Sektoren (L/H)
+$10 | byte $02 | Nfats: Anzahl der Fats
+$11 | word $70 | Ndirs: Maximale Anzahl der Einträge
+ins Hauptinhaltsverzeichnis (L/H)
+$13 | word Nsects: Anzahl der Sektoren auf der
+Diskette (beim ST $5A0 für zweisei-
+tige Disketten und $2D0 für einseitige)
+(L/H)
+$15 | byte Media: $F8 Einseitig/80 Tracks
+$F9 Zweiseitig/80 Tracks
+$FC Einseitig/40 Tracks
+$FD Zweiseitig/40 Tracks
+Dieses Byte wird vom ST nicht abge-
+fragt, aber aus Kompatibilitätsgründen
+zu MS-DOS gesetzt.
+$16 | word $0005 | Spf: Sektoren pro Fat (L/H)
+818 | word $0009 | Spt: Sektoren pro Track (L/H)
+$1A | word Nsides: Anzahl der Seiten (1 oder 2)
+(L/H)
+$1C | word 80000 | Nhid: Anzahl der versteckten Sektoren
+(beim ST unbenutzt) (L/H)
+
+
+
+TRANSLATED
+==========
+
+

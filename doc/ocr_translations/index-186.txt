@@ -1,0 +1,39 @@
+ORIGINAL
+======== 
+
+
+Anhang €
+
+Einige Begriffserklärungen
+
+In dieser Anleitung haben wir einige Fachausdrücke benutzt, die jedem Profi
+bekannt sind, dem Anfänger aber vielleicht Probleme bereiten. Daher haben
+wir eine alphabetische Liste dieser Wörter angefügt.
+
+ASCII: Abkürzung für „American Standard Code of Information Inter-
+change“. Damit ist gemeint, daß ein Wert als Zeichen (Buchstabe,
+Ziffer, Sonderzeichen) angezeigt wird. Jedem Zeichen, das der Compu-
+ter kennt; ist ein ASCII-Wert zugeordnet (A=65, B=66 ...). ASCII-
+Zeichen werden durch ein vorangestelltes " oder ’ gekennzeichnet. Sie
+können das Zeichen auch zwischen zwei Anführungszeichen setzen. Eine
+Liste aller ASCII-Zeichen finden Sie in Kapitel D.3 auf Seite 192.
+
+Basepage: Das Betriebssystem legt beim Starten eines Programms vor die-
+sem eine sogenannte Basepage an. Darin erfährt das Programm etwas
+über seine Länge und etwas über seinen Parent (über das Programm,
+das es aufgerufen hat). Der Aufbau der Basepage ist im Anhang D.2
+beschrieben.
+
+binär: oder auch dual heißt, das eine Zahl im System der Basis 2 angezeigt
+wird (nur die Ziffern 0 und 1). Binäre Zahlen werden mit einem % vor
+der Zahl gekennzeichnet. Näheres entnehmen Sie bitte weiterführender
+Literatur.
+
+184
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,47 @@
+ORIGINAL
+======== 
+
+
+I_DIE BEILIEGENDEN DATEIEN 227
+
+ 
+
+1.26 TATÜ.ACC und TATÜ.SRC
+
+Dieses nützliche Accessory erkennt, ob sich in Ihrer Softwaresammlung eine
+Raubkopie befindet und reagiert entsprechend (es geht nix kaputt, keine
+Angst).
+
+1.27 Think and Work
+
+(siehe GAME. OMI)
+
+1.28 TOS_LOAD.SRC und TOS_LOAD.PRG
+
+Dieses Programm lädt, in den AUTD-Ordner kopiert, ein Ram-TOS (TOS . IMG)
+von der Festplatte (Hauptinhaltsverzeichnis von C) — beispielsweise das
+TOS 1.4. -
+
+1.29 VDISK3.ACC und VDISK3.SRC
+
+VDISK ist eine RAM-Disk. VDISK3.DOC ist die Anleitung dazu. Deshalb
+möchte ich hier auf längere Erklärungen verzichten und Sie auf das DOC-File
+verweisen. Das ACC-File ist, wie die vorigen Versionen der VDISK, Public
+Domain, das dürfen Sie also weitergeben. Der Source-Text unterliegt jedoch
+dem Copyright von XZ-soft — er dient nur als Demo zum Assembler und darf
+nicht kopiert werden.
+
+1.30 WPROT.SRC
+
+Dieses Programm simuliert einen Schreibschutz für beliebige Laufwerke, also
+auch für Festplatten. Am Ende des Sourcetextes können Sie die Buchstaben
+der Laufwerke eingeben, die geschützt werden sollen. Alle Schreibzugriffe
+werden nun abgefangen und die Dialogbox „Diskette in Laufwerk x: schreib-
+geschützt“ ausgegeben.
+
+
+
+TRANSLATED
+==========
+
+

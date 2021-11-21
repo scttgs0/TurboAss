@@ -1,0 +1,64 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 81
+
+ 
+
+ 
+
+Funktionstastenbelegung:
+normal BEMER EEE FESLEE EEEESEE FE)
+shift FEIIPFZ] PER EEC PEST EEE MEI FESTES EEE
+
+ 
+
+Text:
+Ex]
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.35: Die Dialogbox „Funktionstasten belegen“
+
+  
+    
+
+  
+
+ 
+
+„MAR N
+Oo - Shift
+4 = Centrol
+
+Abbildung 5.36: Das Menü „Hilfe“
+
+Die ASCII-Anzeige
+
+Links neben der Uhr (s.u.) wird in Dezimal der ASCII-Wert des Zeichens
+unter demm Cursor ausgegeben. Wenn Sie diese Anzeige stört, kann sie mit
+CONTROL-Ü oder einem Klick auf die Stelle an- und abgeschaltet werden.
+
+Die Uhrzeit
+
+Mit der Taste F10 oder einem Klick auf die Uhrzeitanzeige erscheint eine
+Dialogbox (Siehe Abbildung 5.37 auf Seite 82). In dieser kann die Uhrzeit
+und das Datum neu gesetzt werden (d.h., es wird auch die Uhr des Mega
+STs gesetzt). Außerdem kann man die Anzeige abschalten.
+
+5.6 Die Pseudo-Opcodes
+
+Beispiele zu den Pseudo-Opcodes lassen sich in den diversen Demos finden
+— insbesondere im „Think and Work“ (GAME. OMI-Ordner).
+
+
+
+TRANSLATED
+==========
+
+

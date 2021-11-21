@@ -1,0 +1,58 @@
+ORIGINAL
+======== 
+
+
+92
+
+5.6_ Die Pseudo-Opcodes
+
+ 
+
+addq.1l #2,sp
+move.l d0,a1
+
+move.w #7999,d0 ;8000 Langworte = 32000 Byte
+;kopieren
+lea titel,a0 ;Adresse des Grafikbildes
+
+loop: move.l (a0)+,(a1)+ ;Die Grafik kopieren
+dbra d0 ‚loop
+
+DATA
+PATH ”’C:\DEGAS\BILDER.PIC’
+;In dem Ordner liegt das Bild
+titel:IBYTES ’TITEL.PI3’ ‚32000 ,34
+;jetzt wird das Bild eingebunden
+
+5.6.7 Allgemeines
+
+BASE (DC.(BIW))! (A0-A7),*| TEXT| DATA| BSS| Formel®]
+OFF
+
+Relative Adressierung ist zwar schneller als absolute Adressierung, die
+Berechnung der Offsets erweist sich jedoch als recht umständlich. Um
+sich die ganzen Formeln zu sparen, stellt der OMIKRON. Assembler
+einen ziemlich mächtigen Befehl zur Verfügung: BASE.
+
+Die Beschreibung erfolgt am besten in zwei Abschnitten:
+
+1. „BASE Adreßregister,...“ rechnet jedesmal, wenn Sie danach das
+Adreßregister benutzen und der Wert relozierbar ist, dieses relativ zum
+danach angegebenen Wert um, oder anders ausgedrückt, der Wert wird
+subtrahiert,
+
+Beispiel 1. a) (konventionelle Methode):
+
+lea varbase,a4 ;Zeiger auf Variablentabelle
+move.wW wert-varbase(a4),d0 ;Wert holen
+
+ 
+
+SIn diesem Fall muß die Formel mit einem Label beginnen
+
+
+
+TRANSLATED
+==========
+
+

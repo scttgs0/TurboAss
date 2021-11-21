@@ -1,0 +1,60 @@
+ORIGINAL
+======== 
+
+
+138 6.6 _ Die Befehle
+
+ 
+
+ 
+
+IF °D1=100 ;Schneller geht’s mit einem Long-Vergleich
+cmpi.l #$100,4(A1)
+seq DO
+rts
+
+IF 100="D1 ;Wenn man das Register hinten angibt, ist der
+
+Vorteil wieder dahin...
+move.l #$100,-(SP)
+move.l 4(A1),D0
+cmp.1 (SP)+,DO
+seq DO
+rts
+
+ 
+
+IF ({$4ee}.w=-1)&(°D2.1>.10) ;Nun ’was Komplizierteres:
+lea $4EE.w,A0
+cmpi.w #$FFFF,(A0)
+
+seq DO
+ext.w DO
+ext.1 DO
+
+move.l DO,-(SP)
+cmpi.l #$A,8(A1)
+
+shi DO
+
+ext.w DO
+ext.1 DO
+
+and.1l (SP)+,D0
+rts
+
+Observe
+
+Syntax : OBSERVE ([Trap]([,[?!|-1lListe])
+Kurzform : 0
+
+OBSERVE ermöglicht es, alle Betriebssystemaufrufe eines Programms abzu-
+fangen. Es werden die entsprechenden Trap-Vektoren verbogen, so daß Sie
+ein Programm nicht UNTRACEn müssen, um OBSERVE zu benutzen.
+
+
+
+TRANSLATED
+==========
+
+

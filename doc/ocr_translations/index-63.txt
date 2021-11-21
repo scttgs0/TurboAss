@@ -1,0 +1,78 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER
+
+61
+
+ 
+
+Tabelle 5.4: Die Gründe fürs Disabeln
+
+ 
+
+ 
+
+ 
+
+ 
+
+Modul: Grund für ein Disablen:
+DEBUGGER [| Debugger ist nicht resident vorhanden
+STANDARD | Das Modul ist stets enabled
+
+DATAS Relocinfo vorhanden, BSS vorhanden,
+
+Prglänge > 99999 Bytes
+ABSOLUT | BSS vorhanden
+BASIC BSS vorhanden
+INLINE Relocinfo vorhanden, BSS vorhanden,
+Prglänge > 124 Bytes
+PARALLEL | Das Modul ist stets enabled
+SMALLDRI | Das Modul ist stets enabled
+
+ 
+
+ 
+
+mindestens 240 000 Byte freier Gemdos-Speicher zur Verfügung stehen (siehe
+
+Kapitel 5.5.5 auf Seite 65).
+
+Wenn Sie den Speicher anderweitig verwenden wollen, können Sie ihn mit
+
+„Debugger löschen“ nach einer Sicherheitsabfrage (Siehe Abbildung 5.15
+auf Seite 61) wieder freigeben. Wenn der Debugger bereits vor dem Start des
+
+Abbildung 5.15: Die Sicherheitsabfrage zum Löschen des Debuggers
+
+ 
+
+Debugger wirklich Läschen?
+
+EX
+
+ 
+
+ 
+
+ 
+
+ 
+
+Assemblers resident im Speicher installiert war, können Sie ihn hiermit nicht
+mehr löschen — der Menüpunkt wird dann disabled
+
+Das Menü „Editor“
+
+Hier sind einige häufig gebrauchte Funktionen, die sich sonst nicht einordnen
+
+lassen, zusammengefaßt.
+
+
+
+TRANSLATED
+==========
+
+

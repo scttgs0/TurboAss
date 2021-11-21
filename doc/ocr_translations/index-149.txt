@@ -1,0 +1,47 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 147
+
+ 
+
+Fclose A
+
+Syntax : FCLOSE
+Kurzform : FC
+
+Schließt die mit FOPEN geöffnete Datei wieder. Dieses ist notwendig, um die
+im Buffer stehenden Daten zu schreiben. Die Datei wird beim Verlassen des
+Debuggers automatisch geschlossen.
+
+Line
+
+Syntax : LINE
+Kurzform : LIN
+
+LINE gibt eine Linie (79 mal das Zeichen „-“) aus. Gedacht ist dieser Befehl
+für eine Abgrenzung verschiedener Teile eines Ausdrucks. Wenn Sie also mit
+PLIST einen Programmteil auf dem Drucker gelistet haben und nun einen
+anderen Teil anfügen wollen, können Sie diese mit PLINE trennen.
+
+Cr
+
+Syntax : CR [Anzahl]
+Kurzform : CR
+
+Gibt eine (oder eine Anzahl) Leerzeile(n) aus. Dies dient der Trennung wie
+der Befehl LINE.
+
+Syntax : "String["([;])]
+Kurzform : "
+
+Der String wird ausgegeben. Sinnvoll ist das wohl nur im Zusammenhang
+mit PRN; mit „P"“ können Sie Ausdrucke beschriften. Mit dem Zeichen \,
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 43
+
+ 
+
+Marker: Der OMIKRON. Assembler kann sich maximal 10 frei definierbare
+Zeilenmarken merken, zusätzlich merkt er sich die Position des TEXT-,
+DATA-Segments und BSS selbständig.
+
+ALT-B Sprung zum Anfang des TEXT-Segments
+
+ALT-’ Sprung zum Anfang des DATA-Segments
+
+ALT-# Sprung zum Anfang des Block-Storage-Segments
+(BSS)
+
+CONTROL-1 bis CONTROL-0 Merkt sich die aktuelle Zeile
+ALT-1 bis ALT-O0 Sprung zu einer gemerkten Zeile
+
+CONTROL-SHIFT-1 bis CONTROL-SHIFT-O0 Löscht eine Positions-
+markierung. Dies ist meist unnötig, aber bei Sour-
+cetexten von 20000 Zeilen und mehr, mit 10 Mar-
+kern, kann das Umrechnen der Marker und der PCs
+in eine Zeilennummer (Rücksprung vom Debugger
+in den Assembler) schon mal 1-2 Sekunden dau-
+ern; wem das zu lang ist (Zeit ist Geld), der kann
+die überflüssigen Markierungen löschen (siehe Ka-
+pitel 5.8 auf Seite 105).
+
+Achtung: Bei den obigen Funktionen sind die Zif-
+fern oberhalb des Alphateils gemeint, der Zehner-
+block wird für eine andere Funktion benötigt (s. u.)
+
+SHIFT-INSERT Schaltet die drei Editiermodi um (Überschreiben,
+Einfügen I/II) (siehe Kapitel 5.4 auf Seite 30)
+
+CONTROL-W Wandelt die Zahlenbasis. Falls der Cursor auf einer
+Zahl steht, kann deren Zahlenbasis mit CONTROL-W
+geändert werden (Dezimal / Hexadezimal / Binär
+/ ”ASCIP” / ’ASCIP). Dies geht auch in Formeln;
+in DC-Zeilen (siehe Pseudo-Opcodes) kann, durch
+das interne Format bedingt, teilweise nur die ganze
+Zeile (oder Teile von ihr) gewandelt werden. Im
+
+
+
+TRANSLATED
+==========
+
+

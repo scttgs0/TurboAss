@@ -1,0 +1,60 @@
+ORIGINAL
+======== 
+
+
+86
+
+5.6 Die Pseudo-Opcodes
+
+ 
+
+Sie sparen bei MOVE und bei einigen anderen Befehlen je 4 Taktzy-
+klen und bei jedem Befehl 2 Bytes. Außerdem wird Ihre Reloziertabelle
+kürzer, weil ein Adreßregister indirekt mit Offset ja nicht in die Relo-
+ziertabelle eingetragen werden muß. Dafür müssen Sie ein Adreßregister
+frei haben, das auf den Anfang Ihres Block-Storage-Segments (BSS)
+zeigt. Zum Beispiel OMIKRON.BASIC nutzt diese Adressierungsmög-
+lichkeit sehr intensiv.
+
+RSRESET setzt den RS-Counter auf 0. Damit können Sie z.B. mehrere
+
+relative Datensegmente anlegen.
+
+RSSET Wert setzt den RS-Counter auf „Wert“.
+
+RSEVEN begradigt den RS-Counter. Dies geschieht bei RS.W und RS.L
+
+automatisch; RSEVEN ist aber praktisch, wenn Sie z. B. zwei Buffer ä
+79 Byte anlegen wollen, die auf einer geraden Adresse beginnen müssen.
+
+RSBSS addiert zur Länge des Block-Storage-Segments (BSS) den aktuellen
+
+RS-Counter, Dann wird der RS-Counter gelöscht. Sie sollten diesen
+Befehl also ans Ende des relativen Datensegments setzen, damit die
+BSS-Länge richtig in den Programmheader eingetragen werden kann.
+Im Gegensatz zu anderen Assemblern kann RSBSS beim OMIKRON.
+Assembler mehrfach im selben Programm verwendet werden.
+
+Als Beispiel für die RS-Befehle sei auf „Think and Work“ verwiesen.
+
+5.6.3 Segmentierung
+
+(SECTION) (.)TEXT markiert den Anfang des Text-Segments. Da nor-
+
+malerweise jedes Programm mit dem Text-Segment beginnt, kann die-
+ser Befehl auch entfallen. Es ist pro Programm nur ein Text-Befehl
+möglich. „SECTION TEXT“ wird zu „TEXT“ gekürzt; wir haben es
+nur aus Kompatibilitätsgründen eingebaut.
+
+(SECTION) (.)DATA kennzeichnet entsprechend den Beginn des DATA-
+
+Segments. Das DATA-Segment wird mit dem Programmcode abgespei-
+chert. Es sollte, wie der Name schon sagt, alle Daten des Programms
+enthalten. Dies ist jedoch nicht unbedingt nötig; Sie können Ihre Daten
+
+
+
+TRANSLATED
+==========
+
+

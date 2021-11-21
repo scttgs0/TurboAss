@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+6_ DER DEBUGGER 157
+
+ 
+
+‚W und .L
+
+Syntax : .(WIL)Term{,Term}
+Kurzform
+
+Mit diesem Befehl können Sie einen (oder mehrere) Term(e) in den Spei-
+cher schreiben. Dieser Befehl gehört eigentlich zu DUMP und MEMORY; bei
+DUMP wird am Anfang jeder Zeile .(WL)— geschrieben und dann der Spei-
+cherinhalt ausgegeben. Wenn Sie diesen überschreiben und RETURN drücken,
+wird die Zeile als ‚-Befehl interpretiert. Sie können aber auch . verwenden,
+ohne vorher DUMP benutzt zu haben. Nachdem der Term in den Speicher
+geschrieben wurde, wird der Speicherinhalt wie bei DUMP ausgegeben. Die
+Terme dürfen keine Opcodes (!) oder ASCII-Strings (“) enthalten.
+
+Beispiel:,.w 10000,20+”d0,7a8“
+
+’
+
+Syntax : ‚Term{,Term}
+Kurzform : ,
+
+Entspricht ., bezieht sich aber auf Bytes, Opcodes und ASCII-Strings sind
+hier allerdings erlaubt.
+
+]
+
+Syntax : ]Term
+Kurzform : ]
+
+Ist fast das gleiche wie oben, es wird aber kein neuer Speicherinhalt auf dem
+Bildschirm ausgegeben. Sinnvoll ist dieser Befehl also, wenn auf dem Bild-
+schirm Daten stehen, die Sie noch brauchen, aber irgendeine Speicherstelle
+ändern müssen. Für „Term“ sind die gleichen Angaben wie bei FILL möglich,
+also auch ASCII-Strings (“) und Opcodes (!).
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 165
+
+ 
+
+Mit KEY können die Funktionstasten belegt werden. KEY ohne Parameter
+zeigt die Funktionstastenbelegungen an (nicht die mit SHIFT und ohne sol-
+che Tasten erreichbaren, sondern nur die freidefinierbaren mit CONTROL und
+ALTERNATE).
+
+Mit KEY C oder A FNummer=YText kann man eine Funktionstaste belegen.
+Die Nummer muß zwischen 1 und 20 liegen: 1 - 10 = Funktionstaste ohne;
+11-20 = Funktionstaste mit SHIFT. Vor dem F können Sie angeben, ob der
+Text bei der Funktionstaste mit CONTROL oder ALTERNATE erscheint; wenn
+die Eingabe fehlt, nimmt der Debugger CONTROL an. Der Text darf nicht in
+Anführungszeichen stehen (bzw. dann werden diese mit zum Text gerechnet).
+Wenn Sie SHIFT-RETURN drücken, erscheint %, was für ein RETURN steht, wenn
+die Zeile ausgegeben wird.
+
+Beispiel: „KEY AFS=FORMAT SS,B%"“ (SHIFT-RETURN)
+
+Wenn Sie dann Alternate F5 drücken, wird die Diskette in Laufwerk B ein-
+seitig formatiert.
+
+Reset all A
+
+Syntax : RESET [A([LL]JIC(V([EKTOR]]
+Kurzform : RES
+
+Nach einer Sicherheitsabfrage werden die Systemvektoren ($8 - $516) auf die
+Werte des Debuggers zurückgesetzt (es werden also weiterhin Traps abgefan-
+gen usw.). Dieses ist sinnvoll, wenn ein Programm unkontrolliert im Spei-
+cher herumschreibt - manchmal kann dann mit RESET noch einiges gerettet
+werden. Mit RESET ALL werden alle vom Debugger beim Programmstart
+geretteten Werte zurückgeschrieben. RESET ALL bewirkt das gleiche, als ob
+Sie den Debugger verließen und gleich wieder neu starteten. Das bedeutet,
+wenn Ihr Programm abgestürzt ist, und nicht mehr geht, können Sie mit
+RESET ALL wahrscheinlich den Rechner wiederbeleben. RESET VEKTOR ist
+die „kleine“ Version von RESET, dabei werden nur die Exceptionvektoren auf
+den Debugger umgelenkt, das kann z.B. nötig sein, wenn ihr Programm den
+„Megal Instruktion“-Vektor „verbogen“ hat, Sie aber Breakpoint benutzen
+wollen, welche ja diesen Vektor benötigen. Der „normale“ Anwender wird
+diesen Befehl wohl nie brauchen.
+
+
+
+TRANSLATED
+==========
+
+

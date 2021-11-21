@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+22 4.3__ Die Environment- Variable
+
+ 
+
+4.3 Die Environment- Variable
+
+Falls die Environment-Variable „SIGMA“ definiert ist, versuchen sowohl der
+Assembler als auch der Debugger, dort ihre .INF-Dateien (beim Assembler
+auch die OM-ASSEM.CFG- und die OM-ASSEM.DAT-Datei) zu laden.
+
+Es gibt verschiedene Möglichkeiten, die Environment- Variable zu setzen:
+
+e unter NeoDesk, z. B. mit „SIGMA=D: \ASS\“
+
+e unter einer Commandshell, z.B, unter der MISHELL in der Datei
+MISHELL.ENV
+
+se mit dem Programm DESKTOP .PRG. Dieses Programm liegt dem Assem-
+bler bei; eine Kurzanleitung finden Sie im Anhang I.9 auf Seite 221.
+Die Environment- Variable können Sie im Sourcetext ändern. Das Pro-
+gramm muß als letztes im AUTO-Ordner liegen. Um die Programme in
+einem Ordner umzusortieren können Sie z, B. die MISHELL verwenden
+oder
+
+— alle Programme in einen anderen Ordner kopieren,
+— den ersten Ordner löschen,
+
+— ihn wieder neu anlegen
+
+— und die Programme in der gewünschten Reihenfolge zurückkopie-
+ren
+
+— (Danach natürlich den Zwischenordner wieder löschen)
+
+4.4 Blitterunterstützung
+
+Der OMIKRON. Assembler benutzt zum Retten des Hintergrundes bei Drop-
+Down-Menüs, zum Scrollen u. ä. einen Blitter, wenn dieser eingeschaltet ist.
+Für den Fall, daß Ihr Blitter fehlerhaft arbeitet, kann er im Assembler abge-
+schaltet werden (siehe Kapitel 5.5.5 auf Seite 79).
+
+
+
+TRANSLATED
+==========
+
+

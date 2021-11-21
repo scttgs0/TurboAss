@@ -1,0 +1,96 @@
+ORIGINAL
+======== 
+
+
+6 _DER DEBUGGER
+
+115
+
+ 
+
+Tabelle 6.2: Allgemeine Tastenkommandos
+
+ 
+
+0 ==>
+
+SHIFT-®, -U
+SHIFT-CONTROL-f, -U
+SHIFT-<, -=>
+
+TAB
+
+BACKSPACE
+
+DELETE
+
+INSERT
+CONTROL-RETURN
+SHIFT-RETURN
+CLR/HOME
+SHIFT-CLR/HOME
+
+ESC
+SHIFT-DELETE
+CONTROL-DELETE
+
+CONTROL-INSERT
+
+Cursortasten
+
+Scrollt den Bildschirm ohne Cursorbewegung
+Scrollt den Bildschirm mit Cursorbewegung
+Bewegt den Cursor an den linken/rechten Rand
+Der Cursor springt zur nächsten 8er Position
+Löscht das Zeichen vor dem Cursor
+
+Löscht das Zeichen unter dem Cursor und rückt
+den Rest auf
+
+Fügt ein Space an der Cursorposition ein
+
+Setzt den Cursor in die linke untere Ecke
+Schreibt €?
+
+Setzt den Cursor in die obere linke Ecke
+
+Löscht den Bildschirm und setzt den Cursor
+nach oben links
+
+Löscht den Bildschirm ab der Cursorposition
+Löscht die Zeile ab der Cursorposition
+
+Löscht die Zeile, in der der Cursor steht —
+
+der Rest rückt auf
+
+Fügt eine Leerzeile ein
+
+ 
+
+UNDO
+
+ALT-M
+CONTROL-M
+SHIFT-INSERT
+CONTROL 1-9
+ALT 1-9
+
+ 
+
+ 
+
+Restauriert die Zeile (vom letzten RETURN)
+Schreibt eine Zeile zurück, die mit:
+gerettet wurde
+
+Schaltet den INSERT-Modus an bzw. aus
+Bildschirminhalt — Buffer
+Bildschirminhalt — Buffer
+
+ 
+
+TRANSLATED
+==========
+
+

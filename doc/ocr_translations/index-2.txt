@@ -1,0 +1,89 @@
+ORIGINAL
+======== 
+
+
+Programmdesign und -entwicklung von Σ-soft für OMIKRON.Software.
+
+Designer:       Markus Fritze
+                Sören Hellwig
+
+Schreiberlinge: Christoph Pagalies
+                Markus Fritze
+
+Vertrieb:       OMIKRON.Soft- & Hardware GmbH
+                Erlachstraße 15, D-7534 Birkenfeld 2
+                Telefon: 07082/5386
+
+Dank an:        AssAge Entertainment Software
+                Thomas Hertzler — Lothar Schmitt
+                Oberstraße 31, D-4330 Mülheim/Ruhr
+
+                sowie alle unsere unermüdlichen Tester:
+                Harald, Volker, Thomas, u. v. a. m.
+
+
+Die Anleitung wurde mit Stefan Lindner's TEX-Implementation auf einem Atari
+ST (was sonst...) erstellt.
+
+
+Alle Rechte, insbesondere das Recht auf Vervielfältigung, Verbreitung und Über-
+setzung vorbehalten. Kein Teil des Werkes darf in irgendeiner Form ohne ausdrück-
+liche schriftliche Genehmigung der OMIKRON.Software GmbH reproduziert oder
+unter Verwendung elektronischer Systeme verarbeitet, vervielfältigt oder verbreitet
+werden.
+
+Das vorliegende Handbuch und die dazugehörigen Programme wurden mit der
+größten Sorgfalt erstellt. Trotzdem sind Fehler nie ganz auszuschließen. Daher
+möchten wir Sie darauf hinweisen, daß wir weder eine Garantie für die Fehlerfrei-
+heit geben, noch die Haftung für irgendwelche Folgen, gleich ob durch Fehler im
+Handbuch, in der Software oder in der Hardware verursacht, übernehmen können.
+
+Wenn Sie einen Fehler in der Software gefunden haben: Schreiben Sie bitte an Σ-
+soft, z. Hd. Markus Fritze, Birkhahnkamp 38, D-2000 Norderstedt 1. Besitzer eines
+Modems bzw. Akustikkopplers können mich auch unter dem Namen „Markus“ in
+der SSB-Mailbox (Telefon 040/60462 66, 300/1200 Baud, 8N1) erreichen.
+
+
+
+TRANSLATED
+==========
+
+
+Program design and development by Σ-soft for OMIKRON.Software.
+
+Designer:       Markus Fritze
+                Sören Hellwig
+Scribblers:     Christoph Pagalies
+                Markus Fritze
+
+Sales:          OMIKRON.Software & Hardware GmbH
+                Erlachstraße 15, D-7534 Birkenfeld 2
+                Phone: 07082/5386
+
+Thanks to:      AssAge Entertainment Software
+                Thomas Hertzler — Lothar Schmitt
+                Oberstraße 31, D-4330 Mülheim/Ruhr
+
+                as well as all our tireless testers:
+                Harald, Volker, Thomas, u. v. a. m.
+
+
+The instructions were made with Stefan Lindner's TEX implementation on an Atari
+ST (what else...).
+
+All rights, in particular the right of reproduction, distribution and transfer
+that is what we are against. No part of the work may be performed in any form
+without expression, Written approval of OMIKRON.Software GmbH reproduces or
+processed, reproduced or distributed using electronic systems become.
+
+The present manual and the associated programmes have been compiled with the
+created with the utmost care. Nevertheless, errors can never be completely ruled
+out. From there we would like to point out to you that we have no guarantee for
+the error-free nor liability for any consequences, whether due to errors in the
+manual in which software or hardware is caused.
+
+If you have found an error in the software: Please write to Σ-soft,
+attn. Markus Fritze, Birkhahnkamp 38, D-2000 Norderstedt 1. Owner of a
+modems or acoustic couplers can also be used under the name "Markus" in
+the SSB mailbox (phone 040/60462 66, 300/1200 Baud, 8N1).
+

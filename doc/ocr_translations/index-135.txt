@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 133
+
+ 
+
+2. „,*“ setzt einen Permanent-Breakpoint. Dieser Breakpoint funktioniert
+wie der normale, er wird aber nicht gelöscht. Er kann nur durch manu-
+elles Löschen (BK) beseitigt werden.
+
+3. „‚= Wert“ setzt einen Counter-Breakpoint. Dabei handelt es sich ei-
+gentlich um keinen echten Breakpoint, der Programmablauf wird näm-
+lich nie abgebrochen. Es wird nur mitgezählt, wie häufig der Breakpoint
+durchlaufen wurde. „Wert“ stellt den Anfangswert dar; wird kein Wert
+angegeben, wird 0 genommen. Wenn Sie sich die Breakpoints mit B
+anzeigen lassen, steht hinter jedem Counter-Breakpoint, wie häufig er
+erreicht wurde.
+
+4. „‚?Bedingung“ setzt einen Bedingungs-Breakpoint. Hinter dem Fra-
+gezeichen steht eine Bedingung wie bei IF (siehe Kapitel 6.6.5 auf
+Seite 136); es wird abgebrochen, wenn der Wert der Bedingung ungleich
+0 ist. Dann wird der Breakpoint gelöscht. Das erzeugte Programm kann
+bis zu 512 Byte lang sein und steht ab der Adresse:
+„UTRACE-2000+200*Breakpointnummer“
+
+Go
+Syntax : GO [Adresse][,Breakpoint]
+Kurzform : G
+
+startet ein Programm. Wenn keine Adresse angegeben wird, wird ab PC
+gestartet. Es kann auch ein Breakpoint angegeben werden, der sonst nicht
+erreicht werden kann: Nummer 17. Er wird vor dem Start gesetzt und danach
+wieder gelöscht. Sie können also z. B. eingeben: „GO 10000 ,20000“ — dann
+wird das Programm von $10000 bis $20000 ausgeführt. Da die Endadresse
+intern als Breakpoint verwaltet wird, darf sie nicht im ROM liegen. Wenn Sie
+nicht eine Endadresse, sondern die Zahl der auszuführenden Befehle angeben
+wollen, benutzen Sie TRACE.
+
+Beispiel: „G“
+Startet ein Programm dort, wo es abgebrochen wurde, bzw. nach LEXECUTE
+am Anfang.
+
+
+
+TRANSLATED
+==========
+
+

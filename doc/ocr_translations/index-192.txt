@@ -1,0 +1,97 @@
+ORIGINAL
+======== 
+
+
+190
+
+ 
+
+Tabelle D.2: Die Basepage
+
+ 
+
+ 
+
+$00
+$04
+$08
+$0C
+$10
+$14
+$18
+$1C
+$20
+
+$24
+
+$28
+
+$2C
+$30-$35
+‘ 836
+$37
+$38-$79
+$80-$FF
+
+ 
+
+long
+long
+long
+long
+long
+long
+long
+long
+long
+
+long
+
+long
+long
+byte
+byte
+byte
+
+ 
+
+Anfangsadresse der TPA
+
+Ende der TPA +1
+
+Anfang des Text-Segments
+
+Länge des Text-Segments
+
+Anfang des Data-Segments
+
+Länge des Data-Segments
+
+Anfang des Block-Storage-Segments (BSS)
+Länge des Block-Storage-Segments (BSS)
+Zeiger auf Default-DTA (Zeigt zunächst in
+die Kommandozeile)
+
+Zeiger auf die Basepage des Parents des auf-
+rufenden Programms) (bei Accessories = 0)
+reserviert
+
+Adresse der Environment-Strings
+tatsächliche Handles der Standardkanäle
+reserviert
+
+Default-Laufwerk
+
+wird Gemdos-intern verwendet
+Kommandozeile (wird durch PEXEC über-
+geben). Im ersten Byte sollte die Länge der
+Zeile stehen (ohne % und Null), zudem sollte
+sie durch ein % und ein Nullbyte terminiert
+sein.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,49 @@
+ORIGINAL
+======== 
+
+
+I_DIE BEILIEGENDEN DATEIEN 219
+
+1.2 AES_VDI.S
+
+Dieses ist ein Programmskelett für AES-Programme. Er führt das nötige
+appl_init, open_workstation usw. aus und bietet einen einfachen Aufruf
+von AES-Routinen. Am Programmende sind AES-Konstanten definiert. Es
+ist auch markiert, welche Funktionen beim TOS 1.4 und beim GEM 2.0 hin-
+zugekommen sind. Aus diesen Konstantendefinitionen können Sie natürlich
+auch eine SYM-Datei erstellen.
+
+1.3 AUTOBOOT.SRC
+
+Das Autoboot-Programm schaltet, wenn es im AUTO-Ordner liegt, auf Wunsch
+auf 50 Hz oder 60Hz um, installiert einen Tastatur-RESET (normal mit
+CONTROL-ALTERNATE-DELETE; zum Speicherlöschen gleichzeitig mit der rech-
+ten SHIFT-Taste), hat einen Bildschirmschoner, der nach 1-999 Sekunden
+den Bildschirm abschaltet, setzt die Auflösungen (wobei auch die Software
+für einen automatischen Bildschirmumschalter integriert ist) und kopiert ein
+entsprechendes DESKTOP. INF-File.
+
+Die Abschaltzeit und die Bildfrequenz kann im Dateinamen angegeben wer-
+den. Wenn das Programm AUTOBDOT .PRG heißt, wird kein Bildschirmschoner
+installiert und die Frequenz auf 60 Hz gesetzt. Nennen Sie es AUTO300F .PRG,
+stehen die Ziffern für die Abschaltzeit (hier also nach 300 Sekunden = 5
+Minuten) und „F“ für fünfzig; „S“ für sechzig Hz.
+
+Im AUTO-Ordner können auch DESKTOP . IN?-Dateien liegen. Die letzte Ziffer
+gibt die Auflösung an — 0 für niedrige bis 2 für hohe. Das Autoboot kopiert
+
+das entsprechende in das Hauptinhaltsverzeichnis und erklärt es als hidden-
+Datei.
+
+1.4 B10S.S, XBI0S.S und GEMD0OS.S
+
+Diese Programmteile sind Libraries, die zum Aufruf von BIOS-, XBIOS-
+und GEMDOS-Routinen dienen. Sie sind natürlich nicht unbedingt nötig
+und belegen eine Menge Speicherplatz, weil viele unbenutzte Routinen mit
+
+
+
+TRANSLATED
+==========
+
+

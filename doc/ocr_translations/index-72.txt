@@ -1,0 +1,63 @@
+
+ORIGINAL
+======== 
+
+
+70 5.5 Der Editor
+
+ 
+
+ 
+
+Text suchen
+
+ 
+
+Allquantori% Existenzquantori2
+Groß-klein: Far]
+EX
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.26: Der Dialog „Text suchen“
+
+Drücken Sie, nachdem der Assembler etwas gefunden hat, ALT-L, wird die
+Suche fortgesetzt, ohne daß die Dialogbox wieder erscheint.
+
+Wenn Sie genau wissen, daß der zu suchende Begriff in einem Remark steht,
+gibt es beim Suchen die Möglichkeit, nur die Remarks zu durchsuchen, indem
+Sie dem Suchbegriff ein „;“ voranstellen. Das Semikolon wird bei der Suche
+dann ignoriert; der Editor braucht aber die Zeilen nicht mehr zu disassem-
+blieren, sondern kann gleich die Remarks durchsuchen (Achtung, mehr als
+3 gleiche Zeichen werden gepackt und können mit der Remarksuche nicht
+gefunden werden!).
+
+Beispiel:
+
+Suchbegriff: ;Test
+Gefunden : NOP ;Dies ist ein Test
+
+Mit einem Druck auf die rechte Maustaste kann die Suche abgebrochen wer-
+den. Damit die Suche nicht unnötig verlangsamt wird, wird die Maustaste
+nicht ständig abgefragt. Halten Sie die Taste also gedrückt, bis der Suchvor-
+gang abgebrochen worden ist.
+
+Der vierte Eintrag heißt „Text ersetzen...“ (SHIFT-CONTROL-E). Hiermit
+können Texte gesucht und ersetzt werden. Die dazugehörige Dialogbox (Siehe
+Abbildung 5.27 auf Seite 71) wird genauso wie bei „Text suchen“ bedient,
+jedoch mit einigen Erweiterungen:
+
+e Unter „Anzahl“ kann man angeben, ob alle gefundenen Texte ersetzt
+
+
+
+TRANSLATED
+==========
+
+

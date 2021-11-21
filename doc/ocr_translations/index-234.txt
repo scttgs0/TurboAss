@@ -1,0 +1,107 @@
+ORIGINAL
+======== 
+
+
+232
+
+ 
+
+Befehlseingabe 124
+Befehlssyntax 82,124
+Begriffserklärungen 184
+Benutzeroberfläche 20
+Betriebssystemroutinen 124
+Betriebssystemstrukturen 189
+Bildschirm speichern 116
+Bildschirmabschalter 76
+Bildschirmeditor 110,115
+Bildschirmfarben 76
+Bildschirmseite umschalten 122
+binär 184
+Blitter 22
+BLK.x 82
+Block 73
+Block
+
+ausdrucken 73
+
+copy 68
+Blockmarkierung 28
+Block
+
+-markierungen 73
+
+speichern 73
+Boolesche Algebra 34
+Boot-Sektor 191
+Breakpoint 732,184
+Breakpoints anzeigen 121
+Breakpointtaste 112,116
+BSS 43,87
+Basclear 142
+Button 20
+Cache 110,111,116,195,140
+Cacheclr 140
+CACHECLR 112
+CACHEGET 112
+Cacheget 140
+Call 194
+CALL.PRG 108,175,220
+
+CAPS LOCK 30,119,116
+CCR-Register 109
+Centronics-Schnittstelle 66
+CFG-Datei 26
+CFG-Format 66
+Checksumme 162
+
+Clr 161
+
+Cls 141
+
+CNOP 95
+
+Commandline 51,90
+Compare 162
+
+Conditions 32
+
+Continue 159
+CONTROL/ALT 1--9 111
+CONTROL-B 112
+CONTROL-G 112
+CONTROL-HELP 113
+CONTROL-M 111
+CONTROL-P 112
+
+CONTROL beim Laden 175
+Copy 160
+
+Cr 147
+
+Cursor 21,110,167,185
+Cursor setzen 110
+Cursor umdefinieren 167
+Cursorform 75
+Cursorposition 29,52,105
+Cursorpositionierung 28,42 .
+Cursorsteuerung 175
+Darstellung 80
+Dartellung 73
+
+DATA 86
+
+Datas 58
+DATA-Segment 43
+*°DATE 35
+
+Datei lesen 150
+
+Datei löschen 54,148
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+1_VORWORT 15
+
+ 
+
+in den Editor zurückgesprungen., Falls das Programm jedoch abstürzt, ist
+dies auch kein Beinbruch. Einfach CONTROL-HELP* drücken und schon befin-
+den Sie sich wieder im Editor, und zwar in der Zeile, in welcher der Fehler
+auftrat, Eine Änderung, dann wieder ALTERNATE-A gedrückt, und schon läuft
+das Programm. Kein umständlicher Link-Vorgang, kein Diskettenzugriff. Die
+Turn-Around-Zeiten sind vernachlässigbar gering, es wird Sie begeistern!
+
+Weitere neue Konzepte und unsere professionelle Umsetzung werden sicher
+einiges Erstaunen bei Ihnen hervorrufen:
+
+e Der OMIKRON.Assembler übersetzt durchschnittlich 1100000 Zeilen
+pro Minute — er kann sogar bis zu 3750000 Zeilen pro Minute er-
+reichen. Er ist damit zwischen 10 und 600 mal schneller als bisherige
+Assembler. Der Assembler übersetzt sich selbst in etwa 2 Sekunden —
+und das bei 30000 Zeilen Sourcecode.
+
+Assembler und Debugger sind voll auf den Prozessoren 68000 (war
+eigentlich zu erwarten), 68010 und 68 020 lauffähig. (Allerdings können
+natürlich auch auf einem 68020 nur die normalen 68 000-Befehle und
+-Adressierungsarten verwendet werden).
+
+® Er meldet Tippfehler und falsche Adressierungsarten gleich bei der Ein-
+gabe. Sie können sofort bei der Eingabe korrigieren, erhalten also bei
+der Assemblierung keine ellenlangen Fehlerlisten. Ferner werden dop-
+pelt vergebene Symbolnamen — ein häufiger Fehler von Programmie-
+rern — bereits bei der Eingabe angemahnt.
+
+eo Sehr viele neue Funktionen des Editors erlauben es gerade dem Assem-
+blerprogrammierer, noch effizienter und schneller als bisher zu arbeiten
+(z.B. Symbole suchen und ersetzen).
+
+Möglich geworden ist dies alles durch einen „tokenisierenden Editor“: Der
+Assembler übersetzt den Quellcode schon während des Editierens.
+
+Wir haben den OMIKRON. Assembler hinsichtlich der Geschwindigkeit per-
+fektioniert, da die Programme auf dem ST wesentlich länger werden als z.B.
+auf dem C-64, der Programmierer aber trotzdem nicht auf den Assembler
+
+ 
+
+lIn dieser Anleitung sind alle Tastenkombinationen in der Schriftart Typeuriter
+angegeben.
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,92 @@
+ORIGINAL
+======== 
+
+
+48 5.5 Der Editor
+
+ 
+
+ 
+
+Besonderer Dank gAlt:
+
+= Christian Markus
+
+(für seine UDISK 3,8)
+* Tara Kefnraiel
+
+ter (für das Finden ven Fehlern)
+= Artur
+
+Se
+(für seine TEuten Tips)
+
+= Thomas
+MA dl RAZER Schnittstelle)
+ftmare
+
+terrann
+(als Besitzer dieses Programns)
+
+EXJ
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.4: Die Dankesliste
+
+An der Stelle, an der normalerweise die Accessories stehen, steht der Ein-
+trag „Accessories“ (SHIFT-F1). Wenn Sie diesen Eintrag anwählen, schal-
+tet der OMIKRON. Assembler auf das GEM zurück und zeigt eine kurze
+GEM-Menüleiste, welche Ihnen die Möglichkeit gibt, auch aus dem OMI-
+KRON. Assembler heraus Accessories aufzurufen. Dort kommen Sie mit dem
+Menüpunkt „zurück in den Assembler“ wieder zur Benutzeroberfläche des
+Assemblers.
+
+Das Menü „Datei“
+
+  
+
+Zuladen, vw
+Syndole zuladen..ı
+
+8
+
+FE
+
+Sichern 49
+FI
+
+of
+
+ 
+
+Sichern unter...
+ASCII-Sichern...
+
+Datei löschen...
+
+ 
+
+ 
+
+ 
+
+ 
+
+(dd
+
+Abbildung 5.5: Das Menü „Datei“
+
+Unter diesem Menüpunkt sind alle Disketten- bzw. Harddiskoperationen zu-
+sammengefaßt. (Ausnahmen sind „Block speichern“ im „Block“-Menü und
+
+
+
+TRANSLATED
+==========
+
+

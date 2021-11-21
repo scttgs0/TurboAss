@@ -1,0 +1,63 @@
+ORIGINAL
+======== 
+
+
+50 5.5 Der Editor
+
+ 
+
+ 
+
+Lada Sourcecode
+
+Erstellungsdatum: Dienstag ‚, 88,09.1980 88:00
+letzte Knderung : Freitag , 45,804,1389 13:10
+
+Bitte Passwort eingeben: AGERREHE
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.7: Die Passwordabfrage beim Laden
+
+Ein ASCII-Sourcetext muß beim Laden erst tokenisiert werden, d. h., der As-
+sembler muß jede eingelesene Zeile auf ihren Syntax hin überprüfen und die
+Zeile in das interne Format übertragen. Dieser Teil ist konzeptionsbedingt der
+langsamste Teil des Assemblers, trotzdem konvertiert der OMIKRON.Assem-
+bler etwa 450 KB pro Minute in das interne Format®, Während des Einlesens
+von ASCIH-Sourcetexten zeigt der Assembler die aktuelle Zeilennummer (in
+Zwanzigerschritten) links oben an. Der Ladevorgang kann jederzeit mit ESC
+abgebrochen werden. Nach dem Einlesen eines ASCIH-Sourcetextes kann eine
+Dialogbox erscheinen, in der der Assembler die Anzahl der nicht tokenisier-
+baren Zeilen ausgibt. Solche Zeilen enthalten meist einen Syntax-Fehler, oder
+ein Symbol wurde zweimal deklariert. Nicht tokenisierbare Zeilen können Sie
+mit ALT-S anspringen. Dazu markiert der OMIKRON.Assembler solche Zei-
+len mit „;>“ als Remarks, diese Markierung müssen Sie nach der Korrektur
+der Zeile löschen.
+
+Wie bei allen Lade- und Speicheroperationen wird auch hier der Original-File-
+Selector verwendet. Das mag einige vielleicht stören, weil ihr altes Betriebssy-
+stem keinen sehr komfortablen zur Verfügung stellt und möglicherweise beim
+Zeichen „._“ abstürzt. Dafür können Sie aber eigene File-Selectoren einbinden.
+Es gibt eine ganze Reihe von luxuriösen File-Selectoren als Public-Domain-
+Programme. Man hätte natürlich auch einen erweiterten File-Selector in den
+Assembler integrieren können, der dann aber bestimmt wieder nicht jeder-
+manns Wünschen gerecht werden würde. Weiterhin wird ab dem TOS 1.4 der
+Extended-File-Selector (AES 91) benutzt, d.h., oben im File-Selector steht
+die Funktion, die Sie gerade angewählt haben.
+
+An dieser Stelle sei darauf hingewiesen, daß der Assembler die Command-
+
+ 
+
+Das entspricht ungefähr der Assembliergeschwindigkeit des Devpac V1.0
+
+
+
+TRANSLATED
+==========
+
+

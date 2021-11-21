@@ -1,0 +1,44 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 105
+
+ 
+
+Im OMIKRON. Assembler brauchen Sie dafür die Stelle im Quellcode nicht
+zu suchen: Mit einem Druck auf CONTROL-Help springt der OMIKRON.De-
+bugger zurück in den Editor — genau an die Stelle im Quellcode, an der
+der PC beim Debuggen gerade stand. Mit CONTROL-SHIFT-HELP springt der
+Debugger zurück, ohne die Cursorposition im Editor zu ändern.
+
+Die Marker bleiben erhalten Es werden natürlich alle Marker des As-
+semblers übernommen. Wenn Sie in Ihrem Sourcetext mit CONTROL-S einen
+Marker auf die Zeile „mainloop: moveq #5,d0“ setzen und dann in den De-
+bugger springen, steht in der Variable M5 die Adresse dieser Zeile. Sie können
+sich alle Marker mit der Funktionstaste „Marker“ (SHIFT-F6) anzeigen las-
+sen. Wenn eine Symboltabelle vorhanden ist, wird neben der Adresse auch
+der Symbolname angezeigt, also in unserem Beispiel „mainloop“. Wenn der
+Marker nicht in einer Zeile steht, wo ein Label definiert wird, wird ein anderes
+Label in Light (heller) angezeigt, das in dem internen Binärbaum daneben
+definiert ist. Links von den Adressen sehen Sie Rechtecke, mit denen Sie an
+die Adresse „springen“ können: wenn Sie in das Feld des Markers 5 klicken,
+wird ab der Zeile „mainloop“ gelistet. Wenn der Marker nicht innerhalb des
+Textbereichs liegt, wird nicht gelistet, sondern ein MEMORY/DUMP ange-
+zeigt.
+
+Es werden selbstverständlich die Marker auch an Assembler zurücküberge-
+geben. Wenn Sie im Debugger mit LET M5=Adresse den Marker auf eine
+andere Zeile setzen, rechnet der Assembler aus, auf welcher Zeile der Marker
+nun stehen muß.
+
+Beim Wechsel zwischen Debugger und Assembler gehen eventuell gesetzte
+Breakpoints im Debugger nicht verloren; wenn Sie nach einer Neuassemblie-
+rung wieder in den Debugger springen, sind die Breakpoints noch erhalten.
+
+
+
+TRANSLATED
+==========
+
+

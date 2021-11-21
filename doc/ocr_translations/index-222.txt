@@ -1,0 +1,48 @@
+ORIGINAL
+======== 
+
+
+220 I5 B00T.2.0.PRG
+
+ 
+
+eingebunden werden. Sie können aber auch als Vorschlag für eigene Aufrufe
+dienen.
+
+1.5 B0O00T_2_0.PRG
+
+Dieses Programm installiert im Boot-Sektor einer Diskette diverse Extras:
+
+e Virus-Schutz
+e Tastaturklick-Ausschaltung
+® Fastloader
+
+oe Frequenzumschaltung
+
+und einiges mehr.
+
+I.6 BREAK.S
+
+Diese Routine können Sie in Ihre Programme einbinden, um alle Register-
+inhalte abzuspeichern. Dann können Sie mit einem RESET das Programm
+verlassen und sich trotzdem alle Register ansehen. Näheres steht beim Befehl
+GETREGISTER des Debuggers (siehe Kapitel 6.6.5 auf Seite 141).
+
+1.7 CALL.SRC und CALL.PRG
+
+Mit CALL können Sie den OMIKRON.Debugger starten, wenn er resident
+im Speicher liegt. Dabei sucht das Programm nach den Texten „soft“ und
+„Z-“ vor dem Busfehlervektor. Wenn der Text dort steht, holt der Debug-
+ger sich davor die Debuggeradresse und springt sie an. Sonst kommt eine
+Fehlermeldung (siehe Kapitel 6.12 auf Seite 174).
+
+Da der Source mitgeliefert wird, können Sie diese Routine auch in Ihre Pro-
+gramme einbinden. Wenn Sie beispielsweise den VBL, den Keyboardtreiber
+u.ä. ändern, können Sie nicht mehr mit SHIFT-SHIFT abbrechen, auch wenn
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,77 @@
+ORIGINAL
+======== 
+
+
+42
+
+5.5 _ Der Editor
+
+ 
+
+Cursorbewegungen im Sourcetext
+
+=>, €
+
+SHIFT-{
+
+SHIFT-CONTROL-f
+
+CONTROL-1
+ALT-{r
+SHIFT-J
+
+SHIFT-CONTROL-J
+
+CONTROL-J
+ALT-J
+
+Bewegt den Cursor (wer hätte das gedacht?)
+
+Scrollt unabhängig von der Cursorposition nach
+oben
+
+Scrollt nach oben, Cursor bewegt sich mit (wie
+beim Mausscrolling)
+
+oder CONTROL-R Blättert eine Seite nach oben
+Blättert 10 Seiten nach oben
+
+Scrollt unabhängig von der Cursorposition nach
+unten
+
+Scrollt nach unten, Cursor bewegt sich mit (wie
+beim Mausscrolling)
+
+oder CONTROL-C Blättert eine Seite nach unten
+
+Blättert 10 Seiten nach unten
+
+Einfache Suchkommandos bzw. Sprünge im Sourcetext
+
+CLR/HOME
+
+SHIFT-CLR/HOME
+
+ALT-E
+CONTROL-Z
+ALT-SHIFT-{1
+ALT-SHIFT-(
+
+Springt abwechselnd zum Anfang bzw. Ende der
+Seite
+
+oder ALT-T Springt abwechselnd zum Anfang bzw.
+Ende des Sourcetextes
+
+Zum Ende des Sourcetexts springen
+Zur Position der letzen Änderung springen
+Springt zur vorigen Labeldefinition (aufwärts)
+
+Springt zur nächsten Labeldefinition (abwärts)
+
+
+
+TRANSLATED
+==========
+
+

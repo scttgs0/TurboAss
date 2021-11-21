@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+Inhaltsverzeichnis
+
+1 Vorwort                                                   14
+
+2 Inhalt der Diskette                                       17
+
+3 Installation                                              19
+
+4 Gemeinsames von Assembler und Debugger                    20
+    4.1 Die Benutzeroberfläche ............................ 20
+    4.2 Die Dialogboxen ................................... 20
+    4.3 Die Environment-Variable .......................... 22
+    4.4 Blitterunterstützung .............................. 22
+
+5 Der Assembler                                             23
+    5.1 Zur Geschichte des Assemblers ..................... 23
+    5.2 Einführung in den Assembler ....................... 25
+    5.3 Die Drop-Down-Menüs ............................... 28
+    5.4 Die Funktionen der Maus ........................... 28
+    5.5 Der Editor ........................................ 30
+        5.5.1 Besonderheiten des Assemblers ............... 31
+              Konvertierungen in den Motorola-Standard .... 32
+              Lokale Label ................................ 32
+
+
+
+TRANSLATED
+==========
+
+
+Table of Contents
+
+1 Foreword                                                  14
+
+2 Content of the Disk                                       17
+
+3 Installation                                              19
+
+4 Common for the Assembler and Debugger                     20
+    4.1 The User Interface ................................ 20
+    4.2 The Dialog Boxes .................................. 20
+    4.3 The Environment Variable .......................... 22
+    4.4 Blitter Support ................................... 22
+
+5 The Assembler                                             23
+    5.1 The History of the Assembler ...................... 23
+    5.2 Introduction to the Assembler ..................... 25
+    5.3 The Drop-Down Menus ............................... 28
+    5.4 The Functions of the Mouse ........................ 28
+    5.5 The Editor ........................................ 30
+        5.5.1 Special Features of the Assembler ........... 31
+              Conversions to the Motorola Standard ........ 32
+              Local Label ................................. 32

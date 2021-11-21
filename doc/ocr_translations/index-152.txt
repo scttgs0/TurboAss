@@ -1,0 +1,67 @@
+ORIGINAL
+======== 
+
+
+150 6.6 _ Die Befehle
+
+ 
+
+Tabelle 6.8: Die Fileattribute
+
+ 
+
+Bit 0 | Dezimal1 | Hex 1 File schreibgeschützt (nur lesen)
+Bit 1 | Dezimal 2 |Hex2 | File hidden (versteckt)
+
+Bit 2 | Dezimal 4 | Hex 4 Systemfile
+
+Bit 3 | Dezimal 8 | Hex 8 Diskettenname
+
+Bit 4 | Dezimal 16 | Hex $10 | Ordner
+
+Bit 5 | Dezimal 32 | Hex $20 | Archiv-Bit
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Format 4
+
+Syntax : FORMAT [(DS!ISS) Laufwerk}
+Kurzform : FO
+
+Mit diesem Befehl können Sie eine Diskette formatieren. Wenn die Seitenzahl
+(DS = double sided (doppelseitig) oder SS = single sided (einseitig)) nicht
+eingegeben wird, nimmt der Debugger doppelseitig an. Als Laufwerksnummer
+können Sie 0 für Laufwerk A oder 1 für Laufwerk B angeben. Das Formatieren
+erfolgt mit Flopfmt (XBIOS 10) (Virgin $E5E5, Interleave 1, 80 Tracks mit je
+9 Sektoren; also ein ganz normales Format). Danach wird der Boot-Sektor mit
+Protobt (XBIOS 18) erstellt und mit Flopwr (XBIOS 9) geschrieben. Bevor
+eine Diskette formatiert wird, erfolgt (natürlich) noch eine Sicherheitsabfrage;
+man weiß ja nie...
+
+Type 4
+
+Syntax : TYPE (Dateiname)
+Kurzform : TY
+
+Zeigt eine Datei (in ASCII) an. Dazu wird sie in einen 8 KB großen Buffer
+geladen, so daß die Diskettenzugriffszeiten relativ gering sind. Die Ausgabe
+kann mit SPACE angehalten werden. Dann kann sie durch erneutes Drücken
+auf SPACE fortgesetzt oder den Druck auf eine andere Taste abgebrochen
+werden. Dieser Befehl kann z. B. benutzt werden, um sich eine README-Datei
+
+
+
+TRANSLATED
+==========
+
+

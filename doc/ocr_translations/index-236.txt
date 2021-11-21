@@ -1,0 +1,119 @@
+ORIGINAL
+======== 
+
+
+234
+
+ 
+
+Existenquantor 159
+Existensquantor 67
+Exit 123,168
+Extended-File-Selector 50
+Extension 78
+Externer Abbruch 170
+FAIL 98
+Farbe im Debuggers !28
+FATTRIBUT 26
+Fattribut 149
+Fclose 147
+Fehler bei der Assemblierung 55
+Fehler
+allgemeine 55
+fatale 55
+fehlerhafte Zeile 77
+Fehler
+korrigierbare 55
+Fehlermeldung 29
+Fehler
+-meldungen 56
+Fehlermeldungen 171
+Fehler
+nächster 72
+Warnungen 56
+Zeile mit 77
+File 146
+Fileattribute 150
+Fileausgabe 146,147
+Filename 29
+File-Selector 49,50
+File-Selector
+Extended 50
+Fill 161
+Find 158
+Flags 109
+Fopen 146
+
+Format 150
+
+Formel 34
+Formelauswertung 130
+Free 148
+
+freier Speicher 148
+F-Tasten belegen 80
+Funktionscode 174
+Funktionstaste 185
+Funktionstasten 80,717
+
+Funktionstasten belegen 164
+
+Funktionstasten
+abspeichern 80
+
+F1 117
+
+F10 122
+
+F2 117
+
+F3 118
+
+F4 119
+
+F5 119
+
+F6 120
+
+F7 120
+
+F8 121
+
+F9 122
+
+Garbage-Collection 44
+
+GEM 20
+
+Gemdos 20
+
+Gemdos-Speicher 78
+
+Geschichte 23
+
+Getregister 141
+
+GFA-Assembler 144
+
+GLOBAL 60,95
+
+Go 133
+
+Go PC 119
+
+Grundrechenarten 34
+
+Grundversion 16
+
+GST 57
+
+GST-Assembler 144
+
+GST-Linkformat 144
+
+
+
+TRANSLATED
+==========
+
+

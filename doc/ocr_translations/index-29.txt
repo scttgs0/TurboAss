@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 27
+
+ 
+
+Was ist, wenn ist nur 512 KB RAM habe? Das macht auch nichts.
+Sie müssen dann allerdings ohne residenten Debugger arbeiten, indem Sie
+nach der Assemblierung Ihr erzeugtes Programm abspeichern, den Assembler
+verlassen und dann vom geladenen Debugger aus Ihr Programm erneut laden.
+Eine Symboltabelle können Sie dabei natürlich auch übergeben.
+
+Wie läuft eine Entwicklung ab? Beispielablauf einer Entwicklung mit
+residentem Debugger:
+
+1. Den Assembler laden.
+
+2. Den Sourcetext laden (Menüpunkt „Datei=> Öffnen. ..“) oder Source-
+text eingeben (Als „Gerüst“ für ein Programm können Sie die Datei
+HEADER.S verwenden (siehe Kapitel I.15 auf Seite 224)).
+
+3. Assemblieren anwählen (Mit dem Menüpunkt „Assemblieren=> Assem-
+blieren. ..“).
+
+4. In der Dialogbox nach dem Assemblieren bei Symboltabelle „normal“
+anwählen.
+
+5, Den Button „DEBUGGER“ anklicken.
+
+6. Das Programm mit „GO“ starten (z. B. SHIFT-F4 oder GO eintippen
+und RETURN drücken).
+
+7. Nach einem Abbruch mit SHIFT-SHIFT, oder wenn das Programm
+abstürzt, CONTROL-HELP drücken (=> Rücksprung in den Assembler).
+
+8. Der Cursor steht an der fehlerhaften Stelle bzw. an der Abbruchstelle,
+
+9. weiter bei 3...
+
+Wahrscheinlich werden Sie die Befehle und Tastenkombinationen noch nicht
+kennen, aber das macht nichts, sie werden später noch einmal ausführlich
+erklärt. Das Beispiel soll nur zeigen, wie eine Entwicklung ungefähr ablaufen
+kann. Sie können dies mit einem der Sourcetexte aus dem DEMOS . OMI-Ordner
+nachvollziehen (z. B. AES_DEMDO.SRC). Wenn es noch nicht klappt, macht das
+
+
+
+TRANSLATED
+==========
+
+

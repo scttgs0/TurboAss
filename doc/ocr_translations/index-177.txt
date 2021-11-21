@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 175
+
+ 
+
+hätten. Wenn nun aber ein Fehler auftritt, der normalerweise Bomben pro-
+duzierte, wird dieser abgefangen, als ob Sie sich im Debugger befänden. Sie
+können dann (fast) so debuggen, als ob Sie das Programm vom Debugger aus
+geladen hätten. Nur der Befehl LEXECUTE kann nicht mehr benutzt werden.
+
+Sie können den residenten Debugger auch mit dem Programm CALL.PRG
+aufrufen. Den Source dazu finden Sie im UTILITY.OMI-Ordner. Da das Pro-
+gramm nicht wissen kann, ob der Debugger wirklich im Speicher liegt, sieht
+er nach, ob vor dem Busfehlervektor die Texte „Z-“ und „soft“ stehen. Ist
+dies der Fall, holt er sich aus dem Langwort davor die Adresse, an der er
+den Debugger starten kann. Sonst gibt er eine Fehlermeldung aus. Wenn
+der Debugger mit CALL.PRG aufgerufen wird, können Sie auch LEXECUTE
+verwenden.
+
+Den residenten Debugger können Sie ganz normal verlassen. Er bleibt weiter-
+hin resident im Speicher. Der Befehl RESIDENT funktioniert im residenten
+Debugger wie EXIT. Um den Debugger zu löschen, muß ein RESET außerhalb
+des Debuggers ausgelöst werden oder ein Kaltstart ausgelöst werden.
+
+Es gibt noch eine zweite Möglichkeit, den Debugger resident zu halten: Sie
+speichern die Info-Datei mit „SAVE !R“ oder „SAVE !HR“ ab. Das „R“ steht
+für „resident“. Der Debugger wird dann automatisch resident gehalten, wenn
+Sie ihn laden. Diese Möglichkeit ist in der Praxis ziemlich ungebräuchlich.
+
+Wenn der Debugger als erstes File® im AUTO-Ordner liegt, wird er ebenfalls
+automatisch resident.Die Info-Datei muß dann im Hauptinhaltsverzeichnis
+Ihres Boot-Laufwerk liegen.
+
+Wenn Sie während des Ladevorgangs des Debugges CONTROL gedrückt hal-
+ten, wird der Debugger ebenfalls automatisch resident. Das ist besonders
+dann praktisch, wenn Sie den Debugger nachträglich vom Desktop aus laden
+wollen.
+
+6.13 Debugger-Demo
+
+In diesem Abschnitt soll für den Einsteiger einmal demonstriert werden,
+wie man mit einem Debugger überhaupt umgeht. Außerdem wird Ihnen der
+
+ 
+
+Sfür Fortgeschrittene: Der Linef-Vektor darf noch nicht geändert worden sein
+
+
+
+TRANSLATED
+==========
+
+

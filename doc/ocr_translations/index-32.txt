@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+30 5.5 Der Editor
+
+ 
+
+Daß ein Block markiert ist, sehen Sie an einem „B“ rechts oben. Wenn Sie
+mit der linken Maustaste auf dieses „B“ klicken, wird der Cursor an den
+Blockanfang, mit der rechten Taste an das Blockende gesetzt.
+
+Zwischen dem „B“ und dem Einfügemodus kann ein „C“ stehen, falls CAPS
+LOCK aktiviert ist. Mit einem Mausklick dorthin kann man CAPS LOCK ein-
+bzw. ausschalten.
+
+Ganz rechts steht der aktuelle Einfügemodus. Es gibt drei verschiedene Ein-
+fügemodi im OMIKRON.Assembler:
+
+Überschreiben: Eingegebener Text überschreibt den vorhandenen. Mit der
+Taste INSERT kann eingefügt werden,
+
+Einfügen I: Eingegebener Text wird vor dem Cursor eingeschoben.
+
+Einfügen II: Wie Einfügen I, jedoch wird nach RETURN auch gleich eine
+Zeile eingefügt.
+
+Durch Anklicken dieses Textes können Sie diesen Modus ändern (siehe auch
+SHIFT-INSERT auf Seite 43)
+
+Über dem Einfügemodus (links neben der Uhrzeit) sehen Sie den ASCII-
+Wert (dezimal) des Zeichens unter dem Cursor, Falls Sie diese Anzeige stört,
+kann sie abgeschaltet werden, indem Sie einmal auf sie klicken. Durch einen
+weiteren Klick auf diese (dann leere) Stelle kann sie wieder aktiviert werden.
+
+5.5 Der Editor
+
+Das Beste am Editor ist sicherlich, daß er in der Lage ist, einen Sourcetext
+automatisch zu formatieren: Sie können Ihre Programme unformatiert ein-
+geben, und der Editor ist in der Lage, Symbole, Opcodes und Operanden
+voneinander zu unterscheiden. Nachdem Sie RETURN gedrückt haben, gibt er
+die Zeile formatiert aus.
+
+Beispiele:
+Eingabe: start move #5,d0;Remark
+Ausgabe: start: move.w #5,d0 ;Remark
+
+
+
+TRANSLATED
+==========
+
+

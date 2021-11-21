@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 31
+
+ 
+
+Eingabe: nop;Nix los
+Ausgabe: nop ;Nix los
+
+Alle unformatiert eingegebenen (oder als ASCII-Text eingelesenen) Texte
+werden also automatisch übersichtlich formatiert.
+
+Normalerweise braucht der Assembler keine Doppelpunkte hinter Symbolde-
+finitionen. Es gibt aber eine Ausnahme — wenn Sie unbedingt Opcodes als
+Symbolnamen verwenden wollen:
+
+Eingabe: nop moveq #0,d0
+Ausgabe: Syntax Fehler,
+(da der Befehl "NOP" keine Parameter erlaubt)
+
+aber:
+
+Eingabe: nop:moveq #0,d0
+Ausgabe: nop: moveq #0 ,d0
+
+Opcodes sind also nur dann als Symbolnamen erlaubt, wenn man selbst da-
+hinter einen Doppelpunkt setzt.
+
+5.5.1 Besonderheiten des Assemblers
+
+Wenn .w hinter einem Symbolreferenz (nicht hinter der Definition) steht,
+schreibt der Assembler die Adresse auf Wordbreite (das spart Speicherplatz
+und Rechenzeit). Das ist nur bei Adressen bis $7FFF und Adresse größer
+gleich $FFFF8800 möglich. So können Sie z.B. „move etv_timer.w, d0“
+angeben. Dies ist bei relozierbaren Adressen nicht möglich, so daß also nur
+Systemvariablen so adressiert werden können.
+
+Line-A-Routinen können direkt mit „LINEA #“ und der entsprechenden Num-
+mer eingeben. Dahinter gibt der Assembler in eckigen Klammern automatisch
+den Funktionsnamen an, also z.B. „LINEA #0 [ Init ]“. Die eckigen Klam-
+mern werden vom Assembler in diesem Fall ignoriert.
+
+
+
+TRANSLATED
+==========
+
+

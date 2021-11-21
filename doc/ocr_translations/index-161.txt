@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 159
+
+ 
+
+Die Ausgabe kann mit SPACE angehalten werden. Dann können Sie mit SPACE
+die Ausgabe fortsetzen. Mit einer anderen Taste kann die Ausgabe abgebro-
+chen werden. Eine abgebrochene Suche kann mit CONTINUE wieder aufge-
+nommmen werden.
+
+Hunt
+
+Syntax :; HUNT [Von,Bis] ‚Term
+Kurzform : H
+
+HUNT entspricht FIND, es wird jedoch nur an geraden Adressen gesucht. Die-
+ses ist z. B. bei Opcodes nützlich, da diese sowieso nur an geraden Adressen
+liegen dürfen.
+
+Ascfind
+
+Syntax : ASCFIND [(Von,Bis],String
+Kurzform : ASCF
+
+Mit diesem Befehl können nicht nur „komplette Befehle“ wie mit FIND ge-
+sucht werden, sondern auch Teile davon. Das bedeutet: Jede durchsuchte Zeile
+wird disassembliert und ”String”damit verglichen. Dabei sind als Allquantor
+„** und als Existenquantor „?“ zugelassen.
+
+So können Sie z. B. alle Befehle suchen, die etwas in D7 schreiben: „ASCFIND
+‚*,D7“ (Das erste Komma dient nur als Kennzeichnung des Strings, die
+Adressen wurden weggelassen.).
+
+Oder Sie suchen alle Befehle, die indirekt etwas aus einem Adreßregister
+holen: „ASCFIND ‚*(A?),*“.
+
+Das Suchen mit ASCFIND dauert natürlich wesentlich länger als mit FIND
+oder HUNT, weil jede Zeile erst disassembliert werden muß.
+Continue
+
+Syntax ; CONTINUE
+Kurzform : CON
+
+
+
+TRANSLATED
+==========
+
+

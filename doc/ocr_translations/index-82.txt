@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+80 5.5 Der Editor
+
+ 
+
+e Ob ein Blitter genutzt werden soll.
+
+e Ob beim TOS 1.4 die Funktion Fsel_exinput benutzt werden soll.
+Wenn Sie z. B. einen eigenen Fileselector verwenden, der diese Funktion
+
+nicht abfängt, können Sie den Assembler dazu zwingen, Fsel_input zu
+nehmen.
+
+e Wie der Zehnerblock belegt ist. „Ziffern“ ist die normale, aufgedruckte
+Belegung. „Hexzahlen“ entspricht der Hex-Tastatur des Debuggers mit
+CAPS LOCK (siehe Kapitel 6.4 auf Seite 116). „Cursor“ entspricht der
+IBM-Belegung. Das heißt: Cursorbewegungen mit 8, 2, 4 und 6; Seite
+vor- und zurückblättern mit 3 und 9; an den Anfang springen mit 7;
+ans Ende mit 1, ein Zeichen löschen mit . und eins einfügen mit 0. +,
+- und ENTER sind normal; (, ), / und * unbelegt.
+
+F-Tasten belegen:
+
+Sie können jede Funktionstaste noch viermal belegen: Wenn Sie eine Funk-
+tionstaste „ohne alles“ oder mit SHIFT drücken, wird eine Funktion aus ei-
+nem Drop-Down-Menü ausgeführt (wie bei den Funktionen angegeben). Mit
+CONTROL können Sie nun einen frei definierbaren Text erreichen, einen wei-
+teren mit CONTROL-SHIFT, eine andere Ebene mit ALTERNATE und die letzte
+mit ALT-SHIFT.
+
+In der Dialogbox (Siehe Abbildung 5.35 auf Seite 81) wählen Sie zuerst
+die Taste aus, die belegt werden soll, indem Sie auf die Tastennummer in der
+Reihe mit oder ohne SHIFT klicken und „Control“ oder „Alternate“ einstellen.
+In der Zeile „Text“ erscheint nun die bisherige Belegung, die Sie ändern
+können. Abgeschlossen wird die Änderung entweder mit „OK“, oder indem
+Sie eine andere Taste anwählen.
+
+Einstellungen sichern: Der Assembler apeichert alle Einstellungen des
+Darstellungs- und der Editor-Menüs, die Speicheraufteilung, die Funktions-
+tastenbelegung und ob die Uhr an- oder abgeschaltet ist in einer Datei mit
+dem Namen 0M-ASSEM.INF, die beim Start automatisch geladen wird.
+
+Das Menü „Hilfe“
+
+Die Einträge in diesem Menü haben keine Bedeutung; sie dienen nur als
+Gedächtnisstütze für die Zeichen der Shift-Tasten (©, ft und ®).
+
+
+
+TRANSLATED
+==========
+
+

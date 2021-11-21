@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+6 _DER DEBUGGER 163
+
+ 
+
+Um die Prüfsumme zu berechnen, dient dieser Befehl. Das letzte Word im
+Boot-Sektor ist gewöhnlich Null, sonst löscht man es vorher. Dann ruft man
+CHECKSUMME auf; der Wert, der zurückgegeben wird, wird in ein Null-Wort
+eingetragen. Dann kann der Sektor mit WRITESEKTOR geschrieben werden.
+Mit „Anzahl“ kann die Länge des Buffers eingestellt werden. Es werden „An-
+zahl“+1 Worte addiert.
+
+Mit „Prüfsumme“ kann man eine andere Prüfsumme als $1234 angeben. Sie
+können damit zum Beispiel die Prüfsumme über ein Reset-festes Programm
+im Bereich von $600 bis $700 - sie muß $5678 sein, damit das Programm nach
+einem Reset ausgeführt wird - mit „CHECKSUM 600,5678,100“ berechnen.
+
+Resident 4
+
+Syntax : RESIDENT
+Kurzform : RESI
+
+Der Debugger wird nach einer Sicherheitsabfrage verlassen, aber resident im
+Speicher gehalten (siehe Kapitel 6.12 auf Seite 174).
+
+Exit, Quit, System A
+
+Syntax : EXIT |QUIT|SYSTEM
+Kurzform : EX, QUI, SYS
+
+Der Debugger wird verlassen und zum Assembler beziehungsweise Desktop
+zurückgekehrt. Er setzt, soweit möglich, alle kritischen Speicherstellen in
+den Zustand zurück, in dem er sie vorgefunden hat (siehe Kapitel 6.6.8 auf
+Seite 165).
+
+Vor dem Verlassen des Debuggers erfolgt noch eine Sicherheitsabfrage, die
+durch „j“ zu beantworten ist (oder „n“ wenn Sie ihn nicht verlassen wollen).
+
+@
+
+Syntax : @Befehl
+Kurzform : ©
+
+
+
+TRANSLATED
+==========
+
+

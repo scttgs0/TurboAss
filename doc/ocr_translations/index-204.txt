@@ -1,0 +1,41 @@
+ORIGINAL
+======== 
+
+
+Anhang F
+
+Assembler und
+OMIKRON.BASIC
+
+Wenn Sie von BASIC aus Assemblerprogramme aufrufen wollen, ist es häufig
+nötig, Variablen zu übergeben. So lange es nur wenige Werte sind, können
+sie direkt hinter CALL angegeben werden; bei einem größeren Array geht das
+aber nicht mehr. Sie haben z. B. ein Programm geschrieben, bei dem auf dem
+Bildschirm Zeichen ausgegeben werden müssen. Der Bildschirminhalt steht
+in einem zweidimensionalen Array: Indizes sind die X- und Y-Koordinaten
+und der Inhalt ist die Zeichennummer. Den Bildschirmaufbau wollen Sie nun
+in Assembler programmieren,
+
+Sie können nun die Adresse des ersten Elements folgendermaßen ermitteln:
+LPEEK(VARPTR(Variable(0,0)))+LPEEK(SEGPTR+20)
+
+Durch LPEEK(SEGPTR+20) erhält man die Adresse des Arraybuffers; durch
+LPEEK(VARPTR(Variable ... den Offset für dieses Array. Es reicht auch, dem
+Assemblerprogramm nur LPEEK(VARPTR(Variable(0,0))) zu übergeben —
+im A0-Register steht SEGPTR, man kann die Adresse also auch in Assembler
+berechnen. Da in unserem Beispiel Integer-Long Variablen verwendet wurden,
+liegen die Werte ab der Adresse als Longwords. Man kann sich also Wert für
+Wert mit MOVE.L (Ax)+,Dx holen, Die Werte sind folgendermaßen sortiert:
+(0;0), (1;0), (2;0), (0;1), (1;1), -..
+
+Etwas unübersichtlicher wird es mit String-Varijablen: Dann liegt nicht der
+String bei der Adresse, sondern
+
+202
+
+
+
+TRANSLATED
+==========
+
+

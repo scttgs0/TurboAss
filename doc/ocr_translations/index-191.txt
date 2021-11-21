@@ -1,0 +1,71 @@
+ORIGINAL
+======== 
+
+
+Anhang D
+
+Aufbau von
+Betriebssystemstrukturen
+
+Tabelle D.1: Der Programmheader
+
+ 
+
+$00
+$02
+$06
+$0A
+
+$0E
+$12
+$16
+
+$1A
+
+ 
+
+ 
+
+word
+long
+long
+long
+
+long
+long
+long
+
+word
+
+ 
+
+$601A; kennzeichnet ein relozierbares File
+Größe des Textsegments in Byte
+
+Größe des Datensegments in Byte
+
+Größe des Block-Storage-Segments (BSS) in
+Byte
+
+Größe des Symboltabelle in Byte
+
+0 (reserviert)
+
+Anfang des Textsegments (wird vom Gemdos
+nicht unterstützt; enthält immer 0)
+
+—1, wenn keine Relozierinformationen vor-
+handen sind. (vor dem TOS 1.4 ist dies feh-
+lerhaft; die Programmdatei wird nicht ge-
+schlossen)!
+
+ 
+
+189
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+216 H.7_ Der RSC-Editor
+
+ 
+
+Icons
+
+e Icons werden von 8x8 bis max. 128x128 Pixeln unterstützt.
+
+®* - Bit 8-11 des Typs: Höhe des Icons in 8 Zeilen (0=8 Zeilen,1=16
+Zeilen,...)
+— Bit 12-15 des Typs: Breite des Icons in Bytes (0=1 Byte,1=2
+Byte,...)
+
+® wenn alle Bits 8-15 gesetzt sind, gilt: 15.8 +8 = 128 Zeilen 15-8+8 =
+128 Pixel breit
+
+e Wenn Bit 7 im Typ gesetzt ist, werden bei Farbe jeweils 2 Zeilen mit
+OR verknüpft, sonst wird jede ungerade Zeile weggelassen.
+
+e Die Icondaten müssen linear im Ram liegen, d.h. für ein 16x16-Icon:
+
+2 Byte 1.Zeile
+2 Byte 2.Zeile
+
+2 Byte 16.Zeile
+
+H.7.2 Der Editor
+
+Um die oben beschriebenen Dialogboxen einfach erstellen zu können, haben
+wir einen RSC-Editor geschrieben. Er ist zwar recht einfach, erfüllt aber
+seinen Zweck. Zur Bedinung folgende Hinweise:
+
+Die größe des Alerts kann dadurch verändert werden, daß Sie auf die untere
+rechte Ecke klicken und das Alert auf die gewünschte Größe draggen.
+
+Wenn außerhalb des Alerts klicken, erscheint ein Popupmenü zum Laden,
+Speichern und zum Verlassen des Programms. Mit „Save as RSC“ werden
+die Daten in einer ZST-Datei gespeichert, die wieder eingelesen werden kann.
+Mit „Save as DC“ werden die Daten in einer ASM-Datei (Sie können natürlich
+auch andere Extensions verwenden) gespeichert, die nicht wieder eingelesen
+
+
+
+TRANSLATED
+==========
+
+

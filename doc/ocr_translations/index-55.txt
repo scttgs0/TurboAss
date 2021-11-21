@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+5_DER ASSEMBLER 53
+
+ 
+
+ 
+
+© File existiert bereits !
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.9: Die Sicherheitsabfrage vor dem Überschreiben
+
+(CONTROL-Z), ein markierter Block, alle Einstellungen des Darstellungsmenüs
+(Tabulatoren, etc.), der Einfügemodus, Groß-, Kleinschrift-Konvertierung
+von Symbolen, der Remark-Merker, das Auto-Start-Flag des Debuggers, Län-
+ge des Zielcodespeichers sowie des freien Speichers für GEM. Durch einen
+Fehler in den Assembler-Versionen kleiner V1.1 sind dort wahrscheinlich
+beide Angaben fehlerhaft. Wenn Ihre Uhrzeit im Rechner nicht stimmt (keine
+Hardware-Uhr oder Mega ST), stimmen die Angaben natürlich auch nicht,
+
+Und schließlich bietet das Format den Vorteil, den Sourcetext mit einem
+Password oder der Seriennummer des Assemblers schützen zu können. So
+kann z.B. jemand, der Ihren Sourcetext entwendet hat, nichts damit an-
+fangen, solange er nicht auch Ihren Assembler mitgestohlen hat oder Ihr
+Password kennt. Das Password wird selbstverständlich kodiert abgespeichert.
+
+Das Password können Sie vor dem Speichern mit CONTROL-” festlegen. Die er-
+scheinende Dialogbox (Siehe Abbildung 5.10 auf Seite 54) erlaubt Ihnen, ein
+Password zu definieren und den Sourcetext entweder mit einem Password zu
+schützen oder mit einem Seriennummernschutz zu versehen. Ein Ausschalten
+des Schutzes ist hier ebenfalls möglich. Der Seriennummernschutz verbietet
+es, den Sourcecode in einen anderen Assembler als mit Ihrer Seriennummer
+zu laden. Ein Password darf alle ASCII-Codes enthalten (Ausnahmen sind
+0, 27 und 255). Das Password muß vor jedem Laden neu angegeben wer-
+den, das kann dann ganz schön lästig werden. Sie können deshalb statt des
+Password-Buttons auch den Button in der Mitte anklicken. Er enthält Ihre
+Seriennummer. Dann kann der Sourcetext nur noch auf einem Assembler mit
+dieser Seriennummer geladen werden — noch ein Grund, den OMIKRON.
+Assembler nicht weiterzugeben. Wenn jeder einen Assembler mit Ihrer Seri-
+ennummer hat, ist dieser Schutz ziemlich witzlos.
+
+„ASCII-Sichern...“ (SHIFT-F9) erlaubt es Ihnen, den Sourcetext im nor-
+
+
+
+TRANSLATED
+==========
+
+

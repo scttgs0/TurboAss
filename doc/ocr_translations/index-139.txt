@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+6_ DER DEBUGGER 137
+
+ 
+
+Zurückgeben müssen Sie nur, ob UNTRACE abgebrochen werden soll (dann
+muß das Zero-Flag Z=0 gelöscht werden) oder nicht (Z=1). Das Programm
+muß mit RTS beendet werden. Es darf alle Registerinhalte (natürlich außer
+A7) verändern. Es wird im Supervisormodus aufgerufen (der muß auch an
+bleiben!).
+
+Ihr Programm sollte natürlich so kurz und schnell wie möglich sein, weil es
+ja nach jedem Befehl des debuggten Programms einmal ausgeführt werden
+muß - da kann jeder Taktzyklus Minuten ausmachen.
+
+Der Debugger bemüht sich, die Abfrage in ein kurzes Programm zu überset-
+zen - da aber kein hochoptimierender Compiler eingebaut werden konnte (der
+Debugger darf ja auch nicht zu lang werden), können die Programme meist
+noch wesentlich optimiert werden. Achtung: Wenn Sie ein Register mit einem
+Wert vergleichen wollen, schreiben Sie immer „Register=Wert“ und niemals
+„Wert=Register“, da der Debugger dann etwas kürzen kann. Nun noch ein
+paar Beispiele für IF-Befehle und den daraus erzeugten Programmcode:
+
+IF "D1.w=100 ;Bricht ab, wenn das DO (auf Wortbreite)
+den Wert $100 hat. "”" kennzeichnet,
+das es sich um ein Register und nicht
+um die Speicherstelle DO handelt.
+
+moveq #0,D0
+move.w 6(A1),D0
+cmpi.l #$100,D0
+
+ 
+
+seq DO
+rts
+IF 100="D1.w ;Gleiche Abfrage wie oben; jedoch andersherum
+eingegeben
+
+move.l #$100,-(SP)
+moveq #0,D0
+move.w 6(A1),D0
+cmp.1l (SP)+,D0
+seq DO
+
+rts
+
+
+
+TRANSLATED
+==========
+
+

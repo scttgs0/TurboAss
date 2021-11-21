@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+16
+
+ 
+
+warten soll. Sie werden bei kürzeren Programmen (bis einige KByte) die
+Erfahrung machen, daß der OMIKRON. Assembler bereits fertig assembliert
+hat, bevor Sie die Assemble-Taste losgelassen haben. Auf den OMIKRON.
+Assembler müssen Sie niemals warten!.
+
+Wir haben uns, soweit es ging, an bestehenden Standards orientiert: Geübte
+Assembler-Programmierer müssen somit nicht umlernen, sondern können wie
+gewohnt weiterarbeiten. So versteht der Assembler nicht nur den Motorola-
+Standard, sondern auch diverse andere Befehls- und Pseudo-Opcode-Syntax-
+en . Unser Editor ist weitgehend Tempus-kompatibel (und das nicht nur in
+der Tastaturbelegung, auch in der Geschwindigkeit).
+
+Wenn Sie bestehende Quellcodes in den OMIKRON. Assembler übernehmen,
+werden diese weitgehend automatisch konvertiert. Sie können also begonnene
+Projekte bequem mit dem OMIKRON. Assembler weiterführen.
+
+Ach ja: Sie haben die Grundversion des OMIKRON.Assemblers erworben.
+Diese ist gegenüber der Makro-Version zwei Einschränkungen unterworfen:
+
+1. Die Grundversion beherrscht keine Makros (hätte man sich fast den-
+ken können...). Makros (Befehls-Zusammenfassungen) sind sinnvoll,
+wenn Sie von Assembler aus viele Betriebssystemaufrufe machen wol-
+len. Wir haben Libraries mit Betriebssystemaufrufen auf der Diskette
+mitgeliefert; dadurch können Sie im Regelfall auch hierbei auf Makros
+verzichten.
+
+2. Die Grundversion besitzt keinen Linker. Linken (Programmteile zu-
+sammenbinden) müssen Sie bei normalen Assemblern z.B. deshalb,
+damit das Assemblieren nicht so lange dauert. Das ist beim OMI-
+KRON. Assembler nicht nötig. Der OMIKRON. Assembler besitzt schon
+in der Grundversion eine begrenzte Linkfähigkeit, d.h. Assemblerpro-
+gramme können zu anderen Programmen zugelinkt werden. (Siehe auch
+Seite 60)
+
+Falls Sie auf Makros bestehen, oder wenn Ihnen die Link-Möglichkeiten des
+OMIKRON.Assemblers nicht ausreichen, empfehlen wir die Makro- Version
+des OMIKRON.Assemblers; Sie erhalten ein Upgrade gegen den Differenz-
+betrag zwischen den Verkaufspreisen der Grund- und der Makro- Version.
+
+
+
+TRANSLATED
+==========
+
+

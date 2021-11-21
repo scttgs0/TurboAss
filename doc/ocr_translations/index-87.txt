@@ -1,0 +1,55 @@
+ORIGINAL
+======== 
+
+
+5_ DER ASSEMBLER 85
+
+ 
+
+Tabelle 5.5: Das DX-Demo
+
+ 
+
+DXSET 10,’ ’ ;10 Zeichen, mit Spaces auffüllen
+
+texte: DX.B "'Laden’
+DX.B ’Speichern’
+
+ 
+
+5.6.2 Daten-Strukturen mit RS
+
+RS.x reserviert Speicher wie DS. Das Label vor dem Befehl wird jedoch
+nicht auf die absolute Adresse gesetzt, sondern ihm wird der Wert des
+RS-Counters zugewiesen. Danach wird der RS-Counter entsprechend
+erhöht. Ein Beispiel: Sie möchten die X- und Y-Koordinate eines Cur-
+sors speichern (auf Wortbreite). Mit DS sieht das so aus:
+
+XKDOORD: DS.W 1
+YKDOORD: DS.W 1
+
+und Sie greifen absolut darauf zu:
+
+move #10,YKDORD ; 20 Taktzyklen 8 Bytes lang
+clr XKOORD ; 8 Taktzyklen 6 Bytes lang
+
+Mit RS geht es so:
+
+rsstart:
+XKOORD: RS.W 1 ; XKOORD bekommt den Wert 0
+YKOORD: RS.W 1 ; YKOORD bekommt den Wert 2
+
+und der Zugriff sieht so aus:
+
+lea rsstart,a6 ; Nur einmal erforderlich,
+
+; kostet 12 Taktzyklen
+move #10,XKOODRD(a6) ; 16 Taktzyklen 6 Bytes lang
+clr YKOORD(a6) ; 8 Taktzyklen 4 Bytes lang
+
+
+
+TRANSLATED
+==========
+
+

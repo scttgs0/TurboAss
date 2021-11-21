@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+38 5.5 Der Editor
+
+ 
+
+e Als Folgezeichen sind erlaubt: Alle oben angeführten Zeichen sowie
+„S#"“ und „0“, 9“.
+
+e Als Anfangs- und Folgezeichen kann man auch alle Tasten mit einem
+ASCII-Code < 32 mit Ausnahme von 0, 10, 13 und 27 verwenden.
+Ob man diese Möglichkeit ausnutzt, sollte man allerdings gründlich
+überdenken: Die Symbole sind nicht nur schlecht einzugeben (über
+ALTERNATE-Zehnerblock), sie bereiten auch Probleme bei ASCII-Edi-
+toren, falls man einen Sourcetext im ASCII-Format abspeichert.
+
+Der Assembler unterscheidet normalerweise Groß- und Kleinbuchstaben. Das
+bedeutet, daß die Symbole „Test“, „test“ oder „TEST“ drei unterschiedliche
+Symbole sind. Wer einen alten Sourcetext hat, der das Symbol „test“ und
+„Test“ für die gleiche Funktion benutzt, kann im Menü „Editor 2“ (siehe
+Kapitel 5,5.5 auf Seite 77) eine automatische Wandlung der eingegeben Sym-
+bole in Groß- oder Kleinbuchstaben einschalten. Der Assembler wandelt dann
+bereits bei der Übernahme einer Zeile alle Symbole, wobei natürlich auch
+Umlaute gewandelt werden.
+
+Rechnen mit Symbolen
+
+Es gibt ja zwei Arten von Symbolen, zum einen relozierbare und zum anderen
+absolute Symbole. Wir haben auf eine sprachliche Unterscheidung beider
+Symboltypen in der Anleitung geachtet, damit es nicht zu Verwechslungen
+kommt: Konstanten sind bei uns absolute Symbole; d. h., Symbole, welchen
+mit dem Pseudo-Opcode EQU oder SET ein Wert zugewiesen wurde.
+
+Beispiel:
+
+wert: ZEQU 100
+
+wert2: EQU wert*10+1 ;Da wert eine
+;Konstante ist, ist
+jwert2 auch eine.
+
+wert1: RS.W 10 ;Eine Konstante, da RS
+;fast so wie
+;EQU funktioniert.
+
+
+
+TRANSLATED
+==========
+
+

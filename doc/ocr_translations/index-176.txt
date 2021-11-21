@@ -1,0 +1,53 @@
+ORIGINAL
+======== 
+
+
+174 6.12_ Der „Resident“-Befehl
+
+ 
+
+® 33,34,45,46, Abbruch bei Trap #%
+
+e 33,34, Programmende bei Trap #%
+
+eo 52, Illegale Parameter bei Trap #
+
+e 78, Externer Abruch (Ring-Indicator)
+e 100, Abbruch bei Breakpoint #
+
+e 101, Stop-Breakpoint #
+
+102, Permanent-Breakpoint #
+
+® 103, User-Breakpoint #
+
+-1, Unbekannte Exception #
+
+Negaler Speicherbereich!
+
+wenn ein Busfehler im Debugger auftritt, also z.B. wenn Sie mit ME-
+MORY o. ä. Speicher ansehen wollen, der nicht existiert und die Variable
+MEMCHECK gesetzt haben.
+
+Bei Bus-, Adreßfehlern wird ein Funktionscode mit ausgegeben. Dieser hat
+folgende Bedeutung:
+
+e Bit 2: 1 = Supervisormodus, 0 = Usermodus
+se Bit 1: 1 = Programm, 0 = Daten
+
+Dazu wird noch ein „B“ ausgegeben, wenn ein einzelner Befehl, oder ein „T“
+ausgegeben, wenn ein Trap ausgeführt wurde.
+
+6.12 Der „Resident“-Befehl
+
+Man kann den OMIKRON.Debugger auch resident im Speicher halten, wie
+z. B. den Templemon. Dazu geben Sie nach dem Laden den Befehl RESIDENT
+ein. Nach einer Sicherheitsabfrage wird der Debugger verlassen. Sie befinden
+sich dann wieder auf dem Desktop, als wenn Sie ihn mit QUIT verlassen
+
+
+
+TRANSLATED
+==========
+
+

@@ -1,0 +1,44 @@
+ORIGINAL
+======== 
+
+
+154 6.6 Die Befehle
+
+ 
+
+Scrolling möglich. Eine eventuell vorhandene Symboltabelle wird ignoriert,
+d.h., Sprünge werden stets mit Adressen ausgegeben.
+
+/
+
+Syntax : /(Datum]{,Datum}
+Kurzform : /
+
+„/“ gehört zu DISASSEMBLE. Es können nur die Hex-Daten geändert werden.
+(Übernahme mit RETURN nicht vergessen, die Zeile wird dann neu disassem-
+bliert.)
+
+List
+
+Syntax : LIST [Parameter]
+Kurzform : L
+
+Entspricht DISASSEMBLE, es wird jedoch kein Hex-Teil ausgegeben. Dafür
+werden Symbole (wenn vorhanden) angezeigt. Die Befehle können geändert
+werden.
+
+Syntax : !Dpcode
+Kurzform : !
+
+Dies ist der zu LIST gehörende Befehl. Vor jeder Zeile wird ein „!“ ausgege-
+ben; dann können Sie den Opcode ändern, indem Sie ihn überschreiben und
+mit RETURN den neuen Übernehmen. Es wird dann in der folgenden Zeile
+automatisch wieder ein „!“ vorgegeben. Dies ermöglicht die einfache Eingabe
+von wenigen Befehlen direkt in den Speicher.
+
+
+
+TRANSLATED
+==========
+
+

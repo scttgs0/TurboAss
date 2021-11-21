@@ -1,0 +1,93 @@
+ORIGINAL
+======== 
+
+
+J__LITERATURHINWEISE
+
+233
+
+ 
+
+Datei umbennen 149
+Dateiattribut ändern 149
+Dateiattribute 150
+Dateiausgabe 146,147
+Datenregister 109
+DAT-Datei 26
+DCB.x 83
+DC.x 82
+Debuggen 185
+Debugger
+beenden 116,1298,168,174
+Sprung in den 60
+Debugger-Demo 175
+Debugger
+löschen 61
+nachladen 60
+resident 104
+residenter 26
+Debuggervariablen 125
+DEFAULT 97
+Default 185
+DEGAS 44,116
+DESKTOP .PRG 22,221
+Devpac 144
+dezimal 185
+Dialogboxen 20
+Digital Research 57,60
+Direct 122
+Directory 120,145
+Disassemble 110,153
+Disassemble PC 127
+Disk formatieren 150
+Diskettenoperationen 48
+Do 134
+Do PC 117
+Doppelklick 28,770,185
+Doppelpunkt 31,60
+
+Doppelte Deklaration 101
+DRI-Linker-Format 60
+Drop-Down-Menüs 28
+Drucken 65
+Drucker 78,146
+Druckeranpassung 66
+Druckertreiber 66
+DSBSS.x 84
+DS.x 82
+Dump 110,156
+DX.B 84
+DXSET 84
+Editmodus 43
+Editor 30
+Editor 1 75
+Editor 2 77
+Editor-Menü 80
+Einfügemodus 30
+Einfügen I/II 30
+Einführung 25
+Eingabe von Befehlen 124
+Einstellungen 52,73
+Einstellungen sichern 168
+Einstellungen
+
+sichern 80
+ELSE 98
+END 88
+Endadresse 125
+ENDC 98
+Ende 54
+ENDIF 98
+ENDR 96
+Environment-Var. 22,26,90,221
+EQU 38,62,88
+Erase 148
+Ersetzen 67
+EVEN 84
+
+
+
+TRANSLATED
+==========
+
+

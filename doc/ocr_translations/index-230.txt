@@ -1,0 +1,24 @@
+ORIGINAL
+======== 
+
+
+228 J.31 XBI0S.S
+
+ 
+
+1.31 XBIOS.S
+
+(siehe BIOS.S)
+
+1.32  XBRA.SRC und XBRA.TXT
+
+Dieses ist eine Norm für vektorverbiegende Programme. Es erlaubt Ihnen,
+Vektoren zu ändern zurückzusetzen und zu testen, ob ein Vektor bereits
+verbogen worden ist. Eine genauere Erläuterung steht im File XBRA .TXT.
+
+
+
+TRANSLATED
+==========
+
+

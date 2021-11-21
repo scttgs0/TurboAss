@@ -1,0 +1,70 @@
+ORIGINAL
+======== 
+
+
+64
+
+5.5 Der Editor
+
+ 
+
+Der Menüpunkt „Informationen...“ (SHIFT-F4) gibt eine kleine Statistik
+aus (Siehe Abbildung 5.19 auf Seite 64), wie der Speicher momentan belegt
+ist. Zur Speicherverwaltung des Assemblers noch einige Worte:
+
+ 
+
+Zeilenanzahl: 445 von 38431
+Programm (Bytes): 1446 von 1280165
+Renarks (Bytes): 1544 von 256216
+Yabellenzinträge: 125 von 12010
+
+ 
+
+davon? 57 Synkole
+0 Fornein
+67 OC-Zeilen
+1 Sonstige
+Zielcode maxinal 130745 Bytes
+
+EX
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.19: Die Informationsbox
+
+Der Sourcetext besteht beim Assembler aus 4 Blöcken, die durch Pointer
+miteinander verkettet sind.
+
+1. Der wohl wesentlichste Block (für den Editor) ist wohl die Zeilentabelle;
+
+jede Zeile kostet 10 Bytes Speicherplatz. In dieser Tabelle werden alle
+Informationen über eine Zeile abgelegt (Remark ja/nein, fehlerhafte
+Zeile ja/nein, ...).
+
+. Der Programmblock. Die angegebene Programmlänge müßte in den
+
+meisten Fällen der tatsächlichen recht nahe kommen (aber z.B. DS-
+Befehle fallen aus dem Rahmen).
+
+. Der Remarkblock. Auch hierzu noch eine Bemerkung: Der Editor packt
+
+mehrere gleiche Zeichen, d.h., 80 mal „7“ kostet nur drei Bytes Spei-
+cherplatz.
+
+‚ Der letzte Block enthält alle Symbolnamen, Formeln und sonstige spei-
+
+cherplatzfressende Informationen.
+
+
+
+TRANSLATED
+==========
+
+

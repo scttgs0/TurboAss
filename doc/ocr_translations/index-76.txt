@@ -1,0 +1,59 @@
+ORIGINAL
+======== 
+
+
+5.5 Der Editor
+
+ 
+
+A Patei Assembler Fditol TE a
+Z:_ 501 9 Dr \OMIKRON, ASSNHONANE, SAL Darstellung... 5 lien
+
+ 
+
+Editer 1... F4
+Editor 2... 7
+Editor Ju.
+
+ 
+
+F-Tasten belegen...
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.30: Das Menü „Einstellungen“
+
+ 
+
+Darstellung:
+
+Bafehlstab: 16 Opcodes Pgrof]
+Operaadantab: 24 Pseudesps NN
+Renarktab: 40 Register MI Cklala]
+Pseudocptabi 16 Hexzehl
+Pseudo-Rentab: 41 Stack
+FSBELER 1088] Zahl kürzen BE
+EX
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abbildung 5.31: Die Darstellungs-Dialogbox
+
+
+
+TRANSLATED
+==========
+
+

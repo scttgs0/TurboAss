@@ -1,0 +1,50 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 45
+
+ 
+
+CONTROL-ALT-DELETE Löst einen RESET aus (wie im TOS 1.4).
+Eine resetfeste Ramdisk bleibt dabei erhalten, der
+Assembler ist jedoch weg (und Ihr nicht gesicher-
+ter Sourcetext auch!). Das nennt man auch einen
+Warmstart des Rechners.
+
+CONTROL-ALT-rechtes SHIFT-DELETE Löst einen Kaltstart aus,
+dabei wird der gesamte Hauptspeicher des Rech-
+ners gelöscht. Es ist somit vollkommen witzlos, sich
+vorher seinen Sourcetext in einer Ramdisk abzu-
+legen: der ist dann weg! (Ebenso wie alle kleinen
+netten RESET-festen Viren, die Sie sich im Laufe
+der Zeit eingefangen haben).
+
+ESC Nach ESC ändert sich die Cursorform. Wenn dann
+eine Buchstabentaste gedrückt wird, wird ein Be-
+fehl ausgeschrieben (man kann also mit ESC Be-
+fehle abkürzen). Die Belegung der Tasten nach ESC
+steht in Tabelle 5.3.
+
+5.5.5 Die Drop-Down-Menüs
+
+ 
+
+Abbildung 5.1: Die Drop-Down-Menüs (eingeklappt)
+
+Die meisten Funktionen der Menüleiste sind auch auf Tastendruck zu er-
+reichen. Welche Tastenkombination zu drücken ist, steht jeweils hinter den
+Einträgen. Dabei können drei Steuerzeichen verwendet werden:
+
+1. ” bedeutet die CONTROL- Taste, die mit einer anderen Taste zu drücken
+ist (z.B. °I für CONTROL-I (Info aufrufen)).
+
+2. Mit & ist die ALTERNATE-Taste gemeint (z.B %Y für ALT-Y (Block
+löschen)).
+
+
+
+TRANSLATED
+==========
+
+

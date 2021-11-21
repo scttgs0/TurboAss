@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+6_DER DEBUGGER 173
+
+ 
+
+?String zu lang
+Es sind max.31 Zeichen bei KEY erlaubt.
+
+?Disk full
+wenn bei Fwrite nicht alle Bytes geschrieben wurden.
+
+FAT may be defect
+wenn bei Fread nicht alle Bytes gelesen wurden.
+
+?Nicht möglich
+Wenn FIND, HUNT bzw. ASCFIND das Ende schon erreicht haben und
+trotzdem CONT eingegeben wurde.
+
+2, Busfehler
+
+3, Adreßfehler
+
+4, Iegaler Befehl
+
+5, Division durch Null
+
+6, Befehl CHK
+
+7, Befehl TRAPV
+
+8, Privilegverletzung
+
+9, Trace
+
+14, Abruch durch Shift-Shift
+
+15, Nicht initialisierter Interrupt
+16,104, Ende durch RTS
+
+17, Alternate + HELP gedrückt
+24, Nicht maskierbarer Interrupt (NMI)
+30,31, Illegaler Interrupt
+
+32,35,36,37,38,39,40,41,42,43,44,47, Undefinierter Trap #
+
+
+
+TRANSLATED
+==========
+
+

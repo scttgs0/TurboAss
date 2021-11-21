@@ -1,0 +1,51 @@
+ORIGINAL
+======== 
+
+
+28 5.3 Die Drop-Down-Menüs
+
+ 
+
+auch nichts, denn schließlich soll diese Anleitung Sie ja in die Benutzung
+einführen.
+
+Kommen wir nun zur genaueren Betrachtung des OMIKRON.Assemblers,
+
+5.3 Die Drop-Down-Menüs
+
+Sie verhalten sich fast genauso, wie die Drop-Down-Menüs des GEM. Es gibt
+nur einen kleinen Unterschied: Falls Sie einen Eintrag aus Versehen berühren
+und ein Menü herunterklappt, brauchen Sie nur die rechte Maustaste zu
+drücken, und schon ist das Menü wieder eingeklappt!. Eine Erklärung der
+einzelnen Menüpunkte folgt in der Erklärung des Editors (siehe Kapitel 5.5.5
+auf Seite 45).
+
+5.4 Die Funktionen der Maus
+
+Die linke Maustaste: Mit der Maus können Sie den Cursor positionieren,
+indem Sie über der neuen Position kurz die linke Maustaste drücken.
+
+Sie können mit der Maus auch einen Block markieren, indem Sie die die Maus
+mit gedrückter linker Taste nach oben bzw. unten bewegen. Wenn Sie den
+Bildschirmrand erreichen, fängt der Sourcetext an zu scrollen.
+
+Mit einem Doppelklick mit der linken Taste auf ein Symbol führt der Edi-
+tor einen Sprung zu der Zeile aus, in der das Symbol definiert wird. Wenn
+der Cursor bereits vor dem Doppelklick auf der Symboldefinition stand, wird
+das Symbols in die Funktion „Symbol suchen. ..“ übergeben, und die entspre-
+chende Dialogbox erscheint (siehe Kapitel 5.5.5 auf Seite 67). Das bedeutet
+praktisch folgendes: Wenn Sie auf einen Symbolaufruf klicken, springen Sie
+zur Definition; wenn Sie auf eine Definition klicken, können Sie über die
+Dialogbox die Aufrufe suchen.
+
+Die rechte Maustaste: Man kann auch mit der rechten Taste doppel-
+klicken: Dann wird der Rechner aufgerufen und die Formel, auf die geklickt
+
+1Genauso verhält es sich in OMIKRON.BASIC.
+
+ 
+
+TRANSLATED
+==========
+
+

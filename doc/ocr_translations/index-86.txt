@@ -1,0 +1,52 @@
+ORIGINAL
+======== 
+
+
+84 5.6 Die Pseudo-Opcodes
+
+ 
+
+DSBSS.x entspricht fast DS.x, und wird auch zu DS.x konvertiert. Der Un-
+terschied ist nur, daß der GenST den DSBSS-Befehl ins BSS verschiebt,
+während der OMIKRON.Assembler ihn als einen normalen DS ansieht
+und den Platz an der Stelle in den Code einfügt, an dem der Befehl
+steht.
+
+(.)JEVEN (ALIGN.W) sorgt dafür, daß der nachfolgende Befehl bzw. die
+nachfolgenden Daten auf einer geraden Adresse liegen. Dazu wird, wenn
+der PC ungerade ist, ein Null-Byte eingefügt. Dieser Befehl ist meistens
+überflüssig, da der OMIKRON. Assembler automatisch alle Befehle und
+DC.W/L auf gerade Adressen legt, Dabei wird die Warnung „Adresse
+wurde begradigt“ erzeugt.
+
+DX.B ’String’ fügt den String in den Programmcode ein. Im Unterschied
+zu DC wird der String bis zu einer vorgegebenen Länge aufgefüllt. Dies
+ist praktisch, wenn Sie eine Tabelle mit gleichlangen Einträgen anlegen
+wollen, da Sie nicht mehr jeden String einzeln verlängern müssen, bis
+er die vorgeschriebene Länge hat.
+
+DXSET Länge,[Füllwert] legt die Länge für DX fest. Wird kein Füllwert
+angegeben, wird 0 genommen. Wenn ein String länger ist, als der bei
+DXSET angegebene Wert, wird bei der Assemblierung die Fehlermel-
+dung „String zu lang“ erzeugt.
+
+Ein Beispiel:
+
+Von Ihrem Programm soll die gerade ausgeführte Operation oben rechts
+auf dem Bildschirm angezeigt werden. Dafür ist ein zehn Zeichen brei-
+tes Feld vorgesehen. Die Texte dürfen nun einmal nicht länger als zehn
+Zeichen und sollen zweitens mit Spaces aufgefüllt sein, damit der un-
+genutzte Teil der Anzeige durch die Spaces gelöscht wird. Außerdem
+können Sie die Adresse eines jeden Textes ermitteln, indem Sie 10 *
+Nummer zur Adresse des ersten Texts addieren. Also legen Sie die Texte
+mit DX ab (siehe Tabelle 5.5 auf Seite 85).
+
+Wenn Sie einen zu langen Text eingeben, bemängelt der Assembler das
+bei der Assemblierung.
+
+
+
+TRANSLATED
+==========
+
+

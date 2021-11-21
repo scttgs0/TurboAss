@@ -1,0 +1,56 @@
+ORIGINAL
+======== 
+
+
+5 DER ASSEMBLER 87
+
+ 
+
+auch ins Text-Segment packen. Die Unterteilung dient nur der Über-
+sicht, Manchmal kann Sie aber auch von Nachteil sein: Die Daten im
+DATA-Segment liegen im Speicher hinter dem Text-Segment, wo durch
+sich eine große Distanz zwischen Befehl und angesprochenem Datum
+ergibt. Wenn Sie nun ein Datum mit der PC-relativen Adressierung an-
+sprechen wollen, darf diese Distanz nicht größer als 32 768 bzw. —32 767
+Byte sein. Sonst müßte das Datum in den Programmtext eingefügt wer-
+den.
+
+(SECTION) (.)BSS legt den Start des Block-Storage-Segments fest. Im
+BSS sind nur DS-Befehle ohne Füllwert, RS-Befehle und natürlich noch
+EVEN, RSEVEN u.ä. möglich. Das BSS wird nicht mit abgespeichert;
+es wird nur im Programm-Header (siehe Kapitel D.1 auf Seite 189)
+eingetragen, wie lang das BSS ist. Dadurch wird Ihr Programm kürzer,
+als wenn Sie die Variablen ins DATA- oder Text-Segment gelegt hätten.
+Nach dem Laden des Programms stellt nun das Betriebssystem fest,
+wie groß das BSS sein soll und reserviert einen entsprechend großen
+Speicherbereich. Dieser wird gelöscht (also mit 0 gefüllt).
+
+Ein Beispiel:
+
+TEXT ;kennzeichnet den Anfang des Text-Segments,
+;kann auch weggelassen werden.
+
+;diverser Programmcode
+
+lea buffend,a0 ;Ende des Buffers in AO
+
+movem.l d0-d7/a1-a6,-(a0) ;Register retten
+
+pea copyright ;Adresse der Copyrightmeldung
+;auf den Stack pushen
+
+move.w #9,-(sp) ;Cconws - Funktionsnummer
+;(Zeile schreiben)
+
+trap #1
+addq.1l #6,sp ;Stackkorrektur - 6 Byte addieren
+lea buffend,a0
+
+movem.1 (a0)+,d0-d7/a1-a6 ;Register wiederholen
+
+
+
+TRANSLATED
+==========
+
+

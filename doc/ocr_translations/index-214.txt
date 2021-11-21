@@ -1,0 +1,57 @@
+ORIGINAL
+======== 
+
+
+212 H.6_ Die vorhandenen Prozeduren:
+
+ 
+
+JSR Ofdelete(A4)
+
+keine Parameter nötig
+
+oe Eine Dezimalzahl in einen Buffer schreiben
+
+LEA buffer(PC),A0
+MOVE.L #12345678,D0
+MOVEQ #7,D1
+
+JSR Odezout (A4)
+
+Die Zahl in DO wird als Dezimalzahl nach A0 geschrieben, die
+max. Stellenzahl steht in D1 (minus 1!)
+oe Hexzahlen in einen Buffer schreiben
+LEA buffer (PC),A0
+
+MOVE.L #$12345678,D0
+JSR Ohexlout (44)
+
+Die Zahl in DO wird als Hexzahl nach AO heschrieben. Als Unter-
+funktionen gibt es Ausgaben als Byte, Word, Adresse und Long
+
+JSR Ohexbout (A4)
+JSR Ohexwout (A4)
+JSR Ohexaout (A4)
+JSR Qhexlout(A4)
+
+e Mauszeiger umdefinieren
+
+MOVEQ #@1,D0
+JSR Ografmouse(A4)
+
+D0=0 — Pfeil
+=1 — Diskette
+=2 — Sanduhr
+e Pling!
+
+JSR Obe11(A4)
+2. Nun was für die Fortgeschrittenen. ...
+
+e Dialog ab A0 behandeln
+
+
+
+TRANSLATED
+==========
+
+

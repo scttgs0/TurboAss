@@ -1,0 +1,54 @@
+ORIGINAL
+======== 
+
+
+C_ EINIGE BEGRIFFSERKLÄRUNGEN 185
+
+ 
+
+Breakpoint: Ein Breakpoint dient dazu, den Programmablauf kontrollieren
+zu können. Nehmen wir an, Sie wollen ein Programm testen, von dem
+Sie wissen, in welchem Teil es fehlerhaft ist. Nun wäre es unsinnig, das
+Programm Schritt für Schritt durchzuarbeiten, bis Sie zu der eigentlich
+interessanten Routine kommen. Daher können Sie am Anfang der Rou-
+tine einen Breakpoint setzen und das Programm mit GO starten. Das
+Programm wird nun bis zum Breakpoint normal abgearbeitet; wenn das
+Programm auf den Breakpoint stößt, meldet sich der Debugger wieder.
+
+Wie funktioniert nun ein Breakpoint? Wenn Sie ein Programm star-
+ten, schreibt der Debugger an jeden Breakpoint einen illegalen Befehl
+($4FAC) und merkt sich den alten Inhalt. Wenn der Prozessor auf
+$4FAC stößt, führt das zur Exception 4. Er schreibt die alten Befehle
+zurück und meldet Breakpoint „x“. Deshalb ist es auch nicht möglich,
+Teile, die im ROM stehen, mit Breakpoints zu versehen - man kann ja
+nichts hineinschreiben.
+
+Cursor: Das schwarze blinkende Kästchen zeigt die momentane Schreibpo-
+sition an. Das heißt, wenn Sie ein Zeichen über die Tastatur einge-
+ben, wird es an die Position des Cursors geschrieben. Er kann mit den
+Cursorsteuertasten (4, 6, 8 und 2) bewegt oder mit der Maus gesetzt
+werden.
+
+Debuggen: Das Wort kommt aus dem Englischen und bedeutet: entwanzen.
+Als Wanzen (Bugs) werden Programmfehler bezeichnet, seit dem solch
+ein Tierchen in einem alten Röhrencomputer einen Fehler verursacht
+hatte.
+
+Default: In Dialogboxen und Alerts sind Default-Buttons dicker umrahmt
+als normale. Die sie kann man auch anwählen, indem man RETURN
+drückt.
+
+dezimal: Dezimale Zahlen werden mit einem „.“ vor der Zahl gekennzeich-
+net.
+
+Doppelklick: zweimal schnell hintereinander eine Maustaste zu drücken.
+
+Fz: Damit ist die Funktionstaste x gemeint (Funktionstasten sind die rau-
+tenförmigen grauen Tasten oben an der Tastatur.).
+
+
+
+TRANSLATED
+==========
+
+
