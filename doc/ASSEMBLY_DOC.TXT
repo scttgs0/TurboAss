@@ -1,0 +1,237 @@
+Documentation of the Assembly
+-------------------------------
+1) Structure of the row info table (10 bytes each):
+Offset          Content
+  0.w           Length of the opcode
+  2.w           Flagword for Operator
+  4.w           Flagword for Operand
+  6.w           Index of the symbol defined in the row, otherwise $FFFF
+  8.b           Error number
+  9.b           Length of Remarks
+
+2) Description of the flagwords
+     Bits       F E D C B A 9 8 7 6 5 4 3 2 1 0
+
+        Number:  0 0 0 0 0 0 0 0 0 0 0 0 c d d d
+  Quickoperand:  1 1 -----Symbol index----------
+      d(An,Xi):  1 0 H-Nib-Index a c 0 0 EOffset    Low-Byte=(A6+EOffset)
+ Register list:  1 0 0 0 0 0 0 0 0 0 0 1 EOffset    Index=(A6+2)
+Symbol/Formula:  0 0 0 0 0 0 0 1 a c b b EOffset    Index=(A6+EOffset)
+
+        a: 1=PC-relative
+        b: Width:       00=Byte, 01=Word, 10=Long
+        c: Sign:        0=Plus, 1=Minus
+        d: Notation:    000=Decimal,  001=Hex, 010=Binary, 011=reserved
+                        100="Ascii",  101='Ascii'
+                        110="String", 111='String'
+  EOffset: Insert offset relative to the beginning of the command
+  H-Nib-Index: High-nibble of the symbol index
+  Symbolindex: 14-Bit-Symbol index
+
+3) Structure of the entries in the table
+        Symbol:
+        0.l : value
+        4.b : Flags (Bit7=1 -> defined, Rest like flags with standard symbol
+                                                              Tabel)
+        5.b : Typflag ($00=Label,$FF=constant,$FE=EQU-constant,
+                       $01=register list)
+        6.b : Bit7=1 -> Double declaration, rest unused
+        7.b : unused
+     8-30.b : Symbol name (23 sign)
+       31.b : $00 (ID for symbol entry)
+
+        formula:
+        0.l : value
+        4.b : Flags (Bit7 always 1(defined), Rest unused)
+        5.b : Typflag ($00=Label,$FF=constant)
+     6-30.w : Format
+              Bit 15-14: number ')'
+              Bit 13-12: number '('
+              Bit 11-8 : Arithmetic(0='+',1='-',2='|',3='^',
+                         4='<<',5='>>',6='*',7='/',8='&',9='%',
+                         10='=',11='<',12='>',13='<=',14='>=',15='<>'
+              Bit 7 : Symbolflag
+              Bit 6 : Longflag
+              Bit 5 : Flag for '!'
+              Bit 4 : Flag for '~'
+              Bit 3 : sign
+              Bit 2-0: Representation of the number (at zero symbol)
+              It follows a Word (bit6 = 0) or a long (bit6 = 1) that the
+              value or the index contains
+              internal variables have follow-on index:
+                $8000: *
+                $8008: ^^DATE
+                $8010: ^^TIME
+                $8018: ^^RSCOUNT
+                $8020: ^^RANDOM
+                $8028: ^^SYMTAB
+
+       31 b : $FF (ID for formula entry)
+
+        DC-entry:
+     0-29 w :   Flagwords For DC line
+                Bit 15=1 then
+                Bit 14  : sign
+                Bit 13-0: Symbol or formula index
+
+                Bit 15=0 then
+                Bit 3-0: Display flag for number
+                Special case lower byte = $ ff, then
+                Bit 13-8: Highbyte index number.
+                Bit 15-8 of the following words: lowbyte index number of the
+                                                Follow-up
+       31 b :   $FE (ID for DC entry)
+
+        IBYTES-entry:
+        0.l : Number of bytes
+        4.l : Position
+        8.l : Actual length (determines during assembly)
+    12-30.b : Filename
+       31.b : $FB (ID for other other)
+
+        Output and path entry:
+     0-29.b : Pfad-/Filename
+       31.b : $FC
+
+        GLOBAL-entry:
+     0-29.w : Indexes of symbols that are to be explained globally
+              (The list is completed by a $ 80 (or $ FA) byte)
+       31.b : $FA
+        
+4) Encoding of pseudo-opcodes:
+   (Specified are the relevant bytes in the line info)
+
+        DC: llll $020x iiii
+   llll: Number of bytes (if odd is rounded up)
+   iiii: Index of the DC entry (Bit7 is set at DC.B if number
+                                       odd)
+      x: 0=.B, 1=.W, 2=.L 
+
+        DS: 0004 04xx wwww   Fill value is in the program code (Long)
+   wwww: Number (number or index (with constant / formula))
+   xx: Bit7-6: broad: 00=Byte,01=Word,10=Long
+       Bit5-4: 00=Dec,01=Hex,10=Bin,11=Constant / formula
+       Bit 3 : Sign Fill value (1 = minus)
+       Bit2-0: Representation Fill value (000 = dec, 001 = hex, 010 = bin
+                                     100="Ascii",101='Ascii')
+
+        TEXT: 0000 06xx
+        DATA: 0000 08xx
+        BSS:  0000 0Axx
+        EVEN: 0000 0Cxx
+   xx: Is set to $FF when assembled when it was straightened
+
+        EQU: 0000 0E00 000d ssss
+   ssss: Index of the symbol defined in the line
+      d: Representation flags for the number (already entered in the table)
+         Note: EQU entries with value get $FE as an identifier
+ 
+             0000 0E01 iiii ssss
+   iiii: Index of the formula / symbol (upper two-bits set)
+
+        OPT: 0000 1000 xxxx
+
+        RS.x: 0000 18xx wwww
+   wwww: Value or index on symbol / formula
+     xx: Bit 3-0: 0000=Dec
+                  0001=Hex
+                  1111=Index
+         Bit 5/4: 00=.B
+                  01=.W
+                  10=.L
+
+        RSSET: 0000 1Axw wwww
+  wwwww: Value or index
+      x: Bit 3=sign
+         Bit 2=1 -> Index
+         Bit 0 Darst. (0=Dec,1=Hex)
+
+        REG: 0000 1C00 0000 ssss
+   ssss: Index of the tab list icon
+
+        IBYTES: 0000 1Exx iiii
+   iiii: Index of the IByTe entry
+      x: 0=Dec/1=Hex
+
+        BASE: 0000 20xx iiii
+   iiii: Index of the label, or if negative:
+                $8000: * 
+                $8002: OFF
+                $8006: TEXT
+                $8008: DATA
+                $800A: BSS
+      xx: 0=A0 ... 7=A7, 8=DC.W, 9=DC.B
+
+        PATH: 0000 2200 iiii
+   iiii: Index of the PATH entry
+
+        CNOP: 0000 24aa oooo
+   oooo: 16 Bit Offset
+     aa: 8 Bit Alignment
+
+        OUTPUT: 0000 2600 iiii
+   iiii: Index on Output entry
+
+        IF: 0000 28xx iiii
+   iiii: Index of the symbol / formula (top bit becomes when assembled
+                                        set when condition is true)
+     xx: 0=IF, 2=IFEQ, 4=IFNE, 6=IFGT, 8=IFGE, A=IFLT, C=IFLE, E=IFD,
+         10=IFND
+
+        ELSE: 0000 2A00 0000
+
+        ENDC: 0000 2C00 0000
+
+        RSEVEN: 0000 2E00 0000
+
+        DX.B: 0000 3000 iiii
+   iiii: Index of the string
+
+        DXSET: 0000 32xx llww
+     ww: Word value
+     ll: Long value
+     xx: Bit 3-0 Darst. Word value
+         Bit 4 Darst. Long (0=Dec/1=Hex)
+
+        DCB.x: 0000 34xx wwww
+            - please refer DS.x -
+
+        FAIL: 0000 3600 iiii
+   iiii: Index of the entry, if no text = $FFFF
+
+        ORG: 0004 380y 000x
+      x: Bit 0: 0=Dec/1=Hex
+      y: Bit 0: 1=",^" stated
+      The address is in the program memory (longword)
+
+        SET: 0000 3A00 iiii ssss
+    ssss: Index of the symbol to which the value is to be assigned
+    iiii: Index of the formula entry
+
+        REPT: 0000 3C0d wwww
+   wwww: Value or index
+      d: 0=Dec, 1=Hex, 15=Index
+
+        ENDR: 0000 3E00
+
+        SWITCH: 0000 4000 iiii
+   iiii: Index of the formula
+
+        CASE: 0000 42xx wwww
+   wwww: Wert
+     xx: Bit 7=1, If no value follows
+         Bit 3= sign
+         Bit 2-0 Darst. value
+
+        ENDS: 0000 4400
+
+        GLOBAL: 0000 4600 iiii
+   iiii: Index of entry with symbol indexes
+
+        COMMON: 0000 4800 iiii ssss
+   ssss: Index of the symbol to be defined
+   iiii: Index of the formula
+
+        DEFAULT: 0000 4A00 wwww
+   wwww: Button number (0-12)          
+
