@@ -1,3 +1,9 @@
+# Fork Interest
+
+Original: https://github.com/sarnau/TurboAss
+
+The intent of this fork is to produce an English version of TurboAss, Bugaboo, and the associated documentation.
+
 # Atari ST TurboAss / Bugaboo
 
 This is a collection of the old code base for the TurboAss and Bugaboo, which was first sold commercially under the name OMIKRON.Assembler and later as shareware under the name TurboAss/Bugaboo.
@@ -13,29 +19,29 @@ Features:
 
 TurboAss Start
 --------------
-![TurboAss About Box](turboassabout.gif)
+![TurboAss About Box](media/turboassabout.gif)
 
 Bugaboo Start
 -------------
-![Bugaboo](bugaboo.gif)
+![Bugaboo](media/bugaboo.gif)
 
 TurboAss Settings
 -----------------
-![TurboAss Settings](turboasssettings.gif)
+![TurboAss Settings](media/turboasssettings.gif)
 
 TurboAss Source Info
 --------------------
-![TurboAss Source Info](turboassinfo.gif)
+![TurboAss Source Info](media/turboassinfo.gif)
 
 TurboAss Assembly
 -----------------
-![TurboAss Assembly](turboassass.gif)
+![TurboAss Assembly](media/turboassass.gif)
 
 (The "lines per minute" is about 8x higher than on an 8MHz Atari ST, because I did this screenshot in an emulator inside Virtual PC)
 
 Bugaboo source view
 -------------------
-![Bugaboo source view](bugaboolist.gif)
+![Bugaboo source view](media/bugaboolist.gif)
 
 If somebody is still interested, here are the old files. This repository contains the following blobs:
 - TurboAss.asm is the text source of the editor/assembler.
