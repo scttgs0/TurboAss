@@ -1,0 +1,1119 @@
+                            TurboAss
+                        ©1989 ∑-Soft
+                from Markus Fritze & Sören Hellwig
+
+                           Version 1.7
+
+
+1. General
+
+1.1 Introduction
+
+After a long time and forth, we decided to release our
+Assembler package as Shareware. The Assembler was formerly
+known by Omikron.Software sold under the name
+Omikron.Assembler. The Shareware version is, however
+an extended version of the Omikron.Assembler. She contains
+fewer mistakes, other features and is still a little bit
+faster. The package also includes (of course) a debugger called
+Bugaboo (formerly Omikron.Debugger). So every user can now
+experience the enjoyment of a fast and powerful assembler and
+Debugger; especially since there are many programming languages than
+Shareware or PD, but still no (reasonable) Assembler.
+
+The company Omikron.Software has nothing to do with this assembler
+package. Σ-soft is the sole holder of all rights of the assembler
+and debugger!
+
+This text is not intended as a guide, but only
+as a short introduction to the assembler. The complete instructions
+are about 240 pages there are the authors. If necessary, can also
+The ST magazine 11/89 and 12/89 are used. There
+The reference card to the assembler and debugger on the topic.
+
+Addendum:
+
+There are a lack of features in this readme, in comparison
+For instructions, I'm just too much ... (Markus)
+
+
+1.2 Features of TurboAss
+
+   - Simple and thoughtful (!) Operation.
+
+   - The assembler translates averaging 1 300,000 lines
+     per minute.
+
+   - Syntax check already when entering. Sometimes even
+     Semantics check! Both typos, as well
+     double assigned symbol names already when entering
+     reported.
+
+   - Many particularly powerful functions of the editor,
+     e.g. search of symbols, replace symbols, fold
+     of program parts (as in GFA-Basic 3.0), U.V.A.M.
+
+   - Fantastic combination of debugger and assembler. At
+     a crash of a program in the debugger can
+     Assembler automatically the fall address in one
+     convert line number !!!
+
+   - Own keyboard and screen drivers => even at
+     the toughest program crashes work assembler and
+     debugger nor.
+
+   - No macros !!!
+
+   - u.v.a.m.
+
+
+1.3 What is Shareware?
+
+   - Everyone can / may / must / should copy the TurboAss! Included
+     but always all (!) files must always be copied.
+
+   - whom likes the assembler should be fairly 50dm
+     transfer. This has advantages for all parties:
+
+     For us:
+     - We do not work completely for free (in turbo-ace 3
+       "Mannes" work)
+
+     For the user:
+     - He gets a 240 pages strong instructions
+
+     - He gets the latest version with personal
+       serial number
+
+     - He gets the first update for free
+
+     - He receives a faultless version for found errors
+
+     - He can turn to us in case of problems
+
+     - He gets for every user who in government
+       Serial number indicates, 10dm (but a maximum of 10 times, we
+       do not want to finance PD sales). So the money is
+       a "compensation" for demonstrating the assembler and
+       copy.
+
+     - Again: Somebody can register, so he gives the
+       Serial number of previously use assembler. The user,
+       it hears this serial number gets 10dm from us.
+       Understood?
+
+If you want to accept this offer, please contact:
+                Markus Fritze
+                xxxxxxxxxxxx xx
+                2000 Norderstedt 1
+                Tel: 040/xxxxxxx
+                (ab 18Uhr, auch am Wochenende (NIE VOR 12UHR!!!))
+                BLZ: 20069111, Norderstedter Bank
+                     Kontonummer: xxxxxxx
+
+I ask, however, some patience; I hope the
+most post to do the same day, but no
+instructions are more there or if we are just a few innovations
+implement, it may take a while (if after 2-3
+weeks, however, nothing happens can clarify a request, whether the
+post has also arrived).
+
+
+
+1.4 Hardware presumptions
+
+Atari St with 512K, but only from 1MB assembler and
+Debugger can be held together in the RAM, what
+in turn, a very effective debugging is possible.
+The high resolution is probably more likely than the medium
+resolution (is just grateful); But the TurboAss
+runs both in color, as well as in b/w.
+
+
+1.5 installation
+
+Turboass.prg, turboass.cfg, turboass.dat, bugaboo.prg and
+Call.prg on a disk, or copy to a folder.
+
+
+1.6 To the authors
+
+Sören Hellwig and I (Mark Fritze) are currently 21 or 22
+years old and study technical computer science at the FH-Wedel
+at Hamburg. That's why we also partially patience,
+When requests come to updates, etc.; The study is unfortunately
+before. In addition, I answer every letter, the return postage
+contains. Post without return postage will only be in exceptional cases
+Answered (for registration no return postage is necessary!)
+
+
+1.7 Liability / rights
+
+All rights on TurboAss are at σ-soft. Everyone
+Assembler may copy as desired. Also the upload in mailboxes
+is allowed. The TurboAss and the manual were with the utmost
+Care created. Unfortunately, mistakes are never a way
+that's why we would like to point out that we neither one
+give the warranty for fault freedom, still the liability for
+any consequences, whether by mistake in the manual, in the
+caused software or hardware can take over. It
+everyone will understand that we are not a special enthusiasm
+feel if someone claims to have the assembler in his
+plate with sourcexts in the values of several million marks
+destroyed, wants to sue us for damages. So: use
+at your own risk! (This section is probably valid at all
+Software companies.
+
+
+2 The Assembler
+
+
+2.1 user interface
+
+The user interface is not from Gem or similar. Dependent, i. New
+programmed, that has the advantage that the assembler safer
+Against crashes and faster. In addition, some could
+Nice features are implemented. Nevertheless, the
+Conversion of Gem probably not the weight fall. The small
+Letters in the buttons effect with old together,
+Clicking the button like the mouse.
+
+
+2.2 The mouse in the assembler
+
+You can do a whole lot of things with the mouse, here
+However, only the use in the assembler explains:
+
+In SourceText:
+Left mouse button:
+Quick-click: Set cursor
+Long click: Mark block (with scroll)
+Double-click: Jump to defining the clicked icon
+
+Right mousekey:
+Quick-click: Scroll (just click on the edge!)
+Double-click: Take formula in the computer
+
+In the status bar:
+Just click everything with left or right ...
+
+
+2.3 The editor
+
+Each entered line is automatically on your syntax and
+Partly also checked for the semantics. If the line
+is error free, it is output immediately formatted. At a
+Input error In the status line, the error message
+displayed.
+
+
+2.4 Special features
+
+As addressing type will also "absolutely short" directly
+supports. To do this, specify behind the address ".w".
+Line-A routines can be entered with "linea #number".
+The assembler converts non-Motorola entries if possible
+automatically in the Motorola format.
+
+
+2.5 Optimizations
+
+The assembler can find some optimizers independently.
+This includes:
+Absolutely long -> relative
+relative -> relatively short
+Absolutely long -> PC relative
+Move.L #XX,A0 -> LEA XX,A0 (if then PC-relative What brings)
+Move.l #xx,-(SP) -> PEA XX,A0 (if then PC-relative What brings)
+Furthermore, some jumps typical for C compilers are found
+(e.g., 2 consecutive BRA, where the 2.Bra never
+can be jumped) if the assembler can optimize
+Appears after assembly a button "Customize", which
+The optimizations in the source text. It can also
+Back "Optimized" will be if necessary.
+
+
+2.6 formulas
+
+Everything that is standard:
+     + - * /!(Log.Not) ~ (Not or EOR)
+     << (SHL) >> (SHR) |(OR) & (AND)
+     as well as comparisons
+
+The number base is possible:
+     Decimal :.or nothing
+     Hexadecimal: $
+     Binary: %
+     ASCII: " or '
+
+As internal variables are ^^ Date (Gemdos date), ^^ Time
+(Gemdos time) * (AKT.PC), ^^ RSCount (act.wert of the RS counter)
+and ^^ symtab (<> 0 when symbol table is generated)
+
+Symbols are max. 23 characters long. All characters are
+Significant. Also allowed are umlauts and all other characters
+> 126.
+
+
+2.7 Keyboard Command
+
+Cursor keys, backspace, etc. As usual CTRL-Y, CTRL-B, etc.
+as in Tempus
+Ctrl-D doubles the cursor line.
+Ctrl-M / Alt-M allows the line to move the line.
+Ctrl-W changes the number base of the number below the cursor
+Ctrl-u highlights all characters with warnings in which one
+Icon is defined, which is nowhere use.Thus
+Find Prima Unused Subprograms!
+Alt-Zehnerblock like MS-DOS
+ESC + letter abbreviation for a command
+Ctrl-Esc Keyboard macro start.Then to be assigned button
+to press.All the following keys (not the mouse!)
+recorded.With ALT-ESC the definition is completed.
+The occupied button can be returned with Ctrl Esc, button, old Esc
+be released.
+
+
+2.8 A few words to the
+
+With "Load ..." an ASCII text can be invited.He
+is automatically converted into the internal format."Symbol
+Search ... "and" replace symbol ... "enable the fast
+Find or replace symbols.In this case, e.g.
+All symbols are found that start with "M" (mask: "M*"),
+without any MOVE command being found (as with ASCII editors
+common)."Jump to line .." Enables jumping too
+Symbol definitions (input: e.g. "M*").The dialog boxes in
+"Settings" menu are partly self-explanatory, the rest is
+either unimportant or too complicated than that he explained here
+could become.
+
+
+2.9 of the assembler
+
+Is called with F1. If errors occur during assembly,
+All faulty lines are marked. After the assembly
+You can then use Ctrl-J or Shift Ctrl-J from error to error
+leap. The assembler stores the errors that
+Cursor position, the markers, etc. By the way, with the source text!
+
+In the dialog box after (!) Assembling, some can still
+Extras are set:
+
+   - a symbol table should be hung to the program
+     (or hand over to the debugger)?
+
+   - Furthermore, the generated program can be in different formats
+     save. Possible are:
+
+   Debugger: Jump into the debugger with program handover (no
+   TO SAVE)
+   Standard: Save program (just normal ...)
+   Data: Generate Data Lines (for Omikron.basic)
+   Absolutely: Program for a Best. Address (e.g. EPROM)
+   produce
+   Basic: Special format for basic, which itself is
+   relocate
+   Ominline: Create inline line for omikron-Basic
+   Parallel: Spez.Operment format to the Amiga
+   Small dri: Create Dri format (but without imports)
+   GfA inline: Create GFA inline format.
+   FPARD: Set fast-load bit in the header (ST-magazine
+   11/89), otherwise like
+
+        STANDARD
+
+
+
+2.10 pseudo-opcodes of the assembler
+
+DC, DS, BLK, DCB, Even, Align, Text, Data, BSS, End, =, EQU,
+Global, Cnop, Org, Illegal and Reg
+as usual.
+
+DXSet length [, fill value] Define table
+DX 'String' table entry to length filled with fill value
+RS, RSRESET, RSSET, RSEVEN, RSBSS relative segment
+OPT D + normal symbol table
+OPT X + extended symbol table
+Opt W + warnings
+OPT P + PC relative program must be generated
+Opt O + optimizations
+With '-' can be switched off something
+OUTPUT 'FILENAME' DEFAULT-FILENAME
+Path 'Path' Path for Ibytes set
+Ibytes 'Degas.pi3', 32000.34 loads a data file of length 32000
+From byte 34 of the file (here: a DEGAS image)
+Base is too complicated ...
+Rept number, endr repeats number times the source text part
+between
+Repv and Endr
+IF, Else, Endc conditional assembly
+Cancel Fail Assembling
+
+
+3 of the debugger
+
+
+3.1 Foreword
+
+It is actually impossible to describe the debugger briefly,
+That's why only the most important commands (with help you can
+See all times or in the instructions)
+
+
+3.2 General
+
+The debugger uses no I / O routines of the TOS, i. He
+is pretty unpossedible against crashes.For charging operations
+u.ä.But then, of course, on the Gemdos
+Request.
+
+He manages its own screen page, so that program and
+Debugger does not rumble on a shared side.
+
+Debugging can be done with both keyboard and mouse.
+
+The debugger can be kept resident in the RAM by in
+The auto folder is copied or with the command Resident
+is kept.The debugger can then be called with Call.PRG
+will.The assembler can also access the debugger (he
+But can also reload it).
+
+
+3.3 The operation
+
+The 2 upper lines correspond to the function keys (with and
+Without Shift). The 3 episodes set the register contents and
+Flags. All parts in these 5 lines can use the mouse
+to be triggered.
+
+The remaining (max .20 lines) are freely changeable. here
+are the entries, the expenses. Here's life ...
+
+The keyboard layout (cursor keys, CTRL-M, CTRL-1, etc.) is
+Similar to that of the assembler.
+
+Entries always take place from line of line or behind the
+Hex number. Spaces are ignored or serve as a separator.
+
+If the assembler called the debugger, you can
+Jump back Ctrl-Help. The current PC booth is in
+a line number converted. I. If a program when
+Debugging crashed and the PC is in the program, you can
+Ctrl-Help jump to the corresponding location in the source text.
+
+With Shift Shift, a running program can be stopped.
+The ring indicator works, however. The debugger
+is also resetfest. As an emergency brake and too sensible.
+
+
+F1 - executes the next command
+
+   SF1 - breaks off at the next jump command.Simulates the
+     TraceMode of the 68020 processor.
+
+   F2 - puts a breakpoint behind the next command and
+     Starts the program.This can e.g. fast one
+     Subroutine executed or a DBRA ended
+     will.
+
+   SF2 - not more important
+
+   F3 - starts the program and breaks off the next RTS.
+     CAUTION!If values are saved on the stack with MOVEM
+     => Bomb!
+
+   SF3 - like F3 only until the next RTE
+
+   F4 - does not lead the next trap, but jumps in
+     Inside it.
+
+   SF4 - Start program without end condition
+
+   F5 - ignore next command, i. Skip
+
+   SF5 - Insert / Overwrite Toggling
+
+   F6 - Show SourceCode (only when handing over from the assembler)
+
+   SF6 - display the converted markers of the assembler.
+
+F7 - MemoryDump from the PC
+
+   Show SF7 - Breakpoints
+
+   F8 - Disassemble with dump from PC
+
+   SF8 - Info about the memory assignment
+
+   F9 - List from PC (with symbols, if available)
+
+   SF9 - Delete Screen, Warm Start
+
+   F10 - Switching the screen page (toggling)
+
+   SF10-Quit with security query
+
+
+3.4 The commands
+
+All commands can be shortened to a minimum.At all
+Positions are allowed as parameters arbitrary expressions (i.e.,
+Formulas etc.)
+
+? Term expects the term
+Term may (until comparisons) all operations of the assembler
+contain.In addition, with {400} .l is an indirect addressing
+possible.".l" Specifies the access width.All numbers
+are regarded as hex numbers.Decimal numbers are with "."
+to initiate.With a symbol table you can use ". Symbolame"
+Access this.
+
+Defined variables (part of it)
+^ D0- ^ d7 the registers d0-d7
+^ A0- ^ A7 The registers A0-A7
+PC, USP, SSP, SR, CCR, SP The same named registers
+^ M0- ^ M9 The converted markers of the assembler
+
+
+All the above variables are with
+Let Variable = Term changeable.
+Let's abbreviate "~".
+
+Still a few read-only variables:
+Text, Data, BSS, Start, End, BasePage, BP, ACTPD, Membase,
+SaveArea
+
+There are about 20-30 more not so important variables.
+
+Breakpoint [number = address [, [* | = value | Number | Condition] | K]]
+Show, delete, change, change breakpoints
+
+
+B5 = PC + .100 Breakpoint 5 (0-15 is MGL) to Address PC + 100
+     set
+
+   B K Delete all breakpoints
+
+   B Show all breakpoints
+
+   BK3 Breakpoint 3 Delete
+
+
+   B0 = ADR, Number: Breakpoint breaks in number.Reach
+     away.
+
+   B0 = ADR, *: Breakpoint remains after reaching
+     obtain.Normal breakpoints are automatically
+     turned off.
+
+   B0 = ADR, = Value: Set counter to address ADR.In ^ bc0
+     Is counted up how often the address has been reached.
+
+   B0 = ADR,? Term: Conditional BKPT, demolition, if term <> 0 e.g.
+     B0 = ADR ,? ^ D0 = 4711 => Abbrucht when PC = ADR and D0 =
+
+Go [ADR]
+Program to start address ADR or PC
+
+Trace
+Like F1
+
+ShowMemory Term
+Show 16 bytes from Term Always
+
+Untrace [ADR]
+As long as tracen until condition
+
+IF TERM
+Condition for Untrace
+
+Observe Trapno, Funkno
+Cancel When Trapno is executed.e.g.Observe
+14.8 => CANCEL AT XBIOS (8) = FLOPRD ()
+
+CLS
+2. Clear screen page
+
+Mouseon / MouseOff
+VDI mouse on / off
+
+|
+Run command (really great for testing)
+
+Lexecute "filename" [, "Commandline"]
+Load program executable (=> PEXEC ()) then start with GO.
+
+Load "filename" [, address]
+Do not load file executable
+
+Save ["filename" [, address [, end address]]]
+Save file
+
+You path mask
+Show Directory
+
+Peer
+P Before a command, leads this to the printer
+
+Fopen Filename, Fever, FCLose
+Output of a command to a file
+
+Erase, Kill Filename
+Delete file (with jokers!)
+
+Free
+Free main memory
+
+Free Drive
+Free space on a drive
+
+Mkdirectory name
+create folder
+
+RMDirectory name
+Delete folder (if empty)
+
+Name old name, newname
+Noclace file
+
+FATTRIBUT FILENAME, attribute
+Change / set File Attribute
+
+Format DS / SS, drive
+Format disk
+
+Type filename
+Show ASCII file (Space stops issue)
+
+Read sector track, sector, page, address, drive (0 or 1)
+Sector with XBIOS (8) read in
+
+Writesector S.O.
+Write sector with XBIOS (9)
+
+All commands requested in this section allow the
+same syntax in the parameters, which is therefore at this point
+is explained, and in the following only with [parameter]
+referred to as. So it applies:
+
+[Parameters] = [from] [[,] # [Lines] |, to | [,] [Bytes []]]
+
+So all parameters are optional, i. One needs no
+Parameter species. The debugger then takes predefined internal
+Values.
+
+If the term "from" is missing, from the current address
+e.g. disassembled. The current address is the number on
+Line beginning, or if this is missing, the last used
+Address.
+
+The final address is the term "to", but not
+must be specified. Is given instead of "until" a "#"
+Exactly a line issued. One of the "#" of the following term is valid
+as a number of lines. It can thus e.g. exactly 8 lines spent
+will. However, a maximum of 99 lines are output. Missing the
+End indicator entirely, 16 lines are output (usually).
+However, the number can be adjusted by the variable
+"Lines" change accordingly. The last possibility is the
+Specification of the byte number in square brackets. She can as well as
+The number of lines are specified. The "]" is optional, i.
+You can also omit it.
+
+Example:
+"D Text # 5"
+Disassembled 5 lines from the beginning of the loaded program.
+
+Example:
+"M DATA [30]"
+A memory dump of the data segment (48 bytes long).
+
+Disassemble [parameter]
+Disassemble with dump, the dump can be changed!
+
+List [Paramter]
+Disassemble without dump with symbols, opcodes can be changed
+will (do not forget return)
+
+Symbol table [parameter]
+Evtl. Show existing symbol table
+
+Memory [.B | .w | .l] [parameter]
+MemoryDump with output width (changeable)
+
+ASCII [parameter]
+ASCII dump (changeable)
+
+Find [from, to], Terme {, Term}
+Loaded program or storage area according to the terms
+search
+
+Hunt S.O.
+how to find, but only on straight addresses
+
+AscFind [from, to], string
+ASCII search in disassemblerlisting (with jokers).Slow, but
+from time to time practical
+
+Continue
+Hunt, Find or Ascfind continue when canceled with ESC
+
+INFO
+try out
+
+Sysinfo
+Also try out
+
+Move, Copy from, to, after
+Copy storage block
+
+Fill of, to, Term {, Term}
+Fill the memory block
+
+CLR [from, to]
+Delete memory block (or everything)
+
+Compare of, to, ADR
+Range from, to compare with range from ADR
+
+Exit, Quit, System
+Debugger
+
+RESIDENT
+Keep debugger resident
+
+Set, Let, ~
+see above
+
+Reset all
+Debugger cold start
+
+Help
+All commands are unsorted (as you can see, a few more
+As described here)
+</ file>
+
+====== The Readme of the last release version =======
+
+<file>
+                 Sigma-Soft's TurboAss V1.7.14                 13.02.93
+
+Version 1.7.14:
+Bugaboo:
+ - Media-Change in the debugger now works with plates whose
+   Sector Size> 512 bytes is. Example of the error: You returned
+   Larger partitions graphic fill on the screen.
+ - The bugaboo could possibly work with Kaos. The alert
+   Start therefore eliminates. But I have no kaos!
+ - Problems in the screen switching on some shifters
+   Hopefully fixed.
+
+Version 1.7.13:
+ Bugaboo:
+ - The Bugaboo set the address $ 484 (keyboard click, Bell, etc.)
+   Always at $ FF. This was of course a mistake. This could possibly
+   Later started programs crash.
+
+Version 1.7.12:
+ Bugaboo:
+ - Because it is obvious when switching the screen pages
+   Problems, I have done something else. When Switch = 1,
+   If not only switched in the external gap, it will also be available
+   the reading of the registers of the shifter is waiting for a VBL,
+   So that the registers contain all the written values.
+
+Version 1.7.11:
+ Bugaboo:
+ - The processor is recognized correctly again (hopefully :-). Formerly
+   was suspected in TT a 68020. Not tragic, but amazing ...
+
+Version 1.7.10:
+ Bugaboo:
+ - Bugfixes for the 68030: Untrace should work better now
+   (Previous: Format Error), privilege injury is intercepted differently,
+   If the privilege caused injury from a Move SR, <EA>
+   was now a Move CCR, <EA> is executed. Normally
+   This done by the TOS from the TT already so, but the bugaboo all
+   Stop exceptions, this adaptation had to be transferred to the Bugaboo
+   be taken.
+
+Version 1.7.9:
+ Bugaboo:
+ - New variable: switch. Ourbexed is this variable = 0. Then
+   Nothing changes. When you set it to 1 (the variable is in
+   the settings storable), then the screen page
+   Circuit made in the VBL. Disadvantage: It flickers the tracen.
+   Advantage: It should not be a picture offset in some Stes
+   come. So: set this variable only to 1 when the screen
+   Jump!
+
+Version 1.7.8:
+ Bugaboo:
+ - Now works out of the auto folder.
+ Other programs:
+ - Latest version of LHARC V1.1321, as well as the PFXPAK, U.S.W
+
+Version 1.7.7:
+ Bugaboo:
+ - Sysinfo recognizes the Mega Ste.
+ Turboass
+ - Sources can now also be loaded by BGM partitions without
+   The font is destroyed.
+
+Version 1.7.6:
+ Turboass:
+ - A message is issued when Kaos is installed as it
+   Can give problems.
+ - .dcb, .dcb.b, .dcb.w and .dcb.l are now recognized by the assembler and
+   converted to DCB, etc.
+ Bugaboo:
+ - A message is issued when Kaos is installed as it
+   There are problems!
+ - Sysinfo has been expanded. It will now be SFP004 (68881 for 68000s),
+   and a 68881/2 recognized. SPECTRE-GCR detection adapted to the TT.
+ - The 68040 is detected.
+ - Since the variable Rez and Colors are eliminated, there is finally one
+   Type Replacement: The variable UsersCR shows the structure of the current
+   Ellen Screen, InitScr shows on the structure of the screen
+   When calling the debugger. I believe that you are enough again
+   Tinseness with the screen pives can ...
+
+   Hier nun noch die Struktur:
+                   RSRESET
+   scr_colors:     RS.W 16         ; the 16 colors
+   scr_adr:        RS.L 1          ; the video address
+   scr_offset:     RS.B 1          ;offsetToNextLine (ste)
+   scr_hscroll:    RS.B 1          ;horizontalBitWiseScroll (ste)
+   scr_rez:        RS.B 1          ; the video resolution
+   scr_sync:       RS.B 1          ;dasSyncBitDesShifters
+   scr_moni:       RS.B 1          ; the monitor ($ 00: b / w $ 40: color)
+   scr_overscan:   RS.B 1          ; Overscan ($ 00: Yes $ FF: No)
+
+Version 1.7.5:
+ Turboass:
+ - After saving will restore the cursor position before saving
+   Shared.
+ - you can now order PARTs to fold on the ENDPART Help
+   to press. A PART can be folded, the first in the
+   Source line of text begins.
+ - The TurboAss asked for Shift-F6: "Delete source text?". Included
+   However, he has swapped "YES" and "NO"! they said no,
+   the source was deleted. A very embarrassing mistake. When the in
+   the code has entered, is beyond me ...
+ - The Macintosh Trap Macros are first removed again. who she
+   wants it can get. But they cost 11KB memory and
+   brought nothing for most users.
+ - a EQU 8: lsl.l # a, D1 => was produced false (random) code.
+   Should now produce correct code. ADDQ, subQ and all
+   Shift Instructions (ASL, LSL, ROL, ROXL, etc.) were affected.
+ Bugaboo:
+ - The variable TRACE was reintroduced. For details, see instructions.
+   The variable has gone some time "lost".
+ - SYSINFO now also detects when a IMP MMU in the computer available
+   is. SYSINFO partially corrected (clock display, TT-info, etc).
+ - The Bugaboo runs NOT on the big screen from the TT!
+ Other programs:
+ - In addition to MODULE.SRC is now also RBMODULE.SRC by Ralf
+   Biedermann. You can use it next SMALLDRI (see instructions) and
+   SMALLGST generate eionzubinden to e.g. assembler modules in Henceforth.
+ - TURBOASS.DAT or MODULE.SRC: In Modula-modules are no longer
+   twice as many Words generated as the program is long. who no
+   TDI has Modula (CODE (hex codes)), which should be re MODULE.SRC
+   assemble, where previously the TDI_MODULA flag is to = 0.
+   Then INLINE (hex code) is generated.
+
+Version 1.7.4:
+ Turboass:
+ - Adapted to the Bugaboo V1.7.4. To use the debugger reload
+   one must see "information" and "reorganization" now at least
+   Enter 250000 bytes. This is without then (as before) 40000 bytes
+   left over. This increase was necessary because the reloading
+   BUGABOO.SYM could cause a crash when too little memory.
+ - Now works in the TT FastRam. Malloc () must also blocks
+   Get out of the FastRam. The assembler is thus again a bit
+   more quickly. In case of problems (I have no TT, infra), any bits
+   Delete it. If the error no longer occurs => Error
+   message me!
+ - XBRA ID "TASS" used for all vectors.
+ Bugaboo:
+ - Adapted to the TT.
+   Since I have no TT, I can respect mistake. The TT also
+   recognize or not readily understand. If there are problems
+   are, I ask for a detailed description of the error (if possible with
+   Example).
+ - New exception handling.
+  . Exception texts now English
+  . Adaptation to TT
+  . any unused vectors are now trapped 2-63.
+  . minor imperfections corrected
+ - adapted to the TT SYSINFO
+ - Symbols are now compared in the symbol table to 32 bits and
+   no longer with only 24 bits. Exception: The HiWord (bits 16-31) is
+   when it is equal to $ FF expanded to $ FFFF. This is in short
+   Addressing sense to the I / O area.
+ - XBRA ID "bug1" used for all vectors.
+ Other programs:
+ - CALL.PRG, CALL.SRC: Adapting to Bugaboo V1.7.4
+   The Bugaboo V1.7.4 is no longer recognized by the old CALL.PRG!
+ - rearranged and reorganized. This was necessary because the TOOL archive so
+   was great that not even unpacked more suited to a floppy disk.
+   In TOOLS archive are now only three folders: PACKER, TOSPATCH and new
+   has been added: MIDIMAZE.2
+
+Version 1.7.3:
+ Turboass:
+ - Symbol search in the block does not fall off if the icon outside
+   The block is defined, but does not occur in the block.
+
+Version 1.7.2:
+ Turboass:
+ - Assembled now on the TT
+ - Also works in the screen resolution TT funds
+ - Can symbol table back to the debugger (error was since
+   Version 1.7.1 in it)
+ - If you have an SRC file by double-clicking on the desktop in the
+   Turboass loaded, the filename was always on the bugaboo
+   passed on if this e.g. called after the assembly
+   became. This is now fixed! (Error has been since Argv-Commandline
+   Rating through the Turboass in it)
+
+Some changes from TurbooS V1.26 to Version V1.7.1:
+
+ATTENTION!!! Important changes in the debugger (see below) !!!
+
+A few in the version V1.70 not existing, but in the
+Instructions but already described, features:
+
+-Local symbols are still not implemented
+-Pc-relative optimizations on segment limits still can not
+ be returned to absolute addressing again
+-BSOLUT-LONG can still not automatically after absolute-short
+ optimize
+-BSOLUT-SHORT can still not automatically after absolute-long
+ be returned
+
+
+General:
+-The turboass and bugaboo should work on all ST or STE.
+ Only an adaptation to the TT still lets wait
+ do not have a TT yet. The bugaboo in version V1.26 works
+ Not on computers with IMMMU. The mistake is also out.
+-The debugger now supports Overscan, i. He always works
+ Still on the small screen, but can be used on the overscan mode.
+ switch. The Turboass now also uses an increased resolution, e.g. of
+ Overscan, Maxon-MGE (B / W mode), Atari large screen.
+-I introduced a new version number count, so not
+ be confused: v1.7.0 stands for version 1, 7.Down in radio
+ Scope and 0.Bugfix of 7th extension. Who this version number
+ It reminds of Apple who has right (but not further ...).
+ I can now keep the versions more closely.
+
+Extensions of the assembler:
+-Ascii loading is about 1.5 to 4 (!) Times faster.
+-In AddQ or Subq no more needed. The assembler complements it now
+ Automatic (as with MOVEQ and TRAP also).
+- If you have called with Shift-F2 the accessory strip, you come
+ With undo or ESC back to the assembler.
+-With the pseudo opcode breakpt 'string' one can give a special
+ Breakpoint already insert in the assembler. The difference to
+ Illegal Directive is the string to be specified. This string gets at
+ Reaching the breakpoint from the debugger namely as a command line
+ Viewed, i. The string is executed immediately by the debugger. Consequently
+ If you can reach the directive e.g. automatically one
+ Storage dump or similar. Leave. The string may even be several
+ Commands contain which with ':' to separate (':' corresponds
+ Thus, return if you tap yourself). Follows the ':' still a '-', so
+ the command is not output. A final ':' is, however
+ not necessary.
+
+ Example: Breakt "" Memory overflow ": - M ^ A0 # 4: L PC # 4 '
+
+ The text 'buffer overflow' will on reaching the breakpoint
+ output. Then four lines from A0 output as MemoryDump. away
+ Completion be 4 lines from PC (which automatically behind the
+ is set Directive) listed.
+-When loading ASCII source texts (F8) or when zuladen now
+ issued the length of the file in kb, and the kb already read.
+ This finally allows estimating the charging time at large
+ Files.
+Icon replace (Ctrl-E) now has one more VERY (!!!) practical
+ rename option whole symbol groups. Anyone who has ever
+ a reassembliertes program has documented, knows the problem: you
+ has a subroutine (call it "draw_shape") with about 30 labels.
+ öblich is probably the name of the label with "draw_shape1"
+ "Draw_shape2", etc. instead of the default name "Lxxxx" etc. From
+ now this is no longer a problem: The subroutine as a block
+ Mark as enter to seeking Symbol "~" and to
+ irreplaceable symbol "draw_shape" (in our example). Now press OK.
+ The first symbol in the block is now called "draw_shape"; the result symbols
+ are numbered in ascending order. This function is "Rename calls from
+ Symbols ", i.e., if a symbol exists twice (double
+ Declaration), it is, although it is no longer in the block to
+ (Unless it internally so the same symbol) renamed both places. who
+ Avoid this like, you can "replace symbol" only to go and there
+ replace the block.
+-Once I have to let down some more tweaking
+ to implement. This time bring the optimization although no
+ Space, it saves 4 cycles per opcode. It will
+ The following commands optimized:
+  CLR.L Dx in moveq # 0, Dx
+  LSL.x # 1, Dx in ADD.x Dx, Dx (NOTE: V-FLAG IS CHANGED!)
+  ASL.x # 1, Dx in ADD.x Dx, Dx
+  ROXL.x # 1, Dx in ADDX.x Dx, Dx
+  ADDA.W # xx, xx Ay in LEA (Ay), Ay
+ The optimizations can be performed with CTRL-O (see
+ Menu item "Assembler" and there under "Optimizations").
+-The assembler now knows all the toolbox and OS traps of the Mac.
+ Including the possibly parameters. Because probably the fewest one Apple
+ Macintosh have, probably benefit only Sören and I ...
+-The help button for folding parts works differently. One
+ Remembles: Part in a line, endpart somewhere behind it. If
+ Now has been pressed at the part and Help, then the text block became
+ Folded, or with Ctrl-Help also all the following blocks. Now
+ Help treated as follows: HELP is now looking for one from the cursor line
+ Part (up!), A part is found, the block is
+ works. So you spare yourself the search of the part directive. At the
+ Fold out of a part, the line with the part will now also
+ Matically on the screen (vertical :-) centered.
+-With Ctrl-Shift-U are removed unused symbols. This is for the
+ People practically, which deflect the list output into a file, with
+ Post a text editor and now load into the assembler. Ctrl-U
+ continues to mark all the unbenute symbols as warnings, which one
+ Yes with Alt-W on / off.
+-The turboass now knows the argv parameter handover.
+
+
+Extensions of the debugger:
+-Peans new keyboard shortcuts (similar to the MONST2):
+ Ctrl-Y: F1 - current command tracen
+ Ctrl-S: F5 - Skip current command
+ Ctrl-A: F2 - Breakpoint behind the current command + Go (!)
+-When the debugger finds the file "bugaboo.sym" (where too
+ "Bugaboo.inf" is searched), this file is loaded (Oh Nee) and
+ The disassembler will all absolutely short or long addressings
+ Run this table. Should be called if in the table e.g.
+ _SysBase = $ 4F2, the disassembler will be at all commands,
+ which access this address with the above addressing types that
+ Address address by the symbol name "_sysBase". A "bugaboo.sym"
+ File is already (with SourceText) already in the library folder. the
+ Sym files can be created with F1 (see instructions).
+-I forgot to mention that you leave without the debugger
+ Now let's take a look in the source code when you get from the assembler
+ jumped into the debugger. So: if you do anything
+ During debugging no longer knows where to get in Source
+ Find; Simply press F6. Then you can the current position in
+ See SourceCode. Of course you can change nothing. Something else: the
+ Looking in the source code costs no (!) Storage, not even
+ The symbol table is necessary because the assembler convert the addresses
+ can. The addresses on the left edge are all the same, this
+ is because Sören and I have not found a leisure
+ SourceCode Part only to optimize somehow (if the source
+ For more than 10,000 lines, it becomes quite slow). But better
+ Slowly and inflexible than nothing. (P.S. Which assembler debugger
+ Does it already have such a debugger?)
+Conditions of commands: SCC, BCC and DBCC change the "Ø" on
+ Line start in a "" if the condition is satisfied! However
+ Only on the current PC.
+
+CAUTION! News in the debugger:
+-Y-based filenames and paths (e.g. Load, you, etc.) is now in
+ Quotation marks (") are stained. This is annoying, is
+ but needed by changing the internal structures.
+-Bisher could be a filename the debugger in the Commandline
+ or pass a command (with "@" before). This can now be,
+ If you call the Call.PRG the resident debugger.
+-Man can now specify as many commands per line as necessary. To be
+ to separate the commands by a ":" (therefore you have the paths in
+ Specify quotes).
+Also in the commandline mentioned above you can now send several commands
+ indicate. It should also be noted that the Breakpt Directive of the
+ Assemblers now also double points, doing "|" to the separation of the
+ Commands have to be used.
+-The scrolling in the debugger behaves slightly differently than before. That
+ "Quiet" scrolling without flickering the lowest line had to turn
+ Believe (on what, comes later).
+- On general wish, works: you ".." without "\" on
+ End again (for ignorant, you come back a directory,
+ i. a folder level upwards).
+-When to any problems, inconsistencies, etc.
+ Occurrence, please contact me immediately!
+-Man can now read an ASCII file with "#LOAD" FILENAME.BUG ".
+ What that should? Well, the file can contain any commands. Lines,
+ Which starts with a "%" ignored. Let's see what's in
+ Future with the batch files (I ask for suggestions!).
+ Note: The DIR, FOPEN, FCLOSE and FORMAT commands are in a
+          Batch file not possible.
+-The KEY command has been deleted. Since the keyboard macros in
+ Debugger make this unnecessary.
+-New variables in the debugger:
+ MIDI: <> 0 => scan codes via MIDI will be ignored, otherwise,
+          these as key codes interpreted (for PC keyboards)
+CACHE: Contents of the CACR register at 68,020 or higher
+ MemCheck: <> 0 => memory test is not necessary. A dump would take place
+          "-" - yield sign simple a bus error.
+ ALL: Resets all registers (D0-A6) to the same value. Practically
+          delete, etc. (the variable of course you can only set)
+ SYMFLAG: <> 0 => internal symbol table (BUGABOO.SYM) do not use
+ SYMTAB: pointer (not present = 0) to the internal symbol table
+-Before leaving the debugger, it is tested whether at address $ 40C
+ a valid address is. If so, the Bugaboo skips
+ Vector at. What is good? Well, you can still see on the fly
+ close his workstation, etc. All you need is a subroutine
+ engage that all such things does. So you can then program
+ cancel any (and again in the assembler back) without the
+ next start crashing the VDI (because a workstation is not
+ has been closed).
+-With the new command COOKIE can the current CookieJar
+ View (if available). Therefore I follow the fad
+ especially since you always install any odds and ends in the debugger (the
+ could be CookieJar with "M.L. {} 5A0 .l" spend).
+-I have some suggestions of Thomas Waldmann took into account
+ (Even though the opposite is in your letter, Thomas):
+ .If you the (new) variable RING set to 1, is the
+  Ring Indicator IRQ not turned on. The Modem users
+  well know to appreciate. Default: RING = 0
+ .The variable SAVE AREA is now accessible under the name S.
+  The long name has always bothered me.
+ .When DIR command is now, before programs with the extension PRG, TOS
+  TTP, APP, ACC, PRX and ACX automatically set as the default LE.
+  Again, this should probably be useful, since one debugging tools
+  must load with LE anyway.
+ .Hat a GEMDOS-, (X) a BIOS function öbergabeparameter which
+  A long word is that long word (if> 0) interpreted as a pointer
+  and output the string to which it points (maximum 32
+  Sign). So you can immediately see which file as at Fsfirst
+  is sought. Unfortunately, you can also see which memory block (or
+  what content you) releases. unfortunately can not easily change.
+-And again some suggestions of Thomas Waldmann:
+ .The reloaded symbol table "BUGABOO.SYM" you can now even
+  to use. One can, for example, {.} Phystop .l type to phystop read.
+  However, the debugger uses the symbols still first in the table
+  the reloaded program. If not found there, the symbol
+  was searched in "BUGABOO.SYM".
+- If you want to use Overscan in the debugger, you first have to be the new one
+ Set variable overscan to 1 and save the settings. From then
+ Recognizes the debugger Overscan when switching. This recognition has
+ But a disadvantage: the screen flickers the tracen ("like sow").
+ This is because to detect the activated Overscan min. 2
+ Used VBLS and thus switching the screen pages
+ noticeable. If you set the variable to 0 as the overscan user, it can
+ Use the debugger only in normal mode. With the new command
+ Overscan can be used to the user screens between normal resolution and
+ Overscan resolution switching. This is done with the corresponding XBIOS
+ Command from the Overscan driver done. Thus, therefore, the gem
+ Switched.
+ Stop, stop, stop: That's not the flickering anymore! It is
+ Too annoying. However, the debugger notes the switching from the
+ Resolutions no longer. But if something so rarely has to be drinked,
+ You can (so I believe (and also Karsten Isakovic)) do without it
+-The variable Rez (and others who have to do with the screen)
+ First of all, are eliminated without replacement.
+
+
+Miscellaneous:
+-Andreas Alich kindly has a program names RSC2s
+ Provided. This program allows RSC files directly
+ Include in the assembly source text. More in the RSC2S folder.
+
+        Markus Fritze
