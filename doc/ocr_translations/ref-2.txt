@@ -2,7 +2,7 @@ ORIGINAL
 ========
 
 
-Pseudoopcades des Assemblers
+Pseudoopcodes des Assemblers
 
 ^^DATE                                  27      ergibt das Datum im TOS-Format
 ^^TIME                                  27      ergibt die Uhrzeit im TOS-Format
@@ -10,36 +10,36 @@ Pseudoopcades des Assemblers
 BASE (DC.(B|W) | (AO- A7)                       stellt einen Adressierungsoffset ein
     |TEXT|DATA|BSS|Label                33
 LSECTION) BSS (BSS)                     30      Beginn des Block-Storage-Segments
-CNOP Offset, Justlerung                 34      PC wird durch Justierung balibar
+CNOP Offset, Justierung                 34      PC wird durch Justierung teilbar
 LSECTION) DATA (.DATA)                  30      Beginn des DATA-Segments
-DC.(B|W|L) Wert,Wert (DC.(B|W|L))       25      definier. konstanten
+DC.(B|W|L) Wert,Wert (DC.(B|W|L))       25      definiere konstanten
 DS.(B|W|L) Wert[,Füllwert]                      reserviert Speicher
     (.DS.(B|W|L) | BLK.(B|W|L) |                (Größe in B|W|L = Wert)
     DABSS.(B|W|L) | DCB.(B|W|L))        28
 DX[.B] 'String'                         28      definiert Stringkonstante mit fester Länge
-DXSET Länge[,Füllwert]                  28      satzt Länge der Stringkonstante
+DXSET Länge[,Füllwert]                  28      setzt Länge der Stringkonstante
 ELSE                                    36      wird übers e:zt, wenn Bedine Gung nicht erfüllt
-END (.END)                              31      Ende des Sourcetexies
-ENDC (ENDIF)                            36      Ende einer IF-Struktur (bedirgate Assembl.}
+END (.END)                              31      Ende des Sourcetextes
+ENDC (ENDIF)                            36      Ende einer IF-Struktur (bedingte Assembl.}
 ENDR                                    35      Ende einer REPEAT-Schleife
-EVEN (.EVEN | ALIGN[.W])                28      begradiet. die nächste Adresse
-FAIL [Text]                             36      gibt Fohleriext aus bedingte Assumlbalanı, ug)
+EVEN (.EVEN | ALIGN[.W])                28      begradigt. die nächste Adresse
+FAIL [Text]                             36      gibt Fehlertext aus (bedingte Assemblieren)
 IBYTES ’Filename'
-    [,[Anzahl][,Posicion]] (INCBIN)     32      lädt ein File von Diskette nach
-IF[NE] Bedingung                        36      Assemblieren, falts Bedingung erfült
-IFD Label                               36      Assemblleren, falls Label definiert
+    [,[Anzahl][,Position]] (INCBIN)     32      lädt ein File von Diskette nach
+IF[NE] Bedingung                        36      Assemblieren, falls Bedingung erfüllt
+IFD Label                               36      Assemblieren, falls Label definiert
 IFEQ Bedingung                          36      Assemblieren, falls Bedingung nicht erfüllt
-IFGE Ausdruck                           36      Assembileren, falls Ausdruck >= 0
-IFGT Ausdruck                           36      Assembileren, falls Ausdruck >» G
-IFLE Ausdruck                           36      Assembileren, falls Ausdruck <-: 0
-IFLT Ausdruck                           36      Assembileren, falls Ausaruck << Q
-IFND Label                              36      Assembileren, falls Label nich. Gefiniert
-ILLEGAL                                 35      fügt S4AFC ein, löst Niegal insiruction aus
-OPT (D|W|S|M|C|N)(+|-)(, ...)           31      stellt aaa ein
-ORG Adresse[,^]                         35      Steilt Adresse für abschrte Ansembil. ein
-OUTPUT                                  32      Stellt Narnen ein, unter dam gesseicheurt wird
+IFGE Ausdruck                           36      Assemblieren, falls Ausdruck >= 0
+IFGT Ausdruck                           36      Assemblieren, falls Ausdruck >» G
+IFLE Ausdruck                           36      Assemblieren, falls Ausdruck <-: 0
+IFLT Ausdruck                           36      Assemblieren, falls Ausdruck << Q
+IFND Label                              36      Assemblieren, falls Label nicht definiert
+ILLEGAL                                 35      fügt $4AFC ein, löst illegal instruction aus
+OPT (D|W|S|M|C|N)(+|-)(, ...)           31      Stellt Assembleroptionen ein
+ORG Adresse[,^]                         35      Stellt Adresse für absolute Assembl. ein
+OUTPUT                                  32      Stellt Narren ein, unter dem gespeichert wird
 PATH                                    32      Pfadname für IBYTES
-REPT Anzahl                             35      Beginr einer REPEAT-Struck iur
+REPT Anzahl                             35      Beginn einer REPEAT-Strucklur
 RS.(B|W|L)                              29      reserviert Speicher
 RSRESET                                 29      Setzt RS-Counter zurück
 RSSET Wert                              29      Setzt den RS-Counter
@@ -50,47 +50,44 @@ Symbol REG Registerliste                31      Definiert Registerliste für mov
 [SECTION] TEXT (.TEXT)                  30      Beginn des Textsegments
 
 
-Die Debuggerbefehle
-) ASCII-Daten                           85      ASC-Präfix licht vor ASC-Durnp
+Die Debugger-befehle
+) ASCII-Daten                           85      ASC-Präfix licht vor ASC-Dump
 ‚Term{,Term}                            64      Schreibt Daten in Speicher (byteweise)
 .(W|L)Term{,Term}                       64      Schreibt Daten wort- oder langwortweise
-/ Hex-Daten                             64      Schreibt Hex-Daten (Disassermbie)
+/ Hex-Daten                             64      Schreibt Hex-Daten (Disassemble)
 ? Term{,Term}                           64      Berechnet Term und gibt ihn aus
 ASCFIND [Von.Bis],String                61      Sucht nach Strings in Disass.-Listings
 ASCII [Von][[.]I#[Zeilen]]|[,Bis]       67      Zeigt Speicherbereich an (ASC)
 (BREAKPOINTSIB) [(Nummer[=Adresse[‚(*|=[Wert]|Anzahl|
     ?Bedingung)]])|(K[Nummer])]         55      Setzt/Löscht/Zeigt Breakpoints
 BSSCLEAR                                75      Löscht das BSS
-CHECKSUMME [Adr [,Peiüfsum [,Anzahl]]]  75      Berechnet eine Prüfsumme
+CHECKSUMME [Adr [,Prüfsumme[,Anzahl]]]  75      Berechnet eine Prüfsumme
 CLR [Von][,Bis]                         72      Löscht einen Speicherbereich
 CLRCACHE                                71      Löscht Cache (Register/Befehls speicher)
 CLS                                    172      Löscht den Bildschirm
 COMPARE Von,Bis,Adresse                 72      Vergleicht zwei Speicherbereiche
 CONTINUE                                62      Setzt Suche fort (ASCFIND, FIND, HUNT)
 (MOVE|COPY) Von,Bis,Nach                77      Kopiert einen Speicherbereich
-
-
-
 CR [Anzahl]                             65      gibt (Anzahl) Leerzeilen aus
 CURSOR Nummer                           77      Stellt Aussehen des Cursors ein
-DIRECTORY [Pfad][Suchmaske]            156      Inhahltsverzeichnis, stellt Pfadnamen ein
+DIRECTORY [Pfad][Suchmaske]            156      Inhaltsverzeichnis, stellt Pfadnamen ein
 DISASSEMBLE [Von][[,]#[Zeilen]]|[,Bis]  57      Disassembliert, mit Hex-Code ohne Labels
-DO|(CALL [Adressel][,Breakpeint])       67      Führt ein Unternrogramm aus
+DO|(CALL [Adresse][,Breakpoint])        67      Führt ein Unterprogramm aus
 (DUMP|MEMORY)[.(B|W|L)] [Von][[,]#[Zeilen]]|[ Bis]
                                         66      Zeigt einen Speicherbereich an (Hex/ASC)
 (ERASE|KILL) Filename                  173      Löscht ein File
-EXIT|QUIT|SYSTEM                        60      Verfaßt gen Debugger
-FATTRIBUT [Name][,Attribut]            174      Seirt rüeattribung
+EXIT|QUIT|SYSTEM                        60      Verlaßt gen Debugger
+FATTRIBUT [Name][,Attribut]            174      Setzt fileattribute
 FCLOSE                                 165      Schließt eine Datei (für FILE}
 FILEbefehl                             165      Ausgabe des Folgebefehl auf File
 FILL Von,Bis,Wert{‚Wert}                71      Füllt einen Speicherbereich
 FIND [Von,Bis],Term                     61      Durchsucht einen Speicherbereich
 FOPEN Filename                         165      Öffnet ein File (für FILE)
-FORMAT [(DIS)S][,Laufwerk]             174      Formatieri eine Diskette
-FREE [Laufwerk]                        173      Ertmnitieit freien Speicher auf Laufwark
+FORMAT [(DIS)S][,Laufwerk]             174      Formatiert eine Diskette
+FREE [Laufwerk]                        173      Erinittelt freien Speicher auf Laufwerk
 GETCACHE                                71      Holt Registerwerte aus Cache
 GETREGISTER [Adresse]                   75      Holt Registerwerte aus Speicher
-GO [Adresse][,Breakpoint]               60      Startet ein Frogramm ab Adresse IPC
+GO [Adresse][,Breakpoint]               60      Startet ein Programm ab Adresse IPC
 HUNT [Von,Bis],Term                     61      Durchsucht einen Speicherbereich (.w)
 IF [Register Bedingung Term]            68      Stellt Abbruchbedingung ein
 INFO                                    62      Gibt Start von TEXT-, DATA- und BSS aus
@@ -98,35 +95,35 @@ INITREGISTER                            76      Setzt alle Register auf null
 KEY [([CIA]F Nummer=Text)]              72      Belegt eine Funktionstaste
 (ERASE|KILL) Filename                  173      Löscht ein File
 (((S|L)ET)|-)(ALL|Variable)=Term        66      Setzt ein(alle) Register
-LEXECUTE [Filename][,"Commandline”]     55      Lädt ein Programm zum Debusgen (Reioziert)
-LINE                                    65      gibt 79 mai "-" aus
+LEXECUTE [Filename][,"Commandline”]     55      Lädt ein Programm zum Debuggen (Revoziert)
+LINE                                    65      gibt 79 mal "-" aus
 LIST [Von][[,]#[Zeilen]|[,Bis]          58      Disassembliert, mit Labels ohne Hex-Code
 LOAD Filename[‚Adresse]                155      Lädt ein File in den Speicher
 (DUMP|MEMORY)[.(B|W|L)] [Von][[,]#[Zeilen]]|[ Bis]
                                         66      Zeigt einen Speicherbereich an (Hex/ASC)
 M[OUSE]OFF                             173      Schaltet die Maus aus
 M[OUSE]ON                              173      Schaltet die Maus ein
-(MOVE|COPY) Von,Bis,Nach                71      Köpiert einen Speickerhereich
+(MOVE|COPY) Von,Bis,Nach                71      Kopiert einen Speicherbereich
 MKDIRECTORY Filename                   173      Richtet ein Unterverzeichnis ein
 NAME Altname,Neuname                   174      Benennt ein File um
-OBSERVE [Trap[‚(?|-1|Liste)]]           70      Fängt-besiimmte Traps ab
+OBSERVE [Trap[‚(?|-1|Liste)]]           70      Fängt bestimmte Traps ab
 ! Opcode                                64      Präfix Opcode (Ausgabe von LIST)
 PRNbefehl                               65      Ausgabe des Folgebefehls auf Drucker
 (READTRACK|RTRACK) [Track[,Seite[,Adresse[,Laufwerk]]]
                                         79      Liest einen kompletten, Track
 (RS|READSECTOR) [Track[,Sektor[,Seite[,Adresse
     [,Laufwerk]]]]]                    178      Liest Sektoren (XBIOS 8)
-RESET [A[LL][,Vektoren]]                75      Die Systernvektoren gesetzt (auf Debugger)
+RESET [A[LL][,Vektoren]]                75      Die Systemvektoren gesetzt (auf Debugger)
 RESIDENT                                82      Verläßt den Debugger (bleibt resident)
-RMDIRECTORY Filename                   173      Löschi ein Unterverzaichnis (muß leer seln)
+RMDIRECTORY Filename                   173      Löscht ein Unterverzeichnis (muß leer seln)
 RWABS Rwfl.‚Buf.,Anzahl,Recno,Laufwerk 178      Schreibt(Liest) Sektoren (BIOS 4)
 SAVE [Date|name][‚Anfadr‚Endadr]       163      Speichert einen Speicherbereich auf Disk
-SAVE ![H][R]                           177      Spelchert Einstellungen
+SAVE ![H][R]                           177      Speichert Einstellungen
 SCROLLOFF/SCROLLON [Fangradius]         77      Schaltet Auto-Scrolling ein(aus)
 SHOW (Adr[.(B|W|L)][,Anzahl])|(,.Num)   66      Zeigt Speicherbereich ständig an.
 "String["]                              66      String ausgeben (PRN oder FILE)
 (((S|L)ET)|-)(ALL|Variable)=Term        66      Setzt ein(alle) Register
-SWITCH                                  76      Schaitet Auflösung um
+SWITCH                                  76      Schaltet Auflösung um
 SYMBOLTABLE [Von][[,]#[Zeilen]]|[,Bis]  58      Gibt Symboltabelle aus
 SYNC50 /SYNC60                          77      Stellt Bildfrequenz ein,
 ]Term                                   64      Schreibt Daten (ohne Neuausgabe)
@@ -145,64 +142,64 @@ TRANSLATED
 
 Pseudo-opcodes of the Assembler
 
-^^DATE                                  27      gives the date in TOS-Format
+^^DATE                                  27      Gives the date in TOS-Format
 ^^TIME                                  27      Gives the time in the TOS-Format
 ^^RSCOUNT                               27      Gives the act. State of the RS-Counters
 BASE (DC.(B|W) | (AO- A7)                       Adjusts an addressing offset
     |TEXT|DATA|BSS|Label                33
 LSECTION) BSS (BSS)                     30      Start of the Block Storage Segment
-CNOP Offset, Justification              34      PC is balabar by adjusting
-LSECTION) DATA (.DATA)                  30      Beginning of the Data Segment
-DC.(B|W|L) value,value (DC.(B|W|L))     25      Define constant
+CNOP Offset, adjustment                 34      PC is divisible by adjustmentnt
+LSECTION) DATA (.DATA)                  30      Beginning of the Data Segmentt
+DC.(B|W|L) Wert,Wert (DC.(B|W|L))       25      Define constants
 DS.(B|W|L) value[,Fillvalue]                    Define storage
     (.DS.(B|W|L) | BLK.(B|W|L) |                (Size in B|W|L = Value)
     DABSS.(B|W|L) | DCB.(B|W|L))        28
 DX[.B] 'String'                         28      Defined string constant with fixed length
 DXSET Long[,Fill value]                 28      Set of the string constant
 ELSE                                    36      is over E: ZT if condition is not met
-END (.END)                              31      End of SourceTexies
-ENDC (ENDIF)                            36      End of an IF structure (Bedir Gate Assembly.}
+END (.END)                              31      End of Source Text
+ENDC (ENDIF)                            36      End of an IF structure (conditional assemblies)
 ENDR                                    35      End of a repeat loop
-EVEN (.EVEN | ALIGN[.W])                28      Broadcast the next address
-FAIL [Text]                             36      gives fohler text from conditional assumlbalanı, μg)
+EVEN (.EVEN | ALIGN[.W])                28      Straightened. the nearest address
+FAIL [Text]                             36      returns error text (conditional assemblies)
 IBYTES ’Filename'
     [,[Number][,Position]] (INCBIN)     32      Loads a file from floppy disk
-IF[NE] condition                        36      Assemble if condition fulfilled
-IFD Label                               36      Assembleren, if label defined
-IFEQ Condition                          36      Assemble if condition does not satisfy
-IFGE Expression                         36      Assembilers, FALLS DRIED> = 0
-IFGT Expression                         36      Assembilers, FALLS DURKUCK> »G
-IFLE Expression                         36      Assembile, FALLS DRAWING <-: 0
-IFLT Expression                         36      assembileren,FallsAusaruck <<Q
-IFND Label                              36      Assembile, FALLS LABLE NICK.Filed
-ILLEGAL                                 35      adds $4AFC, resolves Niegal INSIRUCTION
-OPT (D|W|S|M|C|N)(+|-)(, ...)           31      Puts AAA
-ORG Address[,^]                         35      Steep address for started Antembil.a
-OUTPUT                                  32      Represents narns, under Dam Sicheicheurte
+IF[NE] condition                        36      Assemble if condition is met
+IFD Label                               36      Assemble if label defined
+IFEQ Condition                          36      Assemble if condition is not met
+IFGE Expression                         36      Assemble if expression >= 0
+IFGT Expression                         36      Assemble if expression > 0
+IFLE Expression                         36      Assemble if expression <= 0
+IFLT Expression                         36      Assemble if expression < 0
+IFND Label                              36      Assemble if label is not defined
+ILLEGAL                                 35      adds $4AFC, resolves illegal instruction
+OPT (D|W|S|M|C|N)(+|-)(, ...)           31      Sets assembler options
+ORG Address[,^]                         35      Represents address for Absolute Assemblies
+OUTPUT                                  32      Sets fools under which is stored
 PATH                                    32      Path name for Ibytes
-REPT Number                             35      Beginr a repeat struck Iur
-RS.(B|W|L)                              29      reserved memory
-RSRESET                                 29      Return RS counter
-RSSET value                             29      Sets the RS counter
-RSEVEN                                  30      BEGRADIGT DEN RS-Counter
-RSBSS                                   30      Add RS counter to the BSS length, RS = 0
+REPT Number                             35      Start of a repeat tower
+RS.(B|W|L)                              29      Reserved memory
+RSRESET                                 29      Return RS-Counter
+RSSET value                             29      Sets the RS-Counter
+RSEVEN                                  30      Straightens the RS-Counter
+RSBSS                                   30      Add RS-Counter to the BSS length, RS = 0
 Symbol EQU Value (.EQU|=|==|.=)         31      Assigns a value to a label
 Symbol REG Register                     31      Defines Movem tab
 [SECTION] TEXT (.TEXT)                  30      Beginning of the TEXT segment
 
 
 The Debugger Commands
-) ASCII-Data                            85      ASC prefix light before ASC-DURNP
+) ASCII-Data                            85      ASC prefix light in front of ASC-dump
 ‚Term{,Term}                            64      Writes data in memory (byte)
-.(W|L)Term{,Term}                       64      Write data word or long-how
-/ Hex-Data                              64      Writes Hex Data (Disasserbie)
+.(W|L)Term{,Term}                       64      Write data word or longword
+/ Hex-Data                              64      Writes Hex Data (Disassemble)
 ? Term{,Term}                           64      Calculate term and gives it out
 ASCFIND [From.To],String                61      Look for strings in disass. Listings
-ASCII [Von][[.]I#[Zeilen]]|[,Bis]       67      Displays memory area (ASC)
-(BREAKPOINTSIB) [(Number[=Address[‚(*|=[Value]|Number|
+ASCII [From][[.]I#[Lines]]|[,To]        67      Displays memory area (ASC)
+(BREAKPOINTS|B) [(Number[=Address[‚(*|=[Value]|Number|
     ?Condition)]])|(K[Number])]         55      Sets / deletes / shows breakpoints
 BSSCLEAR                                75      Deletes the BSS
-CHECKSUMME [Adr [,Peiüfsum [,Number]]]  75      Calculates a checksum
+CHECKSUMME [Adr[,Check[,Number]]]       75      Calculates a checksum
 CLR [From][,To]                         72      Deletes a memory area
 CLRCACHE                                71      Deletes cache (register / command memory)
 CLS                                    172      Deletes the screen
@@ -221,60 +218,60 @@ DO|(CALL [Mail][,Breakpoint])           67      Executes a sub-program
                                         66      Displays a memory area (HEX / ASC)
 (ERASE|KILL) Filename                  173      Deletes a file
 EXIT|QUIT|SYSTEM                        60      Sticks gen debougger
-FATTRIBUT [Name][,Attribute]           174      SEIRT RÜEATTRIBUNG
-FCLOSE                                 165      Closes a file (for File}
+FATTRIBUT [Name][,Attribute]           174      Sets file attributes
+FCLOSE                                 165      Closes a file (for File)
 FILEbefehl                             165      Output of the follow-up command to file
 FILL From,To,Value{,Value}              71      Fills a storage area
 FIND [From,To],Term                     61      Searches a memory area
 FOPEN Filename                         165      Opens a file (for file)
-FORMAT [(DIS)S][,Drive]                174      Formatieri a floppy disk
-FREE [Drive]                           173      Ertmnitiii free memory on runlight
+FORMAT [(DIS)S][,Drive]                174      Format a floppy disk
+FREE [Drive]                           173      Erinitelt free memory on drive
 GETCACHE                                71      Bring tab values from cache
 GETREGISTER [Address]                   75      Brings registry values from memory
-GO [Address][,Breakpoint]               60      Starts a Frogram from address IPC
+GO [Address][,Breakpoint]               60      Starts a Program from address IPC
 HUNT [From,To],Term                     61      Searches a memory area (.w)
 IF [Register Condition Term]            68      Provides demolition condition
-INFO                                    62      Returns Start of Text, Data and BSS
+INFO                                    62      Returns Start of TEXT, DATA and BSS
 INITREGISTER                            76      Sets all registers to zero
 KEY [([CIA]F Number=Text)]              72      Occupies a function key
 (ERASE|KILL) Filename                  173      Deletes a file
 (((S|L)ET)|-)(ALL|Variable)=Term        66      Sets a (all) registers
-LEXECUTE [Filename][,"Commandline”]     55      Loads a program for debusgen (reiociate)
-LINE                                    65      Is 79 May "-"
+LEXECUTE [Filename][,"Commandline”]     55      Loads a program for Debugger (relocate)
+LINE                                    65      Is 79 Times "-"
 LIST [From][[,]#[Lines]|[,To]           58      Disassembled, with labels without hex code
 LOAD Filename[,Address]                155      Loads a file into the store
 (DUMP|MEMORY)[.(B|W|L)] [From][[,]#[Lines]]|[To]
                                         66      Displays a memory area (HEX / ASC)
 M[OUSE]OFF                             173      Turn off the mouse
 M[OUSE]ON                              173      Turns the mouse
-(MOVE|COPY) From,To,After               71      Köpiert a shopkeeper
+(MOVE|COPY) From,To,After               71      Copies a memory area
 MKDIRECTORY Filename                   173      A subdirectory sets up
 NAME Altname,Newname                   174      Names a file
-OBSERVE [Trap[‚(?|-1|Listing)]]         70      Captures-College traps
+OBSERVE [Trap[‚(?|-1|Listing)]]         70      Calls certain traps
 ! Opcode                                64      Prefix opcode (issue of List)
 PRNcommand                              65      Output of the follow-up command to printer
-(READTRACK|RTRACK) [Track[,Page[,Address[,Drive]]]
+(READTRACK|RTRACK) [Track[,Side[,Address[,Drive]]]
                                         79      Reads a complete track
-(RS|READSECTOR) [Track[,Sector[,Page[,Address
+(RS|READSECTOR) [Track[,Sector[,Side[,Address
     [,Drive]]]]]                       178      Reads sectors (XBIOS 8)
-RESET [A[LL][,Vectors]]                 75      The systal vectors set (on debugger)
+RESET [A[LL][,Vectors]]                 75      The system vectors set (on debugger)
 RESIDENT                                82      Leaves the debugger (remains resident)
-RMDIRECTORY Filename                   173      Löschi a subdirectory (must be empty)
+RMDIRECTORY Filename                   173      Delete a subdirectory (must be empty)
 RWABS Rwfl.‚Buf.,Number,Recno,Drive    178      Write (reads) sectors (BIOS 4)
 SAVE [Date|name][‚Startadr‚Endadr]     163      Saves a storage area to Disk
-SAVE ![H][R]                           177      Spellechert settings
+SAVE ![H][R]                           177      Stores settings
 SCROLLOFF/SCROLLON [Fangradius]         77      Turns auto scrolling (OFF)
-SHOW (Adr[.(B|W|L)][,Number])|(,.Num)   66      Displays memory area constantly.
+SHOW (Adr[.(B|W|L)][,Number])|(,.Num)   66      Displays memory area constantly
 "String["]                              66      Output String (PRN or File)
 (((S|L)ET)|-)(ALL|Variable)=Term        66      Sets a (all) registers
-SWITCH                                  76      Schaitet resolution
+SWITCH                                  76      Turns Resolution
 SYMBOLTABLE [From][[,]#[Lines]]|[,To]   58      Specifies symbol table
-SYNC50 /SYNC60                          77      Sets frame frequency,
+SYNC50 /SYNC60                          77      Sets frame frequency
 ]Term                                   64      Write data (without new edition)
 TRACE [Number]                          63      Performs a (multiple) commands (FT)
 TYPE [Date|name]                       178      Viewing a File (ASC)
 UNTRACE [Address[,Number]]              67      Leads a program to the demolition
-(WS|WRITESEKTOR) [Track[,Sector[,Page[,Address
+(WS|WRITESEKTOR) [Track[,Sector[,Side[,Address
     [,Drive]]]]]                       179      Writes Sectors (XBIOS 8)
 command                                 79      Executes a command immediately
 
