@@ -148,10 +148,10 @@ SHIFT Delete                        : Deletes the line in which the cursor is re
 CONTROL Delete                      : Deletes the cell from the cursor position
 Insert                              : Inserts a space at the cursor position
 SHIFT Insert                        : Inserts a line from the cursor position
-CONTROL Insert                      : Turns the INSERT mode (AutoInsert)
-ALTERNATE Insert                    : Turns the INSERT mode
+CONTROL Insert                      : Cycle the INSERT mode (Auto-Insert)
+ALTERNATE Insert                    : Cycle the INSERT mode
 Undo                                : Restores the line (until the last return)
-Help                                : Write a cell back, which.with
+Help                                : Write a cell back, with which
 SHIFT Help                          : was saved
 CONTROL 1-9                         : Stores the screen content in one of ten buffers.
                                       With: 1-9, the keys are meant above the alpha keyboard.
@@ -165,7 +165,7 @@ CONTROL Ü Þ                         : This allows you to scroll through the ca
 CONTROL Clr/Home                    : Displays the current registers (corresponds to the "Fuller" links
                                       from the register notice)
 Function key                        : Selects one of the commands displayed above (see 5.2.)
-CTRL + ALT + Delete                 : warmstartDesDebuggers
+CTRL + ALT + Delete                 : Warm-start the Debugger
 CTRL + ALT + Right SFT + Del        : Cold start the Debugger
                                       (is the same as the Reset button. With two Resets
                                       quickly in a row will leave the Debugger.)
@@ -182,7 +182,7 @@ CONTROL + SHIFT + Help              : The screen content is saved in Degas-forma
 Caps Lock                           : Toggle keypad
 
 
-        normal und mit SHIFT        Mit Caps Lock ohne SHIFT
+        normal and with SHIFT        With Caps Lock without SHIFT
         (   )   /   *               A   B   C   D
         7   8   9   -               7   8   9   E
         4   5   6   +               4   5   6   F
