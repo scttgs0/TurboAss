@@ -1,4 +1,4 @@
-ORIGINAL
+﻿ORIGINAL
 ======== 
 
 
@@ -6,9 +6,9 @@ Referenzkarte OMIKRON.Debugger
 
 Die Tastaturbelegung des Debuggers
 
-SHIFT *                             : Scrolit den Bildschirm (der Cursor bleibt stehen)
-SHIFT + CONTROL                     : Scrollt den Bildschirm und bewegt den Cursor mit
-SHIFT + =>                          : Bewegt den Cursor an den linken/rechten Rand
+SHIFT Ý                             : Scrollt den Bildschirm (der Cursor bleibt stehen)
+SHIFT + CONTROL Ý                   : Scrollt den Bildschirm und bewegt den Cursor mit
+SHIFT Ü Þ                           : Bewegt den Cursor an den linken/rechten Rand
 Backspace                           : Löscht das Zeichen vor dem Cursor
 TAB                                 : Der Cursor springt zur nächsten 8er Position
 CONTROL RETURN                      : Setzt den Cursor in die linke untere Ecke
@@ -16,39 +16,39 @@ SHIFT RETURN                        : Schreibt CR
 Clr/Home                            : Setzt den Cursor in die obere linke Ecke
 SHIFT Clr/Home                      : Löscht den Bildschirm, .setzt.den Cursor nach oben links
 ESC                                 : Löscht den Bildschirm ab der Cursorposition
-Delete                              ; Löscht das Zeichen unterm Cursor, Rest rückt auf
-SHIFT Delete                        ; Löscht die Zeile, in der der Cursor steht, Rest rückt auf
-CONTROL Delete                      ; Löscht die Zelle ab der Cursorposition
-Insert                              : Fügt ein Space an der Cursorpositlion ein
+Delete                              : Löscht das Zeichen unterm Cursor, Rest rückt auf
+SHIFT Delete                        : Löscht die Zeile, in der der Cursor steht, Rest rückt auf
+CONTROL Delete                      : Löscht die Zelle ab der Cursorposition
+Insert                              : Fügt ein Space an der Cursorposition ein
 SHIFT Insert                        : Fügt eine Zeile ab der Cursorposition ein
 CONTROL Insert                      : Schaltet den Insert-Modus an (Autoinsert)
 ALTERNATE Insert                    : Schaltet den Insert-Modus aus    
 Undo                                : Restauriert die Zeile (bis zum letzten RETURN)
 Help                                : Schreibt eine Zelle zurück, die. mit
 SHIFT Help                          : gespeichert wurde
-CONTROL 1-9                         : Speichert den Bildschirminhalt in einen von zehn Buffern ab.
+CONTROL 1-9                         : Speichert den Bildschirminhalt in einen von zehn Buffer ab.
                                       Mit:1- 9 sind die Tasten über der Alpha- Tastatur gemeint.
                                       Es wird nur der Teil unter der Registeranzeige gespeichert!
-ALTERNATE 1 - 9                     : Holt. den Bildschirminhalt aus einem Buffer zurlück
+ALTERNATE 1 - 9                     : Holt. den Bildschirminhalt aus einem Buffer zurück
 ALTERNATE Zahl                      : Wenn Sie eine Zahl über den Zehnerblock eingeben, wird das
                                       entsprechende ASCII-Zeichen ausgegeben. Drücken Sie z. B.
-                                      ALTERNATE 138 (dann ALTERNATE loslassen), wird &
+                                      ALTERNATE 138 (dann ALTERNATE loslassen), wird e
                                       ausgegeben.
-CONTROL + +                         ; Damit‘ können Sie durch den Cache blättern (entspricht den
+CONTROL Ü Þ                         : Damit können Sie durch den Cache blättern (entspricht den
                                       Pfeilen links neben der Registeranzeige) (siehe UNTRACE)
 CONTROL Clr/Home                    : Zeigt die aktuellen Register an (entspricht dem “Fuller” links
                                       von der Registeranzeige)
 Funktionstaste                      : Wählt eine der oben angezeigten Befehle an (siehe 5.2.)
-CTRL + ALT + Delete                 : Warmstart des. Debuggers
-CTR L + ALT + Rechtes SFT + Del     : Kaltstart das Debuggers
+CTRL + ALT + Delete                 : Warmstart des Debuggers
+CTRL + ALT + Rechtes SFT + Del      : Kaltstart das Debuggers
                                       (ist das gleiche wie der RESET-Taster. Mit zwei Resets
                                       schnell hintereinander wird der Debugger verlassen.)
 CONTROL + P                         : Setzt den PC an die aktuelle Adresse
 CONTROL + B + 0-9|A-F               : Setzt einen. Breakpoint an die aktuelle Adresse
-CONTROL + G                         ; Startet das Programm ab der aktuellen Adresse
+CONTROL + G                         : Startet das Programm ab der aktuellen Adresse
                                       (die aktuelle Adresse steht am Zeilenanfang)
-SHIFT-SHIFT (beide)                 ; das laufende: Programm wird unter-
-                                      brochen und es wird in den Debugger zurückgekehrt.
+SHIFT-SHIFT (beide)                 : das laufende Programm wird unterbrochen und es
+                                      wird in den Debugger zurückgekehrt.
 CONTROL + Help                      : Der Debugger wird beendet und springt in den
                                       Assembler zurück. Das ist nur möglich, wenn der
                                       Debugger vom Assembler gestartet wurde.
@@ -71,31 +71,31 @@ Referenzkarte OMIKRON.Assembler
 Die Tastaturbelegung des Assemblers
 
 Backspace                           : löscht das Zeichen links vom Cursor
-Deiete                              : löscht das Zeichen unter dem Cursor
+Delete                              : löscht das Zeichen unter dem Cursor
 Insert                              : fügt ein Leerzeichen an der Cursorposition ein
 SHIFT Insert                        : fügt, eine Leerzeile ein
-CONTROL Dekte                       : öscht die aktuelle‘ Zeile
-CONTROL Y                           : öscht die aktuelle Zeile
-CONTROL Insert                      : schaltet die Editiermodi um (Überschr. /Autoinsert 1/11)
+CONTROL Delete                      : löscht die aktuelle‘ Zeile
+CONTROL Y                           : löscht die aktuelle Zeile
+CONTROL Insert                      : schaltet die Editiermodi um (Überschr./Autoinsert I/II)
 CLR/Home                            : zum Anfang der Seite
 SHIFT CLR/Home                      : zum Ende der Seite
 Tab                                 : zur nächsten Tabulatorposition
-SHIFT Tab                           : zur nächsten Tabulatorposition ohne einzurlücken.
+SHIFT Tab                           : zur nächsten Tabulatorposition ohne einzurücken.
 SHIFT Return                        : zur nächsten Zeile und fügt eine Leerzeile ein,
-CONTROL -—>                         : zum Ende der Zeile
-CONTROL <-                          : zum Anfang der Zeile
+CONTROL Þ                           : zum Ende der Zeile
+CONTROL Ü                           : zum Anfang der Zeile
 CONTROL Pfeil hoch                  : blättert eine Seite nach oben
 CONTROL Pfeil runter                : blättert eine Seite nach unten
 CONTROL CLR/Home                    : zum Anfang des Sourcetexts
-CONTROL Z                           : zur Position der letzen Änderung
+CONTROL Z                           : zur Position der letzten Änderung
 CONTROL J                           : zum nächsten Fehler
 CONTROL S                           : zur nächten ";x"-Marke
 CONTROL SHIFT S                     : zur vorhergehenden ";x”-Marke
 ALTERNATE E                         : zum Ende des Sourcetexts
 ALTERNATE B                         : zum Blockanfang
 ALTERNATE K                         : zum Blockende
-ALTERNATE Z                         : zur Zelle (akt. Z.wird für CTRL Z gemerkt‘
-ALTERNATE SHIFT Z                   : zur Zeile o. erneute Abfrage des Labelnamens
+ALTERNATE Z                         : zur Zelle (akt. Z.wird für CTRL Z gemerkt
+ALTERNATE SHIFT Z                   : zur Zeile o. erneute Abfrage des Label-namens
 ALTERNATE S                         : zur nächsten nicht-tokenisierbaren Z.(A-Lcad)
 ALTERNATE SHIFT S                   : zur letzten nicht-tokenisierbaren Zeile
 ALTERNATE J                         : zum nächsten Fehler
@@ -104,22 +104,22 @@ ALTERNATE 1-0                       : Zu einer Positionsmarkierung
 ALTERNATE 8                         : zum Anfang des TEXT-Segments
 ALTERNATE *                         : zum Anfang des DATA-Segments
 ALTERNATE =                         : zum Anfang des Block-Storage-Segments (BSS)
-CONTROL 1-0                         : setzt eine Positionsmarklerung
+CONTROL 1-0                         : setzt eine Positionsmarkierung
 CONTROL SHIFT 1-0                   : löscht eine Positionsmarkierung
-ALTERNATE 1- 0                      : zu einer Positionsmarklerung
+ALTERNATE 1- 0                      : zu einer Positionsmarkierung
 CONTROL 8                           : markiert den Blockanfang (auch mit der Maus)
-CONTROL K                           : markiert das Blöockende (auch mit der Maus)
+CONTROL K                           : markiert das Blockende (auch mit der Maus)
 ALTERNATE B                         : zum Blockanfang
 ALTERNATE K                         : zum Blockende
-CONTROL H                           : öscht die Blockmarkierungen (Hide Block)
-ALTERNATE Y                         : öscht den Block
+CONTROL H                           : löscht die Blockmarkierungen (Hide Block)
+ALTERNATE Y                         : löscht den Block
 CONTROL D                           : dupliziert die Zeile, in der der Cursor steht.
 CONTROL F                           : sucht ein Symbol (nur zu Symbolaufrufen)
-CONTROL L                           : sucht einen ASCH-Text
-CONTROL E                           : sucht und ersetzt einen ASCI-Text
+CONTROL L                           : sucht einen ASCII-Text
+CONTROL E                           : sucht und ersetzt einen ASCII-Text
 ALTERNATE F                         ; setzt die Symbolsuche fort
-ALTERNATE L                         : setzt die ASCH-Suche fort
-CONTROL W                           : Zahlenbasis wandeln (Dez/Hex/Bin/”ASC”/"ASC")
+ALTERNATE L                         : setzt die ASCII-Suche fort
+CONTROL W                           : Zahlenbasis wandeln (Dez/Hex/Bin/“ASC“/‘ASC‘)
 CONTROL +                           : Zeichensatz ausgeben (Auswahl mit Maus)
 ALTERNATE SHIFT Help                : Speichert den Bildschirminhalt im DEGAS-Format
 
@@ -133,19 +133,19 @@ Reference Card OMIKRON.Debugger
 
 The Keyboard Layout of the Debugger
 
-SHIFT *                             : Scroll the screen (the cursor stops)
-SHIFT + CONTROL                     : Scroll the screen and moves the cursor with
-SHIFT + =>                          : Moves the cursor on the left / right edge
+SHIFT Ý                             : Scrolls the screen (the cursor stops)
+SHIFT + CONTROL Ý                   : Scroll the screen and moves the cursor with
+SHIFT Ü Þ                           : Moves the cursor on the left / right edge
 Backspace                           : Deletes the sign in front of the cursor
 TAB                                 : The cursor jumps to the next 8-time position
 CONTROL RETURN                      : Sets the cursor in the lower-left corner
 SHIFT RETURN                        : Writes CR
 Clr/Home                            : Sets the cursor into the upper-left corner
-SHIFT Clr/Home                      : Deletes the screen, set. The cursor upwards left
+SHIFT Clr/Home                      : Deletes the screen, set the cursor to the upper-left
 ESC                                 : Deletes the screen from the cursor position
-Delete                              ; Deletes the sign under the cursor, remainder moves on
-SHIFT Delete                        ; Deletes the line in which the cursor is resting on
-CONTROL Delete                      ; Deletes the cell from the cursor position
+Delete                              : Deletes the sign under the cursor, remainder moves on
+SHIFT Delete                        : Deletes the line in which the cursor is resting on
+CONTROL Delete                      : Deletes the cell from the cursor position
 Insert                              : Inserts a space at the cursor position
 SHIFT Insert                        : Inserts a line from the cursor position
 CONTROL Insert                      : Turns the INSERT mode (AutoInsert)
@@ -154,33 +154,32 @@ Undo                                : Restores the line (until the last return)
 Help                                : Write a cell back, which.with
 SHIFT Help                          : was saved
 CONTROL 1-9                         : Stores the screen content in one of ten buffers.
-                                      With: 1- 9, the keys are meant above the alpha keyboard.
+                                      With: 1-9, the keys are meant above the alpha keyboard.
                                       Only the part is stored under the register indicator!
-ALTERNATE 1 - 9                     : Get the screen content from a buffer
-ALTERNATE number                    : If you enter a number over the Zehnerblock, the
-                                      Appropriate ASCII characters output. Press z.B.
-                                      Alternate 138 (then release alternate), will &
-                                      output.
-CONTROL + +                         ; So you can scroll through the cache (corresponds to the
-                                      Arrows to the left of the register indicator) (see Untrace)
+ALTERNATE 1 - 9                     : Retrieve the screen content from a buffer
+ALTERNATE Number                    : If you enter a number on the numeric keypad, e.g.
+                                      Alternate 138 (then release alternate), E is output.
+                                      appropriate ASCII characters output. Press e.g.
+CONTROL Ü Þ                         : This allows you to scroll through the cache (corresponds to the
+                                      arrows to the left of the register indicator) (see Untrace)
 CONTROL Clr/Home                    : Displays the current registers (corresponds to the "Fuller" links
-                                      From the register notice)
-Function Key                        : Selects one of the commands displayed above (see 5.2.)
-CTRL + ALT + Delete                 : Warm-start the Debugger
-CTR L + ALT + Right SFT + Del       : Cold-start the Debugger
-                                      (is the same as the reset button. With two resets
-                                      Quickly in a row will leave the debugger.)
+                                      from the register notice)
+Function key                        : Selects one of the commands displayed above (see 5.2.)
+CTRL + ALT + Delete                 : warmstartDesDebuggers
+CTRL + ALT + Right SFT + Del        : Cold start the Debugger
+                                      (is the same as the Reset button. With two Resets
+                                      quickly in a row will leave the Debugger.)
 CONTROL + P                         : Sets the PC to the current address
 CONTROL + B + 0-9|A-F               : Sets one Breakpoint to the current address
-CONTROL + G                         ; Start the program from the current address
+CONTROL + G                         : Start the program from the current address
                                       (The current address is at the beginning of the line)
-SHIFT-SHIFT (both)                  ; The current program will be
-                                      broken and it is returned to the debugger.
-CONTROL + Help                      : The debugger is ended and jumps into the
-                                      Assembler back. That's only possible if the
-                                      Debugger was started by the assembler.
-CONTROL + SHIFT + Help              : The screen content is saved in Degas format.
-Caps Lock                           : Switching tooth block
+SHIFT-SHIFT (both)                  : The current program is interrupted and it
+                                      is returned to the Debugger.
+CONTROL + Help                      : The Debugger is ended and jumps back into the
+                                      Assembler. That's only possible if the
+                                      Debugger was started by the Assembler.
+CONTROL + SHIFT + Help              : The screen content is saved in Degas-format.
+Caps Lock                           : Toggle keypad
 
 
         normal und mit SHIFT        Mit Caps Lock ohne SHIFT
@@ -197,55 +196,55 @@ Reference Card OMIKRON.Assembler
 The Keyboard Layout of the Assembler
 
 Backspace                           : Deletes the character to the left of the cursor
-Deiete                              : Deletes the character under the cursor
+Delete                              : Deletes the character under the cursor
 Insert                              : Inserts a space at the cursor position
 SHIFT Insert                        : adds a blank line
-CONTROL Delete                      : If the current line
-CONTROL Y                           : If so the current line
-CONTROL Insert                      : Turns the edit modes around (exceeding / autoinsert 1/11)
+CONTROL Delete                      : Deletes the current line
+CONTROL Y                           : Deletes the current line
+CONTROL Insert                      : Switches the editing modes (overwrite/autoinsert I/II)
 CLR/Home                            : Back to the top of the page
 SHIFT CLR/Home                      : To the bottom of the page
 Tab                                 : To the next tab position
-SHIFT Tab                           : To the next tab position without insertion.
+SHIFT Tab                           : To the next tabing position without mitigating
 SHIFT Return                        : To the next line and inserts a blank line
-CONTROL -—>                         : To the end of the line
-CONTROL <-                          : To the beginning of the line
+CONTROL Þ                           : To the end of the line
+CONTROL Ü                           : To the beginning of the line
 CONTROL Arrow                       : Scrolls a page upwards
 CONTROL Arrow down                  : Scroll down a page
 CONTROL CLR/Home                    : Back to the beginning of the source text
 CONTROL Z                           : To the position of the last change
 CONTROL J                           : To the next mistake
-CONTROL S                           : to the nights "; x" brand
+CONTROL S                           : To the nights "; x" brand
 CONTROL SHIFT S                     : To the previous "; X" brand
 ALTERNATE E                         : To the end of the source text
-ALTERNATE B                         : to the block start
-ALTERNATE K                         : to the block end
-ALTERNATE Z                         : To the cell (act. For Ctrl Z, not noticed )
+ALTERNATE B                         : To the block start
+ALTERNATE K                         : To the block end
+ALTERNATE Z                         : To the cell (act. Z. is notified for Ctrl Z
 ALTERNATE SHIFT Z                   : To line o. Renewed query of the label name
 ALTERNATE S                         : To the next non-tokenizable Z. (A-LCAD)
 ALTERNATE SHIFT S                   : To the last non-tokenizable line
 ALTERNATE J                         : To the next mistake
 ALTERNATE SHIFT J                   : To the previous error
 ALTERNATE 1-0                       : To a position mark
-ALTERNATE 8                         : To the beginning of the text segment
-ALTERNATE *                         : Back to the top of the Data Segment
+ALTERNATE 8                         : To the beginning of the TEXT segment
+ALTERNATE *                         : Back to the top of the DATA Segment
 ALTERNATE =                         : Back to the top of the Block Storage Segment (BSS)
 CONTROL 1-0                         : Sets a position marker
 CONTROL SHIFT 1-0                   : Deletes a position mark
 ALTERNATE 1-0                       : To a position marker
 CONTROL 8                           : Marks the block start (also with the mouse)
 CONTROL K                           : Marks the blaze end (also with the mouse)
-ALTERNATE B                         : to the block start
-ALTERNATE K                         : to the block end
-CONTROL H                           : If the block markings (hide block)
-ALTERNATE Y                         : Eashed the block
+ALTERNATE B                         : To the block start
+ALTERNATE K                         : To the block end
+CONTROL H                           : Deletes the block marks (hide block)
+ALTERNATE Y                         : View the block
 CONTROL D                           : Duplicate the line in which the cursor stands
 CONTROL F                           : Look for a symbol (only to call calls)
-CONTROL L                           : Look for an ash text
+CONTROL L                           : Look for an ASCII text
 CONTROL E                           : Looks and replaces an ASCII text
 ALTERNATE F                         ; Sets the symbol search
-ALTERNATE L                         : Sets the ash search
-CONTROL W                           : Convert numbers (DEC / HEX / BIN / "ASC" / "ASC")
+ALTERNATE L                         : Sets the ASCII search
+CONTROL W                           : Convert numbers (DEC / HEX / BIN / "ASC" / 'ASC')
 CONTROL +                           : Output character set (selection with mouse)
-ALTERNATE SHIFT Help                : Saves the screen content in Degas format
+ALTERNATE SHIFT Help                : Saves the screen content in Degas-format
 
