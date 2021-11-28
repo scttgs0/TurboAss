@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-22 4.3__ Die Environment- Variable
-
- 
-
 4.3 Die Environment- Variable
 
 Falls die Environment-Variable „SIGMA“ definiert ist, versuchen sowohl der
@@ -48,4 +44,39 @@ schaltet werden (siehe Kapitel 5.5.5 auf Seite 79).
 TRANSLATED
 ==========
 
+
+4.3 The Environment-Variable
+
+If the Environment-Variable "SIGMA" is defined, try both the Assembler as
+well as the Debugger, there your .INF files (with the assembler also the
+OM-ASM.CFG and the OM-ASSEM.DAT file) to load.
+
+There are several ways to set the Environment variables:
+
+* under NeoDesk, with "SIGMA=D:\ASS\"
+
+* Under a CommandShell, under the Mishell in the file MISHELL.ENV
+
+* with the program DESKTOP.PRG. This program is included with the assembler;
+  For a quick guide, see Appendix I.9 on page 221. You can change the
+  environment variables in source text. The program must be considered last
+  in the AUTO folder. To resort the programs in a folder, you can use the
+  Mishell or
+
+— Copy all programs to another folder,
+
+— Delete the first folder,
+
+— Create him again
+
+— and copy the programs in the desired order
+
+— (Of course, delete the intermediate folder again)
+
+4.4 Blitter Support
+
+The Omikron.Assembler uses to save the background with drop-down menus,
+for scrolling u. A blitter when it is turned on. In the event that her
+blitter works faulty, it can be switched off in the assembler
+(see chapter 5.5.5 on page 79).
 

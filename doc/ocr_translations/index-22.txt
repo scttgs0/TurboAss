@@ -14,7 +14,7 @@ programmiert, Dies ist nötig, weil Abstürze von GEM-Programmen (die be-
 sonders durch Assemblerprogramme leicht zu erzeugen sind) häufig das ge-
 samte GEM lahmlegen. Sie können mit dem OMIKRON. Assembler jedoch
 auch bei zerstörtem GEM noch weiterarbeiten, bzw., was sicherlich besser ist:
-Ihren Sourcetext abspeichern‘, RESET drücken und das System neu starten.
+Ihren Sourcetext abspeichern {1}, RESET drücken und das System neu starten.
 
 4.2 Die Dialogboxen
 
@@ -26,14 +26,38 @@ mit sie sofort als Exit-Buttons erkannt werden können. Der Default-Button
 ist mit etwas breiterem Rahmen dargestellt.
 
  
-
-+Wenn das Gemdos beschädigt wurde, ist das eventuell nicht mehr möglich. ..
-
-20
+--
+{1} Wenn das Gemdos beschädigt wurde, ist das eventuell nicht mehr möglich ...
 
 
 
 TRANSLATED
 ==========
 
+
+Chapter 4
+
+Joint Assembler and Debugger
+
+4.1 The User Interface
+
+The user interface leans against GEM, but was completely reprogrammed,
+this is necessary because crashes of GEM programs (which are particularly
+generated especially through assembler programs) often paralyzed the entire
+GEM. You can use the Omikron.Assembler, however, continue to work with
+destroyed GEM, or, which is certainly better:
+Save your SourceText {1}, press Reset and restart the system.
+
+4.2 The Dialog Boxes
+
+The dialog boxes correspond to those of GEM, but also work completely
+independently by the operating system. As under GEM there are radio buttons
+(of which only one is selected (selected)) and exit buttons. With the latter
+a dialogue will leave. In them are only capital letters, With it can be
+recognized immediately as exit buttons. The default button is shown with a
+slightly wider frame.
+
+ 
+--
+{1} If the Gemdos has been damaged, that may not be possible anymore ...
 

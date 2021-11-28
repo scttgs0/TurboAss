@@ -3,6 +3,7 @@ ORIGINAL
 
 
 Kapitel 3
+
 Installation
 
 Zuerst sollten Sie den Assembler und den Debugger installieren; starten Sie
@@ -25,11 +26,32 @@ schlüsselt), können wir bei jeder Raubkopie zurückverfolgen, wer sie in Um-
 lauf gebracht hat. OMIKRON.Software behält sich gerichtliche Schritte gegen
 Raubkopierer vor.
 
-19
-
 
 
 TRANSLATED
 ==========
 
+
+Chapter 3
+
+Installation
+
+First, you should install the assembler and the debugger; Start the program
+INSTALL.PRG on your original diskette.
+
+The program asks you for name and address. First enter your name and
+complete the entry with RETURN. Corrections can be made with the cursor
+keys and delete. Then please give the road and your place of residence.
+If all inputs are correct, you can answer the last question with "y" for
+"yes", otherwise you will give "n" for "no" - you then get the opportunity
+to correct your entries again.
+
+Attention: Please specify your correct name. If you enter a wrong, you
+are not entitled to later updates.
+
+You must make sure that no third party can get to copies of your
+Omikron.Assembler. Since your name is in the program code (also
+encrypted), we can trace back every pirate, who has brought it into
+circulation. Omikron.Software reserves the right to take legal action
+against pirated copiers.
 

@@ -1,40 +1,26 @@
 ORIGINAL
-======== 
+========
 
-
-4 _ GEMEINSAMES VON ASSEMBLER_UND DEBUGGER 21
-
- 
 
 Tabelle 4.1; Die Tasten in Dialogboxen
 
- 
 
-RETURN | Betätigt den Default-Button.
-| oder TAB | Der Cursor springt zum nächsten Eingabefeld.
-ft | Der Cursor springt ein Eingabefeld zurück.
-CLR/HOME | Der Cursor springt zum ersten Eingabefeld.
-ESC | Löscht das Eingabefeld, in dem der Cursor steht.
-DELETE | Löscht das Zeichen unter dem Cursor.
-BACKSPACE | Löscht das Zeichen links vom Cursor.
-+ und = | Bewegt den Cursor im Eingabefeld; Autoinsert ist
-immer an.
-UNDO | Bricht die Eingabe ab. Alle Eingaben werden
-ungültig, kein Knopf wird gedrückt. Rücksprung
-in die Haupteingabe.
-CONTROL-< | Springt an den Anfang des aktuellen Eingabefel-
-des.
-CONTROL-=> | Springt an das Ende des aktuellen Eingabefeldes.
+        RETURN  |  Betätigt den Default-Button.
+    ⇓ oder TAB  |  Der Cursor springt zum nächsten Eingabefeld.
+             ⇑  |  Der Cursor springt ein Eingabefeld zurück.
+      CLR/HOME  |  Der Cursor springt zum ersten Eingabefeld.
+           ESC  |  Löscht das Eingabefeld, in dem der Cursor steht.
+        DELETE  |  Löscht das Zeichen unter dem Cursor.
+     BACKSPACE  |  Löscht das Zeichen links vom Cursor.
+       ⇐ und ⇒  |  Bewegt den Cursor im Eingabefeld; Autoinsert ist
+                   immer an.
+          UNDO  |  Bricht die Eingabe ab. Alle Eingaben werden
+                   ungültig, kein Knopf wird gedrückt. Rücksprung
+                   in die Haupteingabe.
+     CONTROL-⇐  |  Springt an den Anfang des aktuellen Eingabefeldes.
+     CONTROL-⇒  |  Springt an das Ende des aktuellen Eingabefeldes.
 
- 
 
- 
-
- 
-
- 
-
- 
 
 Die Tasten mit besonderer Funktion in den Dialogboxen sind in Tabelle 4.1
 aufgeführt.
@@ -50,4 +36,30 @@ Button auch anwählen, indem Sie ALT-Buchstabe drücken.
 TRANSLATED
 ==========
 
+
+Table 4.1; The Buttons in Dialog Boxes
+
+
+        RETURN  |  Activate the default button.
+      ⇓ or TAB  |  The cursor jumps to the next input field.
+             ⇑  |  The cursor jumps back a input field.
+      CLR/HOME  |  The cursor jumps to the first input field.
+           ESC  |  Deletes the input field in which the cursor is.
+        DELETE  |  Deletes the character under the cursor.
+     BACKSPACE  |  Deletes the character to the left of the cursor.
+       ⇐ and ⇒  |  Moves the cursor in the input field;Autoinsert is
+                   always on.
+          UNDO  |  Cancels the entry.All entries are invalid, no button
+                   is pressed. Return to the main input.
+     CONTROL-⇐  |  Jumps to the beginning of the current input field.
+     CONTROL-⇒  |  Jumps to the end of the current input field.
+
+
+
+The special function buttons in the dialog boxes are listed in Table 4.1.
+
+You can also use the left mouse button to set the cursor to an input field.
+
+At the top-left of each button is a small letter. You can also select a
+button by pressing Alt-Letter.
 
