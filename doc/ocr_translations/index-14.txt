@@ -2,38 +2,67 @@ ORIGINAL
 ======== 
 
 
-5.21 Die Dialoxbox Block/Alles drucken ......1.0.0.0.0.00000- 66
+  5.21 Die Dialoxbox Block/Alles drucken .................. 66
+  5.22 Der Drucker antwortet nicht ........................ 66
+  5.23 Das Menü „Suchen“ .................................. 67
+  5.24 Der Dialog „Symbol suchen“ ......................... 68
+  5.25 Die Dialogbox „Symbol ersetzen“ .................... 69
+  5.26 Der Dialog „Text suchen“ ........................... 70
+  5.27 Der Dialog „Text ersetzen“ ......................... 71
+  5.28 Der Dialog „Sprung zu Zeile“ ....................... 71
+  5.29 Das Menü „Block“ ................................... 73
+  5.30 Das Menü „Einstellungen“ ........................... 74
+  5.31 Die Darstellungs-Dialogbox ......................... 74
+  5.32 Die Dialogbox „Editor 1“ ........................... 76
+  5.33 Die Dialogbox „Editor 2“. .......................... 77
+  5.34 Die Dialogbox „Editor 3..." ........................ 79
+  5.35 Die Dialogbox „Funktionstasten belegen“ ............ 81
+  5.36 Das Menü „Hilfe“ ................................... 81
+  5.37 Die Dialogbox zum Uhrstellen ....................... 82
+  5.38 Abbruch bei OPT P+ ................................. 90
+  5.39 Keine weiteren Fehler vorhanden ................... 102
 
-5.22 Der Drucker antwortet nicht... ‚.....0.0.00.0000040404 66
-5.23 Das Menü „Suchen“ 0.000000 67
-5.24 Der Dialog „Symbol suchen“ .....0.0.0.0.00000040404040L 68
-5.25 Die Dialogbox „Symbol ersetzen“ ........0.0.0.000004 69
-5.26 Der Dialog „Text suchen“ ......0.0.0000000000004 70
-5.27 Der Dialog „Text ersetzen“ ........0.0.00000000044 71
-5.28 Der Dialog „Sprung zu Zeile“ ‚....0.0000000000004 71
-5.29 Das Menü „Block“ ...0.0.00000000 0 73
-5.30 Das Menü „Einstellungen“ ....000000000000040404 74
-5.31 Die Darstellungs-Dialogbox .....0.0.0.000000004040404 74
-5.32 Die Dialogbox „Editor1“ .....0.00.00000000000004 76
-5.33 Die Dialogbox „Editor 2“. .......0.0.000000 0000404 77
-5.34 Die Dialogbox „Editor 3..." ....000.00000000000 04 79
-5.35 Die Dialogbox „Funktionstasten belegen“ ............ 81
-5.36 Das Menü „Hilfe“ ....0.0000000000000 00000004 81
-5.37 Die Dialogbox zum Uhrstellen .......0.000000004044 82
-5.38 Abbruch bei OPT P+ ee 90
-5.39 Keine weiteren Fehler vorhanden ....,..0.0.0.0.0.0000 4 102
-6.1 Die Bildschirmseite ........0.00000000000000404 108
-6.2 Die Funktionstastenleiste . ..........000000004044 117
-6.3 Marker anzeigen im Debugger .......0.000000004044 120
-6.4 Die Breakpointanzeige .......0000000100 004404 121
-6.5 Die Speicherinfoanzeige . .......0.00000000040404044 122
-6.6 Programmende des Debuggers ........0.0.0.0.00.0.040404 123
+  6.1 Die Bildschirmseite ................................ 108
+  6.2 Die Funktionstastenleiste .......................... 117
+  6.3 Marker anzeigen im Debugger ........................ 120
+  6.4 Die Breakpointanzeige .............................. 121
+  6.5 Die Speicherinfoanzeige ............................ 122
+  6.6 Programmende des Debuggers ......................... 123
 
-B.1 Ein kleines internes Problem .....0.0.0.0.0000004040404L 183
+B.1 Ein kleines internes Problem ......................... 183
 
 
 
 TRANSLATED
 ==========
 
+
+  5.21 The Block Dialog Box / Print Everything ............ 66
+  5.22 The Printer does not Answer ........................ 66
+  5.23 The "Search" Menu .................................. 67
+  5.24 The "Symbol Search" Dialog ......................... 68
+  5.25 The "Replace Symbol" Dialog Box .................... 69
+  5.26 The "Search for Text" Dialog ....................... 70
+  5.27 The "Replace Text" Dialog .......................... 71
+  5.28 The "Jump to Line" Dialog .......................... 71
+  5.29 The "Block" Menu ................................... 73
+  5.30 The "Settings" Menu ................................ 74
+  5.31 The Display Dialog Box ............................. 74
+  5.32 The "Editor 1" Dialog Box .......................... 76
+  5.33 The "Editor 2" Dialog Box .......................... 77
+  5.34 The "Editor 3 ..." Dialog Box ...................... 79
+  5.35 The "Process Function Keys" Dialog Box ............. 81
+  5.36 The "Help" Menu .................................... 81
+  5.37 The Setting Dialog Box ............................. 82
+  5.38 Abort OPT P+ ....................................... 90
+  5.39 No Further Errors Available ....................... 102
+
+  6.1 The Screen Page .................................... 108
+  6.2 The Function Keybar ................................ 117
+  6.3 Show Markers in the Debugger ....................... 120
+  6.4 The Breakpoint Display ............................. 121
+  6.5 The Storage Information Display .................... 122
+  6.6 Program End of the Debugger ........................ 123
+
+B.1 A Small Internal Problem ............................. 183
 
