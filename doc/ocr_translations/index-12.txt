@@ -1,57 +1,60 @@
 ORIGINAL
-======== 
+========
 
 
 Tabellenverzeichnis
 
-4.1
+    4.1 Die Tasten in Dialogboxen ......................... 21
 
-5.1
-5.2
-5.3
-5.4
-5,5
+    5.1 Konvertierungen in den Motorola-Standard .......... 33
+    5.2 Die Rechenoperationen des Assemblers .............. 36
+    5.3 Die Escape-Belegungen ............................. 46
+    5.4 Die Gründe fürs Disabeln .......................... 61
+    5.5 Das DX-Demo ....................................... 85
 
-6.1
-6.2
-6.3
-6.4
-6.5
-6.6
-6.7
-6.8
+    6.1 Die Flags des Statusregisters .................... 109
+    6.2 Allgemeine Tastenkommandos ....................... 115
+    6.3 Zusätzliche Tastenkommandos ...................... 116
+    6.4 Der Zehnerblock .................................. 116
+    6.5 Die Zahlensysteme ................................ 130
+    6.6 Die erlaubten Vorzeichen ......................... 130
+    6.7 Die erlaubten Rechenzeichen ...................... 131
+    6.8 Die Fileattribute ................................ 150
 
-D.1
-D.2
-D.3
-D.4
-D.5
-
-Die Tasten in Dialogboxen .....0.000000000.004040004 21
-Konvertierungen in den Motorola-Standard ........... 33
-Die Rechenoperationen des Assemblers ............. 36
-Die Escape-Belegungen . .. 0... .0.000000000000404 46
-Die Gründe fürs Disabeln ....0.0.0.0.00000000004044 61
-Das DX-Demo’. + x. uk: WERFEN ERE KHK KK RE RE 85
-Die Flags des Statusregisters .........0.000000400 04 109
-Allgemeine Tastenkommandos . .....0.0000000004044 115
-Zusätzliche Tastenkommandos . . 000 116
-Der Zehnerblock . .. 1.000000 000 116
-Die Zahlensysteme .. 0.000000 130
-Die erlaubten Vorzeichen ......0.0.0.0000040040000404 130
-Die erlaubten Rechenzeichen .........00.0.0000000L 131
-Die Fileattribute ....0.0.00000.00000000000404044 150
-Der Programmheader . .....1.00.0000000000.00044 189
-Die Basepage 2.0.0000 000 190
-Der Boot-Sektor . . 1.00.0000 195
-Die Symboltabelle . ,. 0.0.0000 197
-Die Symboltabelle des Assemblera . 0. .000000000004 197
-
-10
+    D.1 Der Programmheader ............................... 189
+    D.2 Die Basepage ..................................... 190
+    D.3 Der Boot-Sektor .................................. 195
+    D.4 Die Symboltabelle ................................ 197
+    D.5 Die Symboltabelle des Assemblers ................. 197
 
 
 
 TRANSLATED
 ==========
 
+
+Table Directory
+
+    4.1 The Buttons in Dialog Boxes ....................... 21
+
+    5.1 Conversions to the Motorola-Standard .............. 33
+    5.2 The Arithmetic Operations of the Assembler ........ 36
+    5.3 The Escape Assignments ............................ 46
+    5.4 The Reasons for the Disabilities .................. 61
+    5.5 That DX-Demo ...................................... 85
+
+    6.1 The Status Registers Flags ....................... 109
+    6.2 General Key Commands ............................. 115
+    6.3 Additional Key Commands .......................... 116
+    6.4 The Numeric Keypad ............................... 116
+    6.5 The Number Systems ............................... 130
+    6.6 The Permitted Signs .............................. 130
+    6.7 The Allowed Arithmetic Characters ................ 131
+    6.8 The File Attributes .............................. 150
+
+    D.1 The Program Header ............................... 189
+    D.2 The Basepage ..................................... 190
+    D.3 The Boot Sector .................................. 195
+    D.4 The Symbol Table ................................. 197
+    D.5 The Symbol Table of Assembler .................... 197
 
