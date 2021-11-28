@@ -33,11 +33,40 @@ und das Programm automatisch zu starten? Und bei Sourcetexten mit we-
 niger als 10000 Zeilen dauert das ganze nicht einmal eine Sekunde, Wenn
 das Programm ordnungsgemäß beendet wurde, wird ebenfalls automatisch
 
-14
-
 
 
 TRANSLATED
 ==========
 
+
+Chapter 1
+
+Foreword
+
+Dear Programmer,
+
+With the Omikron.Assembler have acquired a quick and comfortable
+development system that optimally supports it in every phase of program
+development.
+
+The Omikron.Assembler has been developed for professionals, i., Many new
+features and ideas have been implemented, which does not offer any other
+assembler yet; Each programmer who has once worked with this assembler
+will appreciate these functions.
+
+But that should not mean that beginners are incorrectly advised with this
+assembler. On the contrary, especially the very simple and at the same time
+very comfortable possibilities of debugging in conjunction with an extremely
+high safety against incorrect operation, it allows the beginner to learn
+this programming language according to the trial-and-error principle, which
+has so far only with basic interpreters it was possible. That the editor has
+already noticed errors when entering is probably a matter of course. Of course
+we had to use some technical terms in this manual. If you do not know a word,
+please refer to Appendix C from page 184.
+
+Which other assembler allows it z. For example, to assemble a program with
+a touch of pressing, to pass the finished program to the debugger and start
+the program automatically? And with SourceTexts with less than 10000 lines,
+the whole thing does not even take a second if the program has been properly
+terminated, also automatically becomes
 

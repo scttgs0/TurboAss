@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-16
-
- 
-
 warten soll. Sie werden bei kürzeren Programmen (bis einige KByte) die
 Erfahrung machen, daß der OMIKRON. Assembler bereits fertig assembliert
 hat, bevor Sie die Assemble-Taste losgelassen haben. Auf den OMIKRON.
@@ -50,4 +46,39 @@ betrag zwischen den Verkaufspreisen der Grund- und der Makro- Version.
 TRANSLATED
 ==========
 
+
+should wait. You will experience in shorter programs (up to some KByte)
+that the Omikron.Assembler already assembled before you released the
+Assemble button. On the Omikron.Assembler you never have to wait!.
+
+We have oriented us to existing standards, as far as possible: experienced
+assembler programmers do not have to transgress, but can continue working
+as usual.Thus, the assembler does not just understand the Motorola standard
+but also various other command and pseudo opcode syntaxes.Our editor is
+largely tempus-compatible (and not only in the keyboard occupancy, even
+in speed).
+
+If you exist existing source codes in the Omikron.Assembler take over,
+these are largely converted automatically. So you can start projects
+comfortably with the Omikron.Continue assembler.
+
+Oh yes: You have acquired the basic version of the Omikron.Assembler.
+This is subject to two restrictions compared to the macro version:
+
+1. The basic version dominates no macros (could be almost thinking ...).
+Macros (command summaries) are useful if they want to make many operating
+system calls from assembler. We have included libraries with operating
+system calls on the floppy disk; As a rule, they can do without macros
+as a rule.
+
+2. The basic version has no linker. Left (tie program parts) If you have
+normal assemblers, e.g., therefore, so that the assembly does not take so
+long. That's the Omikron.Assembler not necessary. The Omikron.Assembler
+already has a limited link capacity in the basic version, i. Assembler
+programs can be accessed to other programs.(See also page 60)
+
+If you are on macros, or if you do not sufficient the link possibilities
+of the Omikron.Assembler, we recommend the macro version of the
+Omikron.Assembler; You will upgrade to the difference between the sales
+prices of the basic and macro version.
 

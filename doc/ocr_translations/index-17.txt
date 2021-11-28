@@ -55,3 +55,44 @@ TRANSLATED
 ==========
 
 
+1 WORD
+--
+ 
+
+Backed back to the editor. If the program crashes, this is not a leg break.
+Simply press Control Help * and you are already in the editor again, in the
+line in which the error occurred, a change, then again alternate-a pressed,
+and already runs the program.No cumbersome link process, no disk access.
+The turn-around times are negligible low, it will inspire you!
+
+Other new concepts and our professional implementation will certainly create
+a lot of astonishment with you:
+
+* The Omikron.Assembler translates an average of 1100,000 lines per minute -
+it can even reach up to 3,750,000 lines per minute. He is thus between 10 and
+600 times faster than previous Assembler. The assembler translates itself in
+about 2 seconds - and the 30,000 lines source code.
+
+* Assembler and debugger are fully on the processors 68000 (was actually
+expected), 68010 and 68020 executable. (Of course, only the normal 68000
+commands and address types can be used on a 68020).
+
+* He reports typo and incorrect address types right when entering. You can
+correct immediately when entering, do not receive any ellangen error lists
+in the assembly. Furthermore, double-assigned symbol names - a frequent
+error of programmers - are already mentioned when entering.
+
+* Many new features of the editor allow the assembler programmer to work even
+more efficiently and faster than before (e.g., search and replace symbols).
+
+This has become possible this is all through a "token-eating editor": the
+Assembler translates the source code during editing.
+
+We have the omikron.Perfected assembler in terms of speed, as the programs
+on the ST is much longer than e.g. on the C-64, the programmer but still
+not on the assembler
+
+ 
+--
+1 In this manual, all keyboard shortcuts are specified in the Typewriter font.
+
