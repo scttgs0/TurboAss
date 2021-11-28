@@ -21,7 +21,7 @@ OM-DEBUG.PRG — Der Debugger (siehe Kapitel 6 auf Seite 106)
 CALL „PRG — ruft den residenten Debugger auf (siehe Kapitel 1.7
 auf Seite 220)
 
-0M-ASSEM.CFG — Druckeranpassung des Assemblers (siehe Kapi-
+OM-ASSEM.CFG — Druckeranpassung des Assemblers (siehe Kapi-
 tel D.5 auf Seite 194)
 
 OM-ASSEM.DAT — Module des Assemblers (siehe Kapitel H auf
@@ -29,11 +29,34 @@ Seite 206)
 
 README .TXT — Korrekturen der Anleitung, etc. (als erstes lesen!)
 
-17
-
 
 
 TRANSLATED
 ==========
 
+
+Chapter 2
+
+Content of the floppy disk
+
+Attention: The floppy disk is formatted double-sided. The whole files had
+no room on a one-sided disk - since almost all Atari ST owners have a
+double-sided drive, we did not want to make the program unnecessarily
+more expensive by a second floppy disk. If you do not have a double-sided
+drive, you can get your original diskette at your copy dealers or friend
+certainly to two floppy disks.
+
+The attached disk contains the following files:
+
+OM-ASSEM.PRG — The Assembler (see chapter 5 on page 23)
+
+OM-DEBUG.PRG — The Debugger (see chapter 6 on page 106)
+
+CALL.PRG     — Calls the resident debugger (see chapter 1.7 on page 220)
+
+OM-ASSEM.CFG — Printer adjustment of the assembler (see chapter D.5 on page 194)
+
+OM-ASSEM.DAT — Modules of the assembler (see chapter H on page 206)
+
+README.TXT   — Corrections of the instructions, etc. (as a first reading!)
 
