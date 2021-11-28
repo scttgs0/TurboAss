@@ -2,40 +2,71 @@ ORIGINAL
 ======== 
 
 
-5 Q 6 >
+              Scrollon ................................... 166
+              Scrolloff .................................. 166
+              Cursor ..................................... 167
+              Help ....................................... 167
+    6.7  Internas zum Debugger ........................... 167
+    6.8  Die Datei „OM-DEBUG.INF“ ........................ 168
+    6.9  Ein paar Tips ................................... 170
+    6.10 Externe Abbruchmöglichkeiten .................... 170
+    6.11 Meldungen des Debuggers ......................... 171
+    6.12 Der „Resident“-Befehl ........................... 174
+    6.13 Debugger-Demo ................................... 175
 
-A ET
-Scrolloff ........ AT
+A Die Makro-Version                                        181
 
-Help: HR KEN SE
-6.7 Internas zum Debugger ...........0.0.0404
-6.8 Die Datei „OM-DEBUG.INF“ ...........
-6.9 Ein paar Tips... 2000000000000 0004
-6.10 Externe Abbruchmöglichkeiten. ..........
-6.11 Meldungen des Debuggers .............
-6.12 Der „Resident“-Befehl .......0.0...00004
-6.13 Debugger-Demo .....0.0.0.000000000004
+B Ein kleines internes Problem...                          182
 
-Die Makro-Version
-Ein kleines internes Problem...
-Einige Begriffserklärungen
+C Einige Begriffserklärungen                               184
 
-Aufbau von Betriebssystemstrukturen
+D Aufbau von Betriebssystemstrukturen                      189
+    D.1 Boot-Sektor ...................................... 191
+    D.2 Aufbau einer Symboltabelle ....................... 191
+    D.3 Die Symboltabelle des Assemblers ................. 192
+    D.4 Relozierinformationen ............................ 192
+    D.5 Der Druckertreiber ............................... 194
 
-D.1 Boot-Sektor 1. .0.0.0.0.00000000000.0040
-D.2 Aufbau einer Symboltabelle ...........-.
-D.3 Die Symboltabelle des Assemblers .........
-D.4 Relozierinformationen. ,........0.0.0000 4
-D.5 Der Druckertreiber .........0.0.0000004
+E Probleme mit älteren TOS-Versionen                       198
 
-Probleme mit älteren TOS-Versionen
-Assembler und OMIKRON.BASIC
+F Assembler und OMIKRON.BASIC                              202
 
-Laden an beliebige Adressen
+G Laden an beliebige Adressen                              205
 
 
 
 TRANSLATED
 ==========
 
+
+              Scrollon ................................... 166
+              Scrolloff .................................. 166
+              Cursor ..................................... 167
+              Help ....................................... 167
+    6.7  Internals for Debugger .......................... 167
+    6.8  The file "TO-DEBUG.INF" ......................... 168
+    6.9  A Few Tips ...................................... 170
+    6.10 External Demolition Options ..................... 170
+    6.11 Messages of the Debugger ........................ 171
+    6.12 The "Resident" Command .......................... 174
+    6.13 Debugger-Demo ................................... 175
+
+A The Macro-Version                                        181
+
+B A Small Internal Problem...                              182
+
+C Some Conceptual Declarations                             184
+
+D Construction of Operating System Structures              189
+    D.1 Boot-Sector ...................................... 191
+    D.2 Construction of a Symbol Table ................... 191
+    D.3 The Symbol Table of Assembler .................... 192
+    D.4 Relozier Information ............................. 192
+    D.5 The Printer Driver ............................... 194
+
+E Problems with Older TOS Versions                         198
+
+F Assembler and OMIKRON.BASIC                              202
+
+G Load to any Addresses                                    205
 

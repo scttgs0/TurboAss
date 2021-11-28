@@ -2,41 +2,67 @@ ORIGINAL
 ======== 
 
 
-H Das Modulkonzept 206
-H.1 Allgemeine Richtlinien: ......0.0.0.000000000.00004 206
-H.2 Der Aufbau des Modulheaders: ......0.0.0.000000004 207
-H.3 Die Routine „init“: „2... .00.0 004040 1 WR WA 208
-H.4 Die Routine „disable“: ....00000000000.0000.0004 209
-H.5 Die Routine „choose“: ...0.0.000000000000004 ‚209
-H.6 Die vorhandenen Prozeduren: ......00000040000004 210
-H.7 Der RSC-Editor .....0.0.0.0000 000000 RR HH 214
+H Das Modulkonzept                                         206
+    H.1 Allgemeine Richtlinien: .......................... 206
+    H.2 Der Aufbau des Modulheaders: ..................... 207
+    H.3 Die Routine „init“: .............................. 208
+    H.4 Die Routine „disable“: ........................... 209
+    H.5 Die Routine „choose“: ............................ 209
+    H.6 Die vorhandenen Prozeduren: ...................... 210
+    H.7 Der RSC-Editor ................................... 214
+        H.7.1 Der Aufbau des Formats ..................... 214
+              Zur Beachtung .............................. 214
+              Allgemeiner Aufbau ......................... 214
+              Die verschiedenen Typen .................... 215
+              Icons ...................................... 216
+        H.7.2 Der Editor ................................. 216
+              Die Iconlibrary ............................ 217
 
-H.7.1 Der Aufbau des Formats ......0.000000000004 214
-Zur Beachtung 00.000000 0 214
-Allgemeiner Aufbau. ....0.0.000000000.044 44 214
-Die verschiedenen Typen .......0.0.000000004 215
-Ce TEE 216
-
-H.7.2 Der Editor... ..0000000000 000 00 216
-Die Iconlibrary +... 000000 0 217
-
-I Die beiliegenden Dateien 218
-I.1 AES_DEMO.SRC und AES_DEMO.PRG . . 0000000000000 218
-12 AESMVDI SS er RR 219
-13 AUTOBOOT-SRC ; au 24 5 00 41H EHER WEMRRMEN 219
-1.4 BIOS.S, XBI0S.S und GEMDDS.S . 0 .01.0.000000000004 219
-1.5 BO0T_2-0.PRG 0. 220
-16 BREAKS 2 220
-1.7 CALL.SRC und CALL.PRG 0... 0.444000 0 4 We ke HG 220
-1:8 DAYCALC.SRÄC 4 4 0: 4 HH VERKEHR RER KKER 221
-1.9 DESKTOP.PRG und DESKTOP.SRC . 00 221
-110 EPSOUN.HEX » + > 44 44 5 40H RENNER NEN 221
-
-L11 GAME,ÜME > 00 44 44 HR ENG EM ANKER 222
+I Die beiliegenden Dateien                                 218
+    I.1  AES_DEMO.SRC und AES_DEMO.PRG ................... 218
+    I.2  AES_VDI.S ....................................... 219
+    I.3  AUTOBOOT.SRC .................................... 219
+    I.4  BIOS.S, XBI0S.S und GEMDOS.S .................... 219
+    I.5  BO0T_2_0.PRG .................................... 220
+    I.6  BREAK.S ......................................... 220
+    I.7  CALL.SRC und CALL.PRG ........................... 220
+    I.8  DAY_CALC.SRC .................................... 221
+    I.9  DESKTOP.PRG und DESKTOP.SRC ..................... 221
+    I.10 EPSON.HEX ....................................... 221
+    I.11 GAME.OMI ........................................ 222
 
 
 
 TRANSLATED
 ==========
 
+
+H The Module Concept                                       206
+    H.1 General Guidelines: .............................. 206
+    H.2 The Structure of the Module Header: .............. 207
+    H.3 The Routine "init": .............................. 208
+    H.4 The Routine "disable": ........................... 209
+    H.5 The Routine "choose": ............................ 209
+    H.6 The Existing Procedures: ......................... 210
+    H.7 The RSC-Editor ................................... 214
+        H.7.1 The Structure of the Format ................ 214
+              Please Note ................................ 214
+              General Structure .......................... 214
+              The Different Types ........................ 215
+              Icons ...................................... 216
+        H.7.2 The Editor ................................. 216
+              The IconLibrary ............................ 217
+
+I The Enclosed Files                                       218
+    I.1  AES_DEMO.SRC and AES_DEMO.PRG ................... 218
+    I.2  AES_VDI.S ....................................... 219
+    I.3  AUTOBOOT.SRC .................................... 219
+    I.4  BIOS.S, XBI0S.S and GEMDOS.S .................... 219
+    I.5  BO0T_2_0.PRG .................................... 220
+    I.6  BREAK.S ......................................... 220
+    I.7  CALL.SRC and CALL.PRG ........................... 220
+    I.8  DAY_CALC.SRC .................................... 221
+    I.9  DESKTOP.PRG and DESKTOP.SRC ..................... 221
+    I.10 EPSON.HEX ....................................... 221
+    I.11 GAME.OMI ........................................ 222
 
