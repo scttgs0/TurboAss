@@ -2,16 +2,11 @@ ORIGINAL
 ======== 
 
 
-26 5.2 Einführung in den Assembler
-
- 
-
 OM-ASSEM.CFG — Die Druckeranpassung (siehe Kapitel D.5 auf Seite 194)
 OM-ASSEM.DAT — Eine Hilfsdatei für den Assembler (wichtig!)
 OM-ASSEM.INF — Die individuellen Einstellungen des Assemblers
-OM-DEBUG . INF — Die individuellen Einstellungen des Debuggers
-
-CALL „PRG — Den residenten Debugger vom Desktop starten
+OM-DEBUG.INF — Die individuellen Einstellungen des Debuggers
+CALL.PRG     — Den residenten Debugger vom Desktop starten
 
 Alle Hilfsdateien (CFG, DAT und INF) können als hidden-Dateien vorliegen.
 Mit dem Befehl FATTRIBUT (siehe Kapitel 6.6.6 auf Seite 149) des Debuggers
@@ -25,6 +20,7 @@ dem Schema gesucht:
 sem Pfad zuerst gesucht (siehe Kapitel 4.3 auf Seite 22)
 
 2. Es wird im aktuellen Verzeichnis gesucht.
+
 3. Es wird im Hauptverzeichnis gesucht.
 
 4. Es werden alle Laufwerke von C bis P in deren aktuellen Pfaden durch-
@@ -48,4 +44,38 @@ erst dann die volle Leistungsfähigkeit des Assemblers ausschöpfen kann.
 TRANSLATED
 ==========
 
+
+OM-ASSEM.CFG — Printer adjustment (see chapter D.5 on page 194)
+OM-ASSEM.DAT — An aid file for the assembler (important!)
+OM-ASSEM.INF — The individual settings of the Assembler
+OM-DEBUG.INF — The individual settings of the Debugger
+CALL.PRG     — Launch the residents of Debugger from the Desktop
+
+All auxiliary files (CFG, DAT and INF) can be available as hidden files.
+With the FATTRIBUT command (see chapter 6.6.6 on page 149) of the debugger,
+it is possible without any problems to declare the files as hidden. They
+then do not disturb the appearance in the desktop anymore.
+
+OM-ASSEM.CFG as well as OM-ASSEM.DAT are searched by the Assembler according
+to the following schema:
+
+1. If the environment variable "SIGMA" is available, this path is searched
+   first (see chapter 4.3 on page 22)
+
+2. It is searched in the current directory.
+
+3. It is searched in the main directory.
+
+4. All drives from C to P are searched in their current paths.
+
+5. It is searched for drive A.
+
+OM-ASSEM.INF and OM-DEBUG.INF can be generated from the Assembler or Debugger
+(see chapter 5.5.5 on page 80 or chapter 6.8 on page 168).
+
+How do I start the assembler when I created a system diskette? This is easy:
+With a double-click on OM-ASM.PRG, the Assembler (with integrated editor)
+is loaded. You can then start immediately. However, I can only recommend (if
+at least 1 MB is available) to use a resident Debugger because you can only
+exploit the full performance of the assembler.
 

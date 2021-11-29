@@ -2,14 +2,10 @@ ORIGINAL
 ======== 
 
 
-28 5.3 Die Drop-Down-Menüs
-
- 
-
 auch nichts, denn schließlich soll diese Anleitung Sie ja in die Benutzung
 einführen.
 
-Kommen wir nun zur genaueren Betrachtung des OMIKRON.Assemblers,
+Kommen wir nun zur genaueren Betrachtung des OMIKRON.Assemblers.
 
 5.3 Die Drop-Down-Menüs
 
@@ -48,4 +44,39 @@ klicken: Dann wird der Rechner aufgerufen und die Formel, auf die geklickt
 TRANSLATED
 ==========
 
+
+after all, this manual should introduce you into use.
+
+Let's get to a closer look at the OMIKRON.Assembler.
+
+5.3 The Drop-Down Menus
+
+They behave almost as well as the drop-down menus of the GEM. There is
+only one small difference: If you accidentally touch an entry and folds a
+menu, you only need to press the right mouse button, and the menu is
+already folded again {1}. An explanation of the individual menu items follows
+in the explanation of the editor (see chapter 5.5.5 on page 45).
+
+5.4 The Functions of the Mouse
+
+The left mouse button: The mouse allows you to position the cursor by
+briefly pressing the left mouse button over the new position.
+
+You can also use the mouse to highlight a block by moving the left button
+to move the mouse pressed up or down. When you reach the edge of the
+screen, the source text starts to scroll.
+
+With a double-click with the left button on an icon, the editor executes
+a jump to the line in which the symbol is defined. If the cursor was
+already available before double-clicking on the symbol definition, the
+symbol will be in the "Search icon... " pass, and the corresponding dialog
+box appears (see chapter 5.5.5 on page 67). This means virtually the
+following: When you click on a symbol call, jump to the definition; If you
+click on a definition, you can search the calls via the dialog box.
+
+The right mouse button: You can also use the right button Double-click:
+Then the computer is called up and the formula to which has been clicked
+
+
+{1} The same is in Omikron.Basic.
 

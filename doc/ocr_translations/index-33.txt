@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-5 DER ASSEMBLER 31
-
- 
-
 Eingabe: nop;Nix los
 Ausgabe: nop ;Nix los
 
@@ -47,4 +43,38 @@ mern werden vom Assembler in diesem Fall ignoriert.
 TRANSLATED
 ==========
 
+
+ input: nop;Nix los
+output:     nop         ;Nix los
+
+All texts entered (or read as ASCII text) are thus automatically formatted.
+
+Normally, the assembler does not need colones behind symbol definitions.
+But there is an exception - if you absolutely want to use opcodes as a
+symbol name:
+
+ input: nop moveq #0,d0
+output: Syntax error, (because the command "NOP" does not allow parameters)
+
+but:
+
+ input: nop:moveq #0,d0
+output: nop:    moveq #0,d0
+
+OPCODES are only allowed as a symbol names if you have a colon itself
+behind it.
+
+5.5.1 Special Features of the Assembler
+
+If .w is behind a symbol reference (not behind the definition), the
+assembler writes the address to Word width (saving memory and computing
+time). This is only possible with addresses to $7FFF and address larger
+the same $FFFF8800. So you can specify e.g. "move etv_timer.w, d0". This
+is not possible for relocable addresses, so that only system variables
+can be addressed.
+
+Line-A routines can be entered directly with "Linea #" and the
+corresponding number. Behind it, the assembler automatically gives the
+function name in square brackets, e.g. "Linea # 0 [INIT]". The square
+brackets are ignored by the assembler in this case.
 

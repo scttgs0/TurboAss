@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-5_ DER ASSEMBLER 25
-
- 
-
 stem endlich auch eigene Drop-Down-Menüs enthält (die sich fast genauso
 bedienen lassen, wie die Drop-Down-Menüs des GEM). Dies ermöglicht es
 uns, einfacher neue Funktionen zu implementieren, als dies bei 20 Buttons
@@ -47,4 +43,37 @@ OM-ASSEM.PRG — Der Assembler und Editor (nicht ganz unwichtig)
 TRANSLATED
 ==========
 
+
+its own drop-down menus since the latest (which can be used almost as well
+as the drop-down menus of GEM). This allows us to implement easier new
+features than would be possible with 20 buttons (function keys).
+
+Finally, I would like to thank all our tireless testers again, which not only
+found mistakes, but also made many constructive suggestions for improvement.
+
+Markus Fritze
+
+5.2 Introduction to the Assembler
+
+The Omikron.Assembler is an integrated development package for assembler
+programs, i.H., there is no separate assembler; The assembler is instead
+integrated in the editor. This allows a much better cooperation of
+assembler and editor - just think of the ability to jump into a faulty
+line with Control-J (see chapter 5.5.5 on page 56). Incidentally, the
+development time is of course drastically shortened.
+
+How do I start? First, you should put together a floppy disk with the
+necessary programs. Harddisk owner reserve a folder for this. Thus, the
+next question arises:
+
+Which programs are needed for development? With sufficient memory (1 MB
+or more), it is advisable to place the debugger in the AUTO folder, it is
+automatically resident and can be called directly by the assembler or by
+the CALL.PRG program. Otherwise, he can be started at any time by double-
+clicking the desktop.
+
+Sample Disk:
+
+AUTO\OM-DEBUG.PRG — The Debugger is therefore always resident in the RAM
+OM-ASSEM.PRG      — The Assembler and Editor (not very unimportant)
 

@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-30 5.5 Der Editor
-
- 
-
 Daß ein Block markiert ist, sehen Sie an einem „B“ rechts oben. Wenn Sie
 mit der linken Maustaste auf dieses „B“ klicken, wird der Cursor an den
 Blockanfang, mit der rechten Taste an das Blockende gesetzt.
@@ -50,4 +46,40 @@ Ausgabe: start: move.w #5,d0 ;Remark
 TRANSLATED
 ==========
 
+
+That a block is highlighted, see a "B" right.If you click this "B" with
+the left mouse button, the cursor is set to the block end with the right
+button to the block end.
+
+Between the "B" and the insertion mode, a "C" may be when Caps Lock is
+activated.With a mouse click there you can use Caps Lock.switch off.
+
+On the far right is the current insertion mode. There are three different
+insertion modes in the OMIKRON.Assembler:
+
+Override: entered text overrides the existing one. With the Insert button
+can be inserted
+
+Insert I: Entered text is inserted before the cursor.
+
+Insert II: How to Insert i, but after return, a line is inserted.
+
+Clicking this text allows you to change this mode (see also Shift Insert
+on page 43)
+
+Over the insertion mode (to the left of the time) you will see the ASCII
+value (decimal) of the character under the cursor if it interferes with
+this display, it can be switched off by clicking on it once. By another
+click on this (then empty) place it can be activated again.
+
+5.5 The Editor
+
+The best thing about the editor is certainly that it is able to automatically
+format a source text: You can enter your programs unformatted, and the editor
+is able to distinguish icons, opcodes and operands from each other. After
+pressing return, it formatted the line formatted.
+
+Examples:
+ input: start   move #5,d0      ;Remark
+output: start:  move.w #5,d0    ;Remark
 

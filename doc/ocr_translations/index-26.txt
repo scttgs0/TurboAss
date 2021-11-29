@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-24 5.1 _ Zur Geschichte des Assemblers
-
- 
-
 Erst nachdem die I/O-Routinen in den Assembler eingebaut waren (und funk-
 tionierten (stöhn)), gingen wir dazu über, die eigentliche Assemblierung zu
 schreiben. Unser Ziel war es, eine Geschwindigkeit von ca. 250000 Zeilen pro
@@ -51,4 +47,37 @@ So kommen wir also zur neuesten Version des Assemblers, welche seit neue-
 TRANSLATED
 ==========
 
+
+Only after the I / O routines were installed in the assembler (and worked
+(stood)), we went to write the actual assembly. Our goal was to create a
+speed of about 250,000 lines per minute. As it turned out, these estimates
+were "something" too low, the assembler managed about 2,000,000 lines per
+minute. The speed was passed through necessary queries (is the space still
+enough?) Although a little lower, but she remained sufficiently high.
+
+At this time, Artur Missed Södler (His Character Programmer of Omikron.basic)
+Our Assembler new character outlookouts, which brought the speed of 3 pages
+per second to over 10 in side-by-side leaves. Thus, the representation of
+the assembler was sufficiently fast, missing only a reasonable editor (block
+commands, search and replace, ...). While Sören spent the rest of the year
+with such "little things", I tried to improve the debugger by implementing
+almost all functions suggested to me. Especially long have sear and I waved
+on the user interface; So that all functions that are often used can be
+easily accessed. It starts with symbol search and it stops that you can save
+his settings. Then we have once again optimized everything at speed.
+
+Because we already assemble in the input, the idea came to us that it would
+have to be possible to recalculate the PC of the debugger into a line number.
+Said, done, sear made the impossible possible and implemented a translation
+of PC in line number and vice versa. He sat down the crown as he came up with
+the idea of recurring the markers. About 8 hours later (it must have been
+5 o'clock on Saturday morning) the interface was done (but it has been
+extended and revised several times over time). The possibility to assemble a
+program to a touch of a button, to pass and start the program to the debugger
+is probably unique and was previously at most at interpreters. The return in
+the assembler is done automatically at program ends automatically or when
+terminating with Shift Shift to the corresponding location (option is
+switchable) - and without significant delay.
+
+So we come to the latest version of the assembler, which has finally included
 

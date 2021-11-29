@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-5 DER ASSEMBLER 27
-
- 
-
 Was ist, wenn ist nur 512 KB RAM habe? Das macht auch nichts.
 Sie müssen dann allerdings ohne residenten Debugger arbeiten, indem Sie
 nach der Assemblierung Ihr erzeugtes Programm abspeichern, den Assembler
@@ -17,7 +13,7 @@ residentem Debugger:
 
 1. Den Assembler laden.
 
-2. Den Sourcetext laden (Menüpunkt „Datei=> Öffnen. ..“) oder Source-
+2. Den Sourcetext laden (Menüpunkt „Datei=> Öffnen...“) oder Source-
 text eingeben (Als „Gerüst“ für ein Programm können Sie die Datei
 HEADER.S verwenden (siehe Kapitel I.15 auf Seite 224)).
 
@@ -50,4 +46,41 @@ nachvollziehen (z. B. AES_DEMDO.SRC). Wenn es noch nicht klappt, macht das
 TRANSLATED
 ==========
 
+
+What if is only 512 KB of RAM? That does not matter. However, you will
+then have to work without a resident debugger by saving your generated
+program after assembly, exiting the assembler, and then reloading your
+program from the charged debugger. Of course, a symbol table can also
+be handed over.
+
+How is a development going? Example procedure of a development with
+resident debugger:
+
+1. The Assembler barn.
+
+2. Load the sourceetext (menu item "File => Open ...") or Enter SourceText
+   (as "framework" for a program you can use the HEADER.S file (see
+   chapter I.15 on page 224)).
+
+3. Select assembly (with the menu item "Assembly => Assemble. ..").
+
+4. Select in the dialog box after assembly with symbol table "Normal".
+
+5, Click on the button "debugger".
+
+6. Start the program with "GO" (for example, typing Shift-F4 or GO and
+   press RETURN).
+
+7. After a demolition with Shift-Shift, or if the program crashes, press
+   Control Help (=> return to the assembler).
+
+8. The cursor is at the faulty location or at the demolition point,
+
+9. Continue at 3 ...
+
+You will probably not know the commands and keyboard shortcuts yet, but
+that does not matter, they will be explained in detail later. The example
+should only show how a development can run approximately. You can do this
+with one of the source texts from the demos. Several OMI folder
+(eg AES_DEMDO.SRC). If it does not work yet, it does not matter, because
 

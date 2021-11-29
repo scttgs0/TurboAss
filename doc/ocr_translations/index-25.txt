@@ -31,11 +31,36 @@ nierte, kam die Benutzeroberfläche dran (eigene Dialogboxen, I/O-Routinen
 Daraus entstand die V0.1-Version des Debuggers, die vielleicht einigen als
 PD-Programm aus einer Hamburger Mailbox schon bekannt ist.
 
-23
-
 
 
 TRANSLATED
 ==========
 
+
+Chapter 5
+
+The Assembler
+
+5.1 The History of the Assembler
+
+The idea for the Omikron.Assembler was born about Easter in 1987 when we
+(the Sören and I, Markus) annoyed us about the assembly times of a few
+minutes in the conventional assemblers. There were spent a few days with
+the development of the concept and then, Well, then the project was
+forgotten because of complicated structures.
+
+Until the beginning of 1988, then I got the offer over some corners to
+develop an assembler for Omikron.Software. So Sören and I put ourselves
+together again and developed a concept for a token-eating assembler in
+about two months (which already assembled in accordance with the input).
+The concept was standing, and we were in the middle of high school graduation.
+
+Immediately after written high school graduation (shortly before Easter
+1988) we started programming. Sören tried at an editor, which already
+assembled when entering, and I turned to a debugger that was urgently
+needed for development. When the debugger worked halfway, the user
+interface came from it (own dialog boxes, I/O routines (for the first time
+with its own keyboard driver) and everything that belongs). From this, the
+V0.1 version of the debugger, which may already be known as a PD program
+from a Hamburg mailbox already known.
 

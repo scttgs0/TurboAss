@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-32 5.5 Der Editor
-
- 
-
 Konvertierungen in den Motorola-Standard
 
 Die Befehle werden, wie schon erwähnt, sofort vorassembliert und nicht als
@@ -43,14 +39,53 @@ Da der Editor von Grund- und Makroversion gleich ist, können Sie auch in
 der Grundversion lokale Label eingeben — diese werden mit einem Punkt
 am Anfang gekennzeichnet. Da der Assembler diese aber noch nicht richtig
 
- 
 
-3wobei <ea> nicht Dn sein darf
-4Um das Zielregister einfach z. B. A0 in D7 ändern zu können
+3 wobei <ea> nicht Dn sein darf
+4 Um das Zielregister einfach z. B. A0 in D7 ändern zu können
 
 
 
 TRANSLATED
 ==========
 
+
+Conversions to the Motorola Standard
+
+As already mentioned, the commands are immediately precious and stored
+as ASCII text. Therefore, you will be pointed out immediately when
+entering syntax and similar errors. The line is again disassembled and
+released again. Therefore, your line can be displayed differently by the
+assembler than you entered it. An example: You give a "Move.L D3, A2".
+According to Motorola standard, this spelling is not correct: If you
+write something in an address register, the command "MOVEA" is called.
+The assembler then corrects the spelling automatically - it is still
+pretty tolerant; For example, it converts "MOVEA" back to "Move" (in
+case you change an address register to a data register). The exact
+conversions are given in Table 5.1.
+
+For conditions (B ??, DB? And S ??), "Z" (ZERO) is converted to "EQ"
+(EQUAL) and "NZ" (Not Zero) to "NE" (NOT EQUAL). "DBF" is converted
+into "DBRA".
+
+Instead of "CC" and "CS", you can also specify "HS" (HIGHER OR SAME) or
+"LO". This is not converted to the standard - two different commands may
+remain, but they produce the same code. Attention: This only applies to
+industry and set commands (ie BHS, SLO, etc.), DBHS and DBLO will be in
+DBCC or DBCs.
+
+As a tipping light, you can omit the "#" for trap and moveq commands.
+
+We strive to convert as far as possible to all formats from all known
+assemblers. Therefore, e.g. also "Lea.L address, AX" or
+"LEA.W address,AX" in "" Lea XX, AX "converted.
+
+Locale Label
+
+Since the editor of basic and macro version is the same, you can also
+enter local labels in the basic version - these are marked at the
+beginning at the beginning. Since the assembler but not right
+
+
+{3} where <EA> can not be DN
+{4} simply the destination register z.B. A0 to change in D7
 

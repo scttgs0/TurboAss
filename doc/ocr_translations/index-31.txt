@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-5 DER ASSEMBLER 29
-
- 
-
 wurde, in den Rechner übernommen (siehe Kapitel 5.5.5 auf Seite 62). Von
 dort kann dann die Formel nach dem Rechnen und eventuellen Veränderun-
 gen zurückkopiert werden.
@@ -54,4 +50,43 @@ oder eine Fehlermeldung, falls der Cursor in einer fehlerhaften Zeile steht.
 TRANSLATED
 ==========
 
+
+into the calculator is adopted (see chapter 5.5.5 on page 62). From there,
+the formula can be recordered after calculating and possible changes.
+
+Of course, you can also scroll with the mouse without marking a block. To
+do this, press the right mouse button and move the mouse to the top or
+bottom of the screen. During scrolling, you can then release the mouse
+button again: The editor stops the scrolling only if it reaches the
+beginning or end of the source text, or move the mouse back in the
+direction of the screen center.
+
+If you first set the cursor to the formula (eg by left-clicking) and then
+double-click the cursor (with right), the formula is also transferred to
+the calculator. If you then leave the computer again and insert the
+formula, it is not inserted at the cursor position, but replaced by the
+result (best, you try it out!). Replacing only works properly in an
+insertion mode (see u.); During overwrite mode, formula residues can be
+stopped or other parts of text can be overwritten.
+
+The function of the status line {2}: This line indicates the cursor position
+in the source text on the left edge, first the current line "Z" and then
+the current column "S".
+
+A click on the "Z" of "line" takes you alternately to the beginning or
+the end of the source text. A left-click on the line number lets a dialog
+box appear, in which you can specify either a line number or a symbol to
+which should be jumped (see also Alt-Z, the keyboard commands are described
+in chapter 5.5.4 from page 40). Right-clicking on the line number will
+take you to the last changed position (see also Control-Z).
+
+A left-click on the column number sets the cursor on the beginning of the line
+(see also Control-<=), right-clicking on the line end (see also control =).
+
+In the middle of the line is either the filename of the current program or an
+error message if the cursor is in a faulty line.
+
+ 
+--
+{2} This is the line that stands directly under the menu bar
 
