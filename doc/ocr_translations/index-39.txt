@@ -1,27 +1,20 @@
 ORIGINAL
-======== 
+========
 
 
-5_DER ASSEMBLER 37
-
- 
-
-**°RSCOUNT ergibt den aktuellen Stand des RS-Counters (siehe bei der
+^^RSCOUNT ergibt den aktuellen Stand des RS-Counters (siehe bei der
 Erklärung der RS-Pseudo-Opcodes (siehe Kapitel 5.6.2 auf
 Seite 85)).
 
-"°SYMTAB «enthält einen Wert ungleich 0, wenn mit dem Pseudo-Op-
+^^SYMTAB enthält einen Wert ungleich 0, wenn mit dem Pseudo-Op-
 code OPT (siehe Kapitel 5.6.5 auf Seite 89) eine Symbolta-
 belle gewünscht wurde, Die ermöglicht z.B. folgende Kon-
 struktion:
 
-IF "”SYMTAB
-
+IF ^^SYMTAB
 BRA Debugging_ input ;Während der Testphase
 ELSE
-
 BRA Normal_input ;Wenn alles läuft
-
 ENDC
 
 Systemvariablen werden immer groß geschrieben. Näheres
@@ -41,9 +34,9 @@ gnifikant!).
 Was (soweit uns bekannt ist) noch kein anderer Assembler erlaubt, aber
 gerade im deutschen Sprachraum nützlich ist: Der Assembler erlaubt auch
 Umlaute in Symbolnamen (z.B. „menüpunkt: EQU 1“). Ein Symbol darf
-beim OMIKRON. Assembler folgende Zeichen enthalten:
+beim OMIKRON.Assembler folgende Zeichen enthalten:
 
-e Als erste Zeichen sind erlaubt: „A“-„Z“, „a“-„z“, „@_{}“, sowie alle
+* Als erste Zeichen sind erlaubt: „A“-„Z“, „a“-„z“, „@_{}“, sowie alle
 Zeichen mit einem ASCII-Code > 126 (Ausnahme: 255). In der Grund-
 version ist kein Punkt als erstes Zeichen erlaubt, da dieser als Kenn-
 zeichnung für lokale Label in der Makro-Version dient.
@@ -53,4 +46,40 @@ zeichnung für lokale Label in der Makro-Version dient.
 TRANSLATED
 ==========
 
+
+^^RSCOUNT       Gives the current state of the RS counter (see explaining
+                the RS pseudo-opcodes (see chapter 5.6.2 on page 85)).
+
+^^SYMTAB        Contains a value not equal to 0 if the pseudo opcode Opt
+                (see chapter 5.6.5 on page 89) a symbol table was desired,
+                which allows e.g. the following construction:
+
+                    IF ^^SYMTAB
+                    BRA Debugging_ input    ;During the test phase
+                    ELSE
+                    BRA Normal_input        ;If everything is running
+                    ENDC
+
+                System variables are always written. For details on the
+                conditional assembly, see chapter 5.6.8 from page 97.
+
+
+5.5.3 Symbols, Labels and Constants
+
+For symbol and label names, the following "restrictions" are subjected to:
+
+A symbol may consist of a maximum of 23 characters, all characters being
+significant, i., The assembler distinguishes symbols to the 23rd sign of
+each other (with other assemblers, only the first 8 letters are
+significant!).
+
+No other assembler yet (as known to us), but it is useful in German-
+speaking countries: The assembler also allows umlauts in symbol names
+(e.g., "Menuitem: EQU 1"). A symbol may be at the OMIKRON.Assembler
+contain the following characters:
+
+    * First characters are allowed: "A"-"z", "a"-"z", "@_{}", as well as
+      all characters with an ASCII code > 126 (exception: 255). In the
+      basic version, no item is permitted as the first character, as it
+      serves as marking for local labels in the macro version.
 

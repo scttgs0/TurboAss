@@ -1,31 +1,15 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 35
-
- 
 
 Der Assembler kann mit vier verschiedenen Zahlenbasen rechnen, die da
-
 wären:
 
- 
-
- 
-
 . bzw. nichts | Dezimal (Zahlenbasis 10)
+            $ | Hexadezimal (Zahlenbasis 16)
+            % | Binär (Zahlenbasis 2)
+      "oder ' | ASCII (Zahlenbasis 256)
 
-$ | Hexadezimal (Zahlenbasis 16)
-% | Binär (Zahlenbasis 2)
-
-"oder ' | ASCII (Zahlenbasis 256)
-
- 
-
- 
-
- 
 
 Man kann z. B. schreiben "A"*2-$10+%11011-"soft“
 
@@ -34,41 +18,79 @@ um im 32-Bit-Zahlenbereich zu bleiben. Die vorhandenen Rechenoperationen
 stehen in Tabelle 5.2.
 
 Wenn ein Vergleich wahr ist, lautet das Ergebnis „TRUE“ (—1), sonst ist es
-
 „FALSE“ (0).
 
 Der Assembler kennt dazu noch einige Systemvariablen, welche (bis auf *)
 alle durch „“*“ am Anfang gekennzeichnet sind:
 
-°°DATE
+*               dient für relative Sprünge im Programm, ohne ein Label zu
+                verwenden, Das spart Platz in der Symboltabelle und As-
+                semblierzeit (da Ausdrücke wie „*+Wert“ sofort berechnet
+                werden) — obwohl das beim OMIKRON.Assembler wohl
+                kaum ins Gewicht fällt. „JMP *+100“ springt beispielsweise
+                100 Byte hinter den Anfang des JMP-Befehls.
 
-"TIME
+^^DATE          ergibt das aktuelle Datum im TOS-Format (Bit 0-4: Tag;
+                Bit 5-8: Monat; Bit 9-15: Jahr— 1980). Damit ist es ohne
+                Probleme möglich, das Datum in seine Programme einzu-
+                binden. Es kann dann von Ihrem Programm ausgegeben
+                werden, und Sie sehen sofort, wann diese Version Ihres Pro-
+                gramms erstellt wurde. So wissen Sie immer, ob Sie eine
+                aktuelle Programmversion vor sich haben.
 
-dient für relative Sprünge im Programm, ohne ein Label zu
-verwenden, Das spart Platz in der Symboltabelle und As-
-semblierzeit (da Ausdrücke wie „*+Wert“ sofort berechnet
-werden) — obwohl das beim OMIKRON. Assembler wohl
-kaum ins Gewicht fällt. „JMP *+100“ springt beispielsweise
-100 Byte hinter den Anfang des JMP-Befehls.
+^^TIME          liefert entsprechend die Uhrzeit im TOS-Format (Bit 0-4:
+                Sekunden; Bit 5-10: Minuten; Bit 11-15: Stunden)
 
-ergibt das aktuelle Datum im TOS-Format (Bit 0-4: Tag;
-Bit 5-8: Monat; Bit 9-15: Jahr— 1980). Damit ist es ohne
-Probleme möglich, das Datum in seine Programme einzu-
-binden. Es kann dann von Ihrem Programm ausgegeben
-werden, und Sie sehen sofort, wann diese Version Ihres Pro-
-gramms erstellt wurde. So wissen Sie immer, ob Sie eine
-aktuelle Programmversion vor sich haben.
 
-liefert entsprechend die Uhrzeit im TOS-Format (Bit 0-4:
-Sekunden; Bit 5-10: Minuten; Bit 11-15: Stunden)
-
- 
-
-5 Vergleiche sind im Tasch hner nicht vorhand
+--
+{5} Vergleiche sind im Taschenrechner nicht vorhanden
 
 
 
 TRANSLATED
 ==========
 
+
+The assembler can count on four different number bases that would be
+there:
+
+ . or nothing | Decimal (number basis 10)
+            $ | Hexadecimal (number base 16)
+            % | Binary (number base 2)
+         "or '| ASCII (number base 256)
+
+
+You can e.g. write "A"*2-$10+%11011-"soft"
+
+ASCII numbers may (of course) consist only of 4 letters to stay in the
+32-bit number range. The existing computing operations are available in
+Table 5.2.
+
+If a comparison is true, the result is "true" (-1), otherwise it's
+"false" (0).
+
+The assembler still knows some system variables, which (up to *) are all
+characterized by "^^" at the beginning:
+
+*               Used for relative jumps in the program without using a
+                label that saves space in the symbol table and assembly
+                time (because expressions such as "*+value" are calculated
+                immediately) - although the OMIKRON.Assembler hardly
+                falls in weight. For example, "JMP *+100" jumps 100 bytes
+                behind the beginning of the JMP command.
+
+^^DATE          Gives the current date in TOS format (bit 0-4: day, bit
+                5-8: month, bit 9-15: year-1980). This makes it possible
+                without problems to integrate the date into his programs.
+                It can then be issued by your program and you will see
+                immediately when this version of your program was created.
+                So you always know if you have a current program version
+                in front of you.
+
+^^TIME          Provides the time in TOS format (bit 0-4: seconds, bit
+                5-10: minutes, bit 11-15: hours)
+
+
+--
+{5} Comparisons are not available in the calculator
 

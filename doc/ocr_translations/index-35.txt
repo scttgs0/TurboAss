@@ -2,48 +2,81 @@ ORIGINAL
 ======== 
 
 
- 
-
-5 DER ASSEMBLER
-
 Tabelle 5.1; Konvertierungen in den Motorola-Standard
 
- 
 
- 
+    eingegebener Befehl: |  Motorola-Befehl:
+    ---------------------|----------------------
+    moveq data,d0        |  moveq #data,d0
+    trap data            |  trap #data
 
- 
+    cmp (ax)+,(ay)+      |  cmpm (ax)+,(ay)+
 
- 
+    add #data,ea         |  addi #data,ea
+    and #data,ea         |  andi #data,ea
+    cmp #data,ea{3}      |  cmpi #data,ea
+    eor #data,ea         |  eori #data,ea
+    or #data,ea          |  ori #data,ea
+    sub #data,ea         |  subi #data,ea
 
-eingegebener Befehl: | Motorola-Befehl
-moveq data,d0 moveq #data,d0
-trap data trap #data
-cmp (ax)+,(ay)+ | cmpm (ax)+,(ay)+
-add #data,ea addi #data,ea
-and #data,ea andi #data,ea
-cmp #data,ea® cmpi #data,ea
-eor #data,ea eori #data,ea
-or #data,ea ori #data,ea
-sub #data,ea subi #data,ea
-add ea,An adda ea,An
-cmp ea,An cmpa ea,An
-sub ea,An suba ea,An
-move ea,An movea ea,An
-adda ea‚Dn? add ea,Dn
-cmpa ea,Dn® cmp ea,‚Dn
-suba ea,Dn® sub ea,‚Dn
-movea ea,Dn® move ea,Dn
-clr An suba An,An
-Xor eor
-asl/r Dn asl/r #1,Dn
-lsl/r Dn lsl/r #1,Dn
-rol/r Dn rol/r #1,Dn
-roxl/r Dn roxl/r #1,Dn
+    add ea,An            |  adda ea,An
+    cmp ea,An            |  cmpa ea,An
+    sub ea,An            |  suba ea,An
+    move ea,An           |  movea ea,An
+
+    adda ea‚Dn{4}        |  add ea,Dn
+    cmpa ea,Dn{5}        |  cmp ea,‚Dn
+    suba ea,Dn{5}        |  sub ea,‚Dn
+    movea ea,Dn{5}       |  move ea,Dn
+
+    clr An               |  suba An,An
+
+    xor                  |  eor
+
+    asl/r Dn             |  asl/r #1,Dn
+    lsl/r Dn             |  lsl/r #1,Dn
+    rol/r Dn             |  rol/r #1,Dn
+    roxl/r Dn            |  roxl/r #1,Dn
 
  
 
 TRANSLATED
 ==========
 
+
+Table 5.1; Conversions to the Motorola standard
+
+
+    entered command:     |  Motorola command:
+    ---------------------|----------------------
+    moveq data,d0        |  moveq #data,d0
+    trap data            |  trap #data
+
+    cmp (ax)+,(ay)+      |  cmpm (ax)+,(ay)+
+
+    add #data,ea         |  addi #data,ea
+    and #data,ea         |  andi #data,ea
+    cmp #data,ea{3}      |  cmpi #data,ea
+    eor #data,ea         |  eori #data,ea
+    or #data,ea          |  ori #data,ea
+    sub #data,ea         |  subi #data,ea
+
+    add ea,An            |  adda ea,An
+    cmp ea,An            |  cmpa ea,An
+    sub ea,An            |  suba ea,An
+    move ea,An           |  movea ea,An
+
+    adda ea‚Dn{4}        |  add ea,Dn
+    cmpa ea,Dn{5}        |  cmp ea,‚Dn
+    suba ea,Dn{5}        |  sub ea,‚Dn
+    movea ea,Dn{5}       |  move ea,Dn
+
+    clr An               |  suba An,An
+
+    xor                  |  eor
+
+    asl/r Dn             |  asl/r #1,Dn
+    lsl/r Dn             |  lsl/r #1,Dn
+    rol/r Dn             |  rol/r #1,Dn
+    roxl/r Dn            |  roxl/r #1,Dn
 

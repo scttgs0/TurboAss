@@ -83,7 +83,7 @@ Locale Label
 
 Since the editor of basic and macro version is the same, you can also
 enter local labels in the basic version - these are marked at the
-beginning at the beginning. Since the assembler but not right
+beginning at the beginning. Since the assembler can not work properly
 
 
 {3} where <EA> can not be DN

@@ -1,47 +1,64 @@
 ORIGINAL
-======== 
+========
 
-
-5.5 Der Editor
-
- 
 
 Tabelle 5.2: Die Rechenoperationen des Assemblers
 
- 
 
- 
+    Rechenzeichen | Beschreibung:
+    --------------|----------------------
+    +   |  Addition
+    -   |  Subtraktion
+    |   |  OR
+    -   |  EOR (XOR)
+    <<  |  Linksverschiebung
+           (LSL-Befehl des Prozessors)
+    >>  |  Rechtsverschiebung
+           (LSR-Befehl des Prozessors)
+    *   |  Multiplikation
+    /   |  Division
+    &   |  AND
+    %   |  Modulo
+    --------------|----------------------
+    Vergleiche{5}
+    --------------|----------------------
+    =   |  Gleichheit
+    <   |  Kleiner als
+    >   |  Größer als
+    <=  |  Kleiner gleich
+    >=  |  Größer gleich
+    <>  |  Ungleich
 
- 
 
- 
-
-Rechenzeichen | Beschreibung:
-+ Addition
-- Subtraktion
-| OR
-- EOR (XOR)
-<< Linksverschiebung
-
-(LSL-Befehl des Prozessors)
->> Rechtsverschiebung
-(LSR-Befehl des Prozessors)
-* Multiplikation
-/ Division
-& AND
-% Modulo
-Vergleiche?
-
-s Gleichheit
-< Kleiner als
-> Größer als
-<= Kleiner gleich
->e Größer gleich
-<> Ungleich
-
- 
 
 TRANSLATED
 ==========
 
+
+Table 5.2: The Arithmetic Operations of the Assembler
+
+
+    Operation     |  Description:
+    --------------|----------------------------------
+              +   |  Addition
+              -   |  Subtraction
+              |   |  OR
+              -   |  EOR (XOR)
+              <<  |  Left-shift
+                     (LSL command of the processor)
+              >>  |  Right-shift
+                     (LSR command of the processor)
+              *   |  Multiplication
+              /   |  Division
+              &   |  AND
+              %   |  Modulo
+    --------------|----------------------------------
+    Compare{5}
+    --------------|----------------------------------
+              =   |  Equality
+              <   |  Less than
+              >   |  Greater than
+              <=  |  Smaller
+              >=  |  Greater or equal
+              <>  |  Not equal
 

@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-34 5.5__ Der Editor
-
- 
-
 verarbeiten kann, sollten Sie dies vermeiden! Symbole dürfen also nie mit
 einem Punkt beginnen.
 
@@ -32,27 +28,55 @@ deren.
 
 5.5.2 Formelrechnungen
 
-Der OMIKRON. Assembler erlaubt, mit 16 verschiedenen Rechenoperationen
+Der OMIKRON.Assembler erlaubt, mit 16 verschiedenen Rechenoperationen
 zu arbeiten. Dabei handelt es sich um die Grundrechenarten, die booleschen
 Algebra sowie Vergleiche. Alle Operationen werden mit 32 Bit Genauigkeit
 ausgeführt. Er beherrscht natürlich Punkt-vor-Strich-Rechnung.
 
 Fangen wir mit den Vorzeichen an:
 
- 
-
-Plus (wer hätte es gedacht)
-
-Minus (auch nicht schlecht) (2er Komplement)
-NOT (1er Komplement)
-
-logisches NOT (Ergebnis ist 0 oder —1)
-
-v8 8
+    +  |  Plus (wer hätte es gedacht)
+    -  |  Minus (auch nicht schlecht) (2er Komplement)
+    ~  |  NOT (1er Komplement)
+    !  |  logisches NOT (Ergebnis ist 0 oder —1)
 
  
 
 TRANSLATED
 ==========
 
+
+yet, you should avoid this! Symbols should never start with a point.
+
+Optimization
+
+The Omikron.Assembler masters "semi-" automatic optimizations. If
+optimization options are detected during assembly, they are provided with
+appropriate alerts (see chapter 5.7.1 on page 100). A button "Customize"
+appears above the "Cancel" button. If you click on it, the dialog is
+terminated and all rows matched with appropriate alerts. Then you have to
+re-assemble again. You may need to repeat this procedure again: a JMP can
+be optimized in a pass to a BRA, in a second it can be changed to a Bra.s
+(if the jump is not too far, of course).
+
+This procedure may somewhat overcome somebody compared to other assemblers
+because they can optimize the same when assembled. However, this is not
+possible through our concept. The assembler is practically no slower
+through the optimization queries, and the double-assembly in the
+Omikron.Assembler probably is still much faster than the binam assembly
+with another.
+
+5.5.2 Formula Calculations
+
+The OMIKRON.Assembler allows to work with 16 different arithmetic
+operations. These are the basic planes, the Boolean Algebra and
+comparisons. All operations are performed with 32-bit accuracy. He
+naturally dominates point-dash bill.
+
+Let's Start with the Signs:
+
+    +  |  Plus (who would have thought it)
+    -  |  Minus (not bad) (2-complement)
+    ~  |  NOT (1-complement)
+    !  |  Logical NOT (result is 0 or -1)
 
