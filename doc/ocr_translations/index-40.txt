@@ -1,15 +1,11 @@
 ORIGINAL
-======== 
+========
 
 
-38 5.5 Der Editor
+* Als Folgezeichen sind erlaubt: Alle oben angeführten Zeichen sowie
+„$#“ und „0“-„9“.
 
- 
-
-e Als Folgezeichen sind erlaubt: Alle oben angeführten Zeichen sowie
-„S#"“ und „0“, 9“.
-
-e Als Anfangs- und Folgezeichen kann man auch alle Tasten mit einem
+* Als Anfangs- und Folgezeichen kann man auch alle Tasten mit einem
 ASCII-Code < 32 mit Ausnahme von 0, 10, 13 und 27 verwenden.
 Ob man diese Möglichkeit ausnutzt, sollte man allerdings gründlich
 überdenken: Die Symbole sind nicht nur schlecht einzugeben (über
@@ -35,19 +31,54 @@ mit dem Pseudo-Opcode EQU oder SET ein Wert zugewiesen wurde.
 
 Beispiel:
 
-wert: ZEQU 100
+wert:   ZEQU 100
+wert2:  EQU wert*10+1 ;Da wert eine
+                      ;Konstante ist, ist
+                      ;wert2 auch eine.
 
-wert2: EQU wert*10+1 ;Da wert eine
-;Konstante ist, ist
-jwert2 auch eine.
-
-wert1: RS.W 10 ;Eine Konstante, da RS
-;fast so wie
-;EQU funktioniert.
+wert1:  RS.W 10       ;Eine Konstante, da RS
+                      ;fast so wie
+                      ;EQU funktioniert.
 
 
 
 TRANSLATED
 ==========
 
+
+* As a result, all characters listed above are allowed and "$#" and
+  "0"-"9".
+
+* As an initial and follow-up signs, you can also use all buttons with
+an ASCII code < 32 with the exception of 0, 10, 13 and 27. Whether you
+exploit this possibility, but you should thoroughly reconsider: the
+symbols are not only poor (via alternate-tens block), they also cause
+problems with ASCII editors, if you save a source text in ASCII format.
+
+The assembler usually distinguishes uppercase and lowercase letters.
+This means that the symbols "Test", "Test" or "Test" are three different
+symbols. If you have an old source text that uses the "Test" and "Test"
+icon, in the "Editor 2" menu (see chapter 5.5.5 on page 77) an automatic
+conversion of the input icons in wholesale or lowercase lettersturn on.
+The assembler then transforms all symbols when taking a line, whereby,
+of course, umlauts are converted.
+
+Calculate with Symbols
+
+There are two types of symbols, to a relocator table and the other
+absolute symbols. We have taken care of a linguistic distinction of both
+symbol types in the manual so that it does not come to confusion:
+constants are absolute symbols with us; d.H., Symbols, which has been
+assigned a value with the pseudo-opcode EQU or SET.
+
+Example:
+
+value:   ZEQU 100
+value2:  EQU value*10+1 ;Since value is a
+                        ;constant, value2
+                        ;is also one.
+
+value1:  RS.W 10        ;A constant, since
+                        ;RS works almost
+                        ;like EQU.
 

@@ -1,14 +1,10 @@
 ORIGINAL
-======== 
+========
 
-
-40 5.5 Der Editor
-
- 
 
 5.5.4 Tastaturkommandos
 
-Der OMIKRON. Assembler unterstützt eine Vielzahl von Tastaturkomman-
+Der OMIKRON.Assembler unterstützt eine Vielzahl von Tastaturkomman-
 dos, Die nun folgenden Kommandos können nicht über die Drop-Down-
 Menüs erreicht werden, da diese dadurch viel zu lang und unübersichtlich
 würden:
@@ -18,8 +14,8 @@ Auf ein oder zwei Zeilen bezogene Kommandos
 BACKSPACE Löscht das Zeichen links vom Cursor
 
 DELETE Löscht das Zeichen unter dem Cursor
-CONTROL-T Löscht das Wort unter dem Cursor (ähnlich bei
 
+CONTROL-T Löscht das Wort unter dem Cursor (ähnlich bei
 TEMPUS)
 
 CONTROL-SHIFT-T Löscht ab dem Cursor den Zeilenrest
@@ -29,7 +25,6 @@ ALT-< Löscht ab dem Cursor den Zeilenrest
 INSERT Fügt ein Space an der Cursorposition ein
 
 TAB Springt zur nächsten Tabulatorposition (Im Dar-
-
 stellungsmenü einstellbar). Dabei werden Spaces
 bis zu der nächsten Tabulatorposition eingefügt
 
@@ -45,6 +40,7 @@ CONTROL-+ Sprung an den Zeilenanfang
 SHIFT-= Sprung an den Zeilenanfang
 
 CONTROL-DELETE Löscht die aktuelle Zeile
+
 CONTROL-Y Löscht die aktuelle Zeile
 
 
@@ -52,4 +48,44 @@ CONTROL-Y Löscht die aktuelle Zeile
 TRANSLATED
 ==========
 
+
+5.5.4 Keyboard Commands
+
+The OMIKRON.Assembler supports a variety of keyboard commands, which now
+the following commands can not be achieved through the drop-down menus,
+as this would be far too long and confusing:
+
+On one or two lines related commands
+
+BACKSPACE           Deletes the character to the left of the cursor
+
+DELETE              Deletes the character under the cursor
+
+CONTROL-T           Deletes the word under the cursor (similar to
+                    Tempus)
+
+CONTROL-SHIFT-T     Deletes the line residue from the cursor
+
+ALT-<               Deletes the line residue from the cursor
+
+INSERT              Adds a space at the cursor position
+
+TAB                 Jumps to the next tabing position (adjustable in the
+                    display menu). Spaces are inserted up to the next
+                    tabing position
+
+SHIFT-TAB           Jumps to the next tab location without inserting
+                    spaces
+
+CONTROL-⇒           Jump to the line end
+
+SHIFT-⇒             Jump to the line end
+
+CONTROL-⇐           Jump to the beginning of the line
+
+SHIFT-⇐             Jump to the beginning of the line
+
+CONTROL-DELETE      Deletes the current line
+
+CONTROL-Y           Deletes the current line
 

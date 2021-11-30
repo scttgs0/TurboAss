@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 39
-
- 
 
 Label sind relozierbare Symbole, welche Adressen darstellen, die evtl. vom
 Gemdos beim Laden reloziert werden müssen.
@@ -50,4 +46,38 @@ Ergebnis: move.w #0,wert*2 ;2
 TRANSLATED
 ==========
 
+
+Label are relocable symbols that represent addresses that may need to be
+relocated from the GEMDO at charging.
+
+Example:
+
+label:  NOP             ;A symbol in front of an opcode
+label2: EQU label+100   ;Since label is a label, Label2 is one too.
+label3: DS.W 10         ;Also a Label
+
+but:
+
+wert3:  EQU label2-label        ;Two labels subtracted from each other
+                                ;result in a constant
+
+wert4:  EQU label2*label        ;That will not do !!!
+
+wert5:  EQU label+label2        ;That also does not work!!!
+
+label3: EQU label+label2-label3 ;This goes again because Label2-Label3
+                                ;is an offset that can add to label!
+
+Still some explanations of Remarks: For other assemblers (e.g., the
+assembler of the development package), Remarks always start with a "*".
+But since the "*" is also a compensator, the assembler breaks off with
+a formula when applying to a space. However, then does not automatically
+start a remark, but the assembler expects either a ";" or a "*" in front
+of a remark.
+
+example: move.w #0,value*2 *2
+Result:  move.w #0,value*2      *2
+
+but:     move,w #0,value*2;2
+Result:  move.w #0,value*2      ;2
 

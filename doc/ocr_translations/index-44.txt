@@ -1,77 +1,89 @@
 ORIGINAL
-======== 
+========
 
-
-42
-
-5.5 _ Der Editor
-
- 
 
 Cursorbewegungen im Sourcetext
 
-=>, €
+⇑,⇓,⇒,⇐             Bewegt den Cursor (wer hätte das gedacht?)
 
-SHIFT-{
-
-SHIFT-CONTROL-f
-
-CONTROL-1
-ALT-{r
-SHIFT-J
-
-SHIFT-CONTROL-J
-
-CONTROL-J
-ALT-J
-
-Bewegt den Cursor (wer hätte das gedacht?)
-
-Scrollt unabhängig von der Cursorposition nach
+SHIFT-⇑             Scrollt unabhängig von der Cursorposition nach
 oben
 
-Scrollt nach oben, Cursor bewegt sich mit (wie
+SHIFT-CONTROL-⇑     Scrollt nach oben, Cursor bewegt sich mit (wie
 beim Mausscrolling)
 
-oder CONTROL-R Blättert eine Seite nach oben
-Blättert 10 Seiten nach oben
+CONTROL-⇑           oder CONTROL-R Blättert eine Seite nach oben
 
-Scrollt unabhängig von der Cursorposition nach
+ALT-⇑               Blättert 10 Seiten nach oben
+
+SHIFT-⇓             Scrollt unabhängig von der Cursorposition nach
 unten
 
-Scrollt nach unten, Cursor bewegt sich mit (wie
+SHIFT-CONTROL-⇓     Scrollt nach unten, Cursor bewegt sich mit (wie
 beim Mausscrolling)
 
-oder CONTROL-C Blättert eine Seite nach unten
+CONTROL-⇓           oder CONTROL-C Blättert eine Seite nach unten
 
-Blättert 10 Seiten nach unten
+ALT-⇓               Blättert 10 Seiten nach unten
+
 
 Einfache Suchkommandos bzw. Sprünge im Sourcetext
 
-CLR/HOME
-
-SHIFT-CLR/HOME
-
-ALT-E
-CONTROL-Z
-ALT-SHIFT-{1
-ALT-SHIFT-(
-
-Springt abwechselnd zum Anfang bzw. Ende der
+CLR/HOME            Springt abwechselnd zum Anfang bzw. Ende der
 Seite
 
-oder ALT-T Springt abwechselnd zum Anfang bzw.
+SHIFT-CLR/HOME      oder ALT-T Springt abwechselnd zum Anfang bzw.
 Ende des Sourcetextes
 
-Zum Ende des Sourcetexts springen
-Zur Position der letzen Änderung springen
-Springt zur vorigen Labeldefinition (aufwärts)
+ALT-E               Zum Ende des Sourcetexts springen
 
-Springt zur nächsten Labeldefinition (abwärts)
+CONTROL-Z           Zur Position der letzen Änderung springen
+
+ALT-SHIFT-⇑         Springt zur vorigen Labeldefinition (aufwärts)
+
+ALT-SHIFT-⇓         Springt zur nächsten Labeldefinition (abwärts)
 
 
 
 TRANSLATED
 ==========
 
+
+Cursor Movements in SourceText
+
+⇑,⇓,⇒,⇐             Moves the cursor (who would have thought that?)
+
+SHIFT-⇑             Scrolls independently of the cursor position
+
+SHIFT-CONTROL-⇑     Scrolls up, cursor moves with (like mouse
+                    scrolling)
+
+CONTROL-⇑           or CONTROL-R flags a page up
+
+ALT-⇑               Flakes 10 pages upwards
+
+SHIFT-⇓             Scrolls independently of the cursor position
+
+SHIFT-CONTROL-⇓     Scrolls down, cursor moves with (like mouse
+                    scrolling)
+
+CONTROL-⇓           or CONTROL-C flags a page down
+
+ALT-⇓               Flashes 10 pages down
+
+
+Simple search commands or jumps in the source text
+
+CLR/HOME            Jump alternately to the beginning or end of the page
+
+SHIFT-CLR/HOME      Or ALT-T jumps alternately to the beginning or end
+                    of the source text
+
+ALT-E               Jump to the end of the source text
+
+CONTROL-Z           Jump to the position of the last change
+
+ALT-SHIFT-⇑         Jump to the previous label definition (upward)
+
+ALT-SHIFT-⇓         Jump to the next label definition (downwards)
 

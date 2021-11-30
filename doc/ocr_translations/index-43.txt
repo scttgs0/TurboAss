@@ -1,69 +1,84 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER
+CONTROL-INSERT      Fügt eine Leerzeile ein, die Cursorzeile rückt nach
+                    unten, und der Cursor steht in der eingefügten lee-
+                    ren Zeile
 
-41
+CONTROL-D           Dupliziert die Zeile, in der der Cursor steht. Da-
+                    bei werden Remarks und Labeldefinitionen nicht
+                    dupliziert, da es sich in der Praxis gezeigt hat,
+                    daß dies gewöhnlich nicht sinnvoll ist (doppelte La-
+                    beldeklaration etc.)
 
- 
+CONTROL-M           Übernimmt eine Zeile in einen internen Buffer und
+                    löscht sie
 
-CONTROL-INSERT
+ALT-M               Gibt den internen Buffer wieder aus. Das ist belie-
+                    big häufig möglich. In Verbindung mit CONTROL-M
+                    kann man sehr einfach Zeilen verschieben bzw. ko-
+                    pieren
 
-CONTROL-D
+SHIFT-DELETE        Verkettet zwei Zeilen (wenn syntaktisch möglich).
+                    Der Befehl erlaubt es beispielsweise, folgende Zei-
+                    len zu verketten:
 
-CONTROL-M
+                    ;Remark
+                    label:
+                    move.w #1000,d0
 
-ALT-M
+                    Wenn Sie zweimal SHIFT-DELETE auf der Remark-
+                    zeile drücken, ergibt sich folgende Zeile:
 
-SHIFT-DELETE
+                    label: move.w \#1000,d0 ;Remark
 
-SHIFT-RETURN
-
-Fügt eine Leerzeile ein, die Cursorzeile rückt nach
-unten, und der Cursor steht in der eingefügten lee-
-ren Zeile
-
-Dupliziert die Zeile, in der der Cursor steht. Da-
-bei werden Remarks und Labeldefinitionen nicht
-dupliziert, da es sich in der Praxis gezeigt hat,
-daß dies gewöhnlich nicht sinnvoll ist (doppelte La-
-beldeklaration etc.)
-
-Übernimmt eine Zeile in einen internen Buffer und
-löscht sie
-
-Gibt den internen Buffer wieder aus. Das ist belie-
-big häufig möglich. In Verbindung mit CONTROL-M
-kann man sehr einfach Zeilen verschieben bzw. ko-
-
-pieren
-
-Verkettet zwei Zeilen (wenn syntaktisch möglich).
-Der Befehl erlaubt es beispielsweise, folgende Zei-
-len zu verketten:
-
-;Remark
-label:
-move.w #1000,d0
-
-Wenn Sie zweimal SHIFT-DELETE auf der Remark-
-zeile drücken, ergibt sich folgende Zeile:
-
-label: move.w \#1000,d0 ;Remark
-
-bewirkt den Gegensatz zu SHIFT-DELETE; mit die-
-ser Kombination kann man eine Zeile auseinander-
-trennen. Wenn man im obigen Beispiel zwischen
-„label:“ und „move“ SHIFT-RETURN drückt, erhält
-man wieder zwei Zeilen. Bei DC-Zeilen (siehe bei
-den Pseudo-Opcodes) ist dies nicht möglich, hier
-hilft nur CONTROL-D und Löschen des Zeilenrestes
-mit ALT-<
+SHIFT-RETURN        bewirkt den Gegensatz zu SHIFT-DELETE; mit die-
+                    ser Kombination kann man eine Zeile auseinander-
+                    trennen. Wenn man im obigen Beispiel zwischen
+                    „label:“ und „move“ SHIFT-RETURN drückt, erhält
+                    man wieder zwei Zeilen. Bei DC-Zeilen (siehe bei
+                    den Pseudo-Opcodes) ist dies nicht möglich, hier
+                    hilft nur CONTROL-D und Löschen des Zeilenrestes
+                    mit ALT-<
 
 
 
 TRANSLATED
 ==========
 
+
+CONTROL-INSERT      Inserts a blank line, the cursor line moves down,
+                    and the cursor is in the inserted empty line
+
+CONTROL-D           Duplicate the line in which the cursor stands.Remarks
+                    and label definitions are not duplicated because it
+                    has shown in practice that this is usually not useful
+                    (duplicate label declaration, etc.)
+
+CONTROL-M           Takes a line in an internal buffer and clears it
+
+ALT-M               Returns the internal buffer.This is possible as
+                    desired. In conjunction with Control-M you can
+                    easily move or copy lines
+
+SHIFT-DELETE        Connetted two lines (if syntactically possible). The
+                    command allows, for example, to connect the following
+                    lines:
+
+                        ;Remark
+                        label:
+                        move.w #1000,d0
+
+                    If you press SHIFT-DELETE twice on the remark line,
+                    the following line results:
+
+                        label: move.w \#1000,d0 ;Remark
+
+SHIFT-RETURN        causes the contrast to SHIFT-DELETE; With this
+                    combination you can disconnect a line. If you press
+                    between "Label:" and "Move" SHIFT-RETURN in the above
+                    example, you get two lines again. For DC lines (see
+                    the pseudo-opcodes) this is not possible, here only
+                    helps CONTROL-D and delete the line residue with ALT-<
 
