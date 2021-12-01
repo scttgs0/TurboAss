@@ -1,12 +1,8 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER 47
-
- 
-
-3. Mit 1} ist die SHIFT-Taste gemeint, sie wird zum Beispiel bei {t7”E für
+3. Mit ⇑ ist die SHIFT-Taste gemeint, sie wird zum Beispiel bei ⇑^E für
 SHIFT-CONTROL-E (ASCII-Suchen-und-Ersetzen) benutzt.
 
 Unter dem Menü „Hilfe“ können Sie sich im Zweifelsfall diese Tastencodes
@@ -14,13 +10,11 @@ jederzeit nochmal ansehen (siehe Kapitel 5.5.5 auf Seite 80). Wenn hinter
 einem Eintrag noch drei Punkte stehen, heißt das, daß dem Anwählen dieser
 Funktion noch eine Abfrage folgt (z. B. eine Dialogbox, der Fileselector o. ä.).
 
+
 Das Menü „Atarı“
 
- 
-
- 
-
-Abbildung 5.2: Das Menü „Atari“
+    {image}
+    Abbildung 5.2: Das Menü „Atari“
 
 Der erste Menüpunkt („OMIKRON. Assembler V1.7...“) zeigt (fast)
 die gleiche Dialogbox (Siehe Abbildung 5.3 auf Seite 47), die Sie schon
@@ -28,27 +22,12 @@ beim Start des Assemblera gesehen haben. Sie enthält Informationen über
 die geladene Version des OMIKRON.Assemblers sowie Ihre Seriennummer.
 Diesen Menüpunkt können Sie mit CONTROL-I auch über Tastatur aufrufen.
 
- 
 
-SOZPON, Terbe-kssenäler
-von Z-saft
-Ruteren! Sfren Kalluig
-Anleitung: Derlet eh rdag Mi
-nleite Ol es
-Karkus Pertee
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.3: Die Info-Box
+    {image}
+    Abbildung 5.3: Die Info-Box
 
 Darunter können Sie mit „Dank an...“ die Liste der Personen ansehen,
-die irgendwie zur Förderung des OMIKRON. Assemblers beigetragen haben
+die irgendwie zur Förderung des OMIKRON.Assemblers beigetragen haben
 (Siehe Abbildung 5.4 auf Seite 48). Diese Dialogbox können Sie auch mit
 ALT-I aufrufen.
 
@@ -57,4 +36,32 @@ ALT-I aufrufen.
 TRANSLATED
 ==========
 
+
+3. With ⇑ the SHIFT key is meant, for example, it is used with ⇑^E for
+   SHIFT-CONTROL-E (ASCII search and replace).
+
+Under the "Help" menu, in case of doubt, you can watch these key codes
+again at any time (see chapter 5.5.5 on page 80). If there are still
+three points behind an entry, it means that selecting this function
+still follows a query (e.g. a dialog box, the FileSelector...).
+
+
+The "Atarı" Menu
+
+    {image}
+    Figure 5.2: The "Atari" Menu
+
+The first menu item ("OMIKRON.Assembler V1.7 ...") shows (almost) the
+same dialog box (see Figure 5.3 on page 47), which you have already
+seen when starting the assembler. It contains information about the
+loaded version of the OMIKRON.Assembler as well as your serial number.
+You can also call this menu item with CONTROL-I via keyboard.
+
+
+    {image}
+    Abbildung 5.3: Die Info-Box
+
+Underneath you can view the list of people with "thanks ...", somehow to
+promote the OMIKRON.Assembler contributed (see Figure 5.4 on page 48).
+You can also call this dialog box with ALT-I.
 

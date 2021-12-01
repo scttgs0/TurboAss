@@ -1,18 +1,14 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER 45
-
- 
-
-CONTROL-ALT-DELETE Löst einen RESET aus (wie im TOS 1.4).
+CONTROL-ALT-DELETE  Löst einen RESET aus (wie im TOS 1.4).
 Eine resetfeste Ramdisk bleibt dabei erhalten, der
 Assembler ist jedoch weg (und Ihr nicht gesicher-
 ter Sourcetext auch!). Das nennt man auch einen
 Warmstart des Rechners.
 
-CONTROL-ALT-rechtes SHIFT-DELETE Löst einen Kaltstart aus,
+CONTROL-ALT-rechtes SHIFT-DELETE    Löst einen Kaltstart aus,
 dabei wird der gesamte Hauptspeicher des Rech-
 ners gelöscht. Es ist somit vollkommen witzlos, sich
 vorher seinen Sourcetext in einer Ramdisk abzu-
@@ -26,10 +22,10 @@ fehl ausgeschrieben (man kann also mit ESC Be-
 fehle abkürzen). Die Belegung der Tasten nach ESC
 steht in Tabelle 5.3.
 
+
 5.5.5 Die Drop-Down-Menüs
 
- 
-
+{image}
 Abbildung 5.1: Die Drop-Down-Menüs (eingeklappt)
 
 Die meisten Funktionen der Menüleiste sind auch auf Tastendruck zu er-
@@ -47,4 +43,35 @@ löschen)).
 TRANSLATED
 ==========
 
+
+CONTROL-ALT-DELETE  Resolves a reset (as in Tos 1.4). A reset resistant
+                    Ramdisk is retained, but the assembler is away (and
+                    its non-secured source text too!). This is also
+                    called a warm start of the computer.
+
+CONTROL-ALT-right   Resolves a cold start, the entire main memory of the
+SHIFT-DELETE        computer is deleted. It is thus completely joked to
+                    take up his source text in a Ramdisk: that's gone!
+                    (As well as all small cute reset solid viruses that
+                    you captured over time).
+
+ESC                 After ESC changes the cursor shape. If then a letter
+                    key is pressed, a command is advertised (so you can
+                    shorten commands with ESC). The assignment of the
+                    buttons to ESC is in Table 5.3.
+
+
+5.5.5 The Drop-Down-Menus
+
+    {image}
+    Figure 5.1: The Drop-Down-Menus (folded)
+
+Most functions of the menu bar are also available at the touch of a button.
+Which key combination is to be pressed, is located behind the entries.
+Three control characters can be used:
+
+1. ^ means the CONTROL key, which is pressed with another key (e.g. ^I for
+   CONTROL-I (info call)).
+
+2. With & is meant the Alternate key (e.g. &Y for ALT-Y (delete block)).
 
