@@ -53,10 +53,6 @@ angegeben.
 
 TRANSLATED
 ==========
-
-
-1 WORD
---
  
 
 Backed back to the editor. If the program crashes, this is not a leg break.

@@ -63,7 +63,7 @@ This procedure may somewhat overcome somebody compared to other assemblers
 because they can optimize the same when assembled. However, this is not
 possible through our concept. The assembler is practically no slower
 through the optimization queries, and the double-assembly in the
-Omikron.Assembler probably is still much faster than the binam assembly
+Omikron.Assembler probably is still much faster than the binary assembly
 with another.
 
 5.5.2 Formula Calculations
