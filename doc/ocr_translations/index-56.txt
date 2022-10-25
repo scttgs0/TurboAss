@@ -2,26 +2,8 @@ ORIGINAL
 ======== 
 
 
-54 5.5 Der Editor
-
- 
-
- 
-
-Sourcetextschutz:
-Passwort! alla |
-
-KR
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.10: Setzen des Passwords oder Seriennummerschutzes
+    {image}
+    Abbildung 5.10: Setzen des Passwords oder Seriennummerschutzes
 
 malen ASCII-Format zu speichern; dabei gehen dann natürlich alle Ein-
 stellungen, die im SRC-Format mitabgespeichert werden, verloren. Dadurch
@@ -30,7 +12,7 @@ KRON.Assembler haben. Außerdem ist das nötig, wenn Sie Ihr Programm
 in ein anderes einfügen wollen (mit der Funktion „Zuladen...“). Falls Sie
 einen Block markiert haben, erscheint eine Dialogbox, die es Ihnen erlaubt,
 entweder nur diesen Block oder das ganze Programm zu speichern. Das Ab-
-speichern eines Blockes ist nur im ASCIHI-Format möglich.
+speichern eines Blockes ist nur im ASCII-Format möglich.
 
 Mit „Datei löschen...“ können Sie Ihre gesamte Harddisk fileweise leeren,
 nur um Platz für die neuesten Sourcetexte zu schaffen. Dazu erscheint ein
@@ -39,14 +21,8 @@ wenn Sie die darauffolgende Sicherheitsabfrage (Siehe Abbildung 5.11 auf
 Seite 54) mit „Ja“ beantworten, sind Sie das File los.
 
  
-
- 
-
- 
-
- 
-
-Abbildung 5.11: Die Löschen-Dialogbox
+    {image}
+    Abbildung 5.11: Die Löschen-Dialogbox
 
 „Ende...“ (SHIFT-F10 oder CONTROL-X) gibt Ihnen die Möglichkeit, den
 Assembler ohne RESET zu verlassen und zum Desktop zurückzukehren.
@@ -60,4 +36,31 @@ scheint eine Dialogbox (Siehe Abbildung 5.12 auf Seite 55), welche Ihnen
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.10: Setting the password or serial number protection
+
+ASCII format; Of course, all settings that are saved in SRC format will
+then be lost. This allows you to pass your programs on to people who do
+not have OMIKRON.Assembler. This is also necessary if you want to insert
+your program into another one (with the "Load..." function). If you have
+selected a block, a dialog box will appear allowing you to save either
+just that block or the whole program. A block can only be saved in ASCII
+format.
+
+With "Delete file..." you can empty your entire hard disk file by file,
+just to make room for the latest source texts. A file selector appears
+that allows you to select the program to be deleted; if you answer the
+subsequent security query (see Figure 5.11 on page 54) with "Yes", you
+are rid of the file.
+
+ 
+    {image}
+    Abbildung 5.11: Die Löschen-Dialogbox
+
+"End..." (SHIFT-F10 or CONTROL-X) gives you the option to exit the
+assembler without RESET and return to the desktop. If you have dutifully
+saved your current source text, no query will appear after CONTROL-X.
+However, SHIFT-F10 or the menu item forces a prompt. If you have not
+saved the source text, a dialog box appears (see Figure 5.12 on page 55),
 

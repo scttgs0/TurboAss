@@ -2,51 +2,21 @@ ORIGINAL
 ======== 
 
 
-5_ DER ASSEMBLER 55
-
- 
-
 die Möglichkeit gibt, dies nachzuholen, Falls dort beim Speichern ein Feh-
 ler auftritt, wird der Assembler nicht verlassen. Durch einen Klick auf den
 „Weiter“-Button verlassen Sie den Assembler endgültig.
 
  
+    {image}
+    Abbildung 5.12: Die Dialogbox beim Beenden
 
-Die änderungen xurden acch alcht gesichert !
-
-FGERLASSEN ] SPEICHERN]
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.12: Die Dialogbox beim Beenden
 
 Das Menü „Assembler“
 
   
- 
+    {image}
+    Abbildung 5.13: Das Menü „Assembler“
 
-> Debut
-Dabuggi
-ÜRDuGn
-
- 
-   
- 
-
-ger F2
-er nachladen RO
-
-hen
-
- 
-
-Abbildung 5.13: Das Menü „Assembler“
 
 Hier kommen wir endlich zum wesentlichen Bestandteil des Assemblers (der
 hat ihm doch tatsächlich seinen Namen gegeben).
@@ -58,14 +28,44 @@ Fehler bei der Assemblierung: Da der Editor natürlich nicht alle Fehler
 bereits bei der Eingabe finden kann, können natürlich auch Fehler bei der
 Assemblierung auftreten. Dabei gibt es vier Arten von Fehlern:
 
-® Fatale Fehler (z. B. Datei bei IBYTES nicht gefunden, aber auch FAIL)
-e Allgemeine Fehler (z. B. Division durch Null)
-
-e Korrigierbare Fehler (Adresse wurde begradigt)
+* Fatale Fehler (z.B. Datei bei IBYTES nicht gefunden, aber auch FAIL)
+* Allgemeine Fehler (z.B. Division durch Null)
+* Korrigierbare Fehler (Adresse wurde begradigt)
 
 
 
 TRANSLATED
 ==========
 
+
+which gives you the opportunity to do so. If an error occurs when saving,
+the assembler is not exited. If an error occurs there when saving, the
+assembler is not exited. By clicking on the "Next" button you exit the
+assembler for good.
+
+
+    {image}
+    Figure 5.12: The dialog box when ending
+
+
+The "Assembler" menu
+
+  
+    {image}
+    Figure 5.13: The "Assembler" menu
+
+
+Here we finally come to the essential part of the assembler (that actually
+gave it its name).
+
+The top menu item "Assemble" (ALT-A) assembles the existing source text
+and triggers the default button.
+
+Errors during assembly: As the editor cannot find all errors during input,
+errors can of course also occur during assembly. There are four types of
+errors:
+
+* Fatal errors (e.g. file not found with IBYTES, but also FAIL)
+* General errors (e.g. division by zero)
+* Correctable errors (address has been straightened)
 

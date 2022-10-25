@@ -2,21 +2,8 @@ ORIGINAL
 ======== 
 
 
-5_DER ASSEMBLER 53
-
- 
-
- 
-
-© File existiert bereits !
-
- 
-
- 
-
- 
-
-Abbildung 5.9: Die Sicherheitsabfrage vor dem Überschreiben
+    {image}
+    Abbildung 5.9: Die Sicherheitsabfrage vor dem Überschreiben
 
 (CONTROL-Z), ein markierter Block, alle Einstellungen des Darstellungsmenüs
 (Tabulatoren, etc.), der Einfügemodus, Groß-, Kleinschrift-Konvertierung
@@ -54,4 +41,37 @@ ennummer hat, ist dieser Schutz ziemlich witzlos.
 TRANSLATED
 ==========
 
+
+    {image}
+    Abbildung 5.9: Die Sicherheitsabfrage vor dem Überschreiben
+
+all settings of the display menu (Tabs, etc.), the insert mode, uppercase,
+lowercase conversion of symbols, the remark flag, the debugger's auto-start
+flag, the length of the target code memory and the free memory for GEM.
+Due to an error in the assembler versions lower than V1.1, both
+specifications are probably incorrect there. If the time on your computer
+is not correct (not a hardware clock or Mega ST), the information will of
+course not be correct either.
+
+And finally, the format offers the advantage of being able to protect the
+source text with a password or the serial number of the assembler. For
+example, someone who has stolen your source text cannot do anything with
+it unless they also stole your assembler or know your password. The
+password is of course stored in coded form.
+
+You can set the password with CONTROL-” before saving. The dialog box that
+appears (see Figure 5.10 on page 54) allows you to define a password and
+either protect the source text with a password or provide it with serial
+number protection. It is also possible to switch off the protection here.
+The serial number protection prohibits it to load the source code in a
+different assembler than your serial number. A password may contain any
+ASCII code (exceptions are 0, 27 and 255). The password has to be re-
+entered each time before loading, which can then become quite annoying.
+You can therefore also click the button in the middle instead of the
+password button. It contains your serial number. Then the source text can
+only be loaded on an assembler with this serial number — another reason
+not to pass on the OMIKRON.assembler. If everyone has an assembler with
+your serial number, this protection is pretty pointless.
+
+"Save ASCII..." (SHIFT-F9) allows you to save the source text in normal
 

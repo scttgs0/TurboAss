@@ -2,42 +2,10 @@ ORIGINAL
 ======== 
 
 
-5 DER ASSEMBLER 57
+    {image}
+    Abbildung 5.14: Die Dialogbox nach dem Assemblieren
 
- 
-
- 
-
-34 Bytes relativen Codas erzeugt,
-1 Zeile nit 8 Fehlern und 8 Warnungen
-Synboltaballe
-PDEBUSSER ] [ESTRNGARD ]
-
-Was nun?
-
-   
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-SHALLORT ]
-RESRUCH E J E55 1E ]
-LA 42688 Zellen pro Minute) |
-
-Abbildung 5.14: Die Dialogbox nach dem Assemblieren
-
-kann das Programm manchmal erheblich verlängern, behindert das
+Eine Symboltabelle kann das Programm manchmal erheblich verlängern, behindert das
 Programm aber nicht, da das Gemdos die Symboltabelle gar nicht erst
 lädt. Der OMIKRON. Assembler unterstützt drei verschiedene Symbol-
 tabellenformate:
@@ -56,7 +24,7 @@ die Zeiger auf die Symbolnamen übergeben, d.h., er ist in der
 Lage, Symbole bis maximal 23 Zeichen (Einschränkung durch den
 Editor des Assemblers) zu verwalten.
 
-Das Format 1c kann nicht abgespeichert werden (im Gegensatz zu la
+Das Format 1c kann nicht abgespeichert werden (im Gegensatz zu 1a
 und 1b); der Assembler erzeugt das Format automatisch, wenn eines
 der Formate 1a oder 1b gewählt wurde und in den Debugger gesprun-
 gen wird. Falls der zur Verfügung stehende Zielcodespeicher nicht für
@@ -68,4 +36,29 @@ chende Meldung ausgibt. Der Assembler erzeugt dann eine Symbolta-
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.14: The dialog box after assembly
+
+The program can sometimes significantly extend a symbol table, but
+does not hinder the program, since the Gemdos does not even load the
+symbol table. The Omikron.assembler supports three different symbols
+table formats:
+
+(a) Digital Research's standard format: The maximum tool length is 8
+characters, i.e., the assembler shortens all symbols on 8 characters.
+
+(b) The format of the GST company: This is an expansion of the standard
+format, which now knows a maximum of 22 characters long symbols.
+
+{c) The transfer format to the debugger: The debugger receives only the
+pointers to the symbol names by the Assembler if a symbol table is
+desired, i.e. he is able to manage symbols of up to 23 characters
+(restriction by the editor of the assembler).
+
+The format 1c cannot be saved (in contrast to 1a and 1b); The assembler
+automatically creates the format when one of the formats 1a or 1b has
+been chosen and jumped into the debugger. If the target code memory
+available is not enough for a symbol table, a dialog box appears that
+issues a corresponding message. The assembler then creates a symbol
 

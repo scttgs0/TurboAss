@@ -2,11 +2,7 @@ ORIGINAL
 ======== 
 
 
-56 5.5__Der Editor
-
- 
-
-eo Einfache Warnungen (Kann zu Bcc.S optimiert werden)
+* Einfache Warnungen (Kann zu Bcc.S optimiert werden)
 
 Eine vollständige Liste aller Fehlermeldungen steht weiter hinten (siehe Ka-
 pitel 5.7 auf Seite 100).
@@ -37,7 +33,7 @@ ALT-J nicht mehr gefunden wird.
 
 Der zweite Menüpunkt „Assemblieren...“ (F1 oder CONTROL-A) assemb-
 liert den Sourcecode, gibt aber im Gegensatz zu „Assemblieren“ eine Dia-
-Jlogbox aus (Siehe Abbildung 5.14 auf Seite 57), in der Sie zwei Dinge tun
+logbox aus (Siehe Abbildung 5.14 auf Seite 57), in der Sie zwei Dinge tun
 können:
 
 1. Sie können Ihr Programm mit einer Symboltabelle versehen, d.h., alle
@@ -51,4 +47,40 @@ da statt Adressen eben Symbole angezeigt werden. Eine Symboltabelle
 TRANSLATED
 ==========
 
+
+* Simple warnings (can be optimized to Bcc.S)
+
+A complete list of all error messages is further back (see chapter 5.7 on
+page 100).
+
+In the event of fatal errors, the assembly is canceled immediately, a
+dialog box with the cause of the error appears, and after Return the editor
+jumps into the corresponding line.
+
+For all other errors, the assembler continues assembling and marks all
+incorrect lines. If one (or more) errors occurred during assembly, the
+abort button will be the default (as long as the source text is incorrect).
+When the cancel button is clicked, the system automatically jumps to the
+first error. However, if you cancel the dialog with the UNDO key, the
+cursor remains on the current line. It's also worth mentioning that the
+editor remembers all erroneous lines (and not just 20 or 30 like other
+assemblers), and that e.g. duplicating an erroneous line also doubles the
+error marking. You can also save an incorrect source text. When loading
+later, all errors (unfortunately) are still present. If the cursor is on
+an incorrect line, the corresponding error message is then displayed in the
+status line. To easily find such erroneous lines, all you have to do is
+press ALT-J (Jump to error) and you'll find yourself on the next erroneous
+line. You can also search upwards with SHIFT-ALT-J. If you have corrected a
+line, you should use CONTROL-J to jump to the next error. This has the
+advantage that the line just marked as incorrect is removed from the error
+list and ALT-J can no longer find it.
+
+The second menu item "Assemble ..." (F1 or Control-A) assembles the source
+code, but in contrast to "assemble" a dialog box (see Figure 5.14 on page
+57), in which you can do two things:
+
+1. You can provide your program with a symbol table, i.e. all the labels
+used in the source text are attached to the finished program. A symbolic
+table allows a much better orientation in the program if you test it for
+errors with the debugger, as symbols are displayed instead of addresses.
 

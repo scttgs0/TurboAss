@@ -2,11 +2,7 @@ ORIGINAL
 ======== 
 
 
-5_ DER ASSEMBLER 51
-
- 
-
-line auswertet. Sie können ihn also als Anwendung mit der SRC-Extension
+Sie können ihn also als Anwendung mit der SRC-Extension
 (natürlich auch mit S, ASM usw.) anmelden. Ein Doppelklick auf einen Source-
 text lädt dann den Assembler und den Source.
 
@@ -48,4 +44,38 @@ werden die alten Werte eines bereits existierenden Symbols überschrieben.
 TRANSLATED
 ==========
 
+
+So you can register it as an application with the SRC extension (of course
+also with S, ASM, etc.). A double-click on a source text then loads the
+assembler and the source.
+
+The menu item “to load... ’“ (Shift-F8) allows you to insert further ASCII
+source texts in the source text already in the memory. To do this, place the
+cursor to the place where the line is only decisive) and then call this
+function. After that, like the normal shop of ASCII sources, the non-
+tokenizable lines are marked. However, since each line has to be inserted
+individually, there may be considerable waiting times when loading if your
+source text is a bit larger. You can drastically shorten this waiting time
+if you always load the end of the sourceText and then mark the loaded lines
+as a block in order to move them to the final area in the source text.
+Since this method only has to be added (and not inserted), the charging is
+considerably faster. But as I said, this trick is only worthwhile for longer
+source texts.
+
+Under the menu item "Loading symbols ..." you cannot invite a complete source
+text, but only a symbol table. Such a symbol table only consists of constant
+allocations (see chapter D.3 on page 192). Bine symbol table can easily
+create by assembling a program that only contains Equ commands (precisely
+only commands that do not produce code. Comments, output commands etc. are
+also possible). The assembler then reports that it has created a symbol table
+with n symbols (see Figure 5.8 on page 52). You can then save this symbol
+table with the SYM extension and invite them again with this function. These
+symbol tables have the advantage that you do not have to dig through many
+sides of EQUS when leafing in your listing, because these symbol tables are
+not visible (the files in the librarys.omi are sys_vars and gem_vars.s).
+However, in order to change a value, you have to have the source text of the
+symbol table, re-assemble it and then reload them. And that is also the second
+special feature of the symbol tables: you can load a symbol table as often as
+you like, with each shop the old values ​​of an already existing symbol are
+overwritten.
 

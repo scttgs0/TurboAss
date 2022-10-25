@@ -2,35 +2,17 @@ ORIGINAL
 ======== 
 
 
-50 5.5 Der Editor
-
- 
-
- 
-
-Lada Sourcecode
-
-Erstellungsdatum: Dienstag ‚, 88,09.1980 88:00
-letzte Knderung : Freitag , 45,804,1389 13:10
-
-Bitte Passwort eingeben: AGERREHE
-
- 
-
- 
-
- 
-
-Abbildung 5.7: Die Passwordabfrage beim Laden
+    {image}
+    Abbildung 5.7: Die Passwordabfrage beim Laden
 
 Ein ASCII-Sourcetext muß beim Laden erst tokenisiert werden, d. h., der As-
 sembler muß jede eingelesene Zeile auf ihren Syntax hin überprüfen und die
 Zeile in das interne Format übertragen. Dieser Teil ist konzeptionsbedingt der
 langsamste Teil des Assemblers, trotzdem konvertiert der OMIKRON.Assem-
 bler etwa 450 KB pro Minute in das interne Format®, Während des Einlesens
-von ASCIH-Sourcetexten zeigt der Assembler die aktuelle Zeilennummer (in
+von ASCII-Sourcetexten zeigt der Assembler die aktuelle Zeilennummer (in
 Zwanzigerschritten) links oben an. Der Ladevorgang kann jederzeit mit ESC
-abgebrochen werden. Nach dem Einlesen eines ASCIH-Sourcetextes kann eine
+abgebrochen werden. Nach dem Einlesen eines ASCII-Sourcetextes kann eine
 Dialogbox erscheinen, in der der Assembler die Anzahl der nicht tokenisier-
 baren Zeilen ausgibt. Solche Zeilen enthalten meist einen Syntax-Fehler, oder
 ein Symbol wurde zweimal deklariert. Nicht tokenisierbare Zeilen können Sie
@@ -49,7 +31,7 @@ manns Wünschen gerecht werden würde. Weiterhin wird ab dem TOS 1.4 der
 Extended-File-Selector (AES 91) benutzt, d.h., oben im File-Selector steht
 die Funktion, die Sie gerade angewählt haben.
 
-An dieser Stelle sei darauf hingewiesen, daß der Assembler die Command-
+An dieser Stelle sei darauf hingewiesen, daß der Assembler die Commandline auswertet.
 
  
 
@@ -60,4 +42,38 @@ Das entspricht ungefähr der Assembliergeschwindigkeit des Devpac V1.0
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.7: The password question when loading
+
+An Ascii source text must first be token when charging, i.e. that is, the
+assembler must check every read line on your syntax and transfer the line
+to the internal format. This part is the slowest part of the assembler due
+to conception, nevertheless the Omikron.Assembler converts about 450 kb per
+minute into the internal format, while entering ASCII source texts, the
+assembler shows the current line number (in twenty steps) on the top left.
+The charging process can be canceled at any time with ESC. After reading an
+ASCII source text, a dialog box can appear in which the assembler spends
+the number of lines that cannot be processed. Such lines usually contain a
+syntax error, or a symbol has been declared twice. You can jump with Alt-S,
+which cannot be token. To do this, the Omikron.assembler marks such lines
+with ";>" as a remarks, this marking must be deleted after correction of
+the line.
+
+As with all charging and memory operations, the original file selector is
+also used here. This may disturb some because your old operating system does
+not provide very comfortable and possibly crashes "_" when it comes to
+the sign. But you can integrate your own file selectors for this. There are
+a number of luxurious file selectors as public domain programs. Of course,
+one could also have integrated an extended file selector into the assembler,
+which would definitely not do justice to everyone. Furthermore, the Extended
+File-Selector (AES 91) is used from TOS 1.4, i.e. the function that you have
+just selected in the file-selector.
+
+At this point it should be pointed out that the assembler evaluates the
+commandline.
+ 
+___
+
+6. This corresponds approximately to the assembler speed of the DevPAC V1.0
 

@@ -2,39 +2,21 @@ ORIGINAL
 ======== 
 
 
-52 5,5 Der Editor
-
- 
-
- 
-
-Sunboltabelle nit
-2 Symbolen erzeugt,
-
-.
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.8: Eine Symboltabelle wurde erzeugt
+    {image}
+    Abbildung 5.8: Eine Symboltabelle wurde erzeugt
 
 Beispiel:
-Test: EQU 1
+Test:   EQU 1
 
 Dieses Beispiel mit F1 assemblieren und als Symboltabelle abspeichern. Dann
 ändern Sie den Wert des Symbols Test auf 228.
 
-Test: EQU 228
+Test:   EQU 228
 
 Wenn Sie nun die eben erstellte Symboltabelle wieder einladen, ergibt sich
 folgendes Bild:
 
-Test: EQU 1
+Test:   EQU 1
 
 Noch eine Bemerkung zu den Symboltabellen: Die hier beschriebenen Sym-
 boltabellen haben nichts mit den Symboltabellen zu tun, die an ein assemb-
@@ -59,8 +41,44 @@ ker, Datum und Uhrzeit der Erstellung des Sourcetextes, Datum und Uhr-
 zeit der letzten Änderung des Sourcetextes, die Stelle der letzten Änderung
 
 
-
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.8: A symbol table was created
+
+example:
+    Test:   EQU 1
+
+Assemble this example with F1 and save as a symbol table. Then change the
+value of the SIT TEST to 228.
+
+    Test:   EQU 228
+
+If you now invite the symbols that have just been created, the following
+picture arises:
+
+    Test:   EQU 1
+
+Another remark about the symbol tables: The symbol tables described here
+have nothing to do with the symbol tables that can be attached to an
+assembled program.
+
+With the menu item "Save" (Control-Q) you can save your source text under
+the name specified in the status bar. No file selector is issued for this.
+As an extension, it is always attached. The source text is stored in your
+own format. As already mentioned, such source texts are not only saved and
+loaded faster, they are also shorter than in the ASCII format. If the source
+already exists under this name, a dialog box is issued (see Figure 5.9 on
+page 53).
+
+"Save As ..." (F9) corresponds to the "Save" menu item, but this time
+the file selector is issued.
+
+Something else about your own source text format; All current settings that
+affect the source text are saved (and this is what makes this format so
+practical). These are: The cursor position, the 10 highlighters, date and
+time the source text was created, date and the time of the last change of
+the source text, the place of the last change (CONTROL-Z), a marked block,
 

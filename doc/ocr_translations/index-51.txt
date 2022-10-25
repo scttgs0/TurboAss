@@ -2,31 +2,16 @@ ORIGINAL
 ======== 
 
 
-5_ DER ASSEMBLER _49
-
- 
-
 „Einstellungen sichern“ im „Einstellungen“-Menü).
 
 Der Menüpunkt „Neu anlegen...“ (SHIFT-F6) erlaubt es Ihnen, den ak-
 tuellen Sourcetext aus dem Speicher zu entfernen. Dabei werden alle internen
-Pointer zurückgesetzt und ein leerer Sourcetext mit dem Namen NONAME .SRC
+Pointer zurückgesetzt und ein leerer Sourcetext mit dem Namen NONAME.SRC
 erzeugt. Eine Sicherheitsabfrage warnt Sie (Siehe Abbildung 5.6 auf Seite 49),
 denn der Sourcetext ist nach dieser Funktion unwiderruflich verloren.
 
- 
-
-V Programm löschen?
-
-ER) HE]
-
- 
-
- 
-
- 
-
-Abbildung 5.6: Die Sicherheitsabfrage bei „Neu anlegen...“
+    {image}
+    Abbildung 5.6: Die Sicherheitsabfrage bei „Neu anlegen...“
 
 Der Menüpunkt „Laden...“ (F8) bringt den File-Selector auf den Bild-
 schirm; Sie können dann einen Sourcetext laden. Der OMIKRON.Assembler
@@ -53,8 +38,40 @@ Password wird der Ladevorgang sofort abgebrochen, sonst wird weitergeladen
 übrigens nicht angezeigt (falls Ihnen jemand auf den Monitor schaut... ).
 
 
-
 TRANSLATED
 ==========
 
+
+and "Settings" in the "Settings" menu).
+
+The menu item "Create new ..." (Shift-F6) allows you to remove the current
+source text from the memory. All internal pointers are reset and an empty
+source text with the name NONAME.SRC is created. A security query warns you
+(see Figure 5.6 on page 49), because the source text is irrevocably lost
+according to this function.
+
+    {image}
+    Figure 5.6: The safety question for "Create new ..."
+
+The menu item "Load ..." (F8) brings the file selector to the screen; You can
+then charge a source text. The Omikron.Assembler automatically recognizes the
+format of the source text. In contrast to ASCII format, your own format
+(recognizable by the SRC extension) is invited considerably faster and needs
+less storage space on the floppy disk than an ASCII source text. If the loaded
+source text is in SRC format, a box is displayed immediately, which contains
+the creation date (and watch time), as well as the date of the last change
+(and time). This box is displayed for about 2 seconds, then only the source
+text is loaded. If a button is pressed or moving the mouse during the 2 seconds,
+the assembler continues to load immediately.
+
+On the creation date: A file is considered to be new if the source text does
+not yet exist under the current filename when saving. However, you can load a
+file and save, among other things, without the date of creation being lost.
+
+If the source text is protected with a password, the assembler expects the
+input (see Figure 5.7 on page 50) of up to 8 characters long password (can be
+set with CONTROL-~). In the case of faulty password, the charging process will
+be broken off immediately, otherwise it will be forwarded (see chapter 5.5.5
+on page 53). By the way, the password is not displayed during the input (if
+someone looks at the monitor ...).
 

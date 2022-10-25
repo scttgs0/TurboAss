@@ -1,42 +1,9 @@
 ORIGINAL
-======== 
+========
 
 
-48 5.5 Der Editor
-
- 
-
- 
-
-Besonderer Dank gAlt:
-
-= Christian Markus
-
-(für seine UDISK 3,8)
-* Tara Kefnraiel
-
-ter (für das Finden ven Fehlern)
-= Artur
-
-Se
-(für seine TEuten Tips)
-
-= Thomas
-MA dl RAZER Schnittstelle)
-ftmare
-
-terrann
-(als Besitzer dieses Programns)
-
-EXJ
-
- 
-
- 
-
- 
-
-Abbildung 5.4: Die Dankesliste
+    {image}
+    Abbildung 5.4: Die Dankesliste
 
 An der Stelle, an der normalerweise die Accessories stehen, steht der Ein-
 trag „Accessories“ (SHIFT-F1). Wenn Sie diesen Eintrag anwählen, schal-
@@ -48,38 +15,8 @@ Assemblers.
 
 Das Menü „Datei“
 
-  
-
-Zuladen, vw
-Syndole zuladen..ı
-
-8
-
-FE
-
-Sichern 49
-FI
-
-of
-
- 
-
-Sichern unter...
-ASCII-Sichern...
-
-Datei löschen...
-
- 
-
- 
-
- 
-
- 
-
-(dd
-
-Abbildung 5.5: Das Menü „Datei“
+    {image}
+    Abbildung 5.5: Das Menü „Datei“
 
 Unter diesem Menüpunkt sind alle Disketten- bzw. Harddiskoperationen zu-
 sammengefaßt. (Ausnahmen sind „Block speichern“ im „Block“-Menü und
@@ -89,4 +26,21 @@ sammengefaßt. (Ausnahmen sind „Block speichern“ im „Block“-Menü und
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.4: The thanks list
+
+The entry "Accessories" (Shift-F1) stands at the point where the accessories
+normally stand. If you select this entry, the OMIKRON.Assembler switches back
+onto the GEM and shows a short GEM menu bar, which gives you the opportunity,
+also from the OMIKRON.Assembler to access accessories. There you come back to
+the user interface of the assembler with the menu item "Back to the Assembler".
+
+The "File" Menu
+
+    {image}
+    Figure 5.5: The "File" menu
+
+All diskette or hard drive operations are summarized under this menu item.
+(Exceptions are "Save Block" in the "Block" menu 
 
