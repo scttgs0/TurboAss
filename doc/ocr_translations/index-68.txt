@@ -1,33 +1,24 @@
 ORIGINAL
-======== 
+========
 
 
 66 5.5__Der Editor
 
- 
+
 
 den gesamten Sourcetext ausdrucken. Wenn ein Block markiert ist, erscheint
 eine Dialogbox (Siehe Abbildung 5.21 auf Seite 66), in der Sie wählen können,
 ob Sie den gesamten Text oder nur den Block drucken wollen. Der Ausdruck
 
- 
 
-Scurcetext drucken 7
+    {image}
+    Abbildung 5.21: Die Dialoxbox Block/Alles drucken
 
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.21: Die Dialoxbox Block/Alles drucken
 
 erfolgt stets über die Centronics-Schnittstelle. Eine Druckeranpassung ist
 ohne Probleme möglich. Im Ordner UTILITY.OMI befinden sich bereits zwei
 Anpassungen, eine für den NEC P6 und eine für einen EPSON-kompatiblen
-9-Nadler. Die ASCH-HEX-Druckerdateien können mit dem als Sourcetext
+9-Nadler. Die ASCII-HEX-Druckerdateien können mit dem als Sourcetext
 vorhandenen MAKE_CFG.SRC in das endgültige CFG-Format gebracht werden.
 Falls Sie Besitzer von 1st Word (Plus) sind, brauchen Sie dessen Drucker-
 treiber nur in OM-ASSEM.CFG umzubenennen (Wegen des Bindestriches geht
@@ -36,17 +27,9 @@ des Druckertreibers kann dem Anhang (siehe Kapitel D.5 auf Seite 194) ent-
 nommen werden. Wenn der Drucker ausgeschaltet ist, wird eine Dialogbox
 ausgegeben (Siehe Abbildung 5.22 auf Seite 66).
 
- 
 
-Drucker antxortet nicht !
-
- 
-
- 
-
- 
-
-Abbildung 5.22: Der Drucker antwortet nicht...
+    {image}
+    Abbildung 5.22: Der Drucker antwortet nicht...
 
 Das Menü „Suchen“
 
@@ -59,4 +42,34 @@ der Assemblerprogrammierer viel spezieller suchen und ersetzen will, als es in
 TRANSLATED
 ==========
 
+
+When a block is selected, a dialog box appears (See Figure 5.21 on page 66)
+in which you can choose whether to print the entire text or just the block.
+The printout always takes place via the Centronics interface.
+
+
+    {image}
+    Figure 5.21: The Dialoxbox Block/Print everything
+
+
+A printer adjustment is possible without problems. There are already two
+customizations in the UTILITY.OMI folder, one for the NEC P6 and one for an
+EPSON compatible 9-needle. The ASCII-HEX printer files can be brought into
+the final CFG format using MAKE_CFG.SRC, which is available as source text.
+If you own 1st Word (Plus), you only need to rename its printer driver to
+OM-ASSEM.CFG (because of the hyphen, this is best done with the debugger:
+NAME OLDNAME,NEWNAME). The structure of the printer driver can be found in
+the appendix (see chapter D.5 on page 194). If the printer is switched off,
+a dialog box will appear (See Figure 5.22 on page 66).
+
+
+    {image}
+    Figure 5.22: The printer does not answer ...
+
+
+The "Search" menu
+
+The OMIKRON.Assembler also handles all necessary search and replace commands;
+it actually contains considerably more than any other program, since the
+assembler programmer wants to search and replace much more specifically than
 

@@ -2,16 +2,10 @@ ORIGINAL
 ======== 
 
 
-58
-
-5.5 Der Editor
-
- 
-
 belle, soweit der Speicher reicht. Nähere Informationen zum Aufbau
 einer Symboltabelle finden Sie im Tabelle D.4 auf Seite 197.
 
-. Als zweiten Punkt haben Sie die Wahl zwischen verschiedenen Möglich-
+2. Als zweiten Punkt haben Sie die Wahl zwischen verschiedenen Möglich-
 
 keiten, das erzeugte Programm abzuspeichern bzw. in den Debugger zu
 springen.
@@ -23,14 +17,14 @@ tiert, die einem den Assembler nach allen Seiten offen hält. Eine Doku-
 mentation der Schnittstelle mit dokumentierten Beispielen, RSC-Editor
 für die internen Resourcen des Assemblers sowie einem Spiel als Bei-
 spiel zur Programmierung der Schnittstelle finden Sie im Anhang H auf
-Seite 206,
+Seite 206.
 
 Die Datei OM-ASSEM.DAT, die in der Grundversion mitgeliefert wird,
 enthält bereits einige Module, die im folgenden erklärt werden:
 
 DEBUGGER: Dieses Modul tut nichts anderes, als das Programm
 dem Debugger zu übergeben; dabei wird wahlweise eine Symbol-
-tabelle mit übergeben sowie die gesamte Assembler+=Debugger-
+tabelle mit übergeben sowie die gesamte Assembler<->Debugger-
 Schnittstelle (siehe Kapitel 5.8 auf Seite 104) mitverwaltet.
 
 STANDARD: Hiermit kann das vorher assemblierte Programm als
@@ -43,7 +37,7 @@ ein Assemblerprogramm einbinden will. Der Assembler erzeugt aus
 dem Programm automatisch DATA-Zeilen, welche er zudem auch
 gleich mit einer Initialisierungsschleife versieht (Speicher reservie-
 ren und Datas einlesen). Unter OMIKRON.BASIC können Sie
-die Zeilen einfach mit „BLOCK LOAD *,*“ einlesen. Für andere
+die Zeilen einfach mit „BLOCK LOAD *.*“ einlesen. Für andere
 BASIC-Dialekte müssen Sie mit einem Texteditor die erste Zeile
 entfernen und eventuell alle „$“-Zeichen entfernen.
 
@@ -55,4 +49,41 @@ gramm schon im Assembler zu relozieren.
 TRANSLATED
 ==========
 
+
+table, as far as the memory is sufficient. You can find more
+information on building a symbol table in Table D.4 on page 197.
+
+2. As a second point, you have the choice between different ways
+to save the created program or jump into the debugger.
+
+The assembler can manage a maximum of 12 different selection
+options that can be completely freely programmable by the user.
+A fairly comfortable interface was implemented, which keeps the
+assembler open on all sides. A documentation of the interface with
+documented examples, RSC editor for the internal resources of the
+assembler and a game as an example of programming the interface
+can be found in Appendix H on page 206.
+
+The file OM-ASSEM.DAT, which is included in the basic version,
+already contains some modules that are explained below:
+
+DEBUGGER: This module does nothing other than handing over the
+program to the debugger; A symbol table is also handed over and
+the entire Assembler<->Debugger interface (see chapter 5.8 on page
+104) is also managed.
+
+STANDARD: The previously assembled program can be saved as a
+program (or accessory or similar). Here too, a symbol table can
+be added to the program for later debugging.
+
+DATAS: Quite interesting for BASIC programmers if you want to
+integrate an assembler program. The assembler automatically
+generates data lines from the program, which it also provides
+with an initialization loop (reserve the memory and read in data).
+Under Omikron.BASIC you can simply read the lines with
+"Block Load *.*". For other BASIC dialects, you have to remove the
+first line with a text editor and possibly remove all "$" characters.
+
+ABSOLUT: This button offers you the opportunity to relocate a program
+in the assembler.
 

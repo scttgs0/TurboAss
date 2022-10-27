@@ -1,36 +1,9 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER 67
-
- 
-
-KUN Der 13
-
-20,
-atzen... SF3
-AL
-
-  
-
-yrbal sec
-Syabol ers:
-Text suchen...
-Text ersetzen... E
-Sprung zu Zeile... 0Z
-Kächster Fehler 9J
-Nächster SFehler 95
-Es g
-
-hster_ Merk
-
-    
-          
-
- 
-
-Abbildung 5.23: Das Menü „Suchen“
+    {image}
+    Abbildung 5.23: Das Menü „Suchen“
 
 einem Texteditor möglich ist (Beispiel: Ersetzen Sie mal mit einem Textver-
 arbeitungsprogramm das Symbol „move“ durch „label“, ohne alle „move“-
@@ -51,10 +24,9 @@ Abschluß eines Symbols erlaubt (Beispiel: Sie suchen alle Symbole, die mit
 senden Symbolen und kann so sehr schnell von Symbol zu Symbol springen.
 Die Buttons erlauben drei Möglichkeiten des Suchens:
 
-e ab der aktuellen Cursorposition,
-e ab dem Textanfang
-
-8 im markierten Block.
+* ab der aktuellen Cursorposition,
+* ab dem Textanfang
+* im markierten Block.
 
 Ein Ändern des Allquantors bzw. des Existenzquantors ist bei Symbolen
 nicht nötig, da sowohl „*“, als auch „?“ in Symbolnamen nicht vorkommen
@@ -68,4 +40,36 @@ Maustaste auf ein Symbolnamen doppelklicken, wenn der Cursor auf der
 TRANSLATED
 ==========
 
+
+    {image}
+    Abbildung 5.23: Das Menü „Suchen“
+
+
+is possible in a text editor (example: replace the symbol "move" with "label"
+with a word processing program, without all "move ” commands or symbols named
+“move2” as well).
+
+The first entry is "Find Symbol..." (F3 or CONTROL-F). This can be used, for
+example, to search for all places where the "test" symbol is used. To quickly
+jump from one place to the next, enter the symbol you are looking for once and
+press RETURN. If the symbol is in the source text, the cursor immediately jumps
+to the appropriate position. With ALT-F you can then jump to the next position
+without getting the dialog box again. Two placeholders are available: 
+the universal quantifier "*", which stands for text parts of any length, and
+the existential quantifier "?", which replaces any character. Any existential
+quantifier (i.e. "?") may be used in the symbol name. However, the universal
+quantifier is only permitted at the end of a symbol (example: You are looking
+for all symbols that begin with "A_*"). The editor then creates a binary tree
+of all matching symbols and can thus jump from symbol to symbol very quickly.
+The buttons allow three search options:
+
+* From the current cursor position,
+* From the beginning of the text
+* in the marked block.
+
+It is not necessary to change the universal quantifier or the existential
+quantifier for symbols, since neither "*" nor "?" may appear in symbol names.
+
+You can “Search Icon. ..'" can also be activated by double-clicking on a symbol
+name with the left mouse button when the cursor is on the symbol definition
 

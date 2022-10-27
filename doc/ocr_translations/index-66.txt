@@ -1,65 +1,33 @@
 ORIGINAL
-======== 
+========
 
-
-64
-
-5.5 Der Editor
-
- 
 
 Der Menüpunkt „Informationen...“ (SHIFT-F4) gibt eine kleine Statistik
 aus (Siehe Abbildung 5.19 auf Seite 64), wie der Speicher momentan belegt
 ist. Zur Speicherverwaltung des Assemblers noch einige Worte:
 
- 
 
-Zeilenanzahl: 445 von 38431
-Programm (Bytes): 1446 von 1280165
-Renarks (Bytes): 1544 von 256216
-Yabellenzinträge: 125 von 12010
+    {image}
+    Abbildung 5.19: Die Informationsbox
 
- 
-
-davon? 57 Synkole
-0 Fornein
-67 OC-Zeilen
-1 Sonstige
-Zielcode maxinal 130745 Bytes
-
-EX
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.19: Die Informationsbox
 
 Der Sourcetext besteht beim Assembler aus 4 Blöcken, die durch Pointer
 miteinander verkettet sind.
 
 1. Der wohl wesentlichste Block (für den Editor) ist wohl die Zeilentabelle;
-
 jede Zeile kostet 10 Bytes Speicherplatz. In dieser Tabelle werden alle
 Informationen über eine Zeile abgelegt (Remark ja/nein, fehlerhafte
 Zeile ja/nein, ...).
 
-. Der Programmblock. Die angegebene Programmlänge müßte in den
-
+2. Der Programmblock. Die angegebene Programmlänge müßte in den
 meisten Fällen der tatsächlichen recht nahe kommen (aber z.B. DS-
 Befehle fallen aus dem Rahmen).
 
-. Der Remarkblock. Auch hierzu noch eine Bemerkung: Der Editor packt
-
+3. Der Remarkblock. Auch hierzu noch eine Bemerkung: Der Editor packt
 mehrere gleiche Zeichen, d.h., 80 mal „7“ kostet nur drei Bytes Spei-
 cherplatz.
 
-‚ Der letzte Block enthält alle Symbolnamen, Formeln und sonstige spei-
-
+4. Der letzte Block enthält alle Symbolnamen, Formeln und sonstige spei-
 cherplatzfressende Informationen.
 
 
@@ -67,4 +35,30 @@ cherplatzfressende Informationen.
 TRANSLATED
 ==========
 
+
+The menu item "Information..." (SHIFT-F4) outputs a small statistic
+(see figure 5.19 on page 64), how the memory is currently occupied.
+A few more words about the memory management of the assembler:
+
+
+    {image}
+    Abbildung 5.19: Die Informationsbox
+
+
+The source text consists of 4 blocks for the assembler, which are
+chained together by pointers.
+
+1. The most important block (for the editor) is probably the line table;
+Each line costs 10 bytes storage space. In this table, all information
+is stored about a line (Remark yes/no, faulty line yes/no, ...).
+
+2. The program block. In most cases, the specified program length would
+have to come close to the actual right (e.g. DS commands fall out of
+the frame).
+
+3. The remark block. Also a remark: The editor grabs several same
+characters, i.e., 80 times "7" only costs three bytes storage space.
+
+4. The last block contains all symbol names, formulas and other
+memory-consuming information.
 

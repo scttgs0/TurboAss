@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-5 DER ASSEMBLER 59
-
- 
-
 Dazu ein paar Erklärungen: Das Gemdos benötigt stets Program-
 me, die ab Adresse 0 laufen und eine Tabelle aller absoluten Adres-
 sen beinhalten. Beim Laden eines Programms, welches ja im Atari
@@ -22,7 +18,7 @@ eintragen kann (bei Modulen z.B. $FA0000), und zum anderen
 drei weitere Buttons zur Auswahl hat:
 
 ABBRUCH: Springt in den Editor zurück.
-SPEICHERN: Speichert das relozierte Programm ab,
+SPEICHERN: Speichert das relozierte Programm ab.
 
 KOPIEREN: Reloziert und kopiert das Programm an die Ad-
 resse, für die es reloziert worden ist. Achtung: Da
@@ -48,8 +44,43 @@ PARALLEL: Dieses Modul überträgt das fertige Programm über die
 Parallel-Schnittstelle. Das dient in erster Linie für den Amiga.
 
 
-
 TRANSLATED
 ==========
 
+
+A few explanations: The Gemdos always requires programs that run
+from address 0 and contain a table of all absolute addresses.
+When loading a program, which is not loaded to a fixed address in
+the Atari, as with the homepoters (see e.g. C-64 according to
+address $801), the GEMDOS then automatically adapts to the
+charging address, i.e.the program. However, since module programs
+are always at a fixed address and cannot be relocated (is a Rome),
+the program can already be relocated with this button with the
+assembler. If you click on this button, a dialog box appears in
+which you can enter the desired basic address of the program (for
+e.g. $FA0000), and on the other hand you have three other buttons
+to choose from:
+
+    CANCEL:     Jump back into the editor.
+    SAVE TO:    Saves the relocated program.
+    COPY:       Relocates and copies the program to the address
+                for which it has been relocated. Attention: Since
+                the assembler has no security queries, there is a
+                chance that it will be destroyed if the operation
+                is wrong! You should therefore only use this
+                function if you have fully understood your effect.
+
+BASIC: With this button you can integrate any program in Basic (of
+course also in other programming languages). A relocative routine
+is added to a relocable program, which automatically relocates the
+program to the corresponding address for the first time. The only
+requirement is that the program is started from the first address
+for the first time, after which the relocier routine is deleted
+automatically.
+
+INLINE: This button allows an inline line for omikron.basic
+(i.e. inline "hex data").
+
+PARALLEL: This module transmits the finished program via the
+parallel interface. This primarily serves for the Amiga.
 

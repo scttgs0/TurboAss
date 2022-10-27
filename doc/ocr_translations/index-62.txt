@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-60 5.5 Der Editor
-
- 
-
 Entsprechende Empfangsroutinen sind bei AssAge Entertainment
 Software erhältlich (Adresse steht auf der Titelseite).
 
@@ -23,7 +19,6 @@ werden; z.B. „main:: nop“. Durch den GLOBAL-Opcode können
 Symbole automatisch mit zwei Doppelpunkten versehen; sprich:
 als global definiert werden (siehe Kapitel 5.6.7 auf Seite 95) .
 Achtung: Zum Linken ist natürlich eine Symboltabelle nötig; Sie
-
 sollten daher an den Anfang eines Programms, das gelinkt werden
 soll, „OPT D+“ schreiben.
 
@@ -54,4 +49,38 @@ auch wieder gelöscht. Um dieses Kommando ausführen zu können, müssen
 TRANSLATED
 ==========
 
+
+Corresponding receiving routines are available from AssAge Entertainment
+Software (address is on the front page).
+
+SMALLDRI: The file is filed in the DRI-Linker format. You can then easily
+link your assembler program to C programs. "Small" means that no imports
+are yet possible. All symbols used in your assembler program must also be
+defined in this. If you want to hand over parameters, the easiest way to
+do it is to over the stack.
+
+Global symbols can be marked with a 2nd colon; e.g. "main::nop". The GLOBAL
+opcode allows symbols to be automatically double colonized; in other words:
+be defined as global (see chapter 5.6.7 on page 95) . Caution: Of course, a
+symbol table is required for linking; You should therefore write "OPT D+"
+at the beginning of a program that is to be linked.
+
+The start of an opcode (30007) in the Relocinfo of the DRI program is not
+set. However, it is also not required for linking.
+
+The individual buttons are not always selectable. The reasons for disabling
+the buttons are given in Table 5.4.
+
+The menu item "=> Debugger" (F2) is enabled if the resident debugger is
+available. It allows you to jump to the debugger without transferring a
+program, e.g. to format a floppy disk from the debugger. If you jump to the
+debugger with this menu item, you can also reload a program and debug it.
+This is not possible after jumping from "Assemble". However, it should be
+noted that 40000 bytes less Gemdos memory is available than you specified
+under "REORGANIZE" (see chapter 5.5.5 on page 65). These 40,000 bytes are
+only available to you after "assembling" in the debugger.
+
+"Reload debugger'" (ALT-D allows you to load the debugger later. If you
+leave the assembler, the debugger is also deleted again. In order to be
+able to execute this command, at least 240,000 bytes of free Gemdos memory
 

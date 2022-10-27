@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-5_ DER ASSEMBLER 65
-
- 
-
 Da die Verwaltung der vier Blöcke sehr aufwendig ist, ist der Assembler der
 jetzigen Version nicht in der Lage, den Speicher selbst zu organisieren, wie
 z.B. ein Texteditor, der 8 unabhängige Texte im Speicher verteilen muß.
@@ -19,21 +15,8 @@ Sie dabei daran, daß eine Symboltabelle zusätzlich Speicherplatz belegt. Bei
 Mammut-Programmen muß man also u. U. auf sie verzichten.
 
  
-
-Speichsrreservierung
-freier Spaicher : 1443712 Bytes
-davon freihalten: 169020 Bytes
-Zielccdespaicher: _130745 Bytes
-
-EX) MO
-
- 
-
- 
-
- 
-
-Abbildung 5.20: Der Reorganisations-Dialog
+    {image}
+    Abbildung 5.20: Der Reorganisations-Dialog
 
 Für den Debugger benötigt man (leider) auch noch Speicher, dazu noch für
 das zu debuggende Programm, da es mit der Gemdos-Funktion Pexec() an-
@@ -58,4 +41,38 @@ Der letzte Menüpunkt lautet „Drucken...“ (F7). Von hier aus kann man
 TRANSLATED
 ==========
 
+
+Since the administration of the four blocks is very complex, the assembler
+of the current version is not able to organize the memory itself, like e.g.
+a text editor that has to distribute 8 independent texts in the memory.
+
+However, the distribution specified by the assembler corresponds to
+practice, and problems can usually only arise with the size of the target
+code memory. For such a case there is the "REORGANIZE" button, which brings
+up a new dialog box (See Figure 5.20 on page 65) in which you can set the
+length of the program to be created. Remember that a symbol table takes up
+additional storage space. In the case of mammoth programs, you may have to
+do without them.
+
+ 
+    {image}
+    Figure 5.20: The reorganization dialogue
+
+You (unfortunately) also need memory for the debugger, and also for the
+program to be debugged, since it has to be registered with the Gemdos
+function Pexec(). The free memory must be larger than the length of all
+three program segments (TEXT, DATA and BSS)! However, a passed symbol
+table does not cost any additional space (lucky). If you want to reload
+the debugger (see chapter 5.5.5 on page 60), at least 240000 bytes of
+Gemdos memory must be reserved here.
+
+However, do not worry too much about the storage distribution; Anyone who
+writes large programs usually also has main memory available.
+
+The source text is not lost when reorganizing. If the memory is not enough,
+a dialog box warns and you have the option of deleting the source text (to
+have the storage space free) or to cancel.
+
+The last menu item is "Print ..." (F7). From here you can print out the
+entire source text.
 

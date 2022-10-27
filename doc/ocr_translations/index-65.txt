@@ -2,11 +2,7 @@ ORIGINAL
 ======== 
 
 
-5_ DER ASSEMBLER 63
-
- 
-
-eine vorzeichenlose Zahl gewandelt (z. B. —123 in $FFFFFF85). Eine Zurück-
+Eine Zurück-
 wandlung in eine vorzeichenbehaftete Zahl ist durch erneutes Drücken von
 RETURN möglich. Um nun ein Ergebnis auch nutzen zu können, gibt es drei
 Buttons, die links von den Ergebnissen stehen. Mit ihnen kann das Ergeb-
@@ -33,18 +29,12 @@ Maustaste drücken, eine beliebige Taste der Tastatur oder mit der linken
 Maustaste außerhalb der Dialogbox klicken. Darauf verschwindet die Dialog-
 box wieder.
 
-[ERSEDEFSHZIKLAN
 
+    {image}
+    Abbildung 5.18: Die Zeichentabelle
  
-
-i SETMEEEEATELN Er SU30RE
-[Uxa 3107 10° 270:0s0e EN [IM
-
-Abbildung 5.18: Die Zeichentabelle
-
- 
-
-7Mit Eingabe eines ASCII-Codes über ALTERBATE-Zehnerblock können beliebige Zei-
+---
+7 Mit Eingabe eines ASCII-Codes über ALTERBATE-Zehnerblock können beliebige Zei-
 chen eingegeben werden. (siehe Kapitel 5.5.4 auf Seite 44).
 
 
@@ -52,4 +42,32 @@ chen eingegeben werden. (siehe Kapitel 5.5.4 auf Seite 44).
 TRANSLATED
 ==========
 
+It can be converted back to a signed number by pressing RETURN again. In order
+to be able to use a result, there are three buttons to the left of the results.
+They can be used to transfer the result to the cursor position (according to
+their number base). It is also possible to transfer the entire formula to the
+cursor position by clicking on the "Transfer formula" button. The "END" button
+or the UNDO button takes you back to the editor without accepting a formula.
+At this point it should be remembered that a double-click with the right mouse
+button on a number, formula, etc. calls up the pocket calculator, and that the
+number, formula, etc. is transferred to it. Another not unimportant side note:
+The pocket calculator does not recognize any error messages; if an error is
+found, the result is always 0, i.e. 1/0+100 is 0, since an error occurred at 1/0.
+
+The next menu item is "Character Map..." (CONTROL-+). If you want to enter a
+character that you can't find on the keyboard and whose ASCII code you don't
+know by heart, you can use this to see all 255 possible characters of the ST at
+once (See Figure 5.18 on page 63). You can then select the appropriate character
+by simply clicking on it. It is then transferred to the cursor position.
+If none of the characters suit you, you can briefly press the right mouse button,
+click any key on the keyboard or use the left mouse button outside the dialog box.
+The dialog box then disappears again.
+
+
+    {image}
+    Figure 5.18: The character table
+ 
+---
+7 With an ASCII code via an alternate number block, any characters can be entered.
+(See chapter 5.5.4 on page 44).
 

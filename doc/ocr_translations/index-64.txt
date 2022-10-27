@@ -1,26 +1,9 @@
 ORIGINAL
-======== 
+========
 
 
-62 5.5 Der Editor
-
- 
-
-pEtastel lungen AUMfa
-Informationen... OF4
-Drucken... F7)
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.16: Das Menü „Editor“
+    {image}
+    Abbildung 5.16: Das Menü „Editor“
 
 Der erste Menüpunkt „Rechner...“ (F5) enthält einen vollständigen Ta-
 schenrechner (Siehe Abbildung 5.17 auf Seite 62). Dieser Rechner ist speziell
@@ -29,33 +12,18 @@ des Assemblers auch). Der Rechner erlaubt die Eingabe einer beliebigen For-
 mel in der Schreibweise, die der Assembler sonst auch fordert. Vergleiche
 beherrscht der Taschenrechner jedoch nicht!
 
- 
 
- 
+    {image}
+    Abbildung 5.17: Der Taschenrechner
 
- 
-
-ABBES
-
-15 Rechenzeichen: ot ! A
-
-$ 23 Vorzeichen :+- 1“
-
-x 1118011 EEE
-
- 
-
- 
-
-Abbildung 5.17: Der Taschenrechner
 
 Diese Formel darf auch Symbole des Sourcetextes enthalten. Dabei gibt es
 allerdings zwei Punkte zu beachten:
 
-oe Konstanten, die mit EQU zugewiesen werden und keine Formel enthal-
+* Konstanten, die mit EQU zugewiesen werden und keine Formel enthal-
 ten, können jederzeit benutzt werden.
 
-e Label jedoch bekommen ihren Wert erst bei der Assemblierung, d.h.,
+* Label jedoch bekommen ihren Wert erst bei der Assemblierung, d.h.,
 um z. B. die Länge einer Prozedur zu ermitteln, müssen Sie den Source-
 code erst einmal assemblieren, danach gehen Sie direkt in den Taschen-
 rechner und geben z.B. ein: ENDE-ANFANG. Bin Druck auf die RETURN-
@@ -66,8 +34,36 @@ Da es in Assembler manchmal praktisch ist, eine Zahl vorzeichenlos zu be-
 trachten, gibt es den Button „ohne Vorzeichen“. Das Ergebnis wird dann in
 
 
-
 TRANSLATED
 ==========
 
 
+    {image}
+    Figure 5.16: The "Editor" menu
+
+The first menu item "Calculator..." (F5) contains a full calculator
+(See figure 5.17 on page 62). This calculator is specially designed for
+the assembler programmer (like all other features of the assembler). The
+calculator allows you to enter any formula in the notation that the
+assembler also requires. However, the calculator cannot make comparisons!
+
+
+    {image}
+    Figure 5.17: The calculator
+
+
+This formula may also contain symbols of the source text. However, there
+are two points to consider:
+
+* Constants that are assigned to EQU and do not contain any formula can
+be used at any time.
+
+* However, labels only get their value during assembly, For example, to
+determine the length of a procedure, you must first assemble the source
+code, then go directly to the pocket calculator and enter, for example:
+END-BEGIN. If you press the RETURN key or the "calculate" button, you
+will then see the desired length.
+
+Since it is sometimes practical in assemblers to look at a number without
+signs, there is the "Without sign" button. The result is then converted
+into an unsigned number (e.g. –123 in $ FFFFFF85).
