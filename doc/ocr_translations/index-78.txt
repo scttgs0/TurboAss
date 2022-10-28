@@ -1,35 +1,11 @@
 ORIGINAL
-======== 
+========
 
 
-76 5.5 Der Editor
+    {image}
+    Abbildung 5.32: Die Dialogbox „Editor1“
 
- 
-
- 
-
-Curserdarstellungı SEMFZTEZIES)
-Farbe 1 0:828 MiBSS
-
-Bildabschaltung | J00 sek
-Mausfangradius 1! _2 Pixel
-
- 
-
- 
-
-Warnungen ı DA
-
-Suchfunktionen |
-
-Suchzeichen ı= .
-EX
-
- 
-
-Abbildung 5.32: Die Dialogbox „Editor1“
-
-0=81=1,2=_,3=[)
+0=[], 1=|, 2=_, 3=[]
 
 Wenn Sie auf einem Farbmonitor arbeiten, können Sie die Bildschirmfarben
 frei wählen. „V“ steht dabei für die Vordergrund-(Zeichen-)Farbe, „H“ für
@@ -55,8 +31,34 @@ gesprungen werden sollen. „normal“ ist, daß der nächste Fehler ab der Cur-
 sorposition angesprungen wird. Auf dem letzten Fehler im ganzen Source
 
 
-
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.32: The "Editor1" dialog box
+
+0=[], 1=|, 2=_, 3=[]
+
+If you are working on a color monitor, you are free to choose the screen
+colors. "V" stands for the foreground (character) color, "H" for the
+background color. The individual digits stand for the red, green and blue
+component of the color. Values between 0 and 7 are permitted. On monochrome
+monitors, you can use the background color (set or clear bit 0) to toggle
+between normal and inverse "color".
+
+So that the image does not burn into your monitor when you take a longer
+break without switching off the computer, the OMIKRON contains. Assembler
+a screen switch. If it is on and you haven't pressed any keys or moved the
+mouse within the set time, the screen will go black. The image comes back
+as soon as you press a key (no SHIFT or similar key) or move the mouse.
+Switch-off times of less than 10 seconds are not permitted. This function
+is switched off by clicking on the "no" button. By the way, the screen
+switch does not switch off the synchronization.
+
+With "Warnings" you can select whether warnings should also be jumped to
+when jumping to errors (with CONTROL-ALT-J). "Search Functions" specifies
+how to jump to errors, non-tokenizable lines, etc. "Normal" is that the
+next error is jumped to from the cursor position. On the last error in the
+entire source, the cursor remains on the incorrect line.
 

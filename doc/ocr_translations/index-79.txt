@@ -1,15 +1,11 @@
 ORIGINAL
-======== 
+========
 
-
-5_DER ASSEMBLER 77
-
- 
 
 bleibt der Cursor auf der fehlerhaften Zeile stehen. Bei „von vorne“ springt
 der Cursor nach dem letzten Fehler wieder auf den ersten Fehler im Source.
 Dann gibt es nicht die Einstellung „letzte Zeile“; der Cursor springt, wenn
-es keine weiteren Fehler im Source gibt, hinter die letzte Zeile des Sources,
+es keine weiteren Fehler im Source gibt, hinter die letzte Zeile des Sources.
 
 Mit „Suchzeichen“ kann das Zeichen eingestellt werden, das auf das Semi-
 kolon folgen muß, um diese Zeile mit ALT-S anspringen zu können. Wenn
@@ -20,27 +16,9 @@ tel 5.5.5 auf Seite 56).
 Editor 2... (SHIFT-F7): In dieser Box (Siehe Abbildung 5.33 auf Seite 77)
 können Sie verschiedenes einstellen. „Sicherheitskopie“ bedeutet, daß beim
 
- 
 
-Sicherhaitskopie: E7Jar}
-Tastaturklick : Fa] MM
-Sunbolnenen : [re]
-Sprung in den Dabugger:
-
-Extension für ASCII-Sourcen:; S_
-
-Rutokonfig. beim Laden: Fan)
-PRN-Ausgabe Uber 8105: Jar]
-Buicknaus: F Ja] | |
-Konpakter: SIENN Cöein]
-
- 
-
- 
-
- 
-
-Abbildung 5.33: Die Dialogbox „Editor 2“
+    {image}
+    Abbildung 5.33: Die Dialogbox „Editor 2“
 
 Abspeichern von SRC-Dateien eine Sicherheitskopie angelegt wird. Dazu wird
 erst der alte Source als BAK-Datei umbenannt, dann wird der neue mit SRC-
@@ -58,4 +36,31 @@ den Ton, der bei Erstbenutzung von Symbolen erklingt.
 TRANSLATED
 ==========
 
+
+With "from the beginning" the cursor jumps back to the first error in the
+source after the last error. Then there is no “last line” setting; if there
+are no further errors in the source, the cursor jumps behind the last line
+of the source.
+
+The character that must follow the semicolon in order to be able to jump to
+this line with ALT-S can be set with "Search character". So if you set "#"
+and then write ";#" at the beginning of a line, this line will be jumped to
+as soon as you press ALT-(SHIFT-)S (see chapter 5.5.5 on page 56).
+
+Editor 2... (SHIFT-F7): In this box (see Figure 5.33 on page 77) you can set
+various things. "Backup copy" means that a backup copy is created when saving
+
+
+    {image}
+    Abbildung 5.33: Die Dialogbox „Editor 2“
+
+
+SRC files. To do this, the old source is first renamed as a BAK file, then the
+new one is saved with the SRC extension. This means that nothing can happen if
+the power fails while saving (then at least you still have the old source).
+
+Under "Keyboard click" you can switch off the keyboard click, but not the sound
+that sounds when symbols are used for the first time.
+
+"Symbol names" allows differentiation between upper and lower case letters.
 

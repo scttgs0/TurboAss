@@ -1,38 +1,14 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER 71
-
- 
-
- 
-
-Text suchen und ersetzen!
-
- 
-
- 
-
-Allquanters# Existenzquantor:2
-
-Großzklein: Far] IB
-
-Anzahlı
-EX
-
- 
-
- 
-
- 
-
-Abbildung 5.27: Der Dialog „Text ersetzen“
+    {image}
+    Abbildung 5.27: Der Dialog „Text ersetzen“
 
 werden sollen, oder der Assembler vor jedem einzelnen Ersetzen fragen
 soll, ob dieser String ersetzt werden soll.
 
-® Der Text, der den alten ersetzen soll, muß auch entsprechende Stern-
+* Der Text, der den alten ersetzen soll, muß auch entsprechende Stern-
 chen (keine Fragezeichen) enthalten. Wenn wir also z.B. alle „RTS“
 durch „RTE“ ersetzen wollen, schreiben wir „RTS“ in die erste Zeile
 und „“RTE*“ in die zweite.
@@ -43,26 +19,33 @@ welche die Eingabe einer Zeilennummer oder eines Symbolnamens erlaubt.
 Bei einem Symbolnamen wird die Zeile angesprungen, in der das Symbol
 definiert ist. Bei Symbolen sind Quantoren am Ende des Namens möglich!
 
- 
 
-Springe zu
-Zeilenzunger cder Syrbolnarne:
-|
-Kl Fe]
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.28: Der Dialog „Sprung zu Zeile“
-
+    {image}
+    Abbildung 5.28: Der Dialog „Sprung zu Zeile“
 
 
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.27: The dialog "Replace text"
+
+or whether the assembler should ask before each individual replacement
+whether this string should be replaced.
+
+* The text that is to replace the old one must also contain appropriate
+asterisks (not question marks). For example, if we want to replace all
+"RTS" with "RTE", we write "RTS" in the first line and ""RTE*" in the
+second.
+
+The following entry is "Jump to line..." (ALT-Z). When you call it up,
+a dialog box appears (see Figure 5.28 on page 71), which allows you to
+enter a line number or a symbol name. With a symbol name, the line in
+which the symbol is defined is jumped to. With symbols, quantifiers are
+possible at the end of the name!
+
+
+    {image}
+    Figure 5.28: The dialog "Jump to Line"
 

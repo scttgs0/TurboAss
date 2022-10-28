@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-72 5.5 Der Editor
-
- 
 
 Beispiel: A* springt zur nächsten Symboldefinition eines Symbols, das mit
 einem großen „A“ anfängt. Mit ALT-SHIFT-Z können Sie zum nächsten Sym-
@@ -43,12 +39,46 @@ sich nicht Zeilennummern, Labelnamen o.ä. merken müssen, um diese Rou-
 tinen wiederzufinden, stellen Sie im Editor-Menü „*“ als Merker ein. Dann
 schreiben Sie an den Anfang jeder der drei Routinen: „;*“ (und meinetwe-
 gen noch einen Erklärungstext). Dann können Sie die markierten Stellen mit
-CDONTROL-S problemlos wiederfinden. Der Merker wird in jedem Sourcetext
+CONTROL-S problemlos wiederfinden. Der Merker wird in jedem Sourcetext
 mit abgespeichert.
-
 
 
 TRANSLATED
 ==========
 
+
+Example: A* jumps to the next symbol definition of a symbol that starts with
+a capital "A". With ALT-SHIFT-Z you can jump to the next symbol without first
+having to confirm the dialog box with RETURN.
+
+"Next error" (ALT-J) jumps to the next line that was marked as incorrect
+during an assembly. If there are no errors, a box appears briefly with the
+message "No further errors" (see chapter 5.5.5 on page 56).
+
+With "Next SError" (ALT-S) you jump to the next syntax error, strictly
+speaking to the next non-tokenizable line. Lines that cannot be tokenized are
+marked as remarks during ASCII loading or reloading. You can use
+CONTROL-RETURN to mark individual lines as "with syntax errors" (see below).
+
+ALT-SHIFT-S: Like ALT-S, but searches upwards.
+
+CONTROL-RETURN: Accept line as not tokenizable (i.e. as a remark, see below).
+If you have changed a line but the editor does not want to accept the line
+because, for example, the operand is still missing (you have to look up the
+name of the symbol first), you can press CONTROL-RETURN. The line is then
+adopted as a remark. Lines that have been marked in this way can be quickly
+found again with ALT-S.
+
+With "Next Marker" (CONTROL-S) you can jump to the next Remark Marker. You
+can specify a character as a marker in the editor menu (default is “””). If
+you enter this character at the beginning of Remarks, you can jump to such
+lines very quickly with this or the next key combination.
+
+An example of remark flags: In a longer program, you frequently change three
+specific routines, then try out whether they work better now, then change
+these routines again, etc. So that you don't have to remember line numbers,
+label names, etc., um To find these routines again, set "*" as a flag in the
+editor menu. Then write at the beginning of each of the three routines: ";*"
+(and an explanatory text if you like). Then you can easily find the marked
+positions with CONTROL-S. The marker is saved in every source text.
 

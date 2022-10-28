@@ -1,17 +1,15 @@
 ORIGINAL
-======== 
+========
 
-
-5__DER ASSEMBLER 75
-
- 
 
 1. In der linken Spalte können Sie die Tabulatorpositionen festlegen. Die
 Labels werden immer am linken Rand (nicht eingerückt) ausgegeben.
 Alle anderen Einrückungen können frei definiert werden:
 
 Befehlstab: Position der Opcodea
+
 Operandentab: Position der Operanden
+
 Remarktab: Position der Kommentare
 
 Pseudooptab: Position der Pseudoopcodes (ist normalerweise =
@@ -32,7 +30,7 @@ und ob führende Nullen bei Zahlen weggelassen werden. Wenn „Zahl
 kürzen“ ausgeschaltet ist, werden Zahlen entsprechend der Länge ange-
 zeigt, in der sie auch im Programmcode abgespeichert sind, Wenn Sie
 beispielsweise „move.w #$124,d0“ eingeben, wird die Zahl als „$0124“
-(Wordbreite). Bei „move.] #$124,d0“ oder „move.w $124,d0“ wird dar-
+(Wordbreite). Bei „move.l #$124,d0“ oder „move.w $124,d0“ wird dar-
 aus „$00000124“, „Kürzen“ bedeutet für den Assembler, daß er die
 führenden Nullen auf Bytebreite kürzt. Also würde die Zahl in jedem
 der drei Beispiele als „$0124“ angezeigt.
@@ -46,8 +44,44 @@ nen verschiedene Einstellungen gemacht werden. Oben wird die Cursorform
 festgelegt. Die Ziffern bedeuten folgendes:
 
 
-
 TRANSLATED
 ==========
 
+
+1. In the left column you can set the tab positions. The labels are always
+output at the left margin (not indented). All other indentations can be
+freely defined:
+
+Command tab:    Position of the opcodes
+
+Operand tab:    Position of the operands
+
+Remark tab:     Position of the comments
+
+Pseudo-Op tab:  Position of pseudo-opcodes (usually = command tab)
+
+Pseudo-rem tab: Position of the comments that follow pseudo-opcodes.
+                Since pseudo-opcodes are usually shorter than
+                instructions with operands, this value is usually set
+                smaller than the Remark tab.
+
+2. In the right column you can influence the format for the disassembler.
+You can set separately for opcodes (commands), pseudo-opcodes, registers
+(the "D" or "A") and the letters of hex numbers whether they should be
+output in upper or lower case. You can choose whether to replace "A7" with
+"SP" (where the Register Upper/Lower case setting affects how "SP" is
+written) and whether leading zeros are omitted from numbers. If truncate
+number is turned off, numbers are displayed according to the length they
+are stored in the program code. For example, if you type "move.w #$124,d0",
+the number is displayed as "$0124" (word width). With "move.l #$124,d0" or
+"move.w $124,d0" this becomes "$00000124", "truncate" means for the
+assembler that it truncates the leading zeros to byte width. So the number
+would be displayed as "$0124" in each of the three examples.
+
+These settings have no effect on the function of the assembler. They only
+serve to make the output clearer according to your taste.
+
+Editor 1... (F4): Various settings can be made in the dialog box (see
+Figure 5.32 on page 76). The cursor shape is set at the top. The digits
+mean the following:
 

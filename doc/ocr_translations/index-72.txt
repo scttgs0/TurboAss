@@ -1,31 +1,10 @@
 
 ORIGINAL
-======== 
+========
 
 
-70 5.5 Der Editor
-
- 
-
- 
-
-Text suchen
-
- 
-
-Allquantori% Existenzquantori2
-Groß-klein: Far]
-EX
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.26: Der Dialog „Text suchen“
+    {image}
+    Abbildung 5.26: Der Dialog „Text suchen“
 
 Drücken Sie, nachdem der Assembler etwas gefunden hat, ALT-L, wird die
 Suche fortgesetzt, ohne daß die Dialogbox wieder erscheint.
@@ -53,11 +32,39 @@ können Texte gesucht und ersetzt werden. Die dazugehörige Dialogbox (Siehe
 Abbildung 5.27 auf Seite 71) wird genauso wie bei „Text suchen“ bedient,
 jedoch mit einigen Erweiterungen:
 
-e Unter „Anzahl“ kann man angeben, ob alle gefundenen Texte ersetzt
-
+* Unter „Anzahl“ kann man angeben, ob alle gefundenen Texte ersetzt
 
 
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.26: The dialog "Find text"
+
+If you press ALT-L after the assembler has found something, the search will
+continue without the dialog box reappearing.
+
+If you know exactly that the term to be searched for is in a remark, you can
+search only the remarks by entering a ";" in front of the search term. The
+semicolon is then ignored in the search; however, the editor no longer needs
+to disassemble the lines, but can search through the remarks straight away
+(caution, more than 3 identical characters are packed and cannot be found
+with the remark search!).
+
+Example:
+
+Search term:    ;Test
+Found:                      NOP         ;This is a test
+
+The search can be aborted by pressing the right mouse button. So that the
+search is not unnecessarily slowed down, the mouse button is not constantly
+queried. So keep the button pressed until the search process has been aborted.
+
+The fourth entry is called "Replace Text..." (SHIFT-CONTROL-E). This allows
+texts to be searched for and replaced. The associated dialog box (see Figure
+5.27 on page 71) is operated in exactly the same way as for "Find text", but
+with some extensions:
+
+* Under "Number" you can specify whether all found texts should be replaced,
 

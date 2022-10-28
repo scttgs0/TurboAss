@@ -1,38 +1,15 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 73
-
- 
 
 CONTROL-SHIFT-S sucht im Gegensatz zu CONTROL-S aufwärts.
 
 Das Menü „Block“
 
- 
 
-ECHTE DC BLIEB
-Blockende setzen AM
-Blockmarken löschen AM
-Block verschieben AU
-Block kopieren Si
-Block löschen CI
-Block speichern...
+    {image}
+    Abbildung 5.29: Das Menü „Block“
 
-L_Alock drucken |
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.29: Das Menü „Block“
 
 Das „Block“-Menü enthält alle Kommandos, die zur Sourcetextbearbeitung
 notwendig sind:
@@ -41,7 +18,6 @@ CONTROL-B: Markiert den Blockanfang (geht auch mit der Maus)
 CONTROL-K: Markiert das Blockende (geht auch mit der Maus)
 CONTROL-H: Löscht die Blockmarkierungen (Hide Block)
 CONTROL-V: Verschiebt den Block an die Cursorposition
-
 ALT-C: Kopiert den Block an die Cursorposition (Copy Block)
 ALT-Y: Löscht den Block
 
@@ -58,8 +34,37 @@ Darstellung... (SHIFT-FS): Es erscheint eine Dialogbox, in der Sie zwei
 Dinge einstellen können:
 
 
-
 TRANSLATED
 ==========
 
+
+In contrast to CONTROL-S, CONTROL-SHIFT-S searches upwards.
+
+The "Block" menu
+
+
+    {image}
+    Figure 5.29: The "Block" menu
+
+
+The "Block" menu contains all commands that are necessary for source text
+processing:
+
+CONTROL-B: Marks the beginning of the block (you can also use the mouse)
+CONTROL-K: Marks the end of the block (you can also use the mouse)
+CONTROL-H: Deletes the block markings (Hide Block)
+CONTROL-V: Moves the block to the cursor position
+ALT-C: Copies the block to the cursor position (Copy Block)
+ALT-Y: Deletes the block
+
+You can also jump to the block boundaries by keyboard:
+ALT-B: Jump to the beginning of the block
+ALT-K: Jump to the block end
+
+You can also save a block and print a block in the "Block" menu.
+
+The "Settings" menu
+
+Appearance... (SHIFT-FS): A dialog box appears in which you can set
+two things:
 

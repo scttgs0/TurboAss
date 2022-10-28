@@ -1,30 +1,15 @@
 ORIGINAL
-======== 
+========
 
-
-68 5.5 Der Editor
-
- 
 
 Symboldefinition stand (siehe Kapitel 5.4 auf Seite 28). Dann wird dieser
 Dialog angezeigt (Siehe Abbildung 5.24 auf Seite 68) und der Symbolname
 in den Dialog übernommen.
 
- 
 
-Syaboalnaren suchen
+    {image}
+    Abbildung 5.24: Der Dialog „Symbol suchen“
 
-AklquanterI# Existenzquanteri?
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.24: Der Dialog „Symbol suchen“
 
 Der Eintrag „Symbol ersetzen...“ (SHIFT-F3 oder CONTROL-E) ist wohl
 die mächtigste Funktion des Assemblers. Mit ihr kann ein Symbol in Se-
@@ -55,4 +40,36 @@ Suchbegriff : *
 TRANSLATED
 ==========
 
+
+(see chapter 5.4 on page 28). Then this dialog is displayed (see Figure 5.24
+on page 68) and the symbol name is adopted in the dialog.
+
+
+    {image}
+    Abbildung 5.24: Der Dialog „Symbol suchen“
+
+
+The entry "Replace symbol..." (SHIFT-F3 or CONTROL-E) is probably the most
+powerful function of the assembler. It can be used to rename a symbol in a
+fraction of a second, to rename several symbols or (and this is really
+important) after a "block copy" to rename all symbols in the block. This
+saves a lot of errors due to duplicate declarations. However, you can also
+globally replace all accesses to the “test” label with accesses to the
+“sprung” label.
+
+But now we come to the explanation of the command: There are two lines in
+the dialog box (see Figure 5.25 on page 69). The symbol mask you are looking
+for is entered in the top one, and the symbol mask to be used for the
+replacement is entered in the bottom one. The button between the two input
+fields exchanges the two strings. With this you can e.g. undo a wrong
+replacement. The buttons "all" and "block" indicate the search mode. With
+"everything" a symbol is renamed globally, with "block" a new symbol with a
+new name is set up. If symbol replacement creates a symbol that already
+exists, a warning box appears; now you can decide whether you want to
+replace the symbol, not want to replace it but continue, or cancel if you
+think it makes sense.
+
+Two examples:
+All symbols in the block should also get block_ preceded:
+Search term : *
 

@@ -1,36 +1,16 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER 69
+    {image}
+    Abbildung 5.25: Die Dialogbox „Symbol ersetzen“
 
- 
-
- 
-
-Sunbalnaren suchen
-E] und ersetzen durch
-Allquantori# Existenzquanter:?
-
-Bereich!
-PAEUCH)
-
- 
-
- 
-
- 
-
-Abbildung 5.25: Die Dialogbox „Symbol ersetzen“
 Ersetzbegriff : block_* mit dem Suchmodus „Block“
 
 Das Symbol „unsinn“ soll im Sourcetext durch das bereits vorhandene Symbol
 „test“ ersetzt werden.
-
 Suchbegriff : unsinn
-
 Ersetzbegriff : test mit dem Suchmodus „alles“
-
 Die Warnbox ist mit „Ersetzen“ zu beantworten.
 
 Der nächste Eintrag in der Menüleiste ist „Text suchen...“ (CONTROL-L).
@@ -48,11 +28,39 @@ definieren. Quantoren am Anfang eines Suchbegriffs werden überlesen.
 werden soll. Darunter können Sie einstellen, ab welcher Stelle der Text durch-
 sucht werden soll. „Anfang“ bedeutet „ab dem Textanfang suchen“, „Cursor“
 steht für „ab der aktuellen Cursorposition suchen“ und „Block“ sucht nur im
-Blockbereich,
+Blockbereich.
 
 
 
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.25: The "Replace symbol" dialog box
+
+Replacement term : block_* with the search mode "Block"
+
+The "nonsense" symbol in the source text should be replaced by the existing
+"test" symbol.
+Keyword: nonsense
+Replacement term : test with the search mode "everything"
+Answer the warning box with "Replace".
+
+The next item in the menu bar is Find Text... (CONTROL-L). You can use this
+to search for an ASCII text. To do this, the source text is diaassembled line
+by line and then compared with the search string (as with the debugger's
+ASCFIND command). Of course, that doesn't happen very quickly.
+
+With the quantifiers (which you can use in any number; exception: the universal
+quantifier must not be followed by an existential quantifier, i.e. "*?" is not
+allowed!) you can precisely restrict the search term. However, if you want to
+search for "*" or "?", you can define other characters as quantifiers.
+Quantifiers at the beginning of a search term are skipped.
+
+"Upper/lower case" determines whether a distinction should be made between
+upper and lower case. Below you can set the point from which the text should be
+searched. "Start" means "search from the beginning of the text", "Cursor" means
+"search from the current cursor position" and "Block" only searches in the
+block area.
 
