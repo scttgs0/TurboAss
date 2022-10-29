@@ -1,13 +1,10 @@
 ORIGINAL
-======== 
+========
 
-
-5_ DER ASSEMBLER 83
-
- 
 
 ben, ist maximal 65535 zugelassen; bei Symbolen und Formeln wird
 natürlich das ganze Symbol bzw. die Formel berücksichtigt.
+
 Ein Beispiel für DC und DS:
 
 Der Text „Bitte geben Sie Ihren Namen ein:“ soll auf dem Bildschirm
@@ -16,20 +13,15 @@ ausgegeben werden
 pea nam ;Adresse des Textes im Speicher
 move #9,-(sp) ;Funktionsnummer von Cconws
 trap #1 ;Funktion aufrufen
-
 addq.l #6,sp ;Stackkorrektur,
-
 ;6 Byte vom Stack entfernen
 ;Jetzt gibt der Benutzer seinen Namen ein
 
 lea buffer,a0 ;Adresse des Eingabebuffers
-
 move.b #14,(a0) Maximal 15 Zeichen eingeben
 move.l a0,-(sp) Adresse auf den Stack
-
 move #10,-(sp) ;Funktionsnummer von Cconrs
 trap #1 ;Funktion aufrufen
-
 addq.l #6,sp ;Stackkorrektur
 
 nam: DC.B 27,’Y35Bitte geben Sie Ihren Namen ein’
@@ -51,4 +43,40 @@ enthalten.
 TRANSLATED
 ==========
 
+
+maximum allowed is 65535; in the case of symbols and formulas, of
+course, the entire symbol or formula is taken into account.
+
+An example for DC and DS:
+
+The text "Please enter your name:" should be displayed on the screen
+
+    pea     nam         ; Address of the text in the memory
+    move    #9,-(sp)    ; Function number of Cconws
+    trap    #1          ; Call up the function
+    addq.l  #6,sp       ; Stack correction,
+                        ; Remove 6 bytes from the stack
+
+    ;Now the user enters their name
+
+    lea     buffer,a0   ;Address of the input buffer
+    move.b  #14,(a0)    ;Enter a maximum of 15 characters
+    move.l  a0,-(sp)    ;Address on the stack
+    move    #10,-(sp)   ;Function number of Cconrs
+    trap    #1          ;Call up the function
+    addq.l  #6,sp       ;Stack correction
+
+nam:        DC.B 27,’Y35Please enter your name’
+;ESC Y positions the cursor
+
+;The text used with DC will
+;Saved in the program code.
+
+buffer:     DS.B 15     ;15-Byte Name buffer
+
+;No 15 is inserted into the program code,
+;but 15 bytes of memory are reserved.
+
+DCB.x behaves the same as DS.x; is only included for compatibility
+reasons.
 

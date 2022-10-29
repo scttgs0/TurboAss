@@ -1,42 +1,13 @@
 ORIGINAL
-======== 
+========
 
 
-5_ DER ASSEMBLER 81
+    {image}
+    Abbildung 5.35: Die Dialogbox „Funktionstasten belegen“
 
- 
 
- 
-
-Funktionstastenbelegung:
-normal BEMER EEE FESLEE EEEESEE FE)
-shift FEIIPFZ] PER EEC PEST EEE MEI FESTES EEE
-
- 
-
-Text:
-Ex]
-
- 
-
- 
-
- 
-
-Abbildung 5.35: Die Dialogbox „Funktionstasten belegen“
-
-  
-    
-
-  
-
- 
-
-„MAR N
-Oo - Shift
-4 = Centrol
-
-Abbildung 5.36: Das Menü „Hilfe“
+    {image}
+    Abbildung 5.36: Das Menü „Hilfe“
 
 Die ASCII-Anzeige
 
@@ -61,4 +32,29 @@ Beispiele zu den Pseudo-Opcodes lassen sich in den diversen Demos finden
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.35: The "Assign function keys" dialog box
+
+
+    {image}
+    Figure 5.36: The "Help" menu
+
+The ASCII display
+
+To the left of the clock (see below) the ASCII value of the character
+under the cursor is displayed in decimal. If this display bothers you, it
+can be switched on and off with CONTROL-Ü or by clicking on the spot.
+
+The time of day
+
+With the F10 key or a click on the time display, a dialog box appears
+(see figure 5.37 on page 82). In this, the time and date can be reset
+(i.e. the clock of the Mega ST is also set). You can also turn off
+the display.
+
+5.6 The Pseudo-Opcodes
+
+Examples of the pseudo-opcodes can be found in the various demos —
+specifically in the Think and Work (GAME.OMI folder).
 

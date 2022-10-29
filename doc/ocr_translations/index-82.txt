@@ -1,20 +1,15 @@
 ORIGINAL
-======== 
+========
 
 
-80 5.5 Der Editor
+* Ob ein Blitter genutzt werden soll.
 
- 
-
-e Ob ein Blitter genutzt werden soll.
-
-e Ob beim TOS 1.4 die Funktion Fsel_exinput benutzt werden soll.
+* Ob beim TOS 1.4 die Funktion Fsel_exinput benutzt werden soll.
 Wenn Sie z. B. einen eigenen Fileselector verwenden, der diese Funktion
-
 nicht abfängt, können Sie den Assembler dazu zwingen, Fsel_input zu
 nehmen.
 
-e Wie der Zehnerblock belegt ist. „Ziffern“ ist die normale, aufgedruckte
+* Wie der Zehnerblock belegt ist. „Ziffern“ ist die normale, aufgedruckte
 Belegung. „Hexzahlen“ entspricht der Hex-Tastatur des Debuggers mit
 CAPS LOCK (siehe Kapitel 6.4 auf Seite 116). „Cursor“ entspricht der
 IBM-Belegung. Das heißt: Cursorbewegungen mit 8, 2, 4 und 6; Seite
@@ -53,4 +48,42 @@ Gedächtnisstütze für die Zeichen der Shift-Tasten (©, ft und ®).
 TRANSLATED
 ==========
 
+
+* Whether to use a blitter.
+
+* Whether to use the Fsel_exinput function in TOS 1.4. If you e.g. For
+example, if you use your own file selector that doesn't intercept this
+function, you can force the assembler to take Fsel_input.
+
+* How the block of ten is assigned. "Digits" is the normal, printed
+assignment. "Hex numbers" corresponds to the hex keyboard of the
+debugger with CAPS LOCK (see chapter 6.4 on page 116). "Cursor"
+corresponds to the IBM assignment. That means: cursor movements with
+8, 2, 4 and 6; Page up and down with 3 and 9; jump to the beginning with
+7; end with 1, delete a character with . and insert one with 0. +, - and
+ENTER are normal; (, ), / and * unassigned.
+
+Assign F-Keys:
+
+You can assign each function key four more times: If you press a function
+key "without anything" or with SHIFT, a function from a drop-down menu is
+executed (as indicated for the functions). You can now reach a freely
+definable text with CONTROL, another with CONTROL-SHIFT, another level with
+ALTERNATE and the last one with ALT-SHIFT.
+
+In the dialog box (See Figure 5.35 on page 81) first select the key to be
+mapped by clicking on the key number in the row with or without SHIFT and
+setting Control or Alternate. The previous assignment, which you can change,
+now appears in the "Text" line. The change is completed either with "OK" or
+by selecting another button.
+
+Saving settings: The assembler saves all settings of the display and editor
+menus, the memory allocation, the function key assignment and whether the
+clock is on or off in a file with the name 0M-ASSEM.INF, which is loaded
+automatically on startup becomes.
+
+The Help menu
+
+The entries in this menu have no meaning; they only serve as a mnemonic for
+the characters of the shift keys (^, UP and X).
 

@@ -1,21 +1,16 @@
 ORIGINAL
-======== 
+========
 
-
-5_ DER ASSEMBLER 85
-
- 
 
 Tabelle 5.5: Das DX-Demo
 
- 
 
-DXSET 10,’ ’ ;10 Zeichen, mit Spaces auffüllen
+        DXSET 10,’ ’        ;10 Zeichen, mit Spaces auffüllen
 
-texte: DX.B "'Laden’
-DX.B ’Speichern’
+texte:  DX.B 'Laden’
+        DX.B ’Speichern’
 
- 
+
 
 5.6.2 Daten-Strukturen mit RS
 
@@ -25,31 +20,70 @@ RS-Counters zugewiesen. Danach wird der RS-Counter entsprechend
 erhöht. Ein Beispiel: Sie möchten die X- und Y-Koordinate eines Cur-
 sors speichern (auf Wortbreite). Mit DS sieht das so aus:
 
-XKDOORD: DS.W 1
-YKDOORD: DS.W 1
+    XKDOORD: DS.W 1
+    YKDOORD: DS.W 1
 
 und Sie greifen absolut darauf zu:
 
-move #10,YKDORD ; 20 Taktzyklen 8 Bytes lang
-clr XKOORD ; 8 Taktzyklen 6 Bytes lang
+    move    #10,YKDORD      ; 20 Taktzyklen 8 Bytes lang
+    clr     XKOORD          ; 8 Taktzyklen 6 Bytes lang
 
 Mit RS geht es so:
 
 rsstart:
-XKOORD: RS.W 1 ; XKOORD bekommt den Wert 0
-YKOORD: RS.W 1 ; YKOORD bekommt den Wert 2
+XKOORD:     RS.W 1          ; XKOORD bekommt den Wert 0
+YKOORD:     RS.W 1          ; YKOORD bekommt den Wert 2
 
 und der Zugriff sieht so aus:
 
-lea rsstart,a6 ; Nur einmal erforderlich,
+    lea     rsstart,a6      ; Nur einmal erforderlich,
 
 ; kostet 12 Taktzyklen
-move #10,XKOODRD(a6) ; 16 Taktzyklen 6 Bytes lang
-clr YKOORD(a6) ; 8 Taktzyklen 4 Bytes lang
+    move    #10,XKOODRD(a6) ; 16 Taktzyklen 6 Bytes lang
+    clr     YKOORD(a6)      ; 8 Taktzyklen 4 Bytes lang
 
 
 
 TRANSLATED
 ==========
 
+
+Table 5.5: The DX demo
+
+
+        DXSET 10,’ ’        ;10 characters, fill up with spaces
+
+texte:  DX.B 'Load’
+        DX.B ’Save’
+
+
+
+5.6.2 Data structures with RS
+
+RS.x reserves memory like DS. However, the label in front of the
+command is not set to the absolute address, but is assigned the
+value of the RS counter. After that, the RS counter is increased
+accordingly. An example: You want to store the X and Y coordinates
+of a cursor (to word width). With DS it looks like this:
+
+    XKDOORD: DS.W 1
+    YKDOORD: DS.W 1
+
+and you absolutely access it:
+
+    move    #10,YKDORD      ; 20 clock cycles 8 bytes long
+    clr     XKOORD          ; 8 clock cycles 6 bytes long
+
+With RS it works like this:
+
+rsstart:
+XKOORD:     RS.W 1          ; XKOORD gets the value 0
+YKOORD:     RS.W 1          ; YKOORD gets the value 2
+
+And the access looks like this:
+
+    lea     rsstart,a6      ; Only required once,
+                            ; costs 12 cycle cycles
+    move    #10,XKOORD(a6)  ; 16 clock cycles 6 bytes long
+    clr     YKOORD(a6)      ; 8 clock cycles 4 bytes long
 

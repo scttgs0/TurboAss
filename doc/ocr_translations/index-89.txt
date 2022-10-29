@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 87
-
- 
 
 auch ins Text-Segment packen. Die Unterteilung dient nur der Über-
 sicht, Manchmal kann Sie aber auch von Nachteil sein: Die Daten im
@@ -27,30 +23,61 @@ Speicherbereich. Dieser wird gelöscht (also mit 0 gefüllt).
 
 Ein Beispiel:
 
-TEXT ;kennzeichnet den Anfang des Text-Segments,
-;kann auch weggelassen werden.
+    TEXT                ;kennzeichnet den Anfang des Text-Segments,
+                        ;kann auch weggelassen werden.
 
-;diverser Programmcode
+                        ;diverser Programmcode
 
-lea buffend,a0 ;Ende des Buffers in AO
-
-movem.l d0-d7/a1-a6,-(a0) ;Register retten
-
-pea copyright ;Adresse der Copyrightmeldung
-;auf den Stack pushen
-
-move.w #9,-(sp) ;Cconws - Funktionsnummer
-;(Zeile schreiben)
-
-trap #1
-addq.1l #6,sp ;Stackkorrektur - 6 Byte addieren
-lea buffend,a0
-
-movem.1 (a0)+,d0-d7/a1-a6 ;Register wiederholen
+    lea     buffend,a0          ;Ende des Buffers in A0
+    movem.l d0-d7/a1-a6,-(a0)   ;Register retten
+    pea     copyright           ;Adresse der Copyrightmeldung
+                                ;auf den Stack pushen
+    move.w  #9,-(sp)            ;Cconws - Funktionsnummer
+                                ;(Zeile schreiben)
+    trap    #1
+    addq.1l #6,sp               ;Stackkorrektur - 6 Byte addieren
+    lea     buffend,a0
+    movem.1 (a0)+,d0-d7/a1-a6   ;Register wiederholen
 
 
 
 TRANSLATED
 ==========
 
+
+The subdivision only serves as an overview, but sometimes it can also
+be disadvantageous: The data in the DATA segment is located in the
+memory behind the text segment, which results in a large distance
+between the command and the addressed data. If you now want to
+address a data item with PC-relative addressing, this distance must
+not be greater than 32,768 or -32,767 bytes. Otherwise the date would
+have to be inserted into the program text.
+
+(SECTION) (.)BSS defines the start of the block storage segment. In
+the BSS only DS commands without filling value, RS commands and of
+course EVEN, RSEVEN etc. are available. possible. The BSS is not
+saved; the length of the BSS is only entered in the program header
+(see chapter D.1 on page 189). This makes your program shorter than
+if you put the variables in the DATA or text segment. After loading
+the program, the operating system now determines how large the BSS
+should be and reserves a correspondingly large memory area. This is
+deleted (i.e. filled with 0).
+
+An example:
+
+    TEXT                ;marks the beginning of the text segment,
+                        ;can also be left out.
+
+                        ;Diverse program code
+
+    lea     buffend,a0          ;End of buffer in A0
+    movem.l d0-d7/a1-a6,-(a0)   ;save registers
+    pea     copyright           ;Address of the copyright message
+                                ;push on the stack
+    move.w  #9,-(sp)            ;Cconws - Functional number
+                                ;(Write line)
+    trap    #1
+    addq.1l #6,sp               ;Stack correction - add 6 bytes
+    lea     buffend,a0
+    movem.1 (a0)+,d0-d7/a1-a6   ;restore registers
 

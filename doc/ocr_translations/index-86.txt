@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-84 5.6 Die Pseudo-Opcodes
-
- 
 
 DSBSS.x entspricht fast DS.x, und wird auch zu DS.x konvertiert. Der Un-
 terschied ist nur, daß der GenST den DSBSS-Befehl ins BSS verschiebt,
@@ -12,7 +8,7 @@ während der OMIKRON.Assembler ihn als einen normalen DS ansieht
 und den Platz an der Stelle in den Code einfügt, an dem der Befehl
 steht.
 
-(.)JEVEN (ALIGN.W) sorgt dafür, daß der nachfolgende Befehl bzw. die
+(.)EVEN (ALIGN.W) sorgt dafür, daß der nachfolgende Befehl bzw. die
 nachfolgenden Daten auf einer geraden Adresse liegen. Dazu wird, wenn
 der PC ungerade ist, ein Null-Byte eingefügt. Dieser Befehl ist meistens
 überflüssig, da der OMIKRON. Assembler automatisch alle Befehle und
@@ -49,4 +45,37 @@ bei der Assemblierung.
 TRANSLATED
 ==========
 
+
+DSBSS.x is almost equivalent to DS.x, and is also converted to DS.x.
+The only difference is that the GenST moves the DSBSS command into the
+BSS, while the OMIKRON.Assembler sees it as a normal DS and inserts the
+space into the code where the command is.
+
+(.)EVEN (ALIGN.W) ensures that the following command or the following
+data are located at an even address. To do this, if the PC is odd, a
+zero byte is inserted. This command is usually superfluous because the
+OMIKRON.Assembler automatically sets all instructions and DC.W/L to even
+addresses, generating the "Address has been straightened" warning.
+
+DX.B 'String' inserts the string into the program code. In contrast to
+DC, the string is padded up to a specified length. This is useful if you
+want to create a table with entries of the same length, since you no
+longer have to lengthen each string individually until it has the
+required length.
+
+DXSET length,[fill value] sets the length for DX. If no fill value is
+specified, 0 is used. If a string is longer than the value specified in
+DXSET, the error message "String too long" is generated during assembly.
+
+An example:
+
+You want your program to display the operation it is currently performing
+at the top right of the screen. A ten-character field is provided for this.
+The texts must not be longer than ten characters and should be filled with
+spaces so that the unused part of the ad is deleted by the spaces. You can
+also find the address of any text by adding 10 * number to the address of
+the first text. So file the texts with DX (see Table 5.5 on page 85).
+
+If you enter a text that is too long, the assembler complains about this
+during assembly.
 

@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-78 5.5 Der Editor
-
- 
 
 buchstaben. Wenn „beides“ eingestellt ist, werden sowohl Groß- als auch
 Kleinbuchstaben zugelassen. Dann wird die Groß/Kleinschreibung auch zur
@@ -28,7 +24,6 @@ wird, sobald Ihr Programm beendet wurde (auch wenn Sie mit SHIFT-SHIFT
 abbrechen, nicht jedoch bei Breakpoints).
 
 Der Assembler speichert bei jedem Source mit ab, wieviel Gemdos-Speicher
-
 freigelassen werden soll (siehe Kapitel 5.5.5 auf Seite 64). Wenn Sie ein
 Source auf einem MEGA ST 4 erstellen, können Sie beispielsweise 2MB
 vorgeben. Diesen Source können Sie normalerweise auf einem 1040 ST nicht
@@ -45,7 +40,7 @@ Der OMIKRON.Assembler hat einen Kompaktor, der größere Sourcetexte
 packt. Sie können dann natürlich nicht mehr von älteren Assembler- Versionen
 geladen werden. Deshalb kann er mit „Kompaktor“ abgeschaltet werden. Das
 Packen verkürzt die Sourcetexte um 10%-30%, damit sind sie ungefähr 40%-
-50% kürzer als ASCIH-Texte, Bei kürzeren Sourcetexten bleibt der Kompak-
+50% kürzer als ASCII-Texte, Bei kürzeren Sourcetexten bleibt der Kompak-
 tor inaktiv.
 
 
@@ -53,4 +48,40 @@ tor inaktiv.
 TRANSLATED
 ==========
 
+
+If "both" is set, both uppercase and lowercase letters are allowed. Then the
+upper/lower case is also used for differentiation (i.e., "Hello" is not
+equal to the symbol "hello"). For "large" and "small", all symbol names are
+converted accordingly as they are entered.
+
+With "Printer output via BIOS" you can force the assembler to print the texts
+via the BIOS. Usually it uses its own routines that are faster than those of
+the operating system. This can be annoying if your printer doesn't quite keep
+up or if you have a laser printer.
+
+You can specify the default extension under "Extension for ASCII sources".
+This is then automatically used in the file selector, but you can of course
+also use others.
+
+"Jump to the debugger" tells the debugger whether a program that was passed to
+it after assembly should be started automatically. "run & back" means to
+return to assembler as soon as your program has finished (even if you exit
+with SHIFT-SHIFT, but not at breakpoints).
+
+With each source, the assembler saves how much Gemdos memory should be free
+(see chapter 5.5.5 on page 64). For example, if you create a source on a MEGA
+ST 4, you can specify 2MB. You can normally no longer load this source on a
+1040 ST. However, if you have set "Autoconfig on load" to "no", the assembler
+ignores the value stored in the source and keeps the value set before loading.
+
+"Quick Mouse" determines whether the mouse should be accelerated disproportion-
+ately ("yes") or linearly ("no"). This means if you set "yes" the mouse will
+move very quickly across the screen if you move the mouse quickly; but can be
+positioned accurately if you move them more slowly.
+
+The OMIKRON.Assembler has a compactor that packs larger source texts. Of course,
+they can then no longer be loaded by older assembler versions. Therefore it can
+be switched off with "Kompaktor". Packing shortens the source texts by 10%-30%,
+making them about 40%-50% shorter than ASCII texts. The compactor remains
+inactive for shorter source texts.
 

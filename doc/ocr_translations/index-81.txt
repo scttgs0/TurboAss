@@ -1,46 +1,23 @@
 ORIGINAL
-======== 
+========
 
 
-5_ DER ASSEMBLER 79
-
- 
-
- 
-
- 
-
-MIDI-Tastaturabfrage ı Ta JE
-Bebugger nachladen ı Ta ee
-ASCIT-Tabs expandieren : Ja] SE
-Überschreiben-Alert : [Ta NEM
-Biltter anschalten : Ja ]eE
-fsel_exinput autzen : [Ja GEM
-Zehnarblockbelegung
-
- 
-
- 
-
- 
-
- 
-
-Abbildung 5.34: Die Dialogbox „Editor 3...“
+    {image}
+    Abbildung 5.34: Die Dialogbox „Editor 3...“
 
 Im der Dialogbox „Editor 3...“ (Siehe Abbildung 5.34 auf Seite 79) können
 Sie folgendes einstellen:
 
-e Ob über die MIDI-Schnittstelle ankommende Daten als Scancodes aus-
+* Ob über die MIDI-Schnittstelle ankommende Daten als Scancodes aus-
 gewertet werden sollen. Sie senden also von einem zweiten Computer,
 von einer externen Tastatur o.ä. die Scancodes der gedrückten Tasten,
 und der Assembler wertet sie so aus, als ob sie auf der normalen ST-
 Tastatur gedrückt worden wären.
 
-e Ob der Debugger automatisch beim Laden des Assemblers nachgeladen
+* Ob der Debugger automatisch beim Laden des Assemblers nachgeladen
 werden soll.
 
-Ob Tabulator-Zeichen (ASCII-Zeichen 9) innerhalb von Anführungszei-
+* Ob Tabulator-Zeichen (ASCII-Zeichen 9) innerhalb von Anführungszei-
 chen beim ASCII-Laden expandiert (durch entsprechend viele Spaces
 bis zur nächsten Tabulatorposition ersetzt) werden sollen. Außerhalb
 von Anführungszeichen (innerhalb von Remarks) werden sie immer ex-
@@ -50,7 +27,7 @@ len. Achtung: Wenn Sie hier „ja“ einstellen, werden auch Tabulatoren
 in Konstanten expandiert, was zu nicht tokenisierbaren Zeilen führen
 kann.
 
-e Ob beim Abspeichern vor dem Überschreiben einer bestehenden Datei
+* Ob beim Abspeichern vor dem Überschreiben einer bestehenden Datei
 gewarnt werden soll (Siehe Abbildung 5.9 auf Seite 53).
 
 
@@ -58,4 +35,31 @@ gewarnt werden soll (Siehe Abbildung 5.9 auf Seite 53).
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.34: The "Editor 3..." dialog box
+
+In the "Editor 3..." dialog box (see Figure 5.34 on page 79) you can
+set the following:
+
+* Whether data arriving via the MIDI interface should be evaluated
+as scan codes. So you send the scan codes of the pressed keys from
+a second computer, from an external keyboard or similar, and the
+assembler evaluates them as if they had been pressed on the normal
+ST keyboard.
+
+* Whether the debugger should be loaded automatically when the
+assembler is loaded.
+
+* Whether tabulator characters (ASCII character 9) within quotation
+marks should be expanded (replaced by the appropriate number of
+spaces up to the next tabulator position) during ASCII loading.
+Outside quotes (inside remarks) they are always expanded — inside
+quotes they might be intentional. You can therefore specify here
+whether they should be expanded. Attention: If you set "yes" here,
+tabs are also expanded in constants, which can lead to
+non-tokenizable lines.
+
+* Whether to warn about overwriting an existing file when saving
+(see Figure 5.9 on page 53).
 

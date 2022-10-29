@@ -1,12 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-86
-
-5.6 Die Pseudo-Opcodes
-
- 
 
 Sie sparen bei MOVE und bei einigen anderen Befehlen je 4 Taktzy-
 klen und bei jedem Befehl 2 Bytes. Außerdem wird Ihre Reloziertabelle
@@ -17,18 +11,15 @@ zeigt. Zum Beispiel OMIKRON.BASIC nutzt diese Adressierungsmög-
 lichkeit sehr intensiv.
 
 RSRESET setzt den RS-Counter auf 0. Damit können Sie z.B. mehrere
-
 relative Datensegmente anlegen.
 
 RSSET Wert setzt den RS-Counter auf „Wert“.
 
 RSEVEN begradigt den RS-Counter. Dies geschieht bei RS.W und RS.L
-
 automatisch; RSEVEN ist aber praktisch, wenn Sie z. B. zwei Buffer ä
 79 Byte anlegen wollen, die auf einer geraden Adresse beginnen müssen.
 
 RSBSS addiert zur Länge des Block-Storage-Segments (BSS) den aktuellen
-
 RS-Counter, Dann wird der RS-Counter gelöscht. Sie sollten diesen
 Befehl also ans Ende des relativen Datensegments setzen, damit die
 BSS-Länge richtig in den Programmheader eingetragen werden kann.
@@ -40,14 +31,12 @@ Als Beispiel für die RS-Befehle sei auf „Think and Work“ verwiesen.
 5.6.3 Segmentierung
 
 (SECTION) (.)TEXT markiert den Anfang des Text-Segments. Da nor-
-
 malerweise jedes Programm mit dem Text-Segment beginnt, kann die-
 ser Befehl auch entfallen. Es ist pro Programm nur ein Text-Befehl
 möglich. „SECTION TEXT“ wird zu „TEXT“ gekürzt; wir haben es
 nur aus Kompatibilitätsgründen eingebaut.
 
 (SECTION) (.)DATA kennzeichnet entsprechend den Beginn des DATA-
-
 Segments. Das DATA-Segment wird mit dem Programmcode abgespei-
 chert. Es sollte, wie der Name schon sagt, alle Daten des Programms
 enthalten. Dies ist jedoch nicht unbedingt nötig; Sie können Ihre Daten
@@ -57,4 +46,43 @@ enthalten. Dies ist jedoch nicht unbedingt nötig; Sie können Ihre Daten
 TRANSLATED
 ==========
 
+
+You save 4 clock cycles with MOVE and some other instructions and
+2 bytes with each instruction. In addition, your relocation table
+will be shorter because an address register does not have to be
+entered indirectly in the relocation table with an offset. To do
+this, you must have an address register free that points to the
+beginning of your block storage segment (BSS). For example,
+OMIKRON.BASIC uses this addressing option very intensively.
+
+RSRESET sets the RS counter to 0. You can use this to create several
+relative data segments, for example.
+
+RESET value sets the RS counter to "value".
+
+RSEVEN straightens the RS counter. This happens automatically with
+the RS.W and RS.L; But RSEVEN is useful if you e.g. For example, you
+want to create two buffers of 79 bytes each, which must start at an
+even address.
+
+RSBSS adds the current RS counter to the length of the block storage
+segment (BSS), then the RS counter is cleared. So you should put this
+command at the end of the relative data segment so that the BSS
+length can be entered correctly in the program header. In contrast to
+other assemblers, RSBSS can be used several times in the same program
+with OMIKRON.Assembler.
+
+See Think and Work for an example of the RS commands.
+
+5.6.3 Segmentation
+
+(SECTION) (.)TEXT marks the beginning of the text segment. Since every
+program normally begins with the text segment, this command can also be
+omitted. Only one text command is possible per program. "SECTION TEXT"
+is shortened to "TEXT"; we only included it for compatibility reasons.
+
+(SECTION) (.)DATA correspondingly marks the start of the DATA segment.
+The DATA segment is saved with the program code. As the name suggests,
+it should contain all the program data. However, this is not absolutely
+necessary; You can also pack your data into the text segment.
 
