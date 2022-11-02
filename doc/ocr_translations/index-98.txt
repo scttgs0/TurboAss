@@ -1,12 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-96
-
-5.6 Die Pseudo-Opcodes
-
- 
 
 Dazu wird noch „Offset“ addiert. Achtung: Justierung auf Longword-
 grenze bedeutet nur, daß die Adreßdistanz zum Programmanfang durch
@@ -16,7 +10,6 @@ liegt. Das ist aber nicht unbedingt gewährleistet. „Offset“ darf nicht
 größer als 65535, „Justierung“ nicht größer als 255 sein.
 
 ORG Adresse[,*] legt fest, für welche Adresse das Programm angepaßt
-
 werden soll. Wenn kein ORG-Befehl im Programm vorkommt, wird
 eine Reloziertabelle angelegt (sofern es nicht positionsunabhängig ist).
 Wenn Sie jedoch ein Programm für [EP]ROMs schreiben, also eins,
@@ -33,21 +26,18 @@ ORG-Befehl pro Sourcetext möglich; wenn mehrere vorkommen, ist der
 letzte ausschlaggebend.
 
 REPT Anzahl Anzahl darf nicht größer als 65535 sein, wenn es als Zahl
-
 eingegeben wird. Als Symbol ist ein Longword erlaubt. Der in der
 REPT-Schleife stehende Code wird entsprechend „Anzahl“ eingefügt.
 
 ENDR beendet eine REPT-Schleife.
 
-Ein Beispiel:
+    Ein Beispiel:
 
-Zahl: SET 0
-
-REPT 256
-DC.B Zahl
-
-Zahl: SET Zahl+1
-ENDR
+Zahl:   SET     0
+        REPT    256
+        DC.B    Zahl
+Zahl:   SET     Zahl+1
+        ENDR
 
 entspricht: DC.B 0, 1, 2, ... , 255
 
@@ -56,4 +46,42 @@ entspricht: DC.B 0, 1, 2, ... , 255
 TRANSLATED
 ==========
 
+
+"Offset" is added to this. Warning: adjustment to the long word limit
+only means that the address distance to the beginning of the program
+can be divided by 4; or in German: the following command is only on a
+long-word boundary if the beginning of the program is also on a
+long-word boundary. But that is not necessarily guaranteed. "Offset"
+must not be greater than 65535, "Justification" must not be greater
+than 255.
+
+ORG Address[,*] specifies the address for which the program is to be
+adapted. If there is no ORG instruction in the program, a relocation
+table is created (unless it is position-independent). However, if you
+are writing a program for [EP]ROMs, ie one that is intended to run in
+a module, or an operating system, relocation is of course not possible.
+Then you can specify the final address range with ORG — the assembler
+then relocates before saving. If you write ",°*" after the address, the
+finished program will be placed there immediately after assembling.
+Caution: The assembler does not check whether the specified address
+range makes sense. This makes it possible, for example, to place a
+program in RAM that normally does not exist in ST. But if you type
+ORG 8,” the calculator will of course crash. Only one ORG command per
+source text is possible; if there are several, the last one is decisive.
+
+REPT number number cannot be greater than 65535 when entered as a
+number. A long word is allowed as a symbol. The code in the REPT loop is
+inserted according to "number".
+
+ENDR ends a rept loop.
+
+    An example:
+
+Number: SET     0
+        REPT    256
+        DC.B    Number
+Number: SET     Number+1
+        ENDR
+
+is equivalent to: DC.B 0, 1, 2, ... , 255
 

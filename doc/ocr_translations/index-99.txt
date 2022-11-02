@@ -1,21 +1,14 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 97
-
- 
 
 Ein zweites Beispiel:
 
-moveq #15,d0
-loop: REPT 16
-
-move.b d1,(a0)+
-
-ENDR
-
-dbra d0 ‚loop
+        moveq   #15,d0
+loop:   REPT    16
+        move.b  d1,(a0)+
+        ENDR
+        dbra    d0‚loop
 
 fügt zwischen den moveq und den dbra 16 mal move.b ein. Wenn das
 Programm ausgeführt wird, wird der Inhalt von D1 256 mal ab AO in
@@ -37,7 +30,7 @@ Sourcetext assembliert und den Default-Button auslöst.
 
 5.6.8 Bedingte Assemblierung
 
-IF{NE}] Bedingung Der folgende Teil wird nur assembliert, wenn die Be-
+IF[NE] Bedingung Der folgende Teil wird nur assembliert, wenn die Be-
 dingung erfüllt (ungleich 0) ist.
 
 IFEQ Bedingung Der folgende Teil wird nur assembliert, wenn die Bedin-
@@ -53,4 +46,42 @@ IFLE Ausdruck Der Code wird assembliert, wenn der Ausdruck < 0 ist.
 TRANSLATED
 ==========
 
+
+A second example:
+
+        moveq   #15,d0
+loop:   REPT    16
+        move.b  d1,(a0)+
+        ENDR
+        dbra    d0‚loop
+
+inserts move.b 16 times between the moveq and the dbra. When the program
+is executed, the contents of D1 are copied into memory 256 times starting
+at A0.
+
+ILLEGAL inserts $4AFC into the program code. This command code is not
+assigned; if the processor attempts to execute it, Exception #4 (Illegal
+Instruction) is thrown. On desktop, this results in 4 bombs; the debugger
+catches them. This can be used to assemble a "breakpoint" right into the
+program.
+
+DEFAULT number In the dialog box after assembly, the "Number" button is
+always the default. The "Number" parameter can have a value from 0 to 12,
+with the value 0 corresponding to the cancel button, 1 to the debugger,
+2 to the standard, etc. At this point, the key combination ALT-A should
+be remembered again, which changes the source text assembles and triggers
+the default button.
+
+5.6.8 Conditional assembly
+
+IF[NE] Condition The following part is only assembled if the condition is
+met (not equal to 0).
+
+IFEQ Condition The following part is only assembled if the condition is
+not met (= 0).
+
+IFLT expression The code is assembled if the value of the expression
+is < 0.
+
+IFLE expression The code is assembled if the expression is < 0.
 

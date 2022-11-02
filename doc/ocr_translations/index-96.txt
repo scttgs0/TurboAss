@@ -1,56 +1,87 @@
 ORIGINAL
-======== 
+========
 
 
-94
-
-5.6_ Die Pseudo-Opcodes
-
- 
-
-;in DC.W-Zeilen
-tabelle:dc.w routine,routine2,..,
-‚Tabelle mit den Sprungadressen
+                            ;in DC.W-Zeilen
+tabelle:    dc.w routine,routine2,...
+                            ;Tabelle mit den Sprungadressen
 
 Der Rest des Programms bleibt gleich; bei der Assemblierung werden
-die Adressen automatisch in den Offset umgerechnet,
+die Adressen automatisch in den Offset umgerechnet.
 
 Und nun ein Beispiel für BASE DC.W mit Bezugswert * (siehe System-
 variablen (siehe Kapitel 5.5.2 auf Seite 35)):
 
-BASE DC.W,* ;setzt Bezugswert zu den
-jLabel in DC.W-Zeilen
-tab: DC.W ’AB’,jump1 ;Jump1: relativ zu tab+2
-DC.W ’CD’,jump2 ;Jump2: relativ zu tab+6
-DC.W ’EF’,jump3 ;Jump3: relativ zu tab+10
-DC.W ’GH’ ,jump4 ;Jump4; relativ zu tab+14
+    BASE DC.W,*             ;setzt Bezugswert zu den
+                            ;Label in DC.W-Zeilen
+tab:    DC.W    ’AB’,jump1  ;Jump1: relativ zu tab+2
+        DC.W    ’CD’,jump2  ;Jump2: relativ zu tab+6
+        DC.W    ’EF’,jump3  ;Jump3: relativ zu tab+10
+        DC.W    ’GH’,jump4  ;Jump4; relativ zu tab+14
 ;Die folgende Routine durchsucht die Tabelle
 ;nach der Buchstabenkombination in DO und
-‚springt in die zugeordnete Routine
-move.wW #’EF’,D0 ;"Name" des Unterprogramms
-lea tab-2(PC),A0 ;Zeiger auf den Anfang
-;der Tabelle minus 2
-
-moveq #3,D1 ;Anzahl der Texte in
-;der Tabelle
-loop:addq.1l #2,A0 ;Zeiger plus 2
-
-cmp.wW (A0)+,D0 ;Wert in DO mit
-;Tabellenwert vergleichen
-dbeq Di,loop ;wenn die Bedingung
-;wahr oder D1 gleich
+;springt in die zugeordnete Routine
+        move.w  #’EF’,D0     ;"Name" des Unterprogramms
+        lea     tab-2(PC),A0 ;Zeiger auf den Anfang
+                             ;der Tabelle minus 2
+        moveq   #3,D1       ;Anzahl der Texte in
+                            ;der Tabelle
+loop:   addq.l  #2,A0       ;Zeiger plus 2
+        cmp.w   (A0)+,D0    ;Wert in DO mit
+                            ;Tabellenwert vergleichen
+        dbeq    D1,loop     ;wenn die Bedingung
+                            ;wahr oder D1 gleich
 ;Null ist wird die Schleife verlassen,
-jansonsten wird D1 um eins erniedrigt
+;ansonsten wird D1 um eins erniedrigt
 ;und zum Label "loop" gesprungen
-bne error ;der Wert wurde in der
-;Tabelle nicht gefunden
-adda.w (A0),A0 ;Berechnung der Sprungadresse
-jsr (A0) ;Aufruf des Unterprogramms
-usw.
+        bne error           ;der Wert wurde in der
+                            ;Tabelle nicht gefunden
+        adda.w  (A0),A0     ;Berechnung der Sprungadresse
+        jsr     (A0)        ;Aufruf des Unterprogramms usw.
 
 
 
 TRANSLATED
 ==========
 
+
+                            ;In DC.W lines
+tabelle:    dc.w routine,routine2,...
+                            ;Table with the jump addresses
+
+The rest of the program stays the same; during assembly, the
+addresses are automatically converted into the offset.
+
+And now an example for BASE DC.W with reference value * (see
+system variables (see chapter 5.5.2 on page 35)):
+
+    BASE DC.W,*             ;sets reference value to the
+                            ;labels in DC.W lines
+tab:    DC.W    ’AB’,jump1  ;Jump1: relative to tab+2
+        DC.W    ’CD’,jump2  ;Jump2: relative to tab+6
+        DC.W    ’EF’,jump3  ;Jump3: relative to tab+10
+        DC.W    ’GH’,jump4  ;Jump4; relative to tab+14
+
+;The following routine searches the table for the letter
+;combination in DO and jumps to the associated routine
+
+        move.w  #’EF’,D0     ;"Name "of the subroutine
+        lea     tab-2(PC),A0 ;pointer to the beginning
+                             ;of the table minus 2
+        moveq   #3,D1       ;number of texts in
+                            ;the table
+loop:   addq.l  #2,A0       ;Pointer plus 2
+        cmp.w   (A0)+,D0    ;Compare value in D0 with
+                            ;table value
+        dbeq    D1,loop     ;if the condition is true
+                            ;or equals D1
+
+;if zero, the loop is exited, otherwise D1 is
+;decremented by one and a jump is made to the
+;"loop" label
+
+        bne error           ;the value was not found
+                            ;in the table
+        adda.w  (A0),A0     ;Calculation of the jump address
+        jsr     (A0)        ;Call of the subroutine, etc.
 

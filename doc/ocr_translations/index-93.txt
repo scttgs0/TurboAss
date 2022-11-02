@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 91
-
- 
 
 PATH ’Pfad’ gibt den Pfad für IBYTES an. Der Pfad kann maximal 31
 Zeichen lang sein.
@@ -28,17 +24,17 @@ Ein Beispiel: Wir wollen das DEGAS-Bild „TITEL.PI3“ ohne Farb-
 und Animationsinformationen) einbinden. DEGAS-Bilder sind folgen-
 dermaßen abgespeichert:
 
-e 1 Word Auflösung (bei uns 2 für hohe Auflösung) und Kompres-
+* 1 Word Auflösung (bei uns 2 für hohe Auflösung) und Kompres-
 sions-Kennung
 
-e 16 Words Farbpalette
+* 16 Words Farbpalette
 
-e 32000 Byte Bild
+* 32000 Byte Bild
 
-e 16 Words Animationsinformationen, wenn nötig.
+* 16 Words Animationsinformationen, wenn nötig.
 
 Wir fügen in unser Programm nun ein:
-titel: IBYTES ’TITEL.PI3’ ‚32000 ,34
+titel: IBYTES 'TITEL.PI3',32000,34
 
 Die ersten 34 Byte werden überlesen, die folgenden 32000 Byte werden
 eingebunden. Unser Programm kann das Bild nun anzeigen, indem es
@@ -53,4 +49,44 @@ trap #14 ;Bildschirmadresse ermitteln
 TRANSLATED
 ==========
 
+
+PATH 'path' specifies the path for IBYTES. The path can be a maximum
+of 31 characters long.
+
+IBYTES 'Filename'[,Number[,Position]] (INCBIN) inserts a file into the
+program code. This file is not assembled, but accepted as is. You can,
+for example, integrate graphics or ready-assembled program code
+(position-independent). The file name must not be longer than 19
+characters. Since this can lead to problems with longer paths, there is
+the PATH command. "Number" specifies how many bytes are to be inserted.
+If this parameter is missing, the complete file is taken. "Position"
+determines how many bytes of the file should be skipped. For example,
+if you specify position 5, the file will only be read from the 5th byte.
+
+The errors "Filename too long" and "Illegal filename" can occur with
+these commands. A file name is illegal if it contains characters such as
+"*" or "?".
+
+An example: We want to integrate the DEGAS image "TITEL.PI3" without
+color and animation information. DEGAS images are saved as follows:
+
+* 1 word resolution (we use 2 for high resolution) and compression code
+
+* 16 Words color palette
+
+* 32000 bytes image
+
+* 16 Words animation information if needed.
+
+We now add to our program:
+
+title:  IBYTES 'TITEL.PI3',32000,34
+
+The first 34 bytes are skipped, the following 32000 bytes are integrated.
+Our program can now display the image by copying 32000 bytes from "title"
+into screen memory:
+
+    OUTPUT  ’GRAPHIK.PRG’   ;Program name
+    move.w  #2,-(sp)        ;Physbase()
+    trap    #14             ;Determine the screen address
 

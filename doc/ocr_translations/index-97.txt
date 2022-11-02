@@ -1,32 +1,27 @@
 ORIGINAL
-======== 
+========
 
 
-5_DER ASSEMBLER 95
-
- 
-
-jumpi1: . . . ;hier folgen die
-
-jump2: . . . einzelnen Unterprogramme,
-jump3: . .. ;die angesprungen werden
-jump4: . ..
+jump1: . . .                ;hier folgen die
+jump2: . . .                ;einzelnen Unterprogramme,
+jump3: . . .                ;die angesprungen werden
+jump4: . . .
 
 Dabei ist zu beachten, daß bei der Verwendung eines Labels als Offset
 zu einem Adressregister stets ein Bezugswert angegeben werden muß:
 
-lea record2(PC) ,A0
-BASE AO ‚record2 ;darf nicht fehlen
-move.w y(A0O),DO
-
+    lea     record2(PC),A0
+    BASE    A0‚record2      ;darf nicht fehlen
+    move.w  y(A0),D0
+                    .
+                    .
+                    .
 trecord:
+x:          DC.W 0
+y:          DC.W 24
+l:          DC.W 80
 
-x: DC.W 0
-
-y: DC.W 24
-1: DC.W 80
-
-record2:DC.W 5,12,70
+record2:    DC.W 5,12,70
 
 Der Parameter OFF erlaubt es, die Wirkung des BASE-Befehls wieder
 auszuschalten.
@@ -40,15 +35,53 @@ Assembler müssen Sie „Test, dann für den Linker den Status global
 geben.
 
 CNOP Offset, Justierung „begradigt“ den Programmzähler, so daß er
-durch „Justierung“ teilbar ist, d. h.:
+durch „Justierung“ teilbar ist, d.h.:
 
-oe Justierung=2; auf Wordgrenze;
+* Justierung=2; auf Wordgrenze;
 
-eo Justierung=4: auf Longwordgrenze usw.
+* Justierung=4: auf Longwordgrenze usw.
 
 
 
 TRANSLATED
 ==========
 
+
+jump1: . . .                ;Here are the
+jump2: . . .                ;individual sub-programs,
+jump3: . . .                ;which are jumped
+jump4: . . .
+
+It should be noted that when using a label as an offset to an
+address register, a reference value must always be specified:
+
+    lea     record2(PC),A0
+    BASE    A0‚record2      ;should not be missing
+    move.w  y(A0),D0
+                    .
+                    .
+                    .
+trecord:
+x:          DC.W 0
+y:          DC.W 24
+l:          DC.W 80
+
+record2:    DC.W 5,12,70
+
+The OFF parameter allows the effect of the BASE command to be
+switched off again.
+
+GLOBAL Symbol{,symbol} all symbols contained in the list are marked
+as global (as indicated by the fact that they have two colons). This
+is required for all symbols that need to be honored by a linker. For
+example, if you write a C program that calls the assembler routine
+"Test". In the assembler you have to "test", then give the status
+global for the linker.
+
+CNOP offset, justification "straightens" the program counter so that
+it is divisible by "justification", i.e.:
+
+* justification = 2; on the Word limit;
+
+* justification = 4: on the Longword limit, etc.
 

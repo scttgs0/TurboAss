@@ -1,12 +1,8 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER 93
-
- 
-
-move.1l wert2-varbase(a4),a0 ;2.Wert holen
+move.l wert2-varbase(a4),a0 ;2.Wert holen
 
 BSS
 varbase:
@@ -53,4 +49,44 @@ BASE DC.W,tabelle
 TRANSLATED
 ==========
 
+
+    move.l  value2-varbase(a4),a0    ;Value 2
+
+    BSS
+varbase:
+    value2: ds.l 1
+    value:  ds.w 1
+
+Example 1.b) (Use of Base):
+
+    lea     varbase‚a4      ;Pointer on variable table
+    base    a4,varbase      ;Set reference address for A4
+    move.w  wert(a4),d0     ;The assembler sets here
+                            ;automatically
+    move.l  wert2(a4),a0    ;the offset value varbase or
+                            ;value2-varbase one
+varbase:    BSS
+wert2:      ds.l 1
+wert:       ds.w 1
+
+2. "BASE DC.(B|W)": With each subsequent DC command of the
+appropriate width, the value is subtracted if it can be relocated.
+In addition, PC is available here as a reference value. This makes
+it possible to create tables that can be addressed in the following
+way:
+
+Example 2.a) (conventional method):
+
+    move.w  tabelle(pc,d0),d0       ;Get jumping offset
+    jmp     tabelle(pc,d0)          ;Sprung in Routine
+tabelle:    dc.w routine-tabelle,routine2-tabelle,..
+                                    ;Table with jumping sets
+routinel: ....
+routine2: ....
+
+The jump table can be simplified with the BASE command:
+Example 2.b):
+
+    BASE    DC.W,tabelle
+                                ;Reference address to Label
 

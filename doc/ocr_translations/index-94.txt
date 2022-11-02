@@ -1,14 +1,8 @@
 ORIGINAL
-======== 
+========
 
 
-92
-
-5.6_ Die Pseudo-Opcodes
-
- 
-
-addq.1l #2,sp
+addq.l #2,sp
 move.l d0,a1
 
 move.w #7999,d0 ;8000 Langworte = 32000 Byte
@@ -26,12 +20,11 @@ titel:IBYTES ’TITEL.PI3’ ‚32000 ,34
 
 5.6.7 Allgemeines
 
-BASE (DC.(BIW))! (A0-A7),*| TEXT| DATA| BSS| Formel®]
-OFF
+BASE (DC.(B|W))| (A0-A7),*| TEXT| DATA| BSS| Formel|OFF
 
 Relative Adressierung ist zwar schneller als absolute Adressierung, die
 Berechnung der Offsets erweist sich jedoch als recht umständlich. Um
-sich die ganzen Formeln zu sparen, stellt der OMIKRON. Assembler
+sich die ganzen Formeln zu sparen, stellt der OMIKRON.Assembler
 einen ziemlich mächtigen Befehl zur Verfügung: BASE.
 
 Die Beschreibung erfolgt am besten in zwei Abschnitten:
@@ -39,14 +32,14 @@ Die Beschreibung erfolgt am besten in zwei Abschnitten:
 1. „BASE Adreßregister,...“ rechnet jedesmal, wenn Sie danach das
 Adreßregister benutzen und der Wert relozierbar ist, dieses relativ zum
 danach angegebenen Wert um, oder anders ausgedrückt, der Wert wird
-subtrahiert,
+subtrahiert.
 
 Beispiel 1. a) (konventionelle Methode):
 
 lea varbase,a4 ;Zeiger auf Variablentabelle
 move.wW wert-varbase(a4),d0 ;Wert holen
 
- 
+
 
 SIn diesem Fall muß die Formel mit einem Label beginnen
 
@@ -55,4 +48,44 @@ SIn diesem Fall muß die Formel mit einem Label beginnen
 TRANSLATED
 ==========
 
+
+        addq.l  #2,sp
+        move.l  d0,a1
+        move.w  #7999,d0    ;8000 longwords = 32000 Byte
+                            ;copy
+        lea     titel,a0    ;Address of the graphic picture
+
+loop:   move.l  (a0)+,(a1)+ ;Copy the graphic
+        dbra    d0‚loop
+
+        DATA
+        PATH ”’C:\DEGAS\BILDER.PIC’
+                            ;The picture lies in the folder
+titel:  IBYTES ’TITEL.PI3’‚32000,34
+                            ;Now the picture is integrated
+
+5.6.7 General
+
+BASE (DC.(B|W))| (A0-A7),*| TEXT| DATA| BSS| Formula*|OFF
+
+Although relative addressing is faster than absolute addressing,
+the calculation of the offsets proves to be quite cumbersome. In
+order to save yourself all the formulas, the OMIKRON.Assembler
+has a fairly powerful command at its disposal: BASE.
+
+The description is best done in two sections:
+
+1. "BASE address register,..." calculates each time you use the
+address register and the value can be relocated, relative to the
+value specified afterwards, or in other words, the value is
+subtracted.
+
+Example 1.a) (conventional method):
+
+    lea     varbase,a4              ;Pointer on variable table
+    move.w  value-varbase(a4),d0    ;Value
+
+
+---
+* In this case the formula must start with a label
 

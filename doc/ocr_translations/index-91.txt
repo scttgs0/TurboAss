@@ -1,25 +1,21 @@
 ORIGINAL
-======== 
+========
 
-
-5_ DER ASSEMBLER 89
-
- 
 
 Symbol (.)SET Wert funktioniert ähnlich EQU, jedoch besteht bei mit
 SET gesetzten Symbolen die Möglichkeit, den Wert nachträglich mit
 einem weiteren SET-Opcode zu ändern. Als Beispiel sei auf das REPT-
-Beispiel auf Seite 96 verwiesen,
+Beispiel auf Seite 96 verwiesen.
 
-Symbol (.)REG Registerliste hat eine ähnliche Funktion wie EQU, REG
+Symbol (.)REG Registerliste hat eine ähnliche Funktion wie EQU. REG
 legt eine Registerliste für MOVEM fest. So können Sie z. B. definieren:
-stard_r REG D0-A3/A5; bei MOVEM stnrd._r,-(sp) werden dann die Re-
-gisterinhalte DO, D1,...,D6, D7, AO, Al, A2, A3 und AS auf den Stack
+stnrd_r REG D0-A3/A5; bei MOVEM stnrd_r,-(sp) werden dann die Re-
+gisterinhalte D0, D1,...,D6, D7, AO, Al, A2, A3 und A5 auf den Stack
 geschoben.
 
 5.6.5 Assembleroptionen
 
-OPT (XIDIWIP(+1-),... legt einige Optionen fest. Jede Option wird
+OPT (X|D|W|P(+|-),... legt einige Optionen fest. Jede Option wird
 durch einen Buchstaben gekennzeichnet (s. u.), gefolgt durch ein „+“
 für „einschalten“ oder ein „-“ für „ausschalten“, Danach können weitere
 Optionen, durch Kommata getrennt, angegeben werden. Die Buchsta-
@@ -41,10 +37,10 @@ werden. Dies ist im Menü „Editor 1“ einstellbar. Ferner warnt
 der Assembler alle Stellen an, die seiner Meinung nach optimiert
 werden können. Als optimierbar gelten:
 
-e bedingte Branches, die in ihre kurze Form gewandelt werden
+* bedingte Branches, die in ihre kurze Form gewandelt werden
 können (z. B. BEQ Label in BEQ.S Label)
 
-e alsolute Sprünge, die in relative gewandelt werden können
+* alsolute Sprünge, die in relative gewandelt werden können
 (z.B. JSR Label in BSR Label)
 
 
@@ -52,4 +48,40 @@ e alsolute Sprünge, die in relative gewandelt werden können
 TRANSLATED
 ==========
 
+
+Symbol (.)SET value works similarly to EQU, but with symbols set with
+SET there is the option of subsequently changing the value with another
+SET opcode. See the REPT example on page 96 for an example.
+
+Symbol (.)REG register list has a similar function as EQU. REG
+specifies a register list for MOVEM. So you can e.g. define:
+stnrd_r REG D0-A3/A5; With MOVEM stnrd_r,-(sp), the register contents
+D0, D1,...,D6, D7, A0, A1, A2, A3 and A5 are then pushed onto the stack.
+
+5.6.5 assembler options
+
+OPT (X|D|W|P(+|-),... sets some options. Each option is identified by
+a letter (see below), followed by a "+" for "enable" or a "-" for
+"disable", then you can specify additional options separated by commas.
+The letters mean:
+
+(-) D Include debugging information. If switched on, a symbol table
+will be attached to the program. If you then LIST this program in the
+debugger, all the symbols are output as well.
+
+(-) X eXtended symbol table. An extended symbol table in GST format is
+included.
+
+(+) W Issue warnings. For example, the assembler warns you when an
+address has been straightened or a BRA.S has had to be converted to a
+NOP. If warnings are issued, that does not mean that they are also
+jumped to with CONTROL-J. This can be set in the "Editor 1" menu.
+Furthermore, the assembler warns of all places that it thinks can be
+optimized. The following are considered to be optimizable:
+
+* conditional branches that can be converted to their short form (e.g.
+BEQ label to BEQ.S label)
+
+* absolute jumps that can be converted to relative (e.g. JSR label to
+BSR label)
 

@@ -1,17 +1,11 @@
 ORIGINAL
-======== 
+========
 
-
-90
-
-5.6 Die Pseudo-Opcodes
-
- 
 
 Dabei werden sowohl Vorwärts- wie auch Rückwärts-Referenzen
 erkannt. Weiteres zu den Optimierungen finden Sie auf Seite 34.
 
-{-) P PC-relativen Code überwachen. Wenn diese Option eingeschal-
+(-) P PC-relativen Code überwachen. Wenn diese Option eingeschal-
 tet ist, wird die Assemblierung abgebrochen (fataler Fehler), wenn
 der Assembler auf nicht PC-relativen Code stößt (Siehe Abbil-
 dung 5.38 auf Seite 90).
@@ -20,25 +14,14 @@ Das Plus bzw. Minus vor den einzelnen Optionen bedeutet, ob die Funk-
 tion normalerweise ein- oder ausgeschaltet ist (Plus bedeutet dabei ein-
 geschaltet).
 
- 
 
-© Assenblierung während des 2.Pass
-in Zeile 4 abgebrochen 1!
+    {image}
+    Abbildung 5.38: Abbruch bei OPT P+
 
-kein PC-relatives Programm erzeugt
-
- 
-
- 
-
- 
-
-Abbildung 5.38: Abbruch bei OPT P+
 
 5.6.6 Dateioperationen
 
 OUTPUT ’Filename’[,’Commandline’] gibt den Namen an, unter dem
-
 das fertig assemblierte Programm gespeichert werden soll. Wenn ein
 OUTPUT-Befehl im Programm vorkommt, werden der Name und der
 Pfad dem File-Selector übergeben, so daß Sie nach der Assemblierung
@@ -58,4 +41,34 @@ worden ist.
 TRANSLATED
 ==========
 
+
+Both forward and backward references are recognized. You can find more
+about the optimizations on page 34.
+
+(-) P Monitor PC-relative code. If this option is switched on, assembly
+will be aborted (fatal error) if the assembler encounters code that is
+not PC-relative (see Figure 5.38 on page 90).
+
+The plus or minus in front of each option means whether the feature is
+normally on or off (plus means on).
+
+
+    {image}
+    Figure 5.38: Cancellation at OPT P+
+
+
+5.6.6 File operations
+
+OUTPUT 'Filename'[,'Commandline'] specifies the name under which the
+assembled program is to be saved. If an OUTPUT command occurs in the
+program, the name and path are passed to the file selector, so you only
+have to press RETURN once after assembly to save the program. If the
+file name is specified without an extension, the extension is specified
+by the file selector.
+
+If specified, the command line is passed to the program to be debugged
+when it is started in the debugger. The command line parameter is e.g.
+very useful when developing a TTP program. The environment variable is
+passed through unchanged — so your program gets the same one that was
+passed to the assembler.
 
