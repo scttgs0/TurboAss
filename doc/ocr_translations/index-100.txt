@@ -1,12 +1,9 @@
 ORIGINAL
-======== 
+========
 
-
-98 5.6 Die Pseudo-Opcodes
-
- 
 
 IFGT Ausdruck Der Code wird assembliert, wenn der Ausdruck > 0 ist.
+
 IFGE Ausdruck Der Code wird assembliert, wenn der Ausdruck > 0 ist.
 
 ELSE der Folgende Teil wird berücksichtigt, wenn der vorhergehende nicht
@@ -29,25 +26,62 @@ Assemblierung sinnvoll.
 
 Zum Beispiel:
 
-IF  ende-anfang<>512
-FAIL "Falsche Prglänge‘,, ENDC
+    IF      ende-anfang<>512
+    FAIL    "Falsche Prglänge‘,, ENDC
 
 Beispiel für bedingtes Assemblieren: Wenn Sie eine Testversion Ihres
 Programms erstellen wollen, schalten Sie mit OPT eine Symboltabelle an,
 die Variable *°SYMTAB hat dann einen Wert von ungleich 0. Sie assemblie-
 ren damit den ersten Teil der IF-Struktur. Wenn Sie OPT D- schreiben hat
 “*SYMTAB den Wert 0, damit erstellen Sie die Endversion ihres Programms
-ohne Symboltabelle,
+ohne Symboltabelle.
 
-OPT D+
-IF “”SYMTAB ;Interne Testversion erstellen
-jmp show.coord ;Maus-Koordinaten anzeigen
-
-prompt: DC.B ’Waddayawannado?’ ‚0
+    OPT D+
+    IF      ^^SYMTAB        ;Interne Testversion erstellen
+    jmp     show.coord      ;Maus-Koordinaten anzeigen
+prompt:     DC.B ’Waddayawannado?’‚0
 
 
 
 TRANSLATED
 ==========
 
+
+IFGT Expression the code is assembled when the expression is > 0.
+
+IFGE Expression the code is assembled when the expression is >= 0.
+
+ELSE the following part is taken into account if the preceding part
+has not been taken into account (see example).
+
+ENDC (ENDIF) marks the end of the area that is only to be assembled
+conditionally. The following code is always assembled (unless new
+IF statements follow).
+
+IFD Label The following code is executed if the label has already
+been defined.
+
+IFND Label The following code is executed if the label has not yet
+been defined.
+
+FAIL [Text] aborts the assembly process. If you don't specify "text",
+the assembler reports "user error (FAIL)", otherwise "text" is output.
+This command is useful in the context of conditional assembly.
+
+For example:
+
+    IF end-beginning<>512
+    FAIL "Incorrect program length",, ENDC
+
+Example of conditional assembly: If you want to create a test version
+of your program, activate a symbol table with OPT, the variable
+^^SYMTAB then has a value not equal to 0. You assemble the first part
+of the IF structure with this. When you write OPT D, ^^SYMTAB has the
+value 0, so you create the final version of your program without a
+symbol table.
+
+     OPTD+
+     IF     ^^SYMTAB            ;Create internal test version
+     jmp    show.coord          ;Show mouse coordinates
+prompt:     DC.B 'Waddayawannado?'‚0
 

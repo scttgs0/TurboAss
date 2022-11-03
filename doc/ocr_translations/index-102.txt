@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-100 5.7__ Fehlermeldungen des Assemblers
-
- 
 
 5.7 Fehlermeldungen des Assemblers
 
@@ -48,4 +44,38 @@ delt werden, weil sich dadurch alle anderen Adreßdistanzen änderten.
 TRANSLATED
 ==========
 
+
+5.7 Assembler error messages
+
+The assembler issues the following error messages directly during input:
+
+5.7.1 Optimizations
+
+The optimization and warning messages are only output if this has not
+been switched off with OPT W- (see chapter 5.6.5 on page 89). These
+optimization messages are used by the assembler during automatic
+optimization (see chapter 5.5.1 on page 34).
+
+Can be optimized to B??,S This message means that the offending
+Branch-(conditionally) command can be shortened to a Branch.Short.
+
+Can be optimized to relative jump. You can replace the JSR instruction
+with a BSR or a JMP with a BRA instruction. The message "Can be optimized
+to Bec.S" may appear during the next assembly.
+
+5.7.2 Warnings
+
+Address has been straightened If, for example, an instruction is at an
+odd address, the assembler automatically puts a zero byte in front of it
+and gives this warning.
+
+Offset/value becomes negative This message is self-explanatory.
+
+B??.S converted to NOP If a branch short is to be executed to the next
+address, the assembler would have to specify 0 as the jump width. For the
+68,000, however, 0 is the identifier for the fact that it is not a branch
+short but a normal branch; after the 0 it expects a word jump distance.
+This word is now again the opcode of the next command. However, the branch
+short cannot simply be converted into a normal branch because this would
+change all the other address distances.
 

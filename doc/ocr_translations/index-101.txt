@@ -1,17 +1,11 @@
 ORIGINAL
-======== 
+========
 
 
-5 DER ASSEMBLER 99
-
- 
-
-ELSE
-
-jmp password ;Password abfragen
-prompt: DC.B 'What do you want me to do?’,0
-
-ENDC
+    ELSE
+    jmp     password    ;Password abfragen
+prompt:     DC.B 'What do you want me to do?’,0
+    ENDC
 
 Hinweis: Wenn Sie zum zweiten Mal das Label „prompt“ definieren wollen,
 werden Sie darauf hingewiesen, daß solch ein Symbol schon existiert. Um
@@ -26,23 +20,54 @@ dene Sprachen erstellt werden soll:
 Beispiel:
 language: EQU 1 ;1=Deutsch, 2=Englisch, 3=Latein
 
-SWITCH language ;Ein beliebiger Ausdruck ist erlaubt
-CASE 1 ;Bei CASE sind nur Zahlen erlaubt!
-DC.B ’Spielende’
-CASE 2
-DC.B ’Game Over’
-CASE 3
-DC.B ’Finis ludi’
-CASE
-;Default-Fall, wenn keiner
-;der obigen CASES zutraf
-FAIL ’Unerlaubte Sprache’
-;dann einen fatalen Fehler ausgeben
-ENDS ;Ende der Konstruktion
+    SWITCH language         ;Ein beliebiger Ausdruck ist erlaubt
+    CASE 1                  ;Bei CASE sind nur Zahlen erlaubt!
+    DC.B ’Spielende’
+    CASE 2
+    DC.B ’Game Over’
+    CASE 3
+    DC.B ’Finis ludi’
+    CASE
+                            ;Default-Fall, wenn keiner
+                            ;der obigen CASES zutraf
+    FAIL ’Unerlaubte Sprache’
+                            ;dann einen fatalen Fehler ausgeben
+    ENDS                    ;Ende der Konstruktion
 
 
 
 TRANSLATED
 ==========
 
+
+    ELSE
+    jmp     password        ;Request password
+prompt:     DC.B 'What do you want me to do?',0
+    ENDC
+
+Note: If you want to define the label "prompt" for the second time, you will
+be informed that such a symbol already exists. To enter it anyway, ignore the
+warning and press RETURN.
+
+Since the IF command cannot be nested in the basic version, there is also the
+SWITCH command, which is borrowed from the C programming language. The command
+is particularly useful where an assembler program is to be created for
+different languages:
+
+Example:
+language:   EQU 1           ;1=German, 2=English, 3=Latin
+
+    SWITCH language         ;Any expression is allowed
+    CASE 1                  ;Only numbers are allowed in CASE!
+    DC.B 'End of game'
+    CASE 2
+    DC.B 'Game Over'
+    CASE 3
+    DC.B 'Finis ludi'
+    CASE
+                            ;Default case if none
+                            ;of the above CASES applied
+    FAIL 'Forbidden language'
+                            ;then print a fatal error
+    ENDS                    ;End of construction
 

@@ -1,30 +1,27 @@
 ORIGINAL
-======== 
+========
 
-
-6_ DER DEBUGGER 107
-
- 
 
 sogar residente Programme (wie Ramdisktreiber) und Accessories debuggt
 werden.
 
 Besonderheiten des Debuggers:
 
-e Bis auf die Operationen wie Laden und Speichern werden keine I/O-
+* Bis auf die Operationen wie Laden und Speichern werden keine I/O-
 Routinen des Atari ST benutzt. Damit können auch Programme de-
 buggt werden, die das Betriebssystem des ST teilweise zerstören.
 
-se Der Debugger verwaltet eine eigene Bildschirmseite. Dies ermöglicht
+* Der Debugger verwaltet eine eigene Bildschirmseite. Dies ermöglicht
 das problemlose Testen von Programmen die Daten auf den Bildschirm
 schreiben (inbesondere GEM-Programme und Spiele)
 
-e Er ermöglicht auch das Debuggen von compilierten Programmen einer
+* Er ermöglicht auch das Debuggen von compilierten Programmen einer
 beliebigen Hochsprache. Eine ans Programm angebundene Symbolta-
 belle wird unterstützt.
 
-e Der Debugger kann an (fast) alle Situationen angepaßt werden.
-e Das Debugging kann bequem mit Tastatur und Maus erfolgen.
+* Der Debugger kann an (fast) alle Situationen angepaßt werden.
+
+* Das Debugging kann bequem mit Tastatur und Maus erfolgen.
 
 6.2 Starten des Debuggers
 
@@ -49,4 +46,39 @@ geladen.
 TRANSLATED
 ==========
 
+accessories can be debugged.
+
+Special features of the debugger:
+
+* Except for operations such as loading and saving, no I/O routines of the
+Atari ST are used. This also allows programs to be debugged that partially
+destroy the operating system of the ST.
+
+* The debugger manages its own screen page. This allows for easy testing
+of programs that write data to the screen (especially GEM programs and
+games)
+
+* It also allows debugging of compiled programs of any high-level language.
+A symbol table connected to the program is supported.
+
+* The debugger can be adapted to (almost) all situations.
+
+* Debugging can be conveniently done with keyboard and mouse.
+
+6.2 Starting the Debugger
+
+The easiest way to start the debugger is to just load OM-DEBUG.PRG (who
+would have thought?). However, to be able to call the debugger from
+assembler, the debugger should always remain in memory. All crashes
+("bombs") are also redirected, so that you always get to the debugger in
+the event of a crash.
+
+But there are also several options for resident loading:
+
+1. After loading the debugger, type "RESIDENT" and answer the following
+security prompt with "Y".
+
+2. Copy the debugger to the AUTO folder. Make sure, however, that the
+debugger is copied into the folder as the first program if possible. The
+debugger is now automatically loaded with every RESET.
 

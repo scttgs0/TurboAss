@@ -1,12 +1,8 @@
 ORIGINAL
-======== 
+========
 
 
-5_ DER ASSEMBLER 105
-
- 
-
-Im OMIKRON. Assembler brauchen Sie dafür die Stelle im Quellcode nicht
+Im OMIKRON.Assembler brauchen Sie dafür die Stelle im Quellcode nicht
 zu suchen: Mit einem Druck auf CONTROL-Help springt der OMIKRON.De-
 bugger zurück in den Editor — genau an die Stelle im Quellcode, an der
 der PC beim Debuggen gerade stand. Mit CONTROL-SHIFT-HELP springt der
@@ -41,4 +37,31 @@ rung wieder in den Debugger springen, sind die Breakpoints noch erhalten.
 TRANSLATED
 ==========
 
+
+In the OMIKRON.Assembler you don't need to look for the place in the
+source code: By pressing CONTROL-Help the OMIKRON.Debugger jumps back to
+the editor - exactly to the place in the source code where the PC was just
+debugging. With CONTROL-SHIFT-HELP the debugger jumps back without
+changing the cursor position in the editor.
+
+The markers are retained of course, all markers of the assembler are
+adopted. If you place a marker on the "mainloop: moveq #5,d0" line in your
+source text with CONTROL-S and then jump to the debugger, the address of
+this line is in the variable M5. You can display all markers with the
+"Marker" function key (SHIFT-F6). If a symbol table is available, the
+symbol name is also displayed in addition to the address, i.e. "mainloop"
+in our example. If the marker is not in a line where a label is defined,
+another label is shown in Light, which is defined in the internal binary
+tree next to it. To the left of the addresses you see rectangles with
+which you can "jump" to the address: if you click in the field of marker
+5, "mainloop" is listed from the line. If the marker is not within the
+text area, it is not listed, but a MEMORY/DUMP is displayed.
+
+Of course, the markers are also passed back to assembler. If you set the
+marker to another line in the debugger with LET M5=address, the assembler
+calculates which line the marker must now be on.
+
+When switching between debugger and assembler, any breakpoints set in the
+debugger are not lost; if you jump back into the debugger after a
+reassembly, the breakpoints are still there.
 

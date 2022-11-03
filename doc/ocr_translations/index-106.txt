@@ -1,17 +1,12 @@
 ORIGINAL
-======== 
+========
 
-
-104 5.8 Das Zusammenspiel Assembler — Debugger
-
- 
 
 Unerlaubte Rechenoperation Sie wollten zum Beispiel mit einer Regi-
 sterliste rechnen oder haben z.B. zwei Label (also relozierbare Sym-
 bole!) miteinander multipliziert.
 
-5.8 Das Zusammenspiel Assembler —» De-
-bugger
+5.8 Das Zusammenspiel Assembler <—> Debugger
 
 Der residente Debugger Um vom Assembler in den Debugger springen
 zu können, müssen Sie den Debugger vom Assembler nachladen oder bereits
@@ -46,4 +41,36 @@ gekreist haben, sollten Sie ihn am besten gleich im Quellcode korrigieren.
 TRANSLATED
 ==========
 
+
+Illegal arithmetic operation You wanted to calculate with a register list,
+for example, or you multiplied two labels (i.e. relocatable symbols!) with
+each other.
+
+5.8 The interaction assembler <—> debugger
+
+The resident debugger In order to be able to jump from the assembler to
+the debugger, you must reload the debugger from the assembler or install
+it as resident before loading the assembler. This is very easy to do by
+starting the debugger before starting the assembler and exiting it again
+with the RESIDENT command (there are other ways of making the debugger
+resident (see chapter 6.12 on page 174)). At least 1 MB RAM is required
+for this ; if you have less, we can only recommend that you upgrade your
+computer — many programs require 1MB for professional work.
+
+From assembler to debugger... Assemble your source code by pressing F1 (or
+CONTROL-A). It makes sense if you register a symbol table: Click on the
+"Standard" or "Extended" symbol table (all max. 23 characters are then
+always transferred to the debugger, regardless of the setting). You can
+then use all labels of your source code in the debugger. The debugger
+works fully symbolically. A click on "DEBUGGER" brings you into the same.
+The "DEBUGGER" button is automatically default, i. That is, the next time
+you assemble, you only need to press RETURN to get into the debugger. For
+those in a hurry: think of ALT-A. You can use it to assemble your source
+text and trigger the default button. If an error occurs during assembly,
+the cursor jumps to the error location. The DEFAULT 1 command makes the
+"DEBUGGER" button the default (see chapter 5.6.7 on page 97)
+
+...and back, to the right spot in the source code After you've localized
+an error with untrace, breakpoints, and other helpful niceties, it's best
+to correct it right away in the source code.
 

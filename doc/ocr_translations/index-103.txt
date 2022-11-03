@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 101
-
- 
 
 Deshalb wandelt der Assembler den Branch Short in einen NOP um.
 Da dies z.B. bei selbstmodifizierendem Code Probleme ergeben kann,
@@ -50,4 +46,38 @@ erlaubt ist, ist ein Syntax-Fehler.
 TRANSLATED
 ==========
 
+
+Therefore the assembler converts the branch short into a NOP. The assembler
+will warn you that this can cause problems with self-modifying code, for
+example.
+
+Offset too large A branch (or branch short) was set too far.
+
+5.7.3 Immediate Errors
+
+Double declaration An attempt was made to redefine an already defined label.
+If that was a mistake, you can change the label and press RETURN again.
+However, you can also press RETURN immediately — the line will then be
+accepted and you can continue working normally. However, if the label is then
+to be defined twice during assembly, this error message is again aborted. In
+conjunction with conditional assembly, it makes sense to enter labels
+multiple times; therefore the assembler can be forced by RETURN to ignore
+this error.
+
+File name too long Of course, a file name may have a maximum of 8 characters
+plus (dot plus) 3 character extension.
+
+IMegal file name Characters were used in a file name that GEMDOS does not
+allow, e.g. characters with an ASCII value less than 32.
+
+No More Errors This "error" doesn't really belong on this list, because it
+doesn't appear when you type a line, but when you press CONTROL-J or ALT-J.
+If you try to jump to an error with one of these key combinations, even though
+the If the error list is empty, a box with this text will appear in the middle
+of the screen (See Figure 5.39 on page 102) and will be displayed for about a
+second. If there are warnings, but according to the setting in the editor menu
+they should not be jumped to, this message can never appear.
+
+Wrong operand syntax There is a syntax error in the addressing type permitted
+for this command.
 

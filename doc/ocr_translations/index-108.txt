@@ -1,5 +1,5 @@
 ORIGINAL
-======== 
+========
 
 
 Kapitel 6
@@ -23,7 +23,6 @@ doch ist mit falschen Ergebnissen zu rechnen. Im 2. Fall ist ein Absturz vor-
 programmiert; da es in Assembler keine Fehlermeldungen solcher Art gibt,
 würde der Computer ein „RETURN“ (in Assembler also ein „RTS“) auch
 dann ausführen, wenn gar kein „GOSUB“ (also ein „JSR“ oder „BSR“) vor-
-
 handen ist.
 
 Der Debugger dient nun dazu, die während der Testphase auftretenden Feh-
@@ -31,11 +30,36 @@ ler zu lokalisieren, um sie dann beheben zu können. Der Debugger erlaubt
 Ihnen, auf komfortable Weise Progamme zu testen. Dabei werden prak-
 tisch alle durch Programmierfehler bedingte Abstürze abgefangen. Es können
 
-106
-
 
 
 TRANSLATED
 ==========
 
+
+Chapter 6
+
+The debugger
+
+6.1 Foreword
+
+Assembler programs are particularly sensitive to errors because, with a
+few exceptions, there is no possibility of a plausibility check. A high-
+level language (except perhaps sometimes C) can e.g. B. recognize whether
+
+1. the value range of a variable is exceeded ("overflow" or "string too
+long")
+
+2. or whether a loop construction is faulty ("RETURN without GOSUB" or
+"UNTIL without REPEAT")
+
+The 1st case usually does not lead to a crash in assembler programs, but
+incorrect results are to be expected. In the second case, a crash is
+inevitable; since there are no error messages of this kind in assembler,
+the computer would execute a "RETURN" (ie an "RTS" in assembler) even if
+there was no "GOSUB" (ie a "JSR" or "BSR").
+
+The debugger is now used to locate errors that occur during the test phase
+so that they can then be corrected. The debugger allows you to test
+programs in a comfortable way. Virtually all crashes caused by programming
+errors are intercepted. Even resident programs (like ramdisk drivers) and
 

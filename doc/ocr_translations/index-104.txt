@@ -1,22 +1,9 @@
 ORIGINAL
-======== 
+========
 
 
-102 5.7 _ Fehlermeldungen des Assemblers
-
- 
-
- 
-
-Keine weiteren Fehler
-
- 
-
- 
-
- 
-
-Abbildung 5.39: Keine weiteren Fehler vorhanden
+    {image}
+    Abbildung 5.39: Keine weiteren Fehler vorhanden
 
 Symbolname zu lang Ein Symbol darf nicht länger als 23 Zeichen sein.
 
@@ -38,10 +25,9 @@ zum Fehler „Unzulässige Adressierung“.
 Wert zu groß/zu klein Sie haben versucht, einen Wert einzugeben, der zu
 groß für diese Befehlsbreite war; d.h. einen Wert
 
-® kleiner als —127 oder größer als 255 bei Bytebreite
-® kleiner als —32767 oder größer als 65535 bei Wordbreite
-
-® kleiner als —2147483647 oder größer als 4294967295 bei Long-
+* kleiner als —127 oder größer als 255 bei Bytebreite
+* kleiner als —32767 oder größer als 65535 bei Wordbreite
+* kleiner als —2147483647 oder größer als 4294967295 bei Long-
 wordbreite
 
 Zweiter Operand fehlt z.B. „move #50“
@@ -50,10 +36,44 @@ Zweiter Operand fehlt z.B. „move #50“
 
 Offset zu klein Dieser Fehler tritt nur bei BSR.S mit einer Sprungweite
 von 0 auf. Da eine Wandlung in einen NOP mit ziemlicher Sicherheit
-
+die Wirkung des Programms verändert.
 
 
 TRANSLATED
 ==========
 
+
+    {image}
+    Figure 5.39: No further errors present
+
+
+Symbol name too long A symbol cannot be longer than 23 characters.
+
+Syntax error The first characters were identified as a command, then an
+error occurred. For example, "move "d0,a0" produces a syntax error.
+
+Unknown command The entered line cannot be interpreted as a command. Most
+often the reason is a typo; However, this can be rectified quite easily,
+since it is pointed out to you immediately after the RETURN.
+
+Illegal operand A register list was used in a formula.
+
+Impermissible addressing In principle, there is this type of addressing;
+however, this command does not allow it. So e.g. B. "cmpi.w #5,A0" to the
+error "Invalid addressing".
+
+Value Too Large/Too Small You attempted to enter a value that was too large
+for this command width; i.e. a value
+
+* less than —127 or greater than 255 for bytes wide
+* less than —32767 or greater than 65535 at word width
+* less than —2147483647 or greater than 4294967295 for long word width
+
+Second operand is missing e.g. "move #50"
+
+5.7.4 Assembly error
+
+Offset too small This error only occurs with BSR.S with a jump width of 0.
+Because turning into a NOP will almost certainly change the effect of the
+program.
 

@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-5 DER ASSEMBLER 103
-
- 
 
 die Wirkung des Programms verändert. Der BSR.S ist wahrscheinlich
 in ein BSR.W zu ändern, und der Fehler ist behoben.
@@ -18,7 +14,7 @@ zeugende Befehle zugelassen.
 Division durch Null in einer Formel wurde durch 0 dividiert.
 
 ELSE ohne IF zu einem ELSE-Befehl wurde kein vorhergehendes IF gefun-
-den,
+den.
 
 ENDC ohne IF zu einem ENDC-Befehl fehlt ein passendes IF.
 
@@ -52,4 +48,42 @@ det, das noch nicht definiert wurde.
 TRANSLATED
 ==========
 
+
+The BSR.S is likely to be changed to a BSR.W and the error is resolved.
+
+Expression too complex The formula cannot be calculated in this way. Try
+breaking them down into several simpler expressions.
+
+Not permitted in the BSS segment No opcodes or similar code-generating
+commands are permitted in the BSS.
+
+Division by zero in a formula was divided by 0.
+
+ELSE without IF no preceding IF was found for an ELSE command.
+
+ENDC without IF A suitable IF for an ENDC command is missing.
+
+EQU value cannot be changed An attempt was made to assign a different
+value to a symbol defined with EQU with SET, but this is basically not
+possible.
+
+Incorrect segment sequence The segments may only be entered in the order
+TEXT — DATA — BSS.
+
+IF not completed A conditional assembly was started with IF, but the ENDC
+command is missing.
+
+Only DS.X in the BSS area In the block storage segment, only DS, RS,
+RSEVEN, etc. Commands allowed because it is not saved with it. The size of
+the BSS is only entered in the program header.
+
+Position outside the file With IBYTES, a position (2nd parameter) is
+specified, i.e. more bytes should be skipped from the beginning than the
+file is actually long. If the length (1st parameter) is too large, this
+parameter is simply ignored.
+
+String too long A string specified in DX.B is longer than set with DXSET.
+
+Symbol not defined A symbol that has not yet been defined was used in a
+formula or similar.
 
