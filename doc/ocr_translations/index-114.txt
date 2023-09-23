@@ -1,67 +1,87 @@
 ORIGINAL
-======== 
+========
 
 
-112
+                    Ein Beispiel für die Anwendung: Sie haben mit
+                    der Taste F2 ein Unterprogramm ausgeführt. Das
+                    Unterprogramm hat natürlich alle Registerwerte
+                    geändert. Sie wollen das Unterprogramm jedoch
+                    nun nochmals genau durchgehen. Gehen Sie mit
+                    ALT-< einen Schritt zurück und drücken Sie ein-
+                    fach ALT-INSERT. Nun können Sie das Unterpro-
+                    gramm nochmals testen, vorausgesetzt, das Unter-
+                    programm braucht keine zusätzlichen Variablen.
 
-6.4 _ Allgemeine Bedienung
+ALT-CLR/HOME:       Mit ALT-CLR/HOME können Sie zu dem letzten Ein-
+                    trag im Cache springen. Näheres können Sie bei
+                    CACHEGET und CACHECLR (siehe Kapitel 6.4.2
+                    auf Seite 111) nachlesen.
 
- 
+ALT-INSERT:         Mit ALT-INSERT können Sie den aktuellen Eintrag
+                    im Cache zum letzten Eintrag machen. Dies ist die
+                    gleiche Funktion wie CACHEGET.
 
-ALT-CLR/HOME:
+CONTROL-P:          Setzt den PC auf die aktuelle Adresse!
 
-ALT-INSERT:
+CONTROL-G:          Wie SHIFT-F4 (siehe Kapitel 6.5.8 auf Seite 119).
 
-CONTROL-P:
-CONTROL-G:
-CONTROL-B:
+CONTROL-B:          Um einen Breakpoint zu setzen, positionieren Sie
+                    den Cursor in die entsprechende Zeile im Screene-
+                    ditor. Drücken Sie dann CONTROL-B gefolgt von 0-
+                    9 oder A-F für die Nummer des Breakpoints (0-15)
+                    (siehe Kapitel 6.6.5 auf Seite 132).
 
-SHIFT-SHIFT:
-
-Ein Beispiel für die Anwendung: Sie haben mit
-der Taste F2 ein Unterprogramm ausgeführt. Das
-Unterprogramm hat natürlich alle Registerwerte
-geändert. Sie wollen das Unterprogramm jedoch
-nun nochmals genau durchgehen. Gehen Sie mit
-ALT-< einen Schritt zurück und drücken Sie ein-
-fach ALT-INSERT. Nun können Sie das Unterpro-
-gramm nochmals testen, vorausgesetzt, das Unter-
-programm braucht keine zusätzlichen Variablen.
-
-Mit ALT-CLR/HOME können Sie zu dem letzten Ein-
-trag im Cache springen. Näheres können Sie bei
-CACHEGET und CACHECLR (siehe Kapitel 6.4.2
-auf Seite 111) nachlesen.
-
-Mit ALT-INSERT können Sie den aktuellen Eintrag
-im Cache zum letzten Eintrag machen. Dies ist die
-gleiche Funktion wie CACHEGET.
-
-Setzt den PC auf die aktuelle Adresse!
-Wie SHIFT-F4 (siehe Kapitel 6.5.8 auf Seite 119).
-
-Um einen Breakpoint zu setzen, positionieren Sie
-den Cursor in die entsprechende Zeile im Screene-
-ditor. Drücken Sie dann CONTROL-B gefolgt von 0-
-9 oder A-F für die Nummer des Breakpoints (0-15)
-(siehe Kapitel 6.6.5 auf Seite 132).
-
-Wenn Sie ein Programm vom Debugger gestar-
-tet haben, können Sie das Programm mit einem
-Druck auf beide SHIFT-Tasten abbrechen. Dabei
-sind jedoch einige Dinge zu beachten:
+SHIFT-SHIFT:        Wenn Sie ein Programm vom Debugger gestar-
+                    tet haben, können Sie das Programm mit einem
+                    Druck auf beide SHIFT-Tasten abbrechen. Dabei
+                    sind jedoch einige Dinge zu beachten:
 
 1. Es wird nur abgebrochen, wenn der PC nicht
 in den Tiefen des TOS steht, d.h., wenn Sie
 eine Funktion wie Bconin() aufrufen, können
 
- 
-
-1Mit „aktueller Adresse“ ist die Adresse am Zeilenanfang gemeint.
+---
+1 Mit „aktueller Adresse“ ist die Adresse am Zeilenanfang gemeint.
 
 
 
 TRANSLATED
 ==========
 
+
+                    An example of the application: You have executed a
+                    subprogram with the F2 key. The subprogram has of
+                    course changed all the register values. However, you
+                    now want to go through the subprogram again in detail.
+                    Go back one step with ALT-< and just press ALT-INSERT.
+                    Now you can test the subprogram again, provided that
+                    the subprogram does not need any additional variables.
+
+ALT-CLR/HOME:       With ALT-CLR/HOME you can jump to the last entry in
+                    the cache. You can read more about this under CACHEGET
+                    and CACHECLR (see chapter 6.4.2 on page 111).
+
+ALT-INSERT:         With ALT-INSERT you can make the current entry in the
+                    cache the last entry. This is the same function as
+                    CACHEGET.
+
+CONTROL-P:          Sets the PC to the current address!
+
+CONTROL-G:          Like SHIFT-F4 (see chapter 6.5.8 on page 119).
+
+CONTROL-B:          To set a breakpoint, position the cursor on the
+                    appropriate line in the screen editor. Then press
+                    CONTROL-B followed by 0-9 or A-F for the breakpoint
+                    number (0-15) (see chapter 6.6.5 on page 132).
+
+SHIFT-SHIFT:        If you have started a program from the debugger, you
+                    can abort the program by pressing both SHIFT keys.
+                    However, there are a few things to keep in mind:
+
+                    1. It is only aborted if the PC is not in the depths
+                    of the TOS, i.e. if you can call a function such as
+                    Bconin()
+
+---
+1 "Current address" means the address at the beginning of the line.
 

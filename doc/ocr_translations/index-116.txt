@@ -1,19 +1,15 @@
 ORIGINAL
-======== 
+========
 
-
-114 6.4 _ Allgemeine Bedienung
-
- 
 
 Speicher einfacher vorgenommen werden können.
 Die Tastaturbelegung können Sie der Tabelle 6.4
 auf Seite 116 entnehmen.
 
- 
 
-2giehe Funktionstastenbelegung, Befehl KEY (siehe Kapitel 6.6.8 auf Seite 164)
-3Für alle Tester, die nicht vom Bildschirm abfotografieren wollen, kann die Bildschirm-
+---
+2 giehe Funktionstastenbelegung, Befehl KEY (siehe Kapitel 6.6.8 auf Seite 164)
+3 Für alle Tester, die nicht vom Bildschirm abfotografieren wollen, kann die Bildschirm-
 seite des Debuggers im DEGAS-Format abgespeichert werden.
 
 
@@ -21,4 +17,12 @@ seite des Debuggers im DEGAS-Format abgespeichert werden.
 TRANSLATED
 ==========
 
+
+                    The keyboard assignment can be found in table 6.4 on
+                    page 116.
+
+---
+2 Go to function key assignment, command KEY (see chapter 6.6.8 on page 164)
+3 For all testers who do not want to take pictures of the screen, the
+  debugger screen can be saved in DEGAS format.
 

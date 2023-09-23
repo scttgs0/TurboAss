@@ -1,41 +1,24 @@
 ORIGINAL
-======== 
+========
 
-
-6_DER DEBUGGER 117
-
- 
 
 6.5 Die Funktionstasten
 
- 
-   
+{image}
 
-         
- 
-
-   
-
-iracc Do PR Tracris ftraDs
-3063028 inosubs Tracrte Go
-
-Shıp PC Dır Herdunp Dısasen 147 SHE
-Överwet Marker ercako_ info Siruct Quar
-
-  
 
 Abbildung 6.2: Die Funktionstastenleiste
 
 Mit den Funktionstasten (Siehe Abbildung 6.2 auf Seite 117) können Sie viele
 häufig benutzte Befehle des Debuggers abrufen.
 
-6.5.1 F1-— Trace
+6.5.1 F1 -- Trace
 
 „Trace“ führt den aktuellen Befehl im Einzelschrittmodus aus. Den aktuellen
 Befehl sehen Sie über der Registeranzeige. Wenn dann kein Listing Ihres
 Programms auf dem Bildschirm steht, wird ab dem PC gelistet. Die Zeile,
 auf der der PC steht, wird immer mit „>“ statt „>“ nach der Adresse (links)
-gekennzeichnet (Siehe Abbildung 6.1 auf Seite 108),
+gekennzeichnet (Siehe Abbildung 6.1 auf Seite 108).
 
 Beim Einzelschrittmodus wird vor der Befehlsausführung der Bildschirm
 physikalisch umgeschaltet. Dadurch kann es manchmal zu schwachem Bild-
@@ -62,3 +45,38 @@ TRANSLATED
 ==========
 
 
+6.5 The function keys
+
+{image}
+
+
+Figure 6.2: The function key bar
+
+With the function keys (see Figure 6.2 on page 117) you can call up many
+frequently used commands by the debugger.
+
+6.5.1 F1 -- Trace
+
+"Trace" carries out the current command in individual step mode. You can
+see the current command above the register display. If there is no listing
+of your program on the screen, the PC is listed.The line on which the PC
+is on is always marked with ">" instead of ">" according to the address
+(left) (see Figure 6.1 on page 108).
+
+In the case of individual step mode, the screen is physically switched over
+before the command version. This can sometimes lead to weak screen flickers;
+Most of the time, however, this is avoided by good synchronization, this
+procedure has the decisive advantage over the logical switching of other
+debugger that the debugged program always writes on the right screen.
+
+6.5.2 SHIFT-F1 — Tracesimulator 68020
+
+"Trace 68020" simulates the trace command of the 68020. The program is
+executed, similar to the normal trace; However, it is canceled with every
+trap or any jumping command (branch, Jump, RTS or similar). It is a little
+faster in the execution than Untrace, although after each step he has to
+test the Op code on the PC (program counter).
+
+6.5.3 F2 -- Do PC
+
+"Do PC" puts a breakpoint behind the current command and starts

@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-6_DER DEBUGGER 111
-
- 
 
 TABLE wird automatisch weiter ausgegeben, wenn Sie, mit dem Cursor am
 oberen oder unteren Rand angekommen, scrollen. Dies geht auch mit der
@@ -22,8 +18,8 @@ Tabelle 6.2 auf Seite 115).
 
 UNDO: eignet sich sehr gut zur Wiederholung des letzten
 Befehls.
-CONTROL-M: Rettet die Cursorzeile in einem internen Buffer,
 
+CONTROL-M: Rettet die Cursorzeile in einem internen Buffer,
 welcher mit mit den Einstellungen (siehe Kapi-
 tel 6,8 auf Seite 168) gespeichert wird.
 
@@ -38,7 +34,7 @@ die Zifferntasten des Zehnerblocks gemeint.
 Zusätzlich zu diesen Tasten gibt es noch einige, die spezielle Funktionen
 haben (siehe Tabelle 6.3 auf Seite 116).
 
-ALT-&, -=>:! Der Debugger merkt sich die letzten 256 Befehle in
+ALT-<=,-=>: Der Debugger merkt sich die letzten 256 Befehle in
 einem internen Buffer, dem sogenannten Cache. Er
 rettet zu jedem Befehl den kompletten Register-
 satz, und Sie haben mit diesen Tasten die Möglich-
@@ -49,4 +45,37 @@ keit, rückwärts durch die Befehlsliste zu gehen.
 TRANSLATED
 ==========
 
+
+the output continues automatically when you scroll to the top or bottom
+edge with the cursor. This can also be done with the mouse. To do this,
+move the mouse to the top or bottom edge and briefly press the right
+mouse button. When there is data on the screen, the screen will start
+scrolling. You can stop by moving the mouse in the middle of the screen.
+
+6.4.2 The keyboard layout
+
+The keyboard layout corresponds as far as possible to the keyboard layout
+of the assemblers, so you probably won't have any problems. The editor has
+a whole range of key commands (see table 6.2 on page 115).
+
+UNDO:               very useful for repeating the last command.
+
+CONTROL-M:          Saves the cursor line in an internal buffer, which is
+                    saved with the settings (see chapter 6.8 on page 168).
+
+ALT-M:              Retrieves the saved line from the buffer.
+
+CONTROL/ALT 1-9:    before tracing a subprogram, you can save the debugger
+                    screen (with cursor position) in order to be able to
+                    work on the screen again later. 1-9 does not mean the
+                    number keys on the ten-block.
+
+In addition to these keys, there are some that have special functions (see
+Table 6.3 on page 116).
+
+ALT-<=,-=>:         The debugger remembers the last 256 commands in an
+                    internal buffer, the so-called cache. It saves the
+                    complete set of registers for each command, and you
+                    can use these keys to go backwards through the
+                    command list.
 

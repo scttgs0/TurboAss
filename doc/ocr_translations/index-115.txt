@@ -1,65 +1,86 @@
 ORIGINAL
-======== 
+========
 
 
-6_ DER DEBUGGER
+                    Sie nicht abbrechen, da der PC stets im TOS
+                    ist!
 
-113
+                    2. Diese Einschränkung hat jedoch den großen
+                    Vorteil, daß der Programmabbruch (norma-
+                    lerweise) nur im eigenen Programm stattfin-
+                    det.
 
- 
+                    3. Bei ausgeschalteten Interrupts passiert (na-
+                    türlich) gar nichts!
 
-CONTROL-HELP:
+                    4. Für die Abfrage klinkt sich der Debugger in
+                    Keyboard-Vektor ein. Bei dem Drücken von
+                    den Tasten SHIFT-SHIFT wird ein Flag ge-
+                    setzt, damit dann in der VBL-Routine der
+                    eigentliche Abbruch durchführt wird.
 
-ALT-Zahl:
+                    5. Ein Abbruch kann im VBL-Interrupt erfol-
+                    gen oder aber bei TOS-Aufrufen (dies wird
+                    nebenbei von OBSERVE erledigt).
 
-CAPSLOCK:
+CONTROL-HELP:       Der Debugger wird ohne Sicherheitsabfrage verlas-
+                    sen! Wenn der Debugger vom Assembler aus aufge-
+                    rufen wurde, lesen Sie bitte in Kapitel 5.8 näheres
+                    über die Schnittstelle von Assembler&Debugger.
+                    Wenn man CONTROL-HELP mit SHIFT zusammen
+                    gedrückt, erfolgt keine PC-Umrechnung in eine
+                    Zeilennummer.
 
-Sie nicht abbrechen, da der PC stets im TOS
-ist!
+ALT-Zahl:           Wenn Sie eine Zahl über den Zehnerblock einge-
+                    ben, wird das entsprechende ASCII-Zeichen ausge-
+                    geben (wie bei den PC-kompatiblen). Halten Sie
+                    ALTERNATE gedrückt und tippen Sie auf dem Zeh-
+                    nerblock einen ASCII-Code ein, z.B. „228“. Las-
+                    sen Sie dann ALTERNATE los. Es wird „X“ ausge-
+                    geben.
 
-2. Diese Einschränkung hat jedoch den großen
-Vorteil, daß der Programmabbruch (norma-
-
-lerweise) nur im eigenen Programm stattfin-
-det.
-
-3. Bei ausgeschalteten Interrupts passiert (na-
-türlich) gar nichts!
-
-4. Für die Abfrage klinkt sich der Debugger in
-Keyboard-Vektor ein. Bei dem Drücken von
-den Tasten SHIFT-SHIFT wird ein Flag ge-
-setzt, damit dann in der VBL-Routine der
-eigentliche Abbruch durchführt wird.
-
-5. Ein Abbruch kann im VBL-Interrupt erfol-
-gen oder aber bei TOS-Aufrufen (dies wird
-nebenbei von OBSERVE erledigt).
-
-Der Debugger wird ohne Sicherheitsabfrage verlas-
-sen! Wenn der Debugger vom Assembler aus aufge-
-rufen wurde, lesen Sie bitte in Kapitel 5.8 näheres
-über die Schnittstelle von Assembler&Debugger.
-Wenn man CONTROL-HELP mit SHIFT zusammen
-gedrückt, erfolgt keine PC-Umrechnung in eine
-Zeilennummer.
-
-Wenn Sie eine Zahl über den Zehnerblock einge-
-ben, wird das entsprechende ASCII-Zeichen ausge-
-geben (wie bei den PC-kompatiblen). Halten Sie
-ALTERNATE gedrückt und tippen Sie auf dem Zeh-
-nerblock einen ASCII-Code ein, z.B. „228“. Las-
-sen Sie dann ALTERNATE los. Es wird „X“ ausge-
-geben.
-
-Wie zu erwarten werden alle Buchstaben in Groß-
-buchstaben gewandelt. Zudem wird der Zehner-
-block mit Hexziffern belegt, damit Listings ein-
-facher eingegeben bzw. größere Änderungen im
+CAPSLOCK:           Wie zu erwarten werden alle Buchstaben in Groß-
+                    buchstaben gewandelt. Zudem wird der Zehner-
+                    block mit Hexziffern belegt, damit Listings ein-
+                    facher eingegeben bzw. größere Änderungen im
 
 
 
 TRANSLATED
 ==========
 
+
+                    Don't cancel it because the PC is always in TOS!
+
+                    2. However, this restriction has the great advantage
+                    that the program abort (usually) only takes place in
+                    the own program.
+
+                    3. Nothing happens (of course) when interrupts are
+                    switched off!
+
+                    4. The debugger hooks into the keyboard vector for the
+                    query. When the SHIFT-SHIFT keys are pressed, a flag
+                    is set so that the actual abort is then carried out in
+                    the VBL routine.
+
+                    5. An abort can occur in the VBL interrupt or with TOS
+                    calls (this is also done by OBSERVE).
+
+CONTROL-HELP:       The debugger is exited without a confirmation prompt!
+                    If the debugger was called from the assembler, please
+                    read more about the interface of assembler&debugger in
+                    chapter 5.8. If you press CONTROL-HELP together with
+                    SHIFT, there is no PC conversion into a line number.
+
+ALT-Number:         If you enter a number using the tens block, the
+                    corresponding ASCII character is output (like the PC-
+                    compatible ones). Hold down ALTERNATE and use the
+                    numeric keypad to type in an ASCII code such as "228".
+                    Then release ALTERNATE. "X" is output.
+
+CAPSLOCK:           As expected, all letters are converted to uppercase.
+                    In addition, the block of ten is occupied with hex
+                    digits so that listings can be entered more easily or
+                    larger changes can be made more easily in the memory.
 

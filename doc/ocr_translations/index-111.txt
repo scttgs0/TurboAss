@@ -1,56 +1,26 @@
 ORIGINAL
-======== 
+========
 
 
-6_ DER DEBUGGER 109
+    Tabelle 6.1: Die Flags des Statusregisters
 
- 
+    Bit       Das SR-Register
+    -----------------------------------
+    15 | T  | Trace
+    13 | S  | Supervisor
+    10 | I2 | 
+    9  | I1 | Interrupt-Maske
+    8  | I0 |
 
-Tabelle 6.1: Die Flags des Statusregisters
 
- 
+              Das CCR-Register
+    -----------------------------------
+    4  | X  | eXtend — Erweiterungs-Bit
+    3  | N  | Negative — Vorzeichen-Bit
+    2  | Z  | Zero — Null-Bit
+    1  | V  | oVerflow — Überlauf-Bit
+    0  | C  | Carry — UÜbertrags-Bit
 
-Bit Das SR-Register
-
- 
-
-15 | T | Trace
-
-13 | S | Supervisor
-
-10 | 12
-
-9 |I1 | Interrupt-Maske
-8 |I10
-
- 
-
-Das CCR-Register
-
-X | eXtend — Erweiterungs-Bit
-N | Negative — Vorzeichen-Bit
-
-Z | Zero — Null-Bit
-V
-
-C
-
- 
-
-oVerflow — Überlauf-Bit
-Carry — UÜbertrags-Bit
-
- 
-
- 
-
- 
-
- 
-
-© DC
-
- 
 
 Sie sehen oben auf dem Bildschirm die Menüleiste: die Befehle in der ersten
 Zeile können Sie mit F1 bis F10 aufrufen, die der zweiten mit SHIFT-F1 bis
@@ -81,4 +51,47 @@ in der Folgezeile die 8 Adreßregister (A0-A7), wobei A7 stets entweder dem
 TRANSLATED
 ==========
 
+
+    Table 6.1: The status register flags
+
+    Bit       Das SR-Register
+    -----------------------------------
+    15 | T  | Trace
+    13 | S  | Supervisor
+    10 | I2 | 
+    9  | I1 | Interrupt-Maske
+    8  | I0 |
+
+
+              Das CCR-Register
+    -----------------------------------
+    4  | X  | eXtend — Erweiterungs-Bit
+    3  | N  | Negative — Vorzeichen-Bit
+    2  | Z  | Zero — Null-Bit
+    1  | V  | oVerflow — Überlauf-Bit
+    0  | C  | Carry — UÜbertrags-Bit
+
+
+You can see the menu bar at the top of the screen: you can call up the
+commands in the first line with F1 to F10, those in the second line with
+SHIFT-F1 to SHIFT-F10. You can also click directly on the command with the
+mouse. More information about the function keys can be found in chapter
+6.5 on page 117.
+
+Below you can see all registers of the 68000 processor with their current
+contents: First the program counter (PC), this is the address from which
+the next opcode is processed.
+
+Then follow the user stack pointer and supervisor stack pointer
+(abbreviated to USP and SSP).
+
+To the right of this you can see the status register (SR). The individual
+flags of the SR are indicated by a letter or a number. If the character is
+in light font, the flag is cleared. With a mouse click on a flag, its
+state can be changed. Table 6.1 gives the meaning of each flag.
+
+The line ends with the current command (the command pointed to by the PC).
+
+The next line contains all 8 data registers of the processor (D0-D7) and
+the next line contains the 8 address registers (A0-A7), whereby A7 always
 

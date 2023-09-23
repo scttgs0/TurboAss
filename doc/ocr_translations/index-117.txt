@@ -1,96 +1,65 @@
 ORIGINAL
-======== 
+========
 
-
-6 _DER DEBUGGER
-
-115
-
- 
 
 Tabelle 6.2: Allgemeine Tastenkommandos
 
- 
 
-0 ==>
+{up}{down}{left}{right}         Cursortasten
+SHIFT-{up}, -{down}             Scrollt den Bildschirm ohne Cursorbewegung
+SHIFT-CONTROL-{up}, -{down}     Scrollt den Bildschirm mit Cursorbewegung
+SHIFT-{left}, -{right}          Bewegt den Cursor an den linken/rechten Rand
+TAB                             Der Cursor springt zur nächsten 8er Position
+BACKSPACE                       Löscht das Zeichen vor dem Cursor
+DELETE                          Löscht das Zeichen unter dem Cursor und rückt den Rest auf
+INSERT                          Fügt ein Space an der Cursorposition ein
+CONTROL-RETURN                  Setzt den Cursor in die linke untere Ecke
+SHIFT-RETURN                    Schreibt €?
+CLR/HOME                        Setzt den Cursor in die obere linke Ecke
+SHIFT-CLR/HOME                  Löscht den Bildschirm und setzt den Cursor nach oben links
+ESC                             Löscht den Bildschirm ab der Cursorposition
+SHIFT-DELETE                    Löscht die Zeile ab der Cursorposition
+CONTROL-DELETE                  Löscht die Zeile, in der der Cursor steht — der Rest rückt auf
+CONTROL-INSERT                  Fügt eine Leerzeile ein
 
-SHIFT-®, -U
-SHIFT-CONTROL-f, -U
-SHIFT-<, -=>
 
-TAB
+UNDO                            Restauriert die Zeile (vom letzten RETURN)
+ALT-M                           Schreibt eine Zeile zurück, die mit:
+CONTROL-M                       gerettet wurde
+SHIFT-INSERT                    Schaltet den INSERT-Modus an bzw. aus
+CONTROL 1-9                     Bildschirminhalt — Buffer
+ALT 1-9                         Bildschirminhalt — Buffer
 
-BACKSPACE
 
-DELETE
-
-INSERT
-CONTROL-RETURN
-SHIFT-RETURN
-CLR/HOME
-SHIFT-CLR/HOME
-
-ESC
-SHIFT-DELETE
-CONTROL-DELETE
-
-CONTROL-INSERT
-
-Cursortasten
-
-Scrollt den Bildschirm ohne Cursorbewegung
-Scrollt den Bildschirm mit Cursorbewegung
-Bewegt den Cursor an den linken/rechten Rand
-Der Cursor springt zur nächsten 8er Position
-Löscht das Zeichen vor dem Cursor
-
-Löscht das Zeichen unter dem Cursor und rückt
-den Rest auf
-
-Fügt ein Space an der Cursorposition ein
-
-Setzt den Cursor in die linke untere Ecke
-Schreibt €?
-
-Setzt den Cursor in die obere linke Ecke
-
-Löscht den Bildschirm und setzt den Cursor
-nach oben links
-
-Löscht den Bildschirm ab der Cursorposition
-Löscht die Zeile ab der Cursorposition
-
-Löscht die Zeile, in der der Cursor steht —
-
-der Rest rückt auf
-
-Fügt eine Leerzeile ein
-
- 
-
-UNDO
-
-ALT-M
-CONTROL-M
-SHIFT-INSERT
-CONTROL 1-9
-ALT 1-9
-
- 
-
- 
-
-Restauriert die Zeile (vom letzten RETURN)
-Schreibt eine Zeile zurück, die mit:
-gerettet wurde
-
-Schaltet den INSERT-Modus an bzw. aus
-Bildschirminhalt — Buffer
-Bildschirminhalt — Buffer
-
- 
 
 TRANSLATED
 ==========
 
 
+Table 6.2: General key commands
+
+
+{up}{down}{left}{right}         Cursor keys
+SHIFT-{up}, -{down}             Scroll the screen without a cursor movement
+SHIFT-CONTROL-{up}, -{down}     Scroll the screen with cursor movement
+SHIFT-{left}, -{right}          Moves the cursor to the left/right edge
+TAB                             The cursor jumps to the next 8 position
+BACKSPACE                       Deletes the sign in front of the cursor
+DELETE                          Demolishes the sign under the cursor and picks up the rest
+INSERT                          Adds a space to the cursor position
+CONTROL-RETURN                  Put the cursor in the lower left corner
+SHIFT-RETURN                    Writes CR2
+CLR/HOME                        Put the cursor in the upper left corner
+SHIFT-CLR/HOME                  Deletes the screen and puts the cursor upwards
+ESC                             Deletes the screen from the cursor position
+SHIFT-DELETE                    Deletes the line from the cursor position
+CONTROL-DELETE                  Deletes the line in which the cursor is on - the rest moves up
+CONTROL-INSERT                  Adds an empty line
+
+
+UNDO                            Restore the line (from the last return)
+ALT-M                           Write back a line with:
+CONTROL-M                       was saved
+SHIFT-INSERT                    Switch insert mode on or off
+CONTROL 1-9                     Complete screen content - buffer
+ALT 1-9                         Complete screen content - buffer

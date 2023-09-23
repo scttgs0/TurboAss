@@ -1,98 +1,37 @@
 ORIGINAL
-======== 
+========
 
-
-116
-
-6.4 Allgemeine Bedienung
-
- 
 
 Tabelle 6.3: Zusätzliche Tastenkommandos
 
- 
+ALT-{left}, {right}             Damit können Sie durch den Cache blättern (entspricht den Pfeilen links neben der Registeranzeige)
+ALT-CLR/HOME                    Zeigt die aktuellen Register an (entspricht dem & links von der Registeranzeige)
 
-ALT-<=, >
+CONTROL-P                       Setzt den PC an die aktuelle Adresse
+CONTROL-G                       Startet das Programm
+CONTROL-B                       Setzt einen Breakpoint (siehe Seite 112)
 
-ALT-CLR/HOME
+SHIFT-SHIFT                     das laufende Programm wird unterbrochen und es wird in den Debugger zurückgekehrt
 
-Damit können Sie durch den Cache blättern
-(entspricht den Pfeilen links neben der
-Registeranzeige)
+CONTROL-HELP                    Der Debugger wird beendet
+CONTROL-ALT-DELETE              Warmstart des Debuggers +RESET
+CONTROL-ALT-SHIFT               Kaltstart des Rechners, der gesamte
+rechts-DELETE                   Speicher wird gelöscht!!!
+ALT-SHIFT-HELP                  Der Bildschirminhalt wird abgespeichert3.
 
-Zeigt die aktuellen Register an (entspricht
-dem & links von der Registeranzeige)
-
- 
-
-CONTROL-P
-CONTROL-G
-CONTROL-B
-
-Setzt den PC an die aktuelle Adresse
-Startet das Programm
-Setzt einen Breakpoint (siehe Seite 112)
-
- 
-
-SHIFT-SHIFT
-
-das laufende Programm wird unterbrochen
-und es wird in den Debugger zurückgekehrt
-
- 
-
- 
-
-CONTROL-HELP
-CONTROL-ALT-DELETE
-CONTROL-ALT-
-
-SHIFT rechts-DELETE
-ALT-SHIFT-HELP
-
- 
-
-Der Debugger wird beendet
-
-Warmstart des Debuggers +RESET
-Kaltstart des Rechners, der gesamte
-Speicher wird gelöscht!!!
-
-Der Bildschirminhalt wird abgespeichert®.
-
- 
 
 Tabelle 6.4: Der Zehnerblock
 
-normal und mit SHIFT
+normal und mit SHIFT            mit CAPSLOCK ohne SHIFT
 
-mit CAPSLOCK ohne SHIFT
+( ) / *                         A B C D
 
- 
+7 8 9 -                         7 8 9 E
 
- 
+4 5 6 +                         4 5 6 F
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-( ) / * A B C D
-
-7 8 9 - 7 8 9 E
-
-4 5 6 + 4 5 6 F
-
-1 2 3 Enter 1 2 3 Bater
-0 0 ,
+1 2 3 Enter                     1 2 3 Enter
+0 .                             0 ,
 
 
 
@@ -100,3 +39,33 @@ TRANSLATED
 ==========
 
 
+Table 6.3: Additional key commands
+
+ALT-{left}, {right}             This allows you to leaf through the cache (corresponds to the arrows to the left of the register display)
+ALT-CLR/HOME                    Displays the current register (corresponds to the & left of the register display)
+
+CONTROL-P                       Sets the PC to the current address
+CONTROL-G                       The program starts
+CONTROL-B                       Sets a breakpoint (see page 112)
+
+SHIFT-SHIFT                     The current program is interrupted and it will be returned to the debugger
+
+CONTROL-HELP                    The debugger ends
+CONTROL-ALT-DELETE              WarmStart the Debuggers + Reset
+CONTROL-ALT-SHIFT               Cold start of the computer
+right-DELETE                    Storage is deleted !!!
+ALT-SHIFT-HELP                  The screen content is saved {3}.
+
+
+Table 6.4: The Keypad
+
+Normal and with Shift           With Capslock, without Shift
+
+( ) / *                         A B C D
+
+7 8 9 -                         7 8 9 E
+
+4 5 6 +                         4 5 6 F
+
+1 2 3 Enter                     1 2 3 Enter
+0 .                             0 ,

@@ -1,12 +1,8 @@
 ORIGINAL
-======== 
+========
 
 
-110 6.4 Allgemeine Bedienung
-
- 
-
-USP oder dem SSP (s. 0.), in Abhängigkeit des S(upervisor)-Flags, entspricht,
+USP oder dem SSP (s. 0.), in Abhängigkeit des S(upervisor)-Flags, entspricht.
 
 Sie können alle Register ändern, indem Sie mit der Maus auf die Register-
 anzeige klicken. Daraufhin wird der Cursor in die Anzeige gesetzt, und man
@@ -34,7 +30,7 @@ Cursortasten bewegt werden.
 Wenn Sie die rechte Maustaste drücken, wird der unter der Maus stehende
 Text bis zu einem der folgenden Zeichen:
 
-1 \+{D-  =, ii #07 >>
+!&'*\+{}[]-~|/^=,;:#()? >><>
 
 (oder Space, Zeilenanfang bzw. -ende) an die Cursorposition kopiert (davor
 wird noch ein Space eingefügt).
@@ -56,4 +52,48 @@ Bei Ausgaben von MEMORY, DUMP, DISASSEMBLE, LIST und SYMBOL-
 TRANSLATED
 ==========
 
+
+corresponds to either the USP or the SSP (see 0.), depending on the
+S(supervisor)-flags, matches.
+
+You can change all registers by clicking on the register display with the
+mouse. The cursor is then placed in the display and a new value can be
+entered. Use the & and = keys to move the cursor left and right. The input
+can be aborted with UNDO, ESC or by pressing the right mouse button — then
+the register is not changed. Press RETURN to complete the entry and assign
+a new value to the register.
+
+You will probably notice two arrows next to the registers; If you click on
+<= with the mouse, the contents of the register will change and a ® will
+also appear. Use the arrows to scroll through the cache. For more
+information, see chapters 6.4.2 and 6.6.5 on pages 111 and 140.
+
+The remaining 20 lines of the screen belong to the screen editor. All
+outputs appear there. In addition, all commands are entered there. The
+screen editor is somewhat reminiscent of OMIKRON.BASIC or the C-64, but
+the keyboard layout (see chapter 6.4.2 on page 111) is largely compatible
+with assembler.
+
+You can place the cursor anywhere you like by clicking on the appropriate
+place with the left mouse button. Of course, the cursor can also be moved
+with the cursor keys.
+
+If you press the right mouse button, the text under the mouse will expand
+to one of the following characters:
+
+!&'*\+{}[]-~|/^=,;:#()? >><>
+
+(or space, beginning or end of line) copied to the cursor position (a space
+is inserted in front of it).
+
+The meaning is as follows: You can display a program part with LIST, for
+example. You want to set breakpoint 1 before a command. You type: "B1=" and
+right click on the address in front of the command and press RETURN. You
+can also copy pieces of text.
+
+If you have loaded a program, a double click (with the left button) on any
+number from this address will disassemble it if it is within the text
+segment, otherwise a memory dump will be displayed.
+
+In the case of MEMORY, DUMP, DISASSEMBLE, LIST and SYMBOL-TABLE outputs,
 
