@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-120 6,5 Die Funktionstasten
-
- 
 
 Stelle immer, welcher der beiden Modi gerade aktiviert ist. Wenn „Insert“
 aktiviert ist, wird stets an der Cursorposition eingefügt, wogegen bei „Over-
@@ -15,35 +11,17 @@ INSERT-Taste zusätzlich Platz schaffen).
 
 „Directory“ entspricht dem Befehl DIRECTORY ohne Parameter. Es wird das
 Inhaltsverzeichnis des aktuellen Laufwerks alphabetisch sortiert ausgegeben.
+
+
 6.5.12 SHIFT-F6 — Marker anzeigen
 
 „Marker“ zeigt alle Marker mit Labelnamen an (Siehe Abbildung 6.3 auf
 Seite 120), die vom Assembler übergeben wurden. Wenn der Debugger nicht
-
 vom Assembler gestartet wurde, oder Sie keine Marker gesetzt haben, sind
 alle Marker gleich Null.
 
- 
 
-Harkerlistet [|
-
-Rdrasse: Zeile: Lebelnang:
-Pn MIISOBLEECEL 49 start
-[1 MZI$C0LEESFC 421 Ggetpar
-M3ı$001EEB72 83 atoll
-Ma1$E0LEEULZ 621 form_alert
-
-DH N6:$80LEE678 165 doit
-[]48:$6QLEECS2 787 randisk
-
-H9l 3E 1191 aes.parablk
-]NSSCOLEFLIZ 1216 loesch
-
- 
-
- 
-
- 
+{image}
 
 Abbildung 6.3: Marker anzeigen im Debugger
 
@@ -58,3 +36,30 @@ TRANSLATED
 ==========
 
 
+Always place which of the two modes is just activated. If "insert" is activated,
+it is always inserted at the cursor position, whereas the existing text is
+overwritten in "Overwrite" (of course you can create additional space with the
+insert button).
+
+6.5.11 F6 — Directory
+
+"Directory" corresponds to the command directory without parameters. The table
+of contents of the current drive is output alphabetically.
+
+
+6.5.12 SHIFT-F6 — Show marker
+
+"Marker" shows all markers with label names (see Figure 6.3 on page 120), which
+were handed over by the assembler. If the debugger was not started by the
+assembler or you have not set a marker, all markers are zero.
+
+
+{image}
+
+Figure 6.3: Show marks in the debugger
+
+
+6.5.13 F7 — Memorydump PC
+
+"Hexdump" shows the memory content from the PC. This corresponds to the command
+Memory or Dump with a PC as an address.

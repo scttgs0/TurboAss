@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-124 6.6 Die Befehle
-
- 
-
 6.6 Die Befehle
 
 6.6.1 Allgemeines
@@ -50,3 +46,36 @@ TRANSLATED
 ==========
 
 
+6.6 The Commands
+
+6.6.1 General
+
+Note: In the following command description, some commands are marked with !,
+these call for operating system routines. So if you want to use it, you have
+to make sure that the corresponding parts of the operating system have not
+been disturbed by your debugged program. Inputs are always specified in
+quotation marks and in Typewriters. Key pressures and file names without
+quotation marks in Typewriters. If only the command is in general, it will be
+written in Sans Serif.
+
+The following commands can be entered via the keyboard (press return at the
+end). Most commands can be abbreviated. So you don't have to type "disassemble"
+every time, you can also enter "Disass", "Dis" or "D". However, if several
+commands start with the same letters, one can be abbreviated with just one
+letter.For example, you can shorten "Dump" with "Du", but if you only enter
+"D", the debugger interprets this as a "disassemble". How far you can shorten
+it is indicated for every command. If you have not fully entered an order,
+there must be a space behind the first term. Example: "Dis 1000", "D 7A5" but:
+"Disassemble" A3 "(since the command was advertised, no space is necessary.)
+
+6.6.2 Spelling of the Commands
+
+In the command description, we used a spelling for the syntax that probably
+requires an explanation. Information in capital letters and commas can (or
+abbreviated) are to be typed in this way, although it doesn't matter whether
+they enter them in capital or small letters or mixed. Information in square
+brackets can be left out, and we have as a logical operation (exclusive or)
+and round brackets.
+
+"Term" (sometimes also "from" or "to" or "address") stands for a number or a
+formula that the debugger calculates a number. So if the syntax description

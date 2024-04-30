@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-6 DER DEBUGGER 125
-
- 
-
 also die Syntaxbeschreibung des Befehls lautet: „?Term“ können Sie einge-
 ben: „75“, „?7+3“ oder „?7*2“. Sie können auch Register einsetzen: „?”A3“
 (Der Inhalt vom Register A3 wird ausgegeben) oder „?”d0*2“ (Der Inhalt
@@ -52,4 +48,44 @@ END: Ende des zuletzt mit LOAD geladenen Programms
 TRANSLATED
 ==========
 
+of the command is: "?Term" you can enter: "?5", "?7+3" or "?7*2". You can also
+use registers: "?^A3 (the content of the A3 register is issued) or "?^D0*2"
+(The content of the D0 Register is issued). The labeling by "^" is necessary to
+distinguish registers from the corresponding hex numbers.
 
+An example:
+
+Syntax: (BREAKPOINTS|B) [Nr=Adr|K[Nr]]
+
+First you have to enter "B" or "Breakpoints" or an abbreviation of it, e.g.
+"Break" or "Bre". The "B" is listed individually, since it is therefore no
+longer considered a abbreviation (see above). So you don't have to set space
+after "B"; After "break" etc., however, one is required.
+
+The rest after "Breakpoints" can be left out because it is in square brackets.
+You can also enter a number behind it.Then it is still possible to enter "="
+and an address.
+
+If you enter "K" instead of the number, you can write a number behind it.
+
+You can read a complete description of the Breakpoint command from page 132 in
+Chapter 6.6.5.
+
+Attention: All end addresses ("up to") must be specified + 1. This means that
+if you want to copy the range from 60000 to 60005, you have to enter
+"Move 60000,60006, ...".
+
+
+6.6.3  Debugger Variables
+
+You can also use variables in a term:
+
+TEXT: Beginning of the program storage
+
+DATA: Beginning of the DATA-segments
+
+BSS: Beginning of the Block-Storage-Segment (BSS)
+
+START: Start of the most recently charged program
+
+END: End of the last program that was last charged with Load

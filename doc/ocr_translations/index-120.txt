@@ -1,10 +1,9 @@
 ORIGINAL
-======== 
+========
 
 
 118 6.5 Die Funktionstasten
 
- 
 
 das Programm. Im Normalfall bewirkt diese Funktion damit das gleiche wie
 Trace. Wenn der Befehl jedoch ein Unterprogrammaufruf ist, wird das ganze
@@ -46,3 +45,32 @@ TRANSLATED
 ==========
 
 
+6.5 The function keys
+
+the program. Normally, this function thus causes the same as trace. However,
+if the command is a sub-program call, the entire subroutine is executed (as
+if it were a command). However, if the command is a jump command, the program
+may no longer be canceled because the Breakpoint is never reached. A permanent
+breakpoint can also be skipped with "Do PC". If you are on a DBRA or similar,
+the whole loop will be carried out and the program will only be canceled again
+when the loop has been left.
+
+6.5.4 SHIFT-F2 — Trace no subroutines
+
+"Trace No Subroutines" carries out a command (such as Trace (see chapter 6.6.5
+on page 134)), but skipped sub-programs (i.e. they are not executed in individual
+step mode). DBRA loops etc., but are treated as with trace. In addition, it
+cannot happen to you as with "Do PC" that you do not arrive at the Breakpoint
+after a committed branch (if you press "do PC" on a BRA, the debugger will usually
+not report again; at "Trace no Subroutines" only the BRA is carried out.).
+
+6.5.5 F3 — Trace until RTS
+
+"Trace to RTS" starts the program and only breaks off when the current sub-program
+has been left. This means that if you have started a subroutine with trace and now
+the rest of the RTS skip, press F3. The debugger is based on the PC and not on RTS
+commands; So if the subroutine calls other sub-programs, which in turn jump back
+with RTS, their RTS commands are not taken into account. Technically, these
+functions were implemented relatively easily by saving the top long word on the
+stack and a return address is stored in the debugger there. When the RTS is jumped
+into this routine, the recruited return address is stored on the stack.

@@ -2,39 +2,15 @@ ORIGINAL
 ======== 
 
 
-122 6.5 Die Funktionstasten
-
- 
-
-liegt. Diese Funktionstaste entspricht dem Befehl INFO (siehe Kapitel 6.6.8
+Diese Funktionstaste entspricht dem Befehl INFO (siehe Kapitel 6.6.8
 auf Seite 160), gibt die Daten aber in einer Dialogbox und nicht auf dem
 Textbildschirm aus.
 
- 
-
-Speicherbelagungt
-
-Start des Debuggers 19054584
-Enda das Dekuggers 19080889
-Start das freien Speichersi$050880
-Ende das freien Speichers : Men]
-Start des TEXT-Segrants :$0507R
-
-Start des DATA-Sepnants seCin
-Start des 55S-Segrents !9999510
-Erste freie Rdrasse 35ERACE2
-
-[CE
-
- 
-
- 
-
- 
+{image}
 
 Abbildung 6.5: Die Speicherinfoanzeige
 
-6.5.17 F9— List PC
+6.5.17 F9 — List PC
 
 Es wird ab dem PC gelistet (wie der Befehl „LIST PC“). Im Unterschied
 zu Disassemble wird kein Hex-Teil, dafür aber werden eventuell vorhandene
@@ -52,7 +28,8 @@ Auflösung und der Monitor umgeschaltet. Wenn Sie keinen automatischen
 Monitorumschalter verwenden, müssen Sie dann per Hand umschalten bzw.
 „stecken.
 
-4Warum „Direct“? Ich habe keine Ahnung...
+---
+4 Warum „Direct“? Ich habe keine Ahnung...
 
 
 
@@ -60,3 +37,28 @@ TRANSLATED
 ==========
 
 
+This function key corresponds to the Info command (see Chapter 6.6.8 on page
+160), but publishes the data in a dialog box and not on the text screen.
+
+{image}
+
+Figure 6.5: The memory report display
+
+6.5.17 F9 — List PC
+
+It is listed from the PC (like the "List PC" command). In contrast to
+Disassemble, no hex part will be, but possibly existing symbols are issued.
+
+6.5.18 SHIFT-F9 — Direct
+
+"Direct"4 Demolishes the screen and output the switch-on message.
+
+6.5.19 F10 — Toggle Screen
+
+"Switch" switches back and forth between the screen of the Omikron.debugger
+and the debugged program. If necessary, the resolution and the monitor are
+also switched. If you do not use an automatic monitor switch, you must then
+switch or insert by hand.
+
+---
+4 Why "Direct"? I have no idea...

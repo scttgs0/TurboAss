@@ -2,43 +2,25 @@ ORIGINAL
 ======== 
 
 
-56_ DER DEBUGGER 127
+o ^D(0-7):      Die Datenregister
 
-o "D(0-7):
-o ”A(0-7):
-o SHIFT:
+o ^A(0-7):      Die Adreßregister
 
-CONVERT:
-
-ACT-PD:
-o KLICK:
-
-IKBD:
-
-o TDELAY:
-
-o SCROLLD:
-
- 
-
-Die Datenregister
-Die Adreßregister
-
-1= Abfrage SHIFT-SHIFT wird verhindert. Damit klinkt
+o SHIFT:        1= Abfrage SHIFT-SHIFT wird verhindert. Damit klinkt
 der Debugger sich nicht vor den Tastaturtreiber.
 
-zeigt auf eine 256 Byte-ASCII-Konvertierungstabelle. Wenn
+CONVERT:        zeigt auf eine 256 Byte-ASCII-Konvertierungstabelle. Wenn
 der Debugger bei MEMORY und ASCII ein Zeichen ausge-
 ben will, wird das Zeichen gemäß dieser Tabelle konvertiert.
 Der Aufbau der Tabelle ist in Kapitel 6.8 auf Seite 169 be-
 schrieben.
 
-Basepage des aktuellen Prozesses
+ACT-PD:         Basepage des aktuellen Prozesses
 
-0 Disassemble, = 0 Memory/Dump nach Doppelklick auf
+o KLICK:        0 Disassemble, = 0 Memory/Dump nach Doppelklick auf
 Adresse
 
-Zeiger auf einen 20 Byte-Buffer, der vor jedem Befehl (wie
+IKBD:           Zeiger auf einen 20 Byte-Buffer, der vor jedem Befehl (wie
 TRACE, GO u.s.w.) zum Tastaturprozessor gesendet wird.
 Das erste Byte gibt die Länge des Buffers an. Sinnvoll ist
 das z. B., wenn Sie eine automatische Joystickmeldung ein-
@@ -47,7 +29,7 @@ wieder abschalten, damit die Maus und Tastatur normal
 funktionieren. Dann können Sie den Befehl zur automati-
 schen Joystickmeldung in diesen Buffer schreiben.
 
-Mit dieser Varbiablen kann eingestellt werden, wie lange
+o TDELAY:       Mit dieser Varbiablen kann eingestellt werden, wie lange
 nach einem TRACE (F1-F5) gewartet werden soll. Default
 ist 0. Bei einigen Rechnern prellt die Tastatur (minimal),
 deshalb werden bei ihnen bei einem Tastendruck gleich 2
@@ -55,7 +37,7 @@ Befehle ausgeführt. Dann können Sie TDELAY auf Werte bis
 65535 hochsetzen. Auf einem unserer ST’s hat sich 30 000
 als praktisch erwiesen.
 
-Scrollverzögerung bei CONTROL. Wenn Sie beim Scrollen die
+o SCROLLD:      Scrollverzögerung bei CONTROL. Wenn Sie beim Scrollen die
 CONTROL- Taste drücken, wird die Geschwindigkeit verrin-
 gert (da werden Erinnerungen an den 64er wach...). Je
 größer dieser Wert ist, desto langsamer wird gescrollt. Die
@@ -67,3 +49,37 @@ TRANSLATED
 ==========
 
 
+o ^D(0-7):      The data register
+
+o ^A(0-7):      The Adress Register
+
+o SHIFT:        1 = SHIFT-SHIFT query is prevented. This means that the
+                debugger does not cling to the keyboard driver.
+
+CONVERT:        points to a 256 byte-ascii conversion table. If the debugger
+                wants to spend a sign at Memory and Ascii, the sign is
+                converted according to this table. The structure of the table
+                is described in Chapter 6.8 on page 169.
+
+ACT-PD:         Base page of the current process
+
+o KLICK:        !=0 disassemble, =0 memory/dump after double-click Address
+
+IKBD:           Pointer to a 20-byte buffer that is sent to the keyboard
+                processor before each command (such as Trace, Go ands.W.).
+                The first byte indicates the length of the buffer. This makes
+                sense. e.g. if you have set an automatic joystick message. Of
+                course, the debugger has to switch this off again and again
+                so that the mouse and keyboard work normally. Then you can
+                write the automatic joystick message command in this buffer.
+
+o TDELAY:       This varbibles can be set how long to wait for a TRACE (F1-F5).
+                Default is 0. For some computers, the keyboard (minimally)
+                bruises, so 2 commands are carried out for you when you press a
+                button. Then you can put TDELAY up to 65535. On one of our ST’s,
+                30,000 has proven to be practical.
+
+o SCROLLD:      Scroll delay in Control. If you press the control key when
+                scrolling, the speed is reduced (memories of the 64er are awake
+                ...). The greater this value, the slower is scrolling. The
+                default is 20,000. Values up to 65,535 are possible.

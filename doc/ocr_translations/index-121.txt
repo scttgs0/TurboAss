@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-6 DER DEBUGGER 119
-
- 
 
 6.5.6 SHIFT-F3 — Trace until RTE
 
@@ -48,3 +44,36 @@ TRANSLATED
 ==========
 
 
+6.5.6 SHIFT-F3 — Trace until RTE
+
+"Trace to RTE" corresponds to "Trace to RTS", but it is traced up to the RTE,
+i.e. a trap (another stack format!)
+
+6.5.7 F4 — Trace Traps
+
+"Trace Traps" looks like Trace. However, all traps are also carried out in
+individual step mode. This was prevented at Trace, since the raging a string
+edition or similar is usually very boring and not useful. With F4 you can
+still look at the trap routines if you want to get to know the operating
+system or if you have written your own trap routines.
+
+6.5.8 SHIFT-F4 — Go PC
+
+"Go" starts the program from the PC without setting any demolition conditions.
+This button corresponds to the command of the same name. You can only cancel
+breakpoints or manually (by shift-shift, reset or an external break).
+Control-G does exactly the same. The GO command is also listed on page 133 in
+Chapter 6.6.5.
+
+6.5.9 F5 — Skip PC
+
+"Skip PC" is the last of the trace commands. The PC is placed behind the current
+command without executing it. The current command is skipped. This is e.g.
+sensible if you test a program that is currently about to change the trace
+vector. Of course, this is not possible because the debugger absolutely needs it.
+So skip this one command with F5 and then continue with F1, for example.
+
+6.5.10 SHIFT-F5 — Insert/Overwrite
+
+"Overwrite/Insert" switches on or off the character insert mode. You can also
+achieve the same via Shift-Insert. In the menu line you can see on this

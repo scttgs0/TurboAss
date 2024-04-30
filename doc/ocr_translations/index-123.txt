@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-6_ DER DEBUGGER 121
-
- 
-
 6.5.14 SHIFT-F7 — Breakpoints anzeigen
 
 „Breakpoints“ listet alle Breakpoints mit den dazugehörigen Daten (Break-
@@ -15,48 +11,7 @@ ter; allerdings werden die Werte in einer Dialogbox angezeigt, die nach dem
 Drücken auf den OK-Button wieder verschwindet. Dadurch bleiben die an-
 deren Daten auf dem Bildschirm erhalten.
 
- 
-
-M00-$0R260n, +32
-891=5036630,#
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-B8F2$227777
-
-EX
-
- 
-
- 
-
- 
+{image} 
 
 Abbildung 6.4: Die Breakpointanzeige
 
@@ -78,3 +33,25 @@ TRANSLATED
 ==========
 
 
+6.5.14 SHIFT-F7 — Show Breakpoints
+
+"Breakpoints" lists all breakpoints with the associated data (break art start
+and meter state) (see Figure 6.4 on page 121). This command behaves as well as
+Breakpoint's command without parameters; However, the values are displayed in
+a dialog box that disappears back onto the OK button after pressing. This will
+keep the other data on the screen.
+
+{image}
+
+Figure 6.4: The breakpoint dialog
+
+6.5.15 F8 — Disassemble PC
+
+It is disassembled from the PC as if they had entered "Disassemble PC".
+
+6.5.16 SHIFT-F8 — Memoryinfo
+
+"Info" shows the starting addresses of Text-, Data- and Block-Storage-Segment,
+the end address of the free memory, the first address that is no longer used by
+the program and possibly the number of entries in the symbol table (see Figure
+6.5 on page 122). It is also said where the debugger is.

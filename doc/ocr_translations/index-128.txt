@@ -2,18 +2,12 @@ ORIGINAL
 ======== 
 
 
-6.6 _ Die Befehle
-
- 
-
-126
-
 BASEPAGE:
 
 BP: Die Adresse der Basepage des mit LEXECUTE geladenen
 Programms
 
-08 PC: Liefert den Wert des Program Counters
+o6 PC: Liefert den Wert des Program Counters
 
 o USP: Liefert den Wert des User Stack Pointers
 
@@ -30,35 +24,25 @@ o CCR: Liefert den Wert des Condition Code Registers
 
 *; Liefert die aktuelle Adresse (siehe Zeilenanfang)
 
-o DISBASE:
-o BUFFER:
-SEKBUFF:
-TRKBUFF:
-o TRACK:
-o SEKTOR:
-o SIDE:
+o DISBASE: Zahlenbasis des Disassemblers (10 oder 16)
 
-o DRIVE:
+o BUFFER: Liefert die Adresse des aktuellen Sektor-Buffers
 
-o "B(Term):
-o "M(0-9):
+SEKBUFF: Liefert die Adresse des Default-Sektor-Buffers
 
-Zahlenbasis des Disassemblers (10 oder 16)
+TRKBUFF: Liefert die Adresse des Track Buffera (= MEMBASE)
 
-Liefert die Adresse des aktuellen Sektor-Buffers
-Liefert die Adresse des Default-Sektor-Buffers
-Liefert die Adresse des Track Buffera (= MEMBASE)
-Track für READTRACK/SEKTOR usw.
+o TRACK: Track für READTRACK/SEKTOR usw.
 
-Sektor für READSEKTOR usw.
+o SEKTOR: Sektor für READSEKTOR usw.
 
-Seite für READTRACK/SEKTOR usw.
+o SIDE: Seite für READTRACK/SEKTOR usw.
 
-Laufwerk für READTRACK/SEKTOR usw.
+o DRIVE: Laufwerk für READTRACK/SEKTOR usw.
 
-Liefert den Wert eines Breakpoints
+o "B(Term): Liefert den Wert eines Breakpoints
 
-Zehn Zahlenspeicher als Ersatz für eine Notizzettel (enthält
+o "M(0-9): Zehn Zahlenspeicher als Ersatz für eine Notizzettel (enthält
 die Marker vom Assembler (siehe Kapitel 5.8 auf Seite 104))
 
 
@@ -67,3 +51,43 @@ TRANSLATED
 ==========
 
 
+BASEPAGE:
+BP:         The address of the base page of the program charged with LEXECUTE
+
+o6 PC:      delivers the value of the Program Counter
+
+o USP:      Delivers the value of the user stack pointer
+
+o SP:       Delivers the value of the current stack pointer (according to the
+            supervisor bit in the status register)
+
+SYMBOLS:    Number of entries in the symbol table
+
+o SSP:      Delivers the value of the supervisor stack pointer
+
+o SR:       Delivers the value of the status register
+
+o CCR:      Delivers the value of the condition code register
+
+*;          Delivers the current address (see the beginning of the line)
+
+o DISBASE:  Base of the Disassembler (10 or 16)
+
+o BUFFER:   Delivers the address of the current sector buffer
+
+SECBUFF:    Delivers the address of the default sector buffer
+
+TRKBUFF:    Delivers the address of the Track Buffers (= MEMBASE)
+
+o TRACK:    Track for READTRACK/SECTOR etc.
+
+o SECTOR:   Sector for READSECTOR etc.
+
+o SIDE:     Page for READTRACK/SECTOR etc.
+
+o DRIVE:    Drive for READTRACK/SECTOR etc.
+
+o ^B(Term): Delivers the value of a breakpoint
+
+o ^M(0-9):  Ten number memory as a replacement for a note (contains the markers
+            from the assembler (see chapter 5.8 on page 104))
