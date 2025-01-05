@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-6_ DER DEBUGGER 137
-
- 
-
 Zurückgeben müssen Sie nur, ob UNTRACE abgebrochen werden soll (dann
 muß das Zero-Flag Z=0 gelöscht werden) oder nicht (Z=1). Das Programm
 muß mit RTS beendet werden. Es darf alle Registerinhalte (natürlich außer
@@ -24,29 +20,26 @@ Wert vergleichen wollen, schreiben Sie immer „Register=Wert“ und niemals
 „Wert=Register“, da der Debugger dann etwas kürzen kann. Nun noch ein
 paar Beispiele für IF-Befehle und den daraus erzeugten Programmcode:
 
-IF "D1.w=100 ;Bricht ab, wenn das DO (auf Wortbreite)
-den Wert $100 hat. "”" kennzeichnet,
-das es sich um ein Register und nicht
-um die Speicherstelle DO handelt.
+IF  ^D1.w=100       ;Bricht ab, wenn das DO (auf Wortbreite)
+                    den Wert $100 hat. "”" kennzeichnet,
+                    das es sich um ein Register und nicht
+                    um die Speicherstelle DO handelt.
 
-moveq #0,D0
-move.w 6(A1),D0
-cmpi.l #$100,D0
+    moveq #0,D0
+    move.w 6(A1),D0
+    cmpi.l #$100,D0
+    seq DO
+    rts
 
- 
+IF  100=^D1.w       ;Gleiche Abfrage wie oben; jedoch andersherum
+                    eingegeben
 
-seq DO
-rts
-IF 100="D1.w ;Gleiche Abfrage wie oben; jedoch andersherum
-eingegeben
-
-move.l #$100,-(SP)
-moveq #0,D0
-move.w 6(A1),D0
-cmp.1l (SP)+,D0
-seq DO
-
-rts
+    move.l #$100,-(SP)
+    moveq #0,D0
+    move.w 6(A1),D0
+    cmp.1l (SP)+,D0
+    seq DO
+    rts
 
 
 
@@ -54,3 +47,37 @@ TRANSLATED
 ==========
 
 
+You only have to return whether UNTRACE should be canceled (then the Zero-Flag
+z = 0 must be deleted) or not (z = 1). The program must be ended with RTS.
+It can change all register content (of course except A7). It is called up in
+supervisor mode (it must stay on!).
+
+Your program should of course be as short and quickly as possible, because it
+has to be executed once after each command of the debugged program - every
+cycle cycle can make up minutes.
+
+The debugger tries to translate the query into a short program - but since no
+highly optimizing compiler could be installed (the debugger must not be too
+long), the programs can usually be significantly optimized. Attention: If you
+want to compare a register with a value, always write "registers = value" and
+never "value = register", since the debugger can then shorten something. Now a
+few examples of IF commands and the program code generated from it:
+
+IF  ^D1.w=100       ; Break off when the D0 (on word width) has the value $100.
+                    ; "^" Indicates that it is a register and not the DO
+                    ; storage point.
+
+    moveq   #0,D0
+    move.w  6(A1),D0
+    cmpi.l  #$100,D0
+    seq     D0
+    rts
+
+IF  100=^D1.w       ; Same query as above; but entered the other way around
+
+    move.l  #$100,-(SP)
+    moveq   #0,D0
+    move.w  6(A1),D0
+    cmp.l   (SP)+,D0
+    seq     D0
+    rts

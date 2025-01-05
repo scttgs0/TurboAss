@@ -2,41 +2,28 @@ ORIGINAL
 ======== 
 
 
-6_DER DEBUGGER 129
+o SIZE:         gibt die Breite für MEMORY und DUMP an. Es sind Werte
+                zwischen 1 und 16 zugelassen. Es werden entsprechend viele
+                Bytes ausgegeben.
 
-o SIZE:
+o LINES:        Anzahl der Zeilen, die normalerweise bei LIST, ASCI, ME-
+                MORY usw. ausgegeben werden. Voreinstellung ist 16, es
+                sind Werte bis 255 möglich.
 
-o LINES:
+MEMBASE:        Zeigt auf den Anfang des freien Speichers (des größten zu-
+                sammenhängenden freien Speicherblocks)
 
-MEMBASE:
+SAVEAREA:       Zeigt auf einen Buffer, in den beim Start des Debuggers
+                der Bereich 0-$4FF kopiert wird. Bei RESET ALL (siehe
+                Kapitel 6.6.8 auf Seite 165) und beim Verlassen wird dieser
+                Bereich zurückkopiert. Wenn Sie beispielsweise die Varia-
+                ble _drvbits ändern wollen und den neuen Wert direkt
+                nach $4C2 schreiben, wird sie beim Verlassen des Debug-
+                gers zurückgesetzt. Um das zu verhindern, müssen Sie den
+                Wert auch nach „SAVEAREA+$4C2“ schreiben.
 
-SAVEAREA:
-
- 
-
-gibt die Breite für MEMORY und DUMP an. Es sind Werte
-zwischen 1 und 16 zugelassen. Es werden entsprechend viele
-Bytes ausgegeben.
-
-Anzahl der Zeilen, die normalerweise bei LIST, ASCI, ME-
-MORY usw. ausgegeben werden. Voreinstellung ist 16, es
-sind Werte bis 255 möglich.
-
-Zeigt auf den Anfang des freien Speichers (des größten zu-
-sammenhängenden freien Speicherblocks)
-
-Zeigt auf einen Buffer, in den beim Start des Debuggers
-der Bereich 0-$4FF kopiert wird. Bei RESET ALL (siehe
-Kapitel 6.6.8 auf Seite 165) und beim Verlassen wird dieser
-Bereich zurückkopiert. Wenn Sie beispielsweise die Varia-
-ble _drvbits ändern wollen und den neuen Wert direkt
-nach $4C2 schreiben, wird sie beim Verlassen des Debug-
-gers zurückgesetzt. Um das zu verhindern, müssen Sie den
-Wert auch nach „SAVEAREA+$4C2“ schreiben.
-
- 
-
-5mit o gekennzeichnete Variablen können mit SET bsw. LET geändert werden.
+---
+5 mit o gekennzeichnete Variablen können mit SET bsw. LET geändert werden.
 
 
 
@@ -44,3 +31,22 @@ TRANSLATED
 ==========
 
 
+o SIZE:         Specifies the width for memory and dump. Values between 1 and
+                16 are approved. Accordingly, many bytes are output.
+
+o LINES:        Number of lines that are usually output at LIST, ASCI, MEMORY
+                etc. Default is 16, values up to 255 are possible.
+
+MEMBASE:        Points to the beginning of the free memory (the largest
+                coherent free memory block)
+
+SAVEAREA:       Points to a buffer in which the area of 0-$4ff is copied when
+                the debugger starts. With Reset All (see chapter 6.6.8 on page
+                165) and this area is copied back when leaving. For example,
+                if you want to change the variable _DRVBITS and write the new
+                value directly to $4C2, it will be reset when you leave the
+                debugger. To prevent this, you must also write the value
+                according to "SAVEAREA+$4C2".
+
+---
+5 Variables marked with O can with SET bsw. Let be changed.

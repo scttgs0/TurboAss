@@ -1,46 +1,22 @@
 ORIGINAL
-======== 
+========
 
-
-6_DER DEBUGGER
-
-131
-
- 
 
 Tabelle 6.7: Die erlaubten Rechenzeichen
 
- 
-
- 
-
- 
-
- 
-
-Rechenzeichen | Funktion:
-
-+ Addition
-
-- Subtraktion
-
-| OR
-
-° EOR (XOR)
-
-<< Linksverschiebung
-(LSL-Befehl des Prozessors)
-
->> Rechtsverschiebung
-(LSR-Befehl des Prozessors)
-
-* Multiplikation
-
-/ Division
-
-& AND
-
-% Modulo
+    Rechenzeichen   | Funktion:
+        +           | Addition
+        -           | Subtraktion
+        |           | OR
+        ^           | EOR (XOR)
+        <<          | Linksverschiebung
+                      (LSL-Befehl des Prozessors)
+        >>          | Rechtsverschiebung
+                      (LSR-Befehl des Prozessors)
+        *           | Multiplikation
+        /           | Division
+        &           | AND
+        %           | Modulo
 
 
 
@@ -48,3 +24,18 @@ TRANSLATED
 ==========
 
 
+Table 6.7: The permitted arithmetic modes
+
+    Arithmetic      | Function
+        +           | Addition
+        -           | Subtraction
+        |           | OR
+        ^           | EOR (XOR)
+        <<          | Left shift
+                      (LSL command of the processor)
+        >>          | Right shift
+                      (LSR command of the processor)
+        *           | multiplication
+        /           | Division
+        &           | AND
+        %           | Modulo

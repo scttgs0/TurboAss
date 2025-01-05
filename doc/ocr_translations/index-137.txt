@@ -1,10 +1,6 @@
 ORIGINAL
-======== 
+========
 
-
-6_DER DEBUGGER 135
-
- 
 
 führt ein Unterprogramm ab der Adresse aus, Das Unterprogramm sollte
 mit einem RTS abgeschlossen sein - es kehrt dann wieder in den Debugger
@@ -20,7 +16,7 @@ den TRAP # 3 belegt.
 
 Untrace
 
-Syntax : UNTRACE [Adresse] (‚Anzahl]
+Syntax : UNTRACE [Adresse] [‚Anzahl]
 Kurzform : U
 
 Mit UNTRACE können Sie ein Programm wie mit TRACE durchlaufen lassen;
@@ -49,3 +45,36 @@ TRANSLATED
 ==========
 
 
+If a subroutine runs from the address, the subroutine should be completed with
+an RTS - it will then return to the debugger. If neither the address nor
+Breakpoint are specified, a breakpoint will be placed behind the next command
+and the current one is executed. Usually, without an address/breakpoint, trace
+without an term, only if the current command is a JSR or BSR, the entire sub-
+program is executed at D0. At JMP, BRA or similar, do it usually does not make
+sense, since the PC will probably not end up behind the JMP (or the like) so
+quickly.
+
+Attention: CALL is the only case in which the debugger may occupy the trap #3.
+
+Untrace
+
+Syntax : UNTRACE [address] [,number]
+Short form : U
+
+With UNTRACE you can let a program go through like with TRACE; However, the
+debugger checks after each command whether a termination condition is met.
+These conditions are set with IF.
+
+The program process is of course slowly slowed down because a whole range of
+comparison commands by the debugger must be carried out per command of the
+program.
+
+The debugger also stores the last 256 commands in a so-called cache. You can
+then look at the commands with the associated register content. To do this,
+click on one of the arrows that are on the left of the register display.
+
+With the arrow to the left, you "leaf out" a command, that is, you see the
+command that was last executed and the register content. With the arrow to the
+right, it "leaves" back accordingly. With the "Fuller" at the top left you can
+jump to the current command. With the right mouse button you can skip nine
+commands, i.e. leaf out in ten steps.

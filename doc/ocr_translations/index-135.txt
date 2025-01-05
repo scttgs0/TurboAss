@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-6_DER DEBUGGER 133
-
- 
-
 2. „,*“ setzt einen Permanent-Breakpoint. Dieser Breakpoint funktioniert
 wie der normale, er wird aber nicht gelöscht. Er kann nur durch manu-
 elles Löschen (BK) beseitigt werden.
@@ -47,4 +43,34 @@ am Anfang.
 TRANSLATED
 ==========
 
+2. ",*" sets a permanent breakpoint. This breakpoint works like the normal, but
+it is not deleted. It can only be removed by manual deletion (BK).
 
+3. "'= value" sets a counter breakpoint. This is actually not a real breakpoint,
+because the program sequence is never broken off. It is only counted on how
+often the Breakpoint has been run through. "Value" represents the initial value;
+If no value is given, 0 is taken. If you can display the breakpoints with B,
+behind every counter breakpoint how often it has been reached.
+
+4. "'? Condition" sets a conditional breakpoint. There is a condition behind the
+question mark as with IF (see chapter 6.6.5 on page 136); It is canceled if the
+value of the condition is not 0. Then the breakpoint is deleted. The program
+generated can be up to 512 bytes long and stands from the address:
+"UTRACE-20000+200*Breakpoint number"
+
+
+Go
+
+Syntax      : GO [adresse][,breakpoint]
+Short form  : G
+
+Starts a program. If no address is specified, the PC starts. A breakpoint can
+also be specified that cannot otherwise be reached: number 17. It is set before
+the start and then deleted again. So you can z.B. enter: "GO 10000, 20000" -
+Then the program is carried out from $100,000 to $20,000. Since the end address
+is managed internally as a breakpoint, it must not be in the ROM. If you do not
+want to specify an end address, but the number of commands to be carried out,
+use TRACE.
+
+Example: "G"
+Start a program where it was canceled or after LEXECUTE at the beginning.

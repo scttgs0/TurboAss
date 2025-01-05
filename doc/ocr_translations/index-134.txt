@@ -1,18 +1,14 @@
 ORIGINAL
-======== 
+========
 
-
-132 6.6 _ Die Befehle
-
- 
 
 6.6.5 Trace-Funktionen
 
 Breakpoints
 
-Syntax : (BREAKPOINTS]B) [Parameter]
+Syntax : (BREAKPOINTS|B) [Parameter]
 
-Parameter : NummersAdresse, (+*|=Wert | Anzahl | ?Bedingung]
+Parameter : Nummer=Adresse, [*|=Wert | Anzahl | ?Bedingung]
 K [Nummer]
 
 Kurzform : B
@@ -27,12 +23,11 @@ wird der entsprechende Breakpoint auf die Adresse gesetzt.
 
 Beispiele:
 
-e „Break 5=pc+.100“ setzt Breakpoint Nummer 5 100 Byte hinter den
-Program Counter.
-
-se „BREAKPOINTS K“ löscht alle Breakpoints
-e „B“ zeigt alle Breakpoints an
-® „BK 3“ löscht Breakpoint 3
+    o „Break 5=pc+.100“ setzt Breakpoint Nummer 5 100 Byte hinter den
+    Program Counter.
+    o „BREAKPOINTS K“ löscht alle Breakpoints
+    o „B“ zeigt alle Breakpoints an
+    o „BK 3“ löscht Breakpoint 3
 
 Wenn ein Breakpoint ausgeführt wurde, wird er automatisch gelöscht, Es
 gibt neben diesen „normalen“ Breakpoints aber auch andere, die Sie setzen
@@ -51,3 +46,38 @@ TRANSLATED
 ==========
 
 
+6.6.5 Trace functions
+
+Breakpoints
+
+Syntax      : (BREAKPOINTS|B) [Parameter]
+
+Parameter   : Number = address, [*| = value | Number | ?Condition]
+              K [Number]
+
+Short form: B
+
+
+The number is a term, the value of which is between 0 and 15.
+
+"Breakpoints" alone shows all breakpoints, "Breakpoints+number" only one.
+"Breakpoints K" deletes all breakpoints. Of course, only a single breakpoint
+can be deleted by entering "Breakpoints K+Number". If "Breakpoint's number
+address" is entered, the corresponding breakpoint is placed on the address.
+
+Examples:
+
+    o "Break 5 = PC+.100" sets Breakpoint number 5 100 bytes behind the
+       Program Counter.
+    o "Breakpoints K" deletes all breakpoints
+    o "B" shows all breakpoints
+    o "BK 3" deletes Breakpoint 3
+
+When a breakpoint has been executed, it is automatically deleted, in addition
+to these "normal" breakpoints, there are also others who can set them by still
+specifying a comma after the address:
+
+1. "'Number" sets a stop breakpoint. The breakpoint must be listed "number"
+until the program is canceled. Then the breakpoint is deleted. If you can
+display the breakpoints with B, behind every stop breakpoint how often it still
+has to be executed.

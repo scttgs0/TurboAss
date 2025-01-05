@@ -2,10 +2,6 @@ ORIGINAL
 ======== 
 
 
-136 6.6__ Die Befehle
-
- 
-
 If
 
 Syntax : IF Term
@@ -28,21 +24,17 @@ des debuggten Programms stehen in einer Tabelle, auf deren Anfang A1 zeigt.
 
 Die Tabelle hat das gleiche Format wie bei GETREGISTER erforderlich:
 
-1 Langwort DO
-1 Langwort D1
+    1 Langwort D0
+    1 Langwort D1
 
-1 Langwort D7
-1 Langwort AO
+    1 Langwort D7
+    1 Langwort A0
 
-Langwort A7
-
-Langwort PC
-
-Langwort USP
-Langwort SSP
-Word SR
-
-a
+    Langwort A7
+    Langwort PC
+    Langwort USP
+    Langwort SSP
+    Word SR
 
 
 
@@ -50,3 +42,36 @@ TRANSLATED
 ==========
 
 
+If
+
+Syntax : IF Term
+Short form : IF
+
+If you specify IF without parameters, the conditions for UNTRACE are displayed,
+otherwise they will be set. In the termination condition, you can query the PC,
+all register including SR, CCR, USP, SSP, SP and memory content or compare them
+with each other or with constants. As comparisons are =, <>, <= and >=. In
+addition, the logical operations & (and), | (or), ^ (xor) and (not) approved.
+Brackets can also be set.
+
+The debugger creates a program from the line that queries the conditions
+accordingly and sets or deletes the Zero-Flag. The variable UT (as UNTRACE)
+shows at the beginning of this program; So you can look at it with "L UT" and
+possibly change it. This also enables them to test more difficult demolition
+conditions. The program receives a pointer on a register table in al; This means
+that the register content of the debugged program is in a table at the beginning
+of which A1 shows.
+
+The table has the same format as for the clerk:
+
+    1 Longword D0
+    1 Longword D1
+
+    1 Longword D7
+    1 Longword A0
+
+    1 Longword A7
+    1 Longword PC
+    1 Longword USP
+    1 Longword SSP
+    1 Word SR

@@ -2,9 +2,6 @@ ORIGINAL
 ======== 
 
 
- 
-
-134_ 6.6 Die Befehle
 Trace
 Syntax : TRACE [Anzahl]
 
@@ -17,7 +14,7 @@ mal F1 gedrückt hätten). Das heißt, es funktioniert auch im ROM.
 
 Showmemory
 
-Syntax : SHOWMEMORY [Term, [B|WIL] CAnzahl]]| [, . Nummer]
+Syntax : SHOWMEMORY [Term, [B|W|L] [Anzahl]]| [,.Nummer]
 Kurzform : SH
 
 Sie können sich wichtige Speicherbereiche auch ständig anzeigen lassen. Dazu
@@ -40,7 +37,7 @@ gelöscht werden, indem Sie „SHOWMEMDRY ‚,.Nummer“ eingeben.
 
 Do, Call
 
-Syntax : DOJCALL [Adresse] [,Breakpoint])
+Syntax : DO|CALL [Adresse] [,Breakpoint]
 Kurzform : DO oder C
 
 
@@ -49,3 +46,42 @@ TRANSLATED
 ==========
 
 
+Trace
+Syntax : TRACE [Number]
+
+Short form : T
+
+Trace carries out (or a number) command. After that, the debugger will jump
+back. The debugger really counts the commands carried out and does not set
+breakpoints (as if they had pressed "number" times F1). That means it also
+works in ROM.
+
+
+Showmemory
+
+Syntax : SHOWMEMORY [Term, [B|W|L] [Number]]| [,.Number]
+Short form : SH
+
+You can also display important memory areas. To do this, enter the address
+with show memory; Another line is then inserted under the register display,
+in which, as with Memory, the memory content is displayed from the value of
+the term. This display is continuously acutalized, i.e. after each trace,
+return, etc.
+
+If the term register contains, the address will be recalculated every time.
+This means: "ShowMemory" A0+100 "indicates the memory content from the content
+of address register A0+$100, whereby the address is always recalculated when
+A0 changes.
+
+The B, W or L can be specified whether it should be output in Byte, Word or
+Longword width. "Number" determines how many bytes should be displayed in
+the line.
+
+There is a number in front of each line of the display. A line can be deleted
+again by entering "ShowMemdry ',. Number".
+
+
+Do, Call
+
+Syntax      : DO|CALL [Adresse] [,Breakpoint]
+Short form  : DO or C
